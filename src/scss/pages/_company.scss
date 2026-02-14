@@ -1,0 +1,12 @@
+// Company Page
+.leadership-grid .card {
+  overflow: hidden;
+
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}

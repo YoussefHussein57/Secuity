@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="40%" style="stop-color:#1D2343"/>
+      <stop offset="100%" style="stop-color:#131829"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="40%" r="45%">
+      <stop offset="0%" style="stop-color:#78C2D7;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#78C2D7;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="75%" cy="60%" r="40%">
+      <stop offset="0%" style="stop-color:#78C2D7;stop-opacity:0.07"/>
+      <stop offset="100%" style="stop-color:#1D2343;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow1)"/>
+  <rect width="1920" height="1080" fill="url(#glow2)"/>
+
+  <!-- Network connection lines -->
+  <g stroke="#78C2D7" stroke-width="0.8" opacity="0.12" fill="none">
+    <!-- Cluster 1 (top-left) -->
+    <line x1="120" y1="80" x2="300" y2="180"/>
+    <line x1="300" y1="180" x2="200" y2="320"/>
+    <line x1="120" y1="80" x2="200" y2="320"/>
+    <line x1="300" y1="180" x2="480" y2="140"/>
+    <line x1="200" y1="320" x2="400" y2="380"/>
+    <line x1="480" y1="140" x2="600" y2="280"/>
+    <line x1="400" y1="380" x2="600" y2="280"/>
+    <line x1="120" y1="80" x2="60" y2="220"/>
+    <line x1="60" y1="220" x2="200" y2="320"/>
+
+    <!-- Cluster 2 (center) -->
+    <line x1="800" y1="200" x2="960" y2="350"/>
+    <line x1="960" y1="350" x2="1100" y2="250"/>
+    <line x1="1100" y1="250" x2="800" y2="200"/>
+    <line x1="960" y1="350" x2="850" y2="500"/>
+    <line x1="960" y1="350" x2="1080" y2="480"/>
+    <line x1="850" y1="500" x2="1080" y2="480"/>
+    <line x1="800" y1="200" x2="700" y2="350"/>
+    <line x1="700" y1="350" x2="850" y2="500"/>
+    <line x1="1100" y1="250" x2="1250" y2="350"/>
+    <line x1="1250" y1="350" x2="1080" y2="480"/>
+
+    <!-- Cluster 3 (top-right) -->
+    <line x1="1500" y1="100" x2="1680" y2="200"/>
+    <line x1="1680" y1="200" x2="1600" y2="340"/>
+    <line x1="1500" y1="100" x2="1600" y2="340"/>
+    <line x1="1500" y1="100" x2="1350" y2="180"/>
+    <line x1="1350" y1="180" x2="1400" y2="310"/>
+    <line x1="1400" y1="310" x2="1600" y2="340"/>
+    <line x1="1680" y1="200" x2="1820" y2="280"/>
+    <line x1="1820" y1="280" x2="1750" y2="400"/>
+    <line x1="1750" y1="400" x2="1600" y2="340"/>
+
+    <!-- Cluster 4 (bottom-left) -->
+    <line x1="150" y1="700" x2="320" y2="620"/>
+    <line x1="320" y1="620" x2="450" y2="750"/>
+    <line x1="150" y1="700" x2="450" y2="750"/>
+    <line x1="450" y1="750" x2="350" y2="880"/>
+    <line x1="150" y1="700" x2="100" y2="860"/>
+    <line x1="100" y1="860" x2="350" y2="880"/>
+    <line x1="320" y1="620" x2="500" y2="580"/>
+    <line x1="500" y1="580" x2="600" y2="700"/>
+    <line x1="600" y1="700" x2="450" y2="750"/>
+
+    <!-- Cluster 5 (bottom-center) -->
+    <line x1="800" y1="700" x2="950" y2="800"/>
+    <line x1="950" y1="800" x2="1100" y2="720"/>
+    <line x1="1100" y1="720" x2="800" y2="700"/>
+    <line x1="950" y1="800" x2="900" y2="950"/>
+    <line x1="950" y1="800" x2="1050" y2="930"/>
+    <line x1="800" y1="700" x2="700" y2="830"/>
+    <line x1="700" y1="830" x2="900" y2="950"/>
+    <line x1="1100" y1="720" x2="1200" y2="850"/>
+    <line x1="1200" y1="850" x2="1050" y2="930"/>
+
+    <!-- Cluster 6 (bottom-right) -->
+    <line x1="1450" y1="650" x2="1600" y2="580"/>
+    <line x1="1600" y1="580" x2="1750" y2="680"/>
+    <line x1="1750" y1="680" x2="1450" y2="650"/>
+    <line x1="1450" y1="650" x2="1400" y2="800"/>
+    <line x1="1750" y1="680" x2="1850" y2="800"/>
+    <line x1="1850" y1="800" x2="1650" y2="880"/>
+    <line x1="1650" y1="880" x2="1400" y2="800"/>
+    <line x1="1600" y1="580" x2="1700" y2="500"/>
+
+    <!-- Cross-cluster connections (longer, fainter) -->
+    <line x1="600" y1="280" x2="800" y2="200" opacity="0.5"/>
+    <line x1="1250" y1="350" x2="1350" y2="180" opacity="0.5"/>
+    <line x1="600" y1="700" x2="800" y2="700" opacity="0.5"/>
+    <line x1="1200" y1="850" x2="1400" y2="800" opacity="0.5"/>
+    <line x1="400" y1="380" x2="700" y2="350" opacity="0.4"/>
+    <line x1="1080" y1="480" x2="1450" y2="650" opacity="0.4"/>
+    <line x1="850" y1="500" x2="800" y2="700" opacity="0.4"/>
+    <line x1="1750" y1="400" x2="1700" y2="500" opacity="0.4"/>
+  </g>
+
+  <!-- Network nodes (larger = hub, smaller = endpoint) -->
+  <g fill="#78C2D7">
+    <!-- Cluster 1 nodes -->
+    <circle cx="120" cy="80" r="5" opacity="0.35"/>
+    <circle cx="300" cy="180" r="7" opacity="0.4"/>
+    <circle cx="200" cy="320" r="5" opacity="0.3"/>
+    <circle cx="480" cy="140" r="4" opacity="0.25"/>
+    <circle cx="400" cy="380" r="4" opacity="0.25"/>
+    <circle cx="600" cy="280" r="6" opacity="0.35"/>
+    <circle cx="60" cy="220" r="3" opacity="0.2"/>
+
+    <!-- Cluster 2 nodes -->
+    <circle cx="800" cy="200" r="6" opacity="0.35"/>
+    <circle cx="960" cy="350" r="9" opacity="0.45"/>
+    <circle cx="1100" cy="250" r="6" opacity="0.35"/>
+    <circle cx="850" cy="500" r="5" opacity="0.3"/>
+    <circle cx="1080" cy="480" r="5" opacity="0.3"/>
+    <circle cx="700" cy="350" r="4" opacity="0.25"/>
+    <circle cx="1250" cy="350" r="5" opacity="0.3"/>
+
+    <!-- Cluster 3 nodes -->
+    <circle cx="1500" cy="100" r="6" opacity="0.35"/>
+    <circle cx="1680" cy="200" r="7" opacity="0.4"/>
+    <circle cx="1600" cy="340" r="5" opacity="0.3"/>
+    <circle cx="1350" cy="180" r="4" opacity="0.25"/>
+    <circle cx="1400" cy="310" r="4" opacity="0.25"/>
+    <circle cx="1820" cy="280" r="3" opacity="0.2"/>
+    <circle cx="1750" cy="400" r="5" opacity="0.3"/>
+
+    <!-- Cluster 4 nodes -->
+    <circle cx="150" cy="700" r="6" opacity="0.3"/>
+    <circle cx="320" cy="620" r="5" opacity="0.3"/>
+    <circle cx="450" cy="750" r="7" opacity="0.35"/>
+    <circle cx="350" cy="880" r="4" opacity="0.2"/>
+    <circle cx="100" cy="860" r="3" opacity="0.2"/>
+    <circle cx="500" cy="580" r="4" opacity="0.25"/>
+    <circle cx="600" cy="700" r="5" opacity="0.3"/>
+
+    <!-- Cluster 5 nodes -->
+    <circle cx="800" cy="700" r="5" opacity="0.3"/>
+    <circle cx="950" cy="800" r="8" opacity="0.4"/>
+    <circle cx="1100" cy="720" r="5" opacity="0.3"/>
+    <circle cx="900" cy="950" r="4" opacity="0.2"/>
+    <circle cx="1050" cy="930" r="4" opacity="0.2"/>
+    <circle cx="700" cy="830" r="3" opacity="0.2"/>
+    <circle cx="1200" cy="850" r="4" opacity="0.25"/>
+
+    <!-- Cluster 6 nodes -->
+    <circle cx="1450" cy="650" r="5" opacity="0.3"/>
+    <circle cx="1600" cy="580" r="6" opacity="0.35"/>
+    <circle cx="1750" cy="680" r="7" opacity="0.35"/>
+    <circle cx="1400" cy="800" r="4" opacity="0.2"/>
+    <circle cx="1850" cy="800" r="4" opacity="0.25"/>
+    <circle cx="1650" cy="880" r="3" opacity="0.2"/>
+    <circle cx="1700" cy="500" r="4" opacity="0.25"/>
+  </g>
+
+  <!-- Bright "active" nodes with rings -->
+  <g>
+    <circle cx="960" cy="350" r="12" fill="none" stroke="#78C2D7" stroke-width="1" opacity="0.2"/>
+    <circle cx="960" cy="350" r="18" fill="none" stroke="#78C2D7" stroke-width="0.5" opacity="0.1"/>
+    <circle cx="300" cy="180" r="10" fill="none" stroke="#78C2D7" stroke-width="0.8" opacity="0.15"/>
+    <circle cx="1680" cy="200" r="10" fill="none" stroke="#78C2D7" stroke-width="0.8" opacity="0.15"/>
+    <circle cx="950" cy="800" r="11" fill="none" stroke="#78C2D7" stroke-width="0.8" opacity="0.15"/>
+    <circle cx="450" cy="750" r="10" fill="none" stroke="#78C2D7" stroke-width="0.6" opacity="0.12"/>
+    <circle cx="1750" cy="680" r="10" fill="none" stroke="#78C2D7" stroke-width="0.6" opacity="0.12"/>
+  </g>
+</svg>

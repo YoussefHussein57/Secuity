@@ -1,0 +1,33 @@
+// ===========================================
+// Main Stylesheet - Cyber Security
+// Bootstrap-first, minimal custom SCSS
+// ===========================================
+
+// 1. Custom variables (BEFORE Bootstrap)
+@import 'abstracts/variables';
+
+// 2. Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// 3. Custom mixins
+@import 'abstracts/mixins';
+
+// 4. Layouts
+@import 'layouts/grid';
+
+// 5. Components
+@import 'components/navbar';
+@import 'components/hero';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/sections';
+@import 'components/footer';
+@import 'components/animations';
+
+// 6. Pages (homepage only for now)
+@import 'pages/home';
+
+// 7. Global
+body {
+  overflow-x: hidden;
+}

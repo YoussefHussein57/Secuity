@@ -1,0 +1,14 @@
+// ===========================================
+// Filter Bar (Resources page)
+// ===========================================
+
+.filter-bar {
+  &__label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $gray-500;
+    margin-bottom: 0.5rem;
+  }
+}

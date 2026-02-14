@@ -1,0 +1,46 @@
+// ===========================================
+// Brand Colors - Cyber Security
+// ===========================================
+
+$primary:       #1D2343;   // Dark navy
+$accent:        #78C2D7;   // Light cyan/teal
+$white:         #FFFFFF;
+$dark:          #131829;   // Deeper navy for gradients
+$secondary:     #2a3158;   // Lighter navy
+$light:         #f0f6f8;   // Very light cyan tint
+$gray-100:      #f5f7fa;
+$gray-200:      #e2e8f0;
+$gray-500:      #94a3b8;
+$gray-700:      #475569;
+$gray-900:      #1e293b;
+
+// Bootstrap color map overrides
+$info:          $accent;
+$success:       #34d399;
+$warning:       #fbbf24;
+$danger:        #f87171;
+
+// Typography
+$font-family-base:    'Inter', system-ui, -apple-system, sans-serif;
+$font-family-heading: 'Exo 2', 'Inter', system-ui, sans-serif;
+$headings-font-family: $font-family-heading;
+$headings-font-weight: 700;
+
+// Border Radius
+$border-radius:       0.5rem;
+$border-radius-lg:    1rem;
+$border-radius-pill:  50rem;
+
+// Buttons
+$btn-border-radius:    $border-radius-pill;
+$btn-padding-y:        0.75rem;
+$btn-padding-x:        2rem;
+$btn-font-weight:      600;
+
+// Shadows
+$box-shadow-sm:  0 2px 8px rgba($primary, 0.08);
+$box-shadow:     0 4px 16px rgba($primary, 0.12);
+$box-shadow-lg:  0 8px 32px rgba($primary, 0.18);
+
+// Transitions
+$transition-base: all 0.3s ease;

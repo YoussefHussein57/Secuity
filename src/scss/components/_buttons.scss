@@ -1,0 +1,48 @@
+// ===========================================
+// Buttons
+// ===========================================
+
+.btn-accent {
+  background-color: $accent;
+  border-color: $accent;
+  color: $primary;
+  font-weight: 600;
+
+  &:hover, &:focus {
+    background-color: darken($accent, 8%);
+    border-color: darken($accent, 8%);
+    color: $primary;
+  }
+}
+
+.btn-outline-accent {
+  border: 2px solid $accent;
+  color: $accent;
+
+  &:hover {
+    background-color: $accent;
+    color: $primary;
+  }
+}
+
+.btn-outline-light {
+  border-width: 2px;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  i {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover i {
+    transform: translateX(4px);
+  }
+}

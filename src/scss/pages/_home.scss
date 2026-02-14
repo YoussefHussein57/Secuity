@@ -1,0 +1,4 @@
+// Home Page
+.home-services .services-grid {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}

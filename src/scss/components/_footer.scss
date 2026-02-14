@@ -1,0 +1,67 @@
+// ===========================================
+// Footer
+// ===========================================
+
+.footer {
+  background-color: $dark;
+  color: rgba($white, 0.6);
+  padding: 4rem 0 2rem;
+
+  a {
+    color: rgba($white, 0.6);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__brand img {
+    height: 36px;
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    color: $white;
+    font-family: $font-family-heading;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li + li {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba($white, 0.08);
+    margin-right: 0.5rem;
+    font-size: 1rem;
+
+    &:hover {
+      background: $accent;
+      color: $primary;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba($white, 0.08);
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+  }
+}

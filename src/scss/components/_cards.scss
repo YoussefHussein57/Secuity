@@ -1,0 +1,157 @@
+// ===========================================
+// Cards
+// ===========================================
+
+.card-service {
+  @include hover-lift;
+  border: 1px solid $gray-200;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: $border-radius-lg;
+  background: $white;
+
+  &__icon {
+    font-size: 2.5rem;
+    color: $accent;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-family: $font-family-heading;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $primary;
+  }
+
+  &:hover {
+    border-color: rgba($accent, 0.3);
+  }
+}
+
+.card-resource {
+  @include hover-lift;
+  border: none;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+.card-feature {
+  border: none;
+  text-align: center;
+  padding: 2rem;
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    background: rgba($accent, 0.1);
+    color: $accent;
+    font-size: 1.75rem;
+    border: 1px solid rgba($accent, 0.15);
+  }
+
+  h5 {
+    font-family: $font-family-heading;
+    color: $primary;
+  }
+}
+
+.card-stat {
+  text-align: center;
+  padding: 2rem;
+
+  &__number {
+    font-family: $font-family-heading;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 800;
+    color: $accent;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  &__label {
+    font-size: 1rem;
+    color: $gray-500;
+    font-weight: 500;
+  }
+}
+
+// Dark variant for stats on dark bg
+.card-stat--dark {
+  .card-stat__number {
+    color: $accent;
+  }
+  .card-stat__label {
+    color: rgba($white, 0.6);
+  }
+}
+
+.card-testimonial {
+  border: none;
+  border-radius: $border-radius-lg;
+  padding: 2.5rem;
+  background: $white;
+  border-left: 4px solid $accent;
+
+  &__quote {
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: $gray-700;
+  }
+
+  &__author {
+    font-weight: 600;
+    color: $primary;
+  }
+
+  &__role {
+    font-size: 0.875rem;
+    color: $gray-500;
+  }
+}
+
+.card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 1px solid $gray-200;
+  border-radius: $border-radius;
+  min-height: 120px;
+  @include hover-lift;
+
+  img {
+    max-height: 60px;
+    max-width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: $transition-base;
+  }
+
+  &:hover {
+    border-color: rgba($accent, 0.3);
+
+    img {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  }
+}
