@@ -72,7 +72,7 @@ export default function Hero({
               {ctaText && (
                 <Link
                   to={ctaLink}
-                  className="btn btn-accent btn-lg rounded-pill btn-cta px-4"
+                  className="btn btn-accent btn-lg btn-cta px-4"
                 >
                   {ctaText}
                   <i className="bi bi-arrow-right"></i>
@@ -81,7 +81,7 @@ export default function Hero({
               {secondaryCta && (
                 <Link
                   to={secondaryCtaLink}
-                  className="btn btn-outline-light btn-lg rounded-pill btn-cta px-4"
+                  className="btn btn-outline-light btn-lg btn-cta px-4"
                 >
                   {secondaryCta}
                   <i className="bi bi-play-circle"></i>

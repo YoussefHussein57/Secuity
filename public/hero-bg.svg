@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="40%" style="stop-color:#1D2343"/>
-      <stop offset="100%" style="stop-color:#131829"/>
+      <stop offset="0%" style="stop-color:#050514"/>
+      <stop offset="40%" style="stop-color:#0f0f27"/>
+      <stop offset="100%" style="stop-color:#08081a"/>
     </linearGradient>
     <radialGradient id="glow1" cx="30%" cy="40%" r="45%">
-      <stop offset="0%" style="stop-color:#78C2D7;stop-opacity:0.1"/>
-      <stop offset="100%" style="stop-color:#78C2D7;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0"/>
     </radialGradient>
     <radialGradient id="glow2" cx="75%" cy="60%" r="40%">
-      <stop offset="0%" style="stop-color:#78C2D7;stop-opacity:0.07"/>
-      <stop offset="100%" style="stop-color:#1D2343;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.07"/>
+      <stop offset="100%" style="stop-color:#0f0f27;stop-opacity:0"/>
     </radialGradient>
   </defs>
   <!-- Background -->
@@ -20,7 +20,7 @@
   <rect width="1920" height="1080" fill="url(#glow2)"/>
 
   <!-- Network connection lines -->
-  <g stroke="#78C2D7" stroke-width="0.8" opacity="0.12" fill="none">
+  <g stroke="#2563EB" stroke-width="0.8" opacity="0.12" fill="none">
     <!-- Cluster 1 (top-left) -->
     <line x1="120" y1="80" x2="300" y2="180"/>
     <line x1="300" y1="180" x2="200" y2="320"/>
@@ -99,7 +99,7 @@
   </g>
 
   <!-- Network nodes (larger = hub, smaller = endpoint) -->
-  <g fill="#78C2D7">
+  <g fill="#2563EB">
     <!-- Cluster 1 nodes -->
     <circle cx="120" cy="80" r="5" opacity="0.35"/>
     <circle cx="300" cy="180" r="7" opacity="0.4"/>
@@ -157,12 +157,12 @@
 
   <!-- Bright "active" nodes with rings -->
   <g>
-    <circle cx="960" cy="350" r="12" fill="none" stroke="#78C2D7" stroke-width="1" opacity="0.2"/>
-    <circle cx="960" cy="350" r="18" fill="none" stroke="#78C2D7" stroke-width="0.5" opacity="0.1"/>
-    <circle cx="300" cy="180" r="10" fill="none" stroke="#78C2D7" stroke-width="0.8" opacity="0.15"/>
-    <circle cx="1680" cy="200" r="10" fill="none" stroke="#78C2D7" stroke-width="0.8" opacity="0.15"/>
-    <circle cx="950" cy="800" r="11" fill="none" stroke="#78C2D7" stroke-width="0.8" opacity="0.15"/>
-    <circle cx="450" cy="750" r="10" fill="none" stroke="#78C2D7" stroke-width="0.6" opacity="0.12"/>
-    <circle cx="1750" cy="680" r="10" fill="none" stroke="#78C2D7" stroke-width="0.6" opacity="0.12"/>
+    <circle cx="960" cy="350" r="12" fill="none" stroke="#2563EB" stroke-width="1" opacity="0.2"/>
+    <circle cx="960" cy="350" r="18" fill="none" stroke="#2563EB" stroke-width="0.5" opacity="0.1"/>
+    <circle cx="300" cy="180" r="10" fill="none" stroke="#2563EB" stroke-width="0.8" opacity="0.15"/>
+    <circle cx="1680" cy="200" r="10" fill="none" stroke="#2563EB" stroke-width="0.8" opacity="0.15"/>
+    <circle cx="950" cy="800" r="11" fill="none" stroke="#2563EB" stroke-width="0.8" opacity="0.15"/>
+    <circle cx="450" cy="750" r="10" fill="none" stroke="#2563EB" stroke-width="0.6" opacity="0.12"/>
+    <circle cx="1750" cy="680" r="10" fill="none" stroke="#2563EB" stroke-width="0.6" opacity="0.12"/>
   </g>
 </svg>

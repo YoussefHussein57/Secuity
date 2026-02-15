@@ -12,7 +12,7 @@ export default function ResourceCard({ image, badge, title, date, link, ctaText 
         )}
         <h6 className="fw-bold mb-2">{title}</h6>
         {date && <small className="text-muted mb-3">{date}</small>}
-        <Link to={link} className="btn btn-outline-primary btn-sm rounded-pill mt-auto btn-cta">
+        <Link to={link} className="btn btn-outline-primary btn-sm mt-auto btn-cta">
           {ctaText} <i className="bi bi-arrow-right"></i>
         </Link>
       </div>

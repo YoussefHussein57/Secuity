@@ -12,6 +12,22 @@
   position: relative;
   overflow: hidden;
 
+  // Left-side dark fade so text reads clearly over the bg image
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba($dark, 0.92) 0%,
+      rgba($dark, 0.75) 35%,
+      rgba($dark, 0.3) 65%,
+      transparent 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+
   &__title {
     font-family: $font-family-heading;
     font-size: clamp(2.8rem, 5vw, 4.5rem);
@@ -21,7 +37,7 @@
     letter-spacing: -0.02em;
 
     .text-accent {
-      color: $accent;
+      color: $gradient-start;
     }
   }
 

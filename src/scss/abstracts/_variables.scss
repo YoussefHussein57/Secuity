@@ -2,13 +2,14 @@
 // Brand Colors - Cyber Security
 // ===========================================
 
-$primary:       #1D2343;   // Dark navy
-$accent:        #78C2D7;   // Light cyan/teal
+$primary:       #0f0f27;   // Dark indigo
+$accent:        #19186e;   // Vibrant blue (GuidePoint-inspired)
 $white:         #FFFFFF;
-$dark:          #131829;   // Deeper navy for gradients
-$secondary:     #2a3158;   // Lighter navy
-$light:         #f0f6f8;   // Very light cyan tint
-$gray-100:      #f5f7fa;
+$dark:          #08081a;   // Near-black indigo
+$secondary:     #1a1a40;   // Medium dark indigo
+$indigo:        #19186e;   // Deep indigo for accent dark sections
+$light:         #c3d9ff;   // Light blue tint
+$gray-100:      #F8FAFC;
 $gray-200:      #e2e8f0;
 $gray-500:      #94a3b8;
 $gray-700:      #475569;
@@ -31,8 +32,12 @@ $border-radius:       0.5rem;
 $border-radius-lg:    1rem;
 $border-radius-pill:  50rem;
 
+// Gradient colors
+$gradient-start:     #4b4fff;
+$gradient-end:       #00ccff;
+
 // Buttons
-$btn-border-radius:    $border-radius-pill;
+$btn-border-radius:    0.25rem;
 $btn-padding-y:        0.75rem;
 $btn-padding-x:        2rem;
 $btn-font-weight:      600;

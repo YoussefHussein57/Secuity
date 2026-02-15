@@ -60,7 +60,7 @@ export default function Contact() {
                     <textarea className="form-control" rows="4"></textarea>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="btn btn-primary btn-lg rounded-pill btn-cta">
+                    <button type="submit" className="btn btn-primary btn-lg btn-cta">
                       Submit <i className="bi bi-arrow-right"></i>
                     </button>
                   </div>
@@ -102,7 +102,7 @@ export default function Contact() {
                   <p className="text-muted small">
                     Need immediate help with a security incident? Our response team is available 24/7.
                   </p>
-                  <a href="tel:8778890132" className="btn btn-outline-danger btn-sm rounded-pill">
+                  <a href="tel:8778890132" className="btn btn-outline-danger btn-sm">
                     Call Now
                   </a>
                 </div>

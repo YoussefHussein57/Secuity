@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600">
   <defs>
     <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1D2343"/>
-      <stop offset="100%" style="stop-color:#131829"/>
+      <stop offset="0%" style="stop-color:#0f0f27"/>
+      <stop offset="100%" style="stop-color:#08081a"/>
     </linearGradient>
     <radialGradient id="glow3" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" style="stop-color:#78C2D7;stop-opacity:0.06"/>
-      <stop offset="100%" style="stop-color:#78C2D7;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0"/>
     </radialGradient>
   </defs>
   <rect width="1920" height="600" fill="url(#bg2)"/>
   <rect width="1920" height="600" fill="url(#glow3)"/>
   <!-- Network mesh -->
-  <g stroke="#78C2D7" stroke-width="0.6" opacity="0.08" fill="none">
+  <g stroke="#2563EB" stroke-width="0.6" opacity="0.08" fill="none">
     <line x1="100" y1="50" x2="280" y2="120"/>
     <line x1="280" y1="120" x2="400" y2="60"/>
     <line x1="280" y1="120" x2="350" y2="250"/>
@@ -47,7 +47,7 @@
     <line x1="1650" y1="400" x2="1750" y2="530"/>
   </g>
   <!-- Nodes -->
-  <g fill="#78C2D7">
+  <g fill="#2563EB">
     <circle cx="100" cy="50" r="3" opacity="0.2"/>
     <circle cx="280" cy="120" r="4" opacity="0.25"/>
     <circle cx="400" cy="60" r="3" opacity="0.2"/>

@@ -12,7 +12,7 @@
 - **Animations:** Intersection Observer + react-countup
 - **Icons:** Bootstrap Icons
 - **Fonts:** Inter (body), Exo 2 (headings)
-- **Colors:** Navy (#1D2343), Cyan (#78C2D7), Dark (#131829)
+- **Colors:** Dark Indigo (#0f0f27), Blue (#2563EB), Indigo (#19186e), Dark (#08081a)
 
 ---
 

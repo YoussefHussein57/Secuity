@@ -20,7 +20,7 @@
     transition: color 0.2s ease;
 
     &:hover {
-      color: $accent !important;
+      color: $gradient-start !important;
     }
   }
 
@@ -34,7 +34,7 @@
       padding: 0.5rem 1.5rem;
       font-size: 0.9rem;
       &:hover {
-        background-color: rgba($accent, 0.08);
+        background-color: rgba($gradient-start, 0.08);
         color: $primary;
       }
     }

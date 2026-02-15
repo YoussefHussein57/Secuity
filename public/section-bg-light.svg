@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600">
   <defs>
     <linearGradient id="bglt" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0f6f8"/>
-      <stop offset="100%" style="stop-color:#e8f1f5"/>
+      <stop offset="0%" style="stop-color:#EFF6FF"/>
+      <stop offset="100%" style="stop-color:#DBEAFE"/>
     </linearGradient>
   </defs>
   <rect width="1920" height="600" fill="url(#bglt)"/>
   <!-- Network mesh (very subtle on light bg) -->
-  <g stroke="#1D2343" stroke-width="0.5" opacity="0.04" fill="none">
+  <g stroke="#0F172A" stroke-width="0.5" opacity="0.04" fill="none">
     <line x1="100" y1="80" x2="300" y2="150"/>
     <line x1="300" y1="150" x2="500" y2="90"/>
     <line x1="300" y1="150" x2="400" y2="300"/>
@@ -32,7 +32,7 @@
     <line x1="1000" y1="400" x2="950" y2="540"/>
     <line x1="1350" y1="380" x2="1400" y2="520"/>
   </g>
-  <g fill="#1D2343">
+  <g fill="#0F172A">
     <circle cx="300" cy="150" r="3" opacity="0.06"/>
     <circle cx="500" cy="90" r="2.5" opacity="0.05"/>
     <circle cx="650" cy="200" r="3.5" opacity="0.06"/>

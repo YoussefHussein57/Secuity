@@ -2,7 +2,8 @@
 // Sections
 // ===========================================
 
-// Angled divider mixin — top edge only (previous section's color overlaps)
+// Single diagonal divider at the top of a section,
+// colored as the PREVIOUS section's background.
 @mixin angled-top($bg-color) {
   &::before {
     content: '';
@@ -30,29 +31,27 @@
   color: $white;
   padding-top: 7rem;
   padding-bottom: 7rem;
-  @include angled-top($white);
+  @include angled-top($primary);
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: $white;
-    clip-path: polygon(0 100%, 100% 0%, 100% 100%);
-    z-index: 2;
-  }
-
-  // Last section: no inclines, compact spacing against footer
   &:last-child {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    &::before { display: none; }
+  }
+}
 
-    &::before,
-    &::after {
-      display: none;
-    }
+// ---- Indigo section ----
+.section--indigo {
+  background-color: $indigo;
+  color: $white;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  @include angled-top($indigo);
+
+  &:last-child {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &::before { display: none; }
   }
 }
 
@@ -60,43 +59,53 @@
 .section--light {
   background-color: $light;
   padding-top: 7rem;
-  @include angled-top($white);
+  padding-bottom: 7rem;
+  @include angled-top($light);
 }
 
-// ---- Default (white bg) section ----
-.section:not(.section--dark):not(.section--light) {
-  @include angled-top($white);
+// ---- Accent section ----
+.section--accent {
+  background-color: $accent;
+  color: $white;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  @include angled-top($accent);
 }
 
-// ---- Context-aware bg color matching ----
+// ===========================================
+// Context-aware: ::before = previous section's bg
+// ===========================================
 
-// Light -> Dark: top wedge should be light color
-.section--light + .section--dark::before {
-  background: $light;
-}
-// Dark -> Light: top wedge should be dark color
-.section--dark + .section--light::before {
-  background: $primary;
-}
-// Dark -> White: bottom already white, good
-// White -> Dark: top already white, good
-// White -> Light: top should be white
-.section:not(.section--dark):not(.section--light) + .section--light::before {
-  background: $white;
-}
-// Light -> White: top should be light
-.section--light + .section:not(.section--dark):not(.section--light)::before {
-  background: $light;
-}
-// Dark -> White (via after): already white
-.section--dark + .section:not(.section--dark):not(.section--light) {
-  // top wedge comes from dark's ::after, no extra needed
-}
+// After Dark
+.section--dark + .section--accent::before,
+.section--dark + .section--indigo::before,
+.section--dark + .section--light::before { background: $primary; }
 
-// First section after hero — no top angle needed
-.hero + .section::before {
-  display: none;
-}
+// After Accent
+.section--accent + .section--dark::before,
+.section--accent + .section--indigo::before,
+.section--accent + .section--light::before { background: $accent; }
+
+// After Indigo
+.section--indigo + .section--dark::before,
+.section--indigo + .section--light::before,
+.section--indigo + .section--accent::before { background: $indigo; }
+
+// After Light
+.section--light + .section--dark::before,
+.section--light + .section--indigo::before,
+.section--light + .section--accent::before { background: $light; }
+
+// Same type adjacency — no divider needed
+.section--dark + .section--dark::before { display: none; }
+
+// Hero → section — seamless, no top angle
+.hero + .section::before { display: none; }
+.hero + .section--dark { padding-top: 5rem; }
+
+// ===========================================
+// Section Header
+// ===========================================
 
 .section-header {
   margin-bottom: 3rem;
@@ -122,7 +131,9 @@
     }
   }
 
-  .section--dark & {
+  .section--dark &,
+  .section--indigo &,
+  .section--accent & {
     &__title {
       color: $white;
     }

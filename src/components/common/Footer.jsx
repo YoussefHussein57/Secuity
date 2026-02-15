@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
 
 const quickLinks = [
   { label: 'Why Us', path: '/company' },
@@ -31,7 +32,7 @@ export default function Footer() {
           {/* Brand + Contact */}
           <div className="col-lg-4">
             <div className="footer__brand">
-              <img src="/logo-white.svg" alt="Logo" />
+              <img src={logo} alt="Logo" />
             </div>
             <p className="small mb-2">
               1900 Reston Metro Plaza, Suite 701
@@ -84,7 +85,7 @@ export default function Footer() {
                 className="form-control form-control-sm bg-transparent text-white border-secondary"
                 placeholder="Your email"
               />
-              <button type="submit" className="btn btn-primary btn-sm rounded-pill px-3">
+              <button type="submit" className="btn btn-primary btn-sm px-3">
                 <i className="bi bi-arrow-right"></i>
               </button>
             </form>

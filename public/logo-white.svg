@@ -5,8 +5,8 @@
     </style>
   </defs>
   <!-- C with target circle -->
-  <circle cx="22" cy="25" r="12" fill="none" stroke="#78C2D7" stroke-width="2.5"/>
-  <circle cx="22" cy="25" r="4" fill="#78C2D7"/>
+  <circle cx="22" cy="25" r="12" fill="none" stroke="#2563EB" stroke-width="2.5"/>
+  <circle cx="22" cy="25" r="4" fill="#2563EB"/>
   <path d="M34,25 A12,12 0 1,0 22,37" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
   <!-- Text -->
   <text x="40" y="36" class="logo-text">yber</text>

@@ -120,7 +120,7 @@ export default function Resources() {
                   <button
                     key={t}
                     onClick={() => setTypeFilter(t)}
-                    className={`btn btn-sm rounded-pill ${
+                    className={`btn btn-sm ${
                       typeFilter === t ? 'btn-primary' : 'btn-outline-secondary'
                     }`}
                   >

@@ -17,7 +17,7 @@ export default function SplitSection({
         <div>
           <Link
             to={ctaLink}
-            className={`btn ${dark ? 'btn-outline-light' : 'btn-primary'} rounded-pill btn-cta`}
+            className={`btn ${dark ? 'btn-outline-light' : 'btn-primary'} btn-cta`}
           >
             {ctaText} <i className="bi bi-arrow-right"></i>
           </Link>

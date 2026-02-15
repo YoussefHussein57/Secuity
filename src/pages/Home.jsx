@@ -9,6 +9,8 @@ import ResourceCard from '../components/sections/ResourceCard';
 import LogoGrid from '../components/sections/LogoGrid';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import NetworkBackground from '../components/sections/NetworkBackground';
+import heroImage from '../assets/images/hero.jpeg';
+import managedSecImage from '../assets/images/managed_Sec.jpeg';
 
 const features = [
   {
@@ -102,11 +104,13 @@ export default function Home() {
         ctaLink="/contact"
         secondaryCta="Watch Overview"
         secondaryCtaLink="/resources"
+        bgImage={heroImage}
       />
 
       {/* ===== WHY US ===== */}
-      <section className="section">
-        <div className="container">
+      <section className="section section--dark">
+        <NetworkBackground variant="dark" nodeCount={40} />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <AnimatedSection animation="animate-on-scroll">
             <SectionHeader
               title="Why Choose Us"
@@ -125,7 +129,7 @@ export default function Home() {
       </section>
 
       {/* ===== SERVICES GRID ===== */}
-      <section className="section section--light home-services">
+      <section className="section section--accent home-services">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <SectionHeader title="Our Services" center />
@@ -140,15 +144,15 @@ export default function Home() {
 
       {/* ===== SPLIT - MANAGED SECURITY ===== */}
       <section className="section section--dark">
-        <NetworkBackground variant="dark" nodeCount={50} />
+        <NetworkBackground variant="dark" nodeCount={35} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-left">
                 <div className="section-split__image">
                   <img
-                    src="/placeholder-split.svg"
-                    alt="Security Dashboard"
+                    src={managedSecImage}
+                    alt="Managed Security Program"
                     className="rounded-4 w-100"
                   />
                 </div>
@@ -170,7 +174,7 @@ export default function Home() {
                 </p>
                 <Link
                   to="/services/managed-security"
-                  className="btn btn-accent rounded-pill btn-cta"
+                  className="btn btn-accent btn-cta"
                 >
                   Learn More <i className="bi bi-arrow-right"></i>
                 </Link>
@@ -181,7 +185,7 @@ export default function Home() {
       </section>
 
       {/* ===== STATS ===== */}
-      <section className="section">
+      <section className="section section--indigo">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <SectionHeader title="Trusted by Industry Leaders" center />
@@ -218,7 +222,7 @@ export default function Home() {
       </section>
 
       {/* ===== RESOURCES ===== */}
-      <section className="section">
+      <section className="section section--indigo">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <SectionHeader title="Latest Resources" center />
@@ -248,10 +252,10 @@ export default function Home() {
               Connect with our cybersecurity experts today and discover how we can strengthen your defenses.
             </p>
             <div className="d-flex justify-content-center gap-3 flex-wrap">
-              <Link to="/contact" className="btn btn-accent btn-lg rounded-pill btn-cta px-4">
+              <Link to="/contact" className="btn btn-accent btn-lg btn-cta px-4">
                 Talk to an Expert <i className="bi bi-arrow-right"></i>
               </Link>
-              <Link to="/services" className="btn btn-outline-light btn-lg rounded-pill px-4">
+              <Link to="/services" className="btn btn-outline-light btn-lg px-4">
                 Explore Services
               </Link>
             </div>

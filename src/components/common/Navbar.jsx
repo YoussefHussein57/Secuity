@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import logo from '../../assets/images/logo.png';
 
 const navItems = [
   {
@@ -62,7 +63,7 @@ export default function Navbar() {
     >
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src="/logo-white.svg" alt="Cyber" height="40" />
+          <img src={logo} alt="Cyber" height="40" />
         </Link>
 
         <button
@@ -123,7 +124,7 @@ export default function Navbar() {
             <li className="nav-item ms-lg-2">
               <Link
                 to="/contact"
-                className="btn btn-accent btn-sm rounded-pill px-3"
+                className="btn btn-accent btn-sm px-3"
               >
                 Talk to an Expert
               </Link>

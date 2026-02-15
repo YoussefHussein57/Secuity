@@ -12,7 +12,7 @@
 
   &__icon {
     font-size: 2.5rem;
-    color: $accent;
+    color: $gradient-start;
     margin-bottom: 1rem;
   }
 
@@ -24,7 +24,7 @@
   }
 
   &:hover {
-    border-color: rgba($accent, 0.3);
+    border-color: rgba($gradient-start, 0.3);
   }
 }
 
@@ -60,15 +60,46 @@
     justify-content: center;
     margin: 0 auto 1.5rem;
     border-radius: 50%;
-    background: rgba($accent, 0.1);
-    color: $accent;
+    background: rgba($gradient-start, 0.1);
+    color: $gradient-start;
     font-size: 1.75rem;
-    border: 1px solid rgba($accent, 0.15);
+    border: 1px solid rgba($gradient-start, 0.15);
   }
 
   h5 {
     font-family: $font-family-heading;
     color: $primary;
+  }
+
+  // Dark variant — inside dark / indigo sections
+  .section--dark &,
+  .section--indigo &,
+  .section--accent & {
+    background: rgba($secondary, 0.4);
+    border: 1px solid rgba($gradient-start, 0.12);
+    border-radius: $border-radius-lg;
+    padding: 2.5rem 2rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      border-color: rgba($gradient-start, 0.35);
+      box-shadow: 0 0 24px rgba($gradient-start, 0.08);
+    }
+
+    .card-feature__icon {
+      background: rgba($gradient-start, 0.12);
+      color: $gradient-start;
+      border-color: rgba($gradient-start, 0.25);
+      box-shadow: 0 0 20px rgba($gradient-start, 0.15);
+    }
+
+    h5 {
+      color: $white;
+    }
+
+    p {
+      color: rgba($white, 0.7);
+    }
   }
 }
 
@@ -80,7 +111,7 @@
     font-family: $font-family-heading;
     font-size: clamp(2.5rem, 4vw, 3.5rem);
     font-weight: 800;
-    color: $accent;
+    color: $gradient-start;
     line-height: 1;
     margin-bottom: 0.5rem;
   }
@@ -95,7 +126,7 @@
 // Dark variant for stats on dark bg
 .card-stat--dark {
   .card-stat__number {
-    color: $accent;
+    color: $gradient-start;
   }
   .card-stat__label {
     color: rgba($white, 0.6);
@@ -107,7 +138,7 @@
   border-radius: $border-radius-lg;
   padding: 2.5rem;
   background: $white;
-  border-left: 4px solid $accent;
+  border-left: 4px solid $gradient-start;
 
   &__quote {
     font-size: 1.15rem;
@@ -147,7 +178,7 @@
   }
 
   &:hover {
-    border-color: rgba($accent, 0.3);
+    border-color: rgba($gradient-start, 0.3);
 
     img {
       filter: grayscale(0%);

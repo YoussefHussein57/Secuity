@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 
-const DARK_COLOR = { r: 120, g: 194, b: 215 };  // #78C2D7
-const LIGHT_COLOR = { r: 29, g: 35, b: 67 };     // #1D2343
+const DARK_COLOR = { r: 37, g: 99, b: 235 };   // #2563EB
+const LIGHT_COLOR = { r: 15, g: 15, b: 39 };    // #0f0f27
 
 export default function NetworkBackground({
   className = '',
-  variant = 'dark',  // 'dark' = cyan nodes on dark bg, 'light' = navy nodes on light bg
+  variant = 'dark',  // 'dark' = blue nodes on dark bg, 'light' = slate nodes on light bg
   nodeCount = 60,
   connectDist = 150,
 }) {

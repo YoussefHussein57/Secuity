@@ -2,37 +2,63 @@
 // Buttons
 // ===========================================
 
-.btn-accent {
-  background-color: $accent;
-  border-color: $accent;
-  color: $primary;
-  font-weight: 600;
+// Gradient shift mixin — oversized gradient that slides on hover
+@mixin gradient-btn {
+  background: linear-gradient(135deg, $gradient-start 0%, $gradient-end 50%, $gradient-start 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  border: none;
+  color: $white;
+  border-radius: $btn-border-radius;
+  transition: background-position 0.4s ease, box-shadow 0.4s ease;
 
   &:hover, &:focus {
-    background-color: darken($accent, 8%);
-    border-color: darken($accent, 8%);
-    color: $primary;
+    background-position: 100% 50%;
+    color: $white;
+    box-shadow: 0 4px 20px rgba($gradient-start, 0.4);
   }
 }
 
+// Gradient primary button
+.btn-accent {
+  @include gradient-btn;
+  font-weight: 600;
+}
+
+// Outline variant — fills with gradient on hover
 .btn-outline-accent {
-  border: 2px solid $accent;
-  color: $accent;
+  border: 2px solid $gradient-start;
+  color: $gradient-start;
+  border-radius: $btn-border-radius;
+  background: transparent;
+  transition: all 0.4s ease;
 
   &:hover {
-    background-color: $accent;
-    color: $primary;
+    @include gradient-btn;
+    border-color: transparent;
   }
 }
 
+// Outline light — for dark backgrounds
 .btn-outline-light {
-  border-width: 2px;
+  border: 2px solid rgba($white, 0.5);
+  color: $white;
+  border-radius: $btn-border-radius;
+  background: transparent;
+  background-size: 200% 200%;
+  transition: all 0.4s ease;
+
   &:hover {
-    background-color: $white;
-    color: $primary;
+    background: linear-gradient(135deg, $gradient-start 0%, $gradient-end 50%, $gradient-start 100%);
+    background-size: 200% 200%;
+    background-position: 100% 50%;
+    border-color: transparent;
+    color: $white;
+    box-shadow: 0 4px 20px rgba($gradient-start, 0.35);
   }
 }
 
+// CTA arrow animation
 .btn-cta {
   display: inline-flex;
   align-items: center;
@@ -44,5 +70,33 @@
 
   &:hover i {
     transform: translateX(4px);
+  }
+}
+
+// Override Bootstrap's btn-primary to match gradient
+.btn-primary {
+  @include gradient-btn;
+
+  &:active {
+    background-position: 100% 50%;
+    color: $white;
+  }
+}
+
+// Outline-primary — matches gradient theme
+.btn-outline-primary {
+  border: 2px solid $gradient-start;
+  color: $gradient-start;
+  border-radius: $btn-border-radius;
+  background: transparent;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, $gradient-start 0%, $gradient-end 50%, $gradient-start 100%);
+    background-size: 200% 200%;
+    background-position: 100% 50%;
+    border-color: transparent;
+    color: $white;
+    box-shadow: 0 4px 20px rgba($gradient-start, 0.3);
   }
 }

@@ -23,9 +23,9 @@
 }
 
 @mixin hover-lift {
-  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
     box-shadow: $box-shadow-lg;
   }
 }

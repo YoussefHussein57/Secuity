@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
   <defs>
     <linearGradient id="rbg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1D2343"/>
-      <stop offset="100%" style="stop-color:#2a3158"/>
+      <stop offset="0%" style="stop-color:#0f0f27"/>
+      <stop offset="100%" style="stop-color:#1a1a40"/>
     </linearGradient>
     <radialGradient id="rglow" cx="50%" cy="40%" r="50%">
-      <stop offset="0%" style="stop-color:#78C2D7;stop-opacity:0.12"/>
-      <stop offset="100%" style="stop-color:#78C2D7;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0"/>
     </radialGradient>
   </defs>
   <rect width="400" height="250" fill="url(#rbg)"/>
   <rect width="400" height="250" fill="url(#rglow)"/>
   <!-- Mini network -->
-  <g stroke="#78C2D7" stroke-width="0.8" opacity="0.15" fill="none">
+  <g stroke="#2563EB" stroke-width="0.8" opacity="0.15" fill="none">
     <line x1="80" y1="60" x2="200" y2="100"/>
     <line x1="200" y1="100" x2="320" y2="60"/>
     <line x1="200" y1="100" x2="150" y2="170"/>
@@ -23,7 +23,7 @@
     <line x1="60" y1="150" x2="150" y2="170"/>
     <line x1="340" y1="150" x2="260" y2="170"/>
   </g>
-  <g fill="#78C2D7">
+  <g fill="#2563EB">
     <circle cx="200" cy="100" r="6" opacity="0.4"/>
     <circle cx="80" cy="60" r="4" opacity="0.25"/>
     <circle cx="320" cy="60" r="4" opacity="0.25"/>
@@ -32,7 +32,7 @@
     <circle cx="60" cy="150" r="3" opacity="0.2"/>
     <circle cx="340" cy="150" r="3" opacity="0.2"/>
   </g>
-  <circle cx="200" cy="100" r="10" fill="none" stroke="#78C2D7" stroke-width="0.8" opacity="0.2"/>
+  <circle cx="200" cy="100" r="10" fill="none" stroke="#2563EB" stroke-width="0.8" opacity="0.2"/>
   <rect x="100" y="210" width="200" height="6" rx="3" fill="#FFFFFF" opacity="0.08"/>
-  <rect x="140" y="225" width="120" height="5" rx="2" fill="#78C2D7" opacity="0.1"/>
+  <rect x="140" y="225" width="120" height="5" rx="2" fill="#2563EB" opacity="0.1"/>
 </svg>
