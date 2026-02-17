@@ -110,6 +110,16 @@
 .section-header {
   margin-bottom: 3rem;
 
+  &__label {
+    font-family: $font-family-heading;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: $gradient-start;
+    margin-bottom: 0.75rem;
+  }
+
   &__title {
     font-family: $font-family-heading;
     font-weight: 800;
@@ -157,7 +167,10 @@
 }
 
 .logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2rem 0;
 }

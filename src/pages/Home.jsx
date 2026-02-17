@@ -1,10 +1,28 @@
 import { Link } from 'react-router-dom';
+import CountUp from 'react-countup';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import Hero from '../components/sections/Hero';
 import SectionHeader from '../components/sections/SectionHeader';
+
+function StatListItem({ number, label }) {
+  const [ref, isVisible] = useScrollAnimation(0.3);
+  const numericValue = parseFloat(number.replace(/[^0-9.]/g, '')) || 0;
+  const hasDecimal = number.replace(/[^0-9.]/g, '').includes('.');
+  const suffix = number.replace(/[0-9.,]/g, '');
+
+  return (
+    <div className="stat-list__item" ref={ref}>
+      <span className="stat-list__number">
+        {isVisible ? (
+          <CountUp end={numericValue} duration={2.5} separator="," decimals={hasDecimal ? 1 : 0} suffix={suffix} />
+        ) : '0'}
+      </span>
+      <span className="stat-list__label">{label}</span>
+    </div>
+  );
+}
 import FeatureCard from '../components/sections/FeatureCard';
 import ServiceCard from '../components/sections/ServiceCard';
-import StatCard from '../components/sections/StatCard';
-import TestimonialCard from '../components/sections/TestimonialCard';
 import ResourceCard from '../components/sections/ResourceCard';
 import LogoGrid from '../components/sections/LogoGrid';
 import AnimatedSection from '../components/sections/AnimatedSection';
@@ -14,81 +32,86 @@ import managedSecImage from '../assets/images/managed_Sec.jpeg';
 
 const features = [
   {
-    icon: 'bi-shield-check',
+    icon: 'bi-people',
     title: 'Highly-Trained',
-    description: '50%+ tenured engineers, architects, and consultants with deep domain expertise.',
+    description: 'More than 50% of our workforce are tenured cybersecurity engineers, architects and consultants.',
   },
   {
-    icon: 'bi-award',
+    icon: 'bi-shield-check',
     title: 'Deep Expertise',
-    description: 'Industry-leading certifications and battle-tested knowledge across all security domains.',
+    description: 'Our experts undergo a rigorous vetting process and have earned hundreds of industry and product certifications.',
   },
   {
-    icon: 'bi-globe',
+    icon: 'bi-search',
     title: 'Vendor Agnostic',
-    description: 'Access to 650+ security technologies — we recommend what fits, not what pays.',
+    description: 'We serve as your single point of contact for 650+ cybersecurity technologies to deliver custom, best-fit solutions.',
   },
 ];
 
 const services = [
-  { icon: 'bi-code-slash', title: 'Application Security', path: '/services/application-security' },
-  { icon: 'bi-robot', title: 'AI Security', path: '/services/ai-security' },
+  { icon: 'bi-diamond', title: 'Application Security', path: '/services/application-security' },
+  { icon: 'bi-cpu', title: 'Artificial Intelligence (AI)', path: '/services/ai-security' },
   { icon: 'bi-cloud', title: 'Cloud Security', path: '/services/cloud-security' },
-  { icon: 'bi-database-lock', title: 'Data Security', path: '/services/data-security' },
+  { icon: 'bi-database', title: 'Data Security', path: '/services/data-security' },
   { icon: 'bi-envelope-check', title: 'Email Security', path: '/services/email-security' },
-  { icon: 'bi-laptop', title: 'Endpoint Security', path: '/services/endpoint-security' },
-  { icon: 'bi-clipboard-check', title: 'GRC', path: '/services/grc' },
-  { icon: 'bi-person-badge', title: 'IAM', path: '/services/iam' },
-  { icon: 'bi-exclamation-triangle', title: 'Incident Response', path: '/services/incident-response' },
+  { icon: 'bi-pencil', title: 'Endpoint Security', path: '/services/endpoint-security' },
+  { icon: 'bi-check2-square', title: 'Governance, Risk & Compliance', path: '/services/grc' },
+  { icon: 'bi-fingerprint', title: 'Identity & Access Management (IAM)', path: '/services/iam' },
+  { icon: 'bi-exclamation-triangle', title: 'Incident Response & Threat Intelligence', path: '/services/incident-response' },
   { icon: 'bi-shield-lock', title: 'Managed Security', path: '/services/managed-security' },
-  { icon: 'bi-hdd-network', title: 'Network Security', path: '/services/network-security' },
-  { icon: 'bi-gear-wide-connected', title: 'OT / IoT Security', path: '/services/ot-security' },
-  { icon: 'bi-mortarboard', title: 'Security Awareness', path: '/services/security-awareness' },
-  { icon: 'bi-display', title: 'SOC Services', path: '/services/soc' },
-  { icon: 'bi-people', title: 'Staff Augmentation', path: '/services/staff-augmentation' },
-  { icon: 'bi-bug', title: 'Pen Testing', path: '/services/vulnerability-management' },
+  { icon: 'bi-hdd-network', title: 'Network & Infrastructure Security', path: '/services/network-security' },
+  { icon: 'bi-gear-wide-connected', title: 'OT Security Services', path: '/services/ot-security' },
+  { icon: 'bi-mortarboard', title: 'Security Awareness & Education', path: '/services/security-awareness' },
+  { icon: 'bi-globe2', title: 'Security Operations Center (SOC)', path: '/services/soc' },
+  { icon: 'bi-person-plus', title: 'Staff Augmentation', path: '/services/staff-augmentation' },
+  { icon: 'bi-activity', title: 'Vulnerability Management & Penetration Testing', path: '/services/vulnerability-management' },
 ];
 
 const stats = [
-  { number: '4,200+', label: 'Customers Protected' },
-  { number: '50%', label: 'of Fortune 50' },
-  { number: '40%', label: 'of Fortune 500' },
-  { number: '650+', label: 'Security Technologies' },
+  { number: '4,200+', label: 'Customers' },
+  { number: '50%', label: 'of the Fortune 50' },
+  { number: '40%', label: 'of the Fortune 500' },
 ];
 
 const clientLogos = [
-  { src: '/placeholder-resource.svg', alt: 'Client 1' },
-  { src: '/placeholder-resource.svg', alt: 'Client 2' },
-  { src: '/placeholder-resource.svg', alt: 'Client 3' },
-  { src: '/placeholder-resource.svg', alt: 'Client 4' },
-  { src: '/placeholder-resource.svg', alt: 'Client 5' },
-  { src: '/placeholder-resource.svg', alt: 'Client 6' },
+  { src: '/logos/premise-health.svg', alt: 'Premise Health' },
+  { src: '/logos/khovnanian.svg', alt: 'KHovnanian Homes' },
+  { src: '/logos/follett.svg', alt: 'Follett' },
+  { src: '/logos/intelsat.svg', alt: 'Intelsat' },
+  { src: '/logos/sisense.svg', alt: 'Sisense' },
+  { src: '/logos/nuance.svg', alt: 'Nuance' },
 ];
 
 const resources = [
   {
     image: '/placeholder-resource.svg',
-    badge: 'Report',
-    title: 'GRIT 2026 Ransomware & Cyber Threat Report',
-    date: 'Jan 15, 2026',
+    badge: 'Downloads',
+    title: 'GRIT® 2026 Ransomware & Cyber Threat Report',
+    date: 'January 15, 2026',
     link: '/resources/grit-report',
     ctaText: 'Download',
+    viewAllText: 'View All Downloads',
+    viewAllLink: '/resources/downloads',
   },
   {
     image: '/placeholder-resource.svg',
-    badge: 'Event',
-    title: 'Premier Cybersecurity Conference 2026',
+    badge: 'Events',
+    title: 'Premier Cybersecurity Conference',
     date: 'March - November 2026',
     link: '/resources/conference',
     ctaText: 'Learn More',
+    viewAllText: 'View All Events',
+    viewAllLink: '/resources/events',
   },
   {
     image: '/placeholder-resource.svg',
-    badge: 'Webinar',
-    title: 'GRIT 2026 Ransomware Report Webinar',
+    badge: 'Events',
+    title: 'GRIT® 2026 Ransomware & Cyber Threat Report Presentation',
     date: 'January 22, 2026',
     link: '/resources/webinar-grit',
-    ctaText: 'Watch Now',
+    ctaText: 'Download',
+    viewAllText: 'View All Events',
+    viewAllLink: '/resources/events',
   },
 ];
 
@@ -98,12 +121,10 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <Hero
         title="Trusted Cybersecurity Expertise"
-        highlightWord="Cybersecurity"
-        subtitle="We guide your organization through today's complex threat landscape with proven expertise and vendor-agnostic solutions."
+        highlightWord="Trusted"
+        subtitle="We provide organizations with proven expertise, tailored solutions and services to help make better cybersecurity decisions that minimize risk."
         ctaText="Talk to an Expert"
         ctaLink="/contact"
-        secondaryCta="Watch Overview"
-        secondaryCtaLink="/resources"
         bgImage={heroImage}
       />
 
@@ -113,8 +134,11 @@ export default function Home() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <AnimatedSection animation="animate-on-scroll">
             <SectionHeader
-              title="Why Choose Us"
-              subtitle="Dedicated cybersecurity practitioners who live and breathe security every day."
+              label="Why GuidePoint?"
+              title="We Are Your Trusted Advisor"
+              subtitle="Our team guides you through the complex security maze to help you make more informed risk decisions at the speed of business."
+              ctaText="Why GuidePoint?"
+              ctaLink="/about"
               center
             />
           </AnimatedSection>
@@ -132,7 +156,11 @@ export default function Home() {
       <section className="section section--accent home-services">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader title="Our Services" center />
+            <SectionHeader
+              label="Services"
+              title="Expertise Based on Reality - Not Theory"
+              subtitle="Explore our cybersecurity services and solutions across a wide range of vetted technologies:"
+            />
           </AnimatedSection>
           <AnimatedSection animation="stagger-children" className="services-grid">
             {services.map((s) => (
@@ -143,12 +171,34 @@ export default function Home() {
       </section>
 
       {/* ===== SPLIT - MANAGED SECURITY ===== */}
-      <section className="section section--dark">
-        <NetworkBackground variant="dark" nodeCount={35} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <div className="row g-5 align-items-center">
-            <div className="col-lg-6">
+      <section className="section section--light">
+        <div className="container">
+          <div className="row g-5 align-items-center justify-content-between">
+            <div className="col-lg-5">
               <AnimatedSection animation="fade-in-left">
+                <p className="section-header__label">Managed Security Services</p>
+                <h2
+                  className="fw-bold mb-3"
+                  style={{ fontFamily: "'Exo 2', sans-serif", color: '#0f0f27' }}
+                >
+                  Ensure a Stronger Cybersecurity Posture at all Times
+                </h2>
+                <p className="text-muted mb-4" style={{ lineHeight: 1.8 }}>
+                  GPVUE provides you with an integrated program that leverages our
+                  expertise across a wide range of cybersecurity disciplines and is
+                  designed specifically to meet your unique needs over the course of a
+                  year.
+                </p>
+                <Link
+                  to="/services/managed-security"
+                  className="btn btn-accent btn-cta"
+                >
+                  Learn about GPVUE <i className="bi bi-arrow-right"></i>
+                </Link>
+              </AnimatedSection>
+            </div>
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-right">
                 <div className="section-split__image">
                   <img
                     src={managedSecImage}
@@ -158,66 +208,76 @@ export default function Home() {
                 </div>
               </AnimatedSection>
             </div>
-            <div className="col-lg-6">
-              <AnimatedSection animation="fade-in-right">
-                <div className="accent-line"></div>
-                <h2
-                  className="fw-bold mb-3 text-white"
-                  style={{ fontFamily: "'Exo 2', sans-serif" }}
-                >
-                  Integrated Managed Security Program
-                </h2>
-                <p className="text-white-50 mb-4" style={{ lineHeight: 1.8 }}>
-                  A comprehensive annual security program that combines expert guidance,
-                  cutting-edge technology, and quarterly business reviews to keep your
-                  organization ahead of evolving threats.
-                </p>
-                <Link
-                  to="/services/managed-security"
-                  className="btn btn-accent btn-cta"
-                >
-                  Learn More <i className="bi bi-arrow-right"></i>
-                </Link>
-              </AnimatedSection>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* ===== STATS ===== */}
+      {/* ===== TRUST, STATS & TESTIMONIAL ===== */}
       <section className="section section--indigo">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader title="Trusted by Industry Leaders" center />
+            <SectionHeader
+              title="Trusted by Government and Commercial Organizations"
+              subtitle="From security technologies to services, we provide insights and solutions to create an optimized environment that reduces cyber risk."
+              center
+            />
           </AnimatedSection>
-          <AnimatedSection animation="stagger-children" className="stats-row mb-5">
-            {stats.map((s) => (
-              <div key={s.label} className="text-center">
-                <StatCard {...s} />
-              </div>
-            ))}
-          </AnimatedSection>
-          <AnimatedSection animation="scale-in">
+
+          <AnimatedSection animation="scale-in" className="mb-5">
             <LogoGrid logos={clientLogos} />
           </AnimatedSection>
-        </div>
-      </section>
 
-      {/* ===== TESTIMONIAL ===== */}
-      <section className="section section--light">
-        <div className="container">
-          <div className="row justify-content-center">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-4">
+              <AnimatedSection animation="fade-in-left">
+                <div className="stat-list">
+                  {stats.map((s) => (
+                    <StatListItem key={s.label} {...s} />
+                  ))}
+                </div>
+                <Link to="/customers" className="btn btn-accent btn-cta">
+                  View Customers <i className="bi bi-arrow-right"></i>
+                </Link>
+              </AnimatedSection>
+            </div>
             <div className="col-lg-8">
-              <AnimatedSection animation="scale-in">
-                <TestimonialCard
-                  quote="I have a lot of personal trust in this team. Their expertise and responsiveness have been invaluable to our security posture."
-                  author="Joey Johnson"
-                  role="CISO"
-                  company="Premise Health"
-                />
+              <AnimatedSection animation="fade-in-right">
+                <div className="testimonial-featured">
+                  <img
+                    src={heroImage}
+                    alt="Client testimonial"
+                    className="testimonial-featured__image"
+                  />
+                  <div className="testimonial-featured__overlay">
+                    <p className="testimonial-featured__quote">
+                      &ldquo;I have a lot of personal trust in GuidePoint Security.&rdquo;
+                    </p>
+                    <p className="testimonial-featured__author">Joey Johnson, CISO, Premise Health</p>
+                  </div>
+                </div>
               </AnimatedSection>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ===== CTA BANNER ===== */}
+      <section className="section section--dark">
+        <NetworkBackground variant="dark" nodeCount={40} />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <AnimatedSection animation="scale-in">
+            <div className="cta-banner cta-banner--decorated">
+              <div className="cta-banner__overlay">
+                <h2 className="cta-banner__title">Be Informed &amp;<br />Reduce Your Risk</h2>
+                <p className="cta-banner__text">
+                  Better protect your organization with our unmatched expertise and proven approach to cybersecurity.
+                </p>
+                <Link to="/contact" className="btn btn-accent btn-cta">
+                  Talk to an Expert <i className="bi bi-arrow-right"></i>
+                </Link>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -225,40 +285,44 @@ export default function Home() {
       <section className="section section--indigo">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader title="Latest Resources" center />
+            <div className="d-flex justify-content-between align-items-center mb-4">
+              <h2 className="section-header__title mb-0">Additional Resources</h2>
+              <Link to="/resources" className="text-white text-decoration-none fw-500">
+                View All <i className="bi bi-chevron-right"></i>
+              </Link>
+            </div>
+            <div className="accent-line"></div>
           </AnimatedSection>
           <AnimatedSection animation="stagger-children" className="row g-4">
             {resources.map((r) => (
               <div className="col-md-4" key={r.title}>
                 <ResourceCard {...r} />
+                <Link to={r.viewAllLink} className="d-block mt-3 text-white-50 text-decoration-none small">
+                  {r.viewAllText} <i className="bi bi-chevron-right"></i>
+                </Link>
               </div>
             ))}
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ===== CTA BANNER ===== */}
+      {/* ===== FINAL CTA ===== */}
       <section className="section section--dark text-center">
         <NetworkBackground variant="dark" nodeCount={50} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <AnimatedSection animation="animate-on-scroll">
             <h2
               className="fw-bold mb-3 text-white"
-              style={{ fontFamily: "'Exo 2', sans-serif" }}
+              style={{ fontFamily: "'Exo 2', sans-serif", fontSize: 'clamp(2rem, 4vw, 3rem)' }}
             >
-              Ready to Secure Your Organization?
+              Be Informed + Reduce Risk
             </h2>
-            <p className="text-white-50 mb-4 mx-auto" style={{ maxWidth: 500 }}>
-              Connect with our cybersecurity experts today and discover how we can strengthen your defenses.
+            <p className="text-white-50 mb-4 mx-auto" style={{ maxWidth: 600 }}>
+              Better protect your organization with our unmatched expertise and proven approach to cybersecurity.
             </p>
-            <div className="d-flex justify-content-center gap-3 flex-wrap">
-              <Link to="/contact" className="btn btn-accent btn-lg btn-cta px-4">
-                Talk to an Expert <i className="bi bi-arrow-right"></i>
-              </Link>
-              <Link to="/services" className="btn btn-outline-light btn-lg px-4">
-                Explore Services
-              </Link>
-            </div>
+            <Link to="/contact" className="btn btn-accent btn-lg btn-cta px-4">
+              Talk to an Expert <i className="bi bi-arrow-right"></i>
+            </Link>
           </AnimatedSection>
         </div>
       </section>

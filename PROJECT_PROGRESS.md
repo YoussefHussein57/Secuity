@@ -9,10 +9,11 @@
 - **Framework:** React 19 + Vite 7
 - **Styling:** Bootstrap 5.3 + SCSS (custom design system)
 - **Routing:** React Router v7
-- **Animations:** Intersection Observer + react-countup
+- **Animations:** Intersection Observer + react-countup + CSS keyframes
 - **Icons:** Bootstrap Icons
 - **Fonts:** Inter (body), Exo 2 (headings)
-- **Colors:** Dark Indigo (#0f0f27), Blue (#2563EB), Indigo (#19186e), Dark (#08081a)
+- **Colors:** Dark Primary (#0f0f27), Indigo (#19186e), Dark (#08081a), Gradient Start (#4b4fff), Gradient End (#00ccff)
+- **Deployment:** Vercel — [Live Preview](https://secuity.vercel.app/)
 
 ---
 
@@ -21,10 +22,10 @@
 | Area                  | Status         | Progress |
 |-----------------------|----------------|----------|
 | Project Setup         | DONE           | 100%     |
-| Design System (SCSS)  | DONE           | 100%     |
-| Reusable Components   | DONE           | 100%     |
+| Design System (SCSS)  | DONE (revised) | 100%     |
+| Reusable Components   | DONE (enhanced)| 100%     |
 | Layout (Navbar+Footer)| DONE           | 100%     |
-| Home Page             | DONE           | 100%     |
+| Home Page             | DONE (replicated from GuidePoint) | 100% |
 | Company Page          | BUILT, UNROUTED| 90%      |
 | Services Page         | BUILT, UNROUTED| 90%      |
 | Contact Page          | BUILT, UNROUTED| 90%      |
@@ -35,11 +36,49 @@
 | Technologies Page     | NOT STARTED    | 0%       |
 | Government Page       | NOT STARTED    | 0%       |
 | Report Incident Page  | NOT STARTED    | 0%       |
-| Real Assets/Images    | NOT STARTED    | 0%       |
+| Real Assets/Images    | IN PROGRESS    | 30%      |
 | Backend Integration   | NOT STARTED    | 0%       |
 | SEO & Meta Tags       | NOT STARTED    | 0%       |
 | Testing               | NOT STARTED    | 0%       |
-| Deployment            | NOT STARTED    | 0%       |
+| Deployment            | DONE (Vercel)  | 100%     |
+
+---
+
+## Recent Session Updates
+
+### Color System Overhaul
+- Migrated all visible UI elements from `$accent` (#19186e — invisible on dark backgrounds) to `$gradient-start` (#4b4fff)
+- Updated across: navbar, footer, cards, animations, hero, all section components
+- Icons, hover states, borders, glows, and CTA buttons now use the blue-cyan gradient palette
+
+### Home Page — Full Content Replication (GuidePoint Security)
+All 8 sections on the Home page have been rebuilt to match GuidePoint Security's content and layout:
+
+1. **Hero** — "Trusted Cybersecurity Expertise", single CTA ("Talk to an Expert"), dark gradient fade-left overlay on background image
+2. **Why GuidePoint** — Particles background, label/eyebrow text, 3 feature cards (Highly-Trained, Deep Expertise, Vendor Agnostic), CTA button
+3. **Services Grid** — 16 cybersecurity services in 6-column grid, transparent cards with hover border, cyan icons
+4. **Managed Security** — Light section, text left (col-lg-5) + image right (col-lg-6), GPVUE program content, `justify-content-between`
+5. **Trust, Stats & Testimonial** — Merged section (indigo), client logo row (6 SVGs), vertical stat-list with CountUp animation, featured testimonial image card with gradient overlay
+6. **CTA Banner** — Dark section with particles, CSS-decorated gradient background (no photo), geometric radial shapes
+7. **Resources** — Indigo section, 3 resource cards with "View All" category links
+8. **Final CTA** — Dark section with particles, centered "Be Informed + Reduce Risk" text
+
+### New & Enhanced Components
+- **SectionHeader** — Added `label` (eyebrow text), `ctaText`, and `ctaLink` props
+- **StatListItem** — Inline component with CountUp + useScrollAnimation for vertical stat display
+- **SVG Client Logos** — Created 6 logos in `public/logos/`: premise-health, khovnanian, follett, intelsat, sisense, nuance
+- **CTA Banner decorated variant** — Pure CSS gradient background with radial glows and geometric shapes
+
+### SCSS Enhancements
+- **Angled section dividers** — Rebuilt with `::before` clip-path using adjacent section colors (no white)
+- **Hero fade overlay** — Left-to-right dark gradient via `::after` for text readability
+- **Services grid** — 6-column CSS Grid with responsive breakpoints in `_home.scss`
+- **Card variants** — New `.stat-list`, `.testimonial-featured`, `.cta-banner--decorated`, dark resource card styles
+- **Section variants** — `.section--accent` support added alongside existing dark/indigo/light
+
+### Deployment
+- Deployed to Vercel: [secuity.vercel.app](https://secuity.vercel.app/)
+- More progress to come: API integrations planned
 
 ---
 
@@ -97,11 +136,11 @@
 ### 3.1 Replace Placeholder Images
 - [ ] Logo (`/logo-white.svg`) - actual company logo
 - [ ] Hero background images for each page
-- [ ] Client/partner logos (6 on Home page)
+- [x] Client/partner logos (6 SVGs created in `public/logos/`)
 - [ ] Leadership team photos (4 on Company page)
 - [ ] Award logos (6 on Company page)
 - [ ] Resource thumbnails (6 on Resources page)
-- [ ] Service icons (if using custom SVGs)
+- [x] Service icons (Bootstrap Icons mapped to 16 services)
 - [ ] Favicon and app icons
 
 ### 3.2 Replace Placeholder Content
@@ -190,7 +229,7 @@
 
 - [ ] Environment variables setup (.env)
 - [ ] Build optimization (vite.config.js)
-- [ ] Choose hosting (Vercel, Netlify, AWS, etc.)
+- [x] Choose hosting — **Vercel** ([secuity.vercel.app](https://secuity.vercel.app/))
 - [ ] CI/CD pipeline setup
 - [ ] Domain & SSL configuration
 - [ ] Analytics integration (GA4, etc.)
@@ -219,6 +258,10 @@ src/
 │       ├── LogoGrid.jsx             # Logo grid layout
 │       ├── NetworkBackground.jsx    # Canvas particle animation
 │       └── SplitSection.jsx         # Image + text layout
+├── assets/
+│   └── images/
+│       ├── hero.jpeg                # Hero background
+│       └── managed_Sec.jpeg         # Managed security section
 ├── hooks/
 │   └── useScrollAnimation.js        # IntersectionObserver hook
 ├── layouts/
@@ -247,7 +290,7 @@ src/
 | Component | Key Props |
 |-----------|-----------|
 | `Hero` | `title, highlightWord, subtitle, ctaText, ctaLink, secondaryCta{text,link}, bgImage, variant` |
-| `SectionHeader` | `title, subtitle, center` |
+| `SectionHeader` | `label, title, subtitle, center, ctaText, ctaLink` |
 | `AnimatedSection` | `animation('fade-up'|'fade-left'|'fade-right'|'scale-in'), className` |
 | `FeatureCard` | `icon, title, description` |
 | `ServiceCard` | `icon, title, path` |

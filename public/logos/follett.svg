@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50">
+  <circle cx="18" cy="25" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M12 25 Q18 18 24 25 Q18 32 12 25" fill="#ffffff"/>
+  <text x="38" y="32" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="1">Follett</text>
+</svg>
