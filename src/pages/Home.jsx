@@ -1,77 +1,32 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import CountUp from 'react-countup';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import Hero from '../components/sections/Hero';
 import SectionHeader from '../components/sections/SectionHeader';
-
-function StatListItem({ number, label }) {
-  const [ref, isVisible] = useScrollAnimation(0.3);
-  const numericValue = parseFloat(number.replace(/[^0-9.]/g, '')) || 0;
-  const hasDecimal = number.replace(/[^0-9.]/g, '').includes('.');
-  const suffix = number.replace(/[0-9.,]/g, '');
-
-  return (
-    <div className="stat-list__item" ref={ref}>
-      <span className="stat-list__number">
-        {isVisible ? (
-          <CountUp end={numericValue} duration={2.5} separator="," decimals={hasDecimal ? 1 : 0} suffix={suffix} />
-        ) : '0'}
-      </span>
-      <span className="stat-list__label">{label}</span>
-    </div>
-  );
-}
 import FeatureCard from '../components/sections/FeatureCard';
-import ServiceCard from '../components/sections/ServiceCard';
 import ResourceCard from '../components/sections/ResourceCard';
 import LogoGrid from '../components/sections/LogoGrid';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import NetworkBackground from '../components/sections/NetworkBackground';
 import BeInformed from '../components/sections/BeInformed';
+import { servicesList } from '../data/services';
 import heroImage from '../assets/images/hero.jpeg';
-import managedSecImage from '../assets/images/managed_Sec.jpeg';
 
 const features = [
   {
-    icon: 'bi-people',
-    title: 'Highly-Trained',
-    description: 'More than 50% of our workforce are tenured cybersecurity engineers, architects and consultants.',
+    icon: 'bi-person-badge',
+    title: 'Extensive, Unrivaled Expertise',
+    description: 'Our highly trained experts empower you with the insight, access, guidance and support to make more informed decisions and strengthen your security posture. We help set security strategy, and with product evaluation and selection, implementation, optimization and management to maximize the value of your technology investments.',
   },
   {
-    icon: 'bi-shield-check',
-    title: 'Deep Expertise',
-    description: 'Our experts undergo a rigorous vetting process and have earned hundreds of industry and product certifications.',
+    icon: 'bi-bullseye',
+    title: 'Comprehensive, Adaptable Solutions',
+    description: 'We put 800+ technology vendors (best-in-class and emerging) through a rigorous vetting process to ensure we know how they solve real customer challenges for you. As your trusted advisor, we take a vendor-objective approach to ensure you have the best-fit solution for your unique requirements.',
   },
   {
-    icon: 'bi-search',
-    title: 'Vendor Agnostic',
-    description: 'We serve as your single point of contact for 650+ cybersecurity technologies to deliver custom, best-fit solutions.',
+    icon: 'bi-diagram-3',
+    title: 'Strategic, Relationship-Powered Approach',
+    description: 'We grew our business on a trusted relationship framework. We provide personalized, local touch and support backed by national strength. We stand by our clients no matter where you are in your cyber journey and deliver objective strategies shaped by what you need vs. what\'s easy.',
   },
-];
-
-const services = [
-  { icon: 'bi-diamond', title: 'Application Security', path: '/services/application-security' },
-  { icon: 'bi-cpu', title: 'Artificial Intelligence (AI)', path: '/services/ai-security' },
-  { icon: 'bi-cloud', title: 'Cloud Security', path: '/services/cloud-security' },
-  { icon: 'bi-database', title: 'Data Security', path: '/services/data-security' },
-  { icon: 'bi-envelope-check', title: 'Email Security', path: '/services/email-security' },
-  { icon: 'bi-pencil', title: 'Endpoint Security', path: '/services/endpoint-security' },
-  { icon: 'bi-check2-square', title: 'Governance, Risk & Compliance', path: '/services/grc' },
-  { icon: 'bi-fingerprint', title: 'Identity & Access Management (IAM)', path: '/services/iam' },
-  { icon: 'bi-exclamation-triangle', title: 'Incident Response & Threat Intelligence', path: '/services/incident-response' },
-  { icon: 'bi-shield-lock', title: 'Managed Security', path: '/services/managed-security' },
-  { icon: 'bi-hdd-network', title: 'Network & Infrastructure Security', path: '/services/network-security' },
-  { icon: 'bi-gear-wide-connected', title: 'OT Security Services', path: '/services/ot-security' },
-  { icon: 'bi-mortarboard', title: 'Security Awareness & Education', path: '/services/security-awareness' },
-  { icon: 'bi-globe2', title: 'Security Operations Center (SOC)', path: '/services/soc' },
-  { icon: 'bi-person-plus', title: 'Staff Augmentation', path: '/services/staff-augmentation' },
-  { icon: 'bi-activity', title: 'Vulnerability Management & Penetration Testing', path: '/services/vulnerability-management' },
-];
-
-const stats = [
-  { number: '4,200+', label: 'Customers' },
-  { number: '50%', label: 'of the Fortune 50' },
-  { number: '40%', label: 'of the Fortune 500' },
 ];
 
 const clientLogos = [
@@ -86,45 +41,95 @@ const clientLogos = [
 const resources = [
   {
     image: '/placeholder-resource.svg',
-    badge: 'Downloads',
-    title: 'GRIT® 2026 Ransomware & Cyber Threat Report',
-    date: 'January 15, 2026',
-    link: '/resources/grit-report',
+    badge: 'Datasheet',
+    title: 'Cyber Security Overview',
+    link: '/resources/overview',
     ctaText: 'Download',
-    viewAllText: 'View All Downloads',
-    viewAllLink: '/resources/downloads',
+    viewAllText: 'View All Datasheets',
+    viewAllLink: '/resources/datasheets',
   },
   {
     image: '/placeholder-resource.svg',
-    badge: 'Events',
-    title: 'Premier Cybersecurity Conference',
-    date: 'March - November 2026',
-    link: '/resources/conference',
-    ctaText: 'Learn More',
-    viewAllText: 'View All Events',
-    viewAllLink: '/resources/events',
+    badge: 'Whitepaper',
+    title: 'Breaking the Tool Acquisition Cycle: How to Escape Security Tool Sprawl Through Strategic Consolidation',
+    link: '/resources/tool-acquisition',
+    ctaText: 'Download',
+    viewAllText: 'View All Whitepapers',
+    viewAllLink: '/resources/whitepapers',
   },
   {
     image: '/placeholder-resource.svg',
-    badge: 'Events',
-    title: 'GRIT® 2026 Ransomware & Cyber Threat Report Presentation',
-    date: 'January 22, 2026',
-    link: '/resources/webinar-grit',
+    badge: 'eBook',
+    title: 'A Day in the Life of Operational Technology Security',
+    link: '/resources/ot-ebook',
     ctaText: 'Download',
-    viewAllText: 'View All Events',
-    viewAllLink: '/resources/events',
+    viewAllText: 'View All eBooks',
+    viewAllLink: '/resources/ebooks',
+  },
+  {
+    image: '/placeholder-resource.svg',
+    badge: 'Video',
+    title: 'A Day in the Life: Threat Actor Communications',
+    link: '/resources/threat-actor-video',
+    ctaText: 'Watch Now',
+    viewAllText: 'View All Videos',
+    viewAllLink: '/resources/videos',
   },
 ];
+
+function ServiceAccordion({ services }) {
+  const [openIndex, setOpenIndex] = useState(null);
+  const half = Math.ceil(services.length / 2);
+  const leftCol = services.slice(0, half);
+  const rightCol = services.slice(half);
+
+  const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
+
+  const renderItem = (s, i) => {
+    const isOpen = openIndex === i;
+    return (
+      <div className={`service-accordion__item ${isOpen ? 'service-accordion__item--open' : ''}`} key={s.title}>
+        <button className="service-accordion__header" onClick={() => toggle(i)}>
+          <span className="service-accordion__icon">
+            <i className={`bi ${s.icon}`}></i>
+          </span>
+          <span className="service-accordion__title">{s.title}</span>
+          <span className="service-accordion__toggle">
+            <i className={`bi ${isOpen ? 'bi-x' : 'bi-plus'}`}></i>
+          </span>
+        </button>
+        <div className={`service-accordion__body ${isOpen ? 'service-accordion__body--open' : ''}`}>
+          <p>{s.description}</p>
+          <Link to={s.path} className="btn btn-outline-light btn-sm">
+            Read More
+          </Link>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="row g-4">
+      <div className="col-lg-6">
+        {leftCol.map((s, i) => renderItem(s, i))}
+      </div>
+      <div className="col-lg-6">
+        {rightCol.map((s, i) => renderItem(s, i + half))}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
     <>
       {/* ===== HERO ===== */}
       <Hero
-        title="Trusted Cybersecurity Expertise"
-        highlightWord="Trusted"
-        subtitle="We provide organizations with proven expertise, tailored solutions and services to help make better cybersecurity decisions that minimize risk."
-        ctaText="Talk to an Expert"
+        title="Stronger Together. Protecting What's Next."
+        highlightWord="Stronger Together."
+        highlightStyle="gradient"
+        subtitle="When you're responsible for keeping your organization's people, data and operations safe, you need a partner you can count on. We bring together strategic partnerships, deep expertise and smart technology to protect what matters most."
+        ctaText="Talk with an Expert"
         ctaLink="/contact"
         bgImage={heroImage}
       />
@@ -135,11 +140,9 @@ export default function Home() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <AnimatedSection animation="animate-on-scroll">
             <SectionHeader
-              label="Why GuidePoint?"
-              title="We Are Your Trusted Advisor"
-              subtitle="Our team guides you through the complex security maze to help you make more informed risk decisions at the speed of business."
-              ctaText="Why GuidePoint?"
-              ctaLink="/about"
+              label="Why Cyber"
+              title="Your Cybersecurity is Our Mission"
+              subtitle="Our team guides you through the complex cybersecurity landscape to help you make more informed risk decisions at the speed of business."
               center
             />
           </AnimatedSection>
@@ -150,156 +153,106 @@ export default function Home() {
               </div>
             ))}
           </AnimatedSection>
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mt-5">
+              <Link to="/company" className="btn btn-accent btn-lg btn-cta px-4">
+                Why Cyber
+              </Link>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
-      {/* ===== SERVICES GRID ===== */}
-      <section className="section section--accent home-services">
+      {/* ===== SERVICES LIST ===== */}
+      <section className="section section--dark home-services-list">
+                <NetworkBackground variant="dark" nodeCount={40} />
+
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <SectionHeader
-              label="Services"
-              title="Expertise Based on Reality - Not Theory"
-              subtitle="Explore our cybersecurity services and solutions across a wide range of vetted technologies:"
+              label="Services & Technologies"
+              title="Your Single Point of Contact for Cybersecurity Expertise"
+              center
             />
           </AnimatedSection>
-          <AnimatedSection animation="stagger-children" className="services-grid">
-            {services.map((s) => (
-              <ServiceCard key={s.title} {...s} />
-            ))}
+          <AnimatedSection animation="animate-on-scroll">
+            <ServiceAccordion services={servicesList} />
           </AnimatedSection>
         </div>
       </section>
-
-      {/* ===== SPLIT - MANAGED SECURITY ===== */}
-      <section className="section section--light">
-        <div className="container">
-          <div className="row g-5 align-items-center justify-content-between">
-            <div className="col-lg-5">
-              <AnimatedSection animation="fade-in-left">
-                <p className="section-header__label">Managed Security Services</p>
-                <h2
-                  className="fw-bold mb-3"
-                  style={{ fontFamily: "'Exo 2', sans-serif", color: '#0f0f27' }}
-                >
-                  Ensure a Stronger Cybersecurity Posture at all Times
-                </h2>
-                <p className="text-muted mb-4" style={{ lineHeight: 1.8 }}>
-                  GPVUE provides you with an integrated program that leverages our
-                  expertise across a wide range of cybersecurity disciplines and is
-                  designed specifically to meet your unique needs over the course of a
-                  year.
-                </p>
-                <Link
-                  to="/services/managed-security"
-                  className="btn btn-accent btn-cta"
-                >
-                  Learn about GPVUE <i className="bi bi-arrow-right"></i>
-                </Link>
-              </AnimatedSection>
-            </div>
-            <div className="col-lg-6">
-              <AnimatedSection animation="fade-in-right">
-                <div className="section-split__image">
-                  <img
-                    src={managedSecImage}
-                    alt="Managed Security Program"
-                    className="rounded-4 w-100"
-                  />
-                </div>
-              </AnimatedSection>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== TRUST, STATS & TESTIMONIAL ===== */}
+            {/* ===== TRUSTED BY ===== */}
       <section className="section section--indigo">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader
-              title="Trusted by Government and Commercial Organizations"
-              subtitle="From security technologies to services, we provide insights and solutions to create an optimized environment that reduces cyber risk."
-              center
-            />
+            <div className="text-center mb-5">
+              <h2 className="trusted-title">
+                Trusted by 5,500+ Businesses &amp; Government Agencies
+              </h2>
+              <p className="trusted-subtitle">
+                Since 2011, we&rsquo;ve helped organizations like yours stay ahead of advanced
+                threats, reduce risk and protect what matters most. Our customers span
+                small and mid-sized businesses, global enterprises and government
+                agencies across nearly every major industry.
+              </p>
+              <p className="trusted-explore">Explore their stories.</p>
+            </div>
           </AnimatedSection>
 
           <AnimatedSection animation="scale-in" className="mb-5">
             <LogoGrid logos={clientLogos} />
           </AnimatedSection>
 
-          <div className="row g-5 align-items-center">
-            <div className="col-lg-4">
-              <AnimatedSection animation="fade-in-left">
-                <div className="stat-list">
-                  {stats.map((s) => (
-                    <StatListItem key={s.label} {...s} />
-                  ))}
+          <AnimatedSection animation="fade-in-up">
+            <div className="testimonial-video">
+              <img
+                src={heroImage}
+                alt="Joey Johnson testimonial"
+                className="testimonial-video__image"
+              />
+              <div className="testimonial-video__overlay">
+                <div className="testimonial-video__play">
+                  <i className="bi bi-play-circle"></i>
                 </div>
-                <Link to="/customers" className="btn btn-accent btn-cta">
-                  View Customers <i className="bi bi-arrow-right"></i>
-                </Link>
-              </AnimatedSection>
-            </div>
-            <div className="col-lg-8">
-              <AnimatedSection animation="fade-in-right">
-                <div className="testimonial-featured">
-                  <img
-                    src={heroImage}
-                    alt="Client testimonial"
-                    className="testimonial-featured__image"
-                  />
-                  <div className="testimonial-featured__overlay">
-                    <p className="testimonial-featured__quote">
-                      &ldquo;I have a lot of personal trust in GuidePoint Security.&rdquo;
-                    </p>
-                    <p className="testimonial-featured__author">Joey Johnson, CISO, Premise Health</p>
-                  </div>
+                <div className="testimonial-video__content">
+                  <p className="testimonial-video__quote">
+                    &ldquo;I have a lot of personal trust in Cyber Security.&rdquo;
+                  </p>
+                  <p className="testimonial-video__watch">Watch the Video &gt;</p>
+                  <p className="testimonial-video__author">Joey Johnson, CISO, Premise Health</p>
                 </div>
-              </AnimatedSection>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== CTA BANNER ===== */}
-      <section className="section section--dark">
-        <NetworkBackground variant="dark" nodeCount={40} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <AnimatedSection animation="scale-in">
-            <div className="cta-banner cta-banner--decorated">
-              <div className="cta-banner__overlay">
-                <h2 className="cta-banner__title">Be Informed &amp;<br />Reduce Your Risk</h2>
-                <p className="cta-banner__text">
-                  Better protect your organization with our unmatched expertise and proven approach to cybersecurity.
-                </p>
-                <Link to="/contact" className="btn btn-accent btn-cta">
-                  Talk to an Expert <i className="bi bi-arrow-right"></i>
-                </Link>
               </div>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mt-5">
+              <Link to="/company" className="btn btn-accent btn-lg btn-cta px-4">
+                Meet Our Customers
+              </Link>
             </div>
           </AnimatedSection>
         </div>
       </section>
 
       {/* ===== RESOURCES ===== */}
-      <section className="section section--indigo">
+      <section className="section section--indigo home-resources">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
-            <div className="d-flex justify-content-between align-items-center mb-4">
-              <h2 className="section-header__title mb-0">Additional Resources</h2>
-              <Link to="/resources" className="text-white text-decoration-none fw-500">
-                View All <i className="bi bi-chevron-right"></i>
+            <div className="d-flex justify-content-between align-items-end mb-4">
+              <div>
+                <h2 className="trusted-title mb-0">Additional Resources</h2>
+              </div>
+              <Link to="/resources" className="text-white text-decoration-none fw-600">
+                View All &gt;
               </Link>
             </div>
-            <div className="accent-line"></div>
           </AnimatedSection>
           <AnimatedSection animation="stagger-children" className="row g-4">
             {resources.map((r) => (
-              <div className="col-md-4" key={r.title}>
+              <div className="col-lg-3 col-md-6 mt-5" key={r.title}>
                 <ResourceCard {...r} />
-                <Link to={r.viewAllLink} className="d-block mt-3 text-white-50 text-decoration-none small">
-                  {r.viewAllText} <i className="bi bi-chevron-right"></i>
+                <Link to={r.viewAllLink} className="d-block mt-3 text-white text-decoration-underline small fw-600">
+                  {r.viewAllText} &gt;
                 </Link>
               </div>
             ))}

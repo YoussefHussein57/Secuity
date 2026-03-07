@@ -1,216 +1,265 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { useState } from 'react';
-import CountUp from 'react-countup';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+// import { useState } from 'react';
 import Hero from '../components/sections/Hero';
-import SectionHeader from '../components/sections/SectionHeader';
+// import SectionHeader from '../components/sections/SectionHeader';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import NetworkBackground from '../components/sections/NetworkBackground';
-import FeatureCard from '../components/sections/FeatureCard';
+// import FeatureCard from '../components/sections/FeatureCard';
 import services from '../data/services';
-import BeInformed from '../components/sections/BeInformed';
+// import BeInformed from '../components/sections/BeInformed';
 
-function AnimatedStat({ number, label, color = 'text-white' }) {
-  const [ref, isVisible] = useScrollAnimation(0.3);
-  const numericValue = parseFloat(number.replace(/[^0-9.]/g, '')) || 0;
-  const hasDecimal = number.replace(/[^0-9.]/g, '').includes('.');
-  const suffix = number.replace(/[0-9.,]/g, '');
-
-  return (
-    <div ref={ref}>
-      <h2
-        className={`fw-bold ${color} mb-1`}
-        style={{ fontFamily: "'Exo 2', sans-serif", fontSize: 'clamp(2rem, 4vw, 3rem)' }}
-      >
-        {isVisible ? (
-          <CountUp end={numericValue} duration={2.5} separator="," decimals={hasDecimal ? 1 : 0} suffix={suffix} />
-        ) : '0'}
-      </h2>
-      <p className="text-white-50 mb-0">{label}</p>
-    </div>
-  );
-}
-
-const tabs = ['Strategic', 'Tactical', 'Managed'];
 
 export default function ServiceDetail() {
   const { slug } = useParams();
-  const [activeTab, setActiveTab] = useState('Strategic');
+  // const [activeTab, setActiveTab] = useState('Strategic');
   const service = services[slug];
 
   if (!service) return <Navigate to="/404" replace />;
 
-  const tabData = {
-    Strategic: service.strategic,
-    Tactical: service.tactical,
-    Managed: service.managed,
-  };
+  // const tabData = {
+  //   Strategic: service.strategic,
+  //   Tactical: service.tactical,
+  //   Managed: service.managed,
+  // };
 
   return (
     <>
       {/* 1. Hero */}
       <Hero
-        title={service.title}
-        subtitle={service.tagline}
-        ctaText="Talk to an Expert"
+        label={service.title}
+        title={service.tagline}
+        highlightWord={service.heroHighlight}
+        highlightStyle="box"
+        subtitle={service.description}
+        ctaText={`Secure Your ${service.title.split(' ')[0]}`}
         ctaLink="/contact"
-        variant="page"
+        bgImage={service.heroImage}
+        variant="service"
       />
 
-      {/* 2. Problem Stats */}
-      <section className="section section--indigo">
-        <div className="container">
-          <AnimatedSection animation="stagger-children" className="row g-4 text-center">
-            {service.stats.map((s) => (
-              <div className="col-md-4" key={s.label}>
-                <AnimatedStat number={s.number} label={s.label} />
+      {/* 2. Use Cases */}
+      {service.useCases && (
+        <section className="section section--indigo">
+          <div className="container">
+            <AnimatedSection animation="animate-on-scroll">
+              <div className="text-center mb-5">
+                <p className="section-header__label">{service.useCases.label}</p>
+                <h2 className="use-cases__title">
+                  {service.useCases.titleHighlight ? (
+                    <>
+                      {service.useCases.title.split(service.useCases.titleHighlight)[0]}
+                      <span className="text-accent-box">{service.useCases.titleHighlight}</span>
+                      {service.useCases.title.split(service.useCases.titleHighlight)[1] || ''}
+                    </>
+                  ) : service.useCases.title}
+                </h2>
+                <p className="text-white-50 mx-auto" style={{ maxWidth: 700, lineHeight: 1.7 }}>
+                  {service.useCases.subtitle}
+                </p>
               </div>
-            ))}
-          </AnimatedSection>
-        </div>
-      </section>
+            </AnimatedSection>
+            <AnimatedSection animation="stagger-children" className="row g-4 justify-content-center">
+              {service.useCases.items.map((item) => (
+                <div className="col-lg-4 col-md-6" key={item}>
+                  <div className="use-case-card">
+                    <p className="use-case-card__text">{item}</p>
+                  </div>
+                </div>
+              ))}
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
 
-      {/* 3. Overview */}
-      <section className="section section--light">
+      {/* 3. Overview — text left, image right */}
+      <section className="section section--dark dark-split">
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-left">
-                <p className="section-header__label">Overview</p>
-                <h2
-                  className="fw-bold mb-3"
-                  style={{ fontFamily: "'Exo 2', sans-serif", color: '#0f0f27' }}
-                >
-                  {service.title}
-                </h2>
-                <p className="text-muted" style={{ lineHeight: 1.8 }}>
-                  {service.description}
-                </p>
+                <div className="dark-split__text">
+                  <p className="section-header__label">
+                    {service.processSection?.label || `${service.title} Overview`}
+                  </p>
+                  <h2 className="use-cases__title text-start">
+                    {service.processSection?.titleHighlight ? (
+                      <>
+                        {service.processSection.title.split(service.processSection.titleHighlight)[0]}
+                        <span className="text-accent-box">{service.processSection.titleHighlight}</span>
+                        {service.processSection.title.split(service.processSection.titleHighlight)[1] || ''}
+                      </>
+                    ) : (service.processSection?.title || service.title)}
+                  </h2>
+                  <p className="text-white-50" style={{ lineHeight: 1.8 }}>
+                    {service.description}
+                  </p>
+                  <p className="text-white-50" style={{ lineHeight: 1.8 }}>
+                    {service.overview}
+                  </p>
+                </div>
               </AnimatedSection>
             </div>
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-right">
-                <p className="text-muted" style={{ lineHeight: 1.8 }}>
-                  {service.overview}
-                </p>
+                <div className="dark-split__image">
+                  <img src="/overview-icon.png" alt={`${service.title} overview`} />
+                </div>
               </AnimatedSection>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4. Service Tabs — Strategic | Tactical | Managed */}
-      <section className="section section--dark">
-        <NetworkBackground variant="dark" nodeCount={35} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader
-              label="What We Deliver"
-              title="Our Approach"
-              subtitle="Comprehensive services across strategic, tactical, and managed engagements."
-              center
-            />
-          </AnimatedSection>
-
-          <div className="d-flex justify-content-center gap-2 mb-5">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`btn btn-sm px-4 ${
-                  activeTab === tab
-                    ? 'btn-accent'
-                    : 'btn-outline-light'
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
+      {/* 3b. Process — image left, text right */}
+      <section className="section section--dark dark-split">
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6 order-lg-1 order-2">
+              <AnimatedSection animation="fade-in-left">
+                <div className="dark-split__image">
+                  <img src="/overview-icon-left.png" alt={`${service.title} process`} />
+                </div>
+              </AnimatedSection>
+            </div>
+            <div className="col-lg-6 order-lg-2 order-1">
+              <AnimatedSection animation="fade-in-right">
+                <div className="dark-split__text">
+                  <p className="section-header__label">
+                    {service.processSection?.label || `${service.title} Process`}
+                  </p>
+                  <h2 className="use-cases__title text-start">
+                    {service.processSection?.titleHighlight ? (
+                      <>
+                        {service.processSection.title.split(service.processSection.titleHighlight)[0]}
+                        <span className="text-accent-box">{service.processSection.titleHighlight}</span>
+                        {service.processSection.title.split(service.processSection.titleHighlight)[1] || ''}
+                      </>
+                    ) : (service.processSection?.title || service.title)}
+                  </h2>
+                  <p className="text-white-50" style={{ lineHeight: 1.8 }}>
+                    {service.processSection?.description || service.description}
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
-
-          <AnimatedSection animation="stagger-children" className="row g-4" key={activeTab}>
-            {tabData[activeTab]?.map((item) => (
-              <div className="col-md-6 col-lg-4" key={item.title}>
-                <FeatureCard
-                  icon="bi-check2-circle"
-                  title={item.title}
-                  description={item.description}
-                />
-              </div>
-            ))}
-          </AnimatedSection>
         </div>
       </section>
 
-      {/* 5. Outcomes */}
+      {/* 3c. Checklist Cards */}
+      {service.processSection?.checklist && (
+        <section className="section section--dark" style={{ paddingTop: '2rem' }}>
+          <div className="container">
+            <AnimatedSection animation="stagger-children" className="row g-4 justify-content-center">
+              {[0, 1].map((colIdx) => (
+                <div className="col-lg-6" key={colIdx}>
+                  <div className="checklist-card">
+                    {service.processSection.checklist
+                      .filter((_, i) => (colIdx === 0 ? i < Math.ceil(service.processSection.checklist.length / 2) : i >= Math.ceil(service.processSection.checklist.length / 2)))
+                      .map((item) => (
+                        <div className="checklist-card__item" key={item}>
+                          <i className="bi bi-check-circle-fill"></i>
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              ))}
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
+
+      {/* 3d. Experience — text left, image right */}
+      <section className="section section--dark dark-split">
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-left">
+                <div className="dark-split__text">
+                  <p className="section-header__label">
+                    {service.experienceSection?.label || `${service.title} Experience`}
+                  </p>
+                  <h2 className="use-cases__title text-start">
+                    {service.experienceSection?.titleHighlight ? (
+                      <>
+                        {service.experienceSection.title.split(service.experienceSection.titleHighlight)[0]}
+                        <span className="text-accent-box">{service.experienceSection.titleHighlight}</span>
+                        {service.experienceSection.title.split(service.experienceSection.titleHighlight)[1] || ''}
+                      </>
+                    ) : (service.experienceSection?.title || service.title)}
+                  </h2>
+                  <p className="text-white-50 mb-4" style={{ lineHeight: 1.8 }}>
+                    {service.experienceSection?.description || service.overview}
+                  </p>
+                  {service.experienceSection?.description2 && (
+                    <p className="text-white-50" style={{ lineHeight: 1.8 }}>
+                      {service.experienceSection.description2}
+                    </p>
+                  )}
+                </div>
+              </AnimatedSection>
+            </div>
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-right">
+                <div className="dark-split__image">
+                  <img src="/overview-icon-right.png" alt={`${service.title} experience`} />
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* 6. Certifications */}
       <section className="section section--light">
         <div className="container">
-          <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader
-              title="Expected Outcomes"
-              subtitle="Our structured approach delivers measurable results at every stage."
-              center
-            />
-          </AnimatedSection>
-          <AnimatedSection animation="stagger-children" className="row g-4">
-            {service.outcomes.map((o) => (
-              <div className="col-md-6 col-lg-3" key={o.title}>
-                <div className="text-center p-4">
-                  <div
-                    className="d-flex align-items-center justify-content-center mx-auto mb-3"
-                    style={{
-                      width: 72,
-                      height: 72,
-                      borderRadius: '50%',
-                      background: 'rgba(75, 79, 255, 0.1)',
-                      border: '1px solid rgba(75, 79, 255, 0.15)',
-                    }}
-                  >
-                    <i className={`bi ${o.icon}`} style={{ fontSize: '1.75rem', color: '#4b4fff' }}></i>
-                  </div>
-                  <h6 className="fw-bold">{o.title}</h6>
-                  <p className="text-muted small mb-0">{o.description}</p>
-                </div>
-              </div>
-            ))}
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* 6. Why Us */}
-      <section className="section section--indigo">
-        <div className="container">
-          <AnimatedSection animation="animate-on-scroll">
-            <div className="row g-5 align-items-center">
-              <div className="col-lg-6">
-                <p className="section-header__label">Why GuidePoint?</p>
-                <h2 className="text-white fw-bold mb-3" style={{ fontFamily: "'Exo 2', sans-serif" }}>
-                  Trusted by 4,200+ Organizations
+          <div className="row g-5 align-items-start">
+            <div className="col-lg-5">
+              <AnimatedSection animation="fade-in-left">
+                <p className="section-header__label">Cybersecurity Certifications</p>
+                <h2 className="certs__title">
+                  Your <span className="text-accent-box">Elite</span>, Highly-trained Team
                 </h2>
-                <p className="text-white-50" style={{ lineHeight: 1.8 }}>
-                  More than 50% of our workforce are tenured cybersecurity engineers, architects, and consultants.
-                  We serve as your single point of contact for 650+ cybersecurity technologies, delivering custom, best-fit solutions.
+                <p className="text-muted" style={{ lineHeight: 1.8 }}>
+                  More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants.
+                  We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.
                 </p>
                 <Link to="/company" className="btn btn-accent btn-cta mt-2">
-                  Learn About Us <i className="bi bi-arrow-right"></i>
+                  Why CyberPoint? <i className="bi bi-arrow-right"></i>
                 </Link>
-              </div>
-              <div className="col-lg-6">
-                <AnimatedSection animation="stagger-children" className="row g-3 text-center">
-                  {[
-                    { number: '50%+', label: 'Tenured Engineers' },
-                    { number: '650+', label: 'Security Technologies' },
-                    { number: '4,200+', label: 'Enterprise Customers' },
-                    { number: '40%', label: 'of Fortune 500' },
-                  ].map((s) => (
-                    <div className="col-6" key={s.label}>
-                      <AnimatedStat number={s.number} label={s.label} />
-                    </div>
-                  ))}
-                </AnimatedSection>
-              </div>
+              </AnimatedSection>
             </div>
-          </AnimatedSection>
+            <div className="col-lg-7">
+              <AnimatedSection animation="fade-in-right">
+                <div className="certs-grid">
+                  <h5 className="certs-grid__heading">Highly Trained, Highly Certified</h5>
+                  <p className="certs-grid__subheading">Examples Include:</p>
+                  <div className="certs-grid__group">
+                    <div className="certs-grid__badges">
+                      {['CYSA+', 'CISSP', 'OSCP', 'OSCE'].map((cert) => (
+                        <div className="cert-badge" key={cert}>
+                          <span className="cert-badge__label">{cert}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="certs-grid__category">SANS & ISC2 / Offensive Security</p>
+                  </div>
+                  <div className="certs-grid__group">
+                    <div className="certs-grid__badges">
+                      {['GSE', 'GPEN', 'GWAPT'].map((cert) => (
+                        <div className="cert-badge" key={cert}>
+                          <span className="cert-badge__label">{cert}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="certs-grid__category">Global Information Assurance</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
         </div>
       </section>
 

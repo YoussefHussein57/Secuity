@@ -37,8 +37,12 @@
   overflow: hidden;
 
   .card-img-top {
-    height: 200px;
+    height: 180px;
     object-fit: cover;
+
+    @media (max-width: 575px) {
+      height: 150px;
+    }
   }
 
   &__badge {
@@ -46,6 +50,11 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+  }
+
+  h6 {
+    font-size: 0.85rem;
+    line-height: 1.5;
   }
 }
 
@@ -85,22 +94,25 @@
   .section--dark &,
   .section--indigo &,
   .section--accent & {
-    background: rgba($secondary, 0.4);
-    border: 1px solid rgba($gradient-start, 0.12);
+    background: rgba($secondary, 0.5);
+    border: 1px solid rgba($gradient-start, 0.3);
     border-radius: $border-radius-lg;
     padding: 2.5rem 2rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      border-color: rgba($gradient-start, 0.35);
-      box-shadow: 0 0 24px rgba($gradient-start, 0.08);
+      border-color: rgba($gradient-end, 0.5);
+      box-shadow: 0 0 30px rgba($gradient-start, 0.12);
     }
 
     .card-feature__icon {
-      background: rgba($gradient-start, 0.12);
-      color: $gradient-start;
-      border-color: rgba($gradient-start, 0.25);
-      box-shadow: 0 0 20px rgba($gradient-start, 0.15);
+      background: transparent;
+      color: $gradient-end;
+      border: none;
+      box-shadow: none;
+      font-size: 2.5rem;
+      width: auto;
+      height: auto;
     }
 
     h5 {
@@ -109,6 +121,7 @@
 
     p {
       color: rgba($white, 0.7);
+      font-size: 0.9rem;
     }
   }
 }

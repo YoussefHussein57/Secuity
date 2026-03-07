@@ -101,9 +101,14 @@
 .section--light + .section--light::before { display: none; }
 .section--indigo + .section--indigo::before { display: none; }
 
+// Home — flat transitions, no angled edges
+.home-services-list::before,
+.home-services-list + .section::before,
+.home-resources::before { display: none !important; }
+
 // Hero → section — seamless, no top angle
 .hero + .section::before { display: none; }
-.hero + .section--dark { padding-top: 5rem; }
+.hero + .section--dark { padding-top: 4rem; }
 
 // Hero page clip-path → next section must overlap behind the triangle
 .hero--page + .section {
@@ -182,4 +187,24 @@
   justify-content: center;
   gap: 2.5rem;
   padding: 2rem 0;
+}
+
+// ---- Be Informed CTA Section ----
+.be-informed {
+  &__title {
+    font-family: $font-family-heading;
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    font-weight: 700;
+    color: rgba($white, 0.35);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+  }
+
+  &__subtitle {
+    color: rgba($white, 0.5);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
 }

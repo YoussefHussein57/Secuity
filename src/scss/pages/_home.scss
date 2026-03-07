@@ -1,12 +1,177 @@
 // Home Page
-.home-services .services-grid {
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.25rem;
 
-  @media (max-width: 991px) {
-    grid-template-columns: repeat(3, 1fr);
+// ---- Service Accordion List ----
+.service-accordion {
+  &__item {
+    border-bottom: 1px solid rgba($gradient-start, 0.15);
   }
-  @media (max-width: 575px) {
-    grid-template-columns: repeat(2, 1fr);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.1rem 0;
+    background: none;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    gap: 0.85rem;
+    text-align: left;
+
+    &:hover {
+      color: $gradient-end;
+    }
   }
+
+  &__icon {
+    font-size: 1.25rem;
+    color: $gradient-end;
+    width: 28px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    flex: 1;
+    font-family: $font-family-heading;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  &__toggle {
+    font-size: 1.1rem;
+    color: $gradient-end;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+
+  &__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 0 0 calc(28px + 0.85rem);
+
+    &--open {
+      max-height: 300px;
+      padding-bottom: 1.25rem;
+    }
+
+    p {
+      color: rgba($white, 0.65);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__item--open &__header {
+    color: $white;
+    border-bottom: 1px solid rgba($gradient-end, 0.3);
+    margin-bottom: 0.5rem;
+  }
+
+  &__item--open &__title {
+    color: $white;
+  }
+}
+
+// ---- Trusted By Section ----
+.trusted-title {
+  font-family: $font-family-heading;
+  font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: $white;
+  display: inline-block;
+  padding-bottom: 0.75rem;
+  border-bottom: 4px solid $gradient-start;
+  margin-bottom: 1.5rem;
+}
+
+.trusted-subtitle {
+  color: rgba($white, 0.7);
+  max-width: 640px;
+  margin: 0 auto 0.5rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.trusted-explore {
+  color: rgba($white, 0.7);
+  font-size: 0.95rem;
+}
+
+// ---- Testimonial Video Card ----
+.testimonial-video {
+  position: relative;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba($indigo, 0.75) 0%, rgba($gradient-start, 0.6) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+  }
+
+  &__play {
+    font-size: 2.5rem;
+    color: $gradient-end;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  &__content {
+    text-align: right;
+  }
+
+  &__quote {
+    font-family: $font-family-heading;
+    font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    color: $white;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+
+  &__watch {
+    color: $white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    text-align: left;
+  }
+
+  &__author {
+    color: rgba($white, 0.8);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+
+// ---- Resources section lighter indigo ----
+.home-resources {
+  background-color: $indigo-light !important;
 }

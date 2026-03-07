@@ -5,6 +5,7 @@ import NetworkBackground from './NetworkBackground';
 export default function Hero({
   title,
   highlightWord,
+  highlightStyle = 'box',
   subtitle,
   highlightSubtitleWord,
   label,
@@ -25,20 +26,22 @@ export default function Hero({
   const renderTitle = () => {
     if (!highlightWord) return title;
     const parts = title.split(highlightWord);
+    const className = highlightStyle === 'gradient' ? 'text-accent-gradient' : 'text-accent-box';
     return (
       <>
         {parts[0]}
-        <span className="text-accent-box">{highlightWord}</span>
+        <span className={className}>{highlightWord}</span>
         {parts[1] || ''}
       </>
     );
   };
 
   const isPage = variant === 'page';
+  const variantClass = variant === 'page' ? 'hero--page' : variant === 'service' ? 'hero--service' : '';
 
   return (
     <section
-      className={`hero text-white ${isPage ? 'hero--page' : ''}`}
+      className={`hero text-white ${variantClass}`}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <NetworkBackground />

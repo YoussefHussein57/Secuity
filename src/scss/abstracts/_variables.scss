@@ -8,7 +8,9 @@ $white:         #FFFFFF;
 $dark:          #08081a;   // Near-black indigo
 $secondary:     #1a1a40;   // Medium dark indigo
 $indigo:        #19186e;   // Deep indigo for accent dark sections
-$light:         #c3d9ff;   // Light blue tint
+$indigo-light:  #26248D;   // Lighter indigo variant
+$light:         #C3D9FF;   // Light blue tint
+$light-1:         #eef5ff;   // Light blue tint
 $gray-100:      #F8FAFC;
 $gray-200:      #e2e8f0;
 $gray-500:      #94a3b8;
@@ -46,6 +48,9 @@ $btn-font-weight:      600;
 $box-shadow-sm:  0 2px 8px rgba($primary, 0.08);
 $box-shadow:     0 4px 16px rgba($primary, 0.12);
 $box-shadow-lg:  0 8px 32px rgba($primary, 0.18);
+
+// Hero
+$hero-title-size: 4.5rem;
 
 // Transitions
 $transition-base: all 0.3s ease;

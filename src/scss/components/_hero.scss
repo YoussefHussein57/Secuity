@@ -12,6 +12,19 @@
   position: relative;
   overflow: hidden;
 
+  // Angled bottom edge — matches next section bg
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: $primary;
+    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+    z-index: 2;
+  }
+
   // Left-side dark fade so text reads clearly over the bg image
   &::after {
     content: '';
@@ -30,10 +43,9 @@
 
   &__title {
     font-family: $font-family-heading;
-    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-size: clamp(2.4rem, 4vw, $hero-title-size);
     font-weight: 800;
-    line-height: 1.05;
-    text-transform: uppercase;
+    line-height: 1.1;
     letter-spacing: -0.02em;
 
     .text-accent-box {
@@ -43,14 +55,56 @@
       display: inline-block;
       line-height: 1.1;
     }
+
+    .text-accent-gradient {
+      background: linear-gradient(135deg, $gradient-start, $gradient-end);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
   }
 
   &__subtitle {
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
     font-weight: 300;
     opacity: 0.8;
     max-width: 550px;
     line-height: 1.7;
+  }
+
+  &__label {
+    font-family: $font-family-heading;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: $white;
+    margin-bottom: 0.75rem;
+  }
+
+  // Service variant — angled edge transitions to indigo
+  &--service {
+    min-height: 85vh;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+
+    .hero__title {
+      font-size: clamp(2.2rem, 3.5vw, 3.75rem);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero__subtitle {
+      max-width: 600px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero__label {
+      margin-bottom: 1.25rem;
+    }
+
+    &::before {
+      background: $indigo;
+    }
   }
 
   &--page {
@@ -60,6 +114,11 @@
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
     z-index: 1;
+
+    // Page variant uses clip-path on the element itself, no angled edge needed
+    &::before {
+      display: none;
+    }
 
     // Center the overlay on page heroes
     &::after {
@@ -72,14 +131,5 @@
       margin-right: auto;
     }
 
-    .hero__label {
-      font-family: $font-family-heading;
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: $white;
-      margin-bottom: 0.75rem;
-    }
   }
 }
