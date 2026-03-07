@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Hero from '../components/sections/Hero';
 import SectionHeader from '../components/sections/SectionHeader';
 import ResourceCard from '../components/sections/ResourceCard';
+import BeInformed from '../components/sections/BeInformed';
 
 const resourceTypes = [
   'All',
@@ -30,7 +31,7 @@ const categories = [
 
 const allResources = [
   {
-    image: '/placeholder-resource.jpg',
+    image: '/placeholder-resource.svg',
     badge: 'Report',
     title: 'GRIT 2026 Ransomware & Cyber Threat Report',
     date: 'Jan 15, 2026',
@@ -40,7 +41,7 @@ const allResources = [
     category: 'Incident Response',
   },
   {
-    image: '/placeholder-resource.jpg',
+    image: '/placeholder-resource.svg',
     badge: 'Event',
     title: 'Premier Cybersecurity Conference 2026',
     date: 'March - November 2026',
@@ -50,7 +51,7 @@ const allResources = [
     category: 'All',
   },
   {
-    image: '/placeholder-resource.jpg',
+    image: '/placeholder-resource.svg',
     badge: 'Webinar',
     title: 'GRIT 2026 Ransomware Report Presentation',
     date: 'January 22, 2026',
@@ -60,7 +61,7 @@ const allResources = [
     category: 'Incident Response',
   },
   {
-    image: '/placeholder-resource.jpg',
+    image: '/placeholder-resource.svg',
     badge: 'Whitepaper',
     title: 'Zero Trust Architecture Best Practices',
     date: 'Dec 10, 2025',
@@ -70,7 +71,7 @@ const allResources = [
     category: 'IAM',
   },
   {
-    image: '/placeholder-resource.jpg',
+    image: '/placeholder-resource.svg',
     badge: 'eBook',
     title: 'Cloud Security Playbook 2026',
     date: 'Feb 1, 2026',
@@ -80,7 +81,7 @@ const allResources = [
     category: 'Cloud Security',
   },
   {
-    image: '/placeholder-resource.jpg',
+    image: '/placeholder-resource.svg',
     badge: 'Video',
     title: 'AI-Powered Threat Detection Demo',
     date: 'Jan 28, 2026',
@@ -109,7 +110,7 @@ export default function Resources() {
         variant="page"
       />
 
-      <section className="section">
+      <section className="section section--light">
         <div className="container">
           {/* Filters */}
           <div className="filter-bar row g-3 mb-5">
@@ -161,6 +162,8 @@ export default function Resources() {
           </div>
         </div>
       </section>
+
+      <BeInformed />
     </>
   );
 }

@@ -24,6 +24,7 @@
     }
   }
 
+  // Default dropdown (fallback)
   .dropdown-menu {
     border: none;
     border-radius: $border-radius;
@@ -44,5 +45,164 @@
     background-color: rgba($dark, 0.97) !important;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(12px);
+  }
+}
+
+// ===========================================
+// Mega Menu
+// ===========================================
+
+.mega-dropdown {
+  position: static !important; // mega menu needs to span full width
+}
+
+.mega-menu {
+  width: 100%;
+  border: none !important;
+  border-radius: 0 0 $border-radius-lg $border-radius-lg !important;
+  background: $dark !important;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4) !important;
+  padding: 2rem 0 !important;
+  margin-top: 0 !important;
+  border-top: 2px solid $gradient-start !important;
+
+  // Services variant — 4-column grid
+  &--services {
+    .row {
+      gap: 0;
+    }
+  }
+
+  // Compact variant — Company & Resources
+  &--compact {
+    .row {
+      gap: 0;
+    }
+  }
+
+  // Column heading
+  &__heading {
+    font-family: $font-family-heading;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $gradient-end;
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+  }
+
+  // Service link item
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: $border-radius;
+    color: rgba($white, 0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: rgba($gradient-start, 0.1);
+      color: $white;
+    }
+  }
+
+  &__icon {
+    font-size: 0.9rem;
+    color: $gradient-start;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  // Footer (View All)
+  &__footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba($white, 0.08);
+    text-align: center;
+  }
+
+  &__view-all {
+    color: $gradient-start;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: $font-family-heading;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $gradient-end;
+    }
+  }
+
+  // Card-style items (Company & Resources)
+  &__card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: $border-radius;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: rgba($gradient-start, 0.08);
+    }
+  }
+
+  &__card-icon {
+    font-size: 1.25rem;
+    color: $gradient-start;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  &__card-title {
+    display: block;
+    color: $white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: $font-family-heading;
+  }
+
+  &__card-desc {
+    display: block;
+    color: rgba($white, 0.5);
+    font-size: 0.78rem;
+    margin-top: 2px;
+  }
+}
+
+// Mobile — stack mega menu columns
+@media (max-width: 991.98px) {
+  .mega-menu {
+    position: relative !important;
+    background: rgba($dark, 0.95) !important;
+    box-shadow: none !important;
+    border-top: none !important;
+    padding: 1rem 0 !important;
+
+    .container {
+      padding: 0;
+    }
+
+    .row {
+      flex-direction: column;
+    }
+
+    .col-lg-3,
+    .col-lg-4 {
+      width: 100%;
+      padding: 0;
+    }
+
+    &__heading {
+      margin-top: 0.75rem;
+    }
   }
 }

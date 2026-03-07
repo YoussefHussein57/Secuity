@@ -36,8 +36,12 @@
     text-transform: uppercase;
     letter-spacing: -0.02em;
 
-    .text-accent {
-      color: $gradient-start;
+    .text-accent-box {
+      background: $white;
+      color: $dark;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
     }
   }
 
@@ -51,5 +55,31 @@
 
   &--page {
     min-height: 45vh;
+    padding-top: 100px;
+    padding-bottom: 10rem;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    z-index: 1;
+
+    // Center the overlay on page heroes
+    &::after {
+      background: rgba($dark, 0.6);
+    }
+
+    .hero__subtitle {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero__label {
+      font-family: $font-family-heading;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: $white;
+      margin-bottom: 0.75rem;
+    }
   }
 }

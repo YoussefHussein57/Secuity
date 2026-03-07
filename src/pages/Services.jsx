@@ -1,6 +1,8 @@
 import Hero from '../components/sections/Hero';
 import SectionHeader from '../components/sections/SectionHeader';
 import ServiceCard from '../components/sections/ServiceCard';
+import AnimatedSection from '../components/sections/AnimatedSection';
+import BeInformed from '../components/sections/BeInformed';
 
 const serviceCategories = [
   {
@@ -50,21 +52,25 @@ export default function Services() {
         variant="page"
       />
 
-      {serviceCategories.map((cat) => (
+      {serviceCategories.map((cat, index) => (
         <section
           key={cat.category}
-          className={`section ${serviceCategories.indexOf(cat) % 2 === 1 ? 'section--light' : ''}`}
+          className={`section ${index % 2 === 0 ? 'section--dark' : 'section--indigo'}`}
         >
           <div className="container">
-            <SectionHeader title={cat.category} />
-            <div className="services-grid">
+            <AnimatedSection animation="animate-on-scroll">
+              <SectionHeader title={cat.category} />
+            </AnimatedSection>
+            <AnimatedSection animation="stagger-children" className="services-grid">
               {cat.services.map((s) => (
                 <ServiceCard key={s.title} {...s} />
               ))}
-            </div>
+            </AnimatedSection>
           </div>
         </section>
       ))}
+
+      <BeInformed />
     </>
   );
 }

@@ -22,20 +22,20 @@
   @include section-padding;
   position: relative;
   overflow: hidden;
-  padding-top: 7rem;
+  padding-top: 4rem;
 }
 
 // ---- Dark section ----
 .section--dark {
   background-color: $primary;
   color: $white;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   @include angled-top($primary);
 
   &:last-child {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     &::before { display: none; }
   }
 }
@@ -44,13 +44,13 @@
 .section--indigo {
   background-color: $indigo;
   color: $white;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   @include angled-top($indigo);
 
   &:last-child {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     &::before { display: none; }
   }
 }
@@ -58,8 +58,8 @@
 // ---- Light section ----
 .section--light {
   background-color: $light;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   @include angled-top($light);
 }
 
@@ -67,8 +67,8 @@
 .section--accent {
   background-color: $accent;
   color: $white;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 4%;
   @include angled-top($accent);
 }
 
@@ -98,10 +98,19 @@
 
 // Same type adjacency — no divider needed
 .section--dark + .section--dark::before { display: none; }
+.section--light + .section--light::before { display: none; }
+.section--indigo + .section--indigo::before { display: none; }
 
 // Hero → section — seamless, no top angle
 .hero + .section::before { display: none; }
 .hero + .section--dark { padding-top: 5rem; }
+
+// Hero page clip-path → next section must overlap behind the triangle
+.hero--page + .section {
+  margin-top: -7rem;
+  padding-top: 164px;
+}
+.hero--page + .section::before { display: none; }
 
 // ===========================================
 // Section Header

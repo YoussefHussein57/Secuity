@@ -35,7 +35,7 @@ export default function SplitSection({
   );
 
   return (
-    <section className={`section section-split ${dark ? 'section--dark' : ''}`}>
+    <section className={`section section-split ${dark ? 'section--dark' : 'section--light'}`}>
       <div className="container">
         <div className="row g-5 align-items-center">
           {imageLeft ? (

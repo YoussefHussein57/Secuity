@@ -6,6 +6,8 @@ export default function Hero({
   title,
   highlightWord,
   subtitle,
+  highlightSubtitleWord,
+  label,
   ctaText = 'Talk to an Expert',
   ctaLink = '/contact',
   secondaryCta,
@@ -26,21 +28,35 @@ export default function Hero({
     return (
       <>
         {parts[0]}
-        <span className="text-accent">{highlightWord}</span>
+        <span className="text-accent-box">{highlightWord}</span>
         {parts[1] || ''}
       </>
     );
   };
 
+  const isPage = variant === 'page';
+
   return (
     <section
-      className={`hero text-white ${variant === 'page' ? 'hero--page' : ''}`}
+      className={`hero text-white ${isPage ? 'hero--page' : ''}`}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <NetworkBackground />
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-        <div className="row align-items-center">
-          <div className="col-lg-7">
+        <div className={`row ${isPage ? 'justify-content-center' : 'align-items-center'}`}>
+          <div className={isPage ? 'col-lg-10' : 'col-lg-7'}>
+            {label && (
+              <p
+                className="hero__label"
+                style={{
+                  transition: 'opacity 0.8s ease, transform 0.8s ease',
+                  transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+                  opacity: loaded ? 1 : 0,
+                }}
+              >
+                {label}
+              </p>
+            )}
             <h1
               className={`hero__title mb-4 ${loaded ? '' : 'opacity-0'}`}
               style={{
@@ -52,17 +68,23 @@ export default function Hero({
               {renderTitle()}
             </h1>
             <p
-              className={`hero__subtitle mb-5`}
+              className="hero__subtitle mb-5"
               style={{
                 transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
                 transform: loaded ? 'translateY(0)' : 'translateY(20px)',
                 opacity: loaded ? 0.85 : 0,
               }}
             >
-              {subtitle}
+              {highlightSubtitleWord ? (
+                <>
+                  {subtitle.split(highlightSubtitleWord)[0]}
+                  <span className="text-accent-box">{highlightSubtitleWord}</span>
+                  {subtitle.split(highlightSubtitleWord)[1] || ''}
+                </>
+              ) : subtitle}
             </p>
             <div
-              className="d-flex flex-wrap gap-3"
+              className={`d-flex flex-wrap gap-3 ${isPage ? 'justify-content-center' : ''}`}
               style={{
                 transition: 'opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s',
                 transform: loaded ? 'translateY(0)' : 'translateY(20px)',
