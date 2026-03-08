@@ -1,12 +1,10 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-// import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Hero from '../components/sections/Hero';
-// import SectionHeader from '../components/sections/SectionHeader';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import NetworkBackground from '../components/sections/NetworkBackground';
-// import FeatureCard from '../components/sections/FeatureCard';
+import BeInformed from '../components/sections/BeInformed';
 import services from '../data/services';
-// import BeInformed from '../components/sections/BeInformed';
 
 
 export default function ServiceDetail() {
@@ -263,49 +261,207 @@ export default function ServiceDetail() {
         </div>
       </section>
 
-      {/* 7. Testimonial */}
-      <section className="section section--light">
+      {/* 7. Outcomes */}
+      <section className="section section--dark">
         <div className="container">
-          <AnimatedSection animation="scale-in">
-            <div
-              className="p-5 rounded-4 text-center mx-auto"
-              style={{ maxWidth: 700, borderLeft: '4px solid #4b4fff' }}
-            >
-              <i
-                className="bi bi-quote"
-                style={{ fontSize: '3rem', color: '#4b4fff', lineHeight: 1 }}
-              ></i>
-              <p className="fs-5 fst-italic mb-3" style={{ lineHeight: 1.7 }}>
-                &ldquo;{service.testimonial.quote}&rdquo;
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="outcomes-header py-5">
+              <p className="section-header__label">
+                {service.outcomesSection?.label || `${service.title} Outcomes`}
               </p>
-              <p className="fw-bold mb-0">{service.testimonial.author}</p>
-              <small className="text-muted">{service.testimonial.company}</small>
+              <h2 className="use-cases__title text-start">
+                {service.outcomesSection?.titleHighlight ? (
+                  <>
+                    {service.outcomesSection.title.split(service.outcomesSection.titleHighlight)[0]}
+                    <span className="text-accent-box">{service.outcomesSection.titleHighlight}</span>
+                    {service.outcomesSection.title.split(service.outcomesSection.titleHighlight)[1] || ''}
+                  </>
+                ) : (service.outcomesSection?.title || 'Expected Outcomes')}
+              </h2>
+              <p className="text-white-50" style={{ lineHeight: 1.7 }}>
+                {service.outcomesSection?.subtitle || ''}
+              </p>
             </div>
           </AnimatedSection>
-        </div>
-      </section>
-
-      {/* 8. Contact Form CTA */}
-      <section className="section section--dark text-center">
-        <NetworkBackground variant="dark" nodeCount={40} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <AnimatedSection animation="animate-on-scroll">
-            <h2
-              className="text-white fw-bold mb-3"
-              style={{ fontFamily: "'Exo 2', sans-serif", fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}
-            >
-              Ready to Strengthen Your {service.title}?
-            </h2>
-            <p className="text-white-50 mb-4 mx-auto" style={{ maxWidth: 550 }}>
-              Talk to one of our {service.title.toLowerCase()} experts to discuss your challenges and learn how we can help.
-            </p>
-            <Link to="/contact" className="btn btn-accent btn-lg btn-cta px-4">
-              Talk to an Expert <i className="bi bi-arrow-right"></i>
-            </Link>
+          <AnimatedSection animation="stagger-children" className="row g-4">
+            {service.outcomes.map((o) => (
+              <div className="col-lg-6" key={o.title}>
+                <div className="outcome-card">
+                  <div className="outcome-card__icon">
+                    <i className={`bi ${o.icon}`}></i>
+                  </div>
+                  <div className="outcome-card__content">
+                    <h5 className="outcome-card__title">{o.title}</h5>
+                    <p className="outcome-card__desc">{o.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </AnimatedSection>
         </div>
       </section>
 
+      {/* 8. Trusted Advisor — Testimonial + Contact Form */}
+      <section className="section section--indigo-light">
+        <div className="container">
+          <div className="row g-5 align-items-start">
+            {/* Left — Title + Testimonial */}
+            <div className="col-lg-7">
+              <AnimatedSection animation="fade-in-left">
+                <h2 className="trusted-advisor__title">
+                  Your <span className="text-accent-box">Trusted Advisor</span>
+                </h2>
+                <p className="text-white-50 mb-5">
+                  Our team works side-by-side with you as your cybersecurity partner.
+                </p>
+
+                <div className="testimonial-card">
+                  <div className="testimonial-card__quote-icon">
+                    <i className="bi bi-quote"></i>
+                  </div>
+                  <div className="testimonial-card__body">
+                    <p className="testimonial-card__text">
+                      &ldquo;{service.testimonial.quote}&rdquo;
+                    </p>
+                    <div className="testimonial-card__author">
+                      <div>
+                        <p className="fw-bold mb-0">{service.testimonial.author}</p>
+                        <small className="text-muted">{service.testimonial.company}</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+
+            {/* Right — Contact Form */}
+            <div className="col-lg-5">
+              <AnimatedSection animation="fade-in-right">
+                <div className="contact-form-card">
+                  <div className="contact-form-card__header">
+                    <i className="bi bi-chat-dots-fill"></i>
+                    <span>GET IN TOUCH</span>
+                  </div>
+                  <div className="contact-form-card__body">
+                    <h4 className="fw-bold mb-4">Contact Us</h4>
+                    <form>
+                      <div className="mb-3">
+                        <label className="form-label small fw-bold">First Name</label>
+                        <input type="text" className="form-control" placeholder="First Name*" />
+                      </div>
+                      <div className="mb-3">
+                        <label className="form-label small fw-bold">Last Name</label>
+                        <input type="text" className="form-control" placeholder="Last Name*" />
+                      </div>
+                      <div className="mb-3">
+                        <label className="form-label small fw-bold">Company Name</label>
+                        <input type="text" className="form-control" placeholder="Company Name*" />
+                      </div>
+                      <div className="mb-3">
+                        <label className="form-label small fw-bold">Business Email</label>
+                        <input type="email" className="form-control" placeholder="Business Email*" />
+                      </div>
+                      <div className="mb-3">
+                        <label className="form-label small fw-bold">Phone Number</label>
+                        <input type="tel" className="form-control" placeholder="*Phone Number" />
+                      </div>
+                      <div className="mb-4">
+                        <label className="form-label small fw-bold">State</label>
+                        <select className="form-select">
+                          <option>Select...</option>
+                        </select>
+                      </div>
+                      <button type="submit" className="btn btn-accent btn-cta w-100">
+                        CONTACT US
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. Additional Resources — Carousel */}
+      <AdditionalResources />
+
+      {/* 10. Be Informed CTA */}
+      <BeInformed />
+
       </>
+  );
+}
+
+/* ---- Additional Resources Carousel Component ---- */
+function AdditionalResources() {
+  const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const resources = [
+    { type: 'VIDEO', color: '#e74c3c', icon: 'bi-play-circle-fill', action: 'Watch Now', title: 'On-Demand Webinar: Securing Your Applications in a Cloud-Native World' },
+    { type: 'CUSTOMER SUCCESS', color: '#00ccff', icon: 'bi-person-check-fill', action: 'Download', title: 'How a Fortune 500 Company Transformed Their Security Posture' },
+    { type: 'EBOOK', color: '#4b4fff', icon: 'bi-book-fill', action: 'Download', title: 'The Definitive Guide to Building a Mature Cybersecurity Program' },
+    { type: 'WHITEPAPER', color: '#8b5cf6', icon: 'bi-file-earmark-text-fill', action: 'Download', title: 'Zero Trust Architecture: Implementation Strategies for Modern Enterprises' },
+    { type: 'VIDEO', color: '#e74c3c', icon: 'bi-play-circle-fill', action: 'Watch Now', title: 'Panel Discussion: Threat Intelligence and Incident Response Best Practices' },
+  ];
+
+  const updateScrollState = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10);
+  };
+
+  const scroll = (dir) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.scrollBy({ left: dir * 380, behavior: 'smooth' });
+    setTimeout(updateScrollState, 400);
+  };
+
+  return (
+    <section className="section section--indigo additional-resources">
+      <div className="container">
+        <AnimatedSection animation="animate-on-scroll">
+          <div className="additional-resources__header">
+            <h2 className="additional-resources__title">
+              Additional <span className="text-underline-accent">Resources</span>
+            </h2>
+            <Link to="/resources" className="additional-resources__view-all">
+              View All <i className="bi bi-chevron-right"></i>
+            </Link>
+          </div>
+        </AnimatedSection>
+
+        <div className="additional-resources__carousel-wrap">
+          {canScrollLeft && (
+            <button className="carousel-arrow carousel-arrow--left" onClick={() => scroll(-1)} aria-label="Previous">
+              <i className="bi bi-chevron-left"></i>
+            </button>
+          )}
+          <div className="additional-resources__track" ref={scrollRef} onScroll={updateScrollState}>
+            {resources.map((r, i) => (
+              <div className="resource-slide" key={i}>
+                <div className="resource-slide__badge" style={{ background: r.color }}>
+                  {r.type}
+                </div>
+                <div className="resource-slide__icon">
+                  <i className={`bi ${r.icon}`}></i>
+                </div>
+                <p className="resource-slide__action">{r.action} <i className="bi bi-chevron-right"></i></p>
+                <p className="resource-slide__title">{r.title}</p>
+              </div>
+            ))}
+          </div>
+          {canScrollRight && (
+            <button className="carousel-arrow carousel-arrow--right" onClick={() => scroll(1)} aria-label="Next">
+              <i className="bi bi-chevron-right"></i>
+            </button>
+          )}
+        </div>
+      </div>
+    </section>
   );
 }

@@ -54,6 +54,19 @@
     &::before { display: none; }
   }
 }
+.section--indigo-light {
+  background-color: $indigo-light;
+  color: $white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include angled-top($indigo-light);
+
+  &:last-child {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    &::before { display: none; }
+  }
+}
 
 // ---- Light section ----
 .section--light {

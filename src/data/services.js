@@ -49,11 +49,17 @@ const services = {
       { title: 'Continuous Assessment', description: 'Ongoing automated scanning and periodic manual testing of your application portfolio.' },
       { title: 'DevSecOps Integration', description: 'Embed security tools and processes into your CI/CD pipeline for continuous security.' },
     ],
+    outcomesSection: {
+      label: 'Application Security Architecture Review Outcomes',
+      title: 'Reduce Software Security Risk',
+      titleHighlight: 'Reduce',
+      subtitle: 'Our AppSec Architecture Review service is tailored for your unique use cases to reduce risk, improve cost savings and support the maturation of your application security program.',
+    },
     outcomes: [
-      { icon: 'bi-search', title: 'Identify', description: 'Discover vulnerabilities before attackers do.' },
-      { icon: 'bi-tools', title: 'Remediate', description: 'Fix issues with expert-guided remediation support.' },
-      { icon: 'bi-check2-circle', title: 'Validate', description: 'Verify fixes through retesting and validation.' },
-      { icon: 'bi-shield-check', title: 'Ensure', description: 'Maintain security posture with ongoing assessments.' },
+      { icon: 'bi-graph-up', title: 'Prevent Coding Errors', description: 'Catch coding errors early in the software development lifecycle to mitigate security risks.' },
+      { icon: 'bi-currency-dollar', title: 'Reduce AppSec Dev Costs', description: 'Avoid costly re-work, time-consuming security fixes & delays in software development.' },
+      { icon: 'bi-percent', title: 'Eliminate Software Exploits', description: 'Prevent cybercriminals from exploiting security vulnerabilities in your application code.' },
+      { icon: 'bi-file-earmark-check', title: 'Ship Secure Software', description: 'Accelerate the delivery of secure software across your legacy & modern application portfolio.' },
     ],
     testimonial: {
       quote: 'CyberPoint\'s application security team found critical vulnerabilities that our internal scans completely missed. Their remediation guidance was actionable and clear.',
