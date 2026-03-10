@@ -92,27 +92,38 @@
 // After Dark
 .section--dark + .section--accent::before,
 .section--dark + .section--indigo::before,
+.section--dark + .section--indigo-light::before,
 .section--dark + .section--light::before { background: $primary; }
 
 // After Accent
 .section--accent + .section--dark::before,
 .section--accent + .section--indigo::before,
+.section--accent + .section--indigo-light::before,
 .section--accent + .section--light::before { background: $accent; }
 
 // After Indigo
 .section--indigo + .section--dark::before,
 .section--indigo + .section--light::before,
-.section--indigo + .section--accent::before { background: $indigo; }
+.section--indigo + .section--accent::before,
+.section--indigo + .section--indigo-light::before { background: $indigo; }
+
+// After Indigo Light
+.section--indigo-light + .section--dark::before,
+.section--indigo-light + .section--indigo::before,
+.section--indigo-light + .section--light::before,
+.section--indigo-light + .section--accent::before { background: $indigo-light; }
 
 // After Light
 .section--light + .section--dark::before,
 .section--light + .section--indigo::before,
+.section--light + .section--indigo-light::before,
 .section--light + .section--accent::before { background: $light; }
 
 // Same type adjacency — no divider needed
 .section--dark + .section--dark::before { display: none; }
 .section--light + .section--light::before { display: none; }
 .section--indigo + .section--indigo::before { display: none; }
+.section--indigo-light + .section--indigo-light::before { display: none; }
 
 // Home — flat transitions, no angled edges
 .home-services-list::before,
@@ -122,6 +133,7 @@
 // Hero → section — seamless, no top angle
 .hero + .section::before { display: none; }
 .hero + .section--dark { padding-top: 4rem; }
+.hero + .section--dark.dark-split { padding-top: 0; }
 
 // Hero page clip-path → next section must overlap behind the triangle
 .hero--page + .section {
@@ -140,7 +152,7 @@
   &__label {
     font-family: $font-family-heading;
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: $fw-bold;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: $gradient-start;
@@ -149,7 +161,7 @@
 
   &__title {
     font-family: $font-family-heading;
-    font-weight: 800;
+    font-weight: $headings-font-weight;
     margin-bottom: 1rem;
     color: $primary;
   }
@@ -207,7 +219,7 @@
   &__title {
     font-family: $font-family-heading;
     font-size: clamp(2.2rem, 4.5vw, 3.5rem);
-    font-weight: 700;
+    font-weight: $headings-font-weight;
     color: rgba($white, 0.35);
     line-height: 1.15;
     margin-bottom: 1.5rem;

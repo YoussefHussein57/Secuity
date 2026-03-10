@@ -38,7 +38,7 @@
     flex: 1;
     font-family: $font-family-heading;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: $fw-semibold;
   }
 
   &__toggle {
@@ -82,7 +82,7 @@
 .trusted-title {
   font-family: $font-family-heading;
   font-size: clamp(1.8rem, 3.5vw, 2.75rem);
-  font-weight: 800;
+  font-weight: $headings-font-weight;
   color: $white;
   display: inline-block;
   padding-bottom: 0.75rem;
@@ -147,7 +147,7 @@
   &__quote {
     font-family: $font-family-heading;
     font-size: clamp(1.2rem, 2.5vw, 1.75rem);
-    font-weight: 700;
+    font-weight: $fw-bold;
     color: $white;
     line-height: 1.3;
     margin-bottom: 0.75rem;
@@ -156,7 +156,7 @@
   &__watch {
     color: $white;
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: $fw-semibold;
     position: absolute;
     bottom: 1.5rem;
     left: 2rem;
@@ -166,7 +166,7 @@
   &__author {
     color: rgba($white, 0.8);
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: $fw-medium;
     margin-bottom: 0;
   }
 }

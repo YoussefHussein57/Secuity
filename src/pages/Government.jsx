@@ -6,6 +6,7 @@ import SectionHeader from '../components/sections/SectionHeader';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import NetworkBackground from '../components/sections/NetworkBackground';
 import FeatureCard from '../components/sections/FeatureCard';
+import GradientCard from '../components/sections/GradientCard';
 import BeInformed from '../components/sections/BeInformed';
 
 function AnimatedStat({ number, label }) {
@@ -116,15 +117,7 @@ export default function Government() {
           <AnimatedSection animation="stagger-children" className="row g-3 justify-content-center">
             {contractVehicles.map((cv) => (
               <div className="col-6 col-md-4 col-lg-2" key={cv}>
-                <div
-                  className="text-center p-3 rounded-3"
-                  style={{
-                    background: 'rgba(75, 79, 255, 0.08)',
-                    border: '1px solid rgba(75, 79, 255, 0.15)',
-                  }}
-                >
-                  <span className="text-white fw-600" style={{ fontSize: '0.85rem' }}>{cv}</span>
-                </div>
+                <GradientCard text={cv} layout="text-only" accent="bottom" />
               </div>
             ))}
           </AnimatedSection>

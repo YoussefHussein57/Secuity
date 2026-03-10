@@ -1,0 +1,160 @@
+// ===========================================
+// Technologies Detail Page
+// ===========================================
+
+// ---- Expertise Cards Section (accent/indigo bg) ----
+.expertise-cards {
+  background-color: $indigo-light !important;
+  padding-top: 3rem;
+  padding-bottom: 7.5rem;
+}
+
+.expertise-cards__subtitle {
+  color: $white;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+// ---- Lifecycle Cards (numbered steps, 2x2 grid) ----
+.lifecycle-cards {
+  padding-top: 2rem;
+}
+
+// ===========================================
+// Unified Card — Type 1: Dark Gradient
+// background-image: linear-gradient(270deg, #0F0F27 50%, #0F0F59 100%)
+// ===========================================
+
+.card-gradient {
+  background-image: linear-gradient(270deg, $primary 50%, #0F0F59 100%);
+  border: 0.8px solid rgba($gradient-end, 0.35);
+  border-radius: $border-radius;
+  padding: 2.5rem 1.75rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 30px rgba($gradient-start, 0.2);
+    transform: translateY(-4px);
+  }
+
+  // ---- Accent lines ----
+  &--accent-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+  }
+
+  &--accent-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+  }
+
+  // ---- Layout: Centered (expertise / lifecycle) ----
+  &--centered {
+    text-align: center;
+  }
+
+  // ---- Layout: Horizontal (outcomes) ----
+  &--horizontal {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    min-height: 220px;
+  }
+
+  // ---- Layout: Text-only (use-cases) ----
+  &--text-only {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 200px;
+  }
+
+  // ---- Elements ----
+  &__icon {
+    margin-bottom: 1rem;
+
+    i {
+      font-size: 2.5rem;
+      color: $gradient-end;
+    }
+  }
+
+  &__icon-circle {
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $gradient-end;
+    background: rgba($gradient-end, 0.1);
+
+    i {
+      font-size: 1.75rem;
+      color: $gradient-end;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-heading;
+    font-weight: $fw-bold;
+    font-size: 1.25rem;
+    color: $gradient-end;
+    margin-bottom: 0.75rem;
+  }
+
+  &__title--lg {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__desc {
+    color: rgba($white, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  &__text {
+    font-family: $font-family-heading;
+    font-size: 1.15rem;
+    font-weight: $fw-bold;
+    color: $gradient-end;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  // ---- Checklist items inside card ----
+  &__checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+    color: $white;
+    font-weight: $fw-semibold;
+    font-size: 0.95rem;
+
+    i {
+      color: $gradient-end;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+  }
+}

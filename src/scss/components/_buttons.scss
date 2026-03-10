@@ -22,7 +22,7 @@
 // Gradient primary button
 .btn-accent {
   @include gradient-btn;
-  font-weight: 600;
+  font-weight: $fw-semibold;
 }
 
 // Outline variant — fills with gradient on hover

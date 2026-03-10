@@ -17,56 +17,54 @@
   &__image {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: -3rem;
-    margin-right: -3rem;
 
     img {
       width: 100%;
+      max-width: 540px;
       height: auto;
       object-fit: contain;
     }
-  }
-}
 
-// ---- Checklist Cards ----
-.checklist-card {
-  position: relative;
-  background: rgba($primary, 0.65);
-  border: 1px solid rgba($gradient-start, 0.2);
-  border-bottom: none;
-  border-radius: $border-radius;
-  padding: 2rem 2.5rem;
-  height: 100%;
-  overflow: hidden;
+    // Bleed image to left viewport edge
+    &--left {
+      justify-content: flex-start;
+      margin-left: calc(-0.5 * var(--bs-gutter-x, 1.5rem));
 
-  // Gradient bottom accent line
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, $gradient-start, $gradient-end);
-  }
+      @media (min-width: 1400px) {
+        margin-left: calc((100vw - 1320px) / -2);
+      }
 
-  &__item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.6rem 0;
-    color: $white;
-    font-weight: 600;
-    font-size: 0.95rem;
+      @media (max-width: 991.98px) {
+        margin-left: 0;
+      }
+    }
 
-    i {
-      color: $gradient-end;
-      font-size: 1.1rem;
-      flex-shrink: 0;
+    // Bleed image to right viewport edge
+    &--right {
+      justify-content: flex-end;
+      margin-right: calc(-0.5 * var(--bs-gutter-x, 1.5rem));
+
+      @media (min-width: 1400px) {
+        margin-right: calc((100vw - 1320px) / -2);
+      }
+
+      @media (max-width: 991.98px) {
+        margin-right: 0;
+      }
     }
   }
+
+  // ---- Technology variant — no top padding + rotated image ----
+  &--tech {
+    padding-top: 0;
+  }
+
+  &--tech &__image img {
+    transform: rotate(180deg);
+  }
 }
+
+// ---- Checklist Cards → now uses .card-gradient (see _technologies.scss) ----
 
 // ---- Outcomes Section Header ----
 .outcomes-header {
@@ -78,79 +76,12 @@
   }
 }
 
-// ---- Outcome Cards ----
-.outcome-card {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  background: rgba($primary, 0.65);
-  border: 1px solid rgba($gradient-start, 0.2);
-  border-top: none;
-  border-radius: $border-radius;
-  padding: 2.5rem 2rem;
-  min-height: 220px;
-  height: 100%;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-
-  // Gradient top accent line
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, $gradient-start, $gradient-end);
-  }
-
-  &:hover {
-    box-shadow: 0 0 30px rgba($gradient-start, 0.2);
-    transform: translateY(-4px);
-  }
-
-  &__icon {
-    flex-shrink: 0;
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid $gradient-end;
-    background: rgba($gradient-end, 0.1);
-
-    i {
-      font-size: 1.75rem;
-      color: $gradient-end;
-    }
-  }
-
-  &__content {
-    flex: 1;
-  }
-
-  &__title {
-    font-family: $font-family-heading;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: $gradient-end;
-    margin-bottom: 0.75rem;
-  }
-
-  &__desc {
-    color: rgba($white, 0.6);
-    font-size: 0.9rem;
-    line-height: 1.7;
-    margin: 0;
-  }
-}
+// ---- Outcome Cards → now uses .card-gradient (see _technologies.scss) ----
 
 // ---- Trusted Advisor Section ----
 .trusted-advisor__title {
   font-family: $font-family-heading;
-  font-weight: 800;
+  font-weight: $headings-font-weight;
   font-size: clamp(2rem, 3.5vw, 3rem);
   color: $white;
   margin-bottom: 0.75rem;
@@ -231,7 +162,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 700;
+    font-weight: $fw-bold;
     font-size: 0.85rem;
     letter-spacing: 0.05em;
   }
@@ -287,7 +218,7 @@
 // ---- Certifications Section ----
 .certs__title {
   font-family: $font-family-heading;
-  font-weight: 800;
+  font-weight: $headings-font-weight;
   font-size: clamp(1.8rem, 3vw, 2.8rem);
   color: $primary;
   margin-bottom: 1.25rem;
@@ -306,7 +237,7 @@
 
   &__heading {
     font-family: $font-family-heading;
-    font-weight: 700;
+    font-weight: $fw-bold;
     color: $primary;
     margin-bottom: 0.25rem;
   }
@@ -353,7 +284,7 @@
   &__label {
     font-family: $font-family-heading;
     font-size: 0.65rem;
-    font-weight: 800;
+    font-weight: $fw-extrabold;
     color: $gradient-start;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -373,7 +304,7 @@
 
   &__title {
     font-family: $font-family-heading;
-    font-weight: 800;
+    font-weight: $headings-font-weight;
     font-size: clamp(1.8rem, 3vw, 2.8rem);
     color: $white;
     margin: 0;
@@ -397,7 +328,7 @@
 
   &__view-all {
     color: $gradient-end;
-    font-weight: 700;
+    font-weight: $fw-bold;
     font-size: 1rem;
     text-decoration: none;
     white-space: nowrap;
@@ -448,7 +379,7 @@
     border-radius: 3px;
     color: $white;
     font-size: 0.7rem;
-    font-weight: 800;
+    font-weight: $fw-extrabold;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -465,7 +396,7 @@
 
   &__action {
     color: $gradient-end;
-    font-weight: 700;
+    font-weight: $fw-bold;
     font-size: 0.85rem;
     margin-bottom: 0.75rem;
 
@@ -478,7 +409,7 @@
   &__title {
     color: $white;
     font-family: $font-family-heading;
-    font-weight: 700;
+    font-weight: $fw-bold;
     font-size: 1.05rem;
     line-height: 1.5;
     margin: 0;
@@ -519,7 +450,7 @@
 // ---- Use Cases Section Title ----
 .use-cases__title {
   font-family: $font-family-heading;
-  font-weight: 800;
+  font-weight: $headings-font-weight;
   font-size: clamp(1.8rem, 3vw, 2.8rem);
   color: $white;
   margin-bottom: 1rem;
@@ -538,45 +469,4 @@
   }
 }
 
-// ---- Use Case Cards ----
-.use-case-card {
-  position: relative;
-  background: rgba($primary, 0.65);
-  border: 1px solid rgba($gradient-start, 0.2);
-  border-top: none;
-  border-radius: $border-radius;
-  padding: 2.5rem 2rem;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-
-  // Gradient top accent line
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, $gradient-start, $gradient-end);
-  }
-
-  &:hover {
-    box-shadow: 0 0 30px rgba($gradient-start, 0.2);
-    transform: translateY(-4px);
-  }
-
-  &__text {
-    font-family: $font-family-heading;
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: $gradient-end;
-    margin: 0;
-    line-height: 1.4;
-  }
-}
+// ---- Use Case Cards → now uses .card-gradient (see _technologies.scss) ----

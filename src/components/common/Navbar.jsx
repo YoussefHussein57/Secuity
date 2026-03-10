@@ -16,18 +16,18 @@ const serviceEntries = Object.entries(services).map(([slug, s]) => ({
 }));
 
 const technologyItems = [
-  { icon: 'bi-diamond', title: 'Application Security', subtitle: 'SAST, DAST, RASP, SCA & WAF', path: '/services/application-security' },
-  { icon: 'bi-pencil', title: 'Endpoint Security', subtitle: 'EPP, EDR, DLP & MDR', path: '/services/endpoint-security' },
-  { icon: 'bi-hdd-network', title: 'Network & Infrastructure Security', subtitle: 'NGFW, SASE, SWG, NAC & More', path: '/services/network-security' },
-  { icon: 'bi-cloud', title: 'Cloud Security', subtitle: 'Containers, CASB, CSPM, IaC, CI/CD Tools', path: '/services/cloud-security' },
-  { icon: 'bi-check2-square', title: 'Governance, Risk & Compliance (GRC)', subtitle: 'Business Resilience, TPRM & More', path: '/services/grc' },
-  { icon: 'bi-mortarboard', title: 'Security Awareness & Education', subtitle: 'Phishing, Enterprise LMS & More', path: '/services/security-awareness' },
-  { icon: 'bi-database', title: 'Data Security', subtitle: 'Data Classification, SWG, SEG, DLP', path: '/services/data-security' },
-  { icon: 'bi-fingerprint', title: 'Identity & Access Management (IAM)', subtitle: 'Access Management, IGA, PAM, CIAM', path: '/services/iam' },
-  { icon: 'bi-globe2', title: 'Security Operations Center (SOC)', subtitle: 'Machine Learning, SIEM, SOAR & More', path: '/services/soc' },
-  { icon: 'bi-envelope-check', title: 'Email Security', subtitle: 'SEG, DMARC, Encrypted Email & More', path: '/services/email-security' },
-  { icon: 'bi-exclamation-triangle', title: 'Incident Response (IR) & Threat Intelligence', subtitle: 'EDR, NDR, Logging, Malware Analysis & More', path: '/services/incident-response' },
-  { icon: 'bi-activity', title: 'Vulnerability Management', subtitle: 'Scanning, Patching & More', path: '/services/vulnerability-management' },
+  { icon: 'bi-diamond', title: 'Application Security', subtitle: 'SAST, DAST, RASP, SCA & WAF', path: '/technologies/application-security' },
+  { icon: 'bi-pencil', title: 'Endpoint Security', subtitle: 'EPP, EDR, DLP & MDR', path: '/technologies/endpoint-security' },
+  { icon: 'bi-hdd-network', title: 'Network & Infrastructure Security', subtitle: 'NGFW, SASE, SWG, NAC & More', path: '/technologies/network-security' },
+  { icon: 'bi-cloud', title: 'Cloud Security', subtitle: 'Containers, CASB, CSPM, IaC, CI/CD Tools', path: '/technologies/cloud-security' },
+  { icon: 'bi-check2-square', title: 'Governance, Risk & Compliance (GRC)', subtitle: 'Business Resilience, TPRM & More', path: '/technologies/grc' },
+  { icon: 'bi-mortarboard', title: 'Security Awareness & Education', subtitle: 'Phishing, Enterprise LMS & More', path: '/technologies/security-awareness' },
+  { icon: 'bi-database', title: 'Data Security', subtitle: 'Data Classification, SWG, SEG, DLP', path: '/technologies/data-security' },
+  { icon: 'bi-fingerprint', title: 'Identity & Access Management (IAM)', subtitle: 'Access Management, IGA, PAM, CIAM', path: '/technologies/iam' },
+  { icon: 'bi-globe2', title: 'Security Operations Center (SOC)', subtitle: 'Machine Learning, SIEM, SOAR & More', path: '/technologies/soc' },
+  { icon: 'bi-envelope-check', title: 'Email Security', subtitle: 'SEG, DMARC, Encrypted Email & More', path: '/technologies/email-security' },
+  { icon: 'bi-exclamation-triangle', title: 'Incident Response (IR) & Threat Intelligence', subtitle: 'EDR, NDR, Logging, Malware Analysis & More', path: '/technologies/incident-response' },
+  { icon: 'bi-activity', title: 'Vulnerability Management', subtitle: 'Scanning, Patching & More', path: '/technologies/vulnerability-management' },
 ];
 
 const governmentItems = {

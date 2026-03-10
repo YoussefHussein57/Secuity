@@ -44,7 +44,7 @@
   &__title {
     font-family: $font-family-heading;
     font-size: clamp(2.4rem, 4vw, $hero-title-size);
-    font-weight: 800;
+    font-weight: $headings-font-weight;
     line-height: 1.1;
     letter-spacing: -0.02em;
 
@@ -66,7 +66,7 @@
 
   &__subtitle {
     font-size: clamp(0.95rem, 1.5vw, 1.05rem);
-    font-weight: 300;
+    font-weight: $fw-light;
     opacity: 0.8;
     max-width: 550px;
     line-height: 1.7;
@@ -75,7 +75,7 @@
   &__label {
     font-family: $font-family-heading;
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: $fw-bold;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: $white;
@@ -104,6 +104,11 @@
 
     &::before {
       background: $indigo;
+    }
+
+    // When followed by a dark section (e.g. TechnologyDetail), match its bg
+    &:has(+ .section--dark)::before {
+      background: $primary;
     }
   }
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import SectionHeader from '../components/sections/SectionHeader';
-import FeatureCard from '../components/sections/FeatureCard';
+import GradientCard from '../components/sections/GradientCard';
 import ResourceCard from '../components/sections/ResourceCard';
 import LogoGrid from '../components/sections/LogoGrid';
 import AnimatedSection from '../components/sections/AnimatedSection';
@@ -149,7 +149,13 @@ export default function Home() {
           <AnimatedSection animation="stagger-children" className="row g-4">
             {features.map((f) => (
               <div className="col-md-4" key={f.title}>
-                <FeatureCard {...f} />
+                <GradientCard
+                  icon={f.icon}
+                  title={f.title}
+                  description={f.description}
+                  layout="centered"
+                  accent="bottom"
+                />
               </div>
             ))}
           </AnimatedSection>

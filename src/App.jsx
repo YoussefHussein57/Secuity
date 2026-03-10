@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Technologies from './pages/Technologies';
+import TechnologyDetail from './pages/TechnologyDetail';
 import Government from './pages/Government';
 import Company from './pages/Company';
 import Leadership from './pages/Leadership';
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="services" element={<Services />} />
           <Route path="services/:slug" element={<ServiceDetail />} />
           <Route path="technologies" element={<Technologies />} />
+          <Route path="technologies/:slug" element={<TechnologyDetail />} />
           <Route path="government" element={<Government />} />
           <Route path="company" element={<Company />} />
           <Route path="company/leadership" element={<Leadership />} />

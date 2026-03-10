@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
+import GradientCard from '../components/sections/GradientCard';
 import NetworkBackground from '../components/sections/NetworkBackground';
 import BeInformed from '../components/sections/BeInformed';
 
@@ -140,25 +141,13 @@ export default function Careers() {
           <AnimatedSection animation="stagger-children" className="row g-4">
             {benefits.map((b) => (
               <div className="col-md-6" key={b.title}>
-                <div
-                  className="p-4 h-100 rounded-3"
-                  style={{
-                    background: 'rgba(25, 24, 110, 0.35)',
-                    border: '1px solid rgba(75, 79, 255, 0.15)',
-                    borderBottom: '3px solid',
-                    borderImage: 'linear-gradient(90deg, #4b4fff, #00ccff) 1',
-                  }}
-                >
-                  <div className="d-flex align-items-center gap-3 mb-3">
-                    <div className="card-feature__icon flex-shrink-0">
-                      <i className={`bi ${b.icon}`}></i>
-                    </div>
-                    <h5 className="fw-bold mb-0" style={{ fontFamily: "'Exo 2', sans-serif", color: '#00ccff' }}>
-                      {b.title}
-                    </h5>
-                  </div>
-                  <p className="text-white-50 mb-0" style={{ lineHeight: 1.7 }}>{b.description}</p>
-                </div>
+                <GradientCard
+                  icon={b.icon}
+                  title={b.title}
+                  description={b.description}
+                  layout="centered"
+                  accent="bottom"
+                />
               </div>
             ))}
           </AnimatedSection>

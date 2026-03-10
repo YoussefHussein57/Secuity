@@ -24,10 +24,20 @@ $warning:       #fbbf24;
 $danger:        #f87171;
 
 // Typography
-$font-family-base:    'Inter', system-ui, -apple-system, sans-serif;
-$font-family-heading: 'Exo 2', 'Inter', system-ui, sans-serif;
+$font-family-base:    'IBM Plex Sans', sans-serif;
+$font-family-heading: 'Exo 2', 'IBM Plex Sans', sans-serif;
 $headings-font-family: $font-family-heading;
-$headings-font-weight: 700;
+
+// Font weights
+$fw-light:      300;
+$fw-medium:     500;
+$fw-semibold:   600;
+$fw-bold:       700;
+$fw-extrabold:  800;
+$headings-font-weight: $fw-medium;
+
+// Buttons
+$btn-font-weight:      $fw-semibold;
 
 // Border Radius
 $border-radius:       0.5rem;
@@ -42,7 +52,6 @@ $gradient-end:       #00ccff;
 $btn-border-radius:    0.25rem;
 $btn-padding-y:        0.75rem;
 $btn-padding-x:        2rem;
-$btn-font-weight:      600;
 
 // Shadows
 $box-shadow-sm:  0 2px 8px rgba($primary, 0.08);

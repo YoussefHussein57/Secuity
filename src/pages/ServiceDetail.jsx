@@ -1,6 +1,7 @@
 import { useParams, Navigate } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
+import GradientCard from '../components/sections/GradientCard';
 import Certifications from '../components/sections/Certifications';
 import Outcomes from '../components/sections/Outcomes';
 import TrustedAdvisor from '../components/sections/TrustedAdvisor';
@@ -54,9 +55,7 @@ export default function ServiceDetail() {
             <AnimatedSection animation="stagger-children" className="row g-4 justify-content-center">
               {service.useCases.items.map((item) => (
                 <div className="col-lg-4 col-md-6" key={item}>
-                  <div className="use-case-card">
-                    <p className="use-case-card__text">{item}</p>
-                  </div>
+                  <GradientCard text={item} layout="text-only" accent="top" />
                 </div>
               ))}
             </AnimatedSection>
@@ -95,7 +94,7 @@ export default function ServiceDetail() {
         const imageCol = (
           <div className={`col-lg-6${imageLeft ? ' order-lg-1 order-2' : ''}`} key="image">
             <AnimatedSection animation={imageLeft ? 'fade-in-left' : 'fade-in-right'}>
-              <div className="dark-split__image">
+              <div className={`dark-split__image dark-split__image--${imageLeft ? 'left' : 'right'}`}>
                 <img src={s.image} alt={s.imageAlt} />
               </div>
             </AnimatedSection>
@@ -118,16 +117,16 @@ export default function ServiceDetail() {
                   <AnimatedSection animation="stagger-children" className="row g-4 justify-content-center">
                     {[0, 1].map((colIdx) => (
                       <div className="col-lg-6" key={colIdx}>
-                        <div className="checklist-card">
+                        <GradientCard accent="bottom">
                           {s.checklist
                             .filter((_, i) => (colIdx === 0 ? i < Math.ceil(s.checklist.length / 2) : i >= Math.ceil(s.checklist.length / 2)))
                             .map((item) => (
-                              <div className="checklist-card__item" key={item}>
+                              <div className="card-gradient__checklist-item" key={item}>
                                 <i className="bi bi-check-circle-fill"></i>
                                 <span>{item}</span>
                               </div>
                             ))}
-                        </div>
+                        </GradientCard>
                       </div>
                     ))}
                   </AnimatedSection>

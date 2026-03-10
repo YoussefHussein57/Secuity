@@ -11,7 +11,7 @@
     font-family: $font-family-heading;
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     color: $white;
-    font-weight: 700;
+    font-weight: $headings-font-weight;
     text-align: center;
     margin-bottom: 0.5rem;
   }
@@ -27,7 +27,7 @@
   .form-label {
     color: $white;
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: $fw-semibold;
   }
 
   .form-control {
@@ -82,7 +82,7 @@
 
   &__city {
     color: $white;
-    font-weight: 700;
+    font-weight: $fw-bold;
     font-size: 0.95rem;
     margin-bottom: 0.25rem;
   }
@@ -96,7 +96,7 @@
   &__link {
     color: $gradient-end;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: $fw-semibold;
     text-decoration: none;
     white-space: nowrap;
 
@@ -111,7 +111,7 @@
   background: rgba($gradient-start, 0.08);
   color: $gradient-start;
   border: 1px solid rgba($gradient-start, 0.15);
-  font-weight: 600;
+  font-weight: $fw-semibold;
   font-size: 0.8rem;
   padding: 0.4rem 0.75rem;
   border-radius: $border-radius;
@@ -171,7 +171,7 @@
 
 .required-mark {
   color: $danger;
-  font-weight: 700;
+  font-weight: $fw-bold;
 }
 
 // ---- ELITE trust section ----
@@ -183,7 +183,7 @@
 
   &__label {
     font-family: $font-family-heading;
-    font-weight: 800;
+    font-weight: $fw-extrabold;
     font-size: clamp(1.2rem, 2vw, 1.5rem);
     color: $white;
     line-height: 1.3;

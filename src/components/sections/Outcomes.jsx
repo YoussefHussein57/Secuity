@@ -1,4 +1,5 @@
 import AnimatedSection from './AnimatedSection';
+import GradientCard from './GradientCard';
 
 export default function Outcomes({ outcomesSection, outcomes, title }) {
   if (!outcomes || outcomes.length === 0) return null;
@@ -28,15 +29,14 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
         <AnimatedSection animation="stagger-children" className="row g-4">
           {outcomes.map((o) => (
             <div className="col-lg-6" key={o.title}>
-              <div className="outcome-card">
-                <div className="outcome-card__icon">
-                  <i className={`bi ${o.icon}`}></i>
-                </div>
-                <div className="outcome-card__content">
-                  <h5 className="outcome-card__title">{o.title}</h5>
-                  <p className="outcome-card__desc">{o.description}</p>
-                </div>
-              </div>
+              <GradientCard
+                icon={o.icon}
+                iconCircle
+                title={o.title}
+                description={o.description}
+                layout="horizontal"
+                accent="top"
+              />
             </div>
           ))}
         </AnimatedSection>
