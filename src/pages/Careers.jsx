@@ -4,78 +4,48 @@ import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import GradientCard from '../components/sections/GradientCard';
 import NetworkBackground from '../components/sections/NetworkBackground';
-import BeInformed from '../components/sections/BeInformed';
+import GPSUniversity from '../components/sections/GPSUniversity';
+import AdditionalResources from '../components/sections/AdditionalResources';
 
-const benefits = [
+const values = [
   {
-    icon: 'bi-heart-pulse',
-    title: 'Health & Wellness',
-    description: 'Comprehensive medical, dental, and vision plans for you and your family, plus mental health support.',
+    icon: 'bi-shield-check',
+    title: 'Ownership',
+    description: 'We hold ourselves accountable, become the best versions of ourselves and make it a great place to work. We own our outcomes.',
   },
   {
-    icon: 'bi-mortarboard',
-    title: 'Learning & Growth',
-    description: 'Annual training budgets, certification reimbursements, and access to our Security University program.',
+    icon: 'bi-rocket-takeoff',
+    title: 'Fearlessness',
+    description: 'We always push ourselves to take calculated risks and swing big because you miss 100% of the shots you don\'t take.',
   },
   {
-    icon: 'bi-house-door',
-    title: 'Remote-First Culture',
-    description: 'Work from anywhere with flexible schedules. We believe in results, not office hours.',
+    icon: 'bi-people-fill',
+    title: 'Customer-First',
+    description: 'We strive to be a long-term partner and make our customers\' experience a success, enabling and securing their businesses.',
   },
   {
-    icon: 'bi-graph-up-arrow',
-    title: 'Career Advancement',
-    description: 'Clear career paths, mentorship programs, and opportunities to work on cutting-edge security challenges.',
-  },
-  {
-    icon: 'bi-people',
-    title: 'Team & Community',
-    description: 'Regular team events, hackathons, and a collaborative culture that values every voice.',
-  },
-  {
-    icon: 'bi-piggy-bank',
-    title: 'Financial Benefits',
-    description: '401(k) matching, competitive salaries, performance bonuses, and equity options.',
+    icon: 'bi-emoji-smile',
+    title: 'No Jerks',
+    description: 'Life is too short to work with jerks, so we treat people with respect and dignity. When we have an issue, we work through it professionally.',
   },
 ];
 
+const perks = [
+  { icon: 'bi-heart-pulse', title: 'Health Coverage', desc: 'We fully cover employee premiums on our base plan and offer generous support for dependents.' },
+  { icon: 'bi-wifi', title: 'Internet Allowance', desc: 'Monthly internet stipend to support your remote workspace and stay connected.' },
+  { icon: 'bi-house-door', title: 'Work-Life Balance', desc: 'Excellent work-life balance via telework and flextime to fit your schedule.' },
+  { icon: 'bi-piggy-bank', title: '401k', desc: 'Access to competitive retirement plans with matching contributions.' },
+];
+
 const openings = [
-  {
-    title: 'Senior Penetration Tester',
-    department: 'Offensive Security',
-    location: 'Remote (US)',
-    type: 'Full-Time',
-  },
-  {
-    title: 'Cloud Security Architect',
-    department: 'Cloud Security',
-    location: 'Remote (US)',
-    type: 'Full-Time',
-  },
-  {
-    title: 'SOC Analyst - Tier 2',
-    department: 'Managed Security',
-    location: 'Reston, VA / Remote',
-    type: 'Full-Time',
-  },
-  {
-    title: 'GRC Consultant',
-    department: 'Governance, Risk & Compliance',
-    location: 'Remote (US)',
-    type: 'Full-Time',
-  },
-  {
-    title: 'Incident Response Engineer',
-    department: 'Incident Response',
-    location: 'Remote (US)',
-    type: 'Full-Time',
-  },
-  {
-    title: 'IAM Solutions Engineer',
-    department: 'Identity & Access Management',
-    location: 'Remote (US / UK)',
-    type: 'Full-Time',
-  },
+  { title: 'Senior Penetration Tester', department: 'Offensive Security', location: 'Remote (US)', type: 'Full-Time' },
+  { title: 'Cloud Security Architect', department: 'Cloud Security', location: 'Remote (US)', type: 'Full-Time' },
+  { title: 'SOC Analyst - Tier 2', department: 'Managed Security', location: 'Reston, VA / Remote', type: 'Full-Time' },
+  { title: 'GRC Consultant', department: 'Governance, Risk & Compliance', location: 'Remote (US)', type: 'Full-Time' },
+  { title: 'Incident Response Engineer', department: 'Incident Response', location: 'Remote (US)', type: 'Full-Time' },
+  { title: 'IAM Solutions Engineer', department: 'Identity & Access Management', location: 'Remote (US / UK)', type: 'Full-Time' },
+  { title: 'Account Executive (Northeast)', department: 'Sales', location: 'Remote (US)', type: 'Full-Time' },
+  { title: 'Security Architect (Federal)', department: 'Federal', location: 'Washington, DC', type: 'Full-Time' },
 ];
 
 const departments = ['All', ...new Set(openings.map((j) => j.department))];
@@ -93,9 +63,10 @@ export default function Careers() {
 
   return (
     <>
+      {/* ===== HERO ===== */}
       <Hero
-        title="of Cybersecurity Practitioners"
         label="JOIN OUR TEAM"
+        title="of Cybersecurity Practitioners"
         highlightSubtitleWord="informed"
         subtitle="Our mission is to help you navigate the complex threat and cybersecurity solution landscape – so you can make more informed risk decisions at the speed of business."
         ctaText="Apply"
@@ -103,16 +74,16 @@ export default function Careers() {
         variant="page"
       />
 
-  
-
-      {/* ===== WE ARE A TEAM — Video + Text ===== */}
+      {/* ===== WE ARE A TEAM — Video + Text (Dark) ===== */}
       <section className="section section--dark position-relative">
         <NetworkBackground variant="dark" nodeCount={20} />
         <div className="container position-relative" style={{ zIndex: 2 }}>
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-left">
-                <img src="/placeholder-video.svg" alt="Team video" className="rounded-3 w-100" />
+                <div className="ratio ratio-16x9 rounded-3 overflow-hidden">
+                  <img src="/placeholder-video.svg" alt="Team video" className="w-100 h-100" style={{ objectFit: 'cover' }} />
+                </div>
               </AnimatedSection>
             </div>
             <div className="col-lg-6">
@@ -121,7 +92,11 @@ export default function Careers() {
                   We are a Team<br />of <span className="text-accent-box">Certified</span> Experts
                 </h2>
                 <p className="text-white-50" style={{ lineHeight: 1.8 }}>
-                  Our team of highly-certified security practitioners leverages its deep expertise to assess an organization's risk, align and optimize resources and recommend best-fit security technologies based on a rigorous vetting process. More than half of the cabinet-level agencies within the U.S. Federal Government and a third of Fortune 500 companies rely on us to deliver robust solutions.
+                  Our team of highly-certified security practitioners leverages its deep expertise
+                  to assess an organization's risk, align and optimize resources and recommend
+                  best-fit security technologies based on a rigorous vetting process. More than
+                  half of the cabinet-level agencies within the U.S. Federal Government and a
+                  third of Fortune 500 companies rely on us to deliver robust solutions.
                 </p>
               </AnimatedSection>
             </div>
@@ -129,7 +104,7 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* ===== OUR VALUES — Dark with value cards ===== */}
+      {/* ===== OUR VALUES — Dark with bg pattern, 2x2 grid ===== */}
       <section className="section section--dark position-relative">
         <NetworkBackground variant="dark" nodeCount={15} />
         <div className="container position-relative" style={{ zIndex: 2 }}>
@@ -139,12 +114,12 @@ export default function Careers() {
           </AnimatedSection>
 
           <AnimatedSection animation="stagger-children" className="row g-4">
-            {benefits.map((b) => (
-              <div className="col-md-6" key={b.title}>
+            {values.map((v) => (
+              <div className="col-md-6" key={v.title}>
                 <GradientCard
-                  icon={b.icon}
-                  title={b.title}
-                  description={b.description}
+                  icon={v.icon}
+                  title={v.title}
+                  description={v.description}
                   layout="centered"
                   accent="bottom"
                 />
@@ -154,8 +129,8 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* ===== WHY JOIN US — Light section ===== */}
-      <section className="section section--light position-relative">
+      {/* ===== WHY JOIN US — White section ===== */}
+      <section className="section" style={{ backgroundColor: '#fff' }}>
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
@@ -163,9 +138,11 @@ export default function Careers() {
                 <h2 className="section-header__title mb-1">Why Join Us</h2>
                 <div className="gradient-underline mb-4" style={{ margin: 0 }} />
                 <p className="text-muted" style={{ lineHeight: 1.8 }}>
-                  Our employees enjoy a vibrant workplace culture, deep engagement and outstanding benefits. All of this adds up to why we were named amongst the Best Workplaces by Inc Magazine and Washington Business Journal!
+                  Our employees enjoy a vibrant workplace culture, deep engagement and
+                  outstanding benefits. All of this adds up to why we were named amongst
+                  the Best Workplaces by Inc Magazine and Washington Business Journal!
                 </p>
-                <Link to="/contact" className="btn btn-accent btn-cta">
+                <Link to="/company/why-us" className="btn btn-accent btn-cta">
                   Read More <i className="bi bi-arrow-right"></i>
                 </Link>
               </AnimatedSection>
@@ -194,33 +171,61 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* ===== SECURITY UNIVERSITY — Indigo ===== */}
-      <section className="section section--indigo position-relative">
-        <NetworkBackground variant="dark" nodeCount={15} />
-        <div className="container position-relative" style={{ zIndex: 2 }}>
+      {/* ===== OUR PEOPLE — Light blue (#c3d9ff) ===== */}
+      <section className="section section--light position-relative">
+        <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-left">
-                <h3 className="section-header__title text-white mb-3">Security University</h3>
-                <p className="text-white-50" style={{ lineHeight: 1.8 }}>
-                  Does your future ambition include a career in cybersecurity? As an intern at our Security University, you'll experience a supportive, tight knit community of industry-leading practitioners with real-world experience serving as your instructors and a broad range of courses tailored to meet your interests.
-                </p>
-                <Link to="/contact" className="btn btn-accent btn-cta">
-                  Learn More <i className="bi bi-arrow-right"></i>
-                </Link>
+                <div className="ratio ratio-16x9 rounded-3 overflow-hidden">
+                  <img src="/placeholder-video.svg" alt="Pay-It-Forward program" className="w-100 h-100" style={{ objectFit: 'cover' }} />
+                </div>
               </AnimatedSection>
             </div>
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-right">
-                <img src="/placeholder-video.svg" alt="Security University" className="rounded-3 w-100" />
+                <h2 className="section-header__title mb-3">
+                  <span style={{ color: '#4b4fff' }}>Our People</span>: The Building Blocks of Our Culture
+                </h2>
+                <p className="text-muted" style={{ lineHeight: 1.8 }}>
+                  From our beginning, we created a peer-to-peer recognition program to
+                  celebrate our employee's achievements and contributions. Paying it forward
+                  is part of our DNA.
+                </p>
               </AnimatedSection>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== OPEN POSITIONS — Light section ===== */}
-      <section className="section section--light position-relative" id="openings">
+      {/* ===== PERKS — Dark ===== */}
+      <section className="section section--dark position-relative">
+        <NetworkBackground variant="dark" nodeCount={10} />
+        <div className="container position-relative" style={{ zIndex: 2 }}>
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mb-5">
+              <h2 className="section-header__title text-white">Perks</h2>
+            </div>
+          </AnimatedSection>
+          <AnimatedSection animation="stagger-children" className="row g-4">
+            {perks.map((p) => (
+              <div className="col-md-6 col-lg-3" key={p.title}>
+                <div className="text-center text-white">
+                  <i className={`bi ${p.icon} mb-3`} style={{ fontSize: '2.5rem', color: '#4b4fff' }}></i>
+                  <h5 className="fw-bold mb-2">{p.title}</h5>
+                  <p className="text-white-50 small">{p.desc}</p>
+                </div>
+              </div>
+            ))}
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ===== GPSU + OUR PEOPLE (shared) ===== */}
+      <GPSUniversity />
+
+      {/* ===== OPEN POSITIONS ===== */}
+      <section className="section" style={{ backgroundColor: '#fff' }} id="openings">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
@@ -280,17 +285,22 @@ export default function Careers() {
             </div>
           </AnimatedSection>
 
-          <div className="text-center mt-5">
-            <p className="text-muted mb-3">
-              Don't see a role that fits? We'd still love to hear from you.
+          <div className="text-muted text-center mt-5 small">
+            <p>
+              In compliance with federal law, all persons hired must verify their identity
+              and eligibility to work in the United States.
             </p>
-            <Link to="/contact" className="btn btn-accent btn-cta">
-              Send Your Resume <i className="bi bi-arrow-right"></i>
-            </Link>
+            <p>
+              We are an equal opportunity employer. All qualified applicants will receive
+              consideration for employment without regard to race, color, religion, sex,
+              national origin, disability or protected veteran status.
+            </p>
           </div>
         </div>
       </section>
-          <BeInformed />
+
+      {/* ===== ADDITIONAL RESOURCES ===== */}
+      <AdditionalResources />
     </>
   );
 }

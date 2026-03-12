@@ -3,6 +3,8 @@ import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import NetworkBackground from '../components/sections/NetworkBackground';
 import BeInformed from '../components/sections/BeInformed';
+import Certifications from '../components/sections/Certifications';
+
 
 const offices = [
   { city: 'Headquarters – Reston, VA', address: '1900 Reston Metro Plaza, Suite 701, Reston, VA 20190' },
@@ -23,6 +25,8 @@ export default function Contact() {
         subtitle="Learn How We Can Help You Address Your Unique Cybersecurity Challenges"
         variant="page"
         ctaText=""
+        bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2021/07/Website_Refresh_Services_MAIN_Cloud_Security.png"
+        showNetwork={false}
       />
 
       {/* ===== FORM SECTION — Dark ===== */}
@@ -129,56 +133,9 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* ===== ELITE TRUST SECTION — Dark ===== */}
-      <section className="section section--dark position-relative">
-        <NetworkBackground variant="dark" nodeCount={25} />
-        <div className="container position-relative" style={{ zIndex: 2 }}>
-          <AnimatedSection animation="animate-on-scroll">
-            <div className="text-center mb-5">
-              <h2 className="section-header__title text-white" style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
-                Put an <span className="text-accent-box">ELITE</span> Team of Cybersecurity Practitioners on Your Side
-              </h2>
-            </div>
-          </AnimatedSection>
+      <Certifications variant="centered" />
 
-          <AnimatedSection animation="scale-in">
-            <div className="trust-card">
-              <div className="row g-4 align-items-center">
-                <div className="col-lg-3">
-                  <h4 className="trust-card__label">
-                    Trusted by Government Organizations and Global Brands:
-                  </h4>
-                </div>
-                <div className="col-lg-3">
-                  <div className="trust-card__stat">
-                    <div className="trust-card__stat-icon">
-                      <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
-                    </div>
-                    <p className="trust-card__stat-text">Trusted by More than 50% of U.S. Government Cabinet-Level Agencies</p>
-                  </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="trust-card__stat">
-                    <div className="trust-card__stat-icon">
-                      <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
-                    </div>
-                    <p className="trust-card__stat-text">Depended on by 40 of the Fortune 100</p>
-                  </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="trust-card__stat">
-                    <div className="trust-card__stat-icon">
-                      <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
-                    </div>
-                    <p className="trust-card__stat-text">Relied on by a Third of the Fortune 500</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
+      <BeInformed />
     </>
   );
 }

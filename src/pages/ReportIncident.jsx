@@ -23,11 +23,11 @@ export default function ReportIncident() {
         }}
       >
         <div className="container">
-          <div className="row g-5">
+          <div className="row g-5 justify-content-center">
             {/* Left — Title + Description */}
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <AnimatedSection animation="fade-in-left">
-                <h1 className="section-header__title mb-4" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
+                <h1 className="section-header__title mb-4" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.2rem)' }}>
                   <span className="text-accent-box">Report</span> an Incident
                 </h1>
 
@@ -46,7 +46,7 @@ export default function ReportIncident() {
             </div>
 
             {/* Right — Form Card */}
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <AnimatedSection animation="fade-in-right">
                 {submitted ? (
                   <div className="incident-form-card text-center py-5">
@@ -165,7 +165,7 @@ export default function ReportIncident() {
                           ></textarea>
                         </div>
                         <div className="col-12">
-                          <button type="submit" className="btn btn-accent btn-lg w-100 btn-cta fw-bold">
+                          <button type="submit" className="btn btn-accent btn-lg btn-cta fw-bold">
                             Submit Report <i className="bi bi-arrow-right"></i>
                           </button>
                         </div>
@@ -176,6 +176,63 @@ export default function ReportIncident() {
               </AnimatedSection>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ===== ELITE TRUST SECTION ===== */}
+      <section
+        className="section section--dark position-relative overflow-hidden"
+        style={{
+          backgroundImage: 'url(/bg-abstract-lines.svg)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center bottom',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div className="container position-relative" style={{ zIndex: 2 }}>
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mb-5">
+              <h2 className="section-header__title text-white" style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' , maxWidth:'1080px' , margin:'0 auto' }}>
+                Put an <span className="text-accent-box">ELITE</span> Team of Cybersecurity Practitioners on Your Side
+              </h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection animation="scale-in">
+            <div className="trust-card">
+              <div className="row g-4 align-items-center">
+                <div className="col-lg-3">
+                  <h4 className="trust-card__label">
+                    Trusted by Government Organizations and Global Brands:
+                  </h4>
+                </div>
+                <div className="col-lg-3">
+                  <div className="trust-card__stat">
+                    <div className="trust-card__stat-icon">
+                      <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
+                    </div>
+                    <p className="trust-card__stat-text">Trusted by More than 50% of U.S. Government Cabinet-Level Agencies</p>
+                  </div>
+                </div>
+                <div className="col-lg-3">
+                  <div className="trust-card__stat">
+                    <div className="trust-card__stat-icon">
+                      <i className="bi bi-star-fill "></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
+                    </div>
+                    <p className="trust-card__stat-text">Depended on by 40 of the Fortune 100</p>
+                  </div>
+                </div>
+                <div className="col-lg-3">
+                  <div className="trust-card__stat">
+                    <div className="trust-card__stat-icon">
+                      <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
+                    </div>
+                    <p className="trust-card__stat-text">Relied on by a Third of the Fortune 500</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

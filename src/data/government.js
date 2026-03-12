@@ -99,7 +99,7 @@ const governmentPages = {
       ],
       closingText:
         'We help defense organizations acquire mission-critical cybersecurity solutions efficiently.',
-      image: '/placeholder-dod.svg',
+      image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/08/GSA_Logo_470_432.jpg',
       imageAlt: 'DoD ESI Logo',
     },
     infoSections: [
@@ -155,7 +155,7 @@ const governmentPages = {
       ],
       closingText:
         'We deliver mission-critical cybersecurity expertise through SeaPort-NxG to support naval and defense operations.',
-      image: '/placeholder-seaport.svg',
+      image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp',
       imageAlt: 'SeaPort-NxG Logo',
     },
     infoSections: [
@@ -223,7 +223,7 @@ const governmentPages = {
       ],
       closingText:
         'We leverage OASIS+ to deliver integrated cybersecurity solutions that address your agency\'s most complex requirements.',
-      image: '/placeholder-oasis.svg',
+      image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/08/GSA_Logo_470_432.jpg',
       imageAlt: 'OASIS+ Logo',
     },
     infoSections: [

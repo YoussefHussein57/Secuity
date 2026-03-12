@@ -272,6 +272,45 @@
   object-fit: contain;
 }
 
+// ---- Trust Stats (centered cert variant) ----
+.certs-trust-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+
+  &__item {
+    border-left: 3px solid $gradient-start;
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+  &__value {
+    display: block;
+    font-family: $font-family-heading;
+    font-weight: $fw-extrabold;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: $primary;
+    line-height: 1.2;
+  }
+
+  &__label {
+    display: block;
+    font-size: 0.85rem;
+    color: $gray-500;
+    line-height: 1.4;
+    max-width: 180px;
+  }
+}
+
+.certs-badges-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 // ---- Additional Resources Carousel ----
 .additional-resources {
   background-color: #19186E !important;

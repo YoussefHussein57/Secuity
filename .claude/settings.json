@@ -5,7 +5,8 @@
       "Bash(npm run build)"
     ],
     "additionalDirectories": [
-      "d:\\Freelance\\Project1\\WebProject"
+      "d:\\Freelance\\Project1\\WebProject",
+      "d:\\Freelance\\Project1"
     ]
   }
 }

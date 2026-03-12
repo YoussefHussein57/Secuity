@@ -138,7 +138,7 @@
 // Hero page clip-path → next section must overlap behind the triangle
 .hero--page + .section {
   margin-top: -7rem;
-  padding-top: 164px;
+  padding-top: 164px !important;
 }
 .hero--page + .section::before { display: none; }
 
@@ -164,6 +164,13 @@
     font-weight: $headings-font-weight;
     margin-bottom: 1rem;
     color: $primary;
+
+    .text-accent-box {
+      background: $primary;
+      color: $white;
+      padding: 0.05em 0.2em;
+      display: inline;
+    }
   }
 
   &__subtitle {
@@ -185,6 +192,11 @@
   .section--accent & {
     &__title {
       color: $white;
+
+      .text-accent-box {
+        background: $white;
+        color: $primary;
+      }
     }
     &__subtitle {
       color: rgba($white, 0.65);

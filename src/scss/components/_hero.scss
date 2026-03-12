@@ -3,7 +3,7 @@
 // ===========================================
 
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   background-size: cover;
   background-position: center;
   background-color: $dark;
@@ -92,9 +92,9 @@
 
   // Service variant — angled edge transitions to indigo
   &--service {
-    min-height: 85vh;
-    padding-top: 10rem;
-    padding-bottom: 8rem;
+    min-height: 65vh;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
 
     .hero__title {
       font-size: clamp(2.2rem, 3.5vw, 3.75rem);
@@ -121,9 +121,9 @@
   }
 
   &--page {
-    min-height: 45vh;
+    min-height: 35vh;
     padding-top: 100px;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
     z-index: 1;

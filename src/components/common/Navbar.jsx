@@ -45,7 +45,7 @@ const governmentItems = {
 };
 
 const companyItems = [
-  { icon: 'bi-heart', label: 'Why Cyber', path: '/company', desc: 'Guiding you through the complex security maze' },
+  { icon: 'bi-heart', label: 'Why Cyber', path: '/company/why-us', desc: 'Guiding you through the complex security maze' },
   { icon: 'bi-people', label: 'Leadership Team', path: '/company/leadership', desc: 'Our partners and leadership team' },
   { icon: 'bi-briefcase', label: 'Careers', path: '/company/careers', desc: 'Learn about our values, culture & open positions' },
   { icon: 'bi-megaphone', label: 'Newsroom', path: '/resources/blog', desc: 'Read the latest news & press releases' },
@@ -54,12 +54,12 @@ const companyItems = [
 ];
 
 const companyCustomers = [
-  { alt: 'Premise Health', path: '/logos/premise-health.svg' },
-  { alt: 'Nuance', path: '/logos/nuance.svg' },
-  { alt: 'KHovnanian Homes', path: '/logos/khovnanian.svg' },
-  { alt: 'Follett', path: '/logos/follett.svg' },
-  { alt: 'Intelsat', path: '/logos/intelsat.svg' },
-  { alt: 'Sisense', path: '/logos/sisense.svg' },
+  { alt: 'Premise Health', path: '/logos/premise-health.png' },
+  { alt: 'Nuance', path: '/logos/nuance.png' },
+  { alt: 'KHovnanian Homes', path: '/logos/khovnanian.png' },
+  { alt: 'Follett', path: '/logos/follett.png' },
+  { alt: 'Intelsat', path: '/logos/intelsat.png' },
+  { alt: 'Sisense', path: '/logos/sisense-logo.png' },
 ];
 
 const resourceLibrary = [
@@ -438,7 +438,7 @@ export default function Navbar() {
                               </div>
                             ))}
                           </div>
-                          <Link to="/company" className="mega-panel__view-all" onClick={closeMega}>
+                          <Link to="/company/customers" className="mega-panel__view-all" onClick={closeMega}>
                             View All Case Studies <i className="bi bi-chevron-right"></i>
                           </Link>
                         </div>

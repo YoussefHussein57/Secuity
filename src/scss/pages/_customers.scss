@@ -1,0 +1,240 @@
+// ===========================================
+// Customers Page — Customer Testimonials
+// Modeled after GuidePoint /customers/
+// ===========================================
+
+// ---- Customer Cards Section ----
+.customers-section {
+  padding-bottom: 4rem;
+}
+
+.customer-card {
+  background: $white;
+  border-left: 3px solid $accent;
+  padding: 16px 24px 48px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: $transition-base;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba($accent, 0.15);
+  }
+
+  // Logo area
+  &__logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    padding: 20px 10px;
+  }
+
+  &__logo {
+    max-width: 160px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0);
+    transition: $transition-base;
+  }
+
+  // Title for anonymous case studies (no logo)
+  &__title {
+    font-family: $font-family-heading;
+    font-weight: $fw-bold;
+    font-size: 1.25rem;
+    color: $primary;
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  // Description
+  &__desc {
+    color: $gray-700;
+    font-size: 0.938rem;
+    line-height: 1.6;
+    flex: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  // Action buttons
+  &__actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+}
+
+// Customer card buttons
+.btn-customer-video,
+.btn-customer-study {
+  font-size: 0.875rem;
+  font-weight: $fw-medium;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 0;
+  color: $white;
+  transition: $transition-base;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    transform: translateY(-2px);
+    color: $white;
+  }
+}
+
+.btn-customer-video {
+  background: linear-gradient(135deg, $gradient-start, darken($gradient-start, 5%));
+
+  &:hover {
+    background: linear-gradient(135deg, lighten($gradient-start, 5%), $gradient-start);
+    box-shadow: 0 4px 12px rgba($gradient-start, 0.4);
+  }
+}
+
+.btn-customer-study {
+  background: linear-gradient(135deg, $gradient-end, darken($gradient-end, 10%));
+
+  &:hover {
+    background: linear-gradient(135deg, lighten($gradient-end, 5%), $gradient-end);
+    box-shadow: 0 4px 12px rgba($gradient-end, 0.4);
+  }
+}
+
+// ---- Testimonial Slider Section ----
+.customers-testimonials {
+  background: #97b5db;
+  padding: 5rem 0;
+}
+
+.testimonial-slider {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  // Arrows
+  &__arrow {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid $accent;
+    color: $accent;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: $transition-base;
+
+    &:hover {
+      background: $accent;
+      color: $white;
+    }
+  }
+
+  // Content area
+  &__content {
+    flex: 1;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // Quote text
+  &__quote {
+    font-family: $font-family-heading;
+    font-size: 1.5rem;
+    font-weight: $fw-medium;
+    line-height: 1.6;
+    color: $primary;
+    margin-bottom: 1.5rem;
+    font-style: normal;
+
+    @media (min-width: 768px) {
+      font-size: 1.625rem;
+    }
+  }
+
+  // Author
+  &__author {
+    font-size: 0.938rem;
+    color: $primary;
+    font-weight: $fw-medium;
+    border-top: 1px solid rgba($primary, 0.2);
+    display: inline-block;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  // Counter (e.g., 1/4)
+  &__count {
+    display: block;
+    font-size: 0.875rem;
+    color: rgba($primary, 0.5);
+    font-weight: $fw-medium;
+    text-align: right;
+  }
+}
+
+// ---- Responsive ----
+@media (max-width: 991.98px) {
+  .customer-card {
+    &__logo-area {
+      min-height: 100px;
+    }
+  }
+
+  .testimonial-slider {
+    gap: 1rem;
+
+    &__quote {
+      font-size: 1.25rem;
+    }
+
+    &__arrow {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .testimonial-slider {
+    flex-direction: column;
+
+    &__arrow {
+      &--prev,
+      &--next {
+        order: 1;
+      }
+    }
+
+    &__content {
+      order: 0;
+    }
+  }
+
+  .customer-card__actions {
+    flex-direction: column;
+
+    .btn-customer-video,
+    .btn-customer-study {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 800" preserveAspectRatio="xMidYMid slice">
+  <rect width="1920" height="800" fill="#0f0f27"/>
+  <g fill="none" stroke-linecap="round">
+    <!-- Abstract curved lines -->
+    <path d="M960 800 C960 600, 800 500, 600 450 C400 400, 200 500, 100 700" stroke="#2a2a6e" stroke-width="1.5" opacity="0.4"/>
+    <path d="M960 800 C960 580, 1100 480, 1300 430 C1500 380, 1700 480, 1820 680" stroke="#2a2a6e" stroke-width="1.5" opacity="0.4"/>
+    <path d="M960 800 C950 550, 750 420, 500 380 C250 340, 50 440, -50 650" stroke="#1e1e5a" stroke-width="1" opacity="0.35"/>
+    <path d="M960 800 C970 530, 1200 400, 1450 360 C1700 320, 1900 420, 1970 640" stroke="#1e1e5a" stroke-width="1" opacity="0.35"/>
+    <path d="M960 800 C940 500, 650 350, 350 320 C50 290, -100 400, -150 600" stroke="#3535a0" stroke-width="0.8" opacity="0.2"/>
+    <path d="M960 800 C980 480, 1300 330, 1600 300 C1900 270, 2050 380, 2100 580" stroke="#3535a0" stroke-width="0.8" opacity="0.2"/>
+    <path d="M960 800 C930 460, 580 280, 250 260 C-80 240, -200 360, -220 560" stroke="#4b4fff" stroke-width="0.6" opacity="0.12"/>
+    <path d="M960 800 C990 440, 1380 260, 1710 240 C2040 220, 2160 340, 2180 540" stroke="#4b4fff" stroke-width="0.6" opacity="0.12"/>
+    <!-- Inner subtle curves -->
+    <path d="M960 800 C955 650, 870 560, 750 520 C630 480, 500 530, 420 640" stroke="#2a2a6e" stroke-width="2" opacity="0.3"/>
+    <path d="M960 800 C965 640, 1060 550, 1180 510 C1300 470, 1440 520, 1520 630" stroke="#2a2a6e" stroke-width="2" opacity="0.3"/>
+    <path d="M960 800 C945 700, 900 650, 820 620 C740 590, 650 620, 600 700" stroke="#3535a0" stroke-width="1.2" opacity="0.25"/>
+    <path d="M960 800 C975 690, 1030 640, 1110 610 C1190 580, 1280 610, 1330 690" stroke="#3535a0" stroke-width="1.2" opacity="0.25"/>
+  </g>
+</svg>

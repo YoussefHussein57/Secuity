@@ -1,5 +1,6 @@
 import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
+import NetworkBackground from '../components/sections/NetworkBackground';
 import BeInformed from '../components/sections/BeInformed';
 
 const leaders = [
@@ -9,35 +10,47 @@ const leaders = [
   { name: 'Sarah Brown', role: 'VP of Services', bio: 'Sarah manages our service delivery team of 500+ cybersecurity professionals.', image: '/placeholder-person.svg' },
   { name: 'David Chen', role: 'VP of Engineering', bio: 'David leads our engineering teams building managed security platforms and tools.', image: '/placeholder-person.svg' },
   { name: 'Lisa Johnson', role: 'VP of Federal Services', bio: 'Lisa directs our government practice serving federal, state, and local agencies.', image: '/placeholder-person.svg' },
+  { name: 'Robert Taylor', role: 'VP of Sales', bio: 'Robert drives strategic partnerships and revenue growth across all regions.', image: '/placeholder-person.svg' },
+  { name: 'Maria Garcia', role: 'VP of Marketing', bio: 'Maria leads brand strategy, demand generation, and our events program.', image: '/placeholder-person.svg' },
 ];
 
 export default function Leadership() {
   return (
     <>
+      {/* ===== HERO — Short page hero ===== */}
       <Hero
-        title="Leadership Team"
-        subtitle="Meet the experienced leaders driving our mission to make cybersecurity better for everyone."
-        variant="page"
+        label="Leadership"
+        title="Our Leadership Team"
+        subtitle=""
         ctaText=""
+        variant="page"
       />
 
-      <section className="section section--light">
-        <div className="container">
-          <AnimatedSection animation="stagger-children" className="row g-4">
+      {/* ===== LEADERSHIP GRID — Dark navy, matches GuidePoint ===== */}
+      <section className="section section--dark position-relative">
+        <NetworkBackground variant="dark" nodeCount={20} />
+        <div className="container position-relative" style={{ zIndex: 2 }}>
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mb-5">
+              <h2 className="section-header__title text-white">Security Partners</h2>
+              <div className="gradient-underline" />
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection animation="stagger-children" className="row g-4 leadership-grid">
             {leaders.map((l) => (
-              <div className="col-md-6 col-lg-4" key={l.name}>
-                <div className="text-center">
-                  <div className="overflow-hidden rounded-4 mb-3">
+              <div className="col-md-6 col-lg-3" key={l.name}>
+                <div className="leader-card text-center">
+                  <div className="leader-card__image-wrap">
                     <img
                       src={l.image}
                       alt={l.name}
-                      className="w-100"
-                      style={{ height: '300px', objectFit: 'cover' }}
+                      className="leader-card__image"
                     />
                   </div>
-                  <h5 className="fw-bold mb-1" style={{ fontFamily: "'Exo 2', sans-serif" }}>{l.name}</h5>
-                  <p className="mb-2" style={{ color: '#4b4fff', fontSize: '0.9rem', fontWeight: 600 }}>{l.role}</p>
-                  <p className="text-muted small">{l.bio}</p>
+                  <h5 className="leader-card__name">{l.name}</h5>
+                  <p className="leader-card__role">{l.role}</p>
+                  <p className="leader-card__bio">{l.bio}</p>
                 </div>
               </div>
             ))}
