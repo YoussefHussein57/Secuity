@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
@@ -52,7 +53,7 @@ export default function ServiceDetail() {
                 </p>
               </div>
             </AnimatedSection>
-            <AnimatedSection animation="stagger-children" className="row g-4 justify-content-center">
+            <AnimatedSection animation="stagger-children" className="row g-4">
               {service.useCases.items.map((item) => (
                 <div className="col-lg-4 col-md-6" key={item}>
                   <GradientCard text={item} layout="text-only" accent="top" />
@@ -102,7 +103,7 @@ export default function ServiceDetail() {
         );
 
         return (
-          <div key={idx}>
+          <Fragment key={idx}>
             <section className="section section--dark dark-split">
               <div className="container">
                 <div className="row g-5 align-items-center">
@@ -133,7 +134,7 @@ export default function ServiceDetail() {
                 </div>
               </section>
             )}
-          </div>
+          </Fragment>
         );
       })}
 

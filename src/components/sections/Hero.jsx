@@ -15,6 +15,7 @@ export default function Hero({
   secondaryCtaLink,
   bgImage = '/hero-bg.svg',
   variant = 'default',
+  showNetwork = true,
 }) {
   const [loaded, setLoaded] = useState(false);
 
@@ -44,7 +45,7 @@ export default function Hero({
       className={`hero text-white ${variantClass}`}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <NetworkBackground />
+      {showNetwork && <NetworkBackground />}
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div className={`row ${isPage ? 'justify-content-center' : 'align-items-center'}`}>
           <div className={isPage ? 'col-lg-10' : 'col-lg-7'}>

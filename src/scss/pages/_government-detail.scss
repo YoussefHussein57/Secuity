@@ -1,0 +1,337 @@
+// ===========================================
+// Government Detail Pages (GSA, DoD ESI, etc.)
+// ===========================================
+// Template used by GovernmentDetail.jsx — data-driven sub-pages
+// under /government/:slug
+
+.govt-detail {
+
+  // ---- Shared heading styles ----
+  &__heading {
+    font-family: $font-family-heading;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: $headings-font-weight;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+
+    &--sm {
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    }
+
+    .text-accent-box {
+      background: $primary;
+      color: $white;
+      padding: 0.05em 0.25em;
+      display: inline-block;
+      line-height: 1.2;
+    }
+  }
+
+  &__text {
+    color: $gray-700;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+
+    &--closing {
+      font-weight: $fw-medium;
+      margin-top: 0.5rem;
+    }
+  }
+
+  // ---- 2. Introduction Split ----
+  &__intro {
+    background-color: $white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__intro-image {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__checklist {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      color: $gray-700;
+      font-size: 1rem;
+      line-height: 1.5;
+
+      i {
+        color: $gradient-start;
+        font-size: 1.1rem;
+        margin-top: 0.15rem;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  // ---- 3. Info Section — white bg ----
+  &__info {
+    background-color: $white;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+
+    .govt-detail__heading {
+      color: $primary;
+      font-weight: 500;
+    }
+
+    .govt-detail__text {
+      color: $primary;
+    }
+  }
+
+  // Centered info layout (e.g. "What is GSA?")
+  &__info-centered {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    position: relative;
+    overflow: visible;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background-color: #eef5ff;
+      z-index: 0;
+    }
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .govt-detail__text {
+      color: rgba($primary, 0.7);
+      font-size: 1.05rem;
+    }
+  }
+
+  // Heading with gradient underline
+  &__heading--underline {
+    display: inline-block;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      margin: 0.75rem auto 0;
+      background: linear-gradient(90deg, $gradient-start, $gradient-end);
+      border-radius: 2px;
+    }
+  }
+
+  &__info-image {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__details-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.35rem 0;
+      color: $primary;
+      font-size: 0.95rem;
+      line-height: 1.6;
+
+      i {
+        color: $gradient-start;
+        font-size: 1.1rem;
+        margin-top: 0.15rem;
+        flex-shrink: 0;
+      }
+
+      strong {
+        font-weight: $fw-semibold;
+      }
+    }
+  }
+
+  &__sub-items {
+    margin: 1rem 0;
+    color: $primary;
+
+    &-label {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+
+      i {
+        color: $gradient-start;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+      }
+
+      strong {
+        font-weight: $fw-semibold;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0.25rem 0;
+        padding-left: 1.25rem;
+        position: relative;
+        font-size: 0.95rem;
+        line-height: 1.6;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0.65rem;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $gradient-start;
+        }
+      }
+    }
+  }
+
+  // CTA link with check icon (inline, not button)
+  &__cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    color: $gradient-start;
+    font-weight: $fw-semibold;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    i {
+      font-size: 1.1rem;
+    }
+
+    &:hover {
+      color: $gradient-end;
+    }
+  }
+
+  // ---- 4. Vendor Logos ----
+  &__vendors {
+    background-color: $light-1;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+    .govt-detail__heading {
+      color: $primary;
+    }
+
+    .govt-detail__text {
+      color: $gray-700;
+    }
+  }
+
+  &__logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+
+  &__logo-item {
+    img {
+      max-height: 60px;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(30%);
+      transition: filter 0.3s ease;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  // ---- 5. CTA Section — dark indigo ----
+  &__cta {
+    background-color: #0f0f59;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__cta-heading {
+    font-family: $font-family-heading;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: $headings-font-weight;
+    color: $white;
+    margin-bottom: 1rem;
+  }
+
+  &__cta-text {
+    color: rgba($white, 0.7);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+
+    strong {
+      color: $white;
+      font-weight: $fw-semibold;
+    }
+  }
+
+  &__cta-highlight {
+    color: $gradient-end;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: lighten($gradient-end, 10%);
+    }
+  }
+
+  // ---- No angled dividers on this template ----
+  .section::before {
+    display: none !important;
+  }
+
+  // ---- Hero: centered like page variant but no clip-path ----
+  .hero--page {
+    clip-path: none;
+    padding-bottom: 6rem;
+
+    .hero__subtitle {
+      font-size: 33px;
+      max-width: 900px;
+    }
+  }
+}

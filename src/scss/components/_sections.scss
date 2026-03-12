@@ -29,13 +29,13 @@
 .section--dark {
   background-color: $primary;
   color: $white;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
   @include angled-top($primary);
 
   &:last-child {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 120px;
+    padding-bottom: 120px;
     &::before { display: none; }
   }
 }
@@ -44,26 +44,26 @@
 .section--indigo {
   background-color: $indigo;
   color: $white;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
   @include angled-top($indigo);
 
   &:last-child {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 120px;
+    padding-bottom: 120px;
     &::before { display: none; }
   }
 }
 .section--indigo-light {
   background-color: $indigo-light;
   color: $white;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
   @include angled-top($indigo-light);
 
   &:last-child {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 120px;
+    padding-bottom: 120px;
     &::before { display: none; }
   }
 }
@@ -71,8 +71,8 @@
 // ---- Light section ----
 .section--light {
   background-color: $light;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
   @include angled-top($light);
 }
 
@@ -80,8 +80,8 @@
 .section--accent {
   background-color: $accent;
   color: $white;
-  padding-top: 6rem;
-  padding-bottom: 4%;
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
   @include angled-top($accent);
 }
 

@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import AnimatedSection from './AnimatedSection';
 
 const DEFAULT_RESOURCES = [
-  { type: 'VIDEO', color: '#e74c3c', icon: 'bi-play-circle-fill', action: 'Watch Now', title: 'On-Demand Webinar: Securing Your Applications in a Cloud-Native World' },
-  { type: 'CUSTOMER SUCCESS', color: '#00ccff', icon: 'bi-person-check-fill', action: 'Download', title: 'How a Fortune 500 Company Transformed Their Security Posture' },
-  { type: 'EBOOK', color: '#4b4fff', icon: 'bi-book-fill', action: 'Download', title: 'The Definitive Guide to Building a Mature Cybersecurity Program' },
-  { type: 'WHITEPAPER', color: '#8b5cf6', icon: 'bi-file-earmark-text-fill', action: 'Download', title: 'Zero Trust Architecture: Implementation Strategies for Modern Enterprises' },
-  { type: 'VIDEO', color: '#e74c3c', icon: 'bi-play-circle-fill', action: 'Watch Now', title: 'Panel Discussion: Threat Intelligence and Incident Response Best Practices' },
+  { type: 'Data Sheet', color: '#4b4fff', icon: 'bi-file-earmark-text-fill', action: 'Download', title: 'Corporate Overview Data Sheet' },
+  { type: 'Blog', color: '#00ccff', icon: 'bi-journal-richtext', action: 'Read More', title: 'Cybersecurity Insights and Best Practices' },
+  { type: 'Blog', color: '#00ccff', icon: 'bi-journal-richtext', action: 'Read More', title: 'Securing Your Enterprise Against Modern Threats' },
+  { type: 'Report', color: '#8b5cf6', icon: 'bi-bar-chart-fill', action: 'Download', title: 'GRIT Ransomware Taxonomy and Lifecycle' },
 ];
 
 export default function AdditionalResources({ resources = DEFAULT_RESOURCES }) {
@@ -51,13 +50,19 @@ export default function AdditionalResources({ resources = DEFAULT_RESOURCES }) {
           )}
           <div className="additional-resources__track" ref={scrollRef} onScroll={updateScrollState}>
             {resources.map((r, i) => (
-              <div className="resource-slide" key={i}>
+              <div className={`resource-slide${r.image ? ' resource-slide--has-image' : ''}`} key={i}>
                 <div className="resource-slide__badge" style={{ background: r.color }}>
                   {r.type}
                 </div>
-                <div className="resource-slide__icon">
-                  <i className={`bi ${r.icon}`}></i>
-                </div>
+                {r.image ? (
+                  <div className="resource-slide__image">
+                    <img src={r.image} alt={r.title} />
+                  </div>
+                ) : (
+                  <div className="resource-slide__icon">
+                    <i className={`bi ${r.icon}`}></i>
+                  </div>
+                )}
                 <p className="resource-slide__action">{r.action} <i className="bi bi-chevron-right"></i></p>
                 <p className="resource-slide__title">{r.title}</p>
               </div>

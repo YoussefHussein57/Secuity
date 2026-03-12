@@ -1,0 +1,141 @@
+// ===========================================
+// Government Solutions Page
+// ===========================================
+
+// Styles reuse existing shared components:
+// - .dark-split (from _services.scss)
+// - .service-accordion (from _home.scss)
+// - .card-gradient (from _technologies.scss)
+// - Certifications, AdditionalResources sections
+
+// Government page wrapper
+.government-page {
+
+  // Hero must sit above govt-gradient sections so clip-path triangle is visible
+  .hero--page {
+    z-index: 2;
+  }
+
+  // Govt-gradient base styles
+  .govt-gradient {
+    position: relative;
+    z-index: 0;
+    background: linear-gradient(to right, darken($primary, 4%) 0%, $primary 70%, darken($primary, 2%) 100%);
+
+    // Radial blue glow at bottom-right
+    &::after {
+      content: "";
+      position: absolute;
+      right: -100px;
+      bottom: -100px;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(
+        circle,
+        rgba(lighten($accent, 10%), 0.9) 0%,
+        rgba(lighten($accent, 5%), 0.5) 35%,
+        rgba($accent, 0.18) 55%,
+        rgba($accent, 0) 75%
+      );
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: -1;
+    }
+  }
+
+  // ---- Divider rules ----
+  // 1. First section after hero — no divider, tuck behind clip-path
+  .hero--page + .section.govt-gradient {
+    margin-top: -7rem;
+    padding-top: 124px;
+    &::before { display: none !important; }
+  }
+
+  // 2. All consecutive sections get angled dividers (like services/technologies)
+  .section--dark + .section--dark::before {
+    display: block !important;
+    background: $primary !important;
+  }
+
+  // 3. All sections sit flush — fully overlap the angled edge
+  .section + .section {
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  // Ensure ::before on non-dark sections after govt-gradient uses the right color
+  .govt-gradient + .section::before {
+    background: $primary !important;
+  }
+
+  // 5. Last section — no angled divider
+  .section:last-child::before {
+    display: none !important;
+  }
+
+  // Approach section — dark-to-lighter blue gradient
+  .govt-approach {
+    background: linear-gradient(to top right, $primary 80%, lighten($accent, 5%) 20%);
+  }
+
+  // "We Take That Approach" tagline max-width
+  .govt-approach__tagline {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Border around the whole accordion section, no per-item borders
+  .service-accordion-wrap {
+    border: 1px solid rgba($gradient-start, 0.25);
+    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+  }
+
+  .service-accordion__item {
+    border-bottom: none;
+  }
+
+  // ---- Video thumbnail with play button ----
+  .dark-split__video-thumb {
+    position: relative;
+    border-radius: $border-radius;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: $border-radius;
+    }
+
+    &:hover .dark-split__play-btn {
+      transform: translate(-50%, -50%) scale(1.1);
+      background: rgba($gradient-end, 0.25);
+    }
+  }
+
+  .dark-split__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px solid $gradient-end;
+    background: rgba($gradient-end, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+
+    i {
+      font-size: 2rem;
+      color: $gradient-end;
+      margin-left: 3px; // optical center for play icon
+    }
+  }
+}

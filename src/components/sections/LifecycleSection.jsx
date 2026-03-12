@@ -53,7 +53,7 @@ export default function LifecycleSection({ lifecycle }) {
           <div className="container">
             <AnimatedSection animation="stagger-children" className="row g-4">
               {cards.map((card) => (
-                <div className="col-lg-6" key={card.title}>
+                <div className="col-lg-3" key={card.title}>
                   <GradientCard
                     icon={card.icon}
                     title={card.title}

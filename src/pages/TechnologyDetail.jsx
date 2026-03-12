@@ -32,6 +32,7 @@ export default function TechnologyDetail() {
         ctaLink="/contact"
         bgImage={tech.heroImage}
         variant="service"
+        showNetwork={false}
       />
 
       {/* 2. Dark Split Section (image left, text right) */}

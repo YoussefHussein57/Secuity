@@ -4,7 +4,7 @@ const technologies = {
     icon: 'bi-diamond',
     tagline: 'Secure your applications from code to cloud with best-of-breed AppSec tools.',
     heroHighlight: 'Applications',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We evaluate, deploy, and manage application security solutions across SAST, DAST, RASP, SCA, and WAF — ensuring your software is protected at every stage of the development lifecycle.',
     vendors: ['Checkmarx', 'Snyk', 'Veracode', 'Fortify', 'Imperva', 'Akamai'],
@@ -40,10 +40,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Application Security consultants can help you evaluate the right solutions across SAST, DAST, SCA, and WAF tools and integrate them into your unique environment.',
       cards: [
-        { title: 'SAST & DAST Tools', description: 'Comprehensive static and dynamic analysis platforms that identify vulnerabilities throughout the development lifecycle, from code commit to deployment.' },
-        { title: 'SCA & Supply Chain', description: 'Software composition analysis and supply chain security solutions that detect risks in open-source dependencies and third-party components.' },
-        { title: 'WAF & RASP', description: 'Runtime application protection and web application firewalls that defend production applications against exploits, injection attacks, and zero-days.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.' },
       ],
+      commitment: {
+        label: 'Our Application Security Commitment to You',
+        title: 'We will help you navigate the Application Security technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right application security solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of application security technologies including: SAST, DAST, RASP, SCA, and WAF solutions',
+          'Offering comprehensive integration services for a wide variety of application security focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -74,7 +85,7 @@ const technologies = {
     icon: 'bi-pencil',
     tagline: 'Next-gen endpoint protection, EDR, and extended detection and response.',
     heroHighlight: 'Endpoint',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We evaluate and implement EPP, EDR, and XDR solutions tailored to your environment. From initial deployment to managed detection, we ensure every endpoint is protected.',
     vendors: ['CrowdStrike', 'SentinelOne', 'Microsoft Defender', 'Carbon Black', 'Cortex XDR', 'Trend Micro'],
@@ -110,10 +121,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Endpoint Security consultants can help you evaluate the right solutions across EPP, EDR, and XDR tools and integrate them into your unique environment.',
       cards: [
-        { title: 'EPP & Antivirus', description: 'Next-generation endpoint protection platforms that use AI and behavioral analysis to prevent malware, ransomware, and fileless attacks before execution.' },
-        { title: 'EDR Solutions', description: 'Endpoint detection and response tools that provide deep visibility, threat hunting, and automated containment across your entire device fleet.' },
-        { title: 'XDR Platforms', description: 'Extended detection and response platforms that correlate endpoint, network, and cloud telemetry for unified threat detection and response.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Sed porttitor lectus nibh. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus.' },
       ],
+      commitment: {
+        label: 'Our Endpoint Security Commitment to You',
+        title: 'We will help you navigate the Endpoint Security technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right endpoint security solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of endpoint security technologies including: Endpoint Protection Platforms, Endpoint Detection & Response, Managed Detection & Response and Endpoint Data Loss Prevention',
+          'Offering comprehensive integration services for a wide variety of endpoint security focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -144,7 +166,7 @@ const technologies = {
     icon: 'bi-hdd-network',
     tagline: 'Firewalls, SASE, NDR, and network segmentation solutions built for modern infrastructure.',
     heroHighlight: 'Network',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We design, deploy, and manage network security architectures using industry-leading NGFW, SASE, SD-WAN, and NDR technologies. Our approach ensures secure connectivity without sacrificing performance.',
     vendors: ['Palo Alto Networks', 'Fortinet', 'Cisco', 'Zscaler', 'Netskope', 'Darktrace'],
@@ -180,10 +202,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Network Security consultants can help you evaluate the right solutions across NGFW, SASE, SD-WAN, and NDR tools and integrate them into your unique environment.',
       cards: [
-        { title: 'NGFW & Firewalls', description: 'Next-generation firewalls that provide deep packet inspection, intrusion prevention, and application-level visibility to secure your network perimeter.' },
-        { title: 'SASE & SD-WAN', description: 'Cloud-delivered secure access service edge and software-defined WAN solutions that converge networking and security for distributed workforces.' },
-        { title: 'NDR & Traffic Analysis', description: 'Network detection and response platforms that use AI and behavioral analytics to identify anomalous traffic, lateral movement, and advanced threats.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Nam quam nunc blandit vel luctus pulvinar hendrerit id lorem. Maecenas nec odio et ante tincidunt tempus.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum aenean imperdiet etiam ultricies nisi vel augue.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Aenean vulputate eleifend tellus. Aenean leo ligula porttitor eu consequat vitae eleifend ac enim.' },
       ],
+      commitment: {
+        label: 'Our Network Security Commitment to You',
+        title: 'We will help you navigate the Network Security technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right network security solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of network security technologies including: Next-Generation Firewalls (NGFW), Secure Access Service Edge (SASE), Software-Defined WAN (SD-WAN) and Network Detection & Response (NDR)',
+          'Offering comprehensive integration services for a wide variety of network security focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -214,7 +247,7 @@ const technologies = {
     icon: 'bi-cloud',
     tagline: 'Protect your cloud workloads across AWS, Azure, and GCP with best-of-breed solutions.',
     heroHighlight: 'Cloud',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'Our vendor-agnostic approach ensures you get the right cloud security tools — not the ones that pay us the most. We evaluate, deploy, and manage solutions across CSPM, CWPP, CASB, and container security.',
     vendors: ['Palo Alto Prisma', 'Wiz', 'CrowdStrike', 'Zscaler', 'Lacework', 'Orca Security'],
@@ -250,10 +283,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Cloud Security consultants can help you evaluate the right solutions across CSPM, CWPP, CASB, and container security tools and integrate them into your unique environment.',
       cards: [
-        { title: 'CSPM & CIEM', description: 'Cloud security posture management and identity entitlement management platforms that detect misconfigurations and enforce least-privilege access across multi-cloud environments.' },
-        { title: 'CWPP & Container Security', description: 'Cloud workload protection platforms and container security solutions that secure VMs, serverless functions, and Kubernetes clusters from build to runtime.' },
-        { title: 'CASB & Cloud DLP', description: 'Cloud access security brokers and data loss prevention tools that provide visibility, control, and compliance for SaaS applications and cloud data.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Fusce nec tellus sed augue semper porta. Mauris massa nunc pulvinar sit amet pretium a, lacinia a felis.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Integer tincidunt cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Aliquam erat volutpat ut pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.' },
       ],
+      commitment: {
+        label: 'Our Cloud Security Commitment to You',
+        title: 'We will help you navigate the Cloud Security technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right cloud security solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of cloud security technologies including: Cloud Security Posture Management (CSPM), Cloud Workload Protection Platforms (CWPP), Cloud Access Security Brokers (CASB) and Container Security',
+          'Offering comprehensive integration services for a wide variety of cloud security focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -284,7 +328,7 @@ const technologies = {
     icon: 'bi-check2-square',
     tagline: 'Business resilience, third-party risk management, and compliance automation.',
     heroHighlight: 'Compliance',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We implement GRC platforms and automation tools that streamline compliance workflows, quantify cyber risk, and strengthen business resilience — all while reducing manual overhead.',
     vendors: ['ServiceNow GRC', 'Archer', 'OneTrust', 'LogicGate', 'Prevalent', 'Vanta'],
@@ -320,10 +364,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified GRC consultants can help you evaluate the right solutions across risk management, compliance automation, and third-party risk tools and integrate them into your unique environment.',
       cards: [
-        { title: 'GRC Platforms', description: 'Integrated governance, risk, and compliance platforms that centralize policy management, risk assessment, and control mapping across your organization.' },
-        { title: 'Compliance Automation', description: 'Automated evidence collection and continuous monitoring tools that streamline audit preparation for SOC 2, HIPAA, PCI-DSS, and other frameworks.' },
-        { title: 'Third-Party Risk Management', description: 'Vendor risk assessment and continuous monitoring platforms that evaluate and track the security posture of your entire supply chain.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores alias consequatur.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.' },
       ],
+      commitment: {
+        label: 'Our GRC Commitment to You',
+        title: 'We will help you navigate the GRC technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right GRC solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of GRC technologies including: Risk Management platforms, Compliance Automation tools and Third-Party Risk Management solutions',
+          'Offering comprehensive integration services for a wide variety of GRC focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -354,7 +409,7 @@ const technologies = {
     icon: 'bi-mortarboard',
     tagline: 'Phishing simulation, enterprise LMS, and security culture transformation.',
     heroHighlight: 'Awareness',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We deploy and manage security awareness platforms that reduce human risk through phishing simulations, interactive training, and measurable behavior change programs.',
     vendors: ['KnowBe4', 'Proofpoint', 'Cofense', 'SANS Security Awareness', 'Hoxhunt', 'Curricula'],
@@ -390,10 +445,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Security Awareness consultants can help you evaluate the right solutions across phishing simulation, LMS, and behavior analytics tools and integrate them into your unique environment.',
       cards: [
-        { title: 'Phishing Simulation', description: 'Automated phishing simulation platforms that test employee resilience with realistic campaigns and provide targeted remediation training.' },
-        { title: 'Security Training LMS', description: 'Enterprise learning management systems with interactive, role-based security training modules that drive engagement and knowledge retention.' },
-        { title: 'Behavior Analytics', description: 'User behavior analytics and risk scoring tools that measure security culture maturity and identify high-risk individuals for targeted intervention.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Proin gravida hendrerit lectus a molestie. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Praesent mauris fusce non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit vivamus vel nulla.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Aenean lectus elit fermentum non convallis id sagittis at neque. Nullam vel sem praesent pharetra felis.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Cras sagittis vulputate metus donec posuere vulputate arcu phasellus accumsan cursus velit vestibulum.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Morbi mollis tellus ac sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames.' },
       ],
+      commitment: {
+        label: 'Our Security Awareness Commitment to You',
+        title: 'We will help you navigate the Security Awareness technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right security awareness solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of security awareness technologies including: Phishing Simulation platforms, Enterprise Learning Management Systems (LMS) and Behavior Analytics tools',
+          'Offering comprehensive integration services for a wide variety of security awareness focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -424,7 +490,7 @@ const technologies = {
     icon: 'bi-database',
     tagline: 'Data loss prevention, encryption, and privacy management for your most critical assets.',
     heroHighlight: 'Data',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We implement comprehensive data security programs covering DLP, encryption, data classification, and privacy compliance. Protect sensitive data wherever it lives — at rest, in motion, and in use.',
     vendors: ['Symantec DLP', 'Varonis', 'Thales', 'BigID', 'Digital Guardian', 'Forcepoint'],
@@ -460,10 +526,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Data Security consultants can help you evaluate the right solutions across DLP, encryption, data classification, and privacy management tools and integrate them into your unique environment.',
       cards: [
-        { title: 'DLP Solutions', description: 'Data loss prevention platforms that monitor and enforce policies across endpoints, networks, and cloud applications to prevent unauthorized data exfiltration.' },
-        { title: 'Data Classification & Discovery', description: 'Automated data discovery and classification tools that identify, tag, and inventory sensitive data across your entire environment.' },
-        { title: 'Encryption & Privacy', description: 'Enterprise encryption, tokenization, and privacy management solutions that protect data at rest and in transit while ensuring regulatory compliance.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis.' },
       ],
+      commitment: {
+        label: 'Our Data Security Commitment to You',
+        title: 'We will help you navigate the Data Security technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right data security solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of data security technologies including: Data Loss Prevention (DLP), Encryption and Tokenization solutions and Data Classification platforms',
+          'Offering comprehensive integration services for a wide variety of data security focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -494,7 +571,7 @@ const technologies = {
     icon: 'bi-fingerprint',
     tagline: 'Manage identities, privileged access, and zero-trust network access at scale.',
     heroHighlight: 'Identity',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We help you implement and optimize IAM, PAM, and IGA solutions from leading vendors. Our identity-first approach ensures the right people have the right access at the right time.',
     vendors: ['CyberArk', 'SailPoint', 'Okta', 'BeyondTrust', 'Ping Identity', 'Saviynt'],
@@ -530,10 +607,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Identity & Access Management consultants can help you evaluate the right solutions across IAM, PAM, and IGA tools and integrate them into your unique environment.',
       cards: [
-        { title: 'IAM & SSO', description: 'Identity and access management platforms with single sign-on and multi-factor authentication that secure user access across cloud and on-prem applications.' },
-        { title: 'Privileged Access Management', description: 'PAM solutions that vault, rotate, and audit privileged credentials with session recording and just-in-time access to reduce credential-based risk.' },
-        { title: 'Identity Governance', description: 'Identity governance and administration platforms that automate access certifications, lifecycle management, and segregation of duties enforcement.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Amet dictum sit amet justo donec enim diam vulputate ut pharetra sit amet aliquam id diam.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis.' },
       ],
+      commitment: {
+        label: 'Our Identity & Access Management Commitment to You',
+        title: 'We will help you navigate the IAM technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right identity and access management solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of identity technologies including: Identity & Access Management (IAM), Privileged Access Management (PAM) and Identity Governance & Administration (IGA)',
+          'Offering comprehensive integration services for a wide variety of identity and access management focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -564,7 +652,7 @@ const technologies = {
     icon: 'bi-globe2',
     tagline: 'SIEM, SOAR, and threat intelligence platforms for modern security operations.',
     heroHighlight: 'Operations',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We help you build, optimize, and run security operations with the right SIEM, SOAR, and TIP solutions. From tool selection to 24/7 managed SOC, we have you covered.',
     vendors: ['Splunk', 'Microsoft Sentinel', 'Google Chronicle', 'IBM QRadar', 'Palo Alto XSOAR', 'Swimlane'],
@@ -600,10 +688,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Security Operations consultants can help you evaluate the right solutions across SIEM, SOAR, and threat intelligence tools and integrate them into your unique environment.',
       cards: [
-        { title: 'SIEM Platforms', description: 'Next-generation security information and event management platforms that aggregate, correlate, and analyze security data for real-time threat detection.' },
-        { title: 'SOAR & Automation', description: 'Security orchestration, automation, and response tools that streamline incident workflows, automate repetitive tasks, and accelerate analyst response.' },
-        { title: 'Threat Intelligence Platforms', description: 'Curated threat intelligence feeds and platforms that enrich alerts with IOC correlation, adversary tracking, and proactive threat hunting capabilities.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat scelerisque varius.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis convallis tellus.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Arcu non sodales neque sodales ut etiam sit amet nisl purus in mollis nunc sed id semper.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Risus ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh.' },
       ],
+      commitment: {
+        label: 'Our Security Operations Commitment to You',
+        title: 'We will help you navigate the Security Operations technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right security operations solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of security operations technologies including: Security Information & Event Management (SIEM), Security Orchestration, Automation & Response (SOAR) and Threat Intelligence Platforms (TIP)',
+          'Offering comprehensive integration services for a wide variety of security operations focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -634,7 +733,7 @@ const technologies = {
     icon: 'bi-envelope-check',
     tagline: 'Secure email gateways, DMARC enforcement, and encrypted communications.',
     heroHighlight: 'Email',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We implement and manage email security solutions that stop phishing, BEC, and malware before they reach the inbox — while ensuring compliance with encryption and authentication standards.',
     vendors: ['Proofpoint', 'Mimecast', 'Abnormal Security', 'Microsoft Defender for O365', 'Barracuda', 'Agari'],
@@ -670,10 +769,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Email Security consultants can help you evaluate the right solutions across secure email gateways, anti-phishing, and email authentication tools and integrate them into your unique environment.',
       cards: [
-        { title: 'Secure Email Gateways', description: 'Cloud and on-prem email gateway solutions that filter spam, malware, and phishing emails before they reach user inboxes using multi-layered detection engines.' },
-        { title: 'Anti-Phishing & BEC Protection', description: 'AI-powered platforms that detect and block sophisticated phishing, spear-phishing, and business email compromise attacks using behavioral analysis.' },
-        { title: 'DMARC & Email Authentication', description: 'Email authentication and DMARC enforcement tools that prevent domain spoofing and ensure SPF, DKIM, and DMARC compliance across your email infrastructure.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui nunc mattis enim.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante.' },
       ],
+      commitment: {
+        label: 'Our Email Security Commitment to You',
+        title: 'We will help you navigate the Email Security technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right email security solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of email security technologies including: Secure Email Gateways, DMARC/SPF/DKIM Authentication and Email Encryption solutions',
+          'Offering comprehensive integration services for a wide variety of email security focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -704,7 +814,7 @@ const technologies = {
     icon: 'bi-exclamation-triangle',
     tagline: 'EDR, NDR, forensics, and threat intelligence for rapid incident response.',
     heroHighlight: 'Response',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We deploy and integrate IR and threat intelligence technologies that enable rapid detection, containment, and recovery. From EDR and NDR to DFIR toolkits, we ensure you are prepared for any incident.',
     vendors: ['CrowdStrike', 'Palo Alto Unit 42', 'Mandiant', 'Recorded Future', 'Anomali', 'ThreatConnect'],
@@ -740,10 +850,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Incident Response consultants can help you evaluate the right solutions across EDR, NDR, DFIR, and threat intelligence tools and integrate them into your unique environment.',
       cards: [
-        { title: 'EDR & NDR for IR', description: 'Endpoint and network detection tools purpose-built for incident response, providing deep forensic telemetry, threat hunting, and automated containment capabilities.' },
-        { title: 'DFIR Toolkits', description: 'Digital forensics and incident response platforms that enable rapid evidence collection, disk and memory analysis, and chain-of-custody documentation.' },
-        { title: 'Threat Intelligence Feeds', description: 'Curated threat intelligence platforms and feeds that provide IOC correlation, adversary attribution, and proactive threat hunting to stay ahead of emerging threats.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Non tellus orci ac auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.' },
       ],
+      commitment: {
+        label: 'Our Incident Response Commitment to You',
+        title: 'We will help you navigate the Incident Response technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right incident response solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of incident response technologies including: Endpoint Detection & Response (EDR), Network Detection & Response (NDR), Digital Forensics & Incident Response (DFIR) and Threat Intelligence Platforms',
+          'Offering comprehensive integration services for a wide variety of incident response focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {
@@ -774,7 +895,7 @@ const technologies = {
     icon: 'bi-activity',
     tagline: 'Continuous scanning, risk-based prioritization, and automated patching solutions.',
     heroHighlight: 'Vulnerability',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/tech-hero-placeholder.png',
     description:
       'We implement vulnerability management programs with the right scanning, prioritization, and remediation tools — giving you continuous visibility into your attack surface and a clear path to risk reduction.',
     vendors: ['Tenable', 'Qualys', 'Rapid7', 'CrowdStrike Spotlight', 'Tanium', 'Wiz'],
@@ -810,10 +931,21 @@ const technologies = {
       titleHighlight: 'Vendor-Agnostic',
       subtitle: 'Our highly-certified Vulnerability Management consultants can help you evaluate the right solutions across vulnerability scanning, risk prioritization, and automated patching tools and integrate them into your unique environment.',
       cards: [
-        { title: 'Vulnerability Scanning', description: 'Continuous vulnerability scanning platforms that discover and assess assets across on-prem, cloud, and container environments for known vulnerabilities.' },
-        { title: 'Risk-Based Prioritization', description: 'Exploit intelligence and risk scoring tools that prioritize vulnerabilities based on real-world exploitability, asset criticality, and business context.' },
-        { title: 'Patch & Remediation Automation', description: 'Automated patch management and remediation orchestration solutions that accelerate vulnerability closure and track SLA compliance.' },
+        { title: 'Placeholder Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', expandedDescription: 'Volutpat blandit aliquam etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus.' },
+        { title: 'Placeholder Title 2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', expandedDescription: 'Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim.' },
+        { title: 'Placeholder Title 3', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', expandedDescription: 'Elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut.' },
+        { title: 'Placeholder Title 4', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', expandedDescription: 'Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt.' },
+        { title: 'Placeholder Title 5', description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.', expandedDescription: 'Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo vel fringilla est ullamcorper eget.' },
       ],
+      commitment: {
+        label: 'Our Vulnerability Management Commitment to You',
+        title: 'We will help you navigate the Vulnerability Management technology journey by:',
+        items: [
+          'Understanding the unique nature of your environment and identifying the right vulnerability management solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept',
+          'Implementing, optimizing and managing a wide range of vulnerability management technologies including: Vulnerability Scanning platforms, Risk-Based Prioritization tools and Automated Patching solutions',
+          'Offering comprehensive integration services for a wide variety of vulnerability management focused technologies tailored to your unique use cases',
+        ],
+      },
     },
     lifecycle: {
       split: {

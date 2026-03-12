@@ -1,135 +1,225 @@
 import { Link } from 'react-router-dom';
-import CountUp from 'react-countup';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import Hero from '../components/sections/Hero';
-import SectionHeader from '../components/sections/SectionHeader';
 import AnimatedSection from '../components/sections/AnimatedSection';
-import NetworkBackground from '../components/sections/NetworkBackground';
-import FeatureCard from '../components/sections/FeatureCard';
 import GradientCard from '../components/sections/GradientCard';
+import ServiceAccordion from '../components/sections/ServiceAccordion';
+import Certifications from '../components/sections/Certifications';
+import AdditionalResources from '../components/sections/AdditionalResources';
 import BeInformed from '../components/sections/BeInformed';
+import { servicesList } from '../data/services';
 
-function AnimatedStat({ number, label }) {
-  const [ref, isVisible] = useScrollAnimation(0.3);
-  const numericValue = parseFloat(number.replace(/[^0-9.]/g, '')) || 0;
-  const hasDecimal = number.replace(/[^0-9.]/g, '').includes('.');
-  const suffix = number.replace(/[0-9.,]/g, '');
-
-  return (
-    <div ref={ref} className="text-center">
-      <h2 className="fw-bold text-white mb-1" style={{ fontFamily: "'Exo 2', sans-serif" }}>
-        {isVisible ? (
-          <CountUp end={numericValue} duration={2.5} separator="," decimals={hasDecimal ? 1 : 0} suffix={suffix} />
-        ) : '0'}
-      </h2>
-      <p className="text-white-50 mb-0">{label}</p>
-    </div>
-  );
-}
-
-const features = [
+const partnerBlocks = [
   {
-    icon: 'bi-shield-check',
-    title: 'FedRAMP Authorized',
-    description: 'Our solutions meet the rigorous FedRAMP security standards required for federal cloud deployments.',
+    title: 'Solution Provider',
+    description:
+      'Our information assurance practices include: Application Security, Cloud Security, Governance, Risk & Compliance (GRC), Digital Forensics & Incident Response and Threat & Attack Simulation.',
   },
   {
-    icon: 'bi-award',
-    title: 'CMMC Compliant',
-    description: 'We help defense contractors achieve and maintain CMMC certification across all levels.',
+    title: 'Consulting Services',
+    description:
+      'Our team of practitioners has vast experience evaluating, implementing and optimizing security solutions and architectures. Additionally we provide staff augmentation services to support your mission.',
   },
   {
-    icon: 'bi-lock',
-    title: 'Cleared Personnel',
-    description: 'Our team includes cleared professionals who understand the unique requirements of classified environments.',
+    title: 'Federal Systems Integrator',
+    description:
+      'Our team of practitioners has vast experience evaluating, implementing and optimizing security solutions and architectures. Additionally we provide staff augmentation services to support your mission.',
+  },
+  {
+    title: 'Managed Service Offerings',
+    description:
+      'For 24×7 support, we partner with the leading Managed Security providers for MDR, EDR and more. Alternatively we can manage specific security platforms and products so you can focus on your mission.',
   },
 ];
 
-const contractVehicles = [
-  'GSA Schedule 70',
-  'SEWP V',
-  'CIO-SP3',
-  'ITES-SW2',
-  'STARS III',
-  '8(a) STARS II',
+const approachBlocks = [
+  {
+    title: 'Expose any Potential Risk',
+    description:
+      'We hold ourselves accountable, become experts and take the initiative to identify threats and vulnerabilities across your environment before adversaries can exploit them.',
+  },
+  {
+    title: 'Align & Optimize Resources',
+    description:
+      'We push ourselves to take calculated risks and exceed expectations. We do what\'s necessary and align your security investments with your mission-critical priorities.',
+  },
+  {
+    title: 'Integrate Best-Fit Solutions',
+    description:
+      'We strive to be a long-term partner and make our customers\' experience a success, enabling and securing their business with tailored, best-fit security solutions.',
+  },
 ];
 
 export default function Government() {
   return (
-    <>
+    <div className="government-page">
+      {/* 1. Hero */}
       <Hero
         title="Government Solutions"
-        highlightWord="Government"
-        subtitle="Protecting the nation's most critical agencies with proven cybersecurity expertise and cleared personnel."
+        subtitle="Our team of elite cybersecurity practitioners provides DoD, IC and Civilian agencies with trusted expertise, tailored solutions and services so you can complete your mission with better cybersecurity decisions that minimize risk."
+        highlightSubtitleWord="elite cybersecurity practitioners"
+        ctaText="Talk to an Expert"
+        ctaLink="/contact"
+        bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Identity_and_Access_Management_IAM.png"
         variant="page"
+        showNetwork={false}
       />
 
-      <section className="section section--indigo">
-        <div className="container">
-          <AnimatedSection animation="stagger-children" className="row g-4 text-center">
-            <div className="col-md-3">
-              <AnimatedStat number="50%+" label="of Cabinet-Level Agencies" />
-            </div>
-            <div className="col-md-3">
-              <AnimatedStat number="15+" label="Years Federal Experience" />
-            </div>
-            <div className="col-md-3">
-              <AnimatedStat number="200+" label="Cleared Professionals" />
-            </div>
-            <div className="col-md-3">
-              <AnimatedStat number="100+" label="Federal Contracts" />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
 
-      <section className="section section--light">
+      {/* 2–3. Dark Split + Partner — single section, no separator */}
+      <section className="section section--dark dark-split govt-gradient">
         <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-left">
+                <div className="dark-split__text">
+                  <h2 className="use-cases__title text-start">
+                    Security Solutions <span className="text-accent-box">Tailored</span> to Your Specific Mission
+                  </h2>
+                  <p className="text-white-50" style={{ lineHeight: 1.8 }}>
+                    Our highly-certified team of practitioners has decades of expertise helping federal government organizations plan, build and run effective cybersecurity programs. Our white-glove approach helps us understand your agency's unique challenges and requirements, evaluate your environment and recommend tailored solutions that drive your mission.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-right">
+                <div className="dark-split__video-thumb">
+                  <img src="https://embed-ssl.wistia.com/deliveries/a412624a33c1b7d8b5ab9945554a8adf.webp?image_crop_resized=1280x720" alt="Government Solutions video" />
+                  <button className="dark-split__play-btn" aria-label="Play video">
+                    <i className="bi bi-play-fill"></i>
+                  </button>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </div>
+
+        {/* Partner in the Cybersecurity Battle — 4 GradientCards */}
+        <div className="container" style={{ paddingTop: '6rem' }}>
           <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader
-              label="Why Government Trusts Us"
-              title="Mission-Critical Cybersecurity"
-              subtitle="We understand the unique regulatory, operational, and security requirements of federal, state, and local government agencies."
-              center
-            />
+            <div className="text-center mb-5">
+              <h2 className="use-cases__title">
+                Your <span className="text-accent-box">Partner</span> in the Cybersecurity Battle
+              </h2>
+              <p className="text-white-50 mx-auto" style={{ maxWidth: 800, lineHeight: 1.8 }}>
+                We know that when it comes to cybersecurity there is no one-size-fits-all approach. We work side-by-side with you to solve your most complex security challenges and provide a multitude of service and solution offerings to fit your specific needs.
+              </p>
+            </div>
           </AnimatedSection>
           <AnimatedSection animation="stagger-children" className="row g-4">
-            {features.map((f) => (
-              <div className="col-md-4" key={f.title}>
-                <FeatureCard {...f} />
+            {partnerBlocks.map((b) => (
+              <div className="col-lg-6" key={b.title}>
+                <GradientCard
+                  title={b.title}
+                  description={b.description}
+                  layout="centered"
+                  accent="bottom"
+                  titleLg
+                />
               </div>
             ))}
           </AnimatedSection>
         </div>
       </section>
 
-      <section className="section section--dark">
-        <NetworkBackground variant="dark" nodeCount={35} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader
-              label="Procurement"
-              title="Contract Vehicles"
-              subtitle="Streamline procurement through our existing government contract vehicles."
-              center
-            />
-          </AnimatedSection>
-          <AnimatedSection animation="stagger-children" className="row g-3 justify-content-center">
-            {contractVehicles.map((cv) => (
-              <div className="col-6 col-md-4 col-lg-2" key={cv}>
-                <GradientCard text={cv} layout="text-only" accent="bottom" />
-              </div>
-            ))}
-          </AnimatedSection>
-
-          <div className="text-center mt-5">
-            <Link to="/contact" className="btn btn-accent btn-lg btn-cta px-4">
-              Contact Our Government Team <i className="bi bi-arrow-right"></i>
-            </Link>
+      {/* 4. Contract Vehicles — text left, image right (edge-bleed) */}
+      <section className="section section--dark dark-split govt-gradient">
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-left">
+                <div className="dark-split__text">
+                  <h2 className="use-cases__title text-start">
+                    <span className="text-accent-box">Facilitate</span> Security Procurement with Our Contract Vehicles
+                  </h2>
+                  <p className="text-white-50" style={{ lineHeight: 1.8 }}>
+                    Our team has decades of experience and understands the need for fast and flexible contract vehicles. We have access to a wide range of programs, can satisfy small business requirements and offer solutions through teaming agreements on virtually any contract vehicle.
+                  </p>
+                  <div className="d-flex flex-wrap gap-3 mt-4">
+                    <Link to="/government/gsa-contract" className="btn btn-accent btn-cta">
+                      GSA Contract <i className="bi bi-arrow-right"></i>
+                    </Link>
+                    <Link to="/government/dod-esi" className="btn btn-accent btn-cta">
+                      DoD ESI <i className="bi bi-arrow-right"></i>
+                    </Link>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-right">
+                <div className="dark-split__image dark-split__image--right">
+                  <img src="/placeholder-split.svg" alt="Contract vehicles" />
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>
 
-    </>
+      {/* 5. Services & Technologies — Accordion */}
+      <section className="section section--dark govt-gradient p-4">
+        <div className="container">
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mb-5">
+              <p className="section-header__label">Services & Technologies</p>
+              <h2 className="use-cases__title">
+                <span className="text-accent-box">Expertise</span> Based on Reality — Not Theory
+              </h2>
+              <p className="text-white-50 mx-auto" style={{ maxWidth: 800, lineHeight: 1.8 }}>
+                The reality is that every organization's cybersecurity ecosystem requires a custom approach to the threat landscape. That's why we analyze, compare and recommend best-fit security solutions on a tailored basis.
+              </p>
+            </div>
+          </AnimatedSection>
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="service-accordion-wrap">
+              <ServiceAccordion services={servicesList} />
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* 6. Certifications */}
+      <Certifications variant="centered" />
+
+      {/* 7. Our Approach as Your Trusted Advisor */}
+      <section className="section section--dark govt-gradient">
+        <div className="container">
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mb-5">
+              <h2 className="use-cases__title">
+                Our Approach as Your Trusted Advisor
+              </h2>
+            </div>
+          </AnimatedSection>
+          <AnimatedSection animation="stagger-children" className="row g-4">
+            {approachBlocks.map((b) => (
+              <div className="col-lg-4" key={b.title}>
+                <GradientCard
+                  title={b.title}
+                  description={b.description}
+                  layout="centered"
+                  accent="bottom"
+                  titleLg
+                />
+              </div>
+            ))}
+          </AnimatedSection>
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mt-5 govt-approach__tagline">
+              <h3 className="use-cases__title" style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)' }}>
+                We Take That Approach with <span className="text-accent-box">Every</span> Service We Provide
+              </h3>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* 8. Additional Resources */}
+      <AdditionalResources />
+
+      {/* 9. Be Informed CTA */}
+      <BeInformed />
+    </div>
   );
 }

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import SectionHeader from '../components/sections/SectionHeader';
@@ -7,6 +6,7 @@ import ResourceCard from '../components/sections/ResourceCard';
 import LogoGrid from '../components/sections/LogoGrid';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import NetworkBackground from '../components/sections/NetworkBackground';
+import ServiceAccordion from '../components/sections/ServiceAccordion';
 import BeInformed from '../components/sections/BeInformed';
 import { servicesList } from '../data/services';
 import heroImage from '../assets/images/hero.jpeg';
@@ -40,7 +40,7 @@ const clientLogos = [
 
 const resources = [
   {
-    image: '/placeholder-resource.svg',
+    image: '/images/resources/corp-overview.png',
     badge: 'Datasheet',
     title: 'Cyber Security Overview',
     link: '/resources/overview',
@@ -49,7 +49,7 @@ const resources = [
     viewAllLink: '/resources/datasheets',
   },
   {
-    image: '/placeholder-resource.svg',
+    image: '/images/resources/resource-featured-1.jpg',
     badge: 'Whitepaper',
     title: 'Breaking the Tool Acquisition Cycle: How to Escape Security Tool Sprawl Through Strategic Consolidation',
     link: '/resources/tool-acquisition',
@@ -58,7 +58,7 @@ const resources = [
     viewAllLink: '/resources/whitepapers',
   },
   {
-    image: '/placeholder-resource.svg',
+    image: '/images/resources/istock-cybersecurity.jpg',
     badge: 'eBook',
     title: 'A Day in the Life of Operational Technology Security',
     link: '/resources/ot-ebook',
@@ -67,7 +67,7 @@ const resources = [
     viewAllLink: '/resources/ebooks',
   },
   {
-    image: '/placeholder-resource.svg',
+    image: '/images/resources/grit-ransomware.jpg',
     badge: 'Video',
     title: 'A Day in the Life: Threat Actor Communications',
     link: '/resources/threat-actor-video',
@@ -76,49 +76,6 @@ const resources = [
     viewAllLink: '/resources/videos',
   },
 ];
-
-function ServiceAccordion({ services }) {
-  const [openIndex, setOpenIndex] = useState(null);
-  const half = Math.ceil(services.length / 2);
-  const leftCol = services.slice(0, half);
-  const rightCol = services.slice(half);
-
-  const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
-
-  const renderItem = (s, i) => {
-    const isOpen = openIndex === i;
-    return (
-      <div className={`service-accordion__item ${isOpen ? 'service-accordion__item--open' : ''}`} key={s.title}>
-        <button className="service-accordion__header" onClick={() => toggle(i)}>
-          <span className="service-accordion__icon">
-            <i className={`bi ${s.icon}`}></i>
-          </span>
-          <span className="service-accordion__title">{s.title}</span>
-          <span className="service-accordion__toggle">
-            <i className={`bi ${isOpen ? 'bi-x' : 'bi-plus'}`}></i>
-          </span>
-        </button>
-        <div className={`service-accordion__body ${isOpen ? 'service-accordion__body--open' : ''}`}>
-          <p>{s.description}</p>
-          <Link to={s.path} className="btn btn-outline-light btn-sm">
-            Read More
-          </Link>
-        </div>
-      </div>
-    );
-  };
-
-  return (
-    <div className="row g-4">
-      <div className="col-lg-6">
-        {leftCol.map((s, i) => renderItem(s, i))}
-      </div>
-      <div className="col-lg-6">
-        {rightCol.map((s, i) => renderItem(s, i + half))}
-      </div>
-    </div>
-  );
-}
 
 export default function Home() {
   return (

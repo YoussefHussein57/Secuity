@@ -5,7 +5,7 @@ const services = {
     tagline:
       'Secure your applications from design to deployment with expert-led assessments and testing.',
     heroHighlight: 'Secure',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Our application security services help you identify and remediate vulnerabilities across your software development lifecycle. From code reviews to penetration testing, we ensure your applications are resilient against modern threats.',
     stats: [
@@ -141,7 +141,7 @@ const services = {
     icon: 'bi-cpu',
     tagline: 'Protect your AI/ML systems and leverage AI to strengthen your security posture.',
     heroHighlight: 'Protect',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'As organizations rapidly adopt AI and machine learning, new attack surfaces emerge. Our AI security services help you secure AI systems, detect AI-powered threats, and use AI to enhance your defensive capabilities.',
     stats: [
@@ -253,7 +253,7 @@ const services = {
     tagline:
       'Secure your cloud infrastructure across AWS, Azure, GCP, and multi-cloud environments.',
     heroHighlight: 'Secure',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Cloud migration introduces new security challenges. Our cloud security experts help you design, implement, and maintain secure cloud architectures that protect your data and workloads while enabling business agility.',
     stats: [
@@ -358,7 +358,7 @@ const services = {
     icon: 'bi-database',
     tagline: 'Protect your most valuable asset — your data — wherever it lives.',
     heroHighlight: 'Protect',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Data is the lifeblood of every organization. Our data security services help you discover, classify, protect, and govern sensitive data across on-premises, cloud, and hybrid environments.',
     stats: [
@@ -455,7 +455,7 @@ const services = {
     icon: 'bi-envelope-check',
     tagline: 'Defend against phishing, BEC, and email-borne threats with layered protection.',
     heroHighlight: 'Defend',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Email remains the #1 attack vector. Our email security services protect your organization from phishing, business email compromise (BEC), malware delivery, and data exfiltration through email channels.',
     stats: [
@@ -552,7 +552,7 @@ const services = {
     tagline:
       'Protect every endpoint — from workstations to mobile devices — against advanced threats.',
     heroHighlight: 'Protect',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Endpoints are where work happens and where attackers gain footholds. Our endpoint security services help you deploy, optimize, and manage endpoint protection platforms that detect and respond to threats in real time.',
     stats: [
@@ -653,7 +653,7 @@ const services = {
     tagline:
       'Build and maintain a risk management program that aligns security with business goals.',
     heroHighlight: 'Build',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Effective cybersecurity starts with governance. Our GRC services help you develop security policies, assess and manage risk, and achieve compliance with industry regulations and frameworks.',
     stats: [
@@ -743,7 +743,7 @@ const services = {
     icon: 'bi-fingerprint',
     tagline: 'Ensure the right people have the right access at the right time.',
     heroHighlight: 'Ensure',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Identity is the new perimeter. Our IAM services help you implement zero-trust access controls, manage privileged accounts, and govern identity lifecycles across your hybrid environment.',
     stats: [
@@ -845,7 +845,7 @@ const services = {
     tagline:
       'Prepare for, respond to, and recover from security incidents with expert support.',
     heroHighlight: 'Prepare',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'When a breach occurs, every minute counts. Our incident response team provides rapid containment, forensic analysis, and recovery services. Our threat intelligence team keeps you ahead of emerging threats.',
     stats: [
@@ -949,7 +949,7 @@ const services = {
     icon: 'bi-shield-lock',
     tagline: 'Extend your security team with our 24/7 managed security operations.',
     heroHighlight: 'Extend',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Not every organization can staff a full security team. Our managed security services provide 24/7 monitoring, detection, and response capabilities through our GPVUE program — a customized, integrated security program designed for your unique needs.',
     stats: [
@@ -1054,7 +1054,7 @@ const services = {
     icon: 'bi-hdd-network',
     tagline: 'Protect your network infrastructure with defense-in-depth security controls.',
     heroHighlight: 'Protect',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Your network is the backbone of your operations. Our network security services help you design, implement, and maintain secure network architectures that protect against external and internal threats.',
     stats: [
@@ -1154,7 +1154,7 @@ const services = {
     tagline:
       'Secure operational technology and industrial control systems without disrupting operations.',
     heroHighlight: 'Secure',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Operational technology (OT) and industrial control systems (ICS) face unique security challenges. Our OT security services bridge the gap between IT and OT to protect critical infrastructure without impacting operational reliability.',
     stats: [
@@ -1256,7 +1256,7 @@ const services = {
     icon: 'bi-mortarboard',
     tagline: 'Transform your workforce into your strongest line of defense.',
     heroHighlight: 'Transform',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'People are both the greatest vulnerability and the strongest defense. Our security awareness programs educate employees to recognize and respond to threats, building a security-first culture across your organization.',
     stats: [
@@ -1364,7 +1364,7 @@ const services = {
     icon: 'bi-globe2',
     tagline: 'Build or enhance your security operations center with expert guidance.',
     heroHighlight: 'Build',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'A well-run SOC is the nerve center of your security program. We help you build, optimize, or outsource SOC capabilities with the right people, processes, and technology.',
     stats: [
@@ -1453,7 +1453,7 @@ const services = {
     icon: 'bi-person-plus',
     tagline: 'Fill critical security talent gaps with vetted cybersecurity professionals.',
     heroHighlight: 'Fill',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'The cybersecurity talent shortage is real. Our staff augmentation services provide experienced security professionals to supplement your team — from short-term project support to long-term embedded consultants.',
     stats: [
@@ -1549,7 +1549,7 @@ const services = {
     icon: 'bi-activity',
     tagline: 'Find, prioritize, and fix vulnerabilities before attackers exploit them.',
     heroHighlight: 'Find',
-    heroImage: '/hero-bg.svg',
+    heroImage: '/images/services/hero-placeholder.png',
     description:
       'Vulnerabilities are discovered daily. Our vulnerability management services help you maintain continuous visibility into your attack surface and prioritize remediation based on real-world risk.',
     stats: [

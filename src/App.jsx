@@ -7,6 +7,7 @@ import ServiceDetail from './pages/ServiceDetail';
 import Technologies from './pages/Technologies';
 import TechnologyDetail from './pages/TechnologyDetail';
 import Government from './pages/Government';
+import GovernmentDetail from './pages/GovernmentDetail';
 import Company from './pages/Company';
 import Leadership from './pages/Leadership';
 import Careers from './pages/Careers';
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="technologies" element={<Technologies />} />
           <Route path="technologies/:slug" element={<TechnologyDetail />} />
           <Route path="government" element={<Government />} />
+          <Route path="government/:slug" element={<GovernmentDetail />} />
           <Route path="company" element={<Company />} />
           <Route path="company/leadership" element={<Leadership />} />
           <Route path="company/careers" element={<Careers />} />

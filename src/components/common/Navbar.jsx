@@ -37,10 +37,10 @@ const governmentItems = {
     path: '/government',
   },
   contracts: [
-    { title: 'GSA Contract', desc: 'Facilitate cybersecurity solutions procurement', path: '/government' },
-    { title: 'DOD ESI Contract', desc: 'Achieve your mission with fast & efficient access to solutions', path: '/government' },
-    { title: 'SeaPort-NxG', desc: 'SeaPort Next Generation procurement vehicle', path: '/government' },
-    { title: 'OASIS+', desc: 'Governmentwide multiple-award contracts for federal agencies', path: '/government' },
+    { title: 'GSA Contract', desc: 'Facilitate cybersecurity solutions procurement', path: '/government/gsa-contract' },
+    { title: 'DOD ESI Contract', desc: 'Achieve your mission with fast & efficient access to solutions', path: '/government/dod-esi' },
+    { title: 'SeaPort-NxG', desc: 'SeaPort Next Generation procurement vehicle', path: '/government/seaport-nxg' },
+    { title: 'OASIS+', desc: 'Governmentwide multiple-award contracts for federal agencies', path: '/government/oasis-plus' },
   ],
 };
 
