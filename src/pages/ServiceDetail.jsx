@@ -34,7 +34,7 @@ export default function ServiceDetail() {
 
       {/* 2. Use Cases */}
       {service.useCases && (
-        <section className="section section--indigo">
+        <section className="section section--indigo service-use-cases">
           <div className="container">
             <AnimatedSection animation="animate-on-scroll">
               <div className="text-center mb-5">
@@ -48,7 +48,7 @@ export default function ServiceDetail() {
                     </>
                   ) : service.useCases.title}
                 </h2>
-                <p className="text-white-50 mx-auto" style={{ maxWidth: 700, lineHeight: 1.7 }}>
+                <p className="use-cases__subtitle mx-auto" >
                   {service.useCases.subtitle}
                 </p>
               </div>

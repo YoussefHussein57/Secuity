@@ -99,29 +99,37 @@
 
   // Service variant — angled edge transitions to indigo
   &--service {
-    min-height: 65vh;
-    padding-top: 8rem;
-    padding-bottom: 6rem;
+    min-height: auto;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 140px;
 
     .hero__title {
-      font-size: clamp(2.2rem, 3.5vw, 3.75rem);
-      margin-bottom: 1.5rem;
+      font-size: clamp(2rem, 4.5vw, 60px);
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+      min-width: auto;
     }
 
     .hero__subtitle {
-      max-width: 600px;
-      margin-bottom: 2.5rem;
+      font-size: clamp(16px, 1.8vw, 24px);
+      line-height: 1.5;
+      max-width: 650px;
+      margin-bottom: 2rem;
+      opacity: 1;
     }
 
     .hero__label {
-      margin-bottom: 1.25rem;
+      font-size: 15px;
+      font-weight: $fw-bold;
+      letter-spacing: 1.93px;
+      margin-bottom: 1rem;
     }
 
     &::before {
       background: $indigo;
     }
 
-    // When followed by a dark section (e.g. TechnologyDetail), match its bg
     &:has(+ .section--dark)::before {
       background: $primary;
     }
