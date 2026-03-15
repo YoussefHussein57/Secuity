@@ -1,35 +1,51 @@
 // ===========================================
-// Footer
+// Footer – GuidePoint-style
 // ===========================================
 
 .footer {
-  background-color: $dark;
-  color: rgba($white, 0.6);
-  padding: 4rem 0 2rem;
+  background-color: $primary;
+  color: $white;
+  font-family: $font-family-base;
 
   a {
-    color: rgba($white, 0.6);
+    color: $white;
     text-decoration: none;
     transition: color 0.2s ease;
 
     &:hover {
-      color: $gradient-start;
+      color: $accent;
     }
   }
 
-  &__brand img {
-    height: 36px;
-    margin-bottom: 1rem;
+  // ─── Links Section ───
+  &__links-section {
+    padding: 40px 40px 60px;
+
+    @media (max-width: 767px) {
+      padding: 30px 20px 40px;
+    }
   }
 
   &__heading {
+    font-size: 16px;
+    font-weight: 700;
     color: $white;
-    font-family: $font-family-heading;
-    font-weight: $fw-semibold;
-    font-size: 0.9rem;
-    margin-bottom: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+    text-transform: none;
+    letter-spacing: normal;
+
+    a {
+      color: $white;
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    &--underline {
+      padding-bottom: 0.75rem;
+      border-image: linear-gradient(90deg, $gradient-start 0%, $gradient-end 100%) 1;
+      border-bottom: 2px solid;
+    }
   }
 
   &__links {
@@ -37,31 +53,168 @@
     padding: 0;
     margin: 0;
 
-    li + li {
-      margin-top: 0.5rem;
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      color: $white;
+      line-height: 1.5;
+    }
+
+    &--bold a {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &--bold li {
+      margin-bottom: 0.6rem;
     }
   }
 
-  &__social a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba($white, 0.08);
-    margin-right: 0.5rem;
-    font-size: 1rem;
+  // ─── Contact Info ───
+  &__contact {
+    margin-top: 1.5rem;
 
-    &:hover {
-      background: $gradient-start;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $white;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &__phone {
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+  }
+
+  // ─── Social Icons ───
+  &__social {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba($white, 0.1);
+      font-size: 1rem;
+      color: $white;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: $accent;
+        color: $white;
+      }
+    }
+  }
+
+  // ─── Subscribe Form ───
+  &__subscribe-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 0.75rem;
+  }
+
+  &__subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__subscribe-input {
+    background: $white;
+    border: 1px solid rgba($white, 0.3);
+    color: $dark;
+    padding: 10px 14px;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    border-radius: 0;
+
+    &::placeholder {
+      color: rgba($dark, 0.5);
+    }
+
+    &:focus {
+      border-color: $accent;
+    }
+  }
+
+  // ─── Bottom Bar ───
+  &__bottom {
+    border-top: 1px solid rgba($white, 0.1);
+    padding: 1.25rem 40px;
+
+    @media (max-width: 767px) {
+      padding: 1.25rem 20px;
+    }
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    a, button {
+      font-size: 12px;
       color: $white;
     }
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
   }
 
-  &__bottom {
-    border-top: 1px solid rgba($white, 0.08);
-    padding-top: 1.5rem;
-    font-size: 0.85rem;
+  &__bottom-logo {
+    img {
+      height: 30px;
+    }
+  }
+
+  &__cookie-btn {
+    background: none;
+    border: none;
+    color: $white;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__copyright {
+    font-size: 12px;
+    font-weight: 400;
+    color: $white;
+    margin: 0;
   }
 }
