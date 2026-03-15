@@ -25,7 +25,7 @@ $danger:        #f87171;
 
 // Typography
 $font-family-base:    'IBM Plex Sans', sans-serif;
-$font-family-heading: 'Exo 2', 'IBM Plex Sans', sans-serif;
+$font-family-heading: 'IBM Plex Sans', sans-serif;
 $headings-font-family: $font-family-heading;
 
 // Font weights
@@ -45,11 +45,11 @@ $border-radius-lg:    1rem;
 $border-radius-pill:  50rem;
 
 // Gradient colors
-$gradient-start:     #4b4fff;
+$gradient-start:     #3333ff;
 $gradient-end:       #00ccff;
 
 // Buttons
-$btn-border-radius:    0.25rem;
+$btn-border-radius:    0;
 $btn-padding-y:        0.75rem;
 $btn-padding-x:        2rem;
 
@@ -68,7 +68,7 @@ $box-shadow:     0 4px 16px rgba($primary, 0.12);
 $box-shadow-lg:  0 8px 32px rgba($primary, 0.18);
 
 // Hero
-$hero-title-size: 4.5rem;
+$hero-title-size: 72px;
 
 // Transitions
 $transition-base: all 0.3s ease;

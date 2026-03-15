@@ -29,7 +29,7 @@
 .section--dark {
   background-color: $primary;
   color: $white;
-  padding-top: 120px !important;
+  padding-top: 48px !important;
   padding-bottom: 120px !important;
   @include angled-top($primary);
 
@@ -132,7 +132,7 @@
 
 // Hero → section — seamless, no top angle
 .hero + .section::before { display: none; }
-.hero + .section--dark { padding-top: 4rem; }
+.hero + .section--dark { padding-top: 48px !important; }
 .hero + .section--dark.dark-split { padding-top: 0; }
 
 // Hero page clip-path → next section must overlap behind the triangle
@@ -150,18 +150,19 @@
   margin-bottom: 3rem;
 
   &__label {
-    font-family: $font-family-heading;
-    font-size: 0.8rem;
+    font-family: $font-family-base;
+    font-size: 15px;
     font-weight: $fw-bold;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 1.93px;
     color: $gradient-start;
     margin-bottom: 0.75rem;
   }
 
   &__title {
-    font-family: $font-family-heading;
-    font-weight: $headings-font-weight;
+    font-family: $font-family-base;
+    font-size: 50px;
+    font-weight: $fw-medium;
     margin-bottom: 1rem;
     color: $primary;
 
@@ -175,8 +176,10 @@
 
   &__subtitle {
     color: $gray-500;
-    max-width: 640px;
-    line-height: 1.7;
+    max-width: 530px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
   }
 
   &--center {
@@ -190,7 +193,10 @@
   .section--dark &,
   .section--indigo &,
   .section--accent & {
-    &__title {
+    .section-header__label {
+      color: $white;
+    }
+    .section-header__title {
       color: $white;
 
       .text-accent-box {
@@ -198,8 +204,8 @@
         color: $primary;
       }
     }
-    &__subtitle {
-      color: rgba($white, 0.65);
+    .section-header__subtitle {
+      color: $white;
     }
   }
 }

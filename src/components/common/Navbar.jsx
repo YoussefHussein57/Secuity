@@ -76,6 +76,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeService, setActiveService] = useState(0);
   const [openMenu, setOpenMenu] = useState(null);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const searchInputRef = useRef(null);
   const navRef = useRef(null);
   const closeTimer = useRef(null);
 
@@ -150,7 +152,7 @@ export default function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse" id="mainNav">
-          <ul className="navbar-nav ms-auto align-items-lg-center gap-1">
+          <ul className="navbar-nav align-items-lg-center gap-1">
 
             {/* ===== SERVICES ===== */}
             <li
@@ -595,29 +597,65 @@ export default function Navbar() {
               )}
             </li>
 
-            {/* ===== CTAs ===== */}
-            <li className="nav-item ms-lg-3">
-              <Link
-                to="/report-incident"
-                className="nav-link nav-link--incident"
-                onClick={closeMega}
-              >
-                <i className="bi bi-shield-exclamation me-1"></i>
-                Report an Incident
-              </Link>
-            </li>
-            <li className="nav-item ms-lg-2">
-              <Link
-                to="/contact"
-                className="btn btn-accent btn-sm px-3"
-                onClick={closeMega}
-              >
-                Talk to an Expert
-              </Link>
-            </li>
           </ul>
+
+          {/* ===== RIGHT SIDE: Search + CTAs ===== */}
+          <div className="d-flex align-items-center gap-3 ms-auto nav-right">
+            <button
+              className="btn-reset nav-search-btn"
+              onClick={() => setSearchOpen(true)}
+              aria-label="Search"
+            >
+              <i className="bi bi-search"></i>
+            </button>
+            <Link
+              to="/report-incident"
+              className="btn btn-outline-light nav-cta-btn"
+              onClick={closeMega}
+            >
+              <i className="bi bi-shield-exclamation nav-cta-icon"></i>
+              Report an Incident
+            </Link>
+            <Link
+              to="/contact"
+              className="btn btn-accent nav-cta-btn"
+              onClick={closeMega}
+            >
+              Talk to an Expert
+            </Link>
+          </div>
         </div>
       </div>
+
+      {/* ===== SEARCH MODAL ===== */}
+      {searchOpen && (
+        <div className="search-overlay" onClick={() => setSearchOpen(false)}>
+          <div className="search-overlay__inner" onClick={(e) => e.stopPropagation()}>
+            <input
+              ref={searchInputRef}
+              type="text"
+              className="search-overlay__input"
+              placeholder="Search..."
+              autoFocus
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && e.target.value.trim()) {
+                  setSearchOpen(false);
+                  closeMega();
+                  window.location.href = `/search?q=${encodeURIComponent(e.target.value.trim())}`;
+                }
+                if (e.key === 'Escape') setSearchOpen(false);
+              }}
+            />
+            <button
+              className="search-overlay__close"
+              onClick={() => setSearchOpen(false)}
+              aria-label="Close search"
+            >
+              <i className="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

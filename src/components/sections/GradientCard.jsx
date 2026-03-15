@@ -1,5 +1,6 @@
 export default function GradientCard({
   icon,
+  iconImage,
   iconCircle = false,
   title,
   description,
@@ -12,29 +13,45 @@ export default function GradientCard({
   const cls = [
     'card-gradient',
     `card-gradient--${layout}`,
-    `card-gradient--accent-${accent}`,
-  ].join(' ');
+    accent !== 'none' ? `card-gradient--accent-${accent}` : '',
+  ].filter(Boolean).join(' ');
 
   // If children are provided, render them directly inside the gradient wrapper
   if (children) {
     return <div className={cls}>{children}</div>;
   }
 
-  return (
-    <div className={cls}>
-      {iconCircle && icon && (
+  const renderIcon = () => {
+    if (iconImage) {
+      return (
+        <div className="card-gradient__icon">
+          <img src={iconImage} alt="" />
+        </div>
+      );
+    }
+    if (iconCircle && icon) {
+      return (
         <div className="card-gradient__icon-circle">
           <i className={`bi ${icon}`}></i>
         </div>
-      )}
-      {!iconCircle && icon && (
+      );
+    }
+    if (icon) {
+      return (
         <div className="card-gradient__icon">
           <i className={`bi ${icon}`}></i>
         </div>
-      )}
+      );
+    }
+    return null;
+  };
+
+  return (
+    <div className={cls}>
+      {renderIcon()}
       {layout === 'horizontal' ? (
         <div className="card-gradient__content">
-          <h5 className={`card-gradient__title${titleLg ? ' card-gradient__title--lg' : ''}`}>{title}</h5>
+          <h5 className={`card-gradient__title${titleLg ? ' card-gradient__title--lg' : ''}`} style={{}}>{title}</h5>
           <p className="card-gradient__desc">{description}</p>
         </div>
       ) : text ? (

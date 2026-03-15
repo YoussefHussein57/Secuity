@@ -7,17 +7,28 @@
   backdrop-filter: blur(8px);
   background-color: rgba($dark, 0.85);
   z-index: 1050;
+  height: 80px;
 
-  .navbar-brand img {
-    height: 40px;
+  .container {
+    height: 100%;
+  }
+
+  .navbar-brand {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 40px;
+    }
   }
 
   .nav-link {
-    font-family: $font-family-heading;
+    font-family: $font-family-base;
     font-weight: $fw-medium;
-    font-size: 0.9rem;
-    letter-spacing: 0.03em;
-    padding: 0.5rem 1rem !important;
+    font-size: 0.875rem;
+    letter-spacing: normal;
+    padding: 0.5rem 0.7rem !important;
     transition: color 0.2s ease;
     cursor: pointer;
     color: $white;
@@ -28,10 +39,26 @@
     }
   }
 
-  .nav-link--incident {
-    color: #f87171 !important;
-    &:hover {
-      color: lighten(#f87171, 10%) !important;
+  // Navbar CTA buttons — same height for both
+  .nav-cta-btn {
+    font-size: 16px !important;
+    padding: 0.85rem 1.3rem !important;
+    font-weight: $fw-bold !important;
+    white-space: nowrap;
+    line-height: 1.15 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 !important;
+    gap: 0.4rem;
+    height: 50px;
+
+    .nav-cta-icon {
+      font-size: 1rem;
+
+      @media (max-width: 1199px) {
+        display: none;
+      }
     }
   }
 
@@ -54,6 +81,95 @@
   outline: none;
   font: inherit;
   color: inherit;
+}
+
+// Search icon button in navbar
+.nav-search-btn {
+  color: $gradient-start;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// Right side container
+.nav-right {
+  flex-shrink: 0;
+  gap: 0.5rem !important;
+  height: 80px;
+  align-items: center !important;
+}
+
+// ===========================================
+// Search Overlay Modal
+// ===========================================
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: searchFadeIn 0.25s ease;
+
+  &__inner {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba($white, 0.3);
+    color: $white;
+    font-family: $font-family-base;
+    font-size: 2.5rem;
+    font-weight: $fw-medium;
+    padding: 1rem 0;
+    outline: none;
+    caret-color: $gradient-end;
+
+    &::placeholder {
+      color: rgba($white, 0.3);
+      font-weight: 300;
+    }
+
+    &:focus {
+      border-bottom-color: $gradient-start;
+    }
+  }
+
+  &__close {
+    background: none;
+    border: none;
+    color: rgba($white, 0.5);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    flex-shrink: 0;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+@keyframes searchFadeIn {
+  from { opacity: 0; backdrop-filter: blur(0); }
+  to { opacity: 1; backdrop-filter: blur(12px); }
 }
 
 // ===========================================
@@ -766,6 +882,22 @@
 // ===========================================
 
 @media (max-width: 991.98px) {
+  .nav-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem !important;
+    margin-top: 1rem;
+
+    .nav-cta-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-search-btn {
+      display: none; // search icon moves to toggler area on mobile
+    }
+  }
+
   .mega-panel {
     position: relative;
     top: auto;

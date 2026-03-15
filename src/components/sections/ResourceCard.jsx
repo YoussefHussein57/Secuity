@@ -2,18 +2,17 @@ import { Link } from 'react-router-dom';
 
 export default function ResourceCard({ image, badge, title, date, link, ctaText = 'Read More' }) {
   return (
-    <div className="card card-resource shadow-sm h-100">
-      {image && <img src={image} className="card-img-top" alt={title} />}
-      <div className="card-body d-flex flex-column">
-        {badge && (
-          <span className="badge bg-primary-subtle text-primary card-resource__badge mb-2">
-            {badge}
-          </span>
-        )}
-        <h6 className="fw-bold mb-2">{title}</h6>
-        {date && <small className="text-muted mb-3">{date}</small>}
-        <Link to={link} className="btn btn-outline-primary btn-sm mt-auto btn-cta">
-          {ctaText} <i className="bi bi-arrow-right"></i>
+    <div className="resource-card">
+      {badge && (
+        <div className="resource-card__badge">
+          <h3>{badge}</h3>
+        </div>
+      )}
+      {image && <img src={image} className="resource-card__image" alt={title} />}
+      <div className="resource-card__body">
+        <h4 className="resource-card__title">{title}</h4>
+        <Link to={link} className="resource-card__btn">
+          {ctaText}
         </Link>
       </div>
     </div>

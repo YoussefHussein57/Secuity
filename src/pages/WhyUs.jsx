@@ -243,7 +243,7 @@ export default function WhyUs() {
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
               <p className="section-header__label">Services &amp; Technologies</p>
-              <h2 className="section-header__title text-white">
+              <h2 className="section-header__title text-white" style={{maxWidth:"730px" , margin:"0 auto"}}>
                 Your Single Point of Contact for Cybersecurity Expertise
               </h2>
             </div>

@@ -4,58 +4,70 @@
 
 // Gradient shift mixin — oversized gradient that slides on hover
 @mixin gradient-btn {
-  background: linear-gradient(135deg, $gradient-start 0%, $gradient-end 50%, $gradient-start 100%);
-  background-size: 200% 200%;
-  background-position: 0% 50%;
+  background: linear-gradient(45deg, $gradient-start 34%, $gradient-end 88%);
   border: none;
   color: $white;
-  border-radius: $btn-border-radius;
-  transition: background-position 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 0;
+  padding: 0.938em 1.563em;
+  font-size: 1.1875rem;
+  font-weight: $fw-bold;
+  line-height: 1.15385em;
+  font-family: $font-family-base;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #66C4B0 100%, #66C4B0 74%);
+    z-index: -1;
+    transition: left 0.4s ease;
+  }
 
   &:hover, &:focus {
-    background-position: 100% 50%;
     color: $white;
-    box-shadow: 0 4px 20px rgba($gradient-start, 0.4);
+
+    &::before {
+      left: 0;
+    }
   }
 }
 
 // Gradient primary button
 .btn-accent {
   @include gradient-btn;
-  font-weight: $fw-semibold;
 }
 
-// Outline variant — fills with gradient on hover
+// Outline variant — no hover effect change (like "Report an Incident")
 .btn-outline-accent {
   border: 2px solid $gradient-start;
   color: $gradient-start;
-  border-radius: $btn-border-radius;
+  border-radius: 0;
   background: transparent;
-  transition: all 0.4s ease;
-
-  &:hover {
-    @include gradient-btn;
-    border-color: transparent;
-  }
+  padding: 0.938em 1.563em;
+  font-size: 1.1875rem;
+  font-weight: $fw-bold;
+  line-height: 1.15385em;
+  font-family: $font-family-base;
 }
 
-// Outline light — for dark backgrounds
+// Outline light — for dark backgrounds (like "Report an Incident" on dark bg)
 .btn-outline-light {
-  border: 2px solid rgba($white, 0.5);
+  border: 2px solid $white;
   color: $white;
-  border-radius: $btn-border-radius;
+  border-radius: 0;
   background: transparent;
-  background-size: 200% 200%;
-  transition: all 0.4s ease;
-
-  &:hover {
-    background: linear-gradient(135deg, $gradient-start 0%, $gradient-end 50%, $gradient-start 100%);
-    background-size: 200% 200%;
-    background-position: 100% 50%;
-    border-color: transparent;
-    color: $white;
-    box-shadow: 0 4px 20px rgba($gradient-start, 0.35);
-  }
+  padding: 0.938em 1.563em;
+  font-size: 1.1875rem;
+  font-weight: $fw-bold;
+  line-height: 1.15385em;
+  font-family: $font-family-base;
 }
 
 // CTA arrow animation
@@ -87,16 +99,11 @@
 .btn-outline-primary {
   border: 2px solid $gradient-start;
   color: $gradient-start;
-  border-radius: $btn-border-radius;
+  border-radius: 0;
   background: transparent;
-  transition: all 0.4s ease;
-
-  &:hover {
-    background: linear-gradient(135deg, $gradient-start 0%, $gradient-end 50%, $gradient-start 100%);
-    background-size: 200% 200%;
-    background-position: 100% 50%;
-    border-color: transparent;
-    color: $white;
-    box-shadow: 0 4px 20px rgba($gradient-start, 0.3);
-  }
+  padding: 0.938em 1.563em;
+  font-size: 1.1875rem;
+  font-weight: $fw-bold;
+  line-height: 1.15385em;
+  font-family: $font-family-base;
 }

@@ -77,6 +77,7 @@ export default function Hero({
                 transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
                 transform: loaded ? 'translateY(0)' : 'translateY(20px)',
                 opacity: loaded ? 0.85 : 0,
+
               }}
             >
               {highlightSubtitleWord ? (
@@ -98,19 +99,17 @@ export default function Hero({
               {ctaText && (
                 <Link
                   to={ctaLink}
-                  className="btn btn-accent btn-lg btn-cta px-4"
+                  className="btn btn-accent btn-lg px-4"
                 >
                   {ctaText}
-                  <i className="bi bi-arrow-right"></i>
                 </Link>
               )}
               {secondaryCta && (
                 <Link
                   to={secondaryCtaLink}
-                  className="btn btn-outline-light btn-lg btn-cta px-4"
+                  className="btn btn-outline-light btn-lg px-4"
                 >
                   {secondaryCta}
-                  <i className="bi bi-play-circle"></i>
                 </Link>
               )}
             </div>

@@ -3,7 +3,7 @@
 // ===========================================
 
 .hero {
-  min-height: 80vh;
+  min-height: 728px;
   background-size: cover;
   background-position: center;
   background-color: $dark;
@@ -43,10 +43,15 @@
 
   &__title {
     font-family: $font-family-heading;
-    font-size: clamp(2.4rem, 4vw, $hero-title-size);
-    font-weight: $headings-font-weight;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    font-size: clamp(2.4rem, 5vw, $hero-title-size);
+    font-weight: $fw-medium;
+    line-height: 1.15;
+    letter-spacing: normal;
+    min-width: 100%;
+
+    @media (min-width: 992px) {
+      min-width: 800px;
+    }
 
     .text-accent-box {
       background: $white;
@@ -57,19 +62,20 @@
     }
 
     .text-accent-gradient {
-      background: linear-gradient(135deg, $gradient-start, $gradient-end);
+      background: linear-gradient(90deg, $gradient-start 5%, $gradient-end 30%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      display: block;
     }
   }
 
   &__subtitle {
-    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
-    font-weight: $fw-light;
-    opacity: 0.8;
-    max-width: 550px;
-    line-height: 1.7;
+    font-size: 19px;
+    font-weight: 400;
+    opacity: 1;
+    max-width: 600px;
+    line-height: 1.5;
 
     .text-accent-box {
       background: $white;
@@ -89,6 +95,7 @@
     color: $white;
     margin-bottom: 0.75rem;
   }
+
 
   // Service variant — angled edge transitions to indigo
   &--service {

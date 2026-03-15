@@ -13,17 +13,17 @@ import heroImage from '../assets/images/hero.jpeg';
 
 const features = [
   {
-    icon: 'bi-person-badge',
+    iconImage: '/images/icons/expertise-icon.png',
     title: 'Extensive, Unrivaled Expertise',
     description: 'Our highly trained experts empower you with the insight, access, guidance and support to make more informed decisions and strengthen your security posture. We help set security strategy, and with product evaluation and selection, implementation, optimization and management to maximize the value of your technology investments.',
   },
   {
-    icon: 'bi-bullseye',
+    iconImage: '/images/icons/solutions-icon.png',
     title: 'Comprehensive, Adaptable Solutions',
     description: 'We put 800+ technology vendors (best-in-class and emerging) through a rigorous vetting process to ensure we know how they solve real customer challenges for you. As your trusted advisor, we take a vendor-objective approach to ensure you have the best-fit solution for your unique requirements.',
   },
   {
-    icon: 'bi-diagram-3',
+    iconImage: '/images/icons/relationship-icon.png',
     title: 'Strategic, Relationship-Powered Approach',
     description: 'We grew our business on a trusted relationship framework. We provide personalized, local touch and support backed by national strength. We stand by our clients no matter where you are in your cyber journey and deliver objective strategies shaped by what you need vs. what\'s easy.',
   },
@@ -105,20 +105,21 @@ export default function Home() {
           </AnimatedSection>
           <AnimatedSection animation="stagger-children" className="row g-4">
             {features.map((f) => (
-              <div className="col-md-4" key={f.title}>
+              <div className="col-lg-4" key={f.title}>
                 <GradientCard
                   icon={f.icon}
+                  iconImage={f.iconImage}
                   title={f.title}
                   description={f.description}
                   layout="centered"
-                  accent="bottom"
+                  accent="none"
                 />
               </div>
             ))}
           </AnimatedSection>
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mt-5">
-              <Link to="/company" className="btn btn-accent btn-lg btn-cta px-4">
+              <Link to="/company" className="btn btn-accent">
                 Why Cyber
               </Link>
             </div>
@@ -128,14 +129,14 @@ export default function Home() {
 
       {/* ===== SERVICES LIST ===== */}
       <section className="section section--dark home-services-list">
-                <NetworkBackground variant="dark" nodeCount={40} />
-
-        <div className="container">
+        <NetworkBackground variant="dark" nodeCount={40} />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <AnimatedSection animation="animate-on-scroll">
             <SectionHeader
               label="Services & Technologies"
               title="Your Single Point of Contact for Cybersecurity Expertise"
               center
+              titleMaxWidth="730px"
             />
           </AnimatedSection>
           <AnimatedSection animation="animate-on-scroll">
@@ -144,7 +145,7 @@ export default function Home() {
         </div>
       </section>
             {/* ===== TRUSTED BY ===== */}
-      <section className="section section--indigo">
+      <section className="section section--indigo trusted-section">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
@@ -173,15 +174,19 @@ export default function Home() {
                 className="testimonial-video__image"
               />
               <div className="testimonial-video__overlay">
-                <div className="testimonial-video__play">
-                  <i className="bi bi-play-circle"></i>
+                <div className="testimonial-video__top">
+                  <div className="testimonial-video__play">
+                    <i className="bi bi-play-circle"></i>
+                  </div>
                 </div>
-                <div className="testimonial-video__content">
-                  <p className="testimonial-video__quote">
-                    &ldquo;I have a lot of personal trust in Cyber Security.&rdquo;
-                  </p>
+                <div className="testimonial-video__bottom">
                   <p className="testimonial-video__watch">Watch the Video &gt;</p>
-                  <p className="testimonial-video__author">Joey Johnson, CISO, Premise Health</p>
+                  <div className="testimonial-video__quote-area">
+                    <h2 className="testimonial-video__quote">
+                      &ldquo;I have a lot of personal trust in Cyber Security.&rdquo;
+                    </h2>
+                    <p className="testimonial-video__author">Joey Johnson, CISO, Premise Health</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -189,7 +194,7 @@ export default function Home() {
 
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mt-5">
-              <Link to="/company" className="btn btn-accent btn-lg btn-cta px-4">
+              <Link to="/company" className="btn btn-accent">
                 Meet Our Customers
               </Link>
             </div>
@@ -205,16 +210,16 @@ export default function Home() {
               <div>
                 <h2 className="trusted-title mb-0">Additional Resources</h2>
               </div>
-              <Link to="/resources" className="text-white text-decoration-none fw-600">
+              <Link to="/resources" className="resource-view-all">
                 View All &gt;
               </Link>
             </div>
           </AnimatedSection>
-          <AnimatedSection animation="stagger-children" className="row g-4">
+          <AnimatedSection animation="stagger-children" className="row g-4 mt-2">
             {resources.map((r) => (
-              <div className="col-lg-3 col-md-6 mt-5" key={r.title}>
+              <div className="col-lg-3 col-md-6 mt-lg-2 mt-5" key={r.title}>
                 <ResourceCard {...r} />
-                <Link to={r.viewAllLink} className="d-block mt-3 text-white text-decoration-underline small fw-600">
+                <Link to={r.viewAllLink} className="resource-view-all d-block mt-3">
                   {r.viewAllText} &gt;
                 </Link>
               </div>
