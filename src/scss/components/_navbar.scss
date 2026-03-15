@@ -192,17 +192,17 @@
   z-index: 1040;
   animation: megaFadeIn 0.2s ease;
 
-  // Header (light blue area with icon + title)
+  // Header (light blue area — 2-col: left=menu title, right=active service)
   &__header {
     background-color: $light-1 !important;
-    padding: 1.5rem 0 0;
+    padding: 0;
   }
 
   &__header-inner {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    padding-bottom: 1.25rem;
+    padding: 1.5rem 2rem;
   }
 
   &__header-icon {
@@ -213,19 +213,35 @@
   }
 
   &__title {
-    font-family: $font-family-heading;
-    font-size: 1.5rem;
-    font-weight: $fw-bold;
+    font-family: $font-family-base;
+    font-size: 34px;
+    font-weight: $fw-medium;
     color: $gradient-start;
     margin: 0;
     line-height: 1.2;
   }
 
   &__desc {
-    color: $gray-700;
-    font-size: 0.85rem;
+    color: #7d7c7c;
+    font-size: 13px;
     margin: 0.25rem 0 0;
     line-height: 1.5;
+  }
+
+  // Two-column header layout
+  &__header-cols {
+    display: flex;
+
+    .mega-panel__header-left {
+      width: 25%;
+      border-right: 1px solid rgba($primary, 0.1);
+      padding: 1.5rem 2rem;
+    }
+
+    .mega-panel__header-right {
+      flex: 1;
+      padding: 1.5rem 2rem;
+    }
   }
 
   // Gradient separator line
@@ -237,7 +253,7 @@
   // Body (white content area)
   &__body {
     background-color: #ffffff !important;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
   }
 
@@ -290,7 +306,7 @@
 
   // Left sidebar
   &__sidebar {
-    width: 280px;
+    width: 25%;
     flex-shrink: 0;
     border-right: 1px solid rgba($primary, 0.1);
     padding-right: 0;
@@ -313,36 +329,34 @@
   &__item {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.75rem;
     width: 100%;
-    padding: 0.55rem 1rem;
+    padding: 11px 30px 11px 40px;
     border: none;
-    background: none;
-    font-size: 0.85rem;
+    background: transparent;
+    font-size: 15px;
     font-weight: $fw-medium;
-    color: $gray-700;
+    color: #000;
     text-align: left;
     cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease;
-    border-left: 3px solid transparent;
+    transition: background 0.15s ease;
+    border-left: none;
 
     &:hover {
-      background: rgba($gradient-start, 0.04);
-      color: $primary;
+      background: $light-1;
     }
 
     &--active {
-      background: rgba($gradient-start, 0.06);
-      color: $gradient-start;
-      font-weight: $fw-semibold;
-      border-left-color: $gradient-start;
+      background: $light-1;
+      color: #000;
+      font-weight: $fw-medium;
     }
   }
 
   &__item-icon {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: $gradient-start;
-    width: 20px;
+    width: 22px;
     text-align: center;
     flex-shrink: 0;
   }
@@ -355,94 +369,86 @@
   }
 
   &__detail-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.25rem;
-  }
-
-  &__detail-icon {
-    font-size: 1.75rem;
-    color: $gradient-start;
-  }
-
-  &__detail-title {
-    font-family: $font-family-heading;
-    font-size: 1.35rem;
-    font-weight: $fw-bold;
-    color: $primary;
-    margin: 0;
+    display: none; // Title/tagline moved to header area
   }
 
   &__detail-tagline {
-    color: $gray-700;
-    font-size: 0.85rem;
-    margin: 0.25rem 0 0;
-    line-height: 1.5;
+    display: none;
   }
 
   &__divider {
     border: none;
-    border-top: 1px solid rgba($primary, 0.1);
-    margin: 1rem 0;
+    border-top: 1px solid rgba($primary, 0.08);
+    margin: 0 0 1.5rem;
   }
 
   // Sub-service columns
   &__columns {
     display: flex;
-    gap: 2rem;
+    gap: 0;
   }
 
   &__col {
     flex: 1;
     min-width: 0;
+    padding: 0 1.25rem;
+    border-right: 1px solid rgba($primary, 0.1);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
   }
 
   &__col-heading {
-    font-family: $font-family-heading;
-    font-size: 0.7rem;
+    font-family: $font-family-base;
+    font-size: 13px;
     font-weight: $fw-bold;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: $primary;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
 
   &__sub-item {
     display: flex;
     align-items: flex-start;
-    gap: 0.5rem;
-    padding: 0.4rem 0;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
     text-decoration: none;
     transition: opacity 0.15s ease;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.7;
     }
   }
 
   &__sub-icon {
-    font-size: 0.85rem;
+    font-size: 1.5rem;
     color: $gradient-start;
-    margin-top: 3px;
+    margin-top: 2px;
     flex-shrink: 0;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 
   &__sub-title {
     display: block;
-    font-size: 0.82rem;
-    font-weight: $fw-semibold;
-    color: $primary;
+    font-size: 15px;
+    font-weight: $fw-medium;
+    color: $gradient-start;
     line-height: 1.3;
   }
 
   &__sub-desc {
     display: block;
-    font-size: 0.75rem;
-    color: $gray-700;
+    font-size: 13px;
+    color: #7d7c7c;
     line-height: 1.4;
-    margin-top: 1px;
+    margin-top: 2px;
   }
 }
 
@@ -882,19 +888,33 @@
 // ===========================================
 
 @media (max-width: 991.98px) {
+  // Mobile navbar — make the collapse scrollable
+  .navbar-main {
+    height: auto;
+
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+      max-height: calc(100vh - 80px);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
   .nav-right {
     flex-direction: column;
     width: 100%;
     gap: 0.5rem !important;
     margin-top: 1rem;
+    height: auto;
 
     .nav-cta-btn {
       width: 100%;
       text-align: center;
+      height: auto;
     }
 
     .nav-search-btn {
-      display: none; // search icon moves to toggler area on mobile
+      display: none;
     }
   }
 
@@ -905,8 +925,18 @@
     right: auto;
     animation: none;
 
-    &__header {
-      padding: 1rem 0 0;
+    &__header-cols {
+      flex-direction: column;
+
+      .mega-panel__header-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba($primary, 0.08);
+      }
+
+      .mega-panel__header-right {
+        width: 100%;
+      }
     }
 
     &__header-icon {
@@ -934,6 +964,10 @@
       max-height: 200px;
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
+    }
+
+    &__item {
+      padding: 8px 15px;
     }
 
     &__detail {

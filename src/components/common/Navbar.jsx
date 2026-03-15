@@ -79,7 +79,6 @@ export default function Navbar() {
   const [searchOpen, setSearchOpen] = useState(false);
   const searchInputRef = useRef(null);
   const navRef = useRef(null);
-  const closeTimer = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -113,19 +112,6 @@ export default function Navbar() {
     if (menu === 'services') setActiveService(0);
   };
 
-  const handleMenuEnter = (menu) => {
-    clearTimeout(closeTimer.current);
-    setOpenMenu(menu);
-    if (menu === 'services') setActiveService(0);
-  };
-
-  const handleMenuLeave = () => {
-    closeTimer.current = setTimeout(() => setOpenMenu(null), 150);
-  };
-
-  const handleDropdownEnter = () => {
-    clearTimeout(closeTimer.current);
-  };
 
   const currentService = serviceEntries[activeService];
 
@@ -157,8 +143,8 @@ export default function Navbar() {
             {/* ===== SERVICES ===== */}
             <li
               className="nav-item mega-dropdown"
-              onMouseEnter={() => handleMenuEnter('services')}
-              onMouseLeave={handleMenuLeave}
+
+
             >
               <button
                 className={`nav-link dropdown-toggle btn-reset ${openMenu === 'services' ? 'active' : ''}`}
@@ -168,15 +154,26 @@ export default function Navbar() {
               </button>
 
               {openMenu === 'services' && (
-                <div className="mega-panel" onMouseEnter={handleDropdownEnter} onMouseLeave={handleMenuLeave}>
-                  {/* Header */}
+                <div className="mega-panel">
+                  {/* Header — two columns */}
                   <div className="mega-panel__header">
-                    <div className="container">
-                      <div className="mega-panel__header-inner">
-                        <i className="bi bi-shield-lock mega-panel__header-icon"></i>
-                        <div>
-                          <h3 className="mega-panel__title">Services</h3>
-                          <p className="mega-panel__desc">Tailored consulting, engineering and managed security services to meet your unique needs.</p>
+                    <div className="mega-panel__header-cols">
+                      <div className="mega-panel__header-left">
+                        <div className="mega-panel__header-inner">
+                          <i className="bi bi-shield-lock mega-panel__header-icon"></i>
+                          <div>
+                            <h3 className="mega-panel__title">Services</h3>
+                            <p className="mega-panel__desc">Tailored consulting, engineering and managed security services to meet your unique needs.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mega-panel__header-right">
+                        <div className="mega-panel__header-inner">
+                          <i className={`bi ${currentService.icon} mega-panel__header-icon`}></i>
+                          <div>
+                            <h3 className="mega-panel__title">{currentService.title}</h3>
+                            <p className="mega-panel__desc">{currentService.tagline}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -185,7 +182,6 @@ export default function Navbar() {
 
                   {/* Content */}
                   <div className="mega-panel__body">
-                    <div className="container">
                       <div className="mega-services">
                         {/* Left sidebar */}
                         <div className="mega-services__sidebar">
@@ -193,8 +189,7 @@ export default function Navbar() {
                             <button
                               key={s.slug}
                               className={`mega-services__item ${activeService === i ? 'mega-services__item--active' : ''}`}
-                              onMouseEnter={() => setActiveService(i)}
-                              onClick={() => { setActiveService(i); }}
+                              onClick={() => setActiveService(i)}
                             >
                               <i className={`bi ${s.icon} mega-services__item-icon`}></i>
                               <span>{s.title}</span>
@@ -259,7 +254,6 @@ export default function Navbar() {
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               )}
@@ -268,8 +262,8 @@ export default function Navbar() {
             {/* ===== TECHNOLOGIES ===== */}
             <li
               className="nav-item mega-dropdown"
-              onMouseEnter={() => handleMenuEnter('technologies')}
-              onMouseLeave={handleMenuLeave}
+
+
             >
               <button
                 className={`nav-link dropdown-toggle btn-reset ${openMenu === 'technologies' ? 'active' : ''}`}
@@ -279,7 +273,7 @@ export default function Navbar() {
               </button>
 
               {openMenu === 'technologies' && (
-                <div className="mega-panel" onMouseEnter={handleDropdownEnter} onMouseLeave={handleMenuLeave}>
+                <div className="mega-panel">
                   <div className="mega-panel__header">
                     <div className="container">
                       <div className="mega-panel__header-inner">
@@ -321,8 +315,8 @@ export default function Navbar() {
             {/* ===== GOVERNMENT ===== */}
             <li
               className="nav-item mega-dropdown"
-              onMouseEnter={() => handleMenuEnter('government')}
-              onMouseLeave={handleMenuLeave}
+
+
             >
               <button
                 className={`nav-link dropdown-toggle btn-reset ${openMenu === 'government' ? 'active' : ''}`}
@@ -332,7 +326,7 @@ export default function Navbar() {
               </button>
 
               {openMenu === 'government' && (
-                <div className="mega-panel" onMouseEnter={handleDropdownEnter} onMouseLeave={handleMenuLeave}>
+                <div className="mega-panel">
                   <div className="mega-panel__header">
                     <div className="container">
                       <div className="mega-panel__header-inner">
@@ -384,8 +378,8 @@ export default function Navbar() {
             {/* ===== COMPANY ===== */}
             <li
               className="nav-item mega-dropdown"
-              onMouseEnter={() => handleMenuEnter('company')}
-              onMouseLeave={handleMenuLeave}
+
+
             >
               <button
                 className={`nav-link dropdown-toggle btn-reset ${openMenu === 'company' ? 'active' : ''}`}
@@ -395,7 +389,7 @@ export default function Navbar() {
               </button>
 
               {openMenu === 'company' && (
-                <div className="mega-panel" onMouseEnter={handleDropdownEnter} onMouseLeave={handleMenuLeave}>
+                <div className="mega-panel">
                   <div className="mega-panel__header">
                     <div className="container">
                       <div className="mega-panel__header-inner">
@@ -494,8 +488,8 @@ export default function Navbar() {
             {/* ===== RESOURCES ===== */}
             <li
               className="nav-item mega-dropdown"
-              onMouseEnter={() => handleMenuEnter('resources')}
-              onMouseLeave={handleMenuLeave}
+
+
             >
               <button
                 className={`nav-link dropdown-toggle btn-reset ${openMenu === 'resources' ? 'active' : ''}`}
@@ -505,7 +499,7 @@ export default function Navbar() {
               </button>
 
               {openMenu === 'resources' && (
-                <div className="mega-panel" onMouseEnter={handleDropdownEnter} onMouseLeave={handleMenuLeave}>
+                <div className="mega-panel">
                   <div className="mega-panel__header">
                     <div className="container">
                       <div className="mega-panel__header-inner">
