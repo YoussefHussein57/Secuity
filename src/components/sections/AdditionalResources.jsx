@@ -33,11 +33,11 @@ export default function AdditionalResources({ resources = DEFAULT_RESOURCES }) {
       <div className="container">
         <AnimatedSection animation="animate-on-scroll">
           <div className="additional-resources__header">
-            <h2 className="additional-resources__title">
-              Additional <span className="text-underline-accent">Resources</span>
+            <h2 className="additional-resources__title text-underline-accent">
+              Additional Resources
             </h2>
             <Link to="/resources" className="additional-resources__view-all">
-              View All <i className="bi bi-chevron-right"></i>
+              View All &gt;
             </Link>
           </div>
         </AnimatedSection>
