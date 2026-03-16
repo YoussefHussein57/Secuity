@@ -11,8 +11,14 @@ const serviceEntries = Object.entries(services).map(([slug, s]) => ({
   tagline: s.tagline,
   path: `/services/${slug}`,
   strategic: s.strategic,
+  strategicExtra: s.strategicExtra,
   tactical: s.tactical,
+  tacticalExtra: s.tacticalExtra,
   managed: s.managed,
+  training: s.training,
+  megaMenuLayout: s.megaMenuLayout,
+  megaMenuResource: s.megaMenuResource,
+  megaMenuResources: s.megaMenuResources,
 }));
 
 const technologyItems = [
@@ -71,6 +77,147 @@ const resourceLibrary = [
   { icon: 'bi-file-text', label: 'Whitepapers', desc: 'Download cybersecurity solution whitepapers', path: '/resources' },
   { icon: 'bi-shield-exclamation', label: 'Threat Advisories', desc: 'Research and intel from our experts', path: '/resources' },
 ];
+
+// Helper: render sub-service items for a column
+function SubItems({ items, icon, path, closeMega }) {
+  return items.map((item) => (
+    <Link key={item.title} to={path} className="mega-services__sub-item" onClick={closeMega}>
+      <i className={`bi ${icon} mega-services__sub-icon`}></i>
+      <div>
+        <span className="mega-services__sub-title">{item.title}</span>
+        <span className="mega-services__sub-desc">{item.description}</span>
+      </div>
+    </Link>
+  ));
+}
+
+// Helper: render resource card
+function ResourceCard({ resource, closeMega }) {
+  if (!resource) return null;
+  return (
+    <Link to="/resources" className="mega-services__resource-card" onClick={closeMega}>
+      <img src={resource.image} alt="" className="mega-services__resource-img" />
+      <span className="mega-services__resource-title">{resource.title}</span>
+    </Link>
+  );
+}
+
+// Render mega menu columns based on service layout type
+function renderMegaColumns(service, closeMega) {
+  const layout = service.megaMenuLayout;
+
+  // Layout: Professional Services + Resources (AI, Data Security, Email, Endpoint, etc.)
+  if (layout === 'ai') {
+    const resources = service.megaMenuResources || (service.megaMenuResource ? [service.megaMenuResource] : []);
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
+          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        {resources.length > 0 && (
+          <div className="mega-services__col">
+            <h6 className="mega-services__col-heading">RESOURCES</h6>
+            <div className="mega-services__resources-grid">
+              {resources.map((res, i) => (
+                <ResourceCard key={i} resource={res} closeMega={closeMega} />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // Layout: Cloud Security (Services by Platform | Professional Services | Resources)
+  if (layout === 'cloud') {
+    const resources = service.megaMenuResources || (service.megaMenuResource ? [service.megaMenuResource] : []);
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">SERVICES BY PLATFORM</h6>
+          <SubItems items={service.strategic || []} icon="bi-cloud" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
+          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        {resources.length > 0 && (
+          <div className="mega-services__col">
+            <h6 className="mega-services__col-heading">RESOURCES</h6>
+            <div className="mega-services__resources-grid">
+              {resources.map((res, i) => (
+                <ResourceCard key={i} resource={res} closeMega={closeMega} />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // Layout: GRC (Governance + Business Resiliency | Risk + Managed Security | Compliance)
+  if (layout === 'grc') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">GOVERNANCE SERVICES</h6>
+          <SubItems items={service.strategic || []} icon="bi-clipboard-check" path={service.path} closeMega={closeMega} />
+          {service.strategicExtra?.length > 0 && (
+            <>
+              <h6 className="mega-services__col-heading mt-4">BUSINESS RESILIENCY</h6>
+              <SubItems items={service.strategicExtra} icon="bi-building-check" path={service.path} closeMega={closeMega} />
+            </>
+          )}
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">RISK SERVICES</h6>
+          <SubItems items={service.tactical || []} icon="bi-exclamation-triangle" path={service.path} closeMega={closeMega} />
+          {service.tacticalExtra?.length > 0 && (
+            <>
+              <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
+              <SubItems items={service.tacticalExtra} icon="bi-gear" path={service.path} closeMega={closeMega} />
+            </>
+          )}
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">COMPLIANCE SERVICES</h6>
+          <SubItems items={service.managed || []} icon="bi-check2-square" path={service.path} closeMega={closeMega} />
+        </div>
+      </div>
+    );
+  }
+
+  // Default layout: Strategic Solutions + Managed | Tactical Assessment | Training
+  return (
+    <div className="mega-services__columns">
+      {service.strategic?.length > 0 && (
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">STRATEGIC SOLUTIONS</h6>
+          <SubItems items={service.strategic} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          {service.managed?.length > 0 && (
+            <>
+              <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
+              <SubItems items={service.managed} icon="bi-gear" path={service.path} closeMega={closeMega} />
+            </>
+          )}
+        </div>
+      )}
+      {service.tactical?.length > 0 && (
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">TACTICAL ASSESSMENT</h6>
+          <SubItems items={service.tactical} icon="bi-bullseye" path={service.path} closeMega={closeMega} />
+        </div>
+      )}
+      {service.training?.length > 0 && (
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">TRAINING</h6>
+          <SubItems items={service.training} icon="bi-mortarboard" path={service.path} closeMega={closeMega} />
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -206,52 +353,8 @@ export default function Navbar() {
                           <p className="mega-services__detail-tagline">{currentService.tagline}</p>
                           <hr className="mega-services__divider" />
 
-                          <div className="mega-services__columns">
-                            {currentService.strategic?.length > 0 && (
-                              <div className="mega-services__col">
-                                <h6 className="mega-services__col-heading">STRATEGIC SOLUTIONS</h6>
-                                {currentService.strategic.map((item) => (
-                                  <Link key={item.title} to={currentService.path} className="mega-services__sub-item" onClick={closeMega}>
-                                    <i className="bi bi-layers mega-services__sub-icon"></i>
-                                    <div>
-                                      <span className="mega-services__sub-title">{item.title}</span>
-                                      <span className="mega-services__sub-desc">{item.description}</span>
-                                    </div>
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
-
-                            {currentService.tactical?.length > 0 && (
-                              <div className="mega-services__col">
-                                <h6 className="mega-services__col-heading">TACTICAL ASSESSMENT</h6>
-                                {currentService.tactical.map((item) => (
-                                  <Link key={item.title} to={currentService.path} className="mega-services__sub-item" onClick={closeMega}>
-                                    <i className="bi bi-crosshair mega-services__sub-icon"></i>
-                                    <div>
-                                      <span className="mega-services__sub-title">{item.title}</span>
-                                      <span className="mega-services__sub-desc">{item.description}</span>
-                                    </div>
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
-
-                            {currentService.managed?.length > 0 && (
-                              <div className="mega-services__col">
-                                <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-                                {currentService.managed.map((item) => (
-                                  <Link key={item.title} to={currentService.path} className="mega-services__sub-item" onClick={closeMega}>
-                                    <i className="bi bi-gear mega-services__sub-icon"></i>
-                                    <div>
-                                      <span className="mega-services__sub-title">{item.title}</span>
-                                      <span className="mega-services__sub-desc">{item.description}</span>
-                                    </div>
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
-                          </div>
+                          {/* Render columns based on layout type */}
+                          {renderMegaColumns(currentService, closeMega)}
                         </div>
                       </div>
                   </div>

@@ -67,32 +67,51 @@ const services = {
     ],
     strategic: [
       {
-        title: 'Security Architecture Review',
-        description:
-          'Evaluate application design and architecture for security weaknesses before writing a single line of code.',
+        title: 'Application Security Architecture Review',
+        description: 'Identify & assess application security weaknesses',
       },
-      { title: 'Threat Modeling', description: 'Identify potential threats and attack vectors specific to your application environment.' },
-      { title: 'Secure SDLC Consulting', description: 'Embed security into every phase of your software development lifecycle.' },
+      {
+        title: 'Application Security Program Assessment',
+        description: 'Improve application security posture through SDLC',
+      },
     ],
     tactical: [
-      { title: 'Penetration Testing', description: 'Simulate real-world attacks against your web, mobile, and API applications.' },
-      { title: 'Code Review (SAST)', description: 'Automated and manual static analysis to find vulnerabilities in source code.' },
+      { title: 'Application Security Assessments', description: 'Understand your attack surface through testing' },
       {
-        title: 'Dynamic Testing (DAST)',
-        description:
-          'Runtime testing of applications to identify vulnerabilities in deployed environments.',
+        title: 'AI-augmented Application Security Services',
+        description: 'Enhance application security assessments by incorporating AI with expert oversight.',
+      },
+      {
+        title: 'Mobile Application Security Assessment',
+        description: 'Provide an accurate understanding of mobile risk',
+      },
+      {
+        title: 'Source Code Review',
+        description: 'Evaluate applications for critical security issues',
       },
     ],
     managed: [
       {
-        title: 'Continuous Assessment',
-        description:
-          'Ongoing automated scanning and periodic manual testing of your application portfolio.',
+        title: 'Application Security as a Service',
+        description: 'AppSec tooling expertise to identify vulnerabilities & provide remediation recommendations',
+      },
+    ],
+    training: [
+      {
+        title: 'Application Threat Modeling Training',
+        description: 'Learn how to create applications that are secure by design',
       },
       {
-        title: 'DevSecOps Integration',
-        description:
-          'Embed security tools and processes into your CI/CD pipeline for continuous security.',
+        title: 'Secure Development Training',
+        description: 'Learn how to design & code secure web solutions',
+      },
+      {
+        title: 'AI Security With a Focus on Large Language Models Training',
+        description: 'Learn AI and LLM application security fundamentals',
+      },
+      {
+        title: 'Fundamentals of Reconnaissance and Attack Surface Analysis Training',
+        description: 'Learn reconnaissance and attack surface analysis for effective web app testing',
       },
     ],
     outcomesSection: {
@@ -139,9 +158,9 @@ const services = {
   },
 
   'ai-security': {
-    title: 'Artificial Intelligence (AI) Security',
+    title: 'Artificial Intelligence (AI)',
     icon: 'bi-cpu',
-    tagline: 'Protect your AI/ML systems and leverage AI to strengthen your security posture.',
+    tagline: 'Confidently use AI to fuel organizational success.',
     heroHighlight: 'Protect',
     heroImage: '/images/services/hero-placeholder.png',
     description:
@@ -208,33 +227,18 @@ const services = {
     ],
     strategic: [
       {
-        title: 'AI Risk Assessment',
-        description:
-          'Evaluate risks across your AI/ML lifecycle including data, models, and inference endpoints.',
-      },
-      { title: 'AI Governance Framework', description: 'Develop policies and controls for responsible and secure AI adoption.' },
-      {
-        title: 'LLM Security Review',
-        description:
-          'Assess large language model deployments for prompt injection, data leakage, and misuse risks.',
+        title: 'AI Governance Services',
+        description: 'Establish and maintain AI readiness',
       },
     ],
-    tactical: [
-      {
-        title: 'Model Security Testing',
-        description:
-          'Test AI models for adversarial robustness, data poisoning, and extraction attacks.',
-      },
-      {
-        title: 'AI Infrastructure Audit',
-        description:
-          'Review the security of ML pipelines, training environments, and model serving infrastructure.',
-      },
-    ],
-    managed: [
-      { title: 'AI Threat Monitoring', description: 'Continuous monitoring of AI systems for anomalous behavior and adversarial inputs.' },
-      { title: 'AI-Powered SOC', description: 'Leverage AI to enhance threat detection and automate incident response in your SOC.' },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
+    megaMenuLayout: 'ai',
+    megaMenuResource: {
+      image: '/images/nav/ai-nav.jpg',
+      title: '[DATASHEET] Artificial Intelligence at Cyber Security',
+    },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Map AI-specific risks across your organization.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Harden AI systems against emerging attack techniques.' },
@@ -253,7 +257,7 @@ const services = {
     title: 'Cloud Security',
     icon: 'bi-cloud',
     tagline:
-      'Secure your cloud infrastructure across AWS, Azure, GCP, and multi-cloud environments.',
+      'Adapt cybersecurity to cloud transformation across your enterprise.',
     heroHighlight: 'Secure',
     heroImage: '/images/services/hero-placeholder.png',
     description:
@@ -314,33 +318,34 @@ const services = {
     ],
     strategic: [
       {
-        title: 'Cloud Security Architecture',
-        description:
-          'Design secure cloud architectures aligned with industry frameworks and best practices.',
+        title: 'AWS Cloud Security Services',
+        description: 'Secure your Amazon Web Services cloud environment end-to-end',
       },
-      { title: 'Cloud Migration Security', description: 'Ensure security is embedded throughout your cloud migration journey.' },
-      { title: 'Multi-Cloud Strategy', description: 'Develop unified security strategies across AWS, Azure, and GCP environments.' },
+      { title: 'Google Cloud Security Services', description: 'Protect workloads and data across Google Cloud Platform' },
+      { title: 'SaaS Security Services', description: 'Safeguard your SaaS application ecosystem' },
+      { title: 'Microsoft Security Services', description: 'Maximize security across Microsoft 365 and Azure' },
+      { title: 'Multi-Cloud Security', description: 'Unify security controls across multiple cloud providers' },
     ],
     tactical: [
       {
-        title: 'Cloud Penetration Testing',
-        description:
-          'Test cloud infrastructure, APIs, and workloads for vulnerabilities and misconfigurations.',
+        title: 'Cloud Security Assessments',
+        description: 'Evaluate cloud configurations and identify security gaps',
       },
-      { title: 'Configuration Assessment', description: 'Audit cloud settings against CIS benchmarks and provider best practices.' },
-      { title: 'Container Security', description: 'Secure Docker, Kubernetes, and serverless deployments across your cloud environment.' },
+      { title: 'Cloud Security Strategy Services', description: 'Develop a comprehensive cloud security roadmap' },
+      { title: 'Cloud Governance', description: 'Establish policies and controls for cloud resource management' },
+      { title: 'Cloud Security Engineering', description: 'Design and implement secure cloud architectures' },
+      { title: 'CNAPP Services', description: 'Cloud-native application protection platform services' },
+      { title: 'Container Security', description: 'Secure containerized workloads and orchestration platforms' },
+      { title: 'Digital Transformation', description: 'Enable secure digital transformation initiatives' },
+      { title: 'Zero Trust Workshops', description: 'Implement zero trust principles in your cloud environment' },
     ],
-    managed: [
-      {
-        title: 'Cloud Security Posture Management',
-        description:
-          'Continuous monitoring and remediation of cloud misconfigurations and compliance drift.',
-      },
-      {
-        title: 'Cloud Workload Protection',
-        description: 'Runtime protection for VMs, containers, and serverless functions in production.',
-      },
-    ],
+    managed: [],
+    training: [],
+    megaMenuLayout: 'cloud',
+    megaMenuResource: {
+      image: '/images/nav/cloud-nav.jpg',
+      title: '[DATASHEET] Cloud Governance',
+    },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Discover cloud misconfigurations and vulnerabilities.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Fix issues with cloud-native remediation guidance.' },
@@ -358,7 +363,7 @@ const services = {
   'data-security': {
     title: 'Data Security & Privacy',
     icon: 'bi-database',
-    tagline: 'Protect your most valuable asset — your data — wherever it lives.',
+    tagline: 'Overcome data security challenges & improve data protection to fit your needs & environment.',
     heroHighlight: 'Protect',
     heroImage: '/images/services/hero-placeholder.png',
     description:
@@ -419,24 +424,20 @@ const services = {
     ],
     strategic: [
       {
-        title: 'Data Security Strategy',
-        description:
-          'Develop a comprehensive data protection strategy aligned with business objectives and regulatory requirements.',
+        title: 'Data Security & Protection Services',
+        description: 'Protect data from undesired access & mishandling, & secure data from deletion, ransomware, & theft',
       },
-      { title: 'Privacy Impact Assessment', description: 'Assess data processing activities for privacy risks and regulatory compliance.' },
+      { title: 'Data Security Governance', description: 'Protect & control your data from creation to destruction' },
+      { title: 'Data Loss Prevention', description: 'Secure sensitive data & prevent unauthorized use' },
+      { title: 'Data Privacy', description: 'Navigate complex Federal, State & international privacy regulations' },
     ],
-    tactical: [
-      {
-        title: 'Data Discovery & Classification',
-        description:
-          'Find and classify sensitive data across structured and unstructured repositories.',
-      },
-      { title: 'DLP Implementation', description: 'Deploy and tune data loss prevention controls across endpoints, network, and cloud.' },
-      { title: 'Encryption Assessment', description: 'Evaluate and implement encryption for data at rest, in transit, and in use.' },
-    ],
-    managed: [
-      { title: 'Managed DLP', description: 'Ongoing monitoring, tuning, and incident response for your data loss prevention program.' },
-      { title: 'Privacy Program Management', description: 'Continuous privacy compliance monitoring and data subject request handling.' },
+    tactical: [],
+    managed: [],
+    training: [],
+    megaMenuLayout: 'ai',
+    megaMenuResources: [
+      { image: '/images/nav/data-security-nav.jpg', title: '[DATASHEET] Data Security' },
+      { image: '/images/nav/data-security-wp-nav.jpg', title: '[WHITEPAPER] Data Security Strategies for an Evolving Threat Landscape' },
     ],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Discover where sensitive data lives across your environment.' },
@@ -455,7 +456,7 @@ const services = {
   'email-security': {
     title: 'Email Security',
     icon: 'bi-envelope-check',
-    tagline: 'Defend against phishing, BEC, and email-borne threats with layered protection.',
+    tagline: 'Ensure the protection of email content & accounts from unauthorized access.',
     heroHighlight: 'Defend',
     heroImage: '/images/services/hero-placeholder.png',
     description:
@@ -515,24 +516,16 @@ const services = {
       },
     ],
     strategic: [
-      { title: 'Email Security Architecture', description: 'Design a layered email security strategy for your organization.' },
-      { title: 'DMARC Implementation', description: 'Implement email authentication to prevent domain spoofing and impersonation.' },
+      { title: 'Phishing Services', description: 'Customized phishing services that provide meaningful results' },
+      { title: 'Phishing as a Service', description: 'Optimize your phishing simulation program' },
     ],
-    tactical: [
-      {
-        title: 'Phishing Simulation',
-        description:
-          'Test employee susceptibility with realistic phishing campaigns and measure improvement.',
-      },
-      { title: 'Email Gateway Assessment', description: 'Evaluate and optimize your email security gateway configurations.' },
-    ],
-    managed: [
-      {
-        title: 'Managed Email Protection',
-        description:
-          'Ongoing monitoring, threat analysis, and incident response for email-based threats.',
-      },
-      { title: 'Phishing Response Service', description: 'Rapid analysis and containment of reported phishing attempts.' },
+    tactical: [],
+    managed: [],
+    training: [],
+    megaMenuLayout: 'ai',
+    megaMenuResources: [
+      { image: '/images/nav/email-phishing-nav.jpg', title: '[WHITEPAPER] A Guide to Spear Phishing' },
+      { image: '/images/nav/email-security-nav.jpg', title: '[WHITEPAPER] Countering the Threat of Spear Phishing' },
     ],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Detect phishing and BEC attempts before they reach users.' },
@@ -552,7 +545,7 @@ const services = {
     title: 'Endpoint Security',
     icon: 'bi-pencil',
     tagline:
-      'Protect every endpoint — from workstations to mobile devices — against advanced threats.',
+      'Identify & manage the right endpoint security technologies for your unique requirements.',
     heroHighlight: 'Protect',
     heroImage: '/images/services/hero-placeholder.png',
     description:
@@ -613,28 +606,18 @@ const services = {
     ],
     strategic: [
       {
-        title: 'Endpoint Strategy Assessment',
-        description:
-          'Evaluate your current endpoint security stack and develop a modernization roadmap.',
-      },
-      {
-        title: 'XDR Architecture',
-        description:
-          'Design an extended detection and response architecture that integrates endpoints with network and cloud telemetry.',
+        title: 'Endpoint Security Services',
+        description: 'Architect, implement & optimize the right solution for your environment',
       },
     ],
-    tactical: [
-      { title: 'EDR Deployment', description: 'Deploy and configure endpoint detection and response solutions across your environment.' },
-      {
-        title: 'Endpoint Hardening',
-        description:
-          'Lock down endpoint configurations following CIS benchmarks and security best practices.',
-      },
-    ],
-    managed: [
-      { title: 'Managed EDR', description: '24/7 monitoring, threat hunting, and incident response for your endpoint environment.' },
-      { title: 'Managed Patching', description: 'Automated patch management with prioritized vulnerability remediation.' },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
+    megaMenuLayout: 'ai',
+    megaMenuResource: {
+      image: '/images/nav/endpoint-nav.jpg',
+      title: '',
+    },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Detect endpoint threats with advanced behavioral analysis.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Contain and remediate endpoint compromises rapidly.' },
@@ -650,10 +633,10 @@ const services = {
   },
 
   'grc': {
-    title: 'Governance, Risk & Compliance',
+    title: 'Governance, Risk & Compliance (GRC)',
     icon: 'bi-check2-square',
     tagline:
-      'Build and maintain a risk management program that aligns security with business goals.',
+      'Align your security program with industry best practices while managing risk & addressing compliance mandates.',
     heroHighlight: 'Build',
     heroImage: '/images/services/hero-placeholder.png',
     description:
@@ -713,19 +696,33 @@ const services = {
       },
     ],
     strategic: [
-      { title: 'Risk Assessment', description: 'Comprehensive risk assessments aligned with NIST, ISO, and industry-specific frameworks.' },
-      { title: 'Policy Development', description: 'Create security policies, standards, and procedures tailored to your organization.' },
-      { title: 'Compliance Roadmap', description: 'Develop a prioritized roadmap to achieve compliance with target frameworks.' },
+      { title: 'Security Program Review', description: 'Ensure a sound cybersecurity program right-sized for your business' },
+      { title: 'M&A Security', description: 'Know the cyber risks of a target company before acquisition' },
+      { title: 'Data Security Governance', description: 'Protect & control your data from creation to destruction' },
+      { title: 'AI Governance Services', description: 'Establish and maintain AI readiness' },
+    ],
+    strategicExtra: [
+      { title: 'Business Continuity & Disaster Recovery', description: 'Ensure you have the right systems & processes in place for ongoing business operations' },
     ],
     tactical: [
-      { title: 'Gap Analysis', description: 'Identify gaps between current security controls and target framework requirements.' },
-      { title: 'Audit Preparation', description: 'Prepare for SOC 2, ISO 27001, HIPAA, PCI DSS, and other compliance audits.' },
-      { title: 'Third-Party Risk Assessment', description: 'Evaluate the security posture of your vendors and supply chain partners.' },
+      { title: 'Risk Assessment Services', description: 'Improve decision making, optimize IT investments & centralize visibility' },
+      { title: 'Third-Party Risk Management', description: 'Manage inherent supply chain risk' },
+      { title: 'Cyber Risk Quantification Services', description: "It's difficult to quantify something you prevented from happening." },
+    ],
+    tacticalExtra: [
+      { title: 'CISO as a Service', description: 'Leverage experienced cybersecurity, governance & risk professionals' },
+      { title: 'Third Party Risk Management as a Service', description: 'Leverage our expertise to effectively run your TPRM program' },
     ],
     managed: [
-      { title: 'Managed Compliance', description: 'Ongoing compliance monitoring, evidence collection, and audit support.' },
-      { title: 'vCISO Services', description: 'Fractional CISO leadership to guide your security strategy and program maturity.' },
+      { title: 'Compliance Assessment & Advisory Services', description: 'Stay on top of information security standards' },
+      { title: 'CMMC Compliance', description: 'Ensure alignment with CMMC requirements' },
+      { title: 'HIPAA Compliance', description: 'Protect patient health information & ensure HIPAA compliance' },
+      { title: 'PCI DSS Compliance', description: 'Ensure you meet PCI compliance obligations' },
+      { title: 'FedRAMP Advisory', description: 'Ensure your cloud applications meet FedRAMP and StateRAMP compliance' },
+      { title: 'Compliance Management as a Service', description: 'Ensure continuous compliance in between assessments' },
     ],
+    training: [],
+    megaMenuLayout: 'grc',
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Assess risks and compliance gaps across your organization.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Close gaps with practical, cost-effective controls.' },
@@ -741,7 +738,7 @@ const services = {
   },
 
   'iam': {
-    title: 'Identity & Access Management',
+    title: 'Identity & Access Management (IAM)',
     icon: 'bi-fingerprint',
     tagline: 'Ensure the right people have the right access at the right time.',
     heroHighlight: 'Ensure',
@@ -803,30 +800,21 @@ const services = {
       },
     ],
     strategic: [
-      { title: 'IAM Strategy & Roadmap', description: 'Develop a comprehensive identity strategy aligned with zero-trust principles.' },
-      { title: 'Zero Trust Architecture', description: 'Design and implement zero-trust access controls across your environment.' },
+      { title: 'IAM Strategy & Roadmap', description: 'Develop a comprehensive identity strategy aligned with zero-trust principles' },
+      { title: 'Zero Trust Architecture', description: 'Design and implement zero-trust access controls across your environment' },
+      { title: 'PAM Implementation', description: 'Deploy privileged access management to secure administrative accounts' },
+      { title: 'MFA Rollout', description: 'Implement multi-factor authentication with minimal user friction' },
+      { title: 'SSO Integration', description: 'Consolidate application access with single sign-on' },
+      { title: 'Identity Governance', description: 'Establish identity lifecycle management and access certification' },
     ],
-    tactical: [
-      {
-        title: 'PAM Implementation',
-        description:
-          'Deploy privileged access management to secure administrative accounts and credentials.',
-      },
-      { title: 'MFA Rollout', description: 'Implement multi-factor authentication across your organization with minimal user friction.' },
-      {
-        title: 'SSO Integration',
-        description:
-          'Consolidate application access with single sign-on for improved security and user experience.',
-      },
-    ],
-    managed: [
-      { title: 'Managed IAM', description: 'Ongoing identity governance, access reviews, and privileged account monitoring.' },
-      {
-        title: 'Identity Threat Detection',
-        description:
-          'Monitor for identity-based attacks including credential stuffing, privilege escalation, and lateral movement.',
-      },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
+    megaMenuLayout: 'ai',
+    megaMenuResource: {
+      image: '/images/nav/iam-nav.jpg',
+      title: '[DATASHEET] Identity & Access Management Services',
+    },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Discover excessive privileges and orphaned accounts.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Implement least-privilege access controls.' },
@@ -842,7 +830,7 @@ const services = {
   },
 
   'incident-response': {
-    title: 'Incident Response & Threat Intelligence',
+    title: 'Incident Response (IR) & Threat Intelligence (TI)',
     icon: 'bi-exclamation-triangle',
     tagline:
       'Prepare for, respond to, and recover from security incidents with expert support.',
@@ -907,31 +895,18 @@ const services = {
       },
     ],
     strategic: [
-      { title: 'IR Readiness Assessment', description: 'Evaluate your incident response capabilities and develop improvement plans.' },
-      {
-        title: 'IR Plan Development',
-        description:
-          'Create comprehensive incident response plans, playbooks, and communication templates.',
-      },
-      { title: 'Tabletop Exercises', description: 'Simulate incidents to test your team\'s response capabilities and decision-making.' },
+      { title: 'IR Readiness Assessment', description: 'Evaluate your incident response capabilities and develop improvement plans' },
+      { title: 'IR Plan Development', description: 'Create comprehensive incident response plans, playbooks, and communication templates' },
+      { title: 'Tabletop Exercises', description: 'Simulate incidents to test your team\'s response capabilities and decision-making' },
+      { title: 'Incident Response', description: 'Rapid response to active security incidents with containment and recovery' },
+      { title: 'Digital Forensics', description: 'Forensic investigation of compromised systems, data, and networks' },
+      { title: 'Malware Analysis', description: 'Reverse engineering of malware samples to understand capabilities and attribution' },
+      { title: 'IR Retainer', description: 'Pre-negotiated retainer for guaranteed response times and reduced costs' },
+      { title: 'Threat Intelligence Feed', description: 'Curated, actionable threat intelligence tailored to your industry' },
     ],
-    tactical: [
-      {
-        title: 'Incident Response',
-        description:
-          'Rapid response to active security incidents with containment, eradication, and recovery.',
-      },
-      { title: 'Digital Forensics', description: 'Forensic investigation of compromised systems, data, and networks.' },
-      { title: 'Malware Analysis', description: 'Reverse engineering of malware samples to understand capabilities and attribution.' },
-    ],
-    managed: [
-      { title: 'IR Retainer', description: 'Pre-negotiated incident response retainer for guaranteed response times and reduced costs.' },
-      {
-        title: 'Threat Intelligence Feed',
-        description:
-          'Curated, actionable threat intelligence tailored to your industry and threat landscape.',
-      },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Detect and classify security incidents rapidly.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Contain and eradicate threats from your environment.' },
@@ -1011,32 +986,21 @@ const services = {
     strategic: [
       {
         title: 'Security Program Design',
-        description:
-          'Design a comprehensive security program tailored to your risk profile and maturity level.',
+        description: 'Design a comprehensive security program tailored to your risk profile',
       },
       {
         title: 'Technology Assessment',
-        description:
-          'Evaluate and select the right security technologies for your managed security program.',
+        description: 'Evaluate and select the right security technologies for your program',
       },
+      { title: 'GPVUE Managed Security', description: 'Full-spectrum managed security operations including monitoring, detection, and response' },
+      { title: 'Managed Threat Hunting', description: 'Proactive threat hunting to find hidden threats in your environment' },
+      { title: 'Managed SIEM', description: 'Full lifecycle SIEM management including log ingestion and rule tuning' },
+      { title: 'SIEM Deployment', description: 'Deploy and optimize SIEM platforms for effective threat detection' },
+      { title: 'SOAR Implementation', description: 'Automate security operations with orchestration and response playbooks' },
     ],
-    tactical: [
-      { title: 'SIEM Deployment', description: 'Deploy and optimize SIEM platforms for effective threat detection and log management.' },
-      { title: 'SOAR Implementation', description: 'Automate security operations with orchestration, automation, and response playbooks.' },
-    ],
-    managed: [
-      {
-        title: 'GPVUE Managed Security',
-        description:
-          'Full-spectrum managed security operations including monitoring, detection, response, and reporting.',
-      },
-      {
-        title: 'Managed Threat Hunting',
-        description:
-          'Proactive threat hunting by experienced analysts to find hidden threats in your environment.',
-      },
-      { title: 'Managed SIEM', description: 'Full lifecycle SIEM management including log ingestion, rule tuning, and alert triage.' },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Detect threats with 24/7 monitoring and advanced analytics.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Respond to incidents with expert-led containment and recovery.' },
@@ -1118,24 +1082,18 @@ const services = {
     strategic: [
       {
         title: 'Network Security Architecture',
-        description:
-          'Design secure network architectures with proper segmentation and defense-in-depth.',
+        description: 'Design secure network architectures with proper segmentation and defense-in-depth',
       },
-      { title: 'Zero Trust Network Design', description: 'Implement micro-segmentation and zero-trust network access controls.' },
+      { title: 'Zero Trust Network Design', description: 'Implement micro-segmentation and zero-trust network access controls' },
+      { title: 'Network Penetration Testing', description: 'Test network defenses with simulated attacks to identify vulnerabilities' },
+      { title: 'Firewall Assessment', description: 'Audit firewall rules, configurations, and policies for security and efficiency' },
+      { title: 'Wireless Security Assessment', description: 'Evaluate wireless network security including rogue AP detection' },
+      { title: 'Managed Firewall', description: 'Full lifecycle firewall management including rule changes and monitoring' },
+      { title: 'Network Monitoring', description: '24/7 network traffic analysis and anomaly detection' },
     ],
-    tactical: [
-      { title: 'Network Penetration Testing', description: 'Test network defenses with simulated attacks to identify vulnerabilities.' },
-      { title: 'Firewall Assessment', description: 'Audit firewall rules, configurations, and policies for security and efficiency.' },
-      {
-        title: 'Wireless Security Assessment',
-        description:
-          'Evaluate wireless network security including rogue AP detection and encryption review.',
-      },
-    ],
-    managed: [
-      { title: 'Managed Firewall', description: 'Full lifecycle firewall management including rule changes, patching, and monitoring.' },
-      { title: 'Network Monitoring', description: '24/7 network traffic analysis and anomaly detection for threat identification.' },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Discover network vulnerabilities and misconfigurations.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Implement network segmentation and hardening controls.' },
@@ -1151,7 +1109,7 @@ const services = {
   },
 
   'ot-security': {
-    title: 'OT Security Services',
+    title: 'OT, IoT, and IIoT Security',
     icon: 'bi-gear-wide-connected',
     tagline:
       'Secure operational technology and industrial control systems without disrupting operations.',
@@ -1218,27 +1176,21 @@ const services = {
     strategic: [
       {
         title: 'OT Risk Assessment',
-        description:
-          'Assess cybersecurity risks in your OT environment aligned with IEC 62443 and NIST CSF.',
+        description: 'Assess cybersecurity risks in your OT environment aligned with IEC 62443 and NIST CSF',
       },
       {
         title: 'IT/OT Convergence Strategy',
-        description:
-          'Develop a secure strategy for connecting IT and OT networks while maintaining isolation.',
+        description: 'Develop a secure strategy for connecting IT and OT networks while maintaining isolation',
       },
+      { title: 'OT Network Assessment', description: 'Map and assess OT network architecture, protocols, and device inventory' },
+      { title: 'ICS Vulnerability Assessment', description: 'Identify vulnerabilities in SCADA, DCS, and PLC systems without disruption' },
+      { title: 'IoT Security Assessment', description: 'Evaluate security posture of IoT and IIoT devices and ecosystems' },
+      { title: 'OT Monitoring', description: 'Continuous monitoring of OT networks for anomalous activity and cyber threats' },
+      { title: 'OT Incident Response', description: 'Specialized incident response for OT environments with safety-first approach' },
     ],
-    tactical: [
-      { title: 'OT Network Assessment', description: 'Map and assess OT network architecture, protocols, and device inventory.' },
-      {
-        title: 'ICS Vulnerability Assessment',
-        description:
-          'Identify vulnerabilities in SCADA, DCS, and PLC systems without disrupting operations.',
-      },
-    ],
-    managed: [
-      { title: 'OT Monitoring', description: 'Continuous monitoring of OT networks for anomalous activity and cyber threats.' },
-      { title: 'OT Incident Response', description: 'Specialized incident response for OT environments with safety-first approach.' },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Discover OT assets and assess their security posture.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Implement controls without disrupting industrial operations.' },
@@ -1318,35 +1270,20 @@ const services = {
     strategic: [
       {
         title: 'Awareness Program Design',
-        description:
-          'Design a comprehensive security awareness program tailored to your organization\'s culture and risks.',
+        description: 'Design a comprehensive security awareness program tailored to your culture and risks',
       },
       {
         title: 'Security Culture Assessment',
-        description:
-          'Measure your organization\'s security culture maturity and identify improvement areas.',
+        description: 'Measure your organization\'s security culture maturity and identify improvement areas',
       },
+      { title: 'Phishing Simulations', description: 'Realistic phishing campaigns to test and improve employee awareness' },
+      { title: 'Role-Based Training', description: 'Targeted training for developers, executives, finance, HR, and other high-risk roles' },
+      { title: 'Security University', description: 'Advanced hands-on training and certification preparation for security professionals' },
+      { title: 'Managed Awareness Program', description: 'Fully managed security awareness program with content, campaigns, and reporting' },
     ],
-    tactical: [
-      { title: 'Phishing Simulations', description: 'Realistic phishing campaigns to test and improve employee awareness.' },
-      {
-        title: 'Role-Based Training',
-        description:
-          'Targeted training for developers, executives, finance, HR, and other high-risk roles.',
-      },
-      { title: 'Security University', description: 'Advanced hands-on training and certification preparation for security professionals.' },
-    ],
-    managed: [
-      {
-        title: 'Managed Awareness Program',
-        description: 'Fully managed security awareness program with content, campaigns, and reporting.',
-      },
-      {
-        title: 'Continuous Education',
-        description:
-          'Ongoing micro-learning, newsletters, and just-in-time training for sustained awareness.',
-      },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Measure current awareness levels and risk areas.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Deliver targeted training to close knowledge gaps.' },
@@ -1362,7 +1299,7 @@ const services = {
   },
 
   'soc': {
-    title: 'Security Operations Center (SOC)',
+    title: 'Security Operations Center (SOC) Services',
     icon: 'bi-globe2',
     tagline: 'Build or enhance your security operations center with expert guidance.',
     heroHighlight: 'Build',
@@ -1424,18 +1361,17 @@ const services = {
       },
     ],
     strategic: [
-      { title: 'SOC Design & Build', description: 'Design and build a security operations center tailored to your organization\'s needs.' },
-      { title: 'SOC Maturity Assessment', description: 'Evaluate your SOC capabilities and develop a maturity improvement roadmap.' },
+      { title: 'SOC Design & Build', description: 'Design and build a security operations center tailored to your needs' },
+      { title: 'SOC Maturity Assessment', description: 'Evaluate your SOC capabilities and develop an improvement roadmap' },
+      { title: 'SIEM Optimization', description: 'Tune SIEM rules, reduce alert fatigue, and improve detection fidelity' },
+      { title: 'Playbook Development', description: 'Create standardized response playbooks for common incident types' },
+      { title: 'Threat Hunt Exercises', description: 'Conduct proactive threat hunting to find adversaries in your environment' },
+      { title: 'SOC-as-a-Service', description: 'Full SOC operations delivered as a managed service with 24/7 coverage' },
+      { title: 'SOC Staff Augmentation', description: 'Embed experienced SOC analysts into your team to fill capability gaps' },
     ],
-    tactical: [
-      { title: 'SIEM Optimization', description: 'Tune SIEM rules, reduce alert fatigue, and improve detection fidelity.' },
-      { title: 'Playbook Development', description: 'Create standardized response playbooks for common incident types.' },
-      { title: 'Threat Hunt Exercises', description: 'Conduct proactive threat hunting to find adversaries already in your environment.' },
-    ],
-    managed: [
-      { title: 'SOC-as-a-Service', description: 'Full SOC operations delivered as a managed service with 24/7 analyst coverage.' },
-      { title: 'SOC Staff Augmentation', description: 'Embed experienced SOC analysts into your team to fill capability gaps.' },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Detect threats faster with optimized detection rules.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Respond to incidents with standardized playbooks.' },
@@ -1515,23 +1451,17 @@ const services = {
     strategic: [
       {
         title: 'Talent Strategy Consulting',
-        description:
-          'Develop a security staffing strategy that balances full-time, augmented, and managed resources.',
+        description: 'Develop a security staffing strategy that balances full-time, augmented, and managed resources',
       },
-      { title: 'vCISO Services', description: 'Fractional CISO leadership for organizations that need strategic security guidance.' },
+      { title: 'vCISO Services', description: 'Fractional CISO leadership for organizations that need strategic security guidance' },
+      { title: 'Project-Based Staffing', description: 'Dedicated security professionals for specific projects and initiatives' },
+      { title: 'Skill-Based Placement', description: 'Match specialized security talent to your specific technical requirements' },
+      { title: 'Embedded Consultants', description: 'Long-term security professionals who integrate with your team and culture' },
+      { title: 'Managed Team', description: 'A dedicated team of security professionals to deliver ongoing services' },
     ],
-    tactical: [
-      { title: 'Project-Based Staffing', description: 'Dedicated security professionals for specific projects and initiatives.' },
-      { title: 'Skill-Based Placement', description: 'Match specialized security talent to your specific technical requirements.' },
-    ],
-    managed: [
-      { title: 'Embedded Consultants', description: 'Long-term security professionals who integrate with your team and culture.' },
-      {
-        title: 'Managed Team',
-        description:
-          'A dedicated team of security professionals managed by CyberPoint to deliver ongoing services.',
-      },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Assess talent gaps and define role requirements.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Fill gaps with qualified, vetted professionals.' },
@@ -1613,28 +1543,18 @@ const services = {
     strategic: [
       {
         title: 'VM Program Design',
-        description:
-          'Design a risk-based vulnerability management program aligned with your business priorities.',
+        description: 'Design a risk-based vulnerability management program aligned with your priorities',
       },
-      { title: 'Attack Surface Management', description: 'Continuously discover and assess your external attack surface.' },
+      { title: 'Attack Surface Management', description: 'Continuously discover and assess your external attack surface' },
+      { title: 'Penetration Testing', description: 'Expert-led penetration testing of networks, applications, and cloud environments' },
+      { title: 'Red Team Exercises', description: 'Full-scope adversary simulations to test detection and response capabilities' },
+      { title: 'Vulnerability Assessment', description: 'Comprehensive scanning and analysis of your internal and external attack surface' },
+      { title: 'Managed VM Program', description: 'Full lifecycle vulnerability management including scanning and prioritization' },
+      { title: 'Continuous Pen Testing', description: 'Ongoing penetration testing program with regular assessments and retesting' },
     ],
-    tactical: [
-      { title: 'Penetration Testing', description: 'Expert-led penetration testing of networks, applications, and cloud environments.' },
-      { title: 'Red Team Exercises', description: 'Full-scope adversary simulations to test your detection and response capabilities.' },
-      {
-        title: 'Vulnerability Assessment',
-        description:
-          'Comprehensive scanning and analysis of your internal and external attack surface.',
-      },
-    ],
-    managed: [
-      {
-        title: 'Managed VM Program',
-        description:
-          'Full lifecycle vulnerability management including scanning, prioritization, and remediation tracking.',
-      },
-      { title: 'Continuous Pen Testing', description: 'Ongoing penetration testing program with regular assessments and retesting.' },
-    ],
+    tactical: [],
+    managed: [],
+    training: [],
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Discover vulnerabilities across your entire attack surface.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Prioritize and fix vulnerabilities based on real-world risk.' },
