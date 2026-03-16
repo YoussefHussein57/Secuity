@@ -187,12 +187,12 @@ export default function Certifications({ variant = 'default' }) {
                 <h2 className="certs__title">
                   Your <span className="text-accent-box">Elite</span>, Highly-trained Team
                 </h2>
-                <p className="text-muted" style={{ lineHeight: 1.8 }}>
+                <p style={{ lineHeight: '27px', fontSize: '18px', color: '#000' }}>
                   More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants.
                   We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.
                 </p>
                 <Link to="/company" className="btn btn-accent btn-cta mt-2">
-                  Why CyberPoint? <i className="bi bi-arrow-right"></i>
+                  Why CyberPoint?
                 </Link>
               </AnimatedSection>
             </div>

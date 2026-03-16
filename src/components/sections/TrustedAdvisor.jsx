@@ -17,20 +17,28 @@ export default function TrustedAdvisor({ testimonial }) {
 
               {testimonial && (
                 <div className="testimonial-card">
-                  <div className="testimonial-card__quote-icon">
-                    <i className="bi bi-quote"></i>
-                  </div>
-                  <div className="testimonial-card__body">
-                    <p className="testimonial-card__text">
-                      &ldquo;{testimonial.quote}&rdquo;
-                    </p>
-                    <div className="testimonial-card__author">
-                      <div>
-                        <p className="fw-bold mb-0">{testimonial.author}</p>
-                        <small className="text-muted">{testimonial.company}</small>
+                  <div className="testimonial-card__card-skew">
+                    <div className="testimonial-card__quote-icon">
+                      <i className="bi bi-quote"></i>
+                    </div>
+                    <div className="testimonial-card__card-inner">
+                      <p className="testimonial-card__text">
+                        &ldquo;{testimonial.quote}&rdquo;
+                      </p>
+                      <div className="testimonial-card__author-row">
+                        <div className="testimonial-card__author">
+                          <p>{testimonial.author}</p>
+                          <small>{testimonial.company}</small>
+                        </div>
+                        {testimonial.companyLogo && (
+                          <img src={testimonial.companyLogo} alt="" className="testimonial-card__company-logo" />
+                        )}
                       </div>
                     </div>
                   </div>
+                  {testimonial.personImage && (
+                    <img src={testimonial.personImage} alt={testimonial.author} className="testimonial-card__person-image" />
+                  )}
                 </div>
               )}
             </AnimatedSection>

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import AnimatedSection from './AnimatedSection';
 
 const DEFAULT_RESOURCES = [
-  { type: 'Data Sheet', color: '#4b4fff', icon: 'bi-file-earmark-text-fill', action: 'Download', title: 'Corporate Overview Data Sheet' },
-  { type: 'Blog', color: '#00ccff', icon: 'bi-journal-richtext', action: 'Read More', title: 'Cybersecurity Insights and Best Practices' },
-  { type: 'Blog', color: '#00ccff', icon: 'bi-journal-richtext', action: 'Read More', title: 'Securing Your Enterprise Against Modern Threats' },
-  { type: 'Report', color: '#8b5cf6', icon: 'bi-bar-chart-fill', action: 'Download', title: 'GRIT Ransomware Taxonomy and Lifecycle' },
+  { type: 'Video', icon: 'bi-play-btn-fill', action: 'Watch Now', title: 'Customer Success Story: Wyndham Hotels & Resorts' },
+  { type: 'Customer Success', icon: 'bi-globe2', action: 'Download', title: 'Customer Success Story: Wyndham Hotels' },
+  { type: 'Ebook', icon: 'bi-file-earmark-text-fill', action: 'Download', title: 'Is Your Cloud Security Up to the Task? Secure Your Remote Workforce in the AWS Cloud.' },
+  { type: 'Datasheet', icon: 'bi-file-earmark-bar-graph-fill', action: 'Download', title: 'Cyber Security Overview' },
 ];
 
 export default function AdditionalResources({ resources = DEFAULT_RESOURCES }) {
@@ -51,20 +51,24 @@ export default function AdditionalResources({ resources = DEFAULT_RESOURCES }) {
           <div className="additional-resources__track" ref={scrollRef} onScroll={updateScrollState}>
             {resources.map((r, i) => (
               <div className={`resource-slide${r.image ? ' resource-slide--has-image' : ''}`} key={i}>
-                <div className="resource-slide__badge" style={{ background: r.color }}>
+                <div className="resource-slide__badge">
+                  <i className={`bi ${r.icon}`}></i>
                   {r.type}
                 </div>
-                {r.image ? (
+                {r.image && (
                   <div className="resource-slide__image">
                     <img src={r.image} alt={r.title} />
                   </div>
-                ) : (
-                  <div className="resource-slide__icon">
+                )}
+                <div className="resource-slide__body">
+                  <div className="resource-slide__icon-circle">
                     <i className={`bi ${r.icon}`}></i>
                   </div>
-                )}
-                <p className="resource-slide__action">{r.action} <i className="bi bi-chevron-right"></i></p>
-                <p className="resource-slide__title">{r.title}</p>
+                  <div className="resource-slide__content">
+                    <p className="resource-slide__action">{r.action}</p>
+                    <p className="resource-slide__title">{r.title}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

@@ -55,21 +55,22 @@
   &__image {
     display: flex;
     align-items: center;
+    height: 100%;
 
     img {
       width: 100%;
-      height: auto;
-      object-fit: contain;
+      height: 100%;
+      object-fit: cover;
     }
 
     // Bleed image to left viewport edge
     &--left {
       justify-content: flex-start;
-      // Negate column gutter + container padding + centering gap
       margin-left: calc(-50vw + 100%);
 
       @media (max-width: 991.98px) {
         margin-left: 0;
+        height: 350px;
       }
     }
 
@@ -80,6 +81,7 @@
 
       @media (max-width: 991.98px) {
         margin-right: 0;
+        height: 350px;
       }
     }
   }
@@ -97,16 +99,51 @@
 // ---- Checklist Cards → now uses .card-gradient (see _technologies.scss) ----
 
 // ---- Outcomes Section Header ----
+.outcomes-section > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .outcomes-header {
   max-width: 800px;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
+  padding-top: 64px;
+
+  .section-header__label {
+    color: $white;
+  }
 
   .use-cases__title {
-    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-size: 50px;
+    line-height: 60px;
+
+    @media (max-width: 991px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  .text-white-50 {
+    color: $white !important;
+    opacity: 1;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
-// ---- Outcome Cards → now uses .card-gradient (see _technologies.scss) ----
+// ---- Outcome Cards ----
+.section--dark .card-gradient--horizontal {
+  .card-gradient__title {
+    font-size: 30px;
+    color: #13BFEA;
+    padding-bottom: 16px;
+  }
+
+  .card-gradient__desc {
+    font-size: 18px;
+  }
+}
 
 // ---- Trusted Advisor Section ----
 .trusted-advisor__title {
@@ -128,38 +165,52 @@
 // ---- Testimonial Card ----
 .testimonial-card {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
+
+  &__card-skew {
+    background: #C3D9FF;
+    transform: skewY(-3deg);
+    padding: 80px 80px 40px;
+    position: relative;
+
+    @media (max-width: 767px) {
+      padding: 60px 30px 30px;
+    }
+  }
+
+  &__card-inner {
+    transform: skewY(3deg);
+  }
 
   &__quote-icon {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    background: $gradient-start;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 70px;
+    height: 74px;
+    background: #0F0E56;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    z-index: 2;
 
     i {
       font-size: 2rem;
       color: $white;
     }
-  }
 
-  &__body {
-    background: $light;
-    border-radius: $border-radius;
-    padding: 2rem;
-    flex: 1;
+    @media (max-width: 767px) {
+      left: 10px;
+      top: -15px;
+      width: 50px;
+      height: 54px;
+    }
   }
 
   &__text {
     color: $dark;
     font-size: 27px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.15;
     margin-bottom: 1.5rem;
 
     @media (max-width: 575px) {
@@ -167,17 +218,48 @@
     }
   }
 
-  &__author {
+  &__author-row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
+    flex-wrap: wrap;
+  }
 
+  &__author {
     p {
       color: $dark;
+      font-weight: $fw-bold;
+      font-size: 24px;
+      margin-bottom: 0;
     }
 
     small {
-      color: $gray-600;
+      color: $dark;
+      font-size: 16px;
+    }
+  }
+
+  &__company-logo {
+    max-width: 200px;
+    height: auto;
+  }
+
+  &__person-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -30px;
+    margin-left: 80px;
+    position: relative;
+    z-index: 2;
+    border: 4px solid $indigo-light;
+
+    @media (max-width: 767px) {
+      margin-left: 30px;
+      width: 90px;
+      height: 90px;
     }
   }
 }
@@ -185,7 +267,7 @@
 // ---- Contact Form Card ----
 .contact-form-card {
   background-image: linear-gradient(270deg, #0F0F27 50%, #0F0F59 100%);
-  border-radius: $border-radius-lg;
+  border-radius: 2px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   max-width: 400px;
@@ -253,11 +335,23 @@
 }
 
 // ---- Certifications Section ----
+.section--light {
+  padding: 48px 40px 120px;
+
+  @media (max-width: 767px) {
+    padding: 48px 20px 80px;
+  }
+
+  .section-header__label {
+    color: $black !important;
+  }
+}
+
 .certs__title {
   font-family: $font-family-heading;
   font-weight: $fw-medium;
   font-size: 50px;
-  color: $primary;
+  color: $black;
   margin-bottom: 1.25rem;
   line-height: 60px;
 
@@ -267,7 +361,7 @@
   }
 
   .text-accent-box {
-    background: $primary;
+    background: $black;
     color: $white;
     padding: 0.05em 0.25em;
     display: inline;
@@ -279,13 +373,16 @@
 
   &__heading {
     font-family: $font-family-heading;
-    font-weight: $fw-bold;
-    color: $primary;
+    font-weight: 400;
+    font-size: 24px;
+    color: $black;
     margin-bottom: 0.25rem;
   }
 
   &__subheading {
-    color: $gray-500;
+    font-size: 24px;
+    font-weight: 400;
+    color: $black;
     margin-bottom: 1.5rem;
   }
 
@@ -302,8 +399,9 @@
   }
 
   &__category {
-    font-size: 0.85rem;
-    color: $gray-500;
+    font-size: 18px;
+    font-weight: 400;
+    color: $black;
     margin: 0;
   }
 }
@@ -332,7 +430,7 @@
     font-family: $font-family-heading;
     font-weight: $fw-extrabold;
     font-size: clamp(1.5rem, 2.5vw, 2rem);
-    color: $primary;
+    color: $black;
     line-height: 1.2;
   }
 
@@ -425,42 +523,66 @@
 }
 
 .resource-slide {
-  flex: 0 0 340px;
+  flex: 0 0 373px;
   scroll-snap-align: start;
-  background: rgba(lighten($accent, 12%), 0.35);
-  border-radius: $border-radius;
-  padding: 2rem 1.75rem;
-  min-height: 260px;
+  border-radius: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 
   &__badge {
-    display: inline-block;
-    width: fit-content;
-    padding: 0.3rem 0.85rem;
-    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 16px;
     color: $white;
-    font-size: 0.7rem;
-    font-weight: $fw-extrabold;
-    letter-spacing: 0.08em;
+    font-size: 18px;
+    font-weight: $fw-bold;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
-  }
-
-  &__icon {
-    margin-bottom: 1rem;
+    background: linear-gradient(135deg, $gradient-start, lighten($gradient-start, 10%));
 
     i {
-      font-size: 2rem;
-      color: $white;
+      font-size: 1.1rem;
     }
   }
 
+  &__body {
+    background: #C3D9FF;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  &__icon-circle {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    i {
+      font-size: 1.4rem;
+      color: $gradient-start;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    min-width: 0;
+  }
+
   &__action {
-    color: $gradient-end;
-    font-weight: $fw-bold;
-    font-size: 0.85rem;
-    margin-bottom: 0.75rem;
+    color: $gradient-start;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0.25rem;
 
     i {
       font-size: 0.65rem;
@@ -469,17 +591,16 @@
   }
 
   &__title {
-    color: $white;
-    font-family: $font-family-heading;
+    color: $black;
+    font-family: $font-family-base;
     font-weight: $fw-bold;
-    font-size: 1.05rem;
+    font-size: 16px;
     line-height: 1.5;
     margin: 0;
   }
 
+  // Legacy image support (home page)
   &__image {
-    margin: -2rem -1.75rem 1.25rem;
-    border-radius: $border-radius $border-radius 0 0;
     overflow: hidden;
     height: 180px;
 
@@ -491,7 +612,9 @@
   }
 
   &--has-image {
-    padding-top: 0;
+    .resource-slide__body {
+      flex-direction: column;
+    }
   }
 }
 
@@ -535,6 +658,10 @@
     font-size: 17px;
     color: $white;
     line-height: 1.7;
+  }
+
+  .card-gradient__text {
+    font-size: 28px;
   }
 }
 

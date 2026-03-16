@@ -5,10 +5,10 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
   if (!outcomes || outcomes.length === 0) return null;
 
   return (
-    <section className="section section--dark">
+    <section className="section section--dark outcomes-section">
       <div className="container">
         <AnimatedSection animation="animate-on-scroll">
-          <div className="outcomes-header py-5">
+          <div className="outcomes-header">
             <p className="section-header__label">
               {outcomesSection?.label || `${title} Outcomes`}
             </p>
@@ -31,7 +31,8 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
             <div className="col-lg-6" key={o.title}>
               <GradientCard
                 icon={o.icon}
-                iconCircle
+                iconImage={o.iconImage}
+                iconCircle={!o.iconImage}
                 title={o.title}
                 description={o.description}
                 layout="horizontal"

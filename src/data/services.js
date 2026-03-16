@@ -104,25 +104,25 @@ const services = {
     },
     outcomes: [
       {
-        icon: 'bi-graph-up',
+        iconImage: '/images/icons/scale-appsec.png',
         title: 'Prevent Coding Errors',
         description:
           'Catch coding errors early in the software development lifecycle to mitigate security risks.',
       },
       {
-        icon: 'bi-currency-dollar',
+        iconImage: '/images/icons/save-spending.png',
         title: 'Reduce AppSec Dev Costs',
         description:
           'Avoid costly re-work, time-consuming security fixes & delays in software development.',
       },
       {
-        icon: 'bi-percent',
+        iconImage: '/images/icons/expand-testing.png',
         title: 'Eliminate Software Exploits',
         description:
           'Prevent cybercriminals from exploiting security vulnerabilities in your application code.',
       },
       {
-        icon: 'bi-file-earmark-check',
+        iconImage: '/images/icons/improve-compliance.png',
         title: 'Ship Secure Software',
         description:
           'Accelerate the delivery of secure software across your legacy & modern application portfolio.',
@@ -131,8 +131,10 @@ const services = {
     testimonial: {
       quote:
         'CyberPoint\'s application security team found critical vulnerabilities that our internal scans completely missed. Their remediation guidance was actionable and clear.',
-      author: 'VP of Engineering',
-      company: 'Fortune 500 Financial Services',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: '/logos/nuance.png',
     },
   },
 

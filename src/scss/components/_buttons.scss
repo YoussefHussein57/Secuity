@@ -70,6 +70,15 @@
   font-family: $font-family-base;
 }
 
+// Small button variant — navbar & service detail pages
+.btn-accent.btn-sm,
+.btn-outline-accent.btn-sm,
+.btn-outline-light.btn-sm {
+  font-size: 13px;
+  padding: 14px 16.25px;
+  line-height: 1.15385em;
+}
+
 // CTA arrow animation
 .btn-cta {
   display: inline-flex;

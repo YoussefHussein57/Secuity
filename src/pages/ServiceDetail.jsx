@@ -105,7 +105,7 @@ export default function ServiceDetail() {
         return (
           <Fragment key={idx}>
             <section className="section section--dark dark-split">
-              <div className="container">
+              <div className="container py-5 py-lg-3">
                 <div className="row g-5 align-items-center">
                   {imageLeft ? <>{imageCol}{textCol}</> : <>{textCol}{imageCol}</>}
                 </div>
@@ -114,7 +114,7 @@ export default function ServiceDetail() {
 
             {s.checklist && (
               <section className="section section--dark" style={{ paddingTop: '2rem' }}>
-                <div className="container">
+                <div className="container py-5 py-lg-3">
                   <AnimatedSection animation="stagger-children" className="row g-4 justify-content-center">
                     {[0, 1].map((colIdx) => (
                       <div className="col-lg-6" key={colIdx}>
@@ -123,7 +123,7 @@ export default function ServiceDetail() {
                             .filter((_, i) => (colIdx === 0 ? i < Math.ceil(s.checklist.length / 2) : i >= Math.ceil(s.checklist.length / 2)))
                             .map((item) => (
                               <div className="card-gradient__checklist-item" key={item}>
-                                <i className="bi bi-check-circle-fill"></i>
+                                <i className="bi bi-check-circle"></i>
                                 <span>{item}</span>
                               </div>
                             ))}
