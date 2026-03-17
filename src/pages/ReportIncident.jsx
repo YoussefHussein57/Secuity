@@ -165,7 +165,7 @@ export default function ReportIncident() {
                           ></textarea>
                         </div>
                         <div className="col-12">
-                          <button type="submit" className="btn btn-accent btn-lg btn-cta fw-bold">
+                          <button type="submit" className="btn btn-accent btn-cta">
                             Submit Report <i className="bi bi-arrow-right"></i>
                           </button>
                         </div>

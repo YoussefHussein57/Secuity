@@ -26,10 +26,10 @@ export default function NotFound() {
           The page you're looking for doesn't exist or has been moved. Let's get you back on track.
         </p>
         <div className="d-flex justify-content-center gap-3">
-          <Link to="/" className="btn btn-accent btn-lg btn-cta px-4">
+          <Link to="/" className="btn btn-accent btn-cta">
             Back to Home <i className="bi bi-arrow-right"></i>
           </Link>
-          <Link to="/contact" className="btn btn-outline-light btn-lg btn-cta px-4">
+          <Link to="/contact" className="btn btn-outline-light btn-cta">
             Contact Us
           </Link>
         </div>

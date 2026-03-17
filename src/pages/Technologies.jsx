@@ -1,125 +1,194 @@
-import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
-import SectionHeader from '../components/sections/SectionHeader';
 import AnimatedSection from '../components/sections/AnimatedSection';
-import NetworkBackground from '../components/sections/NetworkBackground';
 import BeInformed from '../components/sections/BeInformed';
 
-const techCategories = [
+const lifecycleSteps = [
   {
-    title: 'Cloud Security',
-    icon: 'bi-cloud',
-    description: 'Secure your cloud workloads across AWS, Azure, and GCP with best-of-breed solutions.',
-    vendors: ['Palo Alto Prisma', 'Wiz', 'CrowdStrike', 'Zscaler'],
+    number: '1',
+    title: 'Evaluation & Selection',
+    icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/05/evaluation-selection.png',
+    description:
+      "Our team of engineers takes a consultative approach to understanding the unique nature of your environment and identifying the solutions that meet your needs. From defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept, we help you quickly identify the best solutions for your requirements.",
   },
   {
-    title: 'Identity & Access',
-    icon: 'bi-fingerprint',
-    description: 'Manage identities, privileged access, and zero-trust network access.',
-    vendors: ['CyberArk', 'SailPoint', 'Okta', 'BeyondTrust'],
+    number: '2',
+    title: 'Implementation',
+    icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/05/implementation.png',
+    description:
+      'Our staff has decades of cybersecurity knowledge and hands-on experience from working in large commercial and government organizations. We work with you to properly install and configure solutions in your environment.',
   },
   {
-    title: 'Endpoint Security',
-    icon: 'bi-laptop',
-    description: 'Next-gen endpoint protection, EDR, and extended detection and response.',
-    vendors: ['CrowdStrike', 'SentinelOne', 'Microsoft Defender', 'Carbon Black'],
+    number: '3',
+    title: 'Optimization',
+    icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/05/optimization.png',
+    description:
+      'Once a security solution is installed and running, we make sure your team is properly trained on the technology and that it is optimized to run efficiently and effectively in your environment.',
   },
   {
-    title: 'Network Security',
-    icon: 'bi-hdd-network',
-    description: 'Firewalls, SASE, NDR, and network segmentation solutions.',
-    vendors: ['Palo Alto Networks', 'Fortinet', 'Cisco', 'Zscaler'],
+    number: '4',
+    title: 'Management',
+    icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/05/management.png',
+    description:
+      'Our team stays involved post-deployment to provide system management and analysis. We can also provide "as a service" offerings to manage your security platforms as well as industry-leading Managed Detection and Response solutions.',
+  },
+];
+
+const outcomeCards = [
+  {
+    icon: 'bi-gem',
+    title: 'White Glove Service',
+    description:
+      'From our technology acquisition to service offerings, our solutions are tailored specifically to your business and your unique, complex challenges. Our experts are with you each step of the way.',
   },
   {
-    title: 'Security Operations',
-    icon: 'bi-globe2',
-    description: 'SIEM, SOAR, and threat intelligence platforms for security operations.',
-    vendors: ['Splunk', 'Microsoft Sentinel', 'Google Chronicle', 'IBM QRadar'],
+    icon: 'bi-people',
+    title: 'Relationship-Focused',
+    description:
+      'We have local ownership at a national scale. You get that personal touch along with access to a wider team of practitioners and expertise across different security disciplines and technologies. We are your champions and take the complexity away from dealing with potentially tens to hundreds of vendors and service providers.',
   },
-  {
-    title: 'Data Security',
-    icon: 'bi-database',
-    description: 'Data loss prevention, encryption, and privacy management solutions.',
-    vendors: ['Symantec DLP', 'Varonis', 'Thales', 'BigID'],
-  },
+
 ];
 
 export default function Technologies() {
   return (
     <>
+      {/* 1. Hero — centered, page variant with bg image + icon */}
       <Hero
-        title="Technology Partners"
-        highlightWord="Technology"
-        subtitle="We are vendor-agnostic, partnering with 650+ cybersecurity technologies to deliver custom, best-fit solutions."
+        title="Technologies"
+        subtitle="Your Single Point of Contact for all Cybersecurity Technology Needs"
+        ctaText="Talk to an Expert"
+        ctaLink="/contact"
+        bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Application_Security-1.png"
         variant="page"
+        showNetwork={false}
+        iconImage="https://www.guidepointsecurity.com/wp-content/uploads/elementor/thumbs/app-sec-icon-light-blue-qnao7t706zq6z2r91fn1ettvnmo1pve4o4j9rg9sk0.png"
       />
 
-      <section className="section section--light">
+      {/* 2. Challenges — Vendor-Agnostic section with blue orb bg */}
+      <section
+        className="section section--dark text-center tech-challenges"
+        style={{ padding: '80px 0 120px', position: 'relative', overflow: 'hidden' }}
+      >
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
-            <SectionHeader
-              label="Our Technology Ecosystem"
-              title="650+ Security Technologies"
-              subtitle="As your single point of contact, we evaluate, recommend, and implement the right technologies for your unique environment."
-              center
-            />
+            <p className="section-header__label" style={{ color: '#fff' }}>Services & Technologies Challenges</p>
+            <h2 className="text-white mb-4" style={{ fontSize: '50px', fontWeight: 500, lineHeight: '60px' }}>
+              Vendor-Agnostic Approach To Help You Acquire And Use Best-Fit Solutions
+            </h2>
+            <p className="text-white mx-auto" style={{ fontSize: '20px', lineHeight: '30px', maxWidth: 990 }}>
+              The reality is that every organization's cybersecurity ecosystem is different and requires a tailored approach to address cyber risks and threats. That's why we take a vendor-agnostic approach when it comes to analyzing, comparing and recommending best-fit security solutions specific to your environment and business.
+            </p>
           </AnimatedSection>
-          <AnimatedSection animation="stagger-children" className="row g-4">
-            {techCategories.map((cat) => (
-              <div className="col-md-6 col-lg-4" key={cat.title}>
-                <div
-                  className="p-4 rounded-4 h-100"
-                  style={{
-                    border: '1px solid #e2e8f0',
-                    transition: 'border-color 0.3s ease, box-shadow 0.3s ease',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = '#4b4fff';
-                    e.currentTarget.style.boxShadow = '0 4px 24px rgba(75, 79, 255, 0.08)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = '#e2e8f0';
-                    e.currentTarget.style.boxShadow = 'none';
-                  }}
-                >
-                  <i className={`bi ${cat.icon} d-block mb-3`} style={{ fontSize: '2rem', color: '#4b4fff' }}></i>
-                  <h5 className="fw-bold" style={{ fontFamily: "'Exo 2', sans-serif" }}>{cat.title}</h5>
-                  <p className="text-muted small">{cat.description}</p>
-                  <div className="d-flex flex-wrap gap-2">
-                    {cat.vendors.map((v) => (
-                      <span
-                        key={v}
-                        className="badge"
-                        style={{ background: 'rgba(75, 79, 255, 0.08)', color: '#4b4fff', fontWeight: 500 }}
-                      >
-                        {v}
-                      </span>
-                    ))}
+        </div>
+      </section>
+
+      {/* 3. Dark Split — Access and Buying Power */}
+      <section className="section section--dark dark-split-section">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 order-lg-2 order-1">
+              <AnimatedSection animation="fade-in-right">
+                <div className="dark-split__text">
+                  <p className="section-header__label">Services & Technologies Review Process</p>
+                  <h2 className="use-cases__title text-start">
+                    <span className="text-accent-box">Access And Buying Power</span> For Hundreds Of Vetted Security Technologies
+                  </h2>
+                  <p className="text-white" style={{ lineHeight: 1.5, fontSize: '16px' }}>
+                    Since we have a large variety of partners and aren't aligned to specific manufacturers, we can work with you to identify and deploy the right technology. We are highly-certified in the technologies that we recommend, with hands-on experience implementing, managing and optimizing these tools. With CyberPoint Security, you can be assured that you're gaining the solutions to address your unique needs within the budget parameters.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
+            <div className="col-lg-6 order-lg-1 order-2">
+              <AnimatedSection animation="fade-in-left">
+                <div className="dark-split__image dark-split__image--left">
+                  <img src="/overview-icon-left.png" alt="Security Technologies" />
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Solution Lifecycle — split (text + image) then 4 cards */}
+      <section className="section section--dark">
+        <div className="container">
+          {/* Split: text left, image right */}
+          <div className="row align-items-center mb-5">
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-left">
+                <div className="dark-split__text">
+                  <p className="section-header__label" style={{ color: '#fff' }}>Services & Technologies</p>
+                  <h2 className="use-cases__title text-start mb-3">
+                    <span className="text-accent-box">Solution</span> Lifecycle
+                  </h2>
+                  <p className="text-white mb-4" style={{ lineHeight: 1.5, fontSize: '16px' }}>
+                    We review, compare, recommend and help you source the best-fit solutions for your unique environment.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-right">
+                <div className="dark-split__image dark-split__image--right">
+                  <img src="/overview-icon.png" alt="Solution Lifecycle" />
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+
+          {/* 4 lifecycle cards in a row */}
+          <AnimatedSection animation="stagger-children">
+            <div className="row g-4">
+              {lifecycleSteps.map((step) => (
+                <div className="col-lg-3 col-md-6" key={step.number}>
+                  <div className="tech-lifecycle-card">
+                    <div className="tech-lifecycle-card__icon">
+                      <img src={step.icon} alt={step.title} />
+                    </div>
+                    <h4 className="tech-lifecycle-card__title">
+                      {step.number}. {step.title}
+                    </h4>
+                    <p className="tech-lifecycle-card__desc">
+                      {step.description}
+                    </p>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </AnimatedSection>
         </div>
       </section>
 
-      <section className="section section--dark text-center">
-        <NetworkBackground variant="dark" nodeCount={40} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+      {/* 5. Outcomes — "We're Not Your Typical VAR" */}
+      <section className="section section--indigo" style={{ padding: '48px 0 120px' }}>
+        <div className="container">
           <AnimatedSection animation="animate-on-scroll">
-            <h2 className="text-white fw-bold mb-3" style={{ fontFamily: "'Exo 2', sans-serif" }}>
-              Need Help Choosing the Right Technology?
+            <p className="section-header__label" style={{ color: '#fff' }}>Services & Technologies Outcomes</p>
+            <h2 className="text-white mb-3" style={{ fontSize: '50px', fontWeight: 500, lineHeight: '60px' }}>
+              We're Not Your Typical VAR
             </h2>
-            <p className="text-white-50 mb-4 mx-auto" style={{ maxWidth: 550 }}>
-              Our vendor-agnostic approach means we recommend what's best for you — not what pays us the most.
+            <p className="text-white mb-5" style={{ lineHeight: 1.6, fontSize: '18px', maxWidth: 900 }}>
+              Our unique culture, expertise and business model help us stand out from your typical cybersecurity product and services provider. And with CyberPoint Security Financial, our financing arm, we offer flexible options to simplify the cybersecurity solution and services procurement process.
             </p>
-            <Link to="/contact" className="btn btn-accent btn-lg btn-cta px-4">
-              Talk to an Expert <i className="bi bi-arrow-right"></i>
-            </Link>
+          </AnimatedSection>
+          <AnimatedSection animation="stagger-children">
+            <div className="row g-4">
+              {outcomeCards.map((card) => (
+                <div className="col-lg-6" key={card.title}>
+                  <div className="tech-outcome-card">
+                    <h4 className="tech-outcome-card__title">{card.title}</h4>
+                    <p className="tech-outcome-card__desc">{card.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </AnimatedSection>
         </div>
       </section>
 
+      {/* 6. Be Informed CTA */}
+      <BeInformed />
     </>
   );
 }

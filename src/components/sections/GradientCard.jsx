@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function GradientCard({
   icon,
   iconImage,
@@ -8,6 +10,8 @@ export default function GradientCard({
   accent = 'bottom',
   layout = 'centered',
   titleLg = false,
+  link,
+  linkText,
   children,
 }) {
   const cls = [
@@ -60,6 +64,11 @@ export default function GradientCard({
         <>
           <h5 className={`card-gradient__title${titleLg ? ' card-gradient__title--lg' : ''}`}>{title}</h5>
           <p className="card-gradient__desc">{description}</p>
+          {link && (
+            <Link to={link} className="card-gradient__link">
+              {linkText || 'Learn More'} &gt;
+            </Link>
+          )}
         </>
       )}
     </div>

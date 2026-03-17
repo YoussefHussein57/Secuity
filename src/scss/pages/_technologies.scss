@@ -1,12 +1,169 @@
 // ===========================================
-// Technologies Detail Page
+// Technologies Page & Detail Page
 // ===========================================
+
+// ---- Challenges section with bottom-right blue orb glow ----
+.tech-challenges {
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    bottom: -80px;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(
+      circle,
+      rgba(lighten($accent, 10%), 0.8) 0%,
+      rgba(lighten($accent, 5%), 0.4) 35%,
+      rgba($accent, 0.15) 55%,
+      rgba($accent, 0) 75%
+    );
+    filter: blur(90px);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// ---- Expertise Tabs ----
+.expertise-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  &__btn {
+    background: none;
+    border: none;
+    color: $white;
+    font-size: 15px;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+
+    &--active {
+      border-bottom-color: $gradient-end;
+    }
+
+    &:hover {
+      color: $gradient-end;
+    }
+  }
+}
+
+.expertise-card__link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: $gradient-end;
+  font-size: 15px;
+  font-weight: $fw-medium;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// ---- Solution Lifecycle Cards ----
+.tech-lifecycle-card {
+  background: linear-gradient(270deg, $primary 50%, rgba($accent, 0.35) 100%);
+  border: 0.8px solid rgb(51, 110, 146);
+  border-radius: 4px;
+  padding: 2rem 1.5rem 2.5rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 14px;
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+  }
+
+  &__icon {
+    margin-bottom: 1.25rem;
+
+    img {
+      height: 60px;
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-heading;
+    font-size: 1.15rem;
+    font-weight: $fw-bold;
+    color: $white;
+    margin-bottom: 1rem;
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 1.65;
+    color: $white;
+    flex: 1;
+  }
+}
+
+// ---- Outcomes Cards (We're Not Your Typical VAR) ----
+.tech-outcome-card {
+  background: linear-gradient(270deg, $primary 50%, rgba($accent, 0.35) 100%);
+  border: 0.8px solid rgb(51, 110, 146);
+  border-radius: 4px;
+  padding: 40px 20px 50px;
+  height: 100%;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 14px;
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+  }
+
+  &__title {
+    font-family: $font-family-heading;
+    font-size: 27px;
+    font-weight: $fw-bold;
+    color: rgb(19, 191, 234);
+    margin-bottom: 1.25rem;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: $white;
+    margin-bottom: 0;
+  }
+}
 
 // ---- Expertise Cards Section (accent/indigo bg) ----
 .expertise-cards {
   background-color: $indigo-light !important;
   padding-top: 3rem;
   padding-bottom: 7.5rem;
+  overflow: visible;
 }
 
 .expertise-cards__subtitle {
@@ -21,6 +178,8 @@
 .expertise-expand {
   text-align: left;
   margin-top: 2.5rem;
+  position: relative;
+  z-index: 5;
 
   &__content {
     overflow: hidden;
@@ -58,43 +217,43 @@
   text-align: left;
 
   &__label {
-    font-family: $font-family-heading;
-    font-size: 0.8rem;
+    font-family: $font-family-base;
+    font-size: 15px;
     font-weight: $fw-bold;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: $gradient-start;
-    margin-bottom: 0.75rem;
+    letter-spacing: 1.93px;
+    color: $gradient-end;
+    margin-bottom: 1rem;
   }
 
   &__title {
     font-family: $font-family-heading;
-    font-weight: $headings-font-weight;
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: $fw-medium;
+    font-size: 50px;
     color: $white;
-    margin-bottom: 2rem;
-    line-height: 1.3;
+    margin-bottom: 2.5rem;
+    line-height: 60px;
   }
 
   &__items {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
 
   &__item {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    color: rgba($white, 0.85);
-    font-size: 1rem;
-    line-height: 1.7;
+    color: $white;
+    font-size: 18px;
+    line-height: 28px;
 
     i {
       color: $gradient-end;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       flex-shrink: 0;
-      margin-top: 0.2rem;
+      margin-top: 0.15rem;
     }
   }
 }
@@ -102,6 +261,17 @@
 // ---- Lifecycle Cards (numbered steps, 2x2 grid) ----
 .lifecycle-cards {
   padding-top: 2rem;
+
+  .card-gradient__title {
+    color: $white;
+    font-size: 20px;
+  }
+
+  .card-gradient__icon img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+  }
 }
 
 // ===========================================
@@ -112,7 +282,7 @@
 .card-gradient {
   background-image: linear-gradient(270deg, $primary 50%, #0F0F59 100%);
   border: 0.8px solid rgba($gradient-end, 0.35);
-  border-radius: $border-radius;
+  border-radius: 4px;
   padding: 2.5rem 1.75rem;
   height: 100%;
   position: relative;
@@ -125,7 +295,6 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
     background: linear-gradient(90deg, $gradient-start, $gradient-end);
   }
 
@@ -135,7 +304,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 14px;
     background: linear-gradient(90deg, $gradient-start, $gradient-end);
   }
 
@@ -206,7 +375,7 @@
     font-family: $font-family-base;
     font-weight: $fw-bold;
     font-size: 27px;
-    color: $white;
+    color: #13BFEA;
     padding-bottom: 30px;
     margin-bottom: 0;
   }
@@ -221,6 +390,19 @@
     font-size: 18px;
     line-height: 1.6;
     margin: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: $gradient-end;
+    font-size: 15px;
+    font-weight: $fw-medium;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__text {

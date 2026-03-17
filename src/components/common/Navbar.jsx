@@ -19,21 +19,27 @@ const serviceEntries = Object.entries(services).map(([slug, s]) => ({
   megaMenuLayout: s.megaMenuLayout,
   megaMenuResource: s.megaMenuResource,
   megaMenuResources: s.megaMenuResources,
+  gpvue: s.gpvue,
+  managedExtra: s.managedExtra,
 }));
 
 const technologyItems = [
+  // Col 1
   { icon: 'bi-diamond', title: 'Application Security', subtitle: 'SAST, DAST, RASP, SCA & WAF', path: '/technologies/application-security' },
   { icon: 'bi-pencil', title: 'Endpoint Security', subtitle: 'EPP, EDR, DLP & MDR', path: '/technologies/endpoint-security' },
-  { icon: 'bi-hdd-network', title: 'Network & Infrastructure Security', subtitle: 'NGFW, SASE, SWG, NAC & More', path: '/technologies/network-security' },
+  { icon: 'bi-hdd-network', title: 'Network & Infrastructure Security', subtitle: 'NGFW, SASE, SWG, NAC, Segmentation & More', path: '/technologies/network-security' },
+  // Col 2
   { icon: 'bi-cloud', title: 'Cloud Security', subtitle: 'Containers, CASB, CSPM, IaC, CI/CD Tools', path: '/technologies/cloud-security' },
-  { icon: 'bi-check2-square', title: 'Governance, Risk & Compliance (GRC)', subtitle: 'Business Resilience, TPRM & More', path: '/technologies/grc' },
-  { icon: 'bi-mortarboard', title: 'Security Awareness & Education', subtitle: 'Phishing, Enterprise LMS & More', path: '/technologies/security-awareness' },
-  { icon: 'bi-database', title: 'Data Security', subtitle: 'Data Classification, SWG, SEG, DLP', path: '/technologies/data-security' },
+  { icon: 'bi-check2-square', title: 'Governance, Risk & Compliance (GRC)', subtitle: 'Data Security Governance, Business Resilience, TPRM, Compliance & More', path: '/technologies/grc' },
   { icon: 'bi-fingerprint', title: 'Identity & Access Management (IAM)', subtitle: 'Access Management, IGA, PAM, CIAM', path: '/technologies/iam' },
+  // Col 3
+  { icon: 'bi-database', title: 'Data Security', subtitle: 'Data Classification, SWG, SEG, DLP', path: '/technologies/data-security' },
+  { icon: 'bi-exclamation-triangle', title: 'Incident Response (IR) & Threat Intelligence', subtitle: 'EDR, NDR, Logging, Malware Analysis, TIPs & More', path: '/technologies/incident-response' },
   { icon: 'bi-globe2', title: 'Security Operations Center (SOC)', subtitle: 'Machine Learning, SIEM, SOAR & More', path: '/technologies/soc' },
-  { icon: 'bi-envelope-check', title: 'Email Security', subtitle: 'SEG, DMARC, Encrypted Email & More', path: '/technologies/email-security' },
-  { icon: 'bi-exclamation-triangle', title: 'Incident Response (IR) & Threat Intelligence', subtitle: 'EDR, NDR, Logging, Malware Analysis & More', path: '/technologies/incident-response' },
-  { icon: 'bi-activity', title: 'Vulnerability Management', subtitle: 'Scanning, Patching & More', path: '/technologies/vulnerability-management' },
+  // Col 4
+  { icon: 'bi-envelope-check', title: 'Email Security', subtitle: 'SEG, DMARC, Encrypted Email, Machine Learning & More', path: '/technologies/email-security' },
+  { icon: 'bi-mortarboard', title: 'Security Awareness & Education', subtitle: 'Phishing, Enterprise LMS, Attack-Focused & More', path: '/technologies/security-awareness' },
+  { icon: 'bi-activity', title: 'Vulnerability Management', subtitle: 'Scanning, Patching, Secure Configuration Management & More', path: '/technologies/vulnerability-management' },
 ];
 
 const governmentItems = {
@@ -152,6 +158,193 @@ function renderMegaColumns(service, closeMega) {
             </div>
           </div>
         )}
+      </div>
+    );
+  }
+
+  // Layout: Vuln Mgmt (Threat Emulation | Tactical Assessment | Vulnerability Management + Managed Security)
+  if (layout === 'vuln') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">THREAT EMULATION</h6>
+          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">TACTICAL ASSESSMENT</h6>
+          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">VULNERABILITY MANAGEMENT</h6>
+          <SubItems items={service.managed || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          {service.managedExtra?.length > 0 && (
+            <>
+              <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
+              <SubItems items={service.managedExtra} icon="bi-gear" path={service.path} closeMega={closeMega} />
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // Layout: Staff Augmentation (Robust Staffing Solutions | Managed Security)
+  if (layout === 'staff') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">ROBUST STAFFING SOLUTIONS</h6>
+          <SubItems items={service.strategic || []} icon="bi-person-plus" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
+          <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
+        </div>
+      </div>
+    );
+  }
+
+  // Layout: SOC (Professional Services | Platform-Specific Services | Managed Security)
+  if (layout === 'soc') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
+          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">PLATFORM-SPECIFIC SERVICES</h6>
+          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
+          <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
+        </div>
+      </div>
+    );
+  }
+
+  // Layout: OT (Strategic Solutions | Tactical Assessments | Threat Emulation)
+  if (layout === 'ot') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">STRATEGIC SOLUTIONS</h6>
+          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">TACTICAL ASSESSMENTS</h6>
+          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">THREAT EMULATION</h6>
+          <SubItems items={service.managed || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+      </div>
+    );
+  }
+
+  // Layout: Network (Professional Services | Implementation & Administration | Managed Security)
+  if (layout === 'network') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
+          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">IMPLEMENTATION & ADMINISTRATION</h6>
+          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
+          <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
+        </div>
+      </div>
+    );
+  }
+
+  // Layout: Managed Security (GPVUE + Third-Party | "As a Service" col1 | "As a Service" col2)
+  if (layout === 'managed') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">SECURITY PROGRAM MANAGEMENT</h6>
+          {service.gpvue && (
+            <div className="mega-services__gpvue">
+              <div className="mega-services__gpvue-card">
+                <img src={service.gpvue.image} alt="GPVUE" className="mega-services__gpvue-img" />
+                <div className="mega-services__gpvue-text">
+                  <strong>GPVUE</strong>
+                  <span>{service.gpvue.description}</span>
+                </div>
+              </div>
+              <Link to={service.gpvue.link} className="mega-services__gpvue-link" onClick={closeMega}>
+                Read More about GPVUE <i className="bi bi-chevron-right"></i>
+              </Link>
+            </div>
+          )}
+          {service.strategic?.length > 0 && (
+            <>
+              <h6 className="mega-services__col-heading mt-4">THIRD-PARTY MANAGED SERVICES</h6>
+              <SubItems items={service.strategic} icon="bi-gear" path={service.path} closeMega={closeMega} />
+            </>
+          )}
+        </div>
+        <div className="mega-services__col mega-services__col--wide">
+          <h6 className="mega-services__col-heading">"AS A SERVICE" OFFERINGS</h6>
+          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">&nbsp;</h6>
+          <SubItems items={service.managed || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+      </div>
+    );
+  }
+
+  // Layout: IR (Proactive Services | Reactive Services + Managed Security | Advisory Services)
+  if (layout === 'ir') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">PROACTIVE SERVICES</h6>
+          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">REACTIVE SERVICES</h6>
+          <SubItems items={service.tactical || []} icon="bi-shield-exclamation" path={service.path} closeMega={closeMega} />
+          {service.tacticalExtra?.length > 0 && (
+            <>
+              <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
+              <SubItems items={service.tacticalExtra} icon="bi-gear" path={service.path} closeMega={closeMega} />
+            </>
+          )}
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">ADVISORY SERVICES</h6>
+          <SubItems items={service.managed || []} icon="bi-clipboard-check" path={service.path} closeMega={closeMega} />
+        </div>
+      </div>
+    );
+  }
+
+  // Layout: IAM (Professional Services | IAM Pillars | Managed Security)
+  if (layout === 'iam') {
+    return (
+      <div className="mega-services__columns">
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
+          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">IAM PILLARS</h6>
+          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+        </div>
+        <div className="mega-services__col">
+          <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
+          <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
+        </div>
       </div>
     );
   }
@@ -406,7 +599,7 @@ export default function Navbar() {
                       </div>
                       <div className="mega-panel__footer">
                         <Link to="/technologies" className="mega-panel__view-all" onClick={closeMega}>
-                          View All Technologies <i className="bi bi-chevron-right"></i>
+                          View All Technologies &gt;
                         </Link>
                       </div>
                     </div>
@@ -576,7 +769,7 @@ export default function Navbar() {
                               <i className="bi bi-telephone"></i>
                               <span>(877) 889-0132</span>
                             </div>
-                            <Link to="/contact" className="btn btn-accent btn-sm mt-3" onClick={closeMega}>
+                            <Link to="/contact" className="btn btn-accent mt-3" onClick={closeMega}>
                               Contact Us
                             </Link>
                           </div>

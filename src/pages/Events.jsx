@@ -40,7 +40,7 @@ export default function Events() {
                     <span><i className="bi bi-calendar me-1"></i>{event.date}</span>
                     <span><i className="bi bi-geo-alt me-1"></i>{event.location}</span>
                   </div>
-                  <Link to="/contact" className="btn btn-accent btn-sm btn-cta mt-3">
+                  <Link to="/contact" className="btn btn-accent btn-cta mt-3">
                     Register <i className="bi bi-arrow-right"></i>
                   </Link>
                 </div>

@@ -4,18 +4,28 @@ import GradientCard from './GradientCard';
 
 export default function ExpertiseCards({ expertise }) {
   const [expanded, setExpanded] = useState(false);
+  const [activeTab, setActiveTab] = useState(0);
   const contentRef = useRef(null);
 
   const toggle = () => {
-    if (!expanded && contentRef.current) {
-      contentRef.current.parentElement.style.height = '0px';
+    const wrapper = contentRef.current?.parentElement;
+    if (!wrapper || !contentRef.current) return;
+
+    if (!expanded) {
+      wrapper.style.height = '0px';
       requestAnimationFrame(() => {
-        contentRef.current.parentElement.style.height = contentRef.current.scrollHeight + 'px';
+        wrapper.style.height = contentRef.current.scrollHeight + 'px';
       });
-    } else if (contentRef.current) {
-      contentRef.current.parentElement.style.height = contentRef.current.scrollHeight + 'px';
+      // After transition, set to auto so content isn't clipped
+      const onEnd = () => {
+        wrapper.style.height = 'auto';
+        wrapper.removeEventListener('transitionend', onEnd);
+      };
+      wrapper.addEventListener('transitionend', onEnd);
+    } else {
+      wrapper.style.height = contentRef.current.scrollHeight + 'px';
       requestAnimationFrame(() => {
-        contentRef.current.parentElement.style.height = '0px';
+        wrapper.style.height = '0px';
       });
     }
     setExpanded(!expanded);
@@ -23,11 +33,14 @@ export default function ExpertiseCards({ expertise }) {
 
   if (!expertise) return null;
 
+  const hasTabs = expertise.tabs && expertise.tabs.length > 0;
+  const currentCards = hasTabs ? expertise.tabs[activeTab].cards : expertise.cards;
+
   return (
     <section className="section section--indigo-light expertise-cards">
       <div className="container text-center">
         <AnimatedSection animation="animate-on-scroll">
-          <p className="section-header__label">{expertise.label}</p>
+          <p className="section-header__label" style={{ color: '#fff' }}>{expertise.label}</p>
           <h2 className="use-cases__title">
             {expertise.titleHighlight ? (
               <>
@@ -42,8 +55,24 @@ export default function ExpertiseCards({ expertise }) {
           )}
         </AnimatedSection>
 
-        <AnimatedSection animation="stagger-children" className="row g-4 mt-3">
-          {expertise.cards.map((card) => (
+        {/* Tabs */}
+        {hasTabs && (
+          <div className="expertise-tabs">
+            {expertise.tabs.map((tab, i) => (
+              <button
+                key={tab.name}
+                className={`expertise-tabs__btn ${activeTab === i ? 'expertise-tabs__btn--active' : ''}`}
+                onClick={() => setActiveTab(i)}
+              >
+                {tab.name}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Cards */}
+        <AnimatedSection animation="stagger-children" className="row g-4 mt-3" key={activeTab}>
+          {currentCards.map((card) => (
             <div className="col-lg-4" key={card.title}>
               <GradientCard
                 title={card.title}
@@ -51,6 +80,8 @@ export default function ExpertiseCards({ expertise }) {
                 layout="centered"
                 accent="bottom"
                 titleLg
+                link={card.link}
+                linkText={card.linkText}
               />
             </div>
           ))}

@@ -11,13 +11,13 @@ export default function LifecycleSection({ lifecycle }) {
     <>
       {/* Split: text left, image right */}
       {s && (
-        <section className="section section--dark dark-split">
+        <section className="section section--dark dark-split" style={{ paddingBottom: '48px' }}>
           <div className="container">
             <div className="row g-5 align-items-center">
               <div className="col-lg-6">
                 <AnimatedSection animation="fade-in-left">
                   <div className="dark-split__text">
-                    <p className="section-header__label">{s.label}</p>
+                    <p className="section-header__label" style={{ color: '#fff' }}>{s.label}</p>
                     <h2 className="use-cases__title text-start">
                       {s.titleHighlight ? (
                         <>
@@ -28,7 +28,7 @@ export default function LifecycleSection({ lifecycle }) {
                       ) : s.title}
                     </h2>
                     {s.paragraphs.map((p, i) => (
-                      <p className={`text-white-50${i < s.paragraphs.length - 1 ? ' mb-4' : ''}`} style={{ lineHeight: 1.8 }} key={i}>
+                      <p className={`text-white${i < s.paragraphs.length - 1 ? ' mb-4' : ''}`} style={{ lineHeight: 1.5, fontSize: '16px' }} key={i}>
                         {p}
                       </p>
                     ))}
@@ -56,6 +56,7 @@ export default function LifecycleSection({ lifecycle }) {
                 <div className="col-lg-3" key={card.title}>
                   <GradientCard
                     icon={card.icon}
+                    iconImage={card.iconImage}
                     title={card.title}
                     description={card.description}
                     layout="centered"

@@ -16,6 +16,7 @@ export default function Hero({
   bgImage = '/hero-bg.svg',
   variant = 'default',
   showNetwork = true,
+  iconImage,
 }) {
   const [loaded, setLoaded] = useState(false);
 
@@ -38,7 +39,8 @@ export default function Hero({
   };
 
   const isPage = variant === 'page';
-  const variantClass = variant === 'page' ? 'hero--page' : variant === 'service' ? 'hero--service' : '';
+  const isService = variant === 'service';
+  const variantClass = isPage ? 'hero--page' : isService ? 'hero--service' : '';
 
   return (
     <section
@@ -49,6 +51,18 @@ export default function Hero({
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div className={`row ${isPage ? 'justify-content-center' : 'align-items-center'}`}>
           <div className={isPage ? 'col-lg-10' : 'col-lg-7'}>
+            {iconImage && (
+              <div
+                className={isPage ? 'text-center mb-4' : 'mb-4'}
+                style={{
+                  transition: 'opacity 0.8s ease, transform 0.8s ease',
+                  transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+                  opacity: loaded ? 1 : 0,
+                }}
+              >
+                <img src={iconImage} alt="" style={{ height: 80 }} />
+              </div>
+            )}
             {label && (
               <p
                 className="hero__label"
@@ -76,7 +90,7 @@ export default function Hero({
               style={{
                 transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
                 transform: loaded ? 'translateY(0)' : 'translateY(20px)',
-                opacity: loaded ? 0.85 : 0,
+                opacity: loaded ? 1 : 0,
 
               }}
             >
@@ -99,7 +113,7 @@ export default function Hero({
               {ctaText && (
                 <Link
                   to={ctaLink}
-                  className="btn btn-accent btn-lg px-4"
+                  className="btn btn-accent"
                 >
                   {ctaText}
                 </Link>
@@ -107,7 +121,7 @@ export default function Hero({
               {secondaryCta && (
                 <Link
                   to={secondaryCtaLink}
-                  className="btn btn-outline-light btn-lg px-4"
+                  className="btn btn-outline-light"
                 >
                   {secondaryCta}
                 </Link>

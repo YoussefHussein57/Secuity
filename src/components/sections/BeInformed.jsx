@@ -17,7 +17,7 @@ export default function BeInformed() {
             approach combine to deliver tailored solutions that keep your people, data
             and operations safe.
           </p>
-          <Link to="/contact" className="btn btn-accent btn-lg btn-cta px-4">
+          <Link to="/contact" className="btn btn-accent btn-cta">
             Talk to an Expert
           </Link>
         </AnimatedSection>

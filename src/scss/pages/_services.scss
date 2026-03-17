@@ -90,10 +90,6 @@
   &--tech {
     padding-top: 0;
   }
-
-  &--tech &__image img {
-    transform: rotate(180deg);
-  }
 }
 
 // ---- Checklist Cards → now uses .card-gradient (see _technologies.scss) ----
@@ -516,6 +512,7 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     padding-bottom: 1rem;
+    
 
     &::-webkit-scrollbar {
       display: none;
@@ -625,29 +622,29 @@
   transform: translateY(-50%);
   z-index: 2;
   width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba($white, 0.5);
-  background: rgba($black, 0.6);
-  color: $white;
+  height: 100px;
+  border-radius: 0;
+  border: 0.8px solid rgb(51, 110, 146);
+  background: rgb(16, 16, 16);
+  color: rgb(19, 191, 234);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-size: 14px;
+  font-size: 16px;
 
   &:hover {
-    background: rgba($black, 0.85);
-    border-color: $white;
+    background: rgb(30, 30, 30);
+    border-color: rgb(19, 191, 234);
   }
 
   &--left {
-    left: -10px;
+    left: -50px;
   }
 
   &--right {
-    right: -10px;
+    right: -50px;
   }
 }
 

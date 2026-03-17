@@ -21,12 +21,12 @@ export default function ServiceDetail() {
     <>
       {/* 1. Hero */}
       <Hero
-        label={service.title}
+        label={service.heroLabel || service.title}
         title={service.tagline}
         highlightWord={service.heroHighlight}
         highlightStyle="box"
         subtitle={service.description}
-        ctaText={`Secure Your ${service.title.split(' ')[0]}`}
+        ctaText={service.heroCta || `Secure Your ${service.title.split(' ')[0]}`}
         ctaLink="/contact"
         bgImage={service.heroImage}
         variant="service"
@@ -83,7 +83,7 @@ export default function ServiceDetail() {
                   ) : s.title}
                 </h2>
                 {s.paragraphs.map((p, pi) => (
-                  <p className={`text-white-50${pi < s.paragraphs.length - 1 ? ' mb-4' : ''}`} style={{ lineHeight: 1.8 }} key={pi}>
+                  <p className={`text-white${pi < s.paragraphs.length - 1 ? ' mb-4' : ''}`} style={{ lineHeight: 1.5, fontSize: '16px' }} key={pi}>
                     {p}
                   </p>
                 ))}

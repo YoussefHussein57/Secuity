@@ -130,7 +130,7 @@ export default function Certifications({ variant = 'default' }) {
             {!showAll && (
               <div className="text-center mt-4">
                 <button
-                  className="btn btn-outline-dark btn-sm px-4"
+                  className="btn btn-outline-dark"
                   onClick={() => setShowAll(true)}
                   style={{ borderRadius: '0.25rem' }}
                 >

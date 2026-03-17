@@ -23,12 +23,12 @@ export default function TechnologyDetail() {
     <>
       {/* 1. Hero */}
       <Hero
-        label={tech.title}
+        label={tech.heroLabel || tech.title}
         title={tech.tagline}
         highlightWord={tech.heroHighlight}
         highlightStyle="box"
         subtitle={tech.description}
-        ctaText="Talk to an Expert"
+        ctaText={tech.heroCta || 'Talk to an Expert'}
         ctaLink="/contact"
         bgImage={tech.heroImage}
         variant="service"
@@ -37,7 +37,7 @@ export default function TechnologyDetail() {
 
       {/* 2. Dark Split Section (image left, text right) */}
       {s && (
-        <section className="section section--dark dark-split dark-split--tech">
+        <section className="section section--dark dark-split dark-split--tech" style={{ paddingTop: 0, paddingBottom: '120px' }}>
           <div className="container">
             <div className="row g-5 align-items-center">
               <div className="col-lg-6">
@@ -61,7 +61,7 @@ export default function TechnologyDetail() {
                       ) : s.title}
                     </h2>
                     {s.paragraphs.map((p, i) => (
-                      <p className={`text-white-50${i < s.paragraphs.length - 1 ? ' mb-4' : ''}`} style={{ lineHeight: 1.8 }} key={i}>
+                      <p className={`text-white${i < s.paragraphs.length - 1 ? ' mb-4' : ''}`} style={{ lineHeight: 1.5, fontSize: '16px' }} key={i}>
                         {p}
                       </p>
                     ))}

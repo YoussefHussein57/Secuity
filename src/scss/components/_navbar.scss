@@ -255,7 +255,7 @@
     background-color: #ffffff !important;
     padding: 1.5rem 0;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
-    max-height: calc(80vh - 220px);
+    max-height: calc(95vh - 220px);
     overflow-y: auto;
 
     &::-webkit-scrollbar {
@@ -280,9 +280,9 @@
   &__view-all {
     color: $gradient-start;
     text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: $fw-semibold;
-    font-family: $font-family-heading;
+    font-size: 15px;
+    font-weight: $fw-medium;
+    font-family: $font-family-base;
     display: inline-block;
     transition: color 0.2s ease;
 
@@ -492,6 +492,58 @@
     gap: 1.5rem;
     flex-wrap: wrap;
   }
+
+  // GPVUE card for Managed Security mega menu
+  &__gpvue {
+    margin-bottom: 0.5rem;
+  }
+
+  &__gpvue-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  &__gpvue-img {
+    width: 90px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  &__gpvue-text {
+    font-size: 13px;
+    color: #7d7c7c;
+    line-height: 1.5;
+
+    strong {
+      display: block;
+      font-size: 15px;
+      font-weight: $fw-bold;
+      color: #000;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__gpvue-link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: $fw-medium;
+    color: $gradient-start;
+    text-decoration: none;
+    margin-top: 0.75rem;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    i {
+      font-size: 12px;
+      margin-left: 4px;
+    }
+  }
 }
 
 // ===========================================
@@ -514,12 +566,21 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
 
-    // Vertical dividers between columns
+    // Vertical dividers — border-right on col 1 and col 2 items only
+    > :nth-child(3n+1),
     > :nth-child(3n+2) {
-      border-left: 1px solid rgba($primary, 0.08);
-      border-right: 1px solid rgba($primary, 0.08);
+      border-right: 1.6px solid rgb(195, 217, 255);
+    }
+
+    // Padding for middle column items
+    > :nth-child(3n+2) {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
+    }
+
+    // Padding for last column items
+    > :nth-child(3n) {
+      padding-left: 1.5rem;
     }
   }
 
@@ -529,7 +590,6 @@
     gap: 0.75rem;
     padding: 0.65rem 0.5rem;
     text-decoration: none;
-    border-bottom: 1px solid rgba($primary, 0.06);
     transition: background 0.15s ease;
 
     &:hover {

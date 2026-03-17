@@ -24,7 +24,7 @@ export default function ServiceAccordion({ services }) {
         </button>
         <div className={`service-accordion__body ${isOpen ? 'service-accordion__body--open' : ''}`}>
           <p>{s.description}</p>
-          <Link to={s.path} className="btn btn-outline-light btn-sm">
+          <Link to={s.path} className="btn btn-outline-light">
             Read More
           </Link>
         </div>

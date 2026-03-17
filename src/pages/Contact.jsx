@@ -73,7 +73,7 @@ export default function Contact() {
                   </label>
                   <textarea className="form-control form-control-lg" rows="4" required placeholder="Tell us about your cybersecurity challenges..."></textarea>
                 </div>
-                <button type="submit" className="btn btn-accent btn-lg w-100 fw-bold btn-cta">
+                <button type="submit" className="btn btn-accent w-100 btn-cta">
                   Submit <i className="bi bi-arrow-right"></i>
                 </button>
               </form>
@@ -126,7 +126,7 @@ export default function Contact() {
               <span className="text-highlight-gradient">immediate</span>{' '}
               attention?
             </h2>
-            <Link to="/report-incident" className="btn btn-accent btn-lg btn-cta fw-bold px-5">
+            <Link to="/report-incident" className="btn btn-accent btn-cta">
               Report an Incident <i className="bi bi-arrow-right"></i>
             </Link>
           </AnimatedSection>

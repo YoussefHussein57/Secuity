@@ -9,7 +9,7 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
       <div className="container">
         <AnimatedSection animation="animate-on-scroll">
           <div className="outcomes-header">
-            <p className="section-header__label">
+            <p className="section-header__label" style={{ color: '#fff' }}>
               {outcomesSection?.label || `${title} Outcomes`}
             </p>
             <h2 className="use-cases__title text-start">
@@ -21,9 +21,11 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
                 </>
               ) : (outcomesSection?.title || 'Expected Outcomes')}
             </h2>
-            <p className="text-white-50" style={{ lineHeight: 1.7 }}>
-              {outcomesSection?.subtitle || ''}
-            </p>
+            {outcomesSection?.subtitle && (
+              <p className="text-white" style={{ lineHeight: 1.7, fontSize: '18px', maxWidth: 900 }}>
+                {outcomesSection.subtitle}
+              </p>
+            )}
           </div>
         </AnimatedSection>
         <AnimatedSection animation="stagger-children" className="row g-4">
