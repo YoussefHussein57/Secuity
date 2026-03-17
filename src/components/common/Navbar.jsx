@@ -47,12 +47,15 @@ const governmentItems = {
     title: 'Government Solutions',
     desc: 'Security solutions tailored to your specific mission',
     path: '/government',
+    image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png',
   },
-  contracts: [
-    { title: 'GSA Contract', desc: 'Facilitate cybersecurity solutions procurement', path: '/government/gsa-contract' },
-    { title: 'DOD ESI Contract', desc: 'Achieve your mission with fast & efficient access to solutions', path: '/government/dod-esi' },
-    { title: 'SeaPort-NxG', desc: 'SeaPort Next Generation procurement vehicle', path: '/government/seaport-nxg' },
-    { title: 'OASIS+', desc: 'Governmentwide multiple-award contracts for federal agencies', path: '/government/oasis-plus' },
+  contractsLeft: [
+    { heading: 'GSA CONTRACT', title: 'GSA Contract', desc: 'Facilitate cybersecurity solutions procurement', path: '/government/gsa-contract', linkText: 'GSA MAS Contract >', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png' },
+    { heading: 'DOD ESI CONTRACT', title: 'DOD ESI Contract', desc: 'Achieve your mission with fast & efficient access to F5 solutions', path: '/government/dod-esi', linkText: 'DOD ESI Contract >', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png' },
+  ],
+  contractsRight: [
+    { heading: 'SEAPORT NEXT GENERATION (SEAPORT-NXG)', title: 'SeaPort-NxG', desc: 'The SeaPort Next Generation (SeaPort-NxG) contract is a key procurement vehicle.', path: '/government/seaport-nxg', linkText: 'SeaPort-NxG Contract >', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp' },
+    { heading: 'OASIS+', title: 'OASIS+', desc: 'OASIS+ (One Acquisition Solution for Integrated Services Plus) is a suite of governmentwide multiple-award contracts that provides federal agencies with services-based solutions.', path: '/government/oasis-plus', linkText: 'OASIS+ Contract >', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png' },
   ],
 };
 
@@ -637,30 +640,58 @@ export default function Navbar() {
 
                   <div className="mega-panel__body">
                     <div className="container">
-                      <div className="row">
-                        <div className="col-lg-4">
+                      <div className="mega-gov">
+                        {/* Col 1: About */}
+                        <div className="mega-gov__col mega-gov__col--about">
                           <h6 className="mega-gov__heading">ABOUT GOVERNMENT SOLUTIONS</h6>
                           <Link to="/government" className="mega-gov__about" onClick={closeMega}>
-                            <div className="mega-gov__about-icon">
-                              <i className="bi bi-shield-check"></i>
-                            </div>
+                            <img src={governmentItems.about.image} alt="" className="mega-gov__about-img" />
                             <div>
                               <span className="mega-gov__about-title">{governmentItems.about.title}</span>
                               <span className="mega-gov__about-desc">{governmentItems.about.desc}</span>
                             </div>
                           </Link>
                         </div>
-                        <div className="col-lg-8">
+
+                        {/* Cols 2+3: Contract Vehicles */}
+                        <div className="mega-gov__contracts">
                           <h6 className="mega-gov__heading">CONTRACT VEHICLES</h6>
-                          <div className="row">
-                            {governmentItems.contracts.map((c) => (
-                              <div className="col-md-6 mb-3" key={c.title}>
-                                <Link to={c.path} className="mega-gov__contract" onClick={closeMega}>
+                          <div className="mega-gov__contracts-cols">
+                            <div className="mega-gov__col">
+                              {governmentItems.contractsLeft.map((c) => (
+                                <div className="mega-gov__vehicle" key={c.title}>
+                                  <h6 className="mega-gov__vehicle-heading">{c.heading}</h6>
+                                  <Link to={c.path} className="mega-gov__contract" onClick={closeMega}>
+                                    <img src={c.image} alt={c.title} className="mega-gov__contract-img" />
+                                    <div>
+                                      <span className="mega-gov__contract-title">{c.title}</span>
+                                      <span className="mega-gov__contract-desc">{c.desc}</span>
+                                    </div>
+                                  </Link>
+                                  <Link to={c.path} className="mega-gov__contract-link" onClick={closeMega}>
+                                    {c.linkText}
+                                  </Link>
+                                </div>
+                              ))}
+                            </div>
+
+                            <div className="mega-gov__col">
+                              {governmentItems.contractsRight.map((c) => (
+                            <div className="mega-gov__vehicle" key={c.title}>
+                              <h6 className="mega-gov__vehicle-heading">{c.heading}</h6>
+                              <Link to={c.path} className="mega-gov__contract" onClick={closeMega}>
+                                <img src={c.image} alt={c.title} className="mega-gov__contract-img" />
+                                <div>
                                   <span className="mega-gov__contract-title">{c.title}</span>
                                   <span className="mega-gov__contract-desc">{c.desc}</span>
-                                </Link>
-                              </div>
-                            ))}
+                                </div>
+                              </Link>
+                              <Link to={c.path} className="mega-gov__contract-link" onClick={closeMega}>
+                                {c.linkText}
+                              </Link>
+                            </div>
+                          ))}
+                            </div>
                           </div>
                         </div>
                       </div>
