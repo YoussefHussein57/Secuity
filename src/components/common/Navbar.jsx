@@ -462,7 +462,6 @@ export default function Navbar() {
     >
       <div className="container">
         <Link className="navbar-brand" to="/" onClick={closeMega}>
-          <img src={logo} alt="Cyber" height="40" />
         </Link>
 
         <button
