@@ -144,7 +144,6 @@ export default function Footer() {
           <div className="footer__bottom-inner">
             <div className="footer__bottom-left">
               <Link to="/" className="footer__bottom-logo">
-                <img src={logo} alt="Logo" />
               </Link>
               <Link to="/privacy">Privacy Policy</Link>
               <Link to="/terms">Terms of Service</Link>
