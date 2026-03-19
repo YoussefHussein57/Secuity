@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
-import logo from '../../assets/images/logo.png';
+// Logo removed temporarily
 import services from '../../data/services';
 
 // Build ordered service list from data
@@ -60,31 +60,45 @@ const governmentItems = {
 };
 
 const companyItems = [
-  { icon: 'bi-heart', label: 'Why Cyber', path: '/company/why-us', desc: 'Guiding you through the complex security maze' },
-  { icon: 'bi-people', label: 'Leadership Team', path: '/company/leadership', desc: 'Our partners and leadership team' },
+  { icon: 'bi-heart', label: 'Why GuidePoint', path: '/company/why-us', desc: 'Guiding you through the complex security maze' },
+  { icon: 'bi-people', label: 'Leadership Team', path: '/company/leadership', desc: 'Our partners & leadership team' },
   { icon: 'bi-briefcase', label: 'Careers', path: '/company/careers', desc: 'Learn about our values, culture & open positions' },
-  { icon: 'bi-megaphone', label: 'Newsroom', path: '/resources/blog', desc: 'Read the latest news & press releases' },
-  { icon: 'bi-globe2', label: 'Corporate Social Responsibility', path: '/company', desc: 'Our goal is to foster sustainable business practices' },
-  { icon: 'bi-diagram-3', label: 'Vendor Partners', path: '/company', desc: 'Learn more about our partner ecosystem' },
+  { icon: 'bi-megaphone', label: 'Newsroom', path: '/resources/blog', desc: 'Read the latest GuidePoint news & press releases' },
+  { icon: 'bi-globe2', label: 'Corporate Social Responsibility (CSR)', path: '/company', desc: 'Our goal is to foster sustainable business practices' },
+  { icon: 'bi-diagram-3', label: 'Vendor Partners', path: '/company/vendor-partners', desc: 'Learn more about our partner ecosystem.' },
 ];
 
 const companyCustomers = [
-  { alt: 'Premise Health', path: '/logos/premise-health.png' },
-  { alt: 'Nuance', path: '/logos/nuance.png' },
-  { alt: 'KHovnanian Homes', path: '/logos/khovnanian.png' },
-  { alt: 'Follett', path: '/logos/follett.png' },
-  { alt: 'Intelsat', path: '/logos/intelsat.png' },
-  { alt: 'Sisense', path: '/logos/sisense-logo.png' },
+  { alt: 'Premise Health', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png' },
+  { alt: 'Nuance', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png' },
+  { alt: 'KHovnanian Homes', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png' },
+  { alt: 'Follett', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png' },
+  { alt: 'Intelsat', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png' },
+  { alt: 'Sisense', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png' },
 ];
 
 const resourceLibrary = [
   { icon: 'bi-play-btn', label: 'On Demand Webinars', desc: 'Watch our monthly cybersecurity webinar series', path: '/resources/webinars' },
   { icon: 'bi-play-circle', label: 'Videos', desc: 'Watch the latest educational cybersecurity videos', path: '/resources/webinars' },
   { icon: 'bi-trophy', label: 'Customer Success', desc: 'Learn about the value of working with a trusted advisor', path: '/resources' },
-  { icon: 'bi-file-earmark-text', label: 'Datasheets', desc: 'Download Cyber services & solutions datasheets', path: '/resources' },
+  { icon: 'bi-file-earmark-text', label: 'Datasheets', desc: 'Download GuidePoint services & solutions datasheets', path: '/resources' },
   { icon: 'bi-book', label: 'eBooks', desc: 'Download free eBooks on key cybersecurity topics', path: '/resources' },
   { icon: 'bi-file-text', label: 'Whitepapers', desc: 'Download cybersecurity solution whitepapers', path: '/resources' },
   { icon: 'bi-shield-exclamation', label: 'Threat Advisories', desc: 'Research and intel from our experts', path: '/resources' },
+  { icon: 'bi-mortarboard', label: 'Education Center', desc: 'Learn about key cybersecurity terms & disciplines', path: '/resources' },
+];
+
+const blogPosts = [
+  { title: 'How Mature is Your Identity and Access Management Program?', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg', path: '/resources/blog' },
+  { title: 'NIST CSF 2.0 Is Here: How Will You Adapt?', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg', path: '/resources/blog' },
+];
+
+const featuredResources = [
+  { title: 'GRIT\u00AE 2026 Ransomware & Cyber Threat Report', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png', path: '/resources' },
+  { title: 'Establishing AI Governance as a Competitive Advantage', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg', path: '/resources' },
+  { title: 'Report: The State of Identity and Access Management (IAM) Maturity, 2025', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg', path: '/resources' },
+  { title: 'View All the Upcoming Brick House Discussion Topics', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png', path: '/resources' },
+  { title: 'GRIT\u00AE 2026 Ransomware & Cyber Threat Report Presentation', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png', path: '/resources' },
 ];
 
 // Helper: render sub-service items for a column
@@ -461,7 +475,7 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`navbar navbar-expand-lg navbar-dark fixed-top navbar-main ${scrolled ? 'scrolled' : ''}`}
+      className={`navbar navbar-expand-lg navbar-dark sticky-top navbar-main ${scrolled ? 'scrolled' : ''}`}
     >
       <div className="container">
         <Link className="navbar-brand" to="/" onClick={closeMega}>
@@ -730,79 +744,118 @@ export default function Navbar() {
                   </div>
 
                   <div className="mega-panel__body">
-                    <div className="container">
-                      <div className="row">
-                        {/* About */}
-                        <div className="col-lg-3">
-                          <h6 className="mega-company__heading">ABOUT CYBER SECURITY</h6>
-                          <ul className="mega-company__list">
-                            {companyItems.map((item) => (
-                              <li key={item.path + item.label}>
-                                <Link to={item.path} className="mega-company__link" onClick={closeMega}>
-                                  <i className={`bi ${item.icon} mega-company__link-icon`}></i>
-                                  <div>
-                                    <span className="mega-company__link-title">{item.label}</span>
-                                    <span className="mega-company__link-desc">{item.desc}</span>
-                                  </div>
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                    <div className="row gx-0">
+                      {/* About */}
+                      <div className="col-lg-3 mega-company__col mega-company__col--border-right">
+                        <h6 className="mega-company__heading">ABOUT GUIDEPOINT SECURITY</h6>
+                        <ul className="mega-company__list">
+                          {companyItems.map((item) => (
+                            <li key={item.path + item.label}>
+                              <Link to={item.path} className="mega-company__link" onClick={closeMega}>
+                                <i className={`bi ${item.icon} mega-company__link-icon`}></i>
+                                <div>
+                                  <span className="mega-company__link-title">{item.label}</span>
+                                  <span className="mega-company__link-desc">{item.desc}</span>
+                                </div>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
 
-                        {/* Customers */}
-                        <div className="col-lg-3">
-                          <h6 className="mega-company__heading">CUSTOMERS</h6>
-                          <div className="mega-company__logos">
-                            {companyCustomers.map((c) => (
-                              <div className="mega-company__logo" key={c.alt}>
-                                <img src={c.path} alt={c.alt} />
-                              </div>
-                            ))}
+                      {/* Customers */}
+                      <div className="col-lg-3 mega-company__col mega-company__col--border-right">
+                        <h6 className="mega-company__heading">CUSTOMERS</h6>
+                        <div className="mega-company__logos">
+                          {companyCustomers.map((c) => (
+                            <div className="mega-company__logo" key={c.alt}>
+                              <img src={c.path} alt={c.alt} />
+                            </div>
+                          ))}
+                        </div>
+                        <Link to="/company/customers" className="mega-panel__view-all" onClick={closeMega}>
+                          View All Case Studies &gt;
+                        </Link>
+                      </div>
+
+                      {/* Programs */}
+                      <div className="col-lg-3 mega-company__col mega-company__col--border-right">
+                        <h6 className="mega-company__heading">GUIDEPOINT SECURITY FINANCIAL</h6>
+                        <Link to="/company/financial" className="mega-company__program-card" onClick={closeMega}>
+                          <img
+                            src="https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg"
+                            alt="GuidePoint Security Financial"
+                            width="175"
+                            height="85"
+                            style={{ objectFit: 'contain' }}
+                          />
+                          <p className="mega-company__program-desc">
+                            Simplify Purchasing with Flexible Financing Options for Hardware, Software, Services &amp; Support
+                          </p>
+                        </Link>
+
+                        <h6 className="mega-company__heading mt-4">GUIDEPOINT SECURITY UNIVERSITY</h6>
+                        <Link to="/company/university" className="mega-company__program-card" onClick={closeMega}>
+                          <img
+                            src="https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg"
+                            alt="GuidePoint Security University"
+                            width="175"
+                            height="85"
+                            style={{ objectFit: 'contain' }}
+                          />
+                          <p className="mega-company__program-desc">
+                            Start or extend your cybersecurity career with our expert training program
+                          </p>
+                        </Link>
+
+                        <h6 className="mega-company__heading mega-company__heading--grit">GUIDEPOINT RESEARCH AND INTELLIGENCE TEAM (GRIT&reg;)</h6>
+                        <Link to="/company/grit" className="mega-company__program-card" onClick={closeMega}>
+                          <img
+                            src="https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png"
+                            alt="GRIT"
+                            width="175"
+                            height="85"
+                            style={{ objectFit: 'contain' }}
+                          />
+                          <p className="mega-company__program-desc">
+                            Our team of expert threat researchers and incident response professionals
+                          </p>
+                        </Link>
+                      </div>
+
+                      {/* Contact */}
+                      <div className="col-lg-3 mega-company__col">
+                        <h6 className="mega-company__heading">CONTACT US</h6>
+                        <div className="mega-company__contact">
+                          <div className="mega-company__contact-item">
+                            <img
+                              src="https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg"
+                              alt="Location"
+                              width="60"
+                              height="60"
+                            />
+                            <div>
+                              <strong>GuidePoint Security LLC</strong><br />
+                              1900 Reston Metro Plaza<br />
+                              Suite 701<br />
+                              Reston, VA 20190
+                            </div>
                           </div>
-                          <Link to="/company/customers" className="mega-panel__view-all" onClick={closeMega}>
-                            View All Case Studies <i className="bi bi-chevron-right"></i>
-                          </Link>
-                        </div>
-
-                        {/* Programs */}
-                        <div className="col-lg-3">
-                          <h6 className="mega-company__heading">CYBER SECURITY PROGRAMS</h6>
-                          <Link to="/company" className="mega-company__program" onClick={closeMega}>
-                            <span className="mega-company__program-title">Cyber Security Financial</span>
-                            <span className="mega-company__program-desc">Simplify Purchasing with Flexible Financing Options</span>
-                          </Link>
-                          <Link to="/company" className="mega-company__program" onClick={closeMega}>
-                            <span className="mega-company__program-title">Cyber Security University</span>
-                            <span className="mega-company__program-desc">Start or extend your cybersecurity career with our expert training program</span>
-                          </Link>
-                        </div>
-
-                        {/* Contact */}
-                        <div className="col-lg-3">
-                          <h6 className="mega-company__heading">CONTACT US</h6>
-                          <div className="mega-company__contact">
-                            <div className="mega-company__contact-item">
-                              <i className="bi bi-geo-alt"></i>
-                              <div>
-                                <strong>Cyber Security LLC</strong><br />
-                                1900 Reston Metro Plaza<br />
-                                Suite 701<br />
-                                Reston, VA 20190
-                              </div>
-                            </div>
-                            <div className="mega-company__contact-item">
-                              <i className="bi bi-envelope"></i>
-                              <span>info@cybersecurity.com</span>
-                            </div>
-                            <div className="mega-company__contact-item">
-                              <i className="bi bi-telephone"></i>
+                          <div className="mega-company__contact-item">
+                            <img
+                              src="https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg"
+                              alt="Contact"
+                              width="60"
+                              height="60"
+                            />
+                            <div>
+                              <a href="mailto:info@guidepointsecurity.com" className="mega-company__contact-link">info@guidepointsecurity.com</a><br />
                               <span>(877) 889-0132</span>
                             </div>
-                            <Link to="/contact" className="btn btn-accent mt-3" onClick={closeMega}>
-                              Contact Us
-                            </Link>
                           </div>
+                          <Link to="/contact" className="btn btn-accent mt-3" onClick={closeMega}>
+                            Contact Us
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -840,10 +893,9 @@ export default function Navbar() {
                   </div>
 
                   <div className="mega-panel__body">
-                    <div className="container">
-                      <div className="row">
+                    <div className="row gx-0">
                         {/* Resource Library */}
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 mega-resources__col mega-resources__col--border-right">
                           <h6 className="mega-resources__heading">RESOURCE LIBRARY</h6>
                           <ul className="mega-resources__list">
                             {resourceLibrary.map((item) => (
@@ -858,60 +910,56 @@ export default function Navbar() {
                               </li>
                             ))}
                           </ul>
+                          <Link to="/resources" className="mega-panel__view-all" onClick={closeMega}>
+                            View All Resources &gt;
+                          </Link>
                         </div>
 
                         {/* Events */}
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 mega-resources__col mega-resources__col--border-right">
                           <h6 className="mega-resources__heading">EVENTS</h6>
-                          <Link to="/resources/events" className="mega-resources__featured" onClick={closeMega}>
-                            <div className="mega-resources__featured-img">
-                              <i className="bi bi-calendar-event"></i>
-                              <span>Premier Cybersecurity Conference</span>
-                            </div>
+                          <Link to="/resources/events" className="mega-resources__event-card" onClick={closeMega}>
+                            <img
+                              src="https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg"
+                              alt="GPSEC Conference"
+                              className="mega-resources__event-img"
+                            />
+                            <span className="mega-resources__event-caption">Premier Cybersecurity Conference</span>
                           </Link>
                           <Link to="/resources/events" className="mega-panel__view-all mt-3" onClick={closeMega}>
-                            View All Events <i className="bi bi-chevron-right"></i>
+                            View All Events and Upcoming Webinars &gt;
                           </Link>
                         </div>
 
                         {/* Blog */}
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 mega-resources__col mega-resources__col--border-right">
                           <h6 className="mega-resources__heading">BLOG</h6>
-                          <Link to="/resources/blog" className="mega-resources__blog-item" onClick={closeMega}>
-                            <span>How Mature is Your Identity and Access Management Program?</span>
+                          {/* First blog — large image on top */}
+                          <Link to={blogPosts[0].path} className="mega-resources__blog-primary" onClick={closeMega}>
+                            <img src={blogPosts[0].image} alt={blogPosts[0].title} className="mega-resources__blog-primary-img" />
+                            <span className="mega-resources__blog-title">{blogPosts[0].title}</span>
                           </Link>
-                          <Link to="/resources/blog" className="mega-resources__blog-item" onClick={closeMega}>
-                            <span>NIST CSF 2.0 Is Here: How Will You Adapt?</span>
+                          {/* Second blog — thumbnail + title side by side */}
+                          <Link to={blogPosts[1].path} className="mega-resources__blog-item" onClick={closeMega}>
+                            <img src={blogPosts[1].image} alt={blogPosts[1].title} className="mega-resources__blog-img" />
+                            <span className="mega-resources__blog-title">{blogPosts[1].title}</span>
                           </Link>
                           <Link to="/resources/blog" className="mega-panel__view-all mt-3" onClick={closeMega}>
-                            View All Blog Articles <i className="bi bi-chevron-right"></i>
+                            View All Blog Articles &gt;
                           </Link>
                         </div>
 
                         {/* Featured */}
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 mega-resources__col">
                           <h6 className="mega-resources__heading">FEATURED RESOURCES</h6>
-                          <Link to="/resources" className="mega-resources__featured-item" onClick={closeMega}>
-                            <div className="mega-resources__featured-thumb">
-                              <i className="bi bi-file-earmark-bar-graph"></i>
-                            </div>
-                            <span>GRIT 2026 Ransomware & Cyber Threat Report</span>
-                          </Link>
-                          <Link to="/resources" className="mega-resources__featured-item" onClick={closeMega}>
-                            <div className="mega-resources__featured-thumb">
-                              <i className="bi bi-file-text"></i>
-                            </div>
-                            <span>Establishing AI Governance as a Competitive Advantage</span>
-                          </Link>
-                          <Link to="/resources" className="mega-resources__featured-item" onClick={closeMega}>
-                            <div className="mega-resources__featured-thumb">
-                              <i className="bi bi-bar-chart"></i>
-                            </div>
-                            <span>The State of Identity and Access Management (IAM) Maturity</span>
-                          </Link>
+                          {featuredResources.map((item) => (
+                            <Link to={item.path} className="mega-resources__featured-item" onClick={closeMega} key={item.title}>
+                              <img src={item.image} alt={item.title} className="mega-resources__featured-thumb" />
+                              <span className="mega-resources__featured-title">{item.title}</span>
+                            </Link>
+                          ))}
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               )}

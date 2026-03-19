@@ -166,7 +166,7 @@ const services = {
     heroHighlight: 'Protect',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'As organizations rapidly adopt AI and machine learning, new attack surfaces emerge. Our AI security services help you secure AI systems, detect AI-powered threats, and use AI to enhance your defensive capabilities.',
+      'Secure AI and use AI to secure everything else. Our technical and advisory services for AI help organizations securely and confidently incorporate AI technologies into their IT environment, use AI for threat hunting and response and better defend against AI-enhanced threats.',
     stats: [
       { number: '78%', label: 'of organizations using AI lack security controls' },
       { number: '3x', label: 'increase in AI-targeted attacks in 2025' },
@@ -263,7 +263,7 @@ const services = {
     heroHighlight: 'Secure',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Cloud migration introduces new security challenges. Our cloud security experts help you design, implement, and maintain secure cloud architectures that protect your data and workloads while enabling business agility.',
+      'Our trusted technology experts can help drive a cloud strategy, ensure compliance and secure your cloud solution architecture aligned with business goals.',
     stats: [
       { number: '45%', label: 'of breaches occur in cloud environments' },
       { number: '1,500+', label: 'cloud security assessments delivered' },
@@ -369,7 +369,7 @@ const services = {
     heroHighlight: 'Protect',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Data is the lifeblood of every organization. Our data security services help you discover, classify, protect, and govern sensitive data across on-premises, cloud, and hybrid environments.',
+      'Better protect your data with tailored Data Security, Data Privacy and AI Governance services. We enable organizations to identify, classify and secure sensitive information across complex environments, align with industry best practices and comply with global, Federal and U.S. state laws and regulations.',
     stats: [
       { number: '$4.45M', label: 'average cost of a data breach (IBM 2025)' },
       { number: '83%', label: 'of breaches involve data in the cloud' },
@@ -462,7 +462,7 @@ const services = {
     heroHighlight: 'Defend',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Email remains the #1 attack vector. Our email security services protect your organization from phishing, business email compromise (BEC), malware delivery, and data exfiltration through email channels.',
+      'Email Security services help protect content, accounts and infrastructure from threats like phishing, malware and data loss.',
     stats: [
       { number: '91%', label: 'of cyberattacks begin with email' },
       { number: '$2.4B', label: 'lost to BEC attacks annually' },
@@ -551,7 +551,7 @@ const services = {
     heroHighlight: 'Protect',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Endpoints are where work happens and where attackers gain footholds. Our endpoint security services help you deploy, optimize, and manage endpoint protection platforms that detect and respond to threats in real time.',
+      'Our comprehensive Endpoint Security Services help protect, detect and remediate threats like ransomware. Full lifecycle endpoint security services span selection, implementation, integration and optimization.',
     stats: [
       { number: '70%', label: 'of breaches originate at the endpoint' },
       { number: '500K+', label: 'endpoints under our protection' },
@@ -642,7 +642,7 @@ const services = {
     heroHighlight: 'Build',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Effective cybersecurity starts with governance. Our GRC services help you develop security policies, assess and manage risk, and achieve compliance with industry regulations and frameworks.',
+      'We help align information security with business goals, manage risk and ensure compliance with industry standards. Our comprehensive GRC portfolio includes security program assessments, policy development, risk management frameworks and executive advisory services.',
     stats: [
       { number: '800+', label: 'GRC program assessments completed' },
       { number: '100%', label: 'audit pass rate for managed compliance clients' },
@@ -746,7 +746,7 @@ const services = {
     heroHighlight: 'Ensure',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Identity is the new perimeter. Our IAM services help you implement zero-trust access controls, manage privileged accounts, and govern identity lifecycles across your hybrid environment.',
+      'Better manage humans and non-human identity and access with our comprehensive IAM services. IAM advisory, implementation and managed services can reduce risk, improve compliance and streamline user access for on-premise and cloud environments.',
     stats: [
       { number: '80%', label: 'of breaches involve compromised credentials' },
       { number: '600+', label: 'IAM implementations completed' },
@@ -839,7 +839,7 @@ const services = {
     heroHighlight: 'Prepare',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'When a breach occurs, every minute counts. Our incident response team provides rapid containment, forensic analysis, and recovery services. Our threat intelligence team keeps you ahead of emerging threats.',
+      'We provide comprehensive, 24/7 incident response (IR) and tailored threat intelligence (TI) services to help organizations prepare, detect, contain and recover from cyber threats. The team helps organizations enhance their security posture and reduce risk.',
     stats: [
       { number: '1hr', label: 'average response time for critical incidents' },
       { number: '2,000+', label: 'incident investigations completed' },
@@ -941,7 +941,7 @@ const services = {
     heroHighlight: 'Extend',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Not every organization can staff a full security team. Our managed security services provide 24/7 monitoring, detection, and response capabilities through our GPVUE program — a customized, integrated security program designed for your unique needs.',
+      'A strong security program relies on skilled resources to manage your environment. We can help reduce administrative burdens through our comprehensive "as-a-service" offerings, 24/7 monitoring and specialized expertise on demand.',
     stats: [
       { number: '24/7', label: 'security operations coverage' },
       { number: '15min', label: 'average time to detect critical threats' },
@@ -1043,7 +1043,7 @@ const services = {
     heroHighlight: 'Protect',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Your network is the backbone of your operations. Our network security services help you design, implement, and maintain secure network architectures that protect against external and internal threats.',
+      'Network infrastructure is critical to operations. We help architect, deploy, optimize secure network infrastructures for both enterprise and government IT environments.',
     stats: [
       { number: '60%', label: 'of attacks involve lateral network movement' },
       { number: '1,000+', label: 'network security assessments completed' },
@@ -1138,7 +1138,7 @@ const services = {
     heroHighlight: 'Secure',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Operational technology (OT) and industrial control systems (ICS) face unique security challenges. Our OT security services bridge the gap between IT and OT to protect critical infrastructure without impacting operational reliability.',
+      'We help organizations bridge IT/OT convergence to reduce risk and ensure compliance. OT Security Services include assessments, program development and managed services to protect critical infrastructure while ensuring uptime and safety.',
     stats: [
       { number: '300%', label: 'increase in OT-targeted attacks since 2023' },
       { number: '200+', label: 'OT/ICS security assessments completed' },
@@ -1231,7 +1231,7 @@ const services = {
     heroHighlight: 'Transform',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'People are both the greatest vulnerability and the strongest defense. Our security awareness programs educate employees to recognize and respond to threats, building a security-first culture across your organization.',
+      'Security Awareness and Education Services deliver comprehensive, customizable training to reduce human-centric risks, tailored for employees and executives.',
     stats: [
       { number: '82%', label: 'of breaches involve the human element' },
       { number: '75%', label: 'reduction in click rates after training' },
@@ -1318,7 +1318,7 @@ const services = {
     heroHighlight: 'Build',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'A well-run SOC is the nerve center of your security program. We help you build, optimize, or outsource SOC capabilities with the right people, processes, and technology.',
+      'We design, optimize and operate modern Security Operations programs. Transforming complex security tools into scalable detection, automation and response capabilities that deliver measurable security performance.',
     stats: [
       { number: '200+', label: 'SOC projects delivered' },
       { number: '85%', label: 'reduction in mean time to detect (MTTD)' },
@@ -1409,7 +1409,7 @@ const services = {
     heroHighlight: 'Fill',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'The cybersecurity talent shortage is real. Our staff augmentation services provide experienced security professionals to supplement your team — from short-term project support to long-term embedded consultants.',
+      'Gain quick access to industry-leading consultants, engineers and analysts. Our flexible, cost-effective executive advisory and cybersecurity staff augmentation services can bridge skill gaps and provide on-demand access to certified expertise to support technology implementation, compliance and strategic security initiatives.',
     stats: [
       { number: '3.5M', label: 'unfilled cybersecurity jobs globally' },
       { number: '500+', label: 'security professionals placed' },
@@ -1494,7 +1494,7 @@ const services = {
     heroHighlight: 'Find',
     heroImage: '/images/services/hero-placeholder.png',
     description:
-      'Vulnerabilities are discovered daily. Our vulnerability management services help you maintain continuous visibility into your attack surface and prioritize remediation based on real-world risk.',
+      'Vulnerability Management (VM) and Penetration Testing (Pen Testing) services help organizations identify, prioritize and remediate security gaps. Go beyond the checkbox exercises and achieve measurable results in risk reduction, no matter where you\'re starting out.',
     stats: [
       { number: '25K+', label: 'new CVEs published annually' },
       { number: '5,000+', label: 'penetration tests conducted' },

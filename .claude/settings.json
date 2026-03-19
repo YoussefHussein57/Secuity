@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(node -e \":*)",
-      "Bash(npm run build)"
+      "Bash(npm run build)",
+      "Bash(grep -E \"^\\\\s{2}''''[a-z-]+'''': \\\\{$\" src/data/services.js)"
     ],
     "additionalDirectories": [
       "d:\\Freelance\\Project1\\WebProject",

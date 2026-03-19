@@ -18,6 +18,7 @@ import Blog from './pages/Blog';
 import Events from './pages/Events';
 import Webinars from './pages/Webinars';
 import Customers from './pages/Customers';
+import VendorPartners from './pages/VendorPartners';
 import ReportIncident from './pages/ReportIncident';
 import NotFound from './pages/NotFound';
 
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="company/why-us" element={<WhyUs />} />
           <Route path="company/careers" element={<Careers />} />
           <Route path="company/customers" element={<Customers />} />
+          <Route path="company/vendor-partners" element={<VendorPartners />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resources" element={<Resources />} />
           <Route path="resources/blog" element={<Blog />} />

@@ -5,7 +5,7 @@
 .navbar-main {
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
   backdrop-filter: blur(8px);
-  background-color: rgba($dark, 0.85);
+  background-color: $dark;
   z-index: 1050;
   height: 80px;
   padding-left: 40px;
@@ -235,16 +235,17 @@
   // Two-column header layout
   &__header-cols {
     display: flex;
+    padding: 0 40px;
 
     .mega-panel__header-left {
       width: 25%;
       border-right: 1px solid rgba($primary, 0.1);
-      padding: 1.5rem 2rem;
+      padding: 1rem 1.5rem 1rem 0;
     }
 
     .mega-panel__header-right {
       flex: 1;
-      padding: 1.5rem 2rem;
+      padding: 1rem 0 1rem 1.5rem;
     }
   }
 
@@ -259,7 +260,7 @@
     background-color: #ffffff !important;
     padding: 1.5rem 40px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
-    max-height: calc(95vh - 220px);
+    max-height: calc(85vh - 220px);
     overflow-y: auto;
 
     &::-webkit-scrollbar {
@@ -808,12 +809,23 @@
 .mega-company {
   &__heading {
     font-family: $font-family-base;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: $fw-bold;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: #000;
     margin-bottom: 1rem;
+
+    &--grit {
+      color: #940503;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+      margin-top: 1rem;
+
+      + .mega-company__program-card .mega-company__program-desc {
+        color: #940503;
+      }
+    }
   }
 
   &__list {
@@ -858,6 +870,15 @@
     margin-top: 2px;
   }
 
+  // Column with border
+  &__col {
+    padding: 0 1.5rem;
+
+    &--border-right {
+      border-right: 1.6px solid rgb(195, 217, 255);
+    }
+  }
+
   // Logo grid
   &__logos {
     display: grid;
@@ -867,68 +888,80 @@
   }
 
   &__logo {
-    border: 1px solid rgba($primary, 0.08);
-    border-radius: $border-radius;
-    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    border: 1px solid rgba(195, 217, 255, 0.5);
+    border-radius: 4px;
+    padding: 0.4rem;
+    height: 70px;
+    overflow: hidden;
 
     img {
-      max-height: 28px;
       max-width: 100%;
-      object-fit: contain;
-      opacity: 0.7;
+      max-height: 100%;
+      object-fit: contain !important;
+      width: auto !important;
+      height: auto !important;
     }
   }
 
   // Programs
-  &__program {
-    display: block;
+  &__program-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
     text-decoration: none;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid rgba($primary, 0.06);
     transition: opacity 0.15s ease;
 
     &:hover {
       opacity: 0.75;
     }
-  }
 
-  &__program-title {
-    display: block;
-    font-weight: $fw-medium;
-    font-size: 15px;
-    color: #000;
+    img {
+      flex-shrink: 0;
+      max-width: 120px;
+      height: auto;
+    }
   }
 
   &__program-desc {
-    display: block;
     font-size: 13px;
     color: #7d7c7c;
-    margin-top: 2px;
+    margin: 0;
     line-height: 1.4;
   }
 
   // Contact info
   &__contact {
     font-size: 14px;
-    color: #7d7c7c;
+    color: #333;
     line-height: 1.5;
+
+    strong {
+      color: #000;
+    }
   }
 
   &__contact-item {
     display: flex;
     align-items: flex-start;
-    gap: 0.6rem;
-    margin-bottom: 0.75rem;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
 
-    .bi {
-      font-size: 1rem;
-      color: $gradient-start;
-      margin-top: 2px;
+    img {
       flex-shrink: 0;
+    }
+  }
+
+  &__contact-link {
+    color: $gradient-start;
+    text-decoration: none;
+    font-weight: $fw-medium;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -940,7 +973,7 @@
 .mega-resources {
   &__heading {
     font-family: $font-family-base;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: $fw-bold;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -990,12 +1023,19 @@
     margin-top: 2px;
   }
 
-  // Featured event card
-  &__featured {
+  // Column with border
+  &__col {
+    padding: 0 1.5rem;
+
+    &--border-right {
+      border-right: 1.6px solid rgb(195, 217, 255);
+    }
+  }
+
+  // Event card
+  &__event-card {
     display: block;
     text-decoration: none;
-    border-radius: $border-radius;
-    overflow: hidden;
     transition: opacity 0.15s ease;
 
     &:hover {
@@ -1003,40 +1043,67 @@
     }
   }
 
-  &__featured-img {
-    background: linear-gradient(135deg, $primary, $gradient-start);
-    padding: 2rem 1.5rem;
-    color: $white;
-    text-align: center;
-    border-radius: $border-radius;
+  &__event-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
 
-    .bi {
-      display: block;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
+  &__event-caption {
+    display: block;
+    font-size: 14px;
+    font-weight: $fw-semibold;
+    color: #000;
+  }
 
-    span {
-      font-size: 0.85rem;
-      font-weight: $fw-semibold;
+  // Blog — primary (large image on top)
+  &__blog-primary {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.75rem;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.75;
     }
   }
 
-  // Blog items
+  &__blog-primary-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+
+  // Blog — secondary (thumbnail + title side by side)
   &__blog-item {
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
     text-decoration: none;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid rgba($primary, 0.06);
+    margin-bottom: 0.75rem;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__blog-img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  &__blog-title {
     font-size: 14px;
     font-weight: $fw-medium;
     color: #000;
     line-height: 1.4;
-    transition: color 0.15s ease;
-
-    &:hover {
-      color: $gradient-start;
-    }
   }
 
   // Featured resource items
@@ -1047,10 +1114,6 @@
     text-decoration: none;
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba($primary, 0.06);
-    font-size: 14px;
-    font-weight: $fw-medium;
-    color: #000;
-    line-height: 1.4;
     transition: opacity 0.15s ease;
 
     &:hover {
@@ -1059,19 +1122,18 @@
   }
 
   &__featured-thumb {
-    width: 56px;
-    height: 40px;
+    width: 100px;
+    height: 65px;
     border-radius: 4px;
-    background: linear-gradient(135deg, $primary, darken($gradient-start, 10%));
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
     flex-shrink: 0;
+  }
 
-    .bi {
-      font-size: 1rem;
-      color: $white;
-    }
+  &__featured-title {
+    font-size: 14px;
+    font-weight: $fw-medium;
+    color: #000;
+    line-height: 1.4;
   }
 }
 

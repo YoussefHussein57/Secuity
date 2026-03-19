@@ -70,6 +70,13 @@
   font-family: $font-family-base;
 }
 
+// Large button variant
+.btn-lg {
+  padding: 18px 30px !important;
+  font-size: 19px !important;
+  font-weight: $fw-bold !important;
+}
+
 // CTA arrow animation
 .btn-cta {
   display: inline-flex;

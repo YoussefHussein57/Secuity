@@ -1,0 +1,199 @@
+// ===========================================
+// Careers Page — matches GuidePoint /careers/
+// ===========================================
+
+.careers-page {
+
+  // Disable angled dividers
+  .section::before {
+    display: none !important;
+  }
+
+  .hero--page + .section {
+    margin-top: -7rem;
+    padding-top: 120px !important;
+  }
+
+  .section + .section {
+    margin-top: 0;
+  }
+
+  // Hero overrides
+  .hero--page {
+    .hero__title {
+      font-size: 52px;
+      font-weight: 500;
+      min-width: auto;
+      line-height: 1.2;
+    }
+
+    .hero__subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
+      max-width: 900px;
+    }
+  }
+
+  // ---- Shared section title (50px/500w like GP) ----
+  .careers-section-title {
+    font-family: $font-family-heading;
+    font-size: 50px;
+    font-weight: $fw-medium;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  // Gradient underline
+  .gradient-underline {
+    width: 200px;
+    height: 4px;
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+    border-radius: 2px;
+  }
+
+  // ---- "We are a Team" section ----
+  .section--dark {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  // ---- Values section — 2x2 cards, NO heading ----
+  .careers-values {
+    padding-top: 0 !important;
+    padding-bottom: 80px !important;
+  }
+
+  .careers-value-card {
+    padding: 1rem 0.5rem;
+
+    &__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__icon {
+      font-size: 2.5rem;
+      color: $gradient-end;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    &__title {
+      font-family: $font-family-heading;
+      font-size: 27px;
+      font-weight: $fw-bold;
+      color: $gradient-end;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    &__desc {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $white;
+      margin: 0;
+    }
+  }
+
+  // ---- "Why Join Us" section (light blue bg) ----
+  .careers-why-join {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  // ---- "Perks" section (white bg) ----
+  .careers-perks {
+    background: $white;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+
+    .careers-section-title {
+      color: $primary;
+    }
+
+    &__text {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: $white;
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+
+      // Override — text is dark on white bg
+      color: $primary;
+
+      .text-accent-box {
+        background: $white;
+        color: $primary;
+        border-bottom: 2px solid $gradient-start;
+        padding: 0.05em 0.15em;
+      }
+    }
+  }
+
+  // ---- GPSU section ----
+  .section--indigo-light {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  // ---- Open Positions (white bg) ----
+  .careers-openings {
+    background: $white;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+
+    .careers-section-title {
+      color: $primary;
+    }
+  }
+
+  .careers-filter-select {
+    min-width: 200px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+  }
+
+  // ---- Job Card — blue left border, white bg ----
+  .careers-job-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    background: $white;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid $gradient-start;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    &__title {
+      font-size: 16px;
+      font-weight: $fw-medium;
+      color: $primary;
+    }
+
+    &__chevron {
+      font-size: 1.25rem;
+      color: $gradient-start;
+    }
+  }
+
+  // ---- Light section text colors ----
+  .section--light {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+
+    .careers-section-title {
+      color: $primary;
+    }
+  }
+}

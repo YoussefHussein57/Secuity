@@ -1,0 +1,120 @@
+// ===========================================
+// Vendor Partners Page — matches GuidePoint /vendor-partners/
+// ===========================================
+
+.vendor-partners-page {
+
+  // Disable angled dividers
+  .section::before {
+    display: none !important;
+  }
+
+  .hero--page + .section {
+    margin-top: -7rem;
+    padding-top: 120px !important;
+  }
+
+  .section + .section {
+    margin-top: 0;
+  }
+
+  // Hero
+  .hero--page {
+    .hero__title {
+      font-size: 52px;
+      font-weight: 500;
+      min-width: auto;
+      line-height: 1.2;
+    }
+
+    .hero__subtitle {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.5;
+      max-width: 900px;
+    }
+  }
+
+  // Shared section title
+  .vp-section-title {
+    font-family: $font-family-heading;
+    font-size: 50px;
+    font-weight: $fw-medium;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  // Gradient underline
+  .gradient-underline {
+    width: 200px;
+    height: 4px;
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+    border-radius: 2px;
+  }
+
+  // ---- Section padding ----
+  .section--dark,
+  .section--light {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  // ---- Partnerships 2-col ----
+  .vp-partnerships {
+    padding-top: 120px !important;
+  }
+
+  // ---- Advisor cards ----
+  .vp-advisor {
+    .card-gradient__title {
+      color: $gradient-end;
+    }
+  }
+
+  // ---- Featured Partners logos ----
+  .vp-partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: $white;
+    border: 1px solid #e2e8f0;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease;
+
+    span {
+      font-family: $font-family-heading;
+      font-size: 14px;
+      font-weight: $fw-bold;
+      color: $primary;
+      text-align: center;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // ---- Services accordion section ----
+  .vp-services {
+    &__label {
+      font-size: 15px;
+      font-weight: $fw-bold;
+      text-transform: uppercase;
+      letter-spacing: 1.93px;
+      color: $gradient-end;
+      margin-bottom: 1rem;
+    }
+  }
+
+  // Service accordion border wrap (matching government page style)
+  .service-accordion-wrap {
+    border: 1px solid rgba($gradient-start, 0.25);
+    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+  }
+
+  .service-accordion__item {
+    border-bottom: none;
+  }
+}

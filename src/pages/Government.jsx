@@ -8,6 +8,31 @@ import AdditionalResources from '../components/sections/AdditionalResources';
 import BeInformed from '../components/sections/BeInformed';
 import { servicesList } from '../data/services';
 
+// Government-specific accordion descriptions (from GuidePoint gov page)
+const govDescriptions = {
+  'Application Security': 'The convergence of responsibility for any organization defining their application security should result in an operational state where every task or test ensures that all software releases are secure.',
+  'Artificial Intelligence (AI)': 'Safely harness the power and potential of AI. GuidePoint Security helps organizations build secure AI strategies and safely adopt and optimize AI solutions to protect what matters.',
+  'Cloud Security': 'IT workloads are moving to the cloud faster than ever and in order to lead your organization to a secure cloud, your security practices must be ready to address this shift.',
+  'Data Security & Privacy': 'Introducing more data security controls without affecting business productivity is challenging. We can help you improve data protection in a way that best fits your needs and environment.',
+  'Email Security': 'Email is one of the most commonly used communication tools and one of the most targeted attack vectors. Our team can help you ensure the protection of email content and accounts from unauthorized access, loss or compromise.',
+  'Endpoint Security': 'As endpoints continue to evolve, you need to identify and manage the right endpoint security technologies to protect your organization.',
+  'Governance, Risk & Compliance (GRC)': 'We help you build and maintain a cybersecurity program that is aligned with industry best practices, regulations and compliance requirements.',
+  'Identity & Access Management (IAM)': 'Our team helps you evaluate and implement IAM services that best fit your business to protect your users, applications and data.',
+  'Incident Response (IR) & Threat Intelligence (TI)': 'Our team helps you effectively identify and respond to incidents early, minimizing their impact and reducing the cost of recovery.',
+  'Managed Security Services': 'We provide skilled resources to manage your environment so you can focus on your mission.',
+  'Network & Infrastructure Security': 'We help you ensure the integrity and security of your physical and virtual networks.',
+  'OT, IoT, and IIoT Security': 'Secure your critical infrastructure and connected devices from threats while validating your security compliance.',
+  'Security Awareness & Education': 'Instructor-led security services provide access to key technologies, specifically customized to address your organization\'s needs.',
+  'Security Operations Center (SOC) Services': 'Unlock the power of the tools within your SOC to gain greater visibility into information security events, reduce the time to remediate incidents and improve your overall security posture.',
+  'Staff Augmentation': 'Our team of industry-leading consultants, engineers and analysts are ready to support your current staff and address your cybersecurity requirements.',
+  'Vulnerability Management & Penetration Testing': 'Identify and prioritize vulnerabilities across your environment to reduce risk and strengthen your security posture.',
+};
+
+const govServicesList = servicesList.map(s => ({
+  ...s,
+  description: govDescriptions[s.title] || s.description,
+}));
+
 const partnerBlocks = [
   {
     title: 'Solution Provider',
@@ -33,19 +58,22 @@ const partnerBlocks = [
 
 const approachBlocks = [
   {
+    icon: 'bi-search',
     title: 'Expose any Potential Risk',
     description:
-      'We hold ourselves accountable, become experts and take the initiative to identify threats and vulnerabilities across your environment before adversaries can exploit them.',
+      'GuidePoint is only as great of a place to work as we make it. We hold ourselves accountable, become experts and take the initiative to get things done.',
   },
   {
+    icon: 'bi-list-task',
     title: 'Align & Optimize Resources',
     description:
-      'We push ourselves to take calculated risks and exceed expectations. We do what\'s necessary and align your security investments with your mission-critical priorities.',
+      '\u201CYou miss 100% of the shots you don\u2019t take,\u201D so we always push ourselves to take calculated risks and exceed our own expectations. We do what\u2019s necessary to \u201CWow Them,\u201D and we have fun doing it. We realize that only we can control whether or not we\u2019re going to have a great day, so we choose to make it one.',
   },
   {
+    icon: 'bi-infinity',
     title: 'Integrate Best-Fit Solutions',
     description:
-      'We strive to be a long-term partner and make our customers\' experience a success, enabling and securing their business with tailored, best-fit security solutions.',
+      'We strive to be a long-term partner and make our customers\u2019 experience a success, enabling and securing their business. We realize that we all have customers, whether they\u2019re our clients, coworkers, vendors or others.',
   },
 ];
 
@@ -66,7 +94,7 @@ export default function Government() {
 
 
       {/* 2–3. Dark Split + Partner — single section, no separator */}
-      <section className="section section--dark dark-split govt-gradient">
+      <section className="section section--dark dark-split govt-gradient govt-partner">
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
@@ -75,8 +103,8 @@ export default function Government() {
                   <h2 className="use-cases__title text-start">
                     Security Solutions <span className="text-accent-box">Tailored</span> to Your Specific Mission
                   </h2>
-                  <p className="text-white-50" style={{ lineHeight: 1.8 }}>
-                    Our highly-certified team of practitioners has decades of expertise helping federal government organizations plan, build and run effective cybersecurity programs. Our white-glove approach helps us understand your agency's unique challenges and requirements, evaluate your environment and recommend tailored solutions that drive your mission.
+                  <p className="text-white" style={{ fontSize: 18, lineHeight: 1.5 }}>
+                    GuidePoint Security Government Solutions is a wholly-owned subsidiary of GuidePoint Security LLC. Our highly-certified team of practitioners has decades of expertise helping federal government organizations plan, build and run effective cybersecurity programs. Our white-glove approach helps us understand your agency&apos;s unique challenges and requirements, evaluate your environment and recommend tailored solutions that drive your mission.
                   </p>
                 </div>
               </AnimatedSection>
@@ -95,13 +123,13 @@ export default function Government() {
         </div>
 
         {/* Partner in the Cybersecurity Battle — 4 GradientCards */}
-        <div className="container" style={{ paddingTop: '6rem' }}>
+        <div className="container" style={{ paddingTop: '4rem' }}>
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
-              <h2 className="use-cases__title">
+              <h2 className="use-cases__title" style={{ maxWidth: 1000 }}>
                 Your <span className="text-accent-box">Partner</span> in the Cybersecurity Battle
               </h2>
-              <p className="text-white-50 mx-auto" style={{ maxWidth: 800, lineHeight: 1.8 }}>
+              <p className="text-white mx-auto" style={{ maxWidth: 1110, fontSize: 20, lineHeight: 1.5 }}>
                 We know that when it comes to cybersecurity there is no one-size-fits-all approach. We work side-by-side with you to solve your most complex security challenges and provide a multitude of service and solution offerings to fit your specific needs.
               </p>
             </div>
@@ -112,7 +140,6 @@ export default function Government() {
                 <GradientCard
                   title={b.title}
                   description={b.description}
-                  layout="centered"
                   accent="bottom"
                   titleLg
                 />
@@ -122,7 +149,7 @@ export default function Government() {
         </div>
       </section>
 
-      {/* 4. Contract Vehicles — text left, image right (edge-bleed) */}
+      {/* 4. Contract Vehicles — text left, image right */}
       <section className="section section--dark dark-split govt-gradient">
         <div className="container">
           <div className="row g-5 align-items-center">
@@ -132,15 +159,15 @@ export default function Government() {
                   <h2 className="use-cases__title text-start">
                     <span className="text-accent-box">Facilitate</span> Security Procurement with Our Contract Vehicles
                   </h2>
-                  <p className="text-white-50" style={{ lineHeight: 1.8 }}>
-                    Our team has decades of experience and understands the need for fast and flexible contract vehicles. We have access to a wide range of programs, can satisfy small business requirements and offer solutions through teaming agreements on virtually any contract vehicle.
+                  <p className="text-white" style={{ fontSize: 18, lineHeight: 1.5 }}>
+                    The GuidePoint Security Government Solutions team has decades of experience and understands the need for fast and flexible contract vehicles. We have access to a wide range of programs, can satisfy small business requirements and offer solutions through teaming agreements on virtually any contract vehicle. Our goal is to make the procurement process as simple as possible for you with one-stop-shopping for all your cybersecurity solution needs.
                   </p>
                   <div className="d-flex flex-wrap gap-3 mt-4">
                     <Link to="/government/gsa-contract" className="btn btn-accent btn-cta">
-                      GSA Contract <i className="bi bi-arrow-right"></i>
+                      GSA Contract
                     </Link>
                     <Link to="/government/dod-esi" className="btn btn-accent btn-cta">
-                      DoD ESI <i className="bi bi-arrow-right"></i>
+                      DoD ESI
                     </Link>
                   </div>
                 </div>
@@ -149,7 +176,7 @@ export default function Government() {
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-right">
                 <div className="dark-split__image dark-split__image--right">
-                  <img src="/placeholder-split.svg" alt="Contract vehicles" />
+                  <img src="/overview-icon.png" alt="Contract vehicles" />
                 </div>
               </AnimatedSection>
             </div>
@@ -162,18 +189,18 @@ export default function Government() {
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
-              <p className="section-header__label">Services & Technologies</p>
+              <p className="section-header__label pb-3">Services &amp; Technologies</p>
               <h2 className="use-cases__title">
                 <span className="text-accent-box">Expertise</span> Based on Reality — Not Theory
               </h2>
-              <p className="text-white-50 mx-auto" style={{ maxWidth: 800, lineHeight: 1.8 }}>
-                The reality is that every organization's cybersecurity ecosystem requires a custom approach to the threat landscape. That's why we analyze, compare and recommend best-fit security solutions on a tailored basis.
+              <p className="text-white mx-auto" style={{ maxWidth: 800, fontSize: 20, lineHeight: 1.5 }}>
+                The reality is that every organization&apos;s cybersecurity ecosystem requires a custom approach to the threat landscape. That&apos;s why we analyze, compare and recommend best-fit security solutions on a tailored basis.
               </p>
             </div>
           </AnimatedSection>
           <AnimatedSection animation="animate-on-scroll">
             <div className="service-accordion-wrap">
-              <ServiceAccordion services={servicesList} />
+              <ServiceAccordion services={govServicesList} />
             </div>
           </AnimatedSection>
         </div>
@@ -183,11 +210,11 @@ export default function Government() {
       <Certifications variant="centered" />
 
       {/* 7. Our Approach as Your Trusted Advisor */}
-      <section className="section section--dark govt-gradient">
+      <section className="section section--dark govt-gradient govt-approach-section">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
-              <h2 className="use-cases__title">
+              <h2 className="use-cases__title govt-approach__title">
                 Our Approach as Your Trusted Advisor
               </h2>
             </div>
@@ -196,6 +223,7 @@ export default function Government() {
             {approachBlocks.map((b) => (
               <div className="col-lg-4" key={b.title}>
                 <GradientCard
+                  icon={b.icon}
                   title={b.title}
                   description={b.description}
                   layout="centered"
@@ -207,7 +235,7 @@ export default function Government() {
           </AnimatedSection>
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mt-5 govt-approach__tagline">
-              <h3 className="use-cases__title" style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)' }}>
+              <h3 className="use-cases__title" style={{ fontSize: 50 }}>
                 We Take That Approach with <span className="text-accent-box">Every</span> Service We Provide
               </h3>
             </div>

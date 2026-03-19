@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+// Logo removed temporarily
 
 const companyLinks = [
   { label: 'Why Cyber', path: '/company', bold: true },

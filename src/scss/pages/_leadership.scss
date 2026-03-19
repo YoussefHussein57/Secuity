@@ -1,0 +1,115 @@
+// ===========================================
+// Leadership Page — matches GuidePoint /leadership-team/
+// ===========================================
+
+.leadership-page {
+
+  // Disable angled dividers
+  .section::before {
+    display: none !important;
+  }
+
+  .hero--page + .section {
+    margin-top: -7rem;
+    padding-top: 120px !important;
+  }
+
+  .section + .section {
+    margin-top: 0;
+  }
+
+  // Hero title override
+  .hero--page .hero__title {
+    font-size: 52px;
+    font-weight: 500;
+    min-width: auto;
+  }
+
+  // ---- Section title (Security Partners / Corporate Leadership) ----
+  .leadership-section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+
+    &__title {
+      font-family: $font-family-heading;
+      font-size: 44px;
+      font-weight: $fw-medium;
+      color: $white;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  // Gradient underline below section title
+  .gradient-underline {
+    width: 200px;
+    height: 4px;
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+    border-radius: 2px;
+  }
+
+  // ---- Leader Card ----
+  .leader-card {
+    background: $white;
+    border-radius: 0;
+    padding: 2rem 1.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    height: 100%;
+
+    &:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    &__name {
+      font-family: $font-family-heading;
+      font-size: 22px;
+      font-weight: $fw-medium;
+      color: #5b5b6b;
+      margin-bottom: 0.25rem;
+    }
+
+    &__role {
+      font-size: 18px;
+      font-weight: 400;
+      color: #616161;
+      margin-bottom: 0;
+    }
+
+    &__toggle {
+      font-size: 1.5rem;
+      color: #5b5b6b;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    &__body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+
+      &--open {
+        max-height: 600px;
+      }
+    }
+
+    &__bio {
+      padding-top: 1.5rem;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 1.5rem;
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #5b5b6b;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

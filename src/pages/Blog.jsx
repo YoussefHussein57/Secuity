@@ -1,57 +1,216 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import BeInformed from '../components/sections/BeInformed';
 
-const posts = [
-  { title: 'Understanding Zero Trust Architecture in 2026', date: 'March 1, 2026', category: 'Cloud Security', excerpt: 'Zero trust is no longer optional. Learn how organizations are implementing zero trust principles across hybrid environments.' },
-  { title: 'GRIT Ransomware Report: Key Findings', date: 'February 15, 2026', category: 'Threat Intelligence', excerpt: 'Our GRIT team analyzes the latest ransomware trends, attack patterns, and defense strategies from the past year.' },
-  { title: 'Top 5 IAM Mistakes That Lead to Breaches', date: 'February 8, 2026', category: 'IAM', excerpt: 'Identity misconfigurations remain a leading cause of breaches. Here are the five most common mistakes and how to fix them.' },
-  { title: 'AI in Cybersecurity: Opportunities and Risks', date: 'January 28, 2026', category: 'AI Security', excerpt: 'As AI transforms security operations, it also introduces new attack surfaces. Balancing the benefits with the risks.' },
-  { title: 'Building an Effective SOC: People, Process, Technology', date: 'January 20, 2026', category: 'SOC', excerpt: 'A SOC is only as good as its weakest link. Learn how to build and mature your security operations center.' },
-  { title: 'The State of OT Security in Critical Infrastructure', date: 'January 10, 2026', category: 'OT Security', excerpt: 'OT environments face increasing threats. We examine the current state and recommended strategies for industrial security.' },
+const categories = ['All', 'Awards', 'News', 'In the Media', 'Press Releases', 'Research'];
+const newsTypes = ['All', 'Company News', 'Industry News', 'Threat Intelligence'];
+
+const articles = [
+  {
+    title: 'Named the Palo Alto Networks 2025 North America Growth Partner of the Year',
+    category: 'Awards',
+    newsType: 'Company News',
+    readTime: '2 min read',
+    image: 'https://www.guidepointsecurity.com/wp-content/uploads/2022/03/Ernest-Dunn-C78A7507.jpg',
+  },
+  {
+    title: 'Appoints Shawn Harrs as Chief Information Officer',
+    category: 'News',
+    newsType: 'Company News',
+    readTime: '2 min read',
+    image: '',
+  },
+  {
+    title: 'Ransomware Hammers Manufacturing Sector',
+    category: 'In the Media',
+    newsType: 'Threat Intelligence',
+    readTime: '3 min read',
+    image: '',
+  },
+  {
+    title: 'Nation-State Hackers Hit Businesses for Commercial Edge',
+    category: 'In the Media',
+    newsType: 'Industry News',
+    readTime: '4 min read',
+    image: '',
+  },
+  {
+    title: 'GRIT Ransomware Report: Q4 2025 Key Findings and Analysis',
+    category: 'Research',
+    newsType: 'Threat Intelligence',
+    readTime: '5 min read',
+    image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/08/inc-5000-logo.png',
+  },
+  {
+    title: 'Recognized as a CRN Tech Elite 250 Solution Provider for 2025',
+    category: 'Awards',
+    newsType: 'Company News',
+    readTime: '2 min read',
+    image: '',
+  },
+  {
+    title: 'Top 5 IAM Mistakes That Lead to Breaches',
+    category: 'Research',
+    newsType: 'Threat Intelligence',
+    readTime: '4 min read',
+    image: '',
+  },
+  {
+    title: 'AI in Cybersecurity: Opportunities and Risks',
+    category: 'In the Media',
+    newsType: 'Industry News',
+    readTime: '3 min read',
+    image: '',
+  },
+  {
+    title: 'Building an Effective SOC: People, Process, Technology',
+    category: 'Research',
+    newsType: 'Industry News',
+    readTime: '5 min read',
+    image: '',
+  },
+  {
+    title: 'Named to Inc. 5000 List of Fastest-Growing Private Companies',
+    category: 'Awards',
+    newsType: 'Company News',
+    readTime: '2 min read',
+    image: '',
+  },
+  {
+    title: 'The State of OT Security in Critical Infrastructure',
+    category: 'Research',
+    newsType: 'Threat Intelligence',
+    readTime: '4 min read',
+    image: '',
+  },
+  {
+    title: 'Expands Federal Practice with New Government Solutions Office',
+    category: 'Press Releases',
+    newsType: 'Company News',
+    readTime: '3 min read',
+    image: '',
+  },
 ];
 
 export default function Blog() {
-  return (
-    <>
-      <Hero
-        title="Blog"
-        subtitle="Expert insights, threat analysis, and cybersecurity best practices from our team."
-        variant="page"
-        ctaText=""
-      />
+  const [catFilter, setCatFilter] = useState('All');
+  const [typeFilter, setTypeFilter] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showAll, setShowAll] = useState(false);
 
-      <section className="section section--light">
+  const filtered = articles.filter((a) => {
+    const matchesCat = catFilter === 'All' || a.category === catFilter;
+    const matchesType = typeFilter === 'All' || a.newsType === typeFilter;
+    const matchesSearch = !searchQuery || a.title.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCat && matchesType && matchesSearch;
+  });
+
+  const visible = showAll ? filtered : filtered.slice(0, 8);
+
+  return (
+    <div className="newsroom-page">
+      {/* ===== HERO — Simple dark bg with centered title ===== */}
+      <section className="newsroom-hero">
+        <h1 className="newsroom-hero__title">Newsroom</h1>
+      </section>
+
+      {/* ===== FILTER BAR ===== */}
+      <section className="newsroom-filters">
+        <div className="container">
+          <div className="d-flex flex-wrap align-items-center gap-3">
+            <i className="bi bi-sliders newsroom-filters__icon"></i>
+
+            <div className="newsroom-filters__dropdown">
+              <select
+                className="form-select"
+                value={catFilter}
+                onChange={(e) => setCatFilter(e.target.value)}
+              >
+                <option value="All">Category</option>
+                {categories.filter(c => c !== 'All').map((c) => (
+                  <option key={c} value={c}>{c}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="newsroom-filters__dropdown">
+              <select
+                className="form-select"
+                value={typeFilter}
+                onChange={(e) => setTypeFilter(e.target.value)}
+              >
+                <option value="All">News Type</option>
+                {newsTypes.filter(t => t !== 'All').map((t) => (
+                  <option key={t} value={t}>{t}</option>
+                ))}
+              </select>
+            </div>
+
+            <Link to="/contact" className="btn btn-accent newsroom-filters__media-btn">
+              Media Kit
+            </Link>
+
+            <div className="ms-auto newsroom-filters__search">
+              <input
+                type="text"
+                placeholder="Search Articles..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="newsroom-filters__search-input"
+              />
+              <i className="bi bi-search newsroom-filters__search-icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== ARTICLES GRID ===== */}
+      <section className="newsroom-articles">
         <div className="container">
           <AnimatedSection animation="stagger-children" className="row g-4">
-            {posts.map((post) => (
-              <div className="col-md-6 col-lg-4" key={post.title}>
-                <div
-                  className="p-4 rounded-4 h-100 d-flex flex-column"
-                  style={{ border: '1px solid #e2e8f0', transition: 'border-color 0.3s ease' }}
-                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#4b4fff'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e2e8f0'; }}
-                >
-                  <span className="badge mb-2" style={{ background: 'rgba(75, 79, 255, 0.08)', color: '#4b4fff', alignSelf: 'flex-start' }}>
-                    {post.category}
-                  </span>
-                  <h6 className="fw-bold">{post.title}</h6>
-                  <p className="text-muted small flex-grow-1">{post.excerpt}</p>
-                  <div className="d-flex justify-content-between align-items-center mt-2">
-                    <small className="text-muted">{post.date}</small>
-                    <Link to="/resources" className="text-decoration-none" style={{ color: '#4b4fff', fontSize: '0.85rem', fontWeight: 600 }}>
-                      Read More <i className="bi bi-arrow-right"></i>
-                    </Link>
+            {visible.map((article, i) => (
+              <div className="col-md-6 col-lg-4" key={`${article.title}-${i}`}>
+                <Link to="/resources" className="newsroom-card">
+                  <div className="newsroom-card__image">
+                    {article.image ? (
+                      <img src={article.image} alt={article.title} />
+                    ) : (
+                      <div className="newsroom-card__logo">
+                        <span className="newsroom-card__logo-text">CYBER<br />SECURITY</span>
+                      </div>
+                    )}
                   </div>
-                </div>
+                  <div className="newsroom-card__body">
+                    <span className="newsroom-card__badge">{article.category.toUpperCase()}</span>
+                    <h3 className="newsroom-card__title">{article.title}</h3>
+                    <div className="newsroom-card__footer">
+                      <span className="newsroom-card__read-more">Read More</span>
+                      <span className="newsroom-card__read-time">
+                        <i className="bi bi-clock"></i> {article.readTime}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
               </div>
             ))}
           </AnimatedSection>
+
+          {!showAll && filtered.length > 8 && (
+            <div className="text-center mt-5">
+              <button
+                className="btn btn-outline-dark"
+                onClick={() => setShowAll(true)}
+                style={{ borderRadius: 0 }}
+              >
+                View More +
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
       <BeInformed />
-    </>
+    </div>
   );
 }
