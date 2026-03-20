@@ -3,8 +3,19 @@ import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import BeInformed from '../components/sections/BeInformed';
 
-const categories = ['All', 'Awards', 'News', 'In the Media', 'Press Releases', 'Research'];
-const newsTypes = ['All', 'Company News', 'Industry News', 'Threat Intelligence'];
+const categories = [
+  'AI Security', 'Application Security', 'Awards', 'Blog', 'Cloud Security',
+  'Continuous Threat Exposure Management (CTEM)', 'Cybersecurity', 'Cybersecurity Technology',
+  'Data Security', 'Email Security', 'Endpoint Security', 'Expert Spotlight',
+  'Federal', 'Giving Back', 'Governance, Risk & Compliance', 'GRIT Blog',
+  'Identity & Access Management', 'Incident Response & Threat Intelligence',
+  'Managed Security Services', 'Network & Infrastructure Security', 'News',
+  'OT Security Services', 'Overview', 'Security Analytics',
+  'Security Awareness & Education', 'Security Operations', 'Technical',
+  'Threat & Attack Simulation', 'Threat Advisory',
+  'Vulnerability Management & Penetration Testing',
+];
+const newsTypes = ['News', 'Press Release'];
 
 const articles = [
   {
@@ -98,6 +109,8 @@ export default function Blog() {
   const [typeFilter, setTypeFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [showAll, setShowAll] = useState(false);
+  const [catOpen, setCatOpen] = useState(false);
+  const [typeOpen, setTypeOpen] = useState(false);
 
   const filtered = articles.filter((a) => {
     const matchesCat = catFilter === 'All' || a.category === catFilter;
@@ -122,29 +135,21 @@ export default function Blog() {
             <i className="bi bi-sliders newsroom-filters__icon"></i>
 
             <div className="newsroom-filters__dropdown">
-              <select
-                className="form-select"
-                value={catFilter}
-                onChange={(e) => setCatFilter(e.target.value)}
+              <button
+                className="newsroom-filters__toggle"
+                onClick={() => { setCatOpen(!catOpen); setTypeOpen(false); }}
               >
-                <option value="All">Category</option>
-                {categories.filter(c => c !== 'All').map((c) => (
-                  <option key={c} value={c}>{c}</option>
-                ))}
-              </select>
+                Category <i className={`bi bi-chevron-${catOpen ? 'up' : 'down'}`}></i>
+              </button>
             </div>
 
             <div className="newsroom-filters__dropdown">
-              <select
-                className="form-select"
-                value={typeFilter}
-                onChange={(e) => setTypeFilter(e.target.value)}
+              <button
+                className="newsroom-filters__toggle"
+                onClick={() => { setTypeOpen(!typeOpen); setCatOpen(false); }}
               >
-                <option value="All">News Type</option>
-                {newsTypes.filter(t => t !== 'All').map((t) => (
-                  <option key={t} value={t}>{t}</option>
-                ))}
-              </select>
+                News Type <i className={`bi bi-chevron-${typeOpen ? 'up' : 'down'}`}></i>
+              </button>
             </div>
 
             <Link to="/contact" className="btn btn-accent newsroom-filters__media-btn">
@@ -162,6 +167,48 @@ export default function Blog() {
               <i className="bi bi-search newsroom-filters__search-icon"></i>
             </div>
           </div>
+
+          {/* Category panel */}
+          {catOpen && (
+            <div className="newsroom-filters__panel">
+              <button
+                className={`newsroom-filters__panel-item ${catFilter === 'All' ? 'active' : ''}`}
+                onClick={() => { setCatFilter('All'); setCatOpen(false); }}
+              >
+                ALL
+              </button>
+              {categories.map((c) => (
+                <button
+                  key={c}
+                  className={`newsroom-filters__panel-item ${catFilter === c ? 'active' : ''}`}
+                  onClick={() => { setCatFilter(c); setCatOpen(false); }}
+                >
+                  {c.toUpperCase()}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* News Type panel */}
+          {typeOpen && (
+            <div className="newsroom-filters__panel newsroom-filters__panel--small">
+              <button
+                className={`newsroom-filters__panel-item ${typeFilter === 'All' ? 'active' : ''}`}
+                onClick={() => { setTypeFilter('All'); setTypeOpen(false); }}
+              >
+                ALL
+              </button>
+              {newsTypes.map((t) => (
+                <button
+                  key={t}
+                  className={`newsroom-filters__panel-item ${typeFilter === t ? 'active' : ''}`}
+                  onClick={() => { setTypeFilter(t); setTypeOpen(false); }}
+                >
+                  {t.toUpperCase()}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

@@ -17,6 +17,7 @@ export default function Hero({
   variant = 'default',
   showNetwork = true,
   iconImage,
+  className: extraClass = '',
 }) {
   const [loaded, setLoaded] = useState(false);
 
@@ -44,7 +45,7 @@ export default function Hero({
 
   return (
     <section
-      className={`hero text-white ${variantClass}`}
+      className={`hero text-white ${variantClass} ${extraClass}`}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {showNetwork && <NetworkBackground />}

@@ -210,6 +210,23 @@
   }
 }
 
+// ---- Global gradient underlines ----
+// Fixed-width centered underline
+.gradient-underline {
+  width: 200px;
+  height: 10px;
+  background: linear-gradient(90deg, $gradient-start, $gradient-end);
+  border-radius: 2px;
+}
+
+// Full-width underline spanning the text (wrap text in this span)
+.gradient-underline-text {
+  display: inline-block;
+  padding-bottom: 12px;
+  border-bottom: 10px solid transparent;
+  border-image: linear-gradient(90deg, $gradient-start, $gradient-end) 1;
+}
+
 .section-split {
   &__image {
     border-radius: $border-radius-lg;

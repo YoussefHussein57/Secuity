@@ -4,7 +4,6 @@ import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import GradientCard from '../components/sections/GradientCard';
 import GPSUniversity from '../components/sections/GPSUniversity';
-import AdditionalResources from '../components/sections/AdditionalResources';
 import BeInformed from '../components/sections/BeInformed';
 
 const values = [
@@ -74,19 +73,21 @@ export default function Careers() {
         ctaText="Apply"
         ctaLink="#openings"
         variant="page"
-        bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Identity_and_Access_Management_IAM.png"
+        bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Page_OT_Security.png"
+        showNetwork={false}
+        className="d-flex align-items-center justify-content-center"
       />
 
-      {/* ===== WE ARE A TEAM — Photo left, Text right (Dark) ===== */}
-      <section className="section section--dark">
-        <div className="container">
+      {/* ===== WE ARE A TEAM — Video left, Text right (Dark) ===== */}
+      <section className="section section--dark" style={{ padding: '80px 40px 0' }}>
+        <div className="container pt-lg-5">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-left">
                 <div className="ratio ratio-16x9 overflow-hidden">
                   <img
-                    src="https://www.guidepointsecurity.com/wp-content/uploads/2022/04/C78A7590.jpg"
-                    alt="Team"
+                    src="https://embed-ssl.wistia.com/deliveries/2c993b90d2f35ffbceeb5cda06aa87c5.webp?image_crop_resized=1920x1080"
+                    alt="Team of Certified Experts"
                     className="w-100 h-100"
                     style={{ objectFit: 'cover' }}
                   />
@@ -99,11 +100,13 @@ export default function Careers() {
                   We are a Team<br />of <span className="text-accent-box">Certified</span> Experts
                 </h2>
                 <p className="text-white" style={{ fontSize: 18, lineHeight: 1.5 }}>
-                  Our team of highly-certified security practitioners leverages its deep expertise
-                  to assess an organization&apos;s risk, align and optimize resources and recommend
-                  best-fit security technologies based on a rigorous vetting process. More than
-                  half of the cabinet-level agencies within the U.S. Federal Government and a
-                  third of Fortune 500 companies rely on us to deliver robust solutions.
+                  Our team of highly-certified security practitioners leverages its deep
+                  expertise to assess an organization&apos;s risk, align and optimize resources
+                  and recommend best-fit security technologies based on a rigorous vetting
+                  process. More than half of the cabinet-level agencies within the U.S.
+                  Federal Government and a third of Fortune 500 companies rely on us
+                  to deliver robust solutions that prevent security breaches and ensure
+                  the protection of their brands, reputations and digital assets.
                 </p>
               </AnimatedSection>
             </div>
@@ -111,9 +114,15 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* ===== VALUES — 2x2 GradientCards, no heading above ===== */}
+      {/* ===== VALUES — 2x2 GradientCards ===== */}
       <section className="section section--dark careers-values">
         <div className="container">
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mb-5">
+              <h2 className="careers-section-title text-white">Our Values</h2>
+              <div className="gradient-underline mx-auto" />
+            </div>
+          </AnimatedSection>
           <AnimatedSection animation="stagger-children" className="row g-4">
             {values.map((v) => (
               <div className="col-md-6" key={v.title}>
@@ -132,15 +141,16 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* ===== WHY JOIN US — Light blue bg, text left, award badges right ===== */}
-      <section className="section section--light careers-why-join">
+      {/* ===== WHY JOIN US — White bg, text left, award badges right ===== */}
+      <section className="section careers-why-join" style={{ backgroundColor: '#fff' }}>
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-5">
               <AnimatedSection animation="fade-in-left">
-                <h2 className="careers-section-title mb-1">Why Join Us</h2>
-                <div className="gradient-underline mb-4" />
-                <p style={{ fontSize: 18, lineHeight: 1.5, color: '#5b5b6b' }}>
+                <h2 className="careers-section-title" style={{ color: '#0f0f27' }}>
+                  <span className="gradient-underline-text">Why Join Us</span>
+                </h2>
+                <p style={{ fontSize: 18, lineHeight: 1.5, color: '#5b5b6b', marginTop: '1.5rem' }}>
                   Our employees enjoy a vibrant workplace culture,
                   deep engagement and outstanding benefits. All of this adds up to
                   why we were named amongst the Best Workplaces by Inc Magazine
@@ -153,21 +163,21 @@ export default function Careers() {
             </div>
             <div className="col-lg-7">
               <AnimatedSection animation="fade-in-right">
-                <div className="d-flex flex-wrap justify-content-center gap-4">
+                <div className="d-flex flex-wrap justify-content-center align-items-center gap-4">
                   <img
-                    src="https://www.guidepointsecurity.com/wp-content/uploads/2024/08/inc-5000-logo.png"
+                    src="https://www.guidepointsecurity.com/wp-content/uploads/2025/12/Badge-01.png"
                     alt="Inc. 5000"
                     style={{ height: 140, objectFit: 'contain' }}
                   />
                   <img
-                    src="https://www.guidepointsecurity.com/wp-content/uploads/2024/08/Inc-Best-Workplaces-2024.png"
+                    src="https://www.guidepointsecurity.com/wp-content/uploads/2025/12/Badge-02.png"
                     alt="Inc. Best Workplaces"
                     style={{ height: 140, objectFit: 'contain' }}
                   />
                   <img
-                    src="https://www.guidepointsecurity.com/wp-content/uploads/2024/08/USA-Today-Top-Workplaces.png"
+                    src="https://www.guidepointsecurity.com/wp-content/uploads/2025/12/Badge-03.png"
                     alt="USA Today Top Workplaces"
-                    style={{ height: 140, objectFit: 'contain' }}
+                    style={{ height: 160, objectFit: 'contain' }}
                   />
                 </div>
               </AnimatedSection>
@@ -176,17 +186,17 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* ===== OUR PEOPLE — Photo left, text right (Light blue bg) ===== */}
+      {/* ===== OUR PEOPLE — Video left, text right (Light blue bg) ===== */}
       <section className="section section--light">
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-left">
-                <div className="overflow-hidden">
+                <div className="ratio ratio-16x9 overflow-hidden">
                   <img
-                    src="https://www.guidepointsecurity.com/wp-content/uploads/2022/03/Ernest-Dunn-C78A7507.jpg"
+                    src="https://embed-ssl.wistia.com/deliveries/cbaad780a4d684a28388924a68c3dd2b.webp?image_crop_resized=1920x1080"
                     alt="Our People"
-                    className="w-100"
+                    className="w-100 h-100"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>
@@ -194,13 +204,14 @@ export default function Careers() {
             </div>
             <div className="col-lg-6">
               <AnimatedSection animation="fade-in-right">
-                <h2 className="careers-section-title">
-                  <span className="text-accent-box">Our People</span>: The Building Blocks of Our Culture
+                <h2 className="careers-section-title" style={{ color: '#0f0f27' }}>
+                  <span className="text-accent-box-dark">Our People</span>: The Building Blocks of Our Culture
                 </h2>
-                <p style={{ fontSize: 18, lineHeight: 1.5, color: '#5b5b6b' }}>
-                  From our beginning, we created a peer-to-peer recognition program to
-                  celebrate our employee&apos;s achievements and contributions. Paying it forward
-                  is part of our DNA.
+                <p style={{ fontSize: 18, lineHeight: 1.5, color: '#000' }}>
+                  From our beginning, we created a peer-to-peer recognition program
+                  to celebrate our employee&apos;s achievements. We named it Pay-It-Forward.
+                  Our values aren&apos;t just hanging up on a wall. We demonstrate them every
+                  day—to each other and to our customers.
                 </p>
               </AnimatedSection>
             </div>
@@ -208,12 +219,13 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* ===== PERKS — White bg, centered text with highlighted words ===== */}
-      <section className="section careers-perks">
+      {/* ===== PERKS — Dark bg, centered text with highlighted words ===== */}
+      <section className="section section--dark careers-perks">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center">
-              <h2 className="careers-section-title mb-4">Perks</h2>
+              <h2 className="careers-section-title text-white mb-1">Perks</h2>
+              <div className="gradient-underline mx-auto mb-5" />
               <p className="careers-perks__text">
                 We fully cover <span className="text-accent-box">employee premiums</span> on our base plan and offer generous support for dependents —
                 with options to choose what fits best. Generous mobile phone and home <span className="text-accent-box">internet allowance.</span>
@@ -227,21 +239,22 @@ export default function Careers() {
       </section>
 
       {/* ===== GPSU + OUR PEOPLE (shared component) ===== */}
-      <GPSUniversity />
+      <GPSUniversity showOurPeople={false} />
 
       {/* ===== OPEN POSITIONS — White bg ===== */}
       <section className="section careers-openings" id="openings">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-4">
-              <h2 className="careers-section-title mb-1">Open Positions</h2>
-              <div className="gradient-underline mx-auto" />
+              <h2 className="careers-section-title">
+                <span className="gradient-underline-text">Open Positions</span>
+              </h2>
             </div>
           </AnimatedSection>
 
           <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 mb-5">
             <div className="d-flex align-items-center gap-2">
-              <label className="fw-bold" style={{ fontSize: 16 }} htmlFor="dept-filter">Browse by Dept:</label>
+              <label className="fw-bold" style={{ fontSize: 16, whiteSpace: 'nowrap' }} htmlFor="dept-filter">Browse by Dept:</label>
               <select
                 id="dept-filter"
                 className="form-select careers-filter-select"
@@ -254,7 +267,7 @@ export default function Careers() {
               </select>
             </div>
             <div className="d-flex align-items-center gap-2">
-              <label className="fw-bold" style={{ fontSize: 16 }} htmlFor="region-filter">Browse by Region:</label>
+              <label className="fw-bold" style={{ fontSize: 16, whiteSpace: 'nowrap' }} htmlFor="region-filter">Browse by Region:</label>
               <select
                 id="region-filter"
                 className="form-select careers-filter-select"
@@ -302,22 +315,87 @@ export default function Careers() {
             )}
           </AnimatedSection>
 
-          <div className="text-center mt-5" style={{ fontSize: 14, color: '#5b5b6b' }}>
-            <p>
-              In compliance with federal law, all persons hired must verify their identity
-              and eligibility to work in the United States.
+          <div className="mt-5" style={{ fontSize: 14, color: '#5b5b6b' }}>
+            <p><u>e-Verify</u><br />
+              In compliance with federal law, all persons hired must verify their identity and
+              eligibility to work in the United States and complete the required employment
+              eligibility verification document form upon hire.
             </p>
-            <p>
+            <p><u>Equal Opportunity Employer</u><br />
               We are an equal opportunity employer. All qualified applicants will receive
-              consideration for employment without regard to race, color, religion, sex,
-              national origin, disability or protected veteran status.
+              consideration for employment without regard to race, color, religion, sex, national
+              origin, age, disability status, marital status, sexual orientation, gender identity,
+              genetic information, protected veteran status or any other characteristic protected by law.
+            </p>
+            <p><u>Transparency in Coverage</u><br />
+              These files are being provided pursuant to the requirements of the Health Plan
+              Transparency in Coverage Rule and the data herein is intended solely for that purpose.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ===== ADDITIONAL RESOURCES ===== */}
-      <AdditionalResources />
+      {/* ===== ADDITIONAL RESOURCES — Envelope bg ===== */}
+      <section className="careers-additional-resources">
+        <div className="careers-additional-resources__bg">
+          <div className="container position-relative" style={{ zIndex: 2 }}>
+            <AnimatedSection animation="animate-on-scroll">
+              <div className="d-flex flex-column flex-md-row justify-content-between align-items-start mb-5">
+                <div>
+                  <h2 className="careers-section-title text-white mb-0">
+                    <span className="gradient-underline-text">Additional Resources</span>
+                  </h2>
+                </div>
+                <Link to="/resources" className="text-white text-decoration-none fw-bold mt-3 mt-md-0" style={{ fontSize: 16 }}>
+                  View All
+                </Link>
+              </div>
+            </AnimatedSection>
+            <div className="row g-4">
+              <div className="col-lg-6">
+                <AnimatedSection animation="fade-in-left">
+                  <div className="careers-resource-card">
+                    <div className="careers-resource-card__image">
+                      <div className="careers-resource-card__badge">
+                        <i className="bi bi-file-earmark-text-fill"></i>
+                      </div>
+                      <img
+                        src="https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Blog_Social_Image_6_SOCIAL.png"
+                        alt="GladToBeHere"
+                      />
+                    </div>
+                    <div className="careers-resource-card__body">
+                      <h3>#GladToBeHere: Giving Thanks at Cyber Security</h3>
+                      <p>As we head into the season of gratitude, it feels especially meaningful to pause and reflect on what makes our company such a remarkable place to work, grow and belong.</p>
+                      <Link to="/resources/blog" className="btn btn-outline-dark" style={{ borderRadius: 0 }}>Read More</Link>
+                    </div>
+                  </div>
+                </AnimatedSection>
+              </div>
+              <div className="col-lg-6">
+                <AnimatedSection animation="fade-in-right">
+                  <div className="careers-resource-card">
+                    <div className="careers-resource-card__image">
+                      <div className="careers-resource-card__badge">
+                        <i className="bi bi-file-earmark-text-fill"></i>
+                      </div>
+                      <img
+                        src="https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Veterans-DS_2000x675.jpg"
+                        alt="Veterans"
+                      />
+                    </div>
+                    <div className="careers-resource-card__body">
+                      <h3>Veterans at Cyber Security</h3>
+                      <p>Transitioning from military service to civilian employment is often challenging, with some veterans struggling to translate highly specialized skills into roles that recognize their value.</p>
+                      <Link to="/resources/blog" className="btn btn-outline-dark" style={{ borderRadius: 0 }}>Read More</Link>
+                    </div>
+                  </div>
+                </AnimatedSection>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <BeInformed />
     </div>
