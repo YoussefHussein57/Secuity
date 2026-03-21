@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import GradientCard from '../components/sections/GradientCard';
 import ServiceAccordion from '../components/sections/ServiceAccordion';
+import Certifications from '../components/sections/Certifications';
 import BeInformed from '../components/sections/BeInformed';
 import { servicesList } from '../data/services';
 
@@ -30,7 +30,7 @@ export default function VendorPartners() {
     <div className="vendor-partners-page">
       {/* ===== HERO ===== */}
       <Hero
-        label="Why Partner with Cyber Security?"
+        label="Why Partner with GuidePoint Security?"
         title="We're Not Your Typical VAR"
         highlightWord="Not"
         highlightStyle="box"
@@ -40,19 +40,20 @@ export default function VendorPartners() {
         ctaLink="/contact"
         bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Identity_and_Access_Management_IAM.png"
         variant="page"
+        showNetwork={false}
       />
 
       {/* ===== WHEN IT COMES TO PARTNERSHIPS ===== */}
       <section className="section section--dark vp-partnerships">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
-            <div className="row g-5 align-items-start">
+            <div className="row justify-content-between align-items-start">
               <div className="col-lg-5">
                 <h2 className="vp-section-title text-white">
                   When it Comes to <span className="text-accent-box">Partnerships</span>, One Size Does Not Fit All
                 </h2>
               </div>
-              <div className="col-lg-7">
+              <div className="col-lg-6">
                 <p className="text-white" style={{ fontSize: 18, lineHeight: 1.5 }}>
                   Our unique culture, expertise and business model help us stand out from your typical cybersecurity product and services provider.
                 </p>
@@ -68,19 +69,18 @@ export default function VendorPartners() {
         </div>
       </section>
 
-      {/* ===== YOUR CUSTOMER'S TRUSTED ADVISOR — 2x2 cards ===== */}
-      <section className="section section--dark vp-advisor">
+      {/* ===== YOUR CUSTOMER'S TRUSTED ADVISOR — 4 cards in 1 row ===== */}
+      <section className="section section--indigo vp-advisor" style={{ padding: '48px 40px 120px' }}>
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
-              <h2 className="vp-section-title text-white">Your Customer&rsquo;s Trusted Advisor</h2>
-              <div className="gradient-underline mx-auto" />
+              <h2 className="vp-section-title text-white"><span className="gradient-underline-text">Your Customer&rsquo;s Trusted Advisor</span></h2>
             </div>
           </AnimatedSection>
 
           <AnimatedSection animation="stagger-children" className="row g-4">
             {advisorCards.map((card) => (
-              <div className="col-md-6" key={card.title}>
+              <div className="col-md-6 col-lg-3" key={card.title}>
                 <GradientCard
                   title={card.title}
                   description={card.description}
@@ -93,36 +93,35 @@ export default function VendorPartners() {
         </div>
       </section>
 
-      {/* ===== FEATURED PARTNERS — Logo grid ===== */}
-      <section className="section section--light vp-partners">
+      {/* ===== FEATURED PARTNERS ===== */}
+      <section className="section section--light vp-partners" style={{ padding: '48px 40px 120px' }}>
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
-              <h2 className="vp-section-title" style={{ color: '#0f0f27' }}>Featured Partners</h2>
-              <div className="gradient-underline mx-auto" />
+              <h2 className="vp-section-title" style={{ color: '#0f0f27', fontSize: 50 }}>
+                <span className="gradient-underline-text">Featured Partners</span>
+              </h2>
             </div>
-          </AnimatedSection>
-
-          <AnimatedSection animation="stagger-children" className="row g-4 justify-content-center">
-            {['CrowdStrike', 'Palo Alto Networks', 'Splunk', 'Okta', 'Zscaler', 'SentinelOne', 'Proofpoint', 'CyberArk', 'Tenable', 'Rapid7', 'Fortinet', 'F5'].map((name) => (
-              <div className="col-6 col-md-4 col-lg-2" key={name}>
-                <div className="vp-partner-logo">
-                  <span>{name}</span>
-                </div>
-              </div>
-            ))}
+            <div className="text-center">
+              <img
+                src="https://www.guidepointsecurity.com/wp-content/uploads/2024/07/Why_GuidePoint_Partners.svg"
+                alt="Featured Partners"
+                className="w-100"
+                style={{ maxWidth: 1000 }}
+              />
+            </div>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ===== COMPREHENSIVE SOLUTIONS — Services Accordion ===== */}
-      <section className="section section--dark vp-services">
+      {/* ===== COMPREHENSIVE SOLUTIONS — Services Accordion (white bg) ===== */}
+      <section className="section vp-services" style={{ background: '#fff', padding: '48px 40px 80px' }}>
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
               <p className="vp-services__label">Comprehensive Solutions</p>
-              <h2 className="vp-section-title text-white" style={{ maxWidth: 800, margin: '0 auto' }}>
-                Your Customer&rsquo;s Single Point of Contact for a <span className="text-accent-box">Wide Range</span> of Cybersecurity Services and Technologies
+              <h2 className="vp-section-title" style={{ color: '#0f0f27', fontSize: 50, maxWidth: 900, margin: '0 auto' }}>
+                Your Customer&rsquo;s Single Point of Contact for a <span className="text-accent-box-dark">Wide Range</span> of Cybersecurity Services and Technologies
               </h2>
             </div>
           </AnimatedSection>
@@ -134,6 +133,9 @@ export default function VendorPartners() {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* ===== CERTIFICATIONS ===== */}
+      <Certifications variant="centered" />
 
       <BeInformed />
     </div>

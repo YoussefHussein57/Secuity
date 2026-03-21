@@ -9,6 +9,7 @@ export default function Hero({
   subtitle,
   highlightSubtitleWord,
   label,
+  labelAfterTitle = false,
   ctaText = 'Talk to an Expert',
   ctaLink = '/contact',
   secondaryCta,
@@ -64,7 +65,7 @@ export default function Hero({
                 <img src={iconImage} alt="" style={{ height: 80 }} />
               </div>
             )}
-            {label && (
+            {label && !labelAfterTitle && (
               <p
                 className="hero__label"
                 style={{
@@ -86,6 +87,18 @@ export default function Hero({
             >
               {renderTitle()}
             </h1>
+            {label && labelAfterTitle && (
+              <p
+                className="hero__label"
+                style={{
+                  transition: 'opacity 0.8s ease, transform 0.8s ease',
+                  transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+                  opacity: loaded ? 1 : 0,
+                }}
+              >
+                {label}
+              </p>
+            )}
             <p
               className="hero__subtitle mb-5"
               style={{

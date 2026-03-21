@@ -2,7 +2,10 @@ import { Link } from 'react-router-dom';
 import AnimatedSection from './AnimatedSection';
 import NetworkBackground from './NetworkBackground';
 
-export default function GPSUniversity({ showOurPeople = true }) {
+const LOGO_WHITE = 'https://www.guidepointsecurity.com/wp-content/uploads/2022/04/GuidePoint-University_horizontal-gradient-tag-white-text_1164x326-RGB-1024x287.png';
+const LOGO_DARK = 'https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSU_Trademark_Black-Text_Gradient-Tag_Horizontal_400x106.png';
+
+export default function GPSUniversity({ showOurPeople = true, darkLogo = false }) {
   return (
     <section className="section section--indigo-light position-relative">
       <div className="container position-relative" style={{ zIndex: 2 }}>
@@ -10,7 +13,7 @@ export default function GPSUniversity({ showOurPeople = true }) {
           <div className="col-lg-6">
             <AnimatedSection animation="fade-in-left">
               <img
-                src="https://www.guidepointsecurity.com/wp-content/uploads/2022/04/GuidePoint-University_horizontal-gradient-tag-white-text_1164x326-RGB-1024x287.png"
+                src={darkLogo ? LOGO_DARK : LOGO_WHITE}
                 alt="GuidePoint Security University"
                 className="mb-4"
                 style={{ maxWidth: 380, width: '100%' }}

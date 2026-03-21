@@ -4,9 +4,15 @@
 
 .csr-page {
 
-  // Disable angled dividers
+  // Disable angled dividers between all sections by default
   .section::before {
     display: none !important;
+  }
+
+  // Re-enable angle: light → indigo (Our People → ESG)
+  .section--light + .section--indigo::before {
+    display: block !important;
+    background: $light;
   }
 
   .hero--page + .section {
@@ -18,13 +24,16 @@
     margin-top: 0;
   }
 
-  // Hero
-  .hero--page {
+  // Hero — d-flex centered, matches GP CSR
+  .csr-hero {
+    min-height: auto;
+    padding: 72px 40px 80px;
+
     .hero__title {
       font-size: 52px;
       font-weight: 500;
       min-width: auto;
-      line-height: 1.2;
+      line-height: 1.115;
     }
 
     .hero__label {
@@ -34,38 +43,91 @@
     }
 
     .hero__subtitle {
-      font-size: 22px;
+      font-size: 23px;
       font-weight: 400;
       line-height: 1.5;
       max-width: 950px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   // Shared section title
   .csr-section-title {
     font-family: $font-family-heading;
-    font-size: 50px;
+    font-size: 44px;
     font-weight: $fw-medium;
     line-height: 1.2;
     margin-bottom: 1rem;
+
+    .text-accent-box {
+      background: $white;
+      color: $dark;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
+    }
+
+    .text-accent-box-dark {
+      background: $dark;
+      color: $white;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
+    }
   }
 
-  // Gradient underline
-  .gradient-underline {
-    width: 200px;
-    height: 4px;
-    background: linear-gradient(90deg, $gradient-start, $gradient-end);
-    border-radius: 2px;
+  // ---- Section padding overrides ----
+  .section--light {
+    padding: 48px 40px 120px !important;
   }
 
-  // ---- All sections consistent padding ----
-  .section--dark,
+  // ---- GPSU section — light bg on this page ----
   .section--indigo-light {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    background-color: $light !important;
+
+    .text-white {
+      color: $primary !important;
+    }
+
+    a[style] {
+      color: $gradient-start !important;
+      font-weight: $fw-bold;
+    }
   }
 
-  // ---- Values section ----
+  // ---- Carousel arrows ----
+  .csr-carousel-arrow {
+    width: 50px;
+    height: 100px;
+    background: transparent;
+    border: 1px solid rgba($gradient-end, 0.5);
+    color: $gradient-end;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    transition: background 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      background: rgba($gradient-end, 0.1);
+      border-color: $gradient-end;
+    }
+
+    &--left {
+      left: -80px;
+    }
+
+    &--right {
+      right: -80px;
+    }
+  }
+
   .csr-values {
     padding-top: 120px !important;
   }
@@ -75,13 +137,16 @@
 
     &__header {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
+      justify-content: center;
       gap: 1rem;
       margin-bottom: 1.25rem;
     }
 
     &__icon {
-      font-size: 2.5rem;
+      font-size: 64px;
+      width: 64px;
+      height: 64px;
       color: $gradient-end;
       flex-shrink: 0;
       line-height: 1;
@@ -89,29 +154,229 @@
 
     &__title {
       font-family: $font-family-heading;
-      font-size: 27px;
+      font-size: 32px;
       font-weight: $fw-bold;
       color: $gradient-end;
       line-height: 1.2;
       margin: 0;
+      max-width: 350px;
+      text-align: left;
     }
 
     &__desc {
       font-size: 18px;
       font-weight: 400;
       line-height: 1.5;
+      text-align: left;
       color: $white;
       margin: 0;
     }
   }
 
-  // ---- ESG label ----
-  .csr-esg__label {
-    font-family: $font-family-heading;
-    font-size: 20px;
-    font-weight: $fw-bold;
-    color: $gradient-end;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  // ========== RESPONSIVE ==========
+
+  // Tablet
+  @media (max-width: 991px) {
+    .csr-hero {
+      padding: 48px 20px 80px;
+
+      .hero__title {
+        font-size: 38px;
+      }
+
+      .hero__subtitle {
+        font-size: 18px;
+      }
+    }
+
+    .csr-section-title {
+      font-size: 32px !important;
+    }
+
+    // Sections — side padding only
+    .section {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    // Logos — 3 per row
+    .bg-white .d-flex.flex-wrap > div {
+      width: 33.33% !important;
+    }
+
+    // Carousel — stack vertically
+    .overflow-hidden [style*="grid"] {
+      grid-template-columns: 1fr !important;
+    }
+
+    .overflow-hidden [style*="grid"] img {
+      height: 300px !important;
+    }
+
+    // Arrows tighter
+    .csr-carousel-arrow {
+      width: 40px;
+      height: 70px;
+
+      &--left {
+        left: -50px;
+      }
+
+      &--right {
+        right: -50px;
+      }
+    }
+
+    // Indigo sections — image on top, reduce internal spacing
+    .section--indigo .row {
+      flex-direction: column;
+
+      [class*="col-lg-5"],
+      [class*="col-lg-6"] {
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      [class*="col-lg-5"] {
+        order: -1;
+      }
+    }
+
+    // Our People section — image on top
+    .section--light .row {
+      flex-direction: column;
+
+      .col-lg-6 {
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    // Reduce Bootstrap gaps on tablet
+    .row.g-5 {
+      --bs-gutter-y: 1rem;
+    }
+
+    .row.justify-content-between {
+      --bs-gutter-y: 1rem;
+    }
+
+    // Value cards single column
+    .csr-value-card {
+      &__header {
+        justify-content: flex-start;
+      }
+
+      &__icon {
+        font-size: 48px;
+        width: 48px;
+        height: 48px;
+      }
+
+      &__title {
+        font-size: 26px;
+      }
+    }
+  }
+
+  // Mobile
+  @media (max-width: 767px) {
+    // Reduce vertical gap between sections
+    .section {
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+
+    .csr-values {
+      padding-top: 80px !important;
+    }
+
+    .csr-hero {
+      padding: 40px 16px 60px;
+
+      .hero__title {
+        font-size: 30px;
+      }
+
+      .hero__subtitle {
+        font-size: 16px;
+      }
+
+      .hero__label {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .csr-section-title {
+      font-size: 26px !important;
+    }
+
+    .section {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    .section--light {
+      padding: 40px 16px 60px !important;
+    }
+
+    // Logos — 2 per row
+    .bg-white .d-flex.flex-wrap > div {
+      width: 50% !important;
+    }
+
+    // Carousel arrows overlay on card
+    .csr-carousel-arrow {
+      width: 36px;
+      height: 50px;
+      font-size: 1rem;
+      background: rgba($primary, 0.6);
+      border-color: rgba($white, 0.4);
+      color: $white;
+
+      &--left {
+        left: 0;
+      }
+
+      &--right {
+        right: 0;
+      }
+    }
+
+    // Carousel text
+    .overflow-hidden [style*="grid"] img {
+      height: 240px !important;
+    }
+
+    // Value cards
+    .csr-value-card {
+      &__icon {
+        font-size: 36px;
+        width: 36px;
+        height: 36px;
+      }
+
+      &__title {
+        font-size: 22px;
+        max-width: none;
+      }
+
+      &__desc {
+        font-size: 15px;
+      }
+    }
+
+    // ESG/DEI/Supplier text
+    .section--indigo p {
+      font-size: 16px !important;
+    }
+
+    // Checklist items
+    .list-unstyled span {
+      font-size: 16px !important;
+    }
   }
 }

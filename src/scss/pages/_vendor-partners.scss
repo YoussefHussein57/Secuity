@@ -42,72 +42,42 @@
     font-weight: $fw-medium;
     line-height: 1.2;
     margin-bottom: 1rem;
-  }
 
-  // Gradient underline
-  .gradient-underline {
-    width: 200px;
-    height: 4px;
-    background: linear-gradient(90deg, $gradient-start, $gradient-end);
-    border-radius: 2px;
-  }
+    .text-accent-box {
+      background: $white;
+      color: $dark;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
+    }
 
-  // ---- Section padding ----
-  .section--dark,
-  .section--light {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    .text-accent-box-dark {
+      background: $dark;
+      color: $white;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
+    }
   }
 
   // ---- Partnerships 2-col ----
   .vp-partnerships {
-    padding-top: 120px !important;
+    padding: 80px 0 120px !important;
   }
 
-  // ---- Advisor cards ----
-  .vp-advisor {
-    .card-gradient__title {
-      color: $gradient-end;
-    }
-  }
-
-  // ---- Featured Partners logos ----
-  .vp-partner-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    background: $white;
-    border: 1px solid #e2e8f0;
-    padding: 1rem;
-    transition: box-shadow 0.3s ease;
-
-    span {
-      font-family: $font-family-heading;
-      font-size: 14px;
-      font-weight: $fw-bold;
-      color: $primary;
-      text-align: center;
-    }
-
-    &:hover {
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  // ---- Services accordion section ----
+  // ---- Services accordion section (white bg) ----
   .vp-services {
     &__label {
       font-size: 15px;
       font-weight: $fw-bold;
       text-transform: uppercase;
       letter-spacing: 1.93px;
-      color: $gradient-end;
+      color: $gradient-start;
       margin-bottom: 1rem;
     }
   }
 
-  // Service accordion border wrap (matching government page style)
+  // Service accordion border wrap
   .service-accordion-wrap {
     border: 1px solid rgba($gradient-start, 0.25);
     border-radius: $border-radius;
@@ -116,5 +86,63 @@
 
   .service-accordion__item {
     border-bottom: none;
+  }
+
+  // ========== RESPONSIVE ==========
+
+  @media (max-width: 991px) {
+    .hero--page {
+      .hero__title {
+        font-size: 38px;
+      }
+
+      .hero__subtitle {
+        font-size: 18px;
+      }
+    }
+
+    .vp-section-title {
+      font-size: 32px !important;
+    }
+
+    .section {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    // Stack partnerships columns
+    .vp-partnerships .row {
+      flex-direction: column;
+      gap: 1.5rem;
+
+      [class*="col-lg"] {
+        width: 100%;
+      }
+    }
+
+    // 2 cards per row on tablet
+    .vp-advisor .col-lg-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .vp-section-title {
+      font-size: 26px !important;
+    }
+
+    .section {
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    // Single column cards on mobile
+    .vp-advisor .col-lg-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 }
