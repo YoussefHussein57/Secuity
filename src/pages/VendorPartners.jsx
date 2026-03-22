@@ -8,18 +8,22 @@ import { servicesList } from '../data/services';
 
 const advisorCards = [
   {
+    iconImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/05/evaluation-selection.png',
     title: 'Tailored Solution-Agnostic Approach',
     description: 'Our agnostic approach ensures that we provide the right cybersecurity recommendations and services, tailored specifically to a customer\u2019s environment and business goals.',
   },
   {
+    iconImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/05/implementation.png',
     title: 'Leverage Our Deep Relationships',
     description: 'We have deep relationships with multiple stakeholders across 4,200+ accounts because we focus on solving customer problems as their trusted partner.',
   },
   {
+    iconImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/05/optimization.png',
     title: 'Ensure Maximum Solution Value',
     description: 'Our highly-certified cybersecurity practitioners leverage their real-world expertise to implement, integrate, optimize and manage solutions \u2013 ensuring customers receive maximum value from your solution.',
   },
   {
+    iconImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/05/management.png',
     title: 'Simplify Procurement',
     description: 'We provide quick turnaround on complex pricing and quotes and also offer flexible financing options to simplify the cybersecurity solution and services procurement process.',
   },
@@ -38,14 +42,14 @@ export default function VendorPartners() {
         highlightSubtitleWord="Hands-on"
         ctaText="Partner with Us"
         ctaLink="/contact"
-        bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Identity_and_Access_Management_IAM.png"
+        bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Data_Security_and_Privacy.png"
         variant="page"
         showNetwork={false}
       />
 
       {/* ===== WHEN IT COMES TO PARTNERSHIPS ===== */}
       <section className="section section--dark vp-partnerships">
-        <div className="container">
+        <div className="container pt-lg-5">
           <AnimatedSection animation="animate-on-scroll">
             <div className="row justify-content-between align-items-start">
               <div className="col-lg-5">
@@ -54,13 +58,13 @@ export default function VendorPartners() {
                 </h2>
               </div>
               <div className="col-lg-6">
-                <p className="text-white" style={{ fontSize: 18, lineHeight: 1.5 }}>
+                <p className="text-white vp-text">
                   Our unique culture, expertise and business model help us stand out from your typical cybersecurity product and services provider.
                 </p>
-                <p className="text-white" style={{ fontSize: 18, lineHeight: 1.5 }}>
+                <p className="text-white vp-text">
                   With more than 50% of our team being technical, we evaluate and work with the best technology solutions and platforms that solve real cybersecurity problems for our customers.
                 </p>
-                <p className="text-white" style={{ fontSize: 18, lineHeight: 1.5 }}>
+                <p className="text-white vp-text">
                   And with our financing arm, we offer flexible options to simplify the cybersecurity solution and services procurement process.
                 </p>
               </div>
@@ -82,6 +86,7 @@ export default function VendorPartners() {
             {advisorCards.map((card) => (
               <div className="col-md-6 col-lg-3" key={card.title}>
                 <GradientCard
+                  iconImage={card.iconImage}
                   title={card.title}
                   description={card.description}
                   accent="bottom"
@@ -94,7 +99,7 @@ export default function VendorPartners() {
       </section>
 
       {/* ===== FEATURED PARTNERS ===== */}
-      <section className="section section--light vp-partners" style={{ padding: '48px 40px 120px' }}>
+      <section className="section vp-partners" style={{ padding: '48px 40px 120px', background: 'linear-gradient(180deg, #D9E6FC 100%, #F2295B00 0%)' }}>
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="text-center mb-5">
@@ -135,7 +140,7 @@ export default function VendorPartners() {
       </section>
 
       {/* ===== CERTIFICATIONS ===== */}
-      <Certifications variant="centered" />
+      <Certifications variant="page" />
 
       <BeInformed />
     </div>

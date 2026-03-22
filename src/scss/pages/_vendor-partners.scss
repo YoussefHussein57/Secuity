@@ -4,7 +4,7 @@
 
 .vendor-partners-page {
 
-  // Disable angled dividers
+  // Disable all default angles, define each manually
   .section::before {
     display: none !important;
   }
@@ -18,27 +18,132 @@
     margin-top: 0;
   }
 
-  // Hero
+  // Dark → Dark (Partnerships → same dark): no angle
+  .vp-partnerships + .section--dark::before {
+    display: none !important;
+  }
+
+  // Dark → Indigo (Partnerships → Advisor)
+  .vp-partnerships + .vp-advisor {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px !important;
+
+    &::before {
+      content: '';
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: $primary;
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+      z-index: 2;
+    }
+  }
+
+  // Indigo → Light (Advisor → Featured Partners)
+  .vp-advisor + .vp-partners {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px !important;
+
+    &::before {
+      content: '';
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: $indigo;
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+      z-index: 2;
+    }
+  }
+
+  // Light → White (Featured Partners → Services)
+  .vp-partners + .vp-services {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px !important;
+
+    &::before {
+      content: '';
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: #D9E6FC;
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+      z-index: 2;
+    }
+  }
+
+  // White → Light (Services → Certifications)
+  .vp-services + .certs-page-section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px !important;
+
+    &::before {
+      content: '';
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: $white;
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+      z-index: 2;
+    }
+  }
+
+  // Certifications → BeInformed: no angle
+  .certs-page-section + .be-informed::before {
+    display: none !important;
+  }
+
+  // Hero — height ~440px, d-flex centered
   .hero--page {
+    min-height: auto;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+
     .hero__title {
       font-size: 52px;
       font-weight: 500;
       min-width: auto;
-      line-height: 1.2;
+      line-height: 1.115;
     }
 
     .hero__subtitle {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 400;
-      line-height: 1.5;
-      max-width: 900px;
+      line-height: 1.475;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero__label {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1.93px;
     }
   }
 
   // Shared section title
   .vp-section-title {
     font-family: $font-family-heading;
-    font-size: 50px;
+    font-size: 44px;
     font-weight: $fw-medium;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -63,6 +168,48 @@
   // ---- Partnerships 2-col ----
   .vp-partnerships {
     padding: 80px 0 120px !important;
+
+    .vp-section-title {
+      font-size: 54px;
+    }
+  }
+
+  // ---- Shared paragraph style ----
+  .vp-text {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  // ---- Certifications — light blue bg ----
+  .certs-page-section {
+    background: linear-gradient(180deg, $light 100%) !important;
+  }
+
+  // ---- Advisor cards — match GP styles ----
+  .vp-advisor {
+    .card-gradient {
+      padding: 40px 20px 50px;
+      border-color: rgb(51, 110, 146);
+    }
+
+    .card-gradient__title {
+      font-size: 20px;
+      font-weight: $fw-bold;
+      color: $white;
+      line-height: 1;
+      padding-bottom: 1.25rem;
+    }
+
+    .card-gradient__desc {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .card-gradient__icon img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+    }
   }
 
   // ---- Services accordion section (white bg) ----
@@ -72,8 +219,64 @@
       font-weight: $fw-bold;
       text-transform: uppercase;
       letter-spacing: 1.93px;
-      color: $gradient-start;
+      color: #000;
       margin-bottom: 1rem;
+    }
+
+    // Override accordion colors for white bg
+    .service-accordion__icon {
+      color: $gradient-end;
+    }
+
+    .service-accordion__header {
+      color: $primary;
+
+      &:hover {
+        background-color: rgba($primary, 0.05);
+
+        .service-accordion__icon {
+          color: $gradient-end;
+        }
+
+        .service-accordion__toggle {
+          color: $gradient-end;
+        }
+      }
+    }
+
+    .service-accordion__toggle {
+      color: $gradient-end;
+    }
+
+    .service-accordion__item--open .service-accordion__header {
+      background-color: rgba($primary, 0.05);
+      color: $primary;
+
+      .service-accordion__icon {
+        color: $gradient-end;
+      }
+
+      .service-accordion__toggle {
+        color: $gradient-end;
+      }
+    }
+
+    // Body expanded content on white bg
+    .service-accordion__body {
+      p {
+        color: $gray-700;
+        font-size: 16px;
+      }
+
+      .btn {
+        color: $primary;
+        border-color: $primary;
+
+        &:hover {
+          background: $primary;
+          color: $white;
+        }
+      }
     }
   }
 
@@ -92,6 +295,9 @@
 
   @media (max-width: 991px) {
     .hero--page {
+      height: auto;
+      padding: 48px 20px 60px;
+
       .hero__title {
         font-size: 38px;
       }
