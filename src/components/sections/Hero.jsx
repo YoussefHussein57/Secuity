@@ -99,23 +99,24 @@ export default function Hero({
                 {label}
               </p>
             )}
-            <p
-              className="hero__subtitle mb-5"
-              style={{
-                transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
-                transform: loaded ? 'translateY(0)' : 'translateY(20px)',
-                opacity: loaded ? 1 : 0,
-
-              }}
-            >
-              {highlightSubtitleWord ? (
-                <>
-                  {subtitle.split(highlightSubtitleWord)[0]}
-                  <span className="text-accent-box">{highlightSubtitleWord}</span>
-                  {subtitle.split(highlightSubtitleWord)[1] || ''}
-                </>
-              ) : subtitle}
-            </p>
+            {subtitle && (
+              <p
+                className="hero__subtitle mb-5"
+                style={{
+                  transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
+                  transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+                  opacity: loaded ? 1 : 0,
+                }}
+              >
+                {highlightSubtitleWord ? (
+                  <>
+                    {subtitle.split(highlightSubtitleWord)[0]}
+                    <span className="text-accent-box">{highlightSubtitleWord}</span>
+                    {subtitle.split(highlightSubtitleWord)[1] || ''}
+                  </>
+                ) : subtitle}
+              </p>
+            )}
             <div
               className={`d-flex flex-wrap gap-3 ${isPage ? 'justify-content-center' : ''}`}
               style={{

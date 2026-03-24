@@ -30,7 +30,37 @@ export default function GovernmentDetail() {
         variant="page"
       />
 
+      {/* 1b. Centered Logo (e.g., OASIS+) */}
+      {page.centeredLogo && (
+        <section className="govt-detail__logo-banner">
+          <div className="container text-center">
+            <img
+              src={page.centeredLogo.image}
+              alt={page.centeredLogo.alt}
+              style={{ width: page.centeredLogo.width, height: page.centeredLogo.height }}
+            />
+          </div>
+        </section>
+      )}
+
+      {/* 1c. Centered Gradient Intro (e.g., "What is OASIS+?") */}
+      {page.intro?.variant === 'centered-gradient' && (
+        <section className="govt-detail__gradient-intro">
+          <div className="container text-center">
+            <h2 className="govt-detail__heading govt-detail__heading--underline">
+              {page.intro.heading}
+            </h2>
+            {page.intro.paragraphs?.map((p, i) => (
+              <p key={i} className="govt-detail__text mx-auto" style={{ maxWidth: 820, fontSize: 18 }}>
+                {p}
+              </p>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* 2. Introduction Split — heading + bullets + image */}
+      {page.intro && page.intro.variant !== 'centered-gradient' && (
       <section className="section govt-detail__intro">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
@@ -47,16 +77,28 @@ export default function GovernmentDetail() {
                     page.intro.heading
                   )}
                 </h2>
-                {page.intro.paragraphs.map((p, i) => (
+                {page.intro.paragraphs && page.intro.paragraphs.map((p, i) => (
                   <p key={i} className="govt-detail__text">{p}</p>
                 ))}
                 {page.intro.bulletPoints && (
                   <ul className="govt-detail__checklist">
-                    {page.intro.bulletPoints.map((item, i) => (
-                      <li key={i}>
-                        <i className="bi bi-check-circle"></i>
-                        {item}
-                      </li>
+                    {page.intro.bulletPoints.map((item, i) => {
+                      const colonIdx = item.indexOf(':');
+                      return (
+                        <li key={i}>
+                          <i className="bi bi-check-circle"></i>
+                          {colonIdx > -1 ? (
+                            <span><strong>{item.substring(0, colonIdx + 1)}</strong>{item.substring(colonIdx + 1)}</span>
+                          ) : item}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+                {page.intro.subBullets && (
+                  <ul className="govt-detail__sub-bullets">
+                    {page.intro.subBullets.map((item, i) => (
+                      <li key={i}>{item}</li>
                     ))}
                   </ul>
                 )}
@@ -66,21 +108,24 @@ export default function GovernmentDetail() {
                   </p>
                 )}
               </div>
-              <div className="col-lg-6 text-center">
-                <img
-                  src={page.intro.image}
-                  alt={page.intro.imageAlt}
-                  className="govt-detail__intro-image"
-                />
-              </div>
+              {page.intro.image && (
+                <div className="col-lg-6 text-center">
+                  <img
+                    src={page.intro.image}
+                    alt={page.intro.imageAlt}
+                    className="govt-detail__intro-image"
+                  />
+                </div>
+              )}
             </div>
           </AnimatedSection>
         </div>
       </section>
+      )}
 
       {/* 3. Info Sections — light blue bg, alternating text+image columns */}
       {page.infoSections && page.infoSections.length > 0 && (
-        <section className="section govt-detail__info">
+        <section className={`section govt-detail__info${page.infoSections.some(s => s.sectionBg === 'light') ? ' govt-detail__info--light' : ''}`}>
           <div className="container">
             {page.infoSections.map((info, idx) => (
               <AnimatedSection key={idx} animation="animate-on-scroll">
@@ -104,7 +149,7 @@ export default function GovernmentDetail() {
                 ) : (
                   /* Two-column layout — text + image */
                   <div className={`row g-5 align-items-center ${idx > 0 ? 'mt-5 pt-4' : ''}`}>
-                    <div className={`col-lg-6 ${idx % 2 === 1 ? 'order-lg-2' : ''}`}>
+                    <div className={`col-lg-6 ${info.reversed ? 'order-lg-2' : ''}`}>
                       <h3 className="govt-detail__heading govt-detail__heading--sm">
                         {info.headingHighlight ? (
                           <>
@@ -123,7 +168,13 @@ export default function GovernmentDetail() {
                           {info.details.map((d, i) => (
                             <li key={i}>
                               <i className="bi bi-check-circle"></i>
-                              <span><strong>{d.label}:</strong> {d.value}</span>
+                              {d.link ? (
+                                <a href={d.link} target="_blank" rel="noopener noreferrer" className="govt-detail__details-link">
+                                  {d.label}
+                                </a>
+                              ) : (
+                                <span><strong>{d.label}:</strong> {d.value}</span>
+                              )}
                             </li>
                           ))}
                         </ul>
@@ -152,7 +203,7 @@ export default function GovernmentDetail() {
                       )}
                     </div>
                     {info.image && (
-                      <div className={`col-lg-6 text-center ${idx % 2 === 1 ? 'order-lg-1' : ''}`}>
+                      <div className={`col-lg-6 text-center ${info.reversed ? 'order-lg-1' : ''}`}>
                         <img
                           src={info.image}
                           alt={info.imageAlt}
@@ -181,13 +232,26 @@ export default function GovernmentDetail() {
                   {page.vendors.description}
                 </p>
               </div>
-              <div className="govt-detail__logo-grid">
-                {page.vendors.logos.map((logo, i) => (
-                  <div key={i} className="govt-detail__logo-item">
-                    <img src={logo.image} alt={logo.name} />
-                  </div>
-                ))}
-              </div>
+              {page.vendors.logos.some(l => l.description) ? (
+                <div className="govt-detail__vendor-rows">
+                  {page.vendors.logos.map((logo, i) => (
+                    <div key={i} className="govt-detail__vendor-row">
+                      <div className="govt-detail__vendor-logo">
+                        <img src={logo.image} alt={logo.name} />
+                      </div>
+                      <p className="govt-detail__vendor-desc">{logo.description}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="govt-detail__logo-grid">
+                  {page.vendors.logos.map((logo, i) => (
+                    <div key={i} className="govt-detail__logo-item">
+                      <img src={logo.image} alt={logo.name} />
+                    </div>
+                  ))}
+                </div>
+              )}
             </AnimatedSection>
           </div>
         </section>
@@ -195,7 +259,7 @@ export default function GovernmentDetail() {
 
       {/* 5. CTA Section */}
       {page.cta && (
-        <section className="section govt-detail__cta">
+        <section className={`section govt-detail__cta${page.cta.variant === 'light' ? ' govt-detail__cta--light' : page.cta.variant === 'dark' ? ' govt-detail__cta--dark' : ''}`}>
           <div className="container">
             <AnimatedSection animation="animate-on-scroll">
               <div className="text-center">
@@ -215,9 +279,9 @@ export default function GovernmentDetail() {
                     ? page.cta.descriptionParts.map((part, i) => {
                         if (part.highlight && part.link) {
                           return (
-                            <Link key={i} to={part.link} className="govt-detail__cta-highlight">
-                              {part.text}
-                            </Link>
+                            <a key={i} href={part.link} target={part.link.startsWith('http') ? '_blank' : undefined} rel={part.link.startsWith('http') ? 'noopener noreferrer' : undefined} className="govt-detail__cta-highlight">
+                              <strong>{part.text}</strong>
+                            </a>
                           );
                         }
                         if (part.bold) {
@@ -227,9 +291,71 @@ export default function GovernmentDetail() {
                       })
                     : page.cta.description}
                 </p>
-                <Link to={page.cta.buttonLink} className="btn btn-accent btn-cta">
-                  {page.cta.buttonText}
-                </Link>
+                {page.cta.secondaryText && (
+                  <p className="govt-detail__cta-text">
+                    {page.cta.secondaryText}{' '}
+                    {page.cta.secondaryLink && (
+                      <a href={page.cta.secondaryLink.href} className="govt-detail__cta-highlight">
+                        <strong>{page.cta.secondaryLink.text}</strong>
+                      </a>
+                    )}
+                  </p>
+                )}
+
+                {/* Two-column text layout (e.g., DoD ESI "Who Can Purchase") */}
+                {page.cta.columns && (
+                  <div className="row g-5 mt-4 text-start">
+                    {page.cta.columns.map((col, i) => (
+                      <div className="col-lg-6" key={i}>
+                        <h3 className="govt-detail__cta-col-heading">{col.heading}</h3>
+                        {col.textParts ? (
+                          <p className="govt-detail__cta-col-text">
+                            {col.textParts.map((part, pi) => (
+                              part.bold
+                                ? <strong key={pi}>{part.text}</strong>
+                                : <span key={pi}>{part.text}</span>
+                            ))}
+                          </p>
+                        ) : col.paragraphs ? (
+                          col.paragraphs.map((p, pi) => (
+                            <p key={pi} className="govt-detail__cta-col-text">{p}</p>
+                          ))
+                        ) : (
+                          <p className="govt-detail__cta-col-text">{col.text}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Contact line */}
+                {page.cta.contactLine && (
+                  <p className="govt-detail__cta-contact">{page.cta.contactLine}</p>
+                )}
+
+                {/* Multiple buttons */}
+                {page.cta.buttons && (
+                  <div className="d-flex justify-content-center gap-2 flex-wrap mt-4">
+                    {page.cta.buttons.map((btn, i) => (
+                      btn.link.startsWith('http') ? (
+                        <a key={i} href={btn.link} target="_blank" rel="noopener noreferrer" className="btn btn-accent btn-cta">
+                          {btn.text}
+                        </a>
+                      ) : (
+                        <Link key={i} to={btn.link} className="btn btn-accent btn-cta">
+                          {btn.text}
+                        </Link>
+                      )
+                    ))}
+                  </div>
+                )}
+
+                {/* Single button (legacy) */}
+                {page.cta.buttonText && (
+                  <Link to={page.cta.buttonLink} className="btn btn-accent btn-cta">
+                    {page.cta.buttonText}
+                  </Link>
+                )}
               </div>
             </AnimatedSection>
           </div>

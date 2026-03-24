@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import ScrollToTop from './components/common/ScrollToTop';
 import Home from './pages/Home';
@@ -46,9 +46,17 @@ export default function App() {
           <Route path="company/vendor-partners" element={<VendorPartners />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resources" element={<Resources />} />
-          <Route path="resources/blog" element={<Blog />} />
-          <Route path="resources/events" element={<Events />} />
-          <Route path="resources/webinars" element={<Webinars />} />
+          <Route path="resources/on-demand-webinars" element={<Navigate to="/resources?type=On-Demand+Webinar" replace />} />
+          <Route path="resources/webinars" element={<Navigate to="/resources?type=On-Demand+Webinar" replace />} />
+          <Route path="resources/videos" element={<Navigate to="/resources?type=Video" replace />} />
+          <Route path="resources/customer-success" element={<Navigate to="/resources?type=Customer+Success" replace />} />
+          <Route path="resources/datasheets" element={<Navigate to="/resources?type=Datasheet" replace />} />
+          <Route path="resources/ebooks" element={<Navigate to="/resources?type=eBook" replace />} />
+          <Route path="resources/infographics" element={<Navigate to="/resources?type=Infographic" replace />} />
+          <Route path="resources/reports" element={<Navigate to="/resources?type=Report" replace />} />
+          <Route path="resources/whitepapers" element={<Navigate to="/resources?type=Whitepaper" replace />} />
+          <Route path="resources/blog" element={<Navigate to="/resources?type=Blog" replace />} />
+          <Route path="resources/events" element={<Navigate to="/resources?type=Event" replace />} />
           <Route path="report-incident" element={<ReportIncident />} />
           <Route path="*" element={<NotFound />} />
         </Route>

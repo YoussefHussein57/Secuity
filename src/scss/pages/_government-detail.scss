@@ -254,7 +254,7 @@
 
   // ---- 4. Vendor Logos ----
   &__vendors {
-    background-color: $light-1;
+    background-color: $white;
     padding-top: 40px;
     padding-bottom: 80px;
 
@@ -330,6 +330,165 @@
     }
   }
 
+  // ---- Light variant CTA (off-white bg, gradient underline below heading) ----
+  &__cta--light {
+    background-color: $light-1;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .container {
+      max-width: 1100px;
+    }
+
+    .govt-detail__cta-heading {
+      color: $primary;
+    }
+
+    .govt-detail__cta-text {
+      color: $gray-700;
+      font-size: 18px;
+
+      strong {
+        color: $gray-700;
+      }
+    }
+
+    .govt-detail__cta-highlight {
+      color: $gradient-start;
+
+      strong {
+        color: $gradient-start;
+      }
+    }
+  }
+
+  // ---- Details list link items ----
+  &__details-link {
+    color: $gradient-start;
+    font-weight: $fw-medium;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: darken($gradient-start, 10%);
+    }
+  }
+
+  // ---- Sub-bullets (plain disc list below checklist) ----
+  &__sub-bullets {
+    list-style: disc;
+    padding-left: 2.5rem;
+    margin: 0 0 1.5rem;
+
+    li {
+      font-size: 17px;
+      color: #5b5b6b;
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+  }
+
+  // ---- Vendor row (logo + description) ----
+  &__vendor-rows {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__vendor-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 2rem 0;
+  }
+
+  &__vendor-logo {
+    flex: 0 0 200px;
+
+    img {
+      width: 190px;
+      height: 90px;
+      object-fit: contain;
+    }
+  }
+
+  &__vendor-desc {
+    flex: 1;
+    font-size: 17px;
+    color: #5b5b6b;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  // ---- CTA columns (two-col text layout) ----
+  &__cta-col-heading {
+    font-size: 20px;
+    font-weight: $fw-bold;
+    color: $primary;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  &__cta-col-text {
+    font-size: 16px;
+    color: $gray-700;
+    line-height: 1.5;
+  }
+
+  &__cta-contact {
+    text-align: center;
+    font-size: 21px;
+    font-weight: $fw-medium;
+    color: #5b5b6b;
+    margin: 1.5rem 0;
+
+    strong {
+      font-weight: $fw-bold;
+    }
+  }
+
+  // ---- Centered logo banner (OASIS+) ----
+  &__logo-banner {
+    background: $white;
+    padding: 80px 40px 20px;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      object-fit: contain;
+    }
+  }
+
+  // ---- Gradient intro (centered, with gradient underline heading) ----
+  &__gradient-intro {
+    background: $white;
+    padding: 16px 40px 40px;
+  }
+
+  // ---- Info section light bg variant ----
+  &__info--light {
+    background-color: $light-1;
+  }
+
+  // ---- Dark CTA variant (deep blue #0F0F59) ----
+  &__cta--dark {
+    background-color: #0f0f59;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .govt-detail__cta-heading {
+      color: $white;
+    }
+
+    .govt-detail__cta-text {
+      color: $white;
+      font-size: 21px;
+
+      strong {
+        color: $white;
+      }
+    }
+  }
+
   // ---- No angled dividers on this template ----
   .section::before {
     display: none !important;
@@ -340,7 +499,7 @@
     clip-path: none;
 
     .hero__subtitle {
-      font-size: 33px;
+      font-size: 29px;
       max-width: 900px;
     }
   }
