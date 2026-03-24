@@ -3,6 +3,9 @@ import { useParams, Navigate } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import GradientCard from '../components/sections/GradientCard';
+import StatsBanner from '../components/sections/StatsBanner';
+import TierCompare from '../components/sections/TierCompare';
+import ServiceTabs from '../components/sections/ServiceTabs';
 import Certifications from '../components/sections/Certifications';
 import Outcomes from '../components/sections/Outcomes';
 import TrustedAdvisor from '../components/sections/TrustedAdvisor';
@@ -31,6 +34,9 @@ export default function ServiceDetail() {
         bgImage={service.heroImage}
         variant="service"
       />
+
+      {/* 1b. Stats Banner (conditional) */}
+      <StatsBanner stats={service.statsBanner} />
 
       {/* 2. Use Cases */}
       {service.useCases && (
@@ -137,6 +143,12 @@ export default function ServiceDetail() {
           </Fragment>
         );
       })}
+
+      {/* 3b. Service Tabs (conditional) */}
+      <ServiceTabs tabsSection={service.tabsSection} />
+
+      {/* 3c. Tier Compare (conditional) */}
+      <TierCompare tierSection={service.tierSection} />
 
       {/* 4. Certifications */}
       <Certifications />

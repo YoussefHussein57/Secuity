@@ -75,6 +75,7 @@ const services = {
       {
         title: 'Application Security Program Assessment',
         description: 'Improve application security posture through SDLC',
+        path: '/services/secure-sdlc-program-review',
       },
     ],
     tactical: [
@@ -82,6 +83,7 @@ const services = {
       {
         title: 'AI-augmented Application Security Services',
         description: 'Enhance application security assessments by incorporating AI with expert oversight.',
+        path: '/services/ai-augmented-application-security',
       },
       {
         title: 'Mobile Application Security Assessment',
@@ -96,6 +98,7 @@ const services = {
       {
         title: 'Application Security as a Service',
         description: 'AppSec tooling expertise to identify vulnerabilities & provide remediation recommendations',
+        path: '/services/application-security-as-a-service',
       },
     ],
     training: [
@@ -156,6 +159,297 @@ const services = {
       company: 'Security Manager',
       personImage: '/images/testimonials/mark-gilman.png',
       companyLogo: '/logos/nuance.png',
+    },
+  },
+
+  'secure-sdlc-program-review': {
+    parentService: 'application-security',
+    title: 'Application Security Program Assessment',
+    icon: 'bi-diamond',
+    tagline: 'Ensure a Holistic Application Security Strategy',
+    heroLabel: 'APPLICATION SECURITY PROGRAM ASSESSMENT',
+    heroHighlight: 'Holistic',
+    heroCta: 'Assess Your Program',
+    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Identity_and_Access_Management_IAM.png',
+    description:
+      "Assess the state of your application security program and communicate a roadmap of key initiatives to improve your program\u2019s maturity from IT and compliance to development and security.",
+    useCases: {
+      label: 'APPLICATION SECURITY PROGRAM ASSESSMENT OVERVIEW',
+      title: 'Accelerate Your Application Security Program Maturity',
+      titleHighlight: 'Program Maturity',
+      subtitle:
+        'A holistic software security strategy begins with an understanding of the current state, a vision of the future state and a roadmap of initiatives to get there. This strategy is supported by policies, procedures, standards, tools, governance and training. Our team works with customers to understand their current state\u2014including strengths and areas of improvement\u2014and help lay a tailored, holistic AppSec strategy meant to:',
+      items: [
+        'Identify and Manage Application Risk',
+        'Balance Business Objectives and Innovation',
+        'Measure Compliance and Governance',
+      ],
+    },
+    splits: [
+      {
+        label: 'APPLICATION SECURITY PROGRAM ASSESSMENT APPROACH',
+        title: 'Take a Universal Approach to Application Security',
+        titleHighlight: 'Universal Approach',
+        paragraphs: [
+          'We leverage concepts from the OWASP Software Assurance Maturity Model (SAMM), the Scaled Agile Framework (SAFe) CALMR model and our own experience in performing application security program assessments across all industries to align your program to leading practices. You can be confident that we will review all components of your program and provide you with expert guidance.',
+          'As part of the AppSec program assessment, we can accelerate the adoption of your program and kick off roadmap initiatives by leveraging our professional services and Application Security as a Service (ASaaS) offerings.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'Universal AppSec Approach',
+      },
+      {
+        label: 'APPSEC PROGRAM ASSESSMENT DELIVERABLES',
+        title: 'Actionable Analysis of Your Application Security Program',
+        titleHighlight: 'Analysis',
+        paragraphs: [
+          'Every Application Security Program Assessment engagement includes the following deliverables:',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
+        imageAlt: 'AppSec Deliverables',
+        checklist: [
+          'Executive summary with key findings and recommendations',
+          'Detailed assessment of current program maturity',
+          'Gap analysis against industry frameworks',
+          'Prioritized roadmap of improvement initiatives',
+          'Governance and compliance alignment review',
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'APPSEC PROGRAM ASSESSMENT OUTCOMES',
+      title: 'Gain a Comprehensive Review of Your Application Security Program',
+      titleHighlight: 'Comprehensive Review',
+      subtitle:
+        "Our Application Security Program Assessment ensures a comprehensive view of your organization\u2019s security strategies, from the foundational policies and procedures to the practical implementation across various stages of the SDLC.",
+    },
+    outcomes: [
+      {
+        iconImage: '/images/icons/scale-appsec.png',
+        title: 'Benchmark Your Security Posture',
+        description:
+          'Align security measures against an industry framework and best practices.',
+      },
+      {
+        iconImage: '/images/icons/save-spending.png',
+        title: 'Uplift Your Security Posture',
+        description:
+          'Gain a more resilient and adaptive security culture within your organization.',
+      },
+      {
+        iconImage: '/images/icons/expand-testing.png',
+        title: 'Build a Strategic Roadmap',
+        description:
+          'Develop a 3-year roadmap for continuous improvement and AppSec maturity.',
+      },
+    ],
+    testimonial: {
+      quote:
+        'Our team works side-by-side with you as your cybersecurity partner.',
+      author: 'GuidePoint Security',
+      company: 'Application Security Practice',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png',
+      companyLogo: '/logos/guidepointsecurity.png',
+    },
+  },
+
+  'application-security-as-a-service': {
+    parentService: 'application-security',
+    title: 'Application Security as a Service',
+    icon: 'bi-diamond',
+    tagline: 'Automate and Manage Your Application Security Program',
+    heroLabel: 'APPLICATION SECURITY AS A SERVICE',
+    heroHighlight: 'Automate and Manage',
+    heroCta: 'Get Started',
+    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Security_as_a_Service.png',
+    description:
+      'With our AppSec as a Service offering, you can maximize the value of your AppSec tooling, identify vulnerabilities and provide actionable remediation recommendations to ensure a successful Application Security Program.',
+    useCases: {
+      label: 'APPLICATION SECURITY AS A SERVICE OVERVIEW',
+      title: 'Ensure Optimal AppSec Program Health',
+      titleHighlight: 'Optimal',
+      subtitle:
+        'Your AppSec solutions require significant bandwidth and the right skill set to properly manage. Our Application Security as a Service offering scales up or down based on your unique requirements for application security\u2014from leveraging our team to help with implementation or integration assistance to full application security program support. Our Application Security as a Service program can help you:',
+      items: [
+        'Optimize and Automate Your Environment to Deliver a Scalable and Effective Testing Approach',
+        'Perform Software Upgrades, Troubleshooting, Onboarding and Comprehensive Testing of Applications',
+        'Validate Findings and Work With Development Teams and Provide Remediation Recommendations',
+        'Integrate With Source Code Management, IDE, Ticketing, Monitoring and Incident Response Platforms',
+      ],
+    },
+    splits: [
+      {
+        label: 'APPLICATION SECURITY AS A SERVICE EXPERTISE',
+        title: 'We Can Manage Your Application Security Tools and Overall Program',
+        titleHighlight: 'Manage',
+        paragraphs: [
+          'As part of the AppSec program assessment, we can accelerate the adoption of your program and kick off roadmap initiatives by leveraging our professional services and Application Security as a Service (ASaaS) offerings.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'AppSec Expertise',
+      },
+      {
+        label: 'APPSEC AS A SERVICE USE CASES',
+        title: 'Ensure Application Security and Speed Development',
+        titleHighlight: 'Speed Development',
+        paragraphs: [
+          'Among the most important use cases that are ideal for Application Security as a Service are:',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
+        imageAlt: 'AppSec Use Cases',
+        checklist: [
+          'Acceleration of Application Security Programs',
+          'In-Depth Security Experience',
+          'Evolved Software Supply Chain Security',
+          'DevSecOps',
+          'Entwine AppSec Into Your Organization',
+          'Cloud Transformation',
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'APPLICATION SECURITY AS A SERVICE OUTCOMES',
+      title: 'Scale Your Application Security Program',
+      titleHighlight: 'Scale',
+      subtitle:
+        'Our Application Security as a Service offering helps you maximize the value of your AppSec tooling while ensuring a successful, scalable security program.',
+    },
+    outcomes: [
+      {
+        iconImage: '/images/icons/scale-appsec.png',
+        title: 'Maximize Tool Value',
+        description:
+          'Get the most out of your AppSec tooling with expert management, configuration and optimization.',
+      },
+      {
+        iconImage: '/images/icons/save-spending.png',
+        title: 'Reduce Operational Burden',
+        description:
+          'Free your team to focus on development while we manage your application security program end to end.',
+      },
+      {
+        iconImage: '/images/icons/expand-testing.png',
+        title: 'Scale With Confidence',
+        description:
+          'Seamlessly scale from a single application to hundreds or even thousands without sacrificing quality.',
+      },
+      {
+        iconImage: '/images/icons/improve-compliance.png',
+        title: 'Accelerate Remediation',
+        description:
+          'Achieve quicker remediation at each point along your software development lifecycle.',
+      },
+    ],
+    testimonial: {
+      quote:
+        'Our team works side-by-side with you as your cybersecurity partner.',
+      author: 'GuidePoint Security',
+      company: 'Application Security Practice',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png',
+      companyLogo: '/logos/guidepointsecurity.png',
+    },
+  },
+
+  'ai-augmented-application-security': {
+    parentService: 'application-security',
+    title: 'AI-augmented Application Security Services',
+    icon: 'bi-cpu',
+    tagline: 'Revolutionizing Application Security with Agentic Workflows',
+    heroLabel: 'AI-AUGMENTED APPLICATION SECURITY SERVICES',
+    heroHighlight: 'Revolutionizing',
+    heroCta: 'Learn More',
+    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/Website_Refresh_Services_SUB_Pages_AI-augmented_Application_Security_Services.png',
+    description:
+      'Artificial Intelligence (AI) meets human expertise to reveal vulnerabilities, validate results and ensure secure, scalable application development.',
+    useCases: {
+      label: 'THE APPLICATION SECURITY LANDSCAPE',
+      title: 'The Mounting Risks of Application Development at Scale',
+      titleHighlight: 'Mounting Risks',
+      subtitle:
+        "Today\u2019s organizations face unprecedented challenges in developing secure applications at enterprise scale. As development velocity increases, traditional security approaches struggle to keep pace, leaving critical vulnerabilities undetected.",
+      items: [
+        'AI-driven Threats',
+        'Regulatory Pressure',
+        'Third-party Risks',
+      ],
+    },
+    splits: [
+      {
+        label: 'SECURE APPLICATIONS AT SCALE WITH AI-AUGMENTED APPLICATION SECURITY SERVICES',
+        title: 'AI + Human Expertise: The Future of Application Security, Delivered Today',
+        titleHighlight: 'Future',
+        paragraphs: [
+          'Improve and accelerate application security assessments by combining AI-driven insights with expert analysis and oversight.',
+          'AI-augmented application security enhances traditional application security assessments by combining artificial intelligence with expert oversight to improve both efficiency and effectiveness.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_icon-Triangle_elementor-rt.png',
+        imageAlt: 'AI AppSec',
+      },
+      {
+        label: 'AI-AUGMENTED APPLICATION SECURITY USE CASES',
+        title: 'Architectural Intelligence. Security By Design.',
+        titleHighlight: 'Intelligence',
+        paragraphs: [
+          'Analyze application architecture and design documents to identify potential security flaws and weaknesses in the application architecture using proprietary agentic AI workflows.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Security_Awareness_and_Education_Left.png',
+        imageAlt: 'AI Security Use Cases',
+        checklist: [
+          'Application Architecture Reviews at Scale',
+          'Deeper Application Threat Modeling',
+          'Automated Secure Code Reviews',
+        ],
+      },
+      {
+        label: 'THE FUTURE OF APPLICATION SECURITY',
+        title: 'Fight AI with AI',
+        titleHighlight: 'Fight',
+        paragraphs: [
+          "As threat actors weaponize artificial intelligence, organizations must adopt equally sophisticated defenses. AI-augmented application security services represent the next evolution of modern software defense. But nothing replaces human expertise. That\u2019s why we strategically apply human-validated AI to extend your team\u2019s capabilities, enabling them to secure increasingly complex applications against increasingly sophisticated threats.",
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_icon-Triangle_elementor-rt.png',
+        imageAlt: 'Fight AI with AI',
+      },
+    ],
+    outcomesSection: {
+      label: 'AI-AUGMENTED APPSEC OUTCOMES',
+      title: 'Transform Your Application Security Program',
+      titleHighlight: 'Transform',
+      subtitle:
+        'Our AI-augmented approach delivers measurable improvements across your application security program.',
+    },
+    outcomes: [
+      {
+        iconImage: '/images/icons/scale-appsec.png',
+        title: 'Seamless DevSecOps Integration',
+        description:
+          'Maintain secure code delivery at scale with seamlessly embedded AI-powered vulnerability detection and automated secure coding guidance.',
+      },
+      {
+        iconImage: '/images/icons/save-spending.png',
+        title: 'Integrated Threat Intelligence',
+        description:
+          'Harness intelligent threat correlation that prioritizes vulnerabilities based on real-world exploit patterns and predicts emerging risks specific to your applications.',
+      },
+      {
+        iconImage: '/images/icons/expand-testing.png',
+        title: 'Augmented Security Teams',
+        description:
+          'Multiply your security team\u2019s effectiveness with AI-powered tools that automate routine analysis while surfacing critical findings that require expert judgment.',
+      },
+      {
+        iconImage: '/images/icons/improve-compliance.png',
+        title: 'AI-powered Defenses',
+        description:
+          'Deploy intelligent security controls that adapt in real-time to emerging threats, providing continuous protection against sophisticated attack techniques.',
+      },
+    ],
+    testimonial: {
+      quote:
+        'Our team works side-by-side with you as your cybersecurity partner.',
+      author: 'GuidePoint Security',
+      company: 'Application Security Practice',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png',
+      companyLogo: '/logos/guidepointsecurity.png',
     },
   },
 
@@ -1591,11 +1885,13 @@ const services = {
 };
 
 // Lightweight list for navigation, grids, and accordion components
-export const servicesList = Object.entries(services).map(([slug, s]) => ({
-  icon: s.icon,
-  title: s.title,
-  path: `/services/${slug}`,
-  description: s.description,
-}));
+export const servicesList = Object.entries(services)
+  .filter(([, s]) => !s.parentService)
+  .map(([slug, s]) => ({
+    icon: s.icon,
+    title: s.title,
+    path: `/services/${slug}`,
+    description: s.description,
+  }));
 
 export default services;

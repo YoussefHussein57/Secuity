@@ -177,7 +177,7 @@ export default function GovernmentDetail() {
                 <h2 className="govt-detail__heading govt-detail__heading--underline">
                   {page.vendors.heading}
                 </h2>
-                <p className="govt-detail__text mx-auto" style={{ maxWidth: 700 }}>
+                <p className="govt-detail__text mx-auto" style={{ maxWidth: 820 }}>
                   {page.vendors.description}
                 </p>
               </div>
@@ -228,7 +228,7 @@ export default function GovernmentDetail() {
                     : page.cta.description}
                 </p>
                 <Link to={page.cta.buttonLink} className="btn btn-accent btn-cta">
-                  {page.cta.buttonText} <i className="bi bi-arrow-right"></i>
+                  {page.cta.buttonText}
                 </Link>
               </div>
             </AnimatedSection>

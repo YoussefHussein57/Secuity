@@ -4,7 +4,9 @@ import { useEffect, useState, useRef } from 'react';
 import services from '../../data/services';
 
 // Build ordered service list from data
-const serviceEntries = Object.entries(services).map(([slug, s]) => ({
+const serviceEntries = Object.entries(services)
+  .filter(([, s]) => !s.parentService)
+  .map(([slug, s]) => ({
   slug,
   icon: s.icon,
   title: s.title,
@@ -104,7 +106,7 @@ const featuredResources = [
 // Helper: render sub-service items for a column
 function SubItems({ items, icon, path, closeMega }) {
   return items.map((item) => (
-    <Link key={item.title} to={path} className="mega-services__sub-item" onClick={closeMega}>
+    <Link key={item.title} to={item.path || path} className="mega-services__sub-item" onClick={closeMega}>
       <i className={`bi ${icon} mega-services__sub-icon`}></i>
       <div>
         <span className="mega-services__sub-title">{item.title}</span>

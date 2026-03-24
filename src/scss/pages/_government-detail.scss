@@ -9,13 +9,21 @@
   // ---- Shared heading styles ----
   &__heading {
     font-family: $font-family-heading;
-    font-size: clamp(2rem, 3.5vw, 2.8rem);
-    font-weight: $headings-font-weight;
+    font-size: 45px;
+    font-weight: $fw-medium;
     line-height: 1.2;
     margin-bottom: 1.25rem;
 
     &--sm {
-      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      font-size: 45px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 30px;
+
+      &--sm {
+        font-size: 28px;
+      }
     }
 
     .text-accent-box {
@@ -28,9 +36,9 @@
   }
 
   &__text {
-    color: $gray-700;
-    font-size: 1rem;
-    line-height: 1.7;
+    color: #5b5b6b;
+    font-size: 17px;
+    line-height: 1.5;
     margin-bottom: 1rem;
 
     &--closing {
@@ -42,8 +50,8 @@
   // ---- 2. Introduction Split ----
   &__intro {
     background-color: $white;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 0;
+    padding-bottom: 80px;
   }
 
   &__intro-image {
@@ -63,8 +71,8 @@
       align-items: flex-start;
       gap: 0.75rem;
       padding: 0.5rem 0;
-      color: $gray-700;
-      font-size: 1rem;
+      color: #5b5b6b;
+      font-size: 16px;
       line-height: 1.5;
 
       i {
@@ -79,8 +87,8 @@
   // ---- 3. Info Section — white bg ----
   &__info {
     background-color: $white;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-top: 40px;
+    padding-bottom: 80px;
     overflow: hidden;
 
     .govt-detail__heading {
@@ -96,7 +104,7 @@
   // Centered info layout (e.g. "What is GSA?")
   &__info-centered {
     text-align: center;
-    max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 3rem 2rem;
     position: relative;
@@ -120,8 +128,9 @@
     }
 
     .govt-detail__text {
-      color: rgba($primary, 0.7);
-      font-size: 1.05rem;
+      color: $primary;
+      font-size: 18px;
+      line-height: 1.5;
     }
   }
 
@@ -158,10 +167,10 @@
       display: flex;
       align-items: flex-start;
       gap: 0.75rem;
-      padding: 0.35rem 0;
+      padding: 0.25rem 0;
       color: $primary;
-      font-size: 0.95rem;
-      line-height: 1.6;
+      font-size: 16px;
+      line-height: 1.5;
 
       i {
         color: $gradient-start;
@@ -184,7 +193,7 @@
       display: flex;
       align-items: center;
       gap: 0.75rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
 
       i {
         color: $gradient-start;
@@ -200,23 +209,24 @@
     ul {
       list-style: none;
       padding: 0;
+      padding-left: 32px;
 
       li {
-        padding: 0.25rem 0;
         padding-left: 1.25rem;
+        padding-bottom: 16px;
         position: relative;
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-size: 16px;
+        line-height: 1.5;
 
         &::before {
           content: '';
           position: absolute;
           left: 0;
-          top: 0.65rem;
+          top: 0.55rem;
           width: 6px;
           height: 6px;
           border-radius: 50%;
-          background-color: $gradient-start;
+          background-color: $primary;
         }
       }
     }
@@ -227,7 +237,6 @@
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    margin-top: 1rem;
     color: $gradient-start;
     font-weight: $fw-semibold;
     font-size: 0.95rem;
@@ -246,8 +255,8 @@
   // ---- 4. Vendor Logos ----
   &__vendors {
     background-color: $light-1;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-top: 40px;
+    padding-bottom: 80px;
 
     .govt-detail__heading {
       color: $primary;
@@ -269,8 +278,8 @@
 
   &__logo-item {
     img {
-      max-height: 60px;
-      width: auto;
+      width: 194px;
+      height: 64px;
       object-fit: contain;
       filter: grayscale(30%);
       transition: filter 0.3s ease;
@@ -284,23 +293,24 @@
   // ---- 5. CTA Section — dark indigo ----
   &__cta {
     background-color: #0f0f59;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   &__cta-heading {
     font-family: $font-family-heading;
-    font-size: clamp(2rem, 3.5vw, 2.8rem);
-    font-weight: $headings-font-weight;
+    font-size: 45px;
+    font-weight: $fw-medium;
     color: $white;
     margin-bottom: 1rem;
   }
 
   &__cta-text {
-    color: rgba($white, 0.7);
-    max-width: 600px;
+    color: $white;
+    font-size: 21px;
+    max-width: 890px;
     margin: 0 auto 2rem;
-    line-height: 1.7;
+    line-height: 1.5;
 
     strong {
       color: $white;
@@ -309,8 +319,9 @@
   }
 
   &__cta-highlight {
-    color: $gradient-end;
-    text-decoration: underline;
+    color: #33f;
+    text-decoration: none;
+    font-weight: $fw-bold;
     text-underline-offset: 3px;
     transition: color 0.2s ease;
 
@@ -327,7 +338,6 @@
   // ---- Hero: centered like page variant but no clip-path ----
   .hero--page {
     clip-path: none;
-    padding-bottom: 6rem;
 
     .hero__subtitle {
       font-size: 33px;

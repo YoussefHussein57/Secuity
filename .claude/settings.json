@@ -3,7 +3,8 @@
     "allow": [
       "Bash(node -e \":*)",
       "Bash(npm run build)",
-      "Bash(grep -E \"^\\\\s{2}''''[a-z-]+'''': \\\\{$\" src/data/services.js)"
+      "Bash(grep -E \"^\\\\s{2}''''[a-z-]+'''': \\\\{$\" src/data/services.js)",
+      "WebFetch(domain:www.guidepointsecurity.com)"
     ],
     "additionalDirectories": [
       "d:\\Freelance\\Project1\\WebProject",
