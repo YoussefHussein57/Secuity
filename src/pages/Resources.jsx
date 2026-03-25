@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import BeInformed from '../components/sections/BeInformed';
@@ -41,13 +41,37 @@ const typeIcons = {
 export default function Resources() {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const initialType = searchParams.get('type') || 'All Resource Types';
-  const initialCat = searchParams.get('category') || 'All Categories';
-
-  const [typeFilter, setTypeFilter] = useState(initialType);
-  const [catFilter, setCatFilter] = useState(initialCat);
+  const [typeFilter, setTypeFilter] = useState(searchParams.get('type') || 'All Resource Types');
+  const [catFilter, setCatFilter] = useState(searchParams.get('category') || 'All Categories');
   const [search, setSearch] = useState('');
   const [page, setPage] = useState(1);
+  const featuredResources = allResources.slice(0, 5);
+  const featuredRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const updateFeaturedScroll = () => {
+    const el = featuredRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10);
+  };
+
+  const scrollFeatured = (dir) => {
+    const el = featuredRef.current;
+    if (!el) return;
+    el.scrollBy({ left: dir * el.clientWidth, behavior: 'smooth' });
+    setTimeout(updateFeaturedScroll, 500);
+  };
+
+  // Sync filters when URL params change (e.g. navigating from mega menu)
+  useEffect(() => {
+    const urlType = searchParams.get('type') || 'All Resource Types';
+    const urlCat = searchParams.get('category') || 'All Categories';
+    setTypeFilter(urlType);
+    setCatFilter(urlCat);
+    setPage(1);
+  }, [searchParams]);
 
   const filtered = useMemo(() => {
     return allResources.filter((r) => {
@@ -103,25 +127,51 @@ export default function Resources() {
         bgImage="https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Page_Security_And_Education.png"
       />
 
-      {/* Featured Slider */}
-      {allResources.length > 0 && (
+      {/* Featured Carousel */}
+      {featuredResources.length > 0 && (
         <section className="resources-featured">
           <div className="container">
-            <div className="resources-featured__card">
-              <div className="resources-featured__type-bar">
-                <i className={`bi ${typeIcons[allResources[0].type]}`}></i>
-                <span>{allResources[0].type}</span>
+            <div className="resources-featured__carousel">
+              {canScrollLeft && (
+                <button
+                  className="resources-featured__arrow resources-featured__arrow--left"
+                  onClick={() => scrollFeatured(-1)}
+                  aria-label="Previous"
+                >
+                  <i className="bi bi-chevron-left"></i>
+                </button>
+              )}
+
+              <div className="resources-featured__track" ref={featuredRef} onScroll={updateFeaturedScroll}>
+                {featuredResources.map((r, i) => (
+                  <div className="resources-featured__card" key={i}>
+                    <div className="resources-featured__type-bar">
+                      <i className={`bi ${typeIcons[r.type]}`}></i>
+                      <span>{r.type}</span>
+                    </div>
+                    <div className="resources-featured__body">
+                      <div className="resources-featured__image">
+                        <img src={r.image} alt={r.title} />
+                      </div>
+                      <div className="resources-featured__content">
+                        <h3 className="resources-featured__title">{r.title}</h3>
+                        <p className="resources-featured__date">{r.date}</p>
+                        <Link to="#" className="btn btn-accent">{r.cta}</Link>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="resources-featured__body">
-                <div className="resources-featured__image">
-                  <img src={allResources[0].image} alt={allResources[0].title} />
-                </div>
-                <div className="resources-featured__content">
-                  <h3 className="resources-featured__title">{allResources[0].title}</h3>
-                  <p className="resources-featured__date">{allResources[0].date}</p>
-                  <Link to="#" className="btn btn-accent">{allResources[0].cta}</Link>
-                </div>
-              </div>
+
+              {canScrollRight && (
+                <button
+                  className="resources-featured__arrow resources-featured__arrow--right"
+                  onClick={() => scrollFeatured(1)}
+                  aria-label="Next"
+                >
+                  <i className="bi bi-chevron-right"></i>
+                </button>
+              )}
             </div>
           </div>
         </section>

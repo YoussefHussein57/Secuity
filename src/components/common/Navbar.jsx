@@ -71,22 +71,22 @@ const companyItems = [
 ];
 
 const companyCustomers = [
-  { alt: 'Premise Health', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png' },
-  { alt: 'Nuance', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png' },
-  { alt: 'KHovnanian Homes', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png' },
-  { alt: 'Follett', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png' },
-  { alt: 'Intelsat', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png' },
-  { alt: 'Sisense', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png' },
+  { alt: 'Premise Health', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png', link: '/customer-success/premise-health' },
+  { alt: 'Nuance', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png', link: '/customer-success/nuance' },
+  { alt: 'KHovnanian Homes', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png', link: '/customer-success/khovnanian' },
+  { alt: 'Follett', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png', link: '/customer-success/follett' },
+  { alt: 'Intelsat', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png', link: '/customer-success/intelsat' },
+  { alt: 'Sisense', path: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png', link: '/customer-success/sisense' },
 ];
 
 const resourceLibrary = [
-  { icon: 'bi-play-btn', label: 'On Demand Webinars', desc: 'Watch our monthly cybersecurity webinar series', path: '/resources/webinars' },
-  { icon: 'bi-play-circle', label: 'Videos', desc: 'Watch the latest educational cybersecurity videos', path: '/resources/webinars' },
-  { icon: 'bi-trophy', label: 'Customer Success', desc: 'Learn about the value of working with a trusted advisor', path: '/resources' },
-  { icon: 'bi-file-earmark-text', label: 'Datasheets', desc: 'Download GuidePoint services & solutions datasheets', path: '/resources' },
-  { icon: 'bi-book', label: 'eBooks', desc: 'Download free eBooks on key cybersecurity topics', path: '/resources' },
-  { icon: 'bi-file-text', label: 'Whitepapers', desc: 'Download cybersecurity solution whitepapers', path: '/resources' },
-  { icon: 'bi-shield-exclamation', label: 'Threat Advisories', desc: 'Research and intel from our experts', path: '/resources' },
+  { icon: 'bi-play-btn', label: 'On Demand Webinars', desc: 'Watch our monthly cybersecurity webinar series', path: '/resources?type=On-Demand+Webinar' },
+  { icon: 'bi-play-circle', label: 'Videos', desc: 'Watch the latest educational cybersecurity videos', path: '/resources?type=Video' },
+  { icon: 'bi-trophy', label: 'Customer Success', desc: 'Learn about the value of working with a trusted advisor', path: '/resources?type=Customer+Success' },
+  { icon: 'bi-file-earmark-text', label: 'Datasheets', desc: 'Download GuidePoint services & solutions datasheets', path: '/resources?type=Datasheet' },
+  { icon: 'bi-book', label: 'eBooks', desc: 'Download free eBooks on key cybersecurity topics', path: '/resources?type=eBook' },
+  { icon: 'bi-file-text', label: 'Whitepapers', desc: 'Download cybersecurity solution whitepapers', path: '/resources?type=Whitepaper' },
+  { icon: 'bi-shield-exclamation', label: 'Threat Advisories', desc: 'Research and intel from our experts', path: '/resources?type=Report' },
   { icon: 'bi-mortarboard', label: 'Education Center', desc: 'Learn about key cybersecurity terms & disciplines', path: '/resources' },
 ];
 
@@ -434,10 +434,18 @@ function renderMegaColumns(service, closeMega) {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeService, setActiveService] = useState(0);
+  const [expandedMobileService, setExpandedMobileService] = useState(null);
   const [openMenu, setOpenMenu] = useState(null);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
   const searchInputRef = useRef(null);
   const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 992);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -540,8 +548,30 @@ export default function Navbar() {
 
                   {/* Content */}
                   <div className="mega-panel__body">
+                    {isMobile ? (
+                      /* Mobile: accordion layout — sub-services expand beneath each service */
+                      <div className="mega-services-mobile">
+                        {serviceEntries.map((s, i) => (
+                          <div key={s.slug} className="mega-services-mobile__item">
+                            <button
+                              className={`mega-services-mobile__header ${expandedMobileService === i ? 'mega-services-mobile__header--open' : ''}`}
+                              onClick={() => setExpandedMobileService(expandedMobileService === i ? null : i)}
+                            >
+                              <i className={`bi ${s.icon} mega-services-mobile__icon`}></i>
+                              <span className="mega-services-mobile__title">{s.title}</span>
+                              <i className={`bi ${expandedMobileService === i ? 'bi-chevron-up' : 'bi-chevron-down'} mega-services-mobile__chevron`}></i>
+                            </button>
+                            {expandedMobileService === i && (
+                              <div className="mega-services-mobile__body">
+                                {renderMegaColumns(s, closeMega)}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      /* Desktop: sidebar + detail panel */
                       <div className="mega-services">
-                        {/* Left sidebar */}
                         <div className="mega-services__sidebar">
                           {serviceEntries.map((s, i) => (
                             <button
@@ -554,8 +584,6 @@ export default function Navbar() {
                             </button>
                           ))}
                         </div>
-
-                        {/* Right detail panel */}
                         <div className="mega-services__detail">
                           <div className="mega-services__detail-header">
                             <i className={`bi ${currentService.icon} mega-services__detail-icon`}></i>
@@ -563,11 +591,10 @@ export default function Navbar() {
                           </div>
                           <p className="mega-services__detail-tagline">{currentService.tagline}</p>
                           <hr className="mega-services__divider" />
-
-                          {/* Render columns based on layout type */}
                           {renderMegaColumns(currentService, closeMega)}
                         </div>
                       </div>
+                    )}
                   </div>
                 </div>
               )}
@@ -770,9 +797,9 @@ export default function Navbar() {
                         <h6 className="mega-company__heading">CUSTOMERS</h6>
                         <div className="mega-company__logos">
                           {companyCustomers.map((c) => (
-                            <div className="mega-company__logo" key={c.alt}>
+                            <Link to={c.link} className="mega-company__logo" key={c.alt} onClick={closeMega}>
                               <img src={c.path} alt={c.alt} />
-                            </div>
+                            </Link>
                           ))}
                         </div>
                         <Link to="/company/customers" className="mega-panel__view-all" onClick={closeMega}>

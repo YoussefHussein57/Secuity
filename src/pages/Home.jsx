@@ -89,6 +89,7 @@ export default function Home() {
         ctaText="Talk with an Expert"
         ctaLink="/contact"
         bgImage={heroImage}
+        className="home-hero"
       />
 
       {/* ===== WHY US ===== */}

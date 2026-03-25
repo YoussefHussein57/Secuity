@@ -1,5 +1,21 @@
 // Home Page
 
+// ---- Home Hero: dark left-to-right overlay ----
+.home-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba($dark, 0.92) 0%,
+    rgba($dark, 0.75) 35%,
+    rgba($dark, 0.3) 65%,
+    transparent 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
 // ---- Service Accordion List ----
 // The accordion wrapper gets the gradient border
 .home-services-list .service-accordion {
