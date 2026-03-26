@@ -101,7 +101,7 @@ export default function Hero({
             )}
             {subtitle && (
               <p
-                className="hero__subtitle mb-5"
+                className="hero__subtitle mb-5 text-white"
                 style={{
                   transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
                   transform: loaded ? 'translateY(0)' : 'translateY(20px)',

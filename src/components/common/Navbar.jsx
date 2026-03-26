@@ -810,7 +810,7 @@ export default function Navbar() {
                       {/* Programs */}
                       <div className="col-lg-3 mega-company__col mega-company__col--border-right">
                         <h6 className="mega-company__heading">GUIDEPOINT SECURITY FINANCIAL</h6>
-                        <Link to="/company/financial" className="mega-company__program-card" onClick={closeMega}>
+                        <Link to="/company/gps-financial" className="mega-company__program-card" onClick={closeMega}>
                           <img
                             src="https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg"
                             alt="GuidePoint Security Financial"
@@ -824,7 +824,7 @@ export default function Navbar() {
                         </Link>
 
                         <h6 className="mega-company__heading mt-4">GUIDEPOINT SECURITY UNIVERSITY</h6>
-                        <Link to="/company/university" className="mega-company__program-card" onClick={closeMega}>
+                        <Link to="/company/gpsu" className="mega-company__program-card" onClick={closeMega}>
                           <img
                             src="https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg"
                             alt="GuidePoint Security University"

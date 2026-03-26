@@ -1,0 +1,624 @@
+// ===========================================
+// GPSU Page
+// ===========================================
+
+// ---- Hero ----
+.gpsu-hero {
+  background-color: $indigo-light;
+  background-image: url('https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Managed_Security_Services.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 60px 60px 40px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  &__logo {
+    width: 506px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-family: $font-family-base;
+    font-size: 24px;
+    font-weight: $fw-medium;
+    line-height: 50.4px;
+    color: $white;
+    max-width: 750px;
+    margin: 0 auto 20px;
+  }
+}
+
+// ---- GPSU Overview ----
+.gpsu-overview {
+  background: $indigo-light;
+  padding: 80px 40px 120px;
+  position: relative;
+  overflow: visible;
+
+  // Shape divider at bottom — transitions to $primary
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: $primary;
+    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+  }
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 48px;
+    font-weight: $fw-medium;
+    line-height: 57.6px;
+    color: $white;
+    margin-bottom: 20px;
+
+    em {
+      font-style: normal;
+      background: $white;
+      color: $indigo-light;
+      padding: 0 0.15em;
+      display: inline-block;
+      line-height: 1.1;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  &__footnote {
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: $white;
+    margin-top: 20px;
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover .gpsu-overview__play-overlay i {
+      transform: scale(1.1);
+    }
+  }
+
+  &__video-thumb {
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__play-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.25);
+
+    i {
+      font-size: 56px;
+      color: $white;
+      opacity: 0.9;
+      transition: transform 0.2s ease;
+    }
+  }
+}
+
+// ---- Is GPSU Right for You? ----
+.gpsu-right-for-you {
+  background: $primary;
+  padding: 48px 40px 48px;
+  text-align: center;
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 40px;
+    font-weight: $fw-medium;
+    line-height: 52.7px;
+    color: $white;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $white;
+    max-width: 898px;
+    margin: 0 auto 48px;
+    text-align: left;
+  }
+
+  &__link {
+    color: $gradient-end;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.gpsu-military {
+  margin-top: 48px;
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 31px;
+    font-weight: $fw-semibold;
+    line-height: 41.6px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $white;
+    max-width: 893px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+// ---- Career Profiles ----
+.gpsu-careers {
+  background: $primary;
+  padding: 40px 0 120px;
+  overflow: hidden;
+
+  &__layout {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__content {
+    flex: 1;
+    padding: 0 40px 0 50px;
+    max-width: 55%;
+  }
+
+  &__image {
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $white;
+    padding-left: 30px;
+    padding-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &__icon {
+    color: $gradient-end;
+    font-size: 20px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__item-title {
+    color: $gradient-end;
+    font-weight: $fw-semibold;
+  }
+}
+
+// ---- Benefits ----
+.gpsu-benefits {
+  background: $indigo-light;
+  padding: 48px 40px 80px;
+
+  &__report-img {
+    width: 100%;
+    max-width: 486px;
+    height: auto;
+    border: 0.8px solid $light;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &__caption {
+    font-family: $font-family-base;
+    font-size: 14.4px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: $white;
+    max-width: 486px;
+  }
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 50px;
+    font-weight: $fw-medium;
+    line-height: 60px;
+    color: $white;
+    margin-bottom: 24px;
+
+    .text-accent-box {
+      background: $white;
+      color: $indigo-light;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $white;
+    padding-left: 30px;
+    padding-bottom: 8px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    position: relative;
+
+    .gpsu-careers__icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+// ---- Getting Started ----
+.gpsu-getting-started {
+  background: $indigo-light;
+  padding: 48px 40px 120px;
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 50px;
+    font-weight: $fw-medium;
+    line-height: 60px;
+    color: $white;
+    margin-bottom: 24px;
+
+    .text-accent-box {
+      background: $white;
+      color: $indigo-light;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  &__numbered-list {
+    padding-left: 40px;
+    margin-bottom: 20px;
+    color: $white;
+
+    li {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__ebook {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    border: 0.8px solid $light;
+  }
+}
+
+// ---- Community Video ----
+.gpsu-community {
+  background: $light;
+  padding: 48px 40px 120px;
+
+  &__title {
+    font-family: $font-family-base;
+    font-size: 52px;
+    font-weight: $fw-medium;
+    line-height: 58px;
+    color: #000;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    font-family: $font-family-base;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 51px;
+    color: #000;
+    margin-bottom: 24px;
+    white-space: pre-line;
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #000;
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__play-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.25);
+
+    i {
+      font-size: 56px;
+      color: $white;
+      opacity: 0.9;
+    }
+  }
+}
+
+// ---- Technical Focus Areas ----
+.gpsu-focus {
+  background: $primary;
+  padding: 48px 40px 120px;
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 50px;
+    font-weight: $fw-medium;
+    line-height: 60px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 48px;
+
+    .text-accent-box {
+      background: $white;
+      color: $primary;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-base;
+    font-size: 20px;
+    font-weight: $fw-bold;
+    line-height: 30px;
+    color: rgb(16, 191, 234);
+    margin-bottom: 8px;
+  }
+
+  &__desc {
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $white;
+  }
+}
+
+// ---- Next Steps ----
+.gpsu-next-steps {
+  background: $indigo-light;
+  padding: 48px 40px 80px;
+  text-align: center;
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 50px;
+    font-weight: $fw-medium;
+    line-height: 60px;
+    color: $white;
+    margin-bottom: 32px;
+
+    .text-accent-box {
+      background: $white;
+      color: $indigo-light;
+      padding: 0.05em 0.2em;
+      display: inline-block;
+      line-height: 1.1;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: $white;
+    margin-bottom: 16px;
+
+    strong {
+      font-weight: $fw-semibold;
+    }
+
+    a {
+      color: rgb(16, 191, 234);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// ---- Responsive ----
+@media (max-width: 991.98px) {
+  .gpsu-hero {
+    padding: 48px 20px 60px;
+
+    &__subtitle {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  .gpsu-overview {
+    padding: 48px 20px 80px;
+
+    &__heading {
+      font-size: 36px;
+    }
+  }
+
+  .gpsu-right-for-you {
+    padding: 48px 20px 0;
+  }
+
+  .gpsu-careers {
+    padding: 40px 0 80px;
+
+    &__layout {
+      flex-direction: column-reverse;
+    }
+
+    &__content {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+
+    &__image {
+      flex: none;
+      margin-bottom: 32px;
+      padding: 0 20px;
+    }
+  }
+
+  .gpsu-benefits {
+    padding: 48px 20px 60px;
+
+    &__heading {
+      font-size: 36px;
+      line-height: 44px;
+      margin-top: 32px;
+    }
+  }
+
+  .gpsu-getting-started {
+    padding: 48px 20px 80px;
+
+    &__heading {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &__ebook {
+      margin-top: 32px;
+    }
+  }
+
+  .gpsu-community {
+    padding: 48px 20px 80px;
+
+    &__title { font-size: 36px; }
+    &__subtitle { font-size: 28px; line-height: 38px; }
+  }
+
+  .gpsu-focus {
+    padding: 48px 20px 80px;
+
+    &__heading { font-size: 36px; line-height: 44px; }
+  }
+
+  .gpsu-next-steps {
+    padding: 48px 20px 60px;
+
+    &__heading { font-size: 36px; line-height: 44px; }
+    &__text { font-size: 20px; line-height: 30px; }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gpsu-hero__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .gpsu-overview__heading {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .gpsu-benefits__heading,
+  .gpsu-getting-started__heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,153 @@
+// ===========================================
+// GuidePoint Security Financial Page
+// ===========================================
+
+// Hero overrides
+.gpsf-hero {
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  // Dark overlay on the bg image
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba($primary, 0.5);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .hero__title {
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+
+  // White shape divider at bottom
+  &.hero--service::before {
+    background: $white;
+  }
+}
+
+// ---- Main Content ----
+.gpsf-content {
+  background: $white;
+  padding: 48px 40px 40px;
+  position: relative;
+
+  // Dark shape divider at bottom
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: $primary;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    z-index: 1;
+  }
+
+  &__body {
+    max-width: 1170px;
+    margin: 0 auto 50px;
+  }
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  &__subheading {
+    font-family: $font-family-base;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+  }
+
+  &__benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #000;
+    margin-top: 1em;
+    padding-left: 0;
+  }
+
+  &__check-icon {
+    color: rgb(16, 191, 234);
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 5px;
+    margin-top: 32px;
+  }
+
+  &__social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: $gradient-start;
+    color: $white;
+    text-decoration: none;
+    border-radius: 0;
+    transition: opacity 0.2s ease;
+
+    i {
+      font-size: 21px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      color: $white;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 991.98px) {
+    padding: 32px 20px;
+  }
+
+  @media (max-width: 575.98px) {
+    &__heading {
+      font-size: 26px;
+      line-height: 34px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

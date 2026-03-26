@@ -20,6 +20,9 @@ import Webinars from './pages/Webinars';
 import Customers from './pages/Customers';
 import VendorPartners from './pages/VendorPartners';
 import ReportIncident from './pages/ReportIncident';
+import Grit from './pages/Grit';
+import Gpsu from './pages/Gpsu';
+import GpsFinancial from './pages/GpsFinancial';
 import CustomerSuccessDetail from './pages/CustomerSuccessDetail';
 import NotFound from './pages/NotFound';
 
@@ -45,6 +48,9 @@ export default function App() {
           <Route path="company/careers" element={<Careers />} />
           <Route path="company/customers" element={<Customers />} />
           <Route path="company/vendor-partners" element={<VendorPartners />} />
+          <Route path="company/grit" element={<Grit />} />
+          <Route path="company/gpsu" element={<Gpsu />} />
+          <Route path="company/gps-financial" element={<GpsFinancial />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resources" element={<Resources />} />
           <Route path="resources/on-demand-webinars" element={<Navigate to="/resources?type=On-Demand+Webinar" replace />} />

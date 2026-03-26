@@ -1,0 +1,510 @@
+// ===========================================
+// GRIT Page
+// ===========================================
+
+// Hero overrides
+.grit-hero {
+  min-height: auto;
+  padding-top: 72px;
+  padding-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+
+  &::before {
+    display: none;
+  }
+
+  .hero__subtitle {
+    max-width: 982px;
+    font-size: 16px;
+    line-height: 18.4px;
+  }
+
+  // Make both CTAs use the same accent gradient style
+  .btn-outline-light {
+    background: linear-gradient(45deg, $gradient-start 34%, $gradient-end 88%);
+    color: $white;
+    border: none;
+
+    &:hover {
+      background: linear-gradient(45deg, darken($gradient-start, 5%) 34%, darken($gradient-end, 5%) 88%);
+      color: $white;
+    }
+  }
+}
+
+// ---- GRIT Resources Carousel ----
+.grit-resources {
+  padding: 80px 40px 0;
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 40px;
+    font-weight: $fw-medium;
+    color: $white;
+    text-align: center;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__underline {
+    display: block;
+    width: 313px;
+    height: 4px;
+    background: linear-gradient(90deg, $gradient-end, $gradient-start);
+    margin-top: 8px;
+  }
+
+  &__carousel {
+    position: relative;
+    max-width: 998px;
+    margin: 0 auto;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 16px;
+  }
+
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: rgba($white, 0.3);
+    cursor: pointer;
+    transition: background 0.2s ease;
+    padding: 0;
+
+    &--active {
+      background: $white;
+    }
+
+    &:hover {
+      background: rgba($white, 0.6);
+    }
+  }
+
+  &__slide {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 20px 0px;
+    animation: gritSlideIn 0.4s ease;
+  }
+
+  &__slide-content {
+    flex: 0 0 47%;
+    background: #0f0f59;
+    color: $white;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__slide-title {
+    font-family: $font-family-base;
+    font-size: 39px;
+    font-weight: $fw-medium;
+    line-height: 44.85px;
+    color: $white;
+    margin-bottom: 16px;
+  }
+
+  &__slide-desc {
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $white;
+    margin-bottom: 24px;
+  }
+
+  &__slide-image {
+    flex: 1;
+    min-height: 370px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@keyframes gritSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// ---- GRIT Insights ----
+.grit-insights {
+  padding: 48px 40px 120px;
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 40px;
+    font-weight: $fw-medium;
+    color: $white;
+    text-align: center;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 48px;
+  }
+
+  &__tab {
+    font-family: $font-family-base;
+    font-size: 13px;
+    font-weight: $fw-bold;
+    color: $white;
+    padding: 14px 26px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    background: linear-gradient(45deg, $gradient-start, $gradient-end 34%, rgb(102, 196, 176) 65%, rgb(102, 196, 176));
+
+    &--active {
+      background: #940503;
+    }
+  }
+
+  // Ensure equal card heights through the Bootstrap col > AnimatedSection > card chain
+  .row [class*="col-"] {
+    display: flex;
+
+    .animate-on-scroll {
+      width: 100%;
+      display: flex;
+    }
+  }
+}
+
+// ---- GRIT Blog Card ----
+.grit-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background: $white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 6px 0px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 16px 0px;
+  }
+
+  &__image {
+    height: 279px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content {
+    padding: 16px 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tag {
+    display: inline-block;
+    font-family: Courier, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $white;
+    background: #940503;
+    padding: 0 20px;
+    margin-bottom: 12px;
+    align-self: flex-start;
+  }
+
+  &__title {
+    font-family: $font-family-base;
+    font-size: 22px;
+    font-weight: $fw-medium;
+    line-height: 28px;
+    color: $primary;
+    margin-bottom: 12px;
+  }
+
+  &__author,
+  &__date {
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: 400;
+    color: $gray-700;
+    margin-bottom: 4px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 12px;
+  }
+
+  &__read-more {
+    font-family: $font-family-base;
+    font-size: 13px;
+    font-weight: $fw-bold;
+    color: $primary;
+    border: 1.5px solid $primary;
+    padding: 8px 20px;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+  }
+
+  &__read-time {
+    font-family: $font-family-base;
+    font-size: 13px;
+    color: $gray-700;
+  }
+}
+
+// ---- Team Leadership ----
+.grit-leadership {
+  background: $light;
+  padding: 48px 40px 120px;
+  position: relative;
+  overflow: visible;
+
+  // White tilt shape divider at bottom
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: $white;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    z-index: 1;
+  }
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 40px;
+    font-weight: $fw-medium;
+    color: #000;
+    text-align: center;
+    margin-bottom: 48px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    // Gradient underline
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      max-width: 312px;
+      height: 6px;
+      background: linear-gradient(to right, $gradient-start, rgb(88, 187, 229));
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    max-width: 1000px;
+    margin: 48px auto 0;
+  }
+
+  &__avatar {
+    flex: 0 0 33.33%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+
+    img {
+      width: 176px;
+      height: 176px;
+      object-fit: fill;
+    }
+  }
+
+  &__info {
+    flex: 0 0 66.66%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__name {
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    line-height: 27px;
+    margin-bottom: 0;
+
+    strong {
+      font-weight: $fw-bold;
+    }
+  }
+
+  &__social {
+    color: rgb(19, 191, 234);
+    text-decoration: none;
+    font-size: 18px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__bio {
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+}
+
+// ---- Certifications ----
+.grit-certifications {
+  background: linear-gradient($white 100%, rgba(242, 41, 91, 0) 0%);
+  padding: 48px 40px 80px;
+
+  &__label {
+    font-family: $font-family-base;
+    font-size: 15px;
+    font-weight: $fw-bold;
+    color: $primary;
+    text-align: center;
+    letter-spacing: 1.93px;
+    text-transform: uppercase;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+
+  &__heading {
+    font-family: $font-family-base;
+    font-size: 50px;
+    font-weight: $fw-medium;
+    color: #000;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 48px;
+  }
+
+  &__highlight {
+    background: #000;
+    color: $white;
+    font-style: normal;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    display: inline;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1062px;
+    margin: 16px auto 0;
+  }
+
+  &__item {
+    flex: 0 0 calc(20% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100px;
+      height: auto;
+      max-height: 120px;
+      object-fit: contain;
+    }
+  }
+}
+
+// ---- Responsive ----
+@media (max-width: 991.98px) {
+  .grit-resources {
+    padding: 48px 20px 0;
+
+    &__slide {
+      flex-direction: column;
+    }
+
+    &__slide-content {
+      flex: none;
+    }
+
+    &__slide-image {
+      min-height: 250px;
+    }
+
+    &__slide-title {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+
+  .grit-insights {
+    padding: 48px 20px 80px;
+  }
+
+  .grit-leadership {
+    padding: 48px 20px 80px;
+
+    &__profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .grit-certifications {
+    padding: 48px 20px 60px;
+
+    &__heading {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .grit-resources__slide-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .grit-resources__slide-image {
+    min-height: 200px;
+  }
+
+  .grit-card__image {
+    height: 180px;
+  }
+}
