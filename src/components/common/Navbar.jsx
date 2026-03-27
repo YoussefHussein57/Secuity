@@ -91,8 +91,8 @@ const resourceLibrary = [
 ];
 
 const blogPosts = [
-  { title: 'How Mature is Your Identity and Access Management Program?', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg', path: '/resources/blog' },
-  { title: 'NIST CSF 2.0 Is Here: How Will You Adapt?', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg', path: '/resources/blog' },
+  { title: 'How Mature is Your Identity and Access Management Program?', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg', path: '/blog/how-mature-is-your-identity-and-access-management-program' },
+  { title: 'NIST CSF 2.0 Is Here: How Will You Adapt?', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg', path: '/blog/nist-csf-2-0-is-here-how-will-you-adapt' },
 ];
 
 const featuredResources = [

@@ -23,7 +23,9 @@ import ReportIncident from './pages/ReportIncident';
 import Grit from './pages/Grit';
 import Gpsu from './pages/Gpsu';
 import GpsFinancial from './pages/GpsFinancial';
+import Gpsec from './pages/Gpsec';
 import CustomerSuccessDetail from './pages/CustomerSuccessDetail';
+import BlogDetail from './pages/BlogDetail';
 import NotFound from './pages/NotFound';
 
 // Import Bootstrap JS for dropdowns/collapse
@@ -51,6 +53,7 @@ export default function App() {
           <Route path="company/grit" element={<Grit />} />
           <Route path="company/gpsu" element={<Gpsu />} />
           <Route path="company/gps-financial" element={<GpsFinancial />} />
+          <Route path="company/gpsec" element={<Gpsec />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resources" element={<Resources />} />
           <Route path="resources/on-demand-webinars" element={<Navigate to="/resources?type=On-Demand+Webinar" replace />} />
@@ -64,6 +67,7 @@ export default function App() {
           <Route path="resources/whitepapers" element={<Navigate to="/resources?type=Whitepaper" replace />} />
           <Route path="resources/blog" element={<Navigate to="/resources?type=Blog" replace />} />
           <Route path="resources/events" element={<Navigate to="/resources?type=Event" replace />} />
+          <Route path="blog/:slug" element={<BlogDetail />} />
           <Route path="customer-success/:slug" element={<CustomerSuccessDetail />} />
           <Route path="report-incident" element={<ReportIncident />} />
           <Route path="*" element={<NotFound />} />

@@ -1,0 +1,570 @@
+// ===========================================
+// Blog Detail Page
+// ===========================================
+
+// L-shaped hero — the image is tall, left column overlaps with white bg
+.blog-hero-wrapper {
+  position: relative;
+  margin-bottom: -250px; // allow layout to overlap into it
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 0;
+  }
+}
+
+.blog-hero {
+  height: 560px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $primary;
+
+  @media (max-width: 991.98px) {
+    height: 390px;
+  }
+
+  @media (max-width: 575.98px) {
+    height: 250px;
+  }
+}
+
+// Layout
+.blog-layout {
+  display: flex;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+  align-items: flex-start;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+// Shared share icons
+.blog-share {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__label {
+    font-size: 16px;
+    color: $gray-700;
+    margin-right: 4px;
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: $gradient-start;
+    color: $white;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: darken($gradient-start, 8%);
+      color: $white;
+    }
+  }
+
+  &--sidebar {
+    justify-content: center;
+    padding: 40px 0;
+  }
+}
+
+// Main post content — white bg creates L-shape over the hero
+.blog-post {
+  flex: 1;
+  max-width: 624px;
+  background: $white;
+  padding: 30px 30px 0 0;
+  position: relative;
+  z-index: 2;
+
+  // Extend white bg to the left viewport edge
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100vw;
+    height: 100%;
+    background: $white;
+  }
+
+  @media (max-width: 991.98px) {
+    max-width: 100%;
+    padding: 30px 0 0;
+    background: transparent;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  // Post header
+  &__header {
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 52px;
+    font-weight: $fw-medium;
+    line-height: 58px;
+    color: $dark;
+    margin-bottom: 20px;
+
+    @media (max-width: 991.98px) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray-700;
+  }
+
+  &__author {
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  &__read-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    color: $gray-700;
+
+    .bi {
+      font-size: 14px;
+    }
+  }
+
+  &__date {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray-700;
+  }
+
+  // Post body
+  &__body {
+    padding-top: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $gray-700;
+    margin: 0 0 20px;
+  }
+
+  &__heading {
+    font-size: 28px;
+    font-weight: $fw-medium;
+    line-height: 39.2px;
+    color: $gray-700;
+    margin: 20px 0;
+  }
+
+  &__list {
+    padding-left: 40px;
+    margin: 20px 0;
+
+    li {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $gray-700;
+      margin-bottom: 20px;
+
+      strong {
+        font-weight: $fw-bold;
+      }
+    }
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray-700;
+
+    th, td {
+      padding: 12px 16px;
+      border: 1px solid $gray-200;
+      text-align: left;
+    }
+
+    th {
+      background: $gray-100;
+      font-weight: $fw-semibold;
+      color: $dark;
+    }
+
+    td strong {
+      font-weight: $fw-semibold;
+    }
+  }
+
+  &__link {
+    color: $gradient-start;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // Post footer — categories + share
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 30px 0;
+    margin-top: 20px;
+    border-top: 1px solid $gray-200;
+  }
+
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: $gray-700;
+  }
+
+  &__categories-label {
+    margin-right: 4px;
+  }
+
+  &__cat-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: $fw-semibold;
+    letter-spacing: 0.5px;
+    color: $gray-700;
+    border: 1px solid $gray-200;
+    padding: 4px 12px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: $gray-200;
+      color: $dark;
+    }
+  }
+
+  // Tags
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 0;
+  }
+
+  &__tags-label {
+    font-size: 16px;
+    color: $gray-700;
+    margin-right: 4px;
+  }
+
+  &__tag-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: $fw-semibold;
+    letter-spacing: 0.5px;
+    color: $gray-700;
+    border: 1px solid $gray-200;
+    padding: 4px 12px;
+  }
+}
+
+// Author bio card
+.blog-author {
+  display: flex;
+  gap: 0;
+  background: rgba($gradient-end, 0.08);
+  margin: 30px 0;
+
+  @media (max-width: 575.98px) {
+    flex-direction: column-reverse;
+  }
+
+  &__content {
+    flex: 1;
+    padding: 30px;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: $fw-bold;
+    letter-spacing: 1px;
+    color: $gradient-start;
+    margin-bottom: 8px;
+  }
+
+  &__role {
+    font-size: 14px;
+    font-weight: 400;
+    color: $gray-700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__bio {
+    font-size: 15px;
+    line-height: 24px;
+    color: $gray-700;
+    margin: 0;
+  }
+
+  &__photo {
+    flex: 0 0 150px;
+    align-self: flex-start;
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 575.98px) {
+      flex: 0 0 auto;
+      align-self: center;
+    }
+  }
+}
+
+// Sidebar — starts below the hero overlap, sticky scroll
+.blog-sidebar {
+  width: 349px;
+  flex-shrink: 0;
+  margin-top: 250px; // start below the hero overlap area
+  padding-bottom: 40px;
+  position: sticky;
+  top: 80px;
+
+  @media (max-width: 991.98px) {
+    width: 100%;
+    padding-top: 0;
+    position: static;
+  }
+
+  // Resource card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: $dark;
+    background: $white;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      color: $dark;
+    }
+  }
+
+  &__card-image {
+    height: 167px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__card-content {
+    padding: 40px;
+    text-align: center;
+  }
+
+  &__card-title {
+    font-size: 22px;
+    font-weight: $fw-medium;
+    line-height: 28px;
+    color: $dark;
+    margin-bottom: 20px;
+  }
+
+  &__card-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: $dark;
+    margin-bottom: 20px;
+  }
+
+  &__card-cta {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: $fw-bold;
+    color: $dark;
+    border: 1px solid $dark;
+    padding: 8px 24px;
+    text-align: center;
+    transition: background 0.2s ease;
+
+    .bi {
+      margin-left: 4px;
+    }
+
+    &:hover {
+      background: $dark;
+      color: $white;
+    }
+  }
+}
+
+// Related Articles section
+.blog-related {
+  padding: 60px 0 80px;
+  border-top: 1px solid $gray-200;
+
+  .col-lg-4 {
+    display: flex;
+
+    .animate-on-scroll {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: $fw-medium;
+    color: $dark;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 6px;
+      margin-top: 8px;
+      background: linear-gradient(45deg, $gradient-start, $gradient-end);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: $dark;
+    background: $white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      color: $dark;
+    }
+  }
+
+  &__card-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  &__card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__card-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: $fw-semibold;
+    letter-spacing: 0.5px;
+    color: $gray-700;
+    border: 1px solid $gray-200;
+    padding: 4px 10px;
+    margin-bottom: 16px;
+    align-self: flex-start;
+  }
+
+  &__card-title {
+    font-size: 20px;
+    font-weight: $fw-medium;
+    line-height: 28px;
+    color: $dark;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+  }
+
+  &__card-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid $gray-200;
+  }
+
+  &__card-read-more {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: $fw-bold;
+    color: $dark;
+    border: 1px solid $dark;
+    padding: 6px 20px;
+  }
+
+  &__card-read-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    color: $gray-700;
+
+    .bi {
+      font-size: 14px;
+    }
+  }
+}
