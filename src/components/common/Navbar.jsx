@@ -96,9 +96,9 @@ const blogPosts = [
 ];
 
 const featuredResources = [
-  { title: 'GRIT\u00AE 2026 Ransomware & Cyber Threat Report', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png', path: '/resources' },
-  { title: 'Establishing AI Governance as a Competitive Advantage', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg', path: '/resources' },
-  { title: 'Report: The State of Identity and Access Management (IAM) Maturity, 2025', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg', path: '/resources' },
+  { title: 'GRIT\u00AE 2026 Ransomware & Cyber Threat Report', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png', path: '/resources/grit-2026-ransomware-cyber-threat-report' },
+  { title: 'Establishing AI Governance as a Competitive Advantage', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg', path: '/resources/establishing-ai-governance-competitive-advantage' },
+  { title: 'Report: The State of Identity and Access Management (IAM) Maturity, 2025', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg', path: '/resources/state-of-iam-maturity-2025' },
   { title: 'View All the Upcoming Brick House Discussion Topics', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png', path: '/resources' },
   { title: 'GRIT\u00AE 2026 Ransomware & Cyber Threat Report Presentation', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png', path: '/resources' },
 ];

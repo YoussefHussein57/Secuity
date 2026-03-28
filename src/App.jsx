@@ -26,6 +26,7 @@ import GpsFinancial from './pages/GpsFinancial';
 import Gpsec from './pages/Gpsec';
 import CustomerSuccessDetail from './pages/CustomerSuccessDetail';
 import BlogDetail from './pages/BlogDetail';
+import ResourceDetail from './pages/ResourceDetail';
 import NotFound from './pages/NotFound';
 
 // Import Bootstrap JS for dropdowns/collapse
@@ -67,6 +68,7 @@ export default function App() {
           <Route path="resources/whitepapers" element={<Navigate to="/resources?type=Whitepaper" replace />} />
           <Route path="resources/blog" element={<Navigate to="/resources?type=Blog" replace />} />
           <Route path="resources/events" element={<Navigate to="/resources?type=Event" replace />} />
+          <Route path="resources/:slug" element={<ResourceDetail />} />
           <Route path="blog/:slug" element={<BlogDetail />} />
           <Route path="customer-success/:slug" element={<CustomerSuccessDetail />} />
           <Route path="report-incident" element={<ReportIncident />} />
