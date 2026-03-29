@@ -21,6 +21,7 @@ const allResources = [
   { image: 'https://picsum.photos/seed/res12/600/400', type: 'Blog', title: 'Top 10 Cloud Misconfigurations to Avoid', date: 'Feb 8, 2026', cta: 'Read More', category: 'Cloud Security' },
   { image: 'https://picsum.photos/seed/res13/600/400', type: 'Customer Success', title: 'How Genuine Parts Company Secured Their Cloud', date: 'Feb 5, 2026', cta: 'Read Story', category: 'Cloud Security' },
   { image: 'https://picsum.photos/seed/res14/600/400', type: 'Customer Success', title: 'K. Hovnanian Homes: Building a Security Program', date: 'Jan 20, 2026', cta: 'Read Story', category: 'Managed Security' },
+  { image: 'https://www.guidepointsecurity.com/wp-content/uploads/2021/12/iStock-611745966_2000x675.jpg', type: 'Event', title: 'View All the Upcoming Brick House Discussion Topics', date: 'April 14, 2026', cta: 'View Topics', category: 'SOC', link: '/thebrickhouse' },
 ];
 
 const ITEMS_PER_PAGE = 8;
@@ -156,7 +157,7 @@ export default function Resources() {
                       <div className="resources-featured__content">
                         <h3 className="resources-featured__title">{r.title}</h3>
                         <p className="resources-featured__date">{r.date}</p>
-                        <Link to="#" className="btn btn-accent">{r.cta}</Link>
+                        <Link to={r.link || '#'} className="btn btn-accent">{r.cta}</Link>
                       </div>
                     </div>
                   </div>
@@ -238,7 +239,7 @@ export default function Resources() {
             {paged.length > 0 ? (
               paged.map((r, i) => (
                 <div className="resources-grid__item" key={i}>
-                  <Link to="#" className="resources-grid__card">
+                  <Link to={r.link || '#'} className="resources-grid__card">
                     <div className="resources-grid__card-header">
                       <i className={`bi ${typeIcons[r.type] || 'bi-file-earmark'}`}></i>
                       <span>{r.type}</span>

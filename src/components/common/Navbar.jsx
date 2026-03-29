@@ -99,8 +99,8 @@ const featuredResources = [
   { title: 'GRIT\u00AE 2026 Ransomware & Cyber Threat Report', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png', path: '/resources/grit-2026-ransomware-cyber-threat-report' },
   { title: 'Establishing AI Governance as a Competitive Advantage', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg', path: '/resources/establishing-ai-governance-competitive-advantage' },
   { title: 'Report: The State of Identity and Access Management (IAM) Maturity, 2025', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg', path: '/resources/state-of-iam-maturity-2025' },
-  { title: 'View All the Upcoming Brick House Discussion Topics', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png', path: '/resources' },
-  { title: 'GRIT\u00AE 2026 Ransomware & Cyber Threat Report Presentation', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png', path: '/resources' },
+  { title: 'View All the Upcoming Brick House Discussion Topics', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png', path: '/thebrickhouse' },
+  { title: 'GRIT\u00AE 2026 Ransomware & Cyber Threat Report Presentation', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png', path: '/resources/grit-2026-annual-ransomware-cyber-threat-report-webinar' },
 ];
 
 // Helper: render sub-service items for a column
@@ -120,7 +120,7 @@ function SubItems({ items, icon, path, closeMega }) {
 function ResourceCard({ resource, closeMega }) {
   if (!resource) return null;
   return (
-    <Link to="/resources" className="mega-services__resource-card" onClick={closeMega}>
+    <Link to={resource.path || '/resources'} className="mega-services__resource-card" onClick={closeMega}>
       <img src={resource.image} alt="" className="mega-services__resource-img" />
       <span className="mega-services__resource-title">{resource.title}</span>
     </Link>
@@ -348,8 +348,9 @@ function renderMegaColumns(service, closeMega) {
     );
   }
 
-  // Layout: IAM (Professional Services | IAM Pillars | Managed Security)
+  // Layout: IAM (Professional Services | IAM Pillars | Managed Security | Resource)
   if (layout === 'iam') {
+    const iamResource = service.megaMenuResource;
     return (
       <div className="mega-services__columns">
         <div className="mega-services__col">
@@ -364,6 +365,14 @@ function renderMegaColumns(service, closeMega) {
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
           <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
         </div>
+        {iamResource && (
+          <div className="mega-services__col">
+            <h6 className="mega-services__col-heading">RESOURCES</h6>
+            <div className="mega-services__resources-grid">
+              <ResourceCard resource={iamResource} closeMega={closeMega} />
+            </div>
+          </div>
+        )}
       </div>
     );
   }

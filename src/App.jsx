@@ -27,6 +27,7 @@ import Gpsec from './pages/Gpsec';
 import CustomerSuccessDetail from './pages/CustomerSuccessDetail';
 import BlogDetail from './pages/BlogDetail';
 import ResourceDetail from './pages/ResourceDetail';
+import BrickHouse from './pages/BrickHouse';
 import NotFound from './pages/NotFound';
 
 // Import Bootstrap JS for dropdowns/collapse
@@ -72,6 +73,7 @@ export default function App() {
           <Route path="blog/:slug" element={<BlogDetail />} />
           <Route path="customer-success/:slug" element={<CustomerSuccessDetail />} />
           <Route path="report-incident" element={<ReportIncident />} />
+          <Route path="thebrickhouse" element={<BrickHouse />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

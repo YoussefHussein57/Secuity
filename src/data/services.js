@@ -1111,6 +1111,11 @@ const services = {
     ],
     training: [],
     megaMenuLayout: 'iam',
+    megaMenuResource: {
+      image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg',
+      title: 'Report: The State of Identity and Access Management (IAM) Maturity, 2025',
+      path: '/resources/state-of-iam-maturity-2025',
+    },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Discover excessive privileges and orphaned accounts.' },
       { icon: 'bi-tools', title: 'Remediate', description: 'Implement least-privilege access controls.' },
