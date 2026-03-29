@@ -40,6 +40,12 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 
+  @media (max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
   &__btn {
     background: none;
     border: none;
@@ -52,6 +58,19 @@
     cursor: pointer;
     border-bottom: 3px solid transparent;
     transition: all 0.2s ease;
+
+    @media (max-width: 575px) {
+      width: 100%;
+      text-align: center;
+      padding: 0.75rem 0;
+      border-bottom: none;
+      border-left: 3px solid transparent;
+
+      &--active {
+        border-left-color: $gradient-end;
+        color: $gradient-end;
+      }
+    }
 
     &--active {
       border-bottom-color: $gradient-end;
@@ -233,6 +252,16 @@
     color: $white;
     margin-bottom: 2.5rem;
     line-height: 60px;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 26px;
+      line-height: 34px;
+    }
   }
 
   &__items {

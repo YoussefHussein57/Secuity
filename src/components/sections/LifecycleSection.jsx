@@ -11,9 +11,9 @@ export default function LifecycleSection({ lifecycle }) {
     <>
       {/* Split: text left, image right */}
       {s && (
-        <section className="section section--dark dark-split" style={{ paddingBottom: '48px' }}>
+        <section className="section section--dark dark-split pt-5 pt-lg-2" style={{ paddingBottom: 0 }}>
           <div className="container">
-            <div className="row g-5 align-items-center">
+            <div className="row g-5 align-items-center pt-lg-2 pt-5">
               <div className="col-lg-6">
                 <AnimatedSection animation="fade-in-left">
                   <div className="dark-split__text">

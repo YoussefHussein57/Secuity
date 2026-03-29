@@ -86,10 +86,22 @@
 
   // Service variant — angled edge transitions to indigo
   &--service {
-    min-height: auto;
+    min-height: 520px;
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 140px;
+    padding: 80px 40px 140px;
+    background-position: right center;
+
+    @media (max-width: 991px) {
+      padding: 80px 24px 120px;
+      min-height: 480px;
+      background-position: right center;
+    }
+
+    @media (max-width: 575px) {
+      padding: 80px 16px 120px;
+      min-height: 420px;
+      background-position: right center;
+    }
 
     .hero__title {
       font-size: clamp(2rem, 4.5vw, 60px);

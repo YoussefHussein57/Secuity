@@ -40,7 +40,7 @@ export default function TechnologyDetail() {
         <section className="section section--dark dark-split dark-split--tech" style={{ paddingTop: 0, paddingBottom: '120px' }}>
           <div className="container">
             <div className="row g-5 align-items-center">
-              <div className="col-lg-6">
+              <div className="col-lg-6 dark-split__img-col">
                 <AnimatedSection animation="fade-in-left">
                   <div className="dark-split__image dark-split__image--left">
                     <img src={s.image} alt={s.title} />
