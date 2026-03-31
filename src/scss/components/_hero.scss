@@ -119,6 +119,26 @@
       color: $white;
     }
 
+    // Technology detail pages only
+    &.hero--tech {
+      .row > div {
+        width: 75%;
+        flex: 0 0 auto;
+
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+      }
+
+      .hero__title {
+        max-width: 740px;
+      }
+
+      .hero__subtitle {
+        max-width: 650px;
+      }
+    }
+
     .hero__label {
       font-size: 15px;
       font-weight: $fw-bold;

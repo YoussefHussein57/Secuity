@@ -1,0 +1,872 @@
+{
+  "scrapedAt": "2026-03-31T11:36:57.959Z",
+  "url": "https://www.guidepointsecurity.com/security-analytics-technologies/",
+  "meta": {
+    "title": "Security Analytics Technologies | GuidePoint Security",
+    "description": "Determine the proper security analytics technologies for your organization with the help of the certified experts at GuidePoint Security.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Left_Revised.png",
+    "canonical": "https://www.guidepointsecurity.com/security-analytics-technologies/",
+    "h1": "Gain the Telemetry You Need to Identify Breach Activity and Hunt for Intrusions"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-15194c39 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Gain the Telemetry You Need to Identify Breach Activity and Hunt for Intrusions"
+        }
+      ],
+      "paragraphs": [
+        "Our team has extensive, real-world, hands-on experience recommending which Security Analytics technologies and features work best for your organization."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Website_Refresh_Services_SUB_Pages_SOC_Optimization.png",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Talk to an Expert",
+          "href": "https://www.guidepointsecurity.com/contact-us/"
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Website_Refresh_Services_SUB_Pages_SOC_Optimization.png"
+    },
+    {
+      "index": 1,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-e093451 elementor-section-full_width services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Determine the Proper Security Analytics Technologies for Your Organization"
+        }
+      ],
+      "paragraphs": [
+        "Security analytics are a foundational component of every security operation. Our security experts help you determine the auditing and data analytics solution needed to secure your business. While on-prem, cloud or SaaS solutions all have their place, how can you determine which solution best fits your needs? We take a requirements-based approach that streamlines the decision-making process, maximizing your effectiveness while minimizing operational overhead"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Left_Revised.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-7541dad services-technologies services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Rely on a Vendor-Agnostic Partner"
+        },
+        {
+          "tag": "h3",
+          "text": "Audit Collection"
+        },
+        {
+          "tag": "h3",
+          "text": "Security Information & Event Management System: SIEM"
+        },
+        {
+          "tag": "h3",
+          "text": "Machine Learning: ML"
+        },
+        {
+          "tag": "h3",
+          "text": "Security Orchestration, Automation & Response: SOAR"
+        }
+      ],
+      "paragraphs": [
+        "Our highly-certified SOC and Security Analytics experts can help you identify the right technology and integrate it into your unique environment and processes.",
+        "Our experts can help by writing audit governance policies, determining audit configurations and architecting enterprise-level solutions to support mandated audit requirements, as well as the SOC’s need for information.",
+        "We provide assistance with capability selection based on your needs and environment, as well as what SOC processes to automate. We can create content that is flexible and adapt to the way your employees work and we also help with platform implementation, custom integrations and tuning.",
+        "Our team is adept at utilizing common machine learning platforms to help review your security data. We create content that is flexible and adapts to the way your employees or groups work on a day-to-day basis and highlights when something is abnormal.",
+        "We provide assistance with SOAR platform selection based on your needs and environment, as well as what SOC processes to automate via a SOAR. We also help with platform implementation and custom integrations.",
+        "Our Security Analytics Commitment to You"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Understanding the unique nature of your environment and identifying the right security analytics and SOC solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept",
+            "Implementing, optimizing and managing a wide range of SOC technologies such as SIEM, SOAR and Machine Learning",
+            "Offering comprehensive integration services for a wide variety of SOAR and security analytics focused technologies tailored to your unique use cases"
+          ]
+        }
+      ],
+      "images": [],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-47acc6b elementor-section-full_width services-review-process services-lifecycle elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Gain Unparalleled Access & Buying Power"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Evaluation & Selection"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Implementation"
+        },
+        {
+          "tag": "h3",
+          "text": "3. Optimization"
+        },
+        {
+          "tag": "h3",
+          "text": "4. Management"
+        }
+      ],
+      "paragraphs": [
+        "Our team of engineers and operators has decades of hands-on cybersecurity experience working in large commercial and government organizations to review, compare, recommend, negotiate and source best-fit solutions to meet your security requirements.",
+        "650+",
+        "Vetted Solutions",
+        "400+",
+        "in Yearly Savings",
+        "95+",
+        "Reduction in Security Spend",
+        "We help you define selection criteria, build a vendor comparison matrix and develop a proof of concept."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Right_Revised.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/evaluation-selection.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/implementation.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/optimization.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/management.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-41b9c16d services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.",
+        "Industry Certifications",
+        "MITRE ATT&CK Certifications",
+        "Product Certifications"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gsom.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gpen.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gsna.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gx-ia.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gcih.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gcwn.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_mitre_soc.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-ebbd331 services-outcomes elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "We Serve as Your Trusted Advisors"
+        },
+        {
+          "tag": "h3",
+          "text": "Quickly Resolve Incidents"
+        },
+        {
+          "tag": "h3",
+          "text": "Automate More Tasks"
+        },
+        {
+          "tag": "h3",
+          "text": "Hunt for Threats & Find Anomalies"
+        },
+        {
+          "tag": "h3",
+          "text": "Improve Your SOC Maturity"
+        }
+      ],
+      "paragraphs": [
+        "Our SOC engineering experts can help ensure you are maximizing the value of your Security Analytics telemetry to reduce noise and gain more signal from your alerts.",
+        "Tune your SOC tools to have better visibility of security events, reduce the time to remediate incidents",
+        "Optimize SOAR and ML capabilities to maximize the value of your investment as well as your SOC team",
+        "Leverage threat intelligence and ML to identify anomalous behavior and potential threats",
+        "Integrate SOC tools to gain the advantage of actionable alerts with context to speed decision making and resolution"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/save-security-spending.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/save-security-spending.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/save-security-spending.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/save-security-spending.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-acc4458 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    }
+  ],
+  "dataTemplate": {
+    "slug": "security-analytics",
+    "title": "Gain the Telemetry You Need to Identify Breach Activity and Hunt for Intrusions",
+    "tagline": "Determine the Proper Security Analytics Technologies for Your Organization",
+    "heroLabel": "Gain the Telemetry You Need to Identify Breach Activity and Hunt for Intrusions",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Talk to an Expert",
+    "heroImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Website_Refresh_Services_SUB_Pages_SOC_Optimization.png",
+    "description": "Our team has extensive, real-world, hands-on experience recommending which Security Analytics technologies and features work best for your organization.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "Security analytics are a foundational component of every security operation. Our security experts help you determine the auditing and data analytics solution needed to secure your business. While on-prem, cloud or SaaS solutions all have their place, how can you determine which solution best fits your needs? We take a requirements-based approach that streamlines the decision-making process, maximizing your effectiveness while minimizing operational overhead"
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Left_Revised.png"
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": []
+      }
+    },
+    "outcomes": [],
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "company": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Left_Revised.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Right_Revised.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/evaluation-selection.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/implementation.png",
+      "alt": "",
+      "width": 57,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/optimization.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/management.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gsom.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gpen.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gsna.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gx-ia.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gcih.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gcwn.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_mitre_soc.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_mitre_cert.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_mitre_fund.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_mitre_purp.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_mitre_ae.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_splunk_core_user.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/elementor/thumbs/Splunk-SOAR-Certified-Automation-Developer-1-r1gnv2jf70imyn3o6lo29lvph26bsrqo3sd38mm0mo.png",
+      "alt": "Splunk-SOAR-Certified-Automation-Developer",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/PCSAE-cert.jpeg",
+      "alt": "",
+      "width": 214,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Paloalto-PMXrc-cert_transparent.png",
+      "alt": "",
+      "width": 215,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/cert_CCOE_ADMIN.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_CCOE_user.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/save-security-spending.png",
+      "alt": "",
+      "width": 151,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

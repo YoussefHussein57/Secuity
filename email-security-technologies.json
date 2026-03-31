@@ -1,0 +1,655 @@
+{
+  "scrapedAt": "2026-03-30T11:54:56.097Z",
+  "url": "https://www.guidepointsecurity.com/email-security-technologies/",
+  "meta": {
+    "title": "Email Security Technologies | GuidePoint Security",
+    "description": "Protect your information with the right email security technologies and solutions with the help of GuidePoint Security.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Email_Icon_Left.png",
+    "canonical": "https://www.guidepointsecurity.com/email-security-technologies/",
+    "h1": "Protect Your Informationwith the Right Email Security Solutions"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-18cbff7b elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Protect Your Informationwith the Right Email Security Solutions"
+        }
+      ],
+      "paragraphs": [
+        "Our team has hands-on, real-world experience recommending which Email Security technologies and solutions will work best for your organization."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [
+        {
+          "text": "Talk to an Expert",
+          "href": "https://www.guidepointsecurity.com/contact-us/"
+        }
+      ],
+      "bgImage": null
+    },
+    {
+      "index": 1,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-4a95d36 elementor-section-full_width services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Determine the Right Email Security Technology"
+        }
+      ],
+      "paragraphs": [
+        "Email is core to a functioning business, which is why most attacks rely on email as the initial attack vector. It is imperative that you have the right security tools in place to protect your sensitive information. How can you benefit from email without the inherent risk? Our team of email security experts can help you identify email security features and requirements for your unique environment and help you evaluate proven solutions, technologies and tools that identify security risks, optimize"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Email_Icon_Left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-3595aa53 services-technologies services-review-process elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Rely on a Vendor-Agnostic Partner"
+        },
+        {
+          "tag": "h3",
+          "text": "Email Threat Intelligence"
+        },
+        {
+          "tag": "h3",
+          "text": "EmailSandboxing"
+        },
+        {
+          "tag": "h3",
+          "text": "DMARC"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure EncryptedEmail"
+        },
+        {
+          "tag": "h3",
+          "text": "Email Security Awareness Platform"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure Email Gateways: SEGs"
+        },
+        {
+          "tag": "h3",
+          "text": "Link Defense"
+        },
+        {
+          "tag": "h3",
+          "text": "Email MachineLearning for Security"
+        },
+        {
+          "tag": "h3",
+          "text": "Email Data Loss Prevention"
+        }
+      ],
+      "paragraphs": [
+        "Our certified engineering team helps you navigate the Email Security landscape to identify the right technologies and integrate them into your unique environment.",
+        "Gain reputation information for URLS and files, URL filtering and access to on-demand intel analysts who can provide insights on threat actors.",
+        "Detonate or analyze suspicious email for malware, links and links in files.",
+        "Keep the extended infrastructure functioning properly, while still preventing fraudulent attempts to spoof the organization’s email to your clients and users.",
+        "Enable seamless secure communications between the client and the organization, also allowing for revocation and expiration of communications.",
+        "A critical component of defense against social engineering attacks, this platform tests your employees and provides results for further education.",
+        "Prevent unwanted/malicious email, analyze email to prevent sensitive data from leaving the organization and encrypt emails with sensitive information.",
+        "Check if a link is malicious before delivery and “on-click” using URL-rewriting in the email can protect users now and weeks, months or even years later."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Understanding the unique nature of your environment and identifying the right email security solutions, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept",
+            "Implementing, optimizing and managing a wide range of email security technologies including: Email Threat Intelligence, Email Sandboxing, DMARC, Secure Encrypted Email, Email Security Awareness Platforms, Secure Email Gateways, Link Defense, Machine Learning and Email Data Loss Prevention",
+            "Offering comprehensive integration services for a wide variety of email security focused technologies tailored to your unique use cases"
+          ]
+        }
+      ],
+      "images": [],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-1094ac5 elementor-section-full_width services-review-process services-lifecycle elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Gain Unparalleled Access & Buying Power"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Evaluation & Selection"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Implementation"
+        },
+        {
+          "tag": "h3",
+          "text": "3. Optimization"
+        },
+        {
+          "tag": "h3",
+          "text": "4. Management"
+        }
+      ],
+      "paragraphs": [
+        "Our team of engineers has decades of hands-on cybersecurity experience working in large commercial and government organizations to review, compare, recommend, negotiate and source best-fit Email Security solutions to meet your security requirements.",
+        "We help you define selection criteria, build a vendor comparison matrix and develop a proof of concept.",
+        "We work with you to properly install and configure solutions in your environment.",
+        "We train your team and ensure your technology runs efficiently and effectively.",
+        "Our team stays involved post-deployment to provide system management & analysis."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20678%20714'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2056%2056'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2057%2065'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2056%2056'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2056%2056'%3E%3C/svg%3E",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-5635836 services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.",
+        "Industry Certifications"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "CISSP"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "GPS Certified CCSP"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "GSE"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "GPS Certified Cyber Guarding"
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-468f71a9 services-outcomes elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "We Serve as Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Minimize Risk"
+        },
+        {
+          "tag": "h3",
+          "text": "Increase Security Awareness"
+        },
+        {
+          "tag": "h3",
+          "text": "Protect Your Data"
+        },
+        {
+          "tag": "h3",
+          "text": "Improve Compliance"
+        }
+      ],
+      "paragraphs": [
+        "Our Email Security engineering team can guide you through a holistic approach to address your unique email security needs and improve the maturity of your program.",
+        "Protect your email from being leveraged by adversaries as their most common initial threat vector",
+        "Test and educate your users to ensure they are more aware of threats targeting them through email",
+        "Prevent sensitive data from leaving the organization through email",
+        "Demonstrate compliance with industry regulations and audit requirements"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091%2084'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20103%20103'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091%2084'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2083%20103'%3E%3C/svg%3E",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-774c791 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/technology-integration-services/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/defining-the-threat-of-spear-phishing/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/countering-the-threat-of-spear-phishing/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/technology-integration-services/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    }
+  ],
+  "dataTemplate": {
+    "slug": "protect-your-informationwith-the-right-email-security-solutions",
+    "title": "Protect Your Informationwith the Right Email Security Solutions",
+    "tagline": "Determine the Right Email Security Technology",
+    "heroLabel": "Protect Your Informationwith the Right Email Security Solutions",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Talk to an Expert",
+    "heroImage": null,
+    "description": "Our team has hands-on, real-world experience recommending which Email Security technologies and solutions will work best for your organization.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "Email is core to a functioning business, which is why most attacks rely on email as the initial attack vector. It is imperative that you have the right security tools in place to protect your sensitive information. How can you benefit from email without the inherent risk? Our team of email security experts can help you identify email security features and requirements for your unique environment and help you evaluate proven solutions, technologies and tools that identify security risks, optimize"
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Email_Icon_Left.png"
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": []
+      }
+    },
+    "outcomes": [],
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "company": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Email_Icon_Left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

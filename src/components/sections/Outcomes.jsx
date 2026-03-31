@@ -8,11 +8,11 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
     <section className="section section--dark outcomes-section">
       <div className="container">
         <AnimatedSection animation="animate-on-scroll">
-          <div className="outcomes-header">
+          <div className="outcomes-header d-flex flex-column gap-4">
             <p className="section-header__label" style={{ color: '#fff' }}>
               {outcomesSection?.label || `${title} Outcomes`}
             </p>
-            <h2 className="use-cases__title text-start">
+            <h2 className="use-cases__title text-start mx-0">
               {outcomesSection?.titleHighlight ? (
                 <>
                   {outcomesSection.title.split(outcomesSection.titleHighlight)[0]}
@@ -34,6 +34,8 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
               <GradientCard
                 icon={o.icon}
                 iconImage={o.iconImage}
+                iconWidth={o.iconImage ? 112 : undefined}
+                iconHeight={o.iconImage ? 100 : undefined}
                 iconCircle={!o.iconImage}
                 title={o.title}
                 description={o.description}

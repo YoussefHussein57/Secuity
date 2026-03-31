@@ -1,0 +1,932 @@
+{
+  "scrapedAt": "2026-03-30T14:26:44.691Z",
+  "url": "https://www.guidepointsecurity.com/soc-ir-forensics-technologies/",
+  "meta": {
+    "title": "IR, Forensics & Threat Intelligence Technologies | GuidePoint Security",
+    "description": "Our team has extensive experience determining the right Incident Response, Threat Intelligence and Digital Forensics technologies that work best for you.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Incident_Response_Left.png",
+    "canonical": "https://www.guidepointsecurity.com/soc-ir-forensics-technologies/",
+    "h1": "Quickly and EffectivelyDetect and Respond to Incidents"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-12ba94e1 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Quickly and EffectivelyDetect and Respond to Incidents"
+        }
+      ],
+      "paragraphs": [
+        "Our team has extensive, real-world, hands-on experience recommending which Incident Response (IR), Threat Intelligence and Digital Forensics technologies and features work best for your organization."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Services_SUB_Pages_Incident_Response.jpg",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Talk to an Expert",
+          "href": "https://www.guidepointsecurity.com/contact-us/"
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Services_SUB_Pages_Incident_Response.jpg"
+    },
+    {
+      "index": 1,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-182c8ef elementor-section-full_width services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Determine the Right IR, Digital Forensics & Threat Intelligence Technologies"
+        }
+      ],
+      "paragraphs": [
+        "Breaches happen all too often. However, there are tools that can help you better prepare for, respond to and recover from an incident. Conducting a successful incident response investigation is largely contingent on how quickly an incident is identified. In addition, the investigation depends on the security solutions that are in place at the time of the incident and whether or not they can help collect data or artifacts to perform a historical investigation. How are you leveraging threat intell"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Incident_Response_Left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-7a86d99 services-solutions services-technologies services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Rely on a Vendor-Agnostic Partner"
+        },
+        {
+          "tag": "h3",
+          "text": "Endpoint Detection & Response: EDR"
+        },
+        {
+          "tag": "h3",
+          "text": "Network Detection & Response: NDR"
+        },
+        {
+          "tag": "h3",
+          "text": "Centralized Log Collection & Aggregation"
+        }
+      ],
+      "paragraphs": [
+        "Our highly-certified IR and Threat Intelligence experts can help you identify the right technology and integrate it into your unique environment and processes.",
+        "Offers more advanced capabilities, providing real-time and historical visibility and the ability to investigate the data produced by endpoints.",
+        "Leverages signature-based attacks and software-based behavior modeling to identify anomalous network or user behavior once it bypasses the perimeter firewall.",
+        "Ensures availability and retention of logs via a centralized repository to assist with analysis.",
+        "Our IR and Threat Intelligence Commitment to You"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "INCIDENT RESPONSE TECHNOLOGIES",
+            "DIGITAL FORENSICS TECHNOLOGIES",
+            "THREAT INTELLIGENCE TECHNOLOGIES"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Understanding the unique nature of your environment and identifying the right incident response, threat intelligence and digital forensics technologies, capabilities and configurations to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept",
+            "Implementing, optimizing and managing a wide range of:Incident response technologies such as endpoint detection and response, network detection and response and centralized log collection and aggregationDigital forensics technologies, including hardware and software-based digital forensic tools to address practitioners’ forensic acquisition, case management, analysis, evidence storage and data archival needs, as aligned with industry standard process and methodologyThreat intelligence technologies such as threat intelligence platforms, feeds, brand intelligence monitoring, dark web monitoring, attack surface monitoring, sandboxing, malware analysis and reverse engineering",
+            "Incident response technologies such as endpoint detection and response, network detection and response and centralized log collection and aggregation",
+            "Digital forensics technologies, including hardware and software-based digital forensic tools to address practitioners’ forensic acquisition, case management, analysis, evidence storage and data archival needs, as aligned with industry standard process and methodology",
+            "Threat intelligence technologies such as threat intelligence platforms, feeds, brand intelligence monitoring, dark web monitoring, attack surface monitoring, sandboxing, malware analysis and reverse engineering",
+            "Offering comprehensive integration services for a wide variety of incident response, digital forensics and threat intelligence focused technologies tailored to your unique use cases"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Incident response technologies such as endpoint detection and response, network detection and response and centralized log collection and aggregation",
+            "Digital forensics technologies, including hardware and software-based digital forensic tools to address practitioners’ forensic acquisition, case management, analysis, evidence storage and data archival needs, as aligned with industry standard process and methodology",
+            "Threat intelligence technologies such as threat intelligence platforms, feeds, brand intelligence monitoring, dark web monitoring, attack surface monitoring, sandboxing, malware analysis and reverse engineering"
+          ]
+        }
+      ],
+      "images": [],
+      "ctas": [
+        {
+          "text": "INCIDENT RESPONSE TECHNOLOGIES",
+          "href": "https://www.guidepointsecurity.com/soc-ir-forensics-technologies/#content-a43b8d269ca880cd08e7"
+        },
+        {
+          "text": "DIGITAL FORENSICS TECHNOLOGIES",
+          "href": "https://www.guidepointsecurity.com/soc-ir-forensics-technologies/#content-4235a6069ca880cd08e7"
+        },
+        {
+          "text": "THREAT INTELLIGENCE TECHNOLOGIES",
+          "href": "https://www.guidepointsecurity.com/soc-ir-forensics-technologies/#content-229215d69ca880cd08e7"
+        },
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [
+          "INCIDENT RESPONSE TECHNOLOGIES",
+          "DIGITAL FORENSICS TECHNOLOGIES",
+          "THREAT INTELLIGENCE TECHNOLOGIES"
+        ],
+        "tabPanels": [
+          {
+            "headings": [
+              {
+                "tag": "h3",
+                "text": "Endpoint Detection & Response: EDR"
+              },
+              {
+                "tag": "h3",
+                "text": "Network Detection & Response: NDR"
+              },
+              {
+                "tag": "h3",
+                "text": "Centralized Log Collection & Aggregation"
+              }
+            ],
+            "paragraphs": [
+              "Offers more advanced capabilities, providing real-time and historical visibility and the ability to investigate the data produced by endpoints.",
+              "Leverages signature-based attacks and software-based behavior modeling to identify anomalous network or user behavior once it bypasses the perimeter firewall.",
+              "Ensures availability and retention of logs via a centralized repository to assist with analysis."
+            ],
+            "cards": [
+              {
+                "title": "Endpoint Detection & Response: EDR",
+                "description": "Offers more advanced capabilities, providing real-time and historical visibility and the ability to investigate the data produced by endpoints.",
+                "image": null,
+                "cta": null,
+                "ctaHref": null
+              },
+              {
+                "title": "Endpoint Detection & Response: EDR",
+                "description": "Offers more advanced capabilities, providing real-time and historical visibility and the ability to investigate the data produced by endpoints.",
+                "image": null,
+                "cta": null,
+                "ctaHref": null
+              }
+            ],
+            "lists": []
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-ec17ce8 elementor-section-full_width services-review-process services-lifecycle elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Gain Unparalleled Access & Buying Power"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Evaluation & Selection"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Implementation"
+        },
+        {
+          "tag": "h3",
+          "text": "3. Optimization"
+        },
+        {
+          "tag": "h3",
+          "text": "4. Management"
+        }
+      ],
+      "paragraphs": [
+        "Our team of incident responders and threat intelligence analysts has decades of hands-on cybersecurity experience working in large commercial and government organizations to review, compare, recommend, negotiate and source best-fit solutions to meet your security requirements.",
+        "We help you define selection criteria, build a vendor comparison matrix and develop a proof of concept.",
+        "We work with you to properly install and configure solutions in your environment.",
+        "We train your team and ensure your technology runs efficiently and effectively.",
+        "Our team stays involved post-deployment to provide system management & analysis."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Incident_Response_Right.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/evaluation-selection.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/implementation.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/optimization.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/management.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-34f18256 services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.",
+        "Industry Certifications"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+          "alt": "GSE"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+          "alt": "GPS Certified Cyber Guarding"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/Template_GCFA-2-e1601312512145.png",
+          "alt": "GPS Certified GCFA"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gcfe.png",
+          "alt": "GPS Certified GCFE"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gcih.png",
+          "alt": "GPS Certified GCIH"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-grem-removebg-preview.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gcia.png",
+          "alt": "GPS Certified GCA"
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-512d53c services-outcomes elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "We Serve as Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Enable Faster Response and Recovery"
+        },
+        {
+          "tag": "h3",
+          "text": "Empower Your Threat Intel Program"
+        },
+        {
+          "tag": "h3",
+          "text": "Ensure Visibility and Data Collection"
+        },
+        {
+          "tag": "h3",
+          "text": "MDR and Managed EDR"
+        }
+      ],
+      "paragraphs": [
+        "Our incident response and threat intelligence teams can help ensure you are prepared for and can respond and recover from an incident, by leveraging the right skills, processes and technologies.",
+        "Our experts can ensure the right solutions are in place to speed response when an incident occurs",
+        "We can help you implement and operationalize threat intelligence technology",
+        "Our team can help deploy and configure data collection and aggregation tools to speed incident investigation",
+        "We can help recommend the right managed service provider and solution based on your organization’s unique requirements"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/Blast_Off.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/scale-appsec-programs-sdlc.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/Data_Security_Protection.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/improve-compliance-audit-requirements.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-de0c985 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/technology-integration-services/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/reckoning-with-ransomware/"
+        },
+        {
+          "text": "Watch",
+          "href": "https://www.guidepointsecurity.com/resources/the-brick-house-ir-fundamentals-revamping-your-ir-response-cyber-liability-resiliency-tabletops-sept-20/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/technology-integration-services/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    }
+  ],
+  "dataTemplate": {
+    "slug": "soc-ir-forensics",
+    "title": "Quickly and EffectivelyDetect and Respond to Incidents",
+    "tagline": "Determine the Right IR, Digital Forensics & Threat Intelligence Technologies",
+    "heroLabel": "Quickly and EffectivelyDetect and Respond to Incidents",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Talk to an Expert",
+    "heroImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Services_SUB_Pages_Incident_Response.jpg",
+    "description": "Our team has extensive, real-world, hands-on experience recommending which Incident Response (IR), Threat Intelligence and Digital Forensics technologies and features work best for your organization.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "Breaches happen all too often. However, there are tools that can help you better prepare for, respond to and recover from an incident. Conducting a successful incident response investigation is largely contingent on how quickly an incident is identified. In addition, the investigation depends on the security solutions that are in place at the time of the incident and whether or not they can help collect data or artifacts to perform a historical investigation. How are you leveraging threat intell"
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Incident_Response_Left.png"
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [
+        {
+          "name": "INCIDENT RESPONSE TECHNOLOGIES",
+          "cards": [
+            {
+              "title": "Endpoint Detection & Response: EDR",
+              "description": "Offers more advanced capabilities, providing real-time and historical visibility and the ability to investigate the data produced by endpoints."
+            },
+            {
+              "title": "Endpoint Detection & Response: EDR",
+              "description": "Offers more advanced capabilities, providing real-time and historical visibility and the ability to investigate the data produced by endpoints."
+            }
+          ]
+        },
+        {
+          "name": "DIGITAL FORENSICS TECHNOLOGIES",
+          "cards": []
+        },
+        {
+          "name": "THREAT INTELLIGENCE TECHNOLOGIES",
+          "cards": []
+        }
+      ],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": []
+      }
+    },
+    "outcomes": [],
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "company": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Incident_Response_Left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Incident_Response_Right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/evaluation-selection.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/implementation.png",
+      "alt": "",
+      "width": 57,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/optimization.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/management.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+      "alt": "GSE",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+      "alt": "GPS Certified Cyber Guarding",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/Template_GCFA-2-e1601312512145.png",
+      "alt": "GPS Certified GCFA",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gcfe.png",
+      "alt": "GPS Certified GCFE",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gcih.png",
+      "alt": "GPS Certified GCIH",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-grem-removebg-preview.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gcia.png",
+      "alt": "GPS Certified GCA",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/Blast_Off.png",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/scale-appsec-programs-sdlc.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/Data_Security_Protection.png",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/improve-compliance-audit-requirements.png",
+      "alt": "",
+      "width": 121,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

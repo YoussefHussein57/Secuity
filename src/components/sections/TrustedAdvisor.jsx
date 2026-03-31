@@ -11,7 +11,7 @@ export default function TrustedAdvisor({ testimonial }) {
               <h2 className="trusted-advisor__title">
                 Your <span className="text-accent-box">Trusted Advisor</span>
               </h2>
-              <p className="text-white-50 mb-5">
+              <p className="text-white mb-5">
                 Our team works side-by-side with you as your cybersecurity partner.
               </p>
 

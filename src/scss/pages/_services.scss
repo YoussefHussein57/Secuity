@@ -112,15 +112,26 @@
     }
   }
 
-  // ---- Technology variant — no top padding ----
+  // ---- Technology variant — no top/bottom padding ----
   &--tech {
-    padding-top: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    .dark-split__text {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
   }
 
   // Override section--dark's !important padding-bottom on mobile
   @media (max-width: 991.98px) {
     &.section--dark {
       padding-bottom: 32px !important;
+    }
+
+    &--tech.section--dark {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
     }
   }
 }
@@ -145,7 +156,7 @@
 }
 
 .outcomes-header {
-  max-width: 800px;
+  max-width: 1200px;
   margin-bottom: 0;
   padding-top: 64px;
 
@@ -422,19 +433,23 @@
     font-size: 24px;
     font-weight: 400;
     color: $black;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   &__group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   &__badges {
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.15rem;
     margin-bottom: 0.5rem;
+
+    .cert-badge {
+      width: 100%;
+      height: 90px;
+    }
   }
 
   &__category {
@@ -446,9 +461,10 @@
 }
 
 .cert-badge {
-  width: 100px;
-  height: 120px;
+  width: 100%;
+  height: 110px;
   object-fit: contain;
+  display: block;
 }
 
 // ---- Trust Stats (centered cert variant) ----
@@ -730,7 +746,7 @@
   font-weight: $fw-medium;
   font-size: clamp(1.75rem, 3.5vw, 50px);
   color: $white;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.2;
   max-width: 930px;
   margin-left: auto;
@@ -741,6 +757,7 @@
     color: $primary;
     padding: 0.05em 0.25em;
     display: inline;
+    white-space: nowrap;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
   }

@@ -499,7 +499,7 @@ export default function Navbar() {
       <div className="container">
         <Link className="navbar-brand" to="/" onClick={closeMega}>
         </Link>
-
+        
         <button
           className="navbar-toggler border-0"
           type="button"

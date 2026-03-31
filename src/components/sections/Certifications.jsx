@@ -6,19 +6,19 @@ const certGroups = [
   {
     category: 'Industry Certifications',
     certs: [
-      { name: 'ISO 9001', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/12/NQA_ISO9001_Quality_Management_Cert_100x120.png' },
-      { name: 'SANS Cyber Guardian', image: '/images/certs/gse.png' },
-      { name: 'CISSP', image: '/images/certs/cissp.png' },
-      { name: 'OSCP', image: '/images/certs/oscp.png' },
-      { name: 'OSCE', image: '/images/certs/osce.png' },
+      { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+      { name: 'ISC2 CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/logo-isc2-ccsp-square.png' },
+      { name: 'GIAC GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/GIAC-GSE-SecurityExpert-Line.png' },
+      { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+      { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/OSCP_cert.png' },
     ],
   },
   {
     category: 'GIAC & Other Certifications',
     certs: [
-      { name: 'GSE', image: '/images/certs/gse.png' },
-      { name: 'GPEN', image: '/images/certs/gpen.png' },
-      { name: 'GWAPT', image: '/images/certs/gwapt.png' },
+      { name: 'GIAC GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/GIAC-GPEN-PenTester-Line.png' },
+      { name: 'GIAC GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/GIAC-GWAPT-PenTester-Line.png' },
+      { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/OSCE.png' },
       { name: 'O-TTPS', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/10/large-O-TTPS-Certification-e1731422680524.jpg' },
       { name: 'CMMC L2', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2026/03/CMMC-L2-Logo-1.png' },
     ],
@@ -66,7 +66,7 @@ const trustStats = [
   { value: '40%', label: 'Relied on by 40% of the Fortune 500' },
 ];
 
-export default function Certifications({ variant = 'default' }) {
+export default function Certifications({ variant = 'default', certs: certsProp, certGroups: certGroupsProp }) {
   const [showAll, setShowAll] = useState(false);
   const isCentered = variant === 'centered';
   const isPage = variant === 'page';
@@ -74,11 +74,14 @@ export default function Certifications({ variant = 'default' }) {
   const allCerts = certGroups.flatMap((g) => g.certs);
   const visibleBadges = showAll ? allCertBadges : allCertBadges.slice(0, 10);
 
+  const activeCertGroups = certGroupsProp
+    || (certsProp ? [{ category: 'Industry Certifications', certs: certsProp }] : certGroups);
+
   const renderCertGrid = (centered = false) => (
     <div className={`certs-grid${centered ? ' mx-auto' : ''}`} style={centered ? { maxWidth: 700 } : undefined}>
       <h5 className="certs-grid__heading">Highly Trained, Highly Certified</h5>
       <p className="certs-grid__subheading">Examples Include:</p>
-      {certGroups.map((group) => (
+      {activeCertGroups.map((group) => (
         <div className="certs-grid__group" key={group.category}>
           <div className={`certs-grid__badges${centered ? ' justify-content-center' : ''}`}>
             {group.certs.map((cert) => (

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 export default function GradientCard({
   icon,
   iconImage,
+  iconWidth,
+  iconHeight,
   iconCircle = false,
   title,
   description,
@@ -29,7 +31,7 @@ export default function GradientCard({
     if (iconImage) {
       return (
         <div className="card-gradient__icon">
-          <img src={iconImage} alt="" />
+          <img src={iconImage} alt="" style={(iconWidth || iconHeight) ? { width: iconWidth, height: iconHeight } : undefined} />
         </div>
       );
     }

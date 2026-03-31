@@ -1,0 +1,911 @@
+{
+  "scrapedAt": "2026-03-30T14:11:35.227Z",
+  "url": "https://www.guidepointsecurity.com/iam-technologies/",
+  "meta": {
+    "title": "IAM Technology Solutions | GuidePoint Security",
+    "description": "Manage identities and access to your systems and data with Identity and Access Management (IAM) technologies from GuidePoint Security!",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Identity_Access_Management_Left.png",
+    "canonical": "https://www.guidepointsecurity.com/iam-technologies/",
+    "h1": "Manage Identities and Access to Your Systems and Data with the RightIAM Technologies"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-12ba94e1 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Manage Identities and Access to Your Systems and Data with the RightIAM Technologies"
+        }
+      ],
+      "paragraphs": [
+        "Our team has extensive, real-world, hands-on experience recommending which Identity & Access Management technologies and features work best for your organization and environment."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Website_Refresh_Services_SUB_Pages_IAM_Advisory_Services.jpg",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Strengthen Your IAM Program",
+          "href": "https://www.guidepointsecurity.com/strengthen-your-iam-program/"
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Website_Refresh_Services_SUB_Pages_IAM_Advisory_Services.jpg"
+    },
+    {
+      "index": 1,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-b881f9b elementor-section-full_width services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Determine the Right IAM Technology Solutions"
+        }
+      ],
+      "paragraphs": [
+        "Identity and Access Management (IAM) technologies focus on defining and managing roles and the associated access privileges of users. How are you managing this today that is seamless for users, but also ensures the right levels of security and access are in place?",
+        "There are a host of solutions that are involved in managing the user’s access lifecycle—from Access Management to Customer Identity & Access Management, Identity Governance & Administration and Privileged Access Management—that will help automate and enforce identity processes, enabling more agile and secure business operations."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Identity_Access_Management_Left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-31d1b17 services-technologies services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Rely on a Vendor-Agnostic Partner"
+        },
+        {
+          "tag": "h3",
+          "text": "Identity Governance & Administration: IGA"
+        },
+        {
+          "tag": "h3",
+          "text": "Access Management: AM"
+        },
+        {
+          "tag": "h3",
+          "text": "Customer Identity & Access Management: CIAM"
+        },
+        {
+          "tag": "h3",
+          "text": "Privileged Access Management: PAM"
+        }
+      ],
+      "paragraphs": [
+        "Our highly-certified IAM engineers can help you evaluate the right solutions and integrate them into your unique environment.",
+        "Enables organizations to secure their user access, manage user and administrator permissions and enforce requisite compliance policies.",
+        "Provides authentication and authorization capabilities through single sign-on, multi-factor authentication and federated single sign-on.",
+        "Manages and controls external identity use cases including access, authentication and authorization to business applications and digital properties.",
+        "Mitigates privileged access risks and ensures employees have the necessary access levels to complete their work.",
+        "Our IAM Commitment to You"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Understanding the unique nature of your environment and identifying the right Identity & Access Management technologies and capabilities to meet your needs—from defining selection criteria to assisting with RFP creation to building a vendor comparison matrix and developing a proof of concept",
+            "Implementing, optimizing and managing a wide range of IAM technologies including: Access Management, Identity Governance & Administration, Customer Identity & Access Management and Privileged Access Management",
+            "Offering managed services for a wide variety of IAM technologies tailored to your unique use cases",
+            "Helping design and build integrations, automating provisioning to various targets and configuring your IGA solution for access certification and closed-loop remediation",
+            "Deploying various access management solutions to meet your unique needs, including access to on-premise and cloud-based applications"
+          ]
+        }
+      ],
+      "images": [],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-6700e95 elementor-section-full_width services-review-process services-lifecycle elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Gain Unparalleled Access & Buying Power"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Evaluation & Selection"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Implementation"
+        },
+        {
+          "tag": "h3",
+          "text": "3. Optimization"
+        },
+        {
+          "tag": "h3",
+          "text": "4. Management"
+        }
+      ],
+      "paragraphs": [
+        "Our team of consultants has decades of hands-on cybersecurity experience working in large commercial and government organizations to review, compare, recommend, negotiate and source best-fit IAM solutions to meet your security requirements.",
+        "We help you define selection criteria, build a vendor comparison matrix and develop a proof of concept.",
+        "We work with you to properly install and configure solutions in your environment.",
+        "We train your team and ensure your technology runs efficiently and effectively.",
+        "Our team stays involved post-deployment to provide system management & analysis."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Identity_Access_Management_Right.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/evaluation-selection.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/implementation.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/optimization.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/management.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-34f18256 services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.",
+        "Access Management",
+        "Access Management Certifications",
+        "PAM Certifications"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Badge-Certified-Administrator_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Badge-Certified-Professional_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Okta-Certified-Consultant_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Okta-Certified-Developer_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/Apex_delivery_partner_Okta_cert.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Saviynt-IGA_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/SailPoint-IDN-Engineer_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/SailPoint-IDN-Professional_100x120px.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-471c867 services-outcomes elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "We Serve as Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Ensure the Right Access"
+        },
+        {
+          "tag": "h3",
+          "text": "Reduce Risk"
+        },
+        {
+          "tag": "h3",
+          "text": "Empower Business Agility"
+        },
+        {
+          "tag": "h3",
+          "text": "Ensure Compliance"
+        }
+      ],
+      "paragraphs": [
+        "Our certified Identity & Access Management engineering team can guide you through not only the technology and solution options, but also help ensure the right stakeholders are involved across different groups and implementing processes that work for your stakeholders and overall business.",
+        "Rely on access policies to make sure, for example, your junior analysts don’t have the same full administrative access that your CISO does for a network firewall",
+        "Leverage extra layers of authentication and authorization like SSO, MFA and risk-based authentication that enforce permissions and lead to a reduced-risk platform",
+        "Share information and improve collaboration among applications, devices and business units",
+        "Identity governance processes can help use your activity data to ensure policies comply with regulations like PCI-DSS or GDPR"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/CISO_asA_Service.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/CMMC_Compliance.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/Breach_Attack_Simulation_asA_Service.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/improve-compliance-audit-requirements.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-c610e89 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "WHITEPAPER"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "WHITEPAPER"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "WHITEPAPER"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/delivering-business-value-through-a-well-governed-digital-identity-program/"
+        },
+        {
+          "text": "Watch",
+          "href": "https://www.guidepointsecurity.com/resources/the-brick-house-unpacking-identity-access-mgmt-jun20/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/iam-lifecycle-services/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/delivering-business-value-through-a-well-governed-digital-identity-program/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    }
+  ],
+  "dataTemplate": {
+    "slug": "iam",
+    "title": "Manage Identities and Access to Your Systems and Data with the RightIAM Technologies",
+    "tagline": "Determine the Right IAM Technology Solutions",
+    "heroLabel": "Manage Identities and Access to Your Systems and Data with the RightIAM Technologies",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Strengthen Your IAM Program",
+    "heroImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Website_Refresh_Services_SUB_Pages_IAM_Advisory_Services.jpg",
+    "description": "Our team has extensive, real-world, hands-on experience recommending which Identity & Access Management technologies and features work best for your organization and environment.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "Identity and Access Management (IAM) technologies focus on defining and managing roles and the associated access privileges of users. How are you managing this today that is seamless for users, but also ensures the right levels of security and access are in place?",
+        "There are a host of solutions that are involved in managing the user’s access lifecycle—from Access Management to Customer Identity & Access Management, Identity Governance & Administration and Privileged Access Management—that will help automate and enforce identity processes, enabling more agile and secure business operations."
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Identity_Access_Management_Left.png"
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": []
+      }
+    },
+    "outcomes": [],
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "company": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Identity_Access_Management_Left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Identity_Access_Management_Right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/evaluation-selection.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/implementation.png",
+      "alt": "",
+      "width": 57,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/optimization.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/management.png",
+      "alt": "",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Badge-Certified-Administrator_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Badge-Certified-Professional_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Okta-Certified-Consultant_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Okta-Certified-Developer_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/Apex_delivery_partner_Okta_cert.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Saviynt-IGA_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/SailPoint-IDN-Engineer_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/SailPoint-IDN-Professional_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/SailPoint-IIQ-Architect_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Sailpoint_IIQ_Engineer_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/SailPoint-IIQ-Professional_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/BeyondTrust-Privileged-Management-for-Desktops_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/BeyondTrust-Privileged-Remote-Access_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/BeyondTrust-PasswordSafe_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/CYB_Partners_CertifiedPartner.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Cyberark-Guardian_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Cyberark-Sentry_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Delinea-Certification-Badges-SS-associate-150x150_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Delinea-Certification-Badge-PM-associate-150x150_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/02/Delinea-Certification-Badge-SS-engineer-300x300-H_100x120px.png",
+      "alt": "",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/CISO_asA_Service.png",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/CMMC_Compliance.png",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/12/Breach_Attack_Simulation_asA_Service.png",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/improve-compliance-audit-requirements.png",
+      "alt": "",
+      "width": 121,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

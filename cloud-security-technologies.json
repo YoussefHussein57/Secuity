@@ -1,0 +1,659 @@
+{
+  "scrapedAt": "2026-03-30T11:26:29.267Z",
+  "url": "https://www.guidepointsecurity.com/cloud-security-technologies/",
+  "meta": {
+    "title": "Cloud Security Technologies | GuidePoint Security",
+    "description": "Trust GuidePoint for all your cloud security technology needs. Our team of experts offer real-world, hands-on experience to ensure your protection.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+    "canonical": "https://www.guidepointsecurity.com/cloud-security-technologies/",
+    "h1": "Ensure the Security of Your CloudComputing Environment"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-74f48d6d elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Ensure the Security of Your CloudComputing Environment"
+        }
+      ],
+      "paragraphs": [
+        "Our team has extensive, real-world, hands-on experience recommending which Cloud Security technologies work best with your environment to ensure your data and infrastructure are protected."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [
+        {
+          "text": "Talk to an Expert",
+          "href": "https://www.guidepointsecurity.com/contact-us/"
+        }
+      ],
+      "bgImage": null
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-508bf28e elementor-section-full_width services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Determine the Right Cloud Security Technology"
+        }
+      ],
+      "paragraphs": [
+        "As more organizations leverage the cloud, traditional security solutions are not designed for cloud environments. And your organization has its unique cloud environment with its own set of requirements and needs. How can you ensure which technologies provide the right amount of security to address new and evolving challenges with protecting your cloud environment? Our trusted Cloud Security experts help organizations like yours evaluate proven solutions, technologies and tools that identify secu"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-f6e8d31 services-technologies services-review-process elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Rely on a Vendor-Agnostic Partner"
+        },
+        {
+          "tag": "h3",
+          "text": "Container Security"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Access Security Brokers: CASB"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Security Posture Management: CSPM"
+        },
+        {
+          "tag": "h3",
+          "text": "Infrastructureas Code: IaC"
+        },
+        {
+          "tag": "h3",
+          "text": "CI/CD Tools & Frameworks"
+        }
+      ],
+      "paragraphs": [
+        "Our highly-certified engineering team helps you navigate the Cloud Security technology landscape to identify the right technology and integrate it into your unique environment.",
+        "Scale large clusters of your applications and manage the various security capabilities and configurations that match their speed and resiliency.",
+        "Provide a layer of security between cloud providers and your organization, allowing you to monitor and secure access to ensure that data is secure and in compliance.",
+        "Continuously monitor your cloud environments, identify gaps between your security policy and security posture and ensure adherence to your cloud security baseline.",
+        "Create a stronger cloud security program through role-based security policies, validation of approved infrastructure designs and much more.",
+        "Gain full control of cloud infrastructure and applications by reviewing code for vulnerabilities and compliance issues before it makes it into production.",
+        "Our Commitment to Youu"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Implementing, optimizing and managing a wide range of cloud security technologies",
+            "Offering comprehensive integration services for a wide variety of cloud security focused technologies tailored to your unique use cases",
+            "Providing knowledgeable and experienced cybersecurity professionals who are available to install, configure and run various Cloud Security technologies",
+            "Helping you create a proper CASB strategy and select one that best fits your organization and goals",
+            "Helping you understand container security technologies, such as Kubernetes and managed environments, to take advantage of the various security capabilities and configurations",
+            "Working with you to develop the process structure and tools integration around IaC processes",
+            "Creating the right strategy and selecting the best-fit technologies for your CI/CD security program"
+          ]
+        }
+      ],
+      "images": [],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-5015e37f elementor-section-full_width services-review-process services-lifecycle elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Gain Unparalleled Access & Buying Power"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Evaluation & Selection"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Implementation"
+        },
+        {
+          "tag": "h3",
+          "text": "3. Optimization"
+        },
+        {
+          "tag": "h3",
+          "text": "4. Management"
+        }
+      ],
+      "paragraphs": [
+        "Our team of engineers has decades of hands-on cybersecurity experience working in large commercial and government organizations to review, compare, recommend, negotiate and source best-fit solutions to meet your security requirements.",
+        "We help you define selection criteria, build a vendor comparison matrix and develop a proof of concept.",
+        "We work with you to properly install and configure solutions in your environment.",
+        "We train your team and ensure your technology runs efficiently and effectively.",
+        "Our team stays involved post-deployment to provide system management & analysis."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20678%20714'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2056%2056'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2057%2065'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2056%2056'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2056%2056'%3E%3C/svg%3E",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-5d14bc73 services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.",
+        "Industry Certifications",
+        "CSPM Certifications"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "CISSP"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "GPS Certified CCSP"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "GSE"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "GPS Certified Cyber Guarding"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20110%20110'%3E%3C/svg%3E",
+          "alt": "AWS Solution Architect Professional Certification free courses"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E",
+          "alt": "AWS Certified Security Specialty"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": []
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-2fe3f4cd services-outcomes elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "We Serve as Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Gain a “Security First” Cloud Strategy"
+        },
+        {
+          "tag": "h3",
+          "text": "Future Proof Your Cloud Security Architecture"
+        },
+        {
+          "tag": "h3",
+          "text": "Ensure the Right Visibility"
+        },
+        {
+          "tag": "h3",
+          "text": "Improve Compliance"
+        }
+      ],
+      "paragraphs": [
+        "Our cybersecurity engineering team can guide you through a holistic approach to address your unique cloud security needs and improve the maturity of your program.",
+        "Empower your stakeholders, define your cloud strategy and security controls and enforce them",
+        "Ensure the right foundation is in place to address challenges regardless of the cloud environment",
+        "Be able to access information to correlate activity and have proper change control",
+        "Demonstrate compliance with industry regulations and audit requirements"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20112%20111'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20103%20103'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20115%20109'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2083%20103'%3E%3C/svg%3E",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-30854735 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "EBOOK"
+        },
+        {
+          "tag": "h3",
+          "text": "webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "EBOOK"
+        },
+        {
+          "tag": "h3",
+          "text": "webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "EBOOK"
+        },
+        {
+          "tag": "h3",
+          "text": "webinar"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-security-practice-overview/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/king-arthur-and-the-knights-of-the-cloud-table/"
+        },
+        {
+          "text": "Watch",
+          "href": "https://www.guidepointsecurity.com/resources/the-brick-house-securing-hybrid-environments-apr11/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-security-practice-overview/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      }
+    }
+  ],
+  "dataTemplate": {
+    "slug": "ensure-the-security-of-your-cloudcomputing-environment",
+    "title": "Ensure the Security of Your CloudComputing Environment",
+    "tagline": "Determine the Right Cloud Security Technology",
+    "heroLabel": "Ensure the Security of Your CloudComputing Environment",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Talk to an Expert",
+    "heroImage": null,
+    "description": "Our team has extensive, real-world, hands-on experience recommending which Cloud Security technologies work best with your environment to ensure your data and infrastructure are protected.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.",
+        "Industry Certifications",
+        "CSPM Certifications"
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3C/svg%3E"
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": []
+      }
+    },
+    "outcomes": [],
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "company": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

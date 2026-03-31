@@ -189,8 +189,9 @@
   color: $white;
   font-size: 1.1rem;
   line-height: 1.7;
-  max-width: 750px;
+  max-width: 1120px;
   margin: 0 auto;
+  padding-bottom: 32px;
 }
 
 // ---- Expand wrapper ----
@@ -284,6 +285,37 @@
       flex-shrink: 0;
       margin-top: 0.15rem;
     }
+  }
+}
+
+// ---- Lifecycle Stats (optional stats row inside lifecycle split) ----
+.lifecycle-stats {
+  display: flex;
+  gap: 0;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem 2rem 0.25rem 1rem;
+    border-left: 3px solid #13BFEA;
+
+    & + & {
+      margin-left: 32px;
+    }
+  }
+
+  &__value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #13BFEA;
+    line-height: 1.1;
+  }
+
+  &__label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 0.25rem;
+    line-height: 1.3;
   }
 }
 

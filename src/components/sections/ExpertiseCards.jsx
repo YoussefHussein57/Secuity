@@ -77,6 +77,7 @@ export default function ExpertiseCards({ expertise }) {
               <GradientCard
                 title={card.title}
                 description={card.description}
+                iconImage={card.iconImage || expertise.cardIconImage}
                 layout="centered"
                 accent="bottom"
                 titleLg

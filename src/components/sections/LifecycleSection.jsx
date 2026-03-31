@@ -32,13 +32,23 @@ export default function LifecycleSection({ lifecycle }) {
                         {p}
                       </p>
                     ))}
+                    {s.stats && s.stats.length > 0 && (
+                      <div className="lifecycle-stats mt-4">
+                        {s.stats.map((stat, i) => (
+                          <div className="lifecycle-stats__item" key={i}>
+                            <span className="lifecycle-stats__value">{stat.value}</span>
+                            <span className="lifecycle-stats__label">{stat.label}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </AnimatedSection>
               </div>
               <div className="col-lg-6">
                 <AnimatedSection animation="fade-in-right">
                   <div className="dark-split__image dark-split__image--right">
-                    <img src={s.image} alt={s.title} />
+                    <img src={s.image} alt={s.title} style={s.flipImage ? { transform: 'scaleX(-1)' } : undefined} />
                   </div>
                 </AnimatedSection>
               </div>
