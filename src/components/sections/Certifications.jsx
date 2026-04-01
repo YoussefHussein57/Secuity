@@ -82,10 +82,12 @@ export default function Certifications({ variant = 'default', certs: certsProp, 
       <h5 className="certs-grid__heading">Highly Trained, Highly Certified</h5>
       <p className="certs-grid__subheading">Examples Include:</p>
       {activeCertGroups.map((group) => (
-        <div className="certs-grid__group" key={group.category}>
-          <div className={`certs-grid__badges${centered ? ' justify-content-center' : ''}`}>
+        <div className={`certs-grid__group${group.certs.length <= 2 ? ' certs-grid__group--half' : ''}`} key={group.category}>
+          <div className="row g-2 justify-content-center mb-2">
             {group.certs.map((cert) => (
-              <img src={cert.image} alt={cert.name} className="cert-badge" key={cert.name} />
+              <div className="col-auto" key={cert.name}>
+                <img src={cert.image} alt={cert.name} className="cert-badge" />
+              </div>
             ))}
           </div>
           <p className="certs-grid__category">{group.category}</p>

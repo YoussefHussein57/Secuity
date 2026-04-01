@@ -28,7 +28,7 @@ export default function TrustedAdvisor({ testimonial }) {
                       <div className="testimonial-card__author-row">
                         <div className="testimonial-card__author">
                           <p>{testimonial.author}</p>
-                          <small>{testimonial.company}</small>
+                          <small>{testimonial.role ? `${testimonial.role}, ${testimonial.company}` : testimonial.company}</small>
                         </div>
                         {testimonial.companyLogo && (
                           <img src={testimonial.companyLogo} alt="" className="testimonial-card__company-logo" />

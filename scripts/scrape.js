@@ -370,21 +370,151 @@ async function autoScroll(page) {
     const h1Text   = meta.h1 || meta.title;
     const firstH2  = sections.flatMap((s) => s.headings).find((h) => h.tag === 'h2')?.text || '';
 
+    // ── Hero label (small uppercase text above h1) ────────────────────────────
+    function extractHeroLabel(heroEl) {
+      if (!heroEl) return null;
+      // Look for .section-header__label or small uppercase p before h1
+      const labelEl = heroEl.querySelector('[class*="label"], [class*="eyebrow"], [class*="subheading"]');
+      if (labelEl) return clean(labelEl.textContent);
+      // Fall back: first short all-caps paragraph
+      const paras = [...heroEl.querySelectorAll('p')].filter(visible);
+      for (const p of paras) {
+        const t = clean(p.textContent);
+        if (t.length < 80 && t === t.toUpperCase() && t.length > 5) return t;
+      }
+      return null;
+    }
+
+    // ── Section label (small uppercase text above section heading) ────────────
+    function extractSectionLabel(el) {
+      if (!el) return null;
+      const labelEl = el.querySelector('[class*="label"], [class*="eyebrow"], [class*="subheading"], [class*="section-header"]');
+      if (labelEl) {
+        const t = clean(labelEl.textContent);
+        if (t.length < 100) return t;
+      }
+      return null;
+    }
+
+    // ── Hero CTA — primary button only (not nav links) ────────────────────────
+    function extractHeroCta(heroEl) {
+      if (!heroEl) return 'Talk to an Expert';
+      // Prefer explicit btn/button elements; skip very long or nav-like text
+      const btns = [...heroEl.querySelectorAll('a[class*="btn"], .btn, button')]
+        .filter(visible)
+        .map((b) => ({ text: clean(b.textContent), href: b.href || null }))
+        .filter((b) => b.text.length > 2 && b.text.length < 60);
+      return btns[0]?.text || hero?.ctas[0]?.text || 'Talk to an Expert';
+    }
+
+    // ── Testimonial extraction ─────────────────────────────────────────────────
+    function extractTestimonial() {
+      const testEl = document.querySelector(
+        '[class*="testimonial"], [class*="quote"], [class*="review"], [class*="trusted"]'
+      );
+      if (!testEl) return { quote: '/* FILL IN */', author: '/* FILL IN */', company: '/* FILL IN */' };
+
+      const quoteEl   = testEl.querySelector('blockquote, [class*="quote"], [class*="text"]');
+      const authorEl  = testEl.querySelector('[class*="author"] p, [class*="name"], h3');
+      const roleEl    = testEl.querySelector('[class*="author"] small, [class*="role"], [class*="title"]');
+      const companyEl = testEl.querySelector('[class*="company"], [class*="org"]');
+      const imgs      = [...testEl.querySelectorAll('img')].filter(visible);
+
+      // Heuristic: person image is portrait-ish (square/tall), company logo is wide/short
+      let personImage = null, companyLogo = null;
+      for (const img of imgs) {
+        const w = img.naturalWidth || img.width;
+        const h = img.naturalHeight || img.height;
+        if (!personImage && h >= w * 0.7) personImage = absoluteSrc(img.src);
+        else if (!companyLogo) companyLogo = absoluteSrc(img.src);
+      }
+
+      return {
+        quote:        quoteEl ? clean(quoteEl.textContent).replace(/^["\u201c]|["\u201d]$/g, '') : '/* FILL IN */',
+        author:       authorEl ? clean(authorEl.textContent) : '/* FILL IN */',
+        role:         roleEl   ? clean(roleEl.textContent)   : '/* FILL IN */',
+        company:      companyEl ? clean(companyEl.textContent) : '/* FILL IN */',
+        personImage:  personImage || '/* FILL IN */',
+        companyLogo:  companyLogo || '/* FILL IN */',
+      };
+    }
+
+    // ── Outcomes section (label + title + subtitle + cards) ───────────────────
+    function extractOutcomesSection() {
+      const outEl = document.querySelector(
+        '[class*="outcomes"], [class*="results"], [class*="benefits"]'
+      );
+      if (!outEl) return null;
+
+      const label    = extractSectionLabel(outEl);
+      const titleEl  = outEl.querySelector('h2');
+      const subtitle = [...outEl.querySelectorAll('p')].filter(visible).map((p) => clean(p.textContent)).find((t) => t.length > 40) || null;
+      const cards    = [...outEl.querySelectorAll('h3, [class*="card"] h4, [class*="item"] h4')]
+        .filter(visible)
+        .map((h) => {
+          const desc = h.nextElementSibling || h.parentElement?.querySelector('p');
+          return {
+            title:       clean(h.textContent),
+            description: desc ? clean(desc.textContent) : '',
+          };
+        })
+        .filter((c) => c.title.length > 3);
+
+      return {
+        section: {
+          label:    label || '/* FILL IN */',
+          title:    titleEl ? clean(titleEl.textContent) : '/* FILL IN */',
+          titleHighlight: '/* FILL IN */',
+          subtitle: subtitle || '',
+        },
+        cards,
+      };
+    }
+
+    // ── Cert groups extraction ────────────────────────────────────────────────
+    function extractCertGroups() {
+      const certEl = document.querySelector(
+        '[class*="certif"], [class*="certs"], [class*="badges"]'
+      );
+      if (!certEl) return null;
+
+      // Try to find grouped cert rows
+      const groups = [...certEl.querySelectorAll('[class*="group"], [class*="row"], .row')]
+        .filter(visible)
+        .filter((g) => g.querySelector('img'))
+        .slice(0, 5)
+        .map((g) => {
+          const labelEl = g.querySelector('p, [class*="category"], [class*="label"]');
+          const certs   = [...g.querySelectorAll('img')].filter(visible).map((img) => ({
+            name:  img.alt || clean(img.title || ''),
+            image: absoluteSrc(img.src),
+          })).filter((c) => c.image);
+          return { category: labelEl ? clean(labelEl.textContent) : '/* FILL IN */', certs };
+        })
+        .filter((g) => g.certs.length > 0);
+
+      return groups.length > 0 ? groups : null;
+    }
+
+    const outcomesData = extractOutcomesSection();
+
+    const heroEl = topSections.find((s) => classifySection(s) === 'hero');
+
     const dataTemplate = {
-      slug:        window.location.pathname.replace(/\//g, '').replace(/-technologies$/, '').replace(/-solutions$/, ''),
-      title:       h1Text,
-      tagline:     firstH2,
-      heroLabel:   hero?.headings[0]?.text || h1Text,
+      slug:          window.location.pathname.replace(/\//g, '').replace(/-technologies$/, '').replace(/-solutions$/, ''),
+      title:         h1Text,
+      tagline:       firstH2,
+      heroLabel:     extractHeroLabel(heroEl) || hero?.headings[0]?.text || h1Text,
       heroHighlight: '/* FILL IN: word(s) to highlight in the tagline */',
-      heroCta:     hero?.ctas[0]?.text || 'Talk to an Expert',
-      heroImage:   hero?.bgImage || ogImage || null,
-      description: hero?.paragraphs[0] || '',
+      heroCta:       extractHeroCta(heroEl),
+      heroImage:     hero?.bgImage || ogImage || null,
+      description:   hero?.paragraphs[0] || '',
 
       stats: (statsS?.stats || []).map((s) => ({ number: s.number, label: s.label })),
 
       split: splitS[0] ? {
-        label:          '/* FILL IN */',
-        title:          splitS[0].splits?.[0]?.title || '',
+        label:          extractSectionLabel(topSections.find((s) => s.type === 'split')) || '/* FILL IN */',
+        title:          splitS[0].splits?.[0]?.title || splitS[0].headings[0]?.text || '',
         titleHighlight: '/* FILL IN */',
         paragraphs:     splitS[0].splits?.[0]?.paragraphs || splitS[0].paragraphs,
         image:          splitS[0].splits?.[0]?.image || splitS[0].images[0]?.src || null,
@@ -407,23 +537,21 @@ async function autoScroll(page) {
           description: c.description,
         })) : null,
         commitment: {
-          label: '/* FILL IN */',
+          label: extractSectionLabel(topSections.find((s) => s.type === 'cards') || topSections.find((s) => s.type === 'split')) || '/* FILL IN */',
           title: '/* FILL IN */',
           items: cardsS?.lists?.[0]?.items || splitS[0]?.lists?.[0]?.items || [],
         },
       },
 
-      outcomes: (cardsS?.cards || []).slice(0, 4).map((c) => ({
-        icon:        'bi-shield',
+      outcomesSection: outcomesData?.section || null,
+      outcomes: (outcomesData?.cards || (cardsS?.cards || []).slice(0, 4)).map((c) => ({
         title:       c.title,
         description: c.description,
       })),
 
-      testimonial: {
-        quote:   '/* FILL IN */',
-        author:  '/* FILL IN */',
-        company: '/* FILL IN */',
-      },
+      certGroups: extractCertGroups(),
+
+      testimonial: extractTestimonial(),
     };
 
     // ── All images on the page (for download reference) ───────────────────────

@@ -36,7 +36,7 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
                 iconImage={o.iconImage}
                 iconWidth={o.iconImage ? 112 : undefined}
                 iconHeight={o.iconImage ? 100 : undefined}
-                iconCircle={!o.iconImage}
+                iconCircle={!o.iconImage && !!o.icon}
                 title={o.title}
                 description={o.description}
                 layout="horizontal"

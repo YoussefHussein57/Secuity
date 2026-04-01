@@ -79,7 +79,7 @@ const services = {
       },
     ],
     tactical: [
-      { title: 'Application Security Assessments', description: 'Understand your attack surface through testing' },
+      { title: 'Application Security Assessments', description: 'Understand your attack surface through testing', path: '/services/application-security-assessment' },
       {
         title: 'AI-augmented Application Security Services',
         description: 'Enhance application security assessments by incorporating AI with expert oversight.',
@@ -169,8 +169,8 @@ const services = {
     tagline: 'Ensure a Holistic Application Security Strategy',
     heroLabel: 'APPLICATION SECURITY PROGRAM ASSESSMENT',
     heroHighlight: 'Holistic',
-    heroCta: 'Assess Your Program',
-    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Identity_and_Access_Management_IAM.png',
+    heroCta: 'Secure Your Applications',
+    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Security_Program_Assessment.png',
     description:
       "Assess the state of your application security program and communicate a roadmap of key initiatives to improve your program\u2019s maturity from IT and compliance to development and security.",
     useCases: {
@@ -207,11 +207,35 @@ const services = {
         image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
         imageAlt: 'AppSec Deliverables',
         checklist: [
-          'Executive summary with key findings and recommendations',
-          'Detailed assessment of current program maturity',
-          'Gap analysis against industry frameworks',
-          'Prioritized roadmap of improvement initiatives',
-          'Governance and compliance alignment review',
+          'Executive Summary – A high-level overview of the analysis as well as recommendations to improve your application security posture',
+          'Current State Summary – A summary of the current state of your AppSec Program based on documentation, stakeholder interviews and review of supporting technology',
+          'Observations and Recommendations – Detailed feedback on strengths, recommendations and observations based on the OWASP SAMM or NIST SSDF framework',
+          'Future State Summary – A summary of the proposed future state of your Application Security Program',
+          'Roadmap of Key Initiatives – A three-year roadmap of recommended key initiatives to improve the maturity of your program, including prioritization of activities',
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: 'Global Information Assurance',
+        certs: [
+          { name: 'GIAC GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'GIAC GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-gpen-removebg-preview-1.png' },
+          { name: 'GIAC GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gwapt.png' },
         ],
       },
     ],
@@ -224,19 +248,16 @@ const services = {
     },
     outcomes: [
       {
-        iconImage: '/images/icons/scale-appsec.png',
         title: 'Benchmark Your Security Posture',
         description:
           'Align security measures against an industry framework and best practices.',
       },
       {
-        iconImage: '/images/icons/save-spending.png',
         title: 'Uplift Your Security Posture',
         description:
           'Gain a more resilient and adaptive security culture within your organization.',
       },
       {
-        iconImage: '/images/icons/expand-testing.png',
         title: 'Build a Strategic Roadmap',
         description:
           'Develop a 3-year roadmap for continuous improvement and AppSec maturity.',
@@ -244,11 +265,12 @@ const services = {
     ],
     testimonial: {
       quote:
-        'Our team works side-by-side with you as your cybersecurity partner.',
-      author: 'GuidePoint Security',
-      company: 'Application Security Practice',
-      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png',
-      companyLogo: '/logos/guidepointsecurity.png',
+        'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
     },
   },
 
@@ -259,7 +281,7 @@ const services = {
     tagline: 'Automate and Manage Your Application Security Program',
     heroLabel: 'APPLICATION SECURITY AS A SERVICE',
     heroHighlight: 'Automate and Manage',
-    heroCta: 'Get Started',
+    heroCta: 'Secure Your Applications',
     heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Security_as_a_Service.png',
     description:
       'With our AppSec as a Service offering, you can maximize the value of your AppSec tooling, identify vulnerabilities and provide actionable remediation recommendations to ensure a successful Application Security Program.',
@@ -282,70 +304,163 @@ const services = {
         title: 'We Can Manage Your Application Security Tools and Overall Program',
         titleHighlight: 'Manage',
         paragraphs: [
-          'As part of the AppSec program assessment, we can accelerate the adoption of your program and kick off roadmap initiatives by leveraging our professional services and Application Security as a Service (ASaaS) offerings.',
+          'Our team provides expert management, configuration and optimization of your AppSec tooling environment. We support the full suite of application security testing technologies:',
         ],
         image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
-        imageAlt: 'AppSec Expertise',
+        imageAlt: 'AppSec Tool Management',
+        checklist: [
+          'Software Composition Analysis (SCA)',
+          'Static Application Security Testing (SAST)',
+          'Dynamic Application Security Testing (DAST)',
+          'Interactive Application Security Testing (IAST)',
+          'Run-Time Application Self Protection (RASP)',
+          'Next-Gen Web Application Firewall (NGWAF)',
+        ],
       },
       {
         label: 'APPSEC AS A SERVICE USE CASES',
         title: 'Ensure Application Security and Speed Development',
-        titleHighlight: 'Speed Development',
+        titleHighlight: 'Ensure',
         paragraphs: [
           'Among the most important use cases that are ideal for Application Security as a Service are:',
         ],
+        cards: [
+          {
+            title: 'Acceleration of Application Security Programs',
+            description: 'Quickly launch application security without requiring investment in infrastructure.',
+          },
+          {
+            title: 'In-Depth Security Experience',
+            description: 'Achieve quicker remediation at each point along your software development lifecycle.',
+          },
+          {
+            title: 'Evolved Software Supply Chain Security',
+            description: 'Enjoy a greater level of confidence around the components used to develop your applications.',
+          },
+          {
+            title: 'DevSecOps',
+            description: 'Allow your developers to code quicker — all without having to sacrifice any quality.',
+          },
+          {
+            title: 'Entwine AppSec Into Your Organization',
+            description: 'Seamlessly scale from a single application to hundreds or even thousands.',
+          },
+          {
+            title: 'Cloud Transformation',
+            description: 'Ensure expertise to help with cloud-native applications or those in the early stages of modernization.',
+          },
+        ],
+      },
+      {
+        label: 'APPLICATION SECURITY AS A SERVICE TIERS',
+        title: 'Tiered Service Offering',
+        titleHighlight: 'Tiered',
+        imageLeft: true,
+        paragraphs: [
+          'Our AppSec as a Service offering is tiered based upon the following criteria so that you can achieve your application security goals in a budget- and resource-friendly manner:',
+        ],
         image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
-        imageAlt: 'AppSec Use Cases',
+        imageAlt: 'AppSec Service Tiers',
         checklist: [
-          'Acceleration of Application Security Programs',
-          'In-Depth Security Experience',
-          'Evolved Software Supply Chain Security',
-          'DevSecOps',
-          'Entwine AppSec Into Your Organization',
-          'Cloud Transformation',
+          'The amount of configuration or implementation needed (if any)',
+          'The amount of code or number of applications and approximate number of retests per month, quarter or year',
+          'Duration of service',
+          'Desired workflow and automation integrations into your IDE and/or CI/CD Pipeline',
+          'If your Application Security tool environment is on-prem or in your own cloud environment, we can manage it from end to end',
+        ],
+        tierCards: [
+          {
+            title: 'Basic',
+            items: [
+              'Basic code scanning',
+              'Triage and false positive analysis',
+              'Review of results',
+              'Remediation advice',
+              'Management and operations',
+              'Reporting and metrics',
+            ],
+          },
+          {
+            title: 'Standard (Includes Basic Services)',
+            items: [
+              'Rule tuning',
+              'Toolset optimization',
+              'Integration with IDE',
+              'Integration with CMDB and/or source code repository',
+              'Integration with ticketing',
+              'Project management support',
+            ],
+          },
+          {
+            title: 'Premium (Includes Standard Services)',
+            items: [
+              'Integration and automation within Secure SLDC and/or CI/CD process',
+              'Integration with SIEM',
+              'Integration with Vulnerability Management',
+              'Vulnerability correlation and risk scoring',
+              'Dedicated program manager',
+            ],
+          },
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: 'Global Information Assurance',
+        certs: [
+          { name: 'GIAC GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'GIAC GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-gpen-removebg-preview-1.png' },
+          { name: 'GIAC GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gwapt.png' },
         ],
       },
     ],
     outcomesSection: {
       label: 'APPLICATION SECURITY AS A SERVICE OUTCOMES',
-      title: 'Scale Your Application Security Program',
-      titleHighlight: 'Scale',
+      title: 'Maximize Your Application Security Landscape',
+      titleHighlight: 'Maximize',
       subtitle:
-        'Our Application Security as a Service offering helps you maximize the value of your AppSec tooling while ensuring a successful, scalable security program.',
+        'Our Application Security as a Service allows your organization to invest in the long-term and robust security of applications while speeding up the rate at which you develop your applications.',
     },
     outcomes: [
       {
-        iconImage: '/images/icons/scale-appsec.png',
-        title: 'Maximize Tool Value',
-        description:
-          'Get the most out of your AppSec tooling with expert management, configuration and optimization.',
+        title: 'Achieve Cost Savings',
+        description: 'Leverage AppSec consultants and extend your team vs hiring in-house specialists.',
       },
       {
-        iconImage: '/images/icons/save-spending.png',
-        title: 'Reduce Operational Burden',
-        description:
-          'Free your team to focus on development while we manage your application security program end to end.',
+        title: 'Gain In-Depth Analysis',
+        description: 'Understand the security of your critical applications and mitigate risk.',
       },
       {
-        iconImage: '/images/icons/expand-testing.png',
-        title: 'Scale With Confidence',
-        description:
-          'Seamlessly scale from a single application to hundreds or even thousands without sacrificing quality.',
+        title: 'Expand Testing Coverage',
+        description: 'Ensure comprehensive testing across your application portfolio.',
       },
       {
-        iconImage: '/images/icons/improve-compliance.png',
-        title: 'Accelerate Remediation',
-        description:
-          'Achieve quicker remediation at each point along your software development lifecycle.',
+        title: 'White-Glove Service',
+        description: 'Tailored approach to meet your unique AppSec needs and SLAs.',
       },
     ],
     testimonial: {
       quote:
-        'Our team works side-by-side with you as your cybersecurity partner.',
-      author: 'GuidePoint Security',
-      company: 'Application Security Practice',
-      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png',
-      companyLogo: '/logos/guidepointsecurity.png',
+        'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
     },
   },
 
@@ -450,6 +565,147 @@ const services = {
       company: 'Application Security Practice',
       personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png',
       companyLogo: '/logos/guidepointsecurity.png',
+    },
+  },
+
+  'application-security-assessment': {
+    parentService: 'application-security',
+    title: 'Application Security Assessments',
+    icon: 'bi-diamond',
+    tagline: 'Comprehensive Application Security Testing that Goes Beyond Automation',
+    heroLabel: 'APPLICATION SECURITY ASSESSMENTS',
+    heroHighlight: 'Comprehensive',
+    heroCta: 'Secure Your Applications',
+    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/11/Services_SUB_Pages_Application_Security_Assessments.png',
+    description:
+      'Identify and verify application security risks within modern applications, back-end web services or thick clients by leveraging manual and automated application security assessments.',
+    useCases: {
+      label: 'APPLICATION SECURITY ASSESSMENT OVERVIEW',
+      title: 'Prioritized Application Security Analysis and Recommendations',
+      titleHighlight: 'Application Security',
+      subtitle:
+        'Since our time is finite, priority is given during testing efforts to areas of an application that, if compromised, would be of the most value for an adversary or could have the largest impact if compromised. Our Application Security Assessments are designed to:',
+      items: [
+        'Identify critical vulnerabilities within an application',
+        'Allow you to easily comprehend the results',
+        'Supply evidence and detailed reproduction steps',
+        'Arm you with information to take action and remediate issues',
+      ],
+    },
+    splits: [
+      {
+        label: 'APPLICATION SECURITY ASSESSMENT COVERAGE',
+        title: 'Full Application Security Assessment Coverage',
+        titleHighlight: 'Assessment',
+        paragraphs: [
+          "We aren't just here to identify application vulnerabilities and hand you a report. Our application security analysis and testing allows you to make your applications highly resilient to security threats. As part of our application security services, we help you identify weaknesses and security vulnerabilities that are present in your application's source code.",
+          'Our application security assessments include issues from categories including, but not limited to:',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'AppSec Coverage',
+        splitCards: [
+          {
+            items: [
+              'Authentication & Authorization',
+              'Data in Transit & at Rest',
+              'Session Handling',
+              'Information Disclosure',
+            ],
+          },
+          {
+            items: [
+              'Misconfiguration Issues',
+              'Logic Flaws',
+              'Client-Side Issues',
+              'Injection Flaws',
+            ],
+          },
+        ],
+      },
+      {
+        label: 'APPLICATION SECURITY TESTING METHODOLOGY',
+        title: 'Dynamic Application Security Analysis & Testing',
+        titleHighlight: 'Dynamic',
+        paragraphs: [
+          'Our application security testing goes beyond a simple manual process. We use a combination of application security software and application security tools to largely automate our software security testing and analysis process.',
+          'Our process involves:',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
+        imageAlt: 'Dynamic AppSec Testing',
+        checklist: [
+          "Inspecting your application's source code during runtime to identify vulnerabilities such as issues with query strings, memory leaks, problems with authentication and data and DOM injection",
+          'Providing a comprehensive analysis of the results generated by our tests that will report on risks identified in your proprietary source code, open source dependencies, runtime vulnerabilities and APIs',
+        ],
+      },
+      {
+        label: 'APPLICATION SECURITY ASSESSMENT DELIVERABLES',
+        title: 'Analysis You Can Trust',
+        titleHighlight: 'Trust',
+        showAll: true,
+        paragraphs: [
+          'After we perform an Application Security Assessment, you can expect to receive:',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Right.png',
+        imageAlt: 'AppSec Deliverables',
+        checklist: [
+          'Executive Summary – An overview of the findings that is written for management, providing a high-level analysis of the engagement, identified findings and actionable recommendations',
+          'Technical Analysis – Provides a detailed account of all findings for technical personnel, including identified findings, associated severity level and specific remediation recommendations',
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: 'Global Information Assurance',
+        certs: [
+          { name: 'GIAC GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'GIAC GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-gpen-removebg-preview-1.png' },
+          { name: 'GIAC GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gwapt.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'APPLICATION SECURITY ASSESSMENT OUTCOMES',
+      title: 'Gain an In-Depth View of Your Application Security Landscape',
+      titleHighlight: 'Gain',
+      subtitle:
+        "Our Application Security Assessments provide a balanced and thorough examination of an application's security that is tailored for your unique use cases to uncover a wide array of vulnerabilities.",
+    },
+    outcomes: [
+      {
+        title: 'Efficiently Identify Vulnerabilities',
+        description: 'Manual and automated testing is used to confirm risks across web applications, web services and APIs.',
+      },
+      {
+        title: 'Gain Detailed Understanding of Risk',
+        description: 'We ensure you understand the potential risk of each identified application vulnerability.',
+      },
+      {
+        title: 'Fortify Your Applications',
+        description: 'Harden your applications against a wide range of threats.',
+      },
+    ],
+    testimonial: {
+      quote:
+        "GuidePoint Security is basically family. They're always there when I need them. At the end of the day GuidePoint is always there to help and that's how they add value.",
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
     },
   },
 
