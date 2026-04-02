@@ -1,17 +1,36 @@
 #!/usr/bin/env node
 /**
- * Page Scraper — extracts content and images only (no styles)
+ * Page Scraper — extracts content + layout hints using computed styles
  * Output is structured to match this project's data patterns:
  *   services.js, technologies.js, government.js
+ *
+ * ── HERO IMAGES ──────────────────────────────────────────────────────────────
+ * DO NOT use the scraped heroImage / bgImage for services.js.
+ * Local hero images are stored in:
+ *   public/images/heroes/<slug>.<ext>
+ *
+ * They are sourced from: D:\Freelance\Project1\Images\
+ *   └── Application Security\<slug>\       → /images/heroes/<slug>.<ext>
+ *   └── Artificial Intelligence (AI)\<slug>\ → /images/heroes/<slug>.<ext>
+ *   └── Cloud Security\<slug>\             → /images/heroes/<slug>.<ext>
+ *
+ * When adding a new service entry to services.js:
+ *   - If local image EXISTS → heroImage: '/images/heroes/<slug>.<ext>'
+ *   - If local image MISSING → heroImage: dataTemplate.heroImageFallback  (scraped URL)
+ * ─────────────────────────────────────────────────────────────────────────────
  *
  * Usage:
  *   node scripts/scrape.js <url>
  *   node scripts/scrape.js <url> output.json
  *   node scripts/scrape.js <url> --headful        (see the browser)
  *
- * Examples:
- *   node scripts/scrape.js https://www.guidepointsecurity.com/technologies/application-security
- *   node scripts/scrape.js https://www.guidepointsecurity.com/technologies/cloud-security cloud.json
+ * Layout hints per section/block:
+ *   "cards"          — grid of visually distinct card containers (bg/border/shadow)
+ *   "list-in-cards"  — ul/ol items where each li is inside a card container
+ *   "checklist"      — plain ul/ol (no card wrapping)
+ *   "inline-items"   — structured title+description+sub-bullet repeated pattern (no card bg)
+ *   "split"          — image on one side, text on the other
+ *   "text"           — plain paragraphs only
  */
 
 import { chromium } from 'playwright';
@@ -68,7 +87,6 @@ async function autoScroll(page) {
   await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(1500);
 
-  // Scroll to trigger lazy-loaded images
   console.log('📜  Scrolling page to load lazy images...');
   await autoScroll(page);
   console.log('✅  Scroll complete\n');
@@ -90,7 +108,6 @@ async function autoScroll(page) {
     }
 
     function bgImageUrl(el) {
-      // Check the element itself AND all descendants for a CSS background-image
       const nodes = [el, ...el.querySelectorAll('*')];
       for (const node of nodes) {
         try {
@@ -109,6 +126,182 @@ async function autoScroll(page) {
       try { return new URL(src, window.location.href).href; } catch { return src; }
     }
 
+    // ── Card detection via computed styles ────────────────────────────────────
+    // Returns true if el looks like a styled card (has visible bg, border, or shadow)
+    function isStyledAsCard(el) {
+      try {
+        const cs = window.getComputedStyle(el);
+        const bg = cs.backgroundColor;
+        const border = cs.borderWidth;
+        const shadow = cs.boxShadow;
+        const radius = cs.borderRadius;
+
+        // Has a non-transparent background color
+        const hasColoredBg = bg && bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent';
+        // Has a visible border (> 0px)
+        const hasBorder = border && parseFloat(border) > 0;
+        // Has a box-shadow
+        const hasShadow = shadow && shadow !== 'none';
+        // Has meaningful border-radius (typically cards have rounded corners)
+        const hasRadius = radius && parseFloat(radius) > 2;
+
+        return (hasColoredBg || hasBorder || hasShadow) && hasRadius;
+      } catch (_) {
+        return false;
+      }
+    }
+
+    // ── Layout hint detector ──────────────────────────────────────────────────
+    // Inspects an element's children using computed styles to determine how
+    // the content is visually structured.
+    function detectLayoutHint(el) {
+      // 1. Look for card-like child containers
+      const potentialCards = [...el.querySelectorAll(
+        '[class*="card"], [class*="item"], [class*="feature"], [class*="tile"], [class*="box"], [class*="col"]'
+      )].filter(visible).filter((c) => c !== el);
+
+      // Only count immediate or near-immediate children (depth <= 3)
+      function depth(child) {
+        let d = 0, p = child;
+        while (p && p !== el) { d++; p = p.parentElement; }
+        return d;
+      }
+
+      const shallowCards = potentialCards.filter((c) => depth(c) <= 3);
+      const styledCards = shallowCards.filter(isStyledAsCard);
+
+      if (styledCards.length >= 2) {
+        // Check if lists are inside these cards
+        const listsInsideCards = styledCards.some((c) => c.querySelector('ul,ol'));
+        if (listsInsideCards) return 'list-in-cards';
+        return 'cards';
+      }
+
+      // 2. Look for repeated inline-items pattern (title + desc + sub-bullet, no card bg)
+      // Detect by finding multiple h3/h4/h5 + following p elements at similar DOM depth
+      const subHeadings = [...el.querySelectorAll('h3,h4,h5')].filter(visible);
+      if (subHeadings.length >= 2) {
+        const hasFollowingPara = subHeadings.filter((h) => {
+          const next = h.nextElementSibling;
+          return next && next.tagName === 'P' && visible(next);
+        });
+        if (hasFollowingPara.length >= 2 && styledCards.length === 0) {
+          return 'inline-items';
+        }
+      }
+
+      // 3. Check for plain lists
+      const lists = [...el.querySelectorAll('ul,ol')].filter(visible);
+      if (lists.length > 0 && styledCards.length === 0) return 'checklist';
+
+      // 4. Split: has both image and text content
+      const hasImg = el.querySelector('img') && visible(el.querySelector('img'));
+      const hasText = el.querySelector('h2,h3,p') !== null;
+      if (hasImg && hasText) return 'split';
+
+      return 'text';
+    }
+
+    // ── Structured content blocks extractor ───────────────────────────────────
+    // Returns an array of content blocks each with a layoutHint
+    function getContentBlocks(el) {
+      const blocks = [];
+
+      // Find direct visual containers (columns, widget-wraps, etc.)
+      const containers = [...el.querySelectorAll(
+        '[class*="col-"], [class*="column"], [class*="widget-wrap"], [class*="elementor-widget-wrap"]'
+      )].filter(visible).filter((c) => {
+        // Must be a direct-ish child (depth <= 4 from el)
+        let d = 0, p = c;
+        while (p && p !== el) { d++; p = p.parentElement; }
+        return d <= 4;
+      });
+
+      // Deduplicate: remove containers that are ancestors of other containers
+      const deduped = containers.filter((c) =>
+        !containers.some((other) => other !== c && c.contains(other))
+      );
+
+      if (deduped.length < 2) {
+        // Fall back to the whole element as one block
+        return [{
+          layoutHint: detectLayoutHint(el),
+          headings: getHeadings(el),
+          paragraphs: getParagraphs(el),
+          lists: getLists(el),
+          images: getImages(el),
+          cards: getCards(el),
+        }];
+      }
+
+      for (const container of deduped) {
+        const layoutHint = detectLayoutHint(container);
+        const block = {
+          layoutHint,
+          domClasses: container.className,
+          headings: getHeadings(container),
+          paragraphs: getParagraphs(container),
+          lists: getLists(container),
+          images: getImages(container),
+        };
+
+        if (layoutHint === 'cards' || layoutHint === 'list-in-cards') {
+          block.cards = getCards(container);
+        }
+
+        if (layoutHint === 'inline-items') {
+          block.inlineItems = extractInlineItems(container);
+        }
+
+        blocks.push(block);
+      }
+
+      return blocks;
+    }
+
+    // ── Inline items extractor ────────────────────────────────────────────────
+    // For sections like "Application Architecture Reviews at Scale" where each
+    // item is: bold title → paragraph → bullet "Why AI-augmented?"
+    function extractInlineItems(el) {
+      const items = [];
+      const headings = [...el.querySelectorAll('h3,h4,h5,strong,b')].filter(visible);
+
+      for (const h of headings) {
+        const title = clean(h.textContent);
+        if (!title || title.length > 120) continue;
+
+        // Get the next sibling paragraph(s)
+        let desc = '';
+        let why = '';
+        let sibling = h.nextElementSibling || h.parentElement?.nextElementSibling;
+
+        // Walk forward siblings to find description and optional bullet
+        let attempts = 0;
+        while (sibling && attempts < 4) {
+          const tag = sibling.tagName.toLowerCase();
+          const t = clean(sibling.textContent);
+
+          if (tag === 'p' && !desc && t.length > 20) {
+            desc = t.slice(0, 400);
+          } else if ((tag === 'ul' || tag === 'ol') && !why) {
+            const li = sibling.querySelector('li');
+            if (li) why = clean(li.textContent).slice(0, 400);
+          } else if (tag === 'h3' || tag === 'h4' || tag === 'h5') {
+            break; // next item starts
+          }
+
+          sibling = sibling.nextElementSibling;
+          attempts++;
+        }
+
+        if (title && (desc || why)) {
+          items.push({ title, description: desc, why });
+        }
+      }
+
+      return items;
+    }
+
     // ── Meta ──────────────────────────────────────────────────────────────────
     const ogImage = document.querySelector('meta[property="og:image"]')?.getAttribute('content') || null;
 
@@ -120,7 +313,7 @@ async function autoScroll(page) {
       h1:          clean(document.querySelector('h1')?.textContent || ''),
     };
 
-    // ── Section detector ──────────────────────────────────────────────────────
+    // ── Section classifier ────────────────────────────────────────────────────
     function classifySection(el) {
       const cls = (el.className || '').toLowerCase();
 
@@ -146,7 +339,7 @@ async function autoScroll(page) {
       return 'generic';
     }
 
-    // ── Identify nav/footer ancestors to exclude ─────────────────────────────
+    // ── Nav/footer exclusion ──────────────────────────────────────────────────
     const navEl    = document.querySelector('nav, header, [class*="navbar"], [class*="nav-bar"], [class*="menubar"], [class*="menu-bar"], [class*="main-menu"], [id*="nav"], [id*="header"]');
     const footerEl = document.querySelector('footer, [class*="footer"], [id*="footer"]');
 
@@ -220,7 +413,6 @@ async function autoScroll(page) {
       const imgs = [...el.querySelectorAll('img')]
         .filter(visible)
         .map((img) => {
-          // Try real src first, fall back through data attributes
           const src =
             (img.src && !img.src.startsWith('data:') ? img.src : null) ||
             img.getAttribute('data-src') ||
@@ -232,7 +424,6 @@ async function autoScroll(page) {
         })
         .filter((i) => i.src && !i.src.startsWith('data:'));
 
-      // Also pick up CSS background images on the section itself and children
       const bg = bgImageUrl(el);
       if (bg) imgs.unshift({ src: absoluteSrc(bg), alt: 'section background', isBg: true });
 
@@ -262,6 +453,7 @@ async function autoScroll(page) {
           image:       absoluteSrc(card.querySelector('img')?.src) || null,
           cta:         txt(card.querySelector('a,button'), 60) || null,
           ctaHref:     card.querySelector('a')?.href || null,
+          isStyledCard: isStyledAsCard(card),
         }));
     }
 
@@ -295,14 +487,26 @@ async function autoScroll(page) {
           const list    = row.querySelector('ul');
           const cta     = row.querySelector('a[class*="btn"],button');
 
+          // Detect text-side layout
+          const textSide = [...row.querySelectorAll('[class*="col"], [class*="column"]')]
+            .filter(visible)
+            .find((c) => !c.querySelector('img') || c.querySelector('p,h2,h3,ul'));
+
+          const textLayoutHint = textSide ? detectLayoutHint(textSide) : 'text';
+          const inlineItems = textLayoutHint === 'inline-items' && textSide
+            ? extractInlineItems(textSide)
+            : [];
+
           return {
-            title:      heading ? clean(heading.textContent) : '',
-            paragraphs: paras.slice(0, 4),
-            checklist:  list ? [...list.querySelectorAll('li')].map((li) => clean(li.textContent)) : [],
-            image:      absoluteSrc(img?.src) || null,
-            imageAlt:   img?.alt || '',
-            cta:        cta ? clean(cta.textContent) : null,
-            ctaHref:    cta?.href || null,
+            title:          heading ? clean(heading.textContent) : '',
+            paragraphs:     paras.slice(0, 4),
+            checklist:      list ? [...list.querySelectorAll('li')].map((li) => clean(li.textContent)) : [],
+            image:          absoluteSrc(img?.src) || null,
+            imageAlt:       img?.alt || '',
+            cta:            cta ? clean(cta.textContent) : null,
+            ctaHref:        cta?.href || null,
+            textLayoutHint,
+            inlineItems,
           };
         });
     }
@@ -328,10 +532,12 @@ async function autoScroll(page) {
     // ── Build sections output ─────────────────────────────────────────────────
     const sections = topSections.map((el, index) => {
       const type = classifySection(el);
+      const layoutHint = detectLayoutHint(el);
 
       const section = {
         index,
         type,
+        layoutHint,
         domClasses: el.className,
         headings:   getHeadings(el),
         paragraphs: getParagraphs(el),
@@ -344,8 +550,14 @@ async function autoScroll(page) {
       if (type === 'stats')                        section.stats = getStats(el);
       if (type === 'split')                        section.splits = getSplits(el);
       if (type === 'tabs')                         section.tabs = getTabs(el);
+
+      // Always include inline items if detected
+      if (layoutHint === 'inline-items') section.inlineItems = extractInlineItems(el);
+
+      // Always include content blocks for richer analysis
+      section.contentBlocks = getContentBlocks(el);
+
       if (type === 'hero') {
-        // Deep search for hero bg image, then fall back to og:image
         const heroBg = bgImageUrl(el);
         const heroImg = [...el.querySelectorAll('img')]
           .filter(visible)
@@ -360,23 +572,20 @@ async function autoScroll(page) {
       return section;
     });
 
-    // ── Data template — maps directly to technologies.js / services.js ────────
+    // ── Data template ─────────────────────────────────────────────────────────
     const hero     = sections.find((s) => s.type === 'hero');
     const statsS   = sections.find((s) => s.type === 'stats');
     const cardsS   = sections.find((s) => s.type === 'cards');
     const splitS   = sections.filter((s) => s.type === 'split');
     const tabsS    = sections.find((s) => s.type === 'tabs');
 
-    const h1Text   = meta.h1 || meta.title;
-    const firstH2  = sections.flatMap((s) => s.headings).find((h) => h.tag === 'h2')?.text || '';
+    const h1Text  = meta.h1 || meta.title;
+    const firstH2 = sections.flatMap((s) => s.headings).find((h) => h.tag === 'h2')?.text || '';
 
-    // ── Hero label (small uppercase text above h1) ────────────────────────────
     function extractHeroLabel(heroEl) {
       if (!heroEl) return null;
-      // Look for .section-header__label or small uppercase p before h1
       const labelEl = heroEl.querySelector('[class*="label"], [class*="eyebrow"], [class*="subheading"]');
       if (labelEl) return clean(labelEl.textContent);
-      // Fall back: first short all-caps paragraph
       const paras = [...heroEl.querySelectorAll('p')].filter(visible);
       for (const p of paras) {
         const t = clean(p.textContent);
@@ -385,7 +594,6 @@ async function autoScroll(page) {
       return null;
     }
 
-    // ── Section label (small uppercase text above section heading) ────────────
     function extractSectionLabel(el) {
       if (!el) return null;
       const labelEl = el.querySelector('[class*="label"], [class*="eyebrow"], [class*="subheading"], [class*="section-header"]');
@@ -396,10 +604,8 @@ async function autoScroll(page) {
       return null;
     }
 
-    // ── Hero CTA — primary button only (not nav links) ────────────────────────
     function extractHeroCta(heroEl) {
       if (!heroEl) return 'Talk to an Expert';
-      // Prefer explicit btn/button elements; skip very long or nav-like text
       const btns = [...heroEl.querySelectorAll('a[class*="btn"], .btn, button')]
         .filter(visible)
         .map((b) => ({ text: clean(b.textContent), href: b.href || null }))
@@ -407,7 +613,6 @@ async function autoScroll(page) {
       return btns[0]?.text || hero?.ctas[0]?.text || 'Talk to an Expert';
     }
 
-    // ── Testimonial extraction ─────────────────────────────────────────────────
     function extractTestimonial() {
       const testEl = document.querySelector(
         '[class*="testimonial"], [class*="quote"], [class*="review"], [class*="trusted"]'
@@ -420,7 +625,6 @@ async function autoScroll(page) {
       const companyEl = testEl.querySelector('[class*="company"], [class*="org"]');
       const imgs      = [...testEl.querySelectorAll('img')].filter(visible);
 
-      // Heuristic: person image is portrait-ish (square/tall), company logo is wide/short
       let personImage = null, companyLogo = null;
       for (const img of imgs) {
         const w = img.naturalWidth || img.width;
@@ -439,7 +643,6 @@ async function autoScroll(page) {
       };
     }
 
-    // ── Outcomes section (label + title + subtitle + cards) ───────────────────
     function extractOutcomesSection() {
       const outEl = document.querySelector(
         '[class*="outcomes"], [class*="results"], [class*="benefits"]'
@@ -471,14 +674,12 @@ async function autoScroll(page) {
       };
     }
 
-    // ── Cert groups extraction ────────────────────────────────────────────────
     function extractCertGroups() {
       const certEl = document.querySelector(
         '[class*="certif"], [class*="certs"], [class*="badges"]'
       );
       if (!certEl) return null;
 
-      // Try to find grouped cert rows
       const groups = [...certEl.querySelectorAll('[class*="group"], [class*="row"], .row')]
         .filter(visible)
         .filter((g) => g.querySelector('img'))
@@ -497,7 +698,6 @@ async function autoScroll(page) {
     }
 
     const outcomesData = extractOutcomesSection();
-
     const heroEl = topSections.find((s) => classifySection(s) === 'hero');
 
     const dataTemplate = {
@@ -507,7 +707,11 @@ async function autoScroll(page) {
       heroLabel:     extractHeroLabel(heroEl) || hero?.headings[0]?.text || h1Text,
       heroHighlight: '/* FILL IN: word(s) to highlight in the tagline */',
       heroCta:       extractHeroCta(heroEl),
-      heroImage:     hero?.bgImage || ogImage || null,
+      // ✅  Hero image priority:
+      //   1. Local file exists → use /images/heroes/<slug>.<ext>  (from D:\Freelance\Project1\Images\)
+      //   2. No local file    → fall back to heroImageFallback below
+      heroImage:         '/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */',
+      heroImageFallback: hero?.bgImage || ogImage || null,
       description:   hero?.paragraphs[0] || '',
 
       stats: (statsS?.stats || []).map((s) => ({ number: s.number, label: s.label })),
@@ -518,6 +722,9 @@ async function autoScroll(page) {
         titleHighlight: '/* FILL IN */',
         paragraphs:     splitS[0].splits?.[0]?.paragraphs || splitS[0].paragraphs,
         image:          splitS[0].splits?.[0]?.image || splitS[0].images[0]?.src || null,
+        // Layout hint for the text side — tells you how to structure data
+        textLayoutHint: splitS[0].splits?.[0]?.textLayoutHint || splitS[0].layoutHint,
+        inlineItems:    splitS[0].splits?.[0]?.inlineItems || [],
       } : null,
 
       expertise: {
@@ -554,7 +761,7 @@ async function autoScroll(page) {
       testimonial: extractTestimonial(),
     };
 
-    // ── All images on the page (for download reference) ───────────────────────
+    // ── All images on the page ────────────────────────────────────────────────
     const allImages = [...document.querySelectorAll('img')]
       .filter(visible)
       .map((img) => ({
@@ -603,6 +810,7 @@ async function autoScroll(page) {
   }
 
   // ── Summary ───────────────────────────────────────────────────────────────
+  const layoutIcons = { cards:'🃏', 'list-in-cards':'🃏📋', checklist:'📋', 'inline-items':'📝', split:'↔️', text:'📄' };
   console.log(`📄  Page:     ${result.meta.title}`);
   console.log(`🖼️   Hero BG:  ${result.dataTemplate.heroImage || '(none)'}`);
   console.log(`🖼️   Images:   ${result.allImages.length} unique`);
@@ -610,7 +818,8 @@ async function autoScroll(page) {
   result.sections.forEach((s) => {
     const icons = { hero:'🖼️ ', stats:'📊', cards:'🃏', split:'↔️ ', tabs:'🗂️ ', tier:'⚖️ ', testimonial:'💬', form:'📝', generic:'📦' };
     const h = s.headings[0]?.text || '';
-    console.log(`  ${icons[s.type] || '•'} [${s.index}] ${s.type.padEnd(12)} — ${h.slice(0, 60)}`);
+    const layout = layoutIcons[s.layoutHint] || '';
+    console.log(`  ${icons[s.type] || '•'} [${s.index}] ${s.type.padEnd(12)} layout:${(s.layoutHint||'').padEnd(14)} ${layout} — ${h.slice(0, 50)}`);
   });
   console.log(`\n🔧  Suggested slug: "${result.dataTemplate.slug}"\n`);
 })();

@@ -1,0 +1,1378 @@
+{
+  "scrapedAt": "2026-04-02T15:16:22.725Z",
+  "url": "https://www.guidepointsecurity.com/ai-governance/",
+  "meta": {
+    "title": "AI Governance | GuidePoint Security",
+    "description": "AI Governance Services to help ensure your AI initiatives are secure, compliant, and strategically aligned with your business goals while addressing today’s evolving risks.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+    "canonical": "https://www.guidepointsecurity.com/ai-governance/",
+    "h1": "Enable secure, compliant AI adoption"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-109c9ec8 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Enable secure, compliant AI adoption"
+        }
+      ],
+      "paragraphs": [
+        "Manage AI initiatives with confidence and reduce risk, better protect data and align technology adoption with your business goals. GuidePoint Security’s AI Governance Services can help ensure that, as you bring AI technologies into your organization, you maintain security and compliance. The result: smarter decisions, safer data and accelerated growth."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/Website_Refresh_Services_SUB_Pages_AI_Governance_Revised.jpg",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Manage Your Risk",
+          "href": "https://www.guidepointsecurity.com/manage-your-risk/"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h1",
+              "text": "Enable secure, compliant AI adoption"
+            }
+          ],
+          "paragraphs": [
+            "Manage AI initiatives with confidence and reduce risk, better protect data and align technology adoption with your business goals. GuidePoint Security’s AI Governance Services can help ensure that, as you bring AI technologies into your organization, you maintain security and compliance. The result: smarter decisions, safer data and accelerated growth."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/Website_Refresh_Services_SUB_Pages_AI_Governance_Revised.jpg",
+              "alt": "section background",
+              "isBg": true
+            }
+          ],
+          "cards": [
+            {
+              "title": "AI Governance Services",
+              "description": "Manage AI initiatives with confidence and reduce risk, better protect data and align technology adoption with your business goals. GuidePoint Security’s AI Governance Services can help ensure that, as you bring AI technologies into your organization, you maintain security and compliance. The result:",
+              "image": null,
+              "cta": "Manage Your Risk",
+              "ctaHref": "https://www.guidepointsecurity.com/manage-your-risk/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/Website_Refresh_Services_SUB_Pages_AI_Governance_Revised.jpg"
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-4e95608a services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "The Growing Risks of AI"
+        },
+        {
+          "tag": "h3",
+          "text": "Compliance:"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Exposure:"
+        },
+        {
+          "tag": "h3",
+          "text": "Shadow AI:"
+        }
+      ],
+      "paragraphs": [
+        "AI is being adopted at an unprecedented rate, unlocking immense organizational potential while also presenting significant challenges. Without proper governance, these risks can erode trust, disrupt operations and impact your bottom line.",
+        "At GuidePoint Security, we help you navigate these complexities with precision and efficiency. Our services address these challenges head-on, including:",
+        "Complex regulations, like the EU AI Act, require robust oversight.",
+        "Sensitive data used in AI systems is vulnerable to breaches or misuse.",
+        "Unregulated AI tools increase security and ethical challenges."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "The Growing Risks of AI"
+            },
+            {
+              "tag": "h3",
+              "text": "Compliance:"
+            },
+            {
+              "tag": "h3",
+              "text": "Data Exposure:"
+            },
+            {
+              "tag": "h3",
+              "text": "Shadow AI:"
+            }
+          ],
+          "paragraphs": [
+            "AI is being adopted at an unprecedented rate, unlocking immense organizational potential while also presenting significant challenges. Without proper governance, these risks can erode trust, disrupt operations and impact your bottom line.",
+            "At GuidePoint Security, we help you navigate these complexities with precision and efficiency. Our services address these challenges head-on, including:",
+            "Complex regulations, like the EU AI Act, require robust oversight.",
+            "Sensitive data used in AI systems is vulnerable to breaches or misuse.",
+            "Unregulated AI tools increase security and ethical challenges."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "AI GOVERNANCE RISK LANDSCAPE",
+              "description": "AI is being adopted at an unprecedented rate, unlocking immense organizational potential while also presenting significant challenges. Without proper governance, these risks can erode trust, disrupt operations and impact your bottom line.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AI GOVERNANCE RISK LANDSCAPE",
+              "description": "AI GOVERNANCE RISK LANDSCAPE The Growing Risks of AI",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Compliance:",
+              "description": "Complex regulations, like the EU AI Act, require robust oversight.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-161a80ee services-lifecycle services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Security-enabledAI Innovation"
+        }
+      ],
+      "paragraphs": [
+        "Harness the power of AI to drive speed, innovation and accuracy across your organization while responsibly managing risks. GuidePoint’s AI Governance Services deliver decades of expertise to secure and govern your current solutions, as well as future AI adoption"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "AI Model Discovery & Inventory: Gain visibility into sanctioned and unsanctioned AI tools, increasing accountability.",
+            "AI Readiness Assessment: Identify gaps in your governance and receive tailored recommendations to meet your objectives.",
+            "AI Governance Roadmap: Develop a multi-year governance plan adapted to evolving regulations and business needs.",
+            "Data Protection Controls: Implement safeguards and oversight mechanisms to protect the security and privacy of sensitive data and ensure consistent governance."
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Security-enabledAI Innovation"
+            }
+          ],
+          "paragraphs": [
+            "Harness the power of AI to drive speed, innovation and accuracy across your organization while responsibly managing risks. GuidePoint’s AI Governance Services deliver decades of expertise to secure and govern your current solutions, as well as future AI adoption"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "AI Model Discovery & Inventory: Gain visibility into sanctioned and unsanctioned AI tools, increasing accountability.",
+                "AI Readiness Assessment: Identify gaps in your governance and receive tailored recommendations to meet your objectives.",
+                "AI Governance Roadmap: Develop a multi-year governance plan adapted to evolving regulations and business needs.",
+                "Data Protection Controls: Implement safeguards and oversight mechanisms to protect the security and privacy of sensitive data and ensure consistent governance."
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "SECURE AI ADOPTION STRATEGIES",
+              "description": "Harness the power of AI to drive speed, innovation and accuracy across your organization while responsibly managing risks. GuidePoint’s AI Governance Services deliver decades of expertise to secure and govern your current solutions, as well as future AI adoption",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-5b5e2ed6 elementor-section-full_width services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Business-Driven AI Governance"
+        }
+      ],
+      "paragraphs": [
+        "GuidePoint’s tailored approach to AI Governance helps ensure measurable outcomes and increased efficiency. We empower organizations to safely harness AI’s potential and uncover new opportunities for innovation without compromising on governance. Seamlessly integrate governance processes to:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Drive sustainable growth while safeguarding your data",
+            "Enhance trust, build stakeholder and client confidence with defined, ethical and transparent AI practices"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Quickly identify vulnerabilities and mitigate risks such as breaches and reputational damage",
+            "Simplify compliance with actionable steps and streamlined processes aligned with global standards"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_icon-Triangle_elementor-left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Business-Driven AI Governance"
+            }
+          ],
+          "paragraphs": [
+            "GuidePoint’s tailored approach to AI Governance helps ensure measurable outcomes and increased efficiency. We empower organizations to safely harness AI’s potential and uncover new opportunities for innovation without compromising on governance. Seamlessly integrate governance processes to:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Drive sustainable growth while safeguarding your data",
+                "Enhance trust, build stakeholder and client confidence with defined, ethical and transparent AI practices"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Quickly identify vulnerabilities and mitigate risks such as breaches and reputational damage",
+                "Simplify compliance with actionable steps and streamlined processes aligned with global standards"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_icon-Triangle_elementor-left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "ALIGN AI WITH STRATEGIC OUTCOMES",
+              "description": "GuidePoint’s tailored approach to AI Governance helps ensure measurable outcomes and increased efficiency. We empower organizations to safely harness AI’s potential and uncover new opportunities for innovation without compromising on governance. Seamlessly integrate governance processes to:",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "tabs",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-f0b7e62 services-lifecycle elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "A Streamlined Process for Success"
+        }
+      ],
+      "paragraphs": [
+        "Our three-step process ensures effective AI governance tailored to your organization’s unique needs.",
+        "This proven process tackles immediate risks while laying the groundwork for long-term AI governance success. For a deeper look at our approach, download the our AI Governance Services datasheet and get a more detailed overview of deliverables and outcomes."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Discover Identify and catalog AI solutions within your ecosystem, including unauthorized tools, using specialized discovery tools. Gain enhanced visibility to establish accountability and oversight.",
+            "Assess Evaluate governance maturity, pinpoint compliance gaps and address operational risks. Receive clear, actionable recommendations to fortify your AI security posture.",
+            "Strategize Develop a customized AI governance framework aligned with regulatory requirements and your business goals. This flexible strategy evolves with your organization to support growth and innovation."
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_Governance_Graphic_3_sections.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "AI Governance Services datasheet",
+          "href": "https://www.guidepointsecurity.com/wp-content/uploads/2025/04/AI_Governance_DS.pdf"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "A Streamlined Process for Success"
+            }
+          ],
+          "paragraphs": [
+            "Our three-step process ensures effective AI governance tailored to your organization’s unique needs.",
+            "This proven process tackles immediate risks while laying the groundwork for long-term AI governance success. For a deeper look at our approach, download the our AI Governance Services datasheet and get a more detailed overview of deliverables and outcomes."
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Discover Identify and catalog AI solutions within your ecosystem, including unauthorized tools, using specialized discovery tools. Gain enhanced visibility to establish accountability and oversight.",
+                "Assess Evaluate governance maturity, pinpoint compliance gaps and address operational risks. Receive clear, actionable recommendations to fortify your AI security posture.",
+                "Strategize Develop a customized AI governance framework aligned with regulatory requirements and your business goals. This flexible strategy evolves with your organization to support growth and innovation."
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_Governance_Graphic_3_sections.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "STEP-BY-STEP AI GOVERNANCE FRAMEWORK",
+              "description": "Our three-step process ensures effective AI governance tailored to your organization’s unique needs.",
+              "image": null,
+              "cta": "AI Governance Services datasheet",
+              "ctaHref": "https://www.guidepointsecurity.com/wp-content/uploads/2025/04/AI_Governance_DS.pdf",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "split",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-5024bb5e services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "Your organization will be backed by our team of cybersecurity engineers, architects and consultants who are veteran practitioners from Fortune 100 companies, the Department of Defense and U.S. intelligence agencies."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+          "alt": "GPS Certified CCSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/04/CertificationSeals_AIGP.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/gps-cert-cism.png",
+          "alt": "GPS Certified CISM"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/gps-cert-cisa.png",
+          "alt": "GPS Certified CISA"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/CRISC_cert-e1752767713961.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Elite, Highly-trained Team"
+            }
+          ],
+          "paragraphs": [
+            "Your organization will be backed by our team of cybersecurity engineers, architects and consultants who are veteran practitioners from Fortune 100 companies, the Department of Defense and U.S. intelligence agencies."
+          ],
+          "lists": [],
+          "images": []
+        },
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h4",
+              "text": "Highly Trained, Highly Certified"
+            },
+            {
+              "tag": "h4",
+              "text": "Examples Include:"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+              "alt": "CISSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+              "alt": "GPS Certified CCSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/04/CertificationSeals_AIGP.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/gps-cert-cism.png",
+              "alt": "GPS Certified CISM"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/gps-cert-cisa.png",
+              "alt": "GPS Certified CISA"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/CRISC_cert-e1752767713961.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-51122cb services-outcomes services-lifecycle elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "AI Governance in Regulated Sectors"
+        }
+      ],
+      "paragraphs": [
+        "In sectors such as healthcare, finance and government, AI adoption is expected to meet strict regulatory requirements. We work with organizations to go beyond securing their AI initiatives, helping to ensure compliance with legislation such as California AB 3030 and SB 1001, as well as the EU AI Act. We can also provide guidance on regulations while they are being discussed, allowing enterprises to stay ahead of the curve. Our custom services bridge the gap between innovation and regulation, emp"
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "AI Governance in Regulated Sectors"
+            }
+          ],
+          "paragraphs": [
+            "In sectors such as healthcare, finance and government, AI adoption is expected to meet strict regulatory requirements. We work with organizations to go beyond securing their AI initiatives, helping to ensure compliance with legislation such as California AB 3030 and SB 1001, as well as the EU AI Act. We can also provide guidance on regulations while they are being discussed, allowing enterprises to stay ahead of the curve. Our custom services bridge the gap between innovation and regulation, emp"
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "AI GOVERNANCE IN REGULATED ENVIRONMENTS",
+              "description": "In sectors such as healthcare, finance and government, AI adoption is expected to meet strict regulatory requirements. We work with organizations to go beyond securing their AI initiatives, helping to ensure compliance with legislation such as California AB 3030 and SB 1001, as well as the EU AI Act",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-481b2e0 elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Mark Gilman"
+        },
+        {
+          "tag": "h3",
+          "text": "GET IN TOUCH"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Us"
+        }
+      ],
+      "paragraphs": [
+        "Our team works side-by-side with you as your cybersecurity partner.",
+        "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+        "Security Manager"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Terms of Service",
+          "href": "https://www.guidepointsecurity.com/terms-of-service/"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.guidepointsecurity.com/privacy-policy/"
+        },
+        {
+          "text": "CONTACT US",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Trusted Advisor"
+            },
+            {
+              "tag": "h3",
+              "text": "Mark Gilman"
+            }
+          ],
+          "paragraphs": [
+            "Our team works side-by-side with you as your cybersecurity partner.",
+            "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+            "Security Manager"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "GET IN TOUCH"
+            },
+            {
+              "tag": "h3",
+              "text": "Contact Us"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-ed59beb additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Data sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Data sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Data sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Data sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Data sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Data sheet"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        },
+        {
+          "text": "Whitepaper",
+          "href": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/"
+        },
+        {
+          "text": "Establishing AI Governance as a Competitive Advantage",
+          "href": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/"
+        },
+        {
+          "text": "Whitepaper",
+          "href": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Additional Resources"
+            },
+            {
+              "tag": "h3",
+              "text": "Whitepaper"
+            },
+            {
+              "tag": "h3",
+              "text": "Data sheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Data sheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Whitepaper"
+            },
+            {
+              "tag": "h3",
+              "text": "Data sheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Data sheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Whitepaper"
+            },
+            {
+              "tag": "h3",
+              "text": "Data sheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Data sheet"
+            }
+          ],
+          "paragraphs": [
+            "View All >"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Additional Resources",
+              "description": "View All >",
+              "image": null,
+              "cta": "View All >",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Whitepaper",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Whitepaper <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "Whitepaper",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Whitepaper",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Whitepaper <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "Whitepaper",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Whitepaper",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Whitepaper <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "Whitepaper",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Whitepaper",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Whitepaper",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "Whitepaper",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Data sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data sheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Data sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data sheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Data sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data sheet",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Data sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data sheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Data sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data sheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Data sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data sheet",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Whitepaper",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Whitepaper <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "Whitepaper",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/establishing_ai_governance_competitive_advantage/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataTemplate": {
+    "slug": "ai-governance",
+    "title": "Enable secure, compliant AI adoption",
+    "tagline": "The Growing Risks of AI",
+    "heroLabel": "Enable secure, compliant AI adoption",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Manage Your Risk",
+    "heroImage": "/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */",
+    "heroImageFallback": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/Website_Refresh_Services_SUB_Pages_AI_Governance_Revised.jpg",
+    "description": "Manage AI initiatives with confidence and reduce risk, better protect data and align technology adoption with your business goals. GuidePoint Security’s AI Governance Services can help ensure that, as you bring AI technologies into your organization, you maintain security and compliance. The result: smarter decisions, safer data and accelerated growth.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "Security-enabledAI Innovation",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "Harness the power of AI to drive speed, innovation and accuracy across your organization while responsibly managing risks. GuidePoint’s AI Governance Services deliver decades of expertise to secure and govern your current solutions, as well as future AI adoption"
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "textLayoutHint": "checklist",
+      "inlineItems": []
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": [
+          "AI Model Discovery & Inventory: Gain visibility into sanctioned and unsanctioned AI tools, increasing accountability.",
+          "AI Readiness Assessment: Identify gaps in your governance and receive tailored recommendations to meet your objectives.",
+          "AI Governance Roadmap: Develop a multi-year governance plan adapted to evolving regulations and business needs.",
+          "Data Protection Controls: Implement safeguards and oversight mechanisms to protect the security and privacy of sensitive data and ensure consistent governance."
+        ]
+      }
+    },
+    "outcomesSection": {
+      "label": "/* FILL IN */",
+      "title": "AI Governance in Regulated Sectors",
+      "titleHighlight": "/* FILL IN */",
+      "subtitle": "In sectors such as healthcare, finance and government, AI adoption is expected to meet strict regulatory requirements. We work with organizations to go beyond securing their AI initiatives, helping to ensure compliance with legislation such as California AB 3030 and SB 1001, as well as the EU AI Act. We can also provide guidance on regulations while they are being discussed, allowing enterprises to stay ahead of the curve. Our custom services bridge the gap between innovation and regulation, empowering clients to confidently adopt AI while meeting industry-specific standards."
+    },
+    "outcomes": [],
+    "certGroups": null,
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "role": "SECURE AI ADOPTION STRATEGIES",
+      "company": "/* FILL IN */",
+      "personImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "companyLogo": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_icon-Triangle_elementor-left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_Governance_Graphic_3_sections.svg",
+      "alt": "",
+      "width": 161,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+      "alt": "GPS Certified CCSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/04/CertificationSeals_AIGP.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/gps-cert-cism.png",
+      "alt": "GPS Certified CISM",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/gps-cert-cisa.png",
+      "alt": "GPS Certified CISA",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/CRISC_cert-e1752767713961.png",
+      "alt": "",
+      "width": 153,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+      "alt": "",
+      "width": 154,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+      "alt": "",
+      "width": 219,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

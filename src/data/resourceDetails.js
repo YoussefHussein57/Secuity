@@ -184,6 +184,31 @@ const resourceDetails = {
       facebook: 'https://www.facebook.com/GuidePointSec',
     },
   },
+  'artificial-intelligence-at-guidepoint-security': {
+    title: 'Artificial Intelligence at GuidePoint Security',
+    category: 'Cybersecurity',
+    resourceType: 'Datasheet',
+    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_for_GP_Header.jpg',
+    formTitle: 'Download Data Sheet',
+    submitText: 'DOWNLOAD DATA SHEET',
+    subtitle: 'Accelerate innovation and maximize security with a strategic approach to AI.',
+    bodyParagraphs: [
+      'Accelerate innovation and maximize security with a strategic approach to implementing and optimizing AI within your IT workflows. GuidePoint Security helps organizations adopt and govern AI technologies intelligently to accelerate success, find and neutralize threats faster and safeguard data and assets against AI-driven attacks.',
+    ],
+    insightsHeading: 'In this datasheet, learn how GuidePoint Security helps you:',
+    insights: [
+      { bold: 'Adopt AI confidently.', text: 'Implement governance frameworks that ensure your AI initiatives are secure, compliant and aligned with business goals.' },
+      { bold: 'Defend against AI-powered threats.', text: 'Leverage our expertise to identify, assess and neutralize threats amplified by adversarial AI.' },
+      { bold: 'Protect sensitive data.', text: 'Implement controls to safeguard data used in AI systems from breaches and misuse.' },
+      { bold: 'Stay ahead of regulation.', text: 'Navigate complex AI legislation including the EU AI Act, California AB 3030 and SB 1001 with expert guidance.' },
+    ],
+    closing: null,
+    socialLinks: {
+      linkedin: 'https://www.linkedin.com/company/guidepointsec',
+      twitter: 'https://twitter.com/GuidePointSec',
+      facebook: 'https://www.facebook.com/GuidePointSec',
+    },
+  },
 };
 
 export default resourceDetails;

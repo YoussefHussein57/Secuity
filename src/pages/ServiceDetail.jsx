@@ -51,7 +51,7 @@ export default function ServiceDetail() {
             <AnimatedSection animation="animate-on-scroll">
               <div className="text-center mb-5">
                 <p className="section-header__label">{service.useCases.label}</p>
-                <h2 className="use-cases__title">
+                <h2 className="use-cases__title text-white">
                   {service.useCases.titleHighlight ? (
                     <>
                       {service.useCases.title.split(service.useCases.titleHighlight)[0]}
@@ -60,17 +60,29 @@ export default function ServiceDetail() {
                     </>
                   ) : service.useCases.title}
                 </h2>
-                <p className="use-cases__subtitle mx-auto" >
+                <p className="use-cases__subtitle mx-auto">
                   {service.useCases.subtitle}
                 </p>
+                {service.useCases.subtitle2 && (
+                  <p className="use-cases__subtitle mx-auto mt-3">
+                    {service.useCases.subtitle2}
+                  </p>
+                )}
               </div>
             </AnimatedSection>
             <AnimatedSection animation="stagger-children" className="row g-4">
-              {service.useCases.items.map((item) => (
-                <div className="col-lg-4 col-md-6" key={item}>
-                  <GradientCard text={item} layout="text-only" accent="top" />
-                </div>
-              ))}
+              {service.useCases.cards
+                ? service.useCases.cards.map((card) => (
+                    <div className={`col-lg-${service.useCases.cards.length === 2 ? '6' : '4'} col-md-6`} key={card.title}>
+                      <GradientCard title={card.title} description={card.description} layout="centered" accent="top" />
+                    </div>
+                  ))
+                : service.useCases.items.map((item) => (
+                    <div className="col-lg-4 col-md-6" key={item}>
+                      <GradientCard text={item} layout="text-only" accent="top" />
+                    </div>
+                  ))
+              }
             </AnimatedSection>
           </div>
         </section>
@@ -125,7 +137,10 @@ export default function ServiceDetail() {
         // ── Variant B: Normal image + text split ─────────────────────────────
         const imageLeft = s.imageLeft ?? (idx % 2 !== 0);
         const isExpanded = !!expandedSplits[idx];
-        const hasMore = !s.splitCards && !s.showAll && (s.paragraphs.length > 1 || (s.checklist && s.checklist.length > 0));
+        const hasMore = !s.showAll && !s.inlineItems && (
+          (s.sections ? (s.sectionsAllHidden ? s.sections.length > 0 : s.sections.length > 1) : false) ||
+          (!s.sections && (s.paragraphs.length > 1 || (s.checklist && s.checklist.length > 0)))
+        );
 
         const textCol = (
           <div className={`col-lg-6${imageLeft ? ' order-lg-2 order-1' : ''}`} key="text">
@@ -146,7 +161,7 @@ export default function ServiceDetail() {
                 </p>
 
                 {/* Always-visible extra content (showAll flag or splitCards) */}
-                {(s.showAll || s.splitCards) && (
+                {s.showAll && (
                   <>
                     {s.paragraphs.slice(1).map((p, pi) => (
                       <p className="text-white mb-3" style={{ lineHeight: 1.5, fontSize: '16px' }} key={pi}>{p}</p>
@@ -164,6 +179,38 @@ export default function ServiceDetail() {
                   </>
                 )}
 
+                {/* Interleaved paragraph + checklist sections — first section always visible (unless sectionsAllHidden) */}
+                {s.sections && !s.sectionsAllHidden && s.sections.slice(0, 1).map((sec, si) => (
+                  <div key={si}>
+                    {sec.paragraph && (
+                      <p className="text-white mb-2" style={{ lineHeight: 1.5, fontSize: '16px' }}>{sec.paragraph}</p>
+                    )}
+                    {sec.items && sec.items.map((item) => (
+                      <div className="card-gradient__checklist-item" key={item}>
+                        <i className="bi bi-check-circle"></i>
+                        <span>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+
+                {/* Inline structured items (title + description + why bullet) */}
+                {s.inlineItems && s.inlineItems.map((item, ii) => (
+                  <div key={ii} className="mt-4">
+                    <div className="d-flex align-items-center gap-2 mb-1">
+                      <i className="bi bi-check-circle" style={{ color: '#00ccff', fontSize: '1rem', flexShrink: 0 }}></i>
+                      <p style={{ fontWeight: 700, color: '#fff', fontSize: '15px', marginBottom: 0 }}>{item.title}</p>
+                    </div>
+                    <p className="text-white mb-2" style={{ lineHeight: 1.5, fontSize: '15px', paddingLeft: '1.6rem' }}>{item.description}</p>
+                    {item.why && (
+                      <div className="card-gradient__checklist-item">
+                        <i className="bi bi-check-circle" style={{ color: '#00ccff', fontSize: '1rem', flexShrink: 0, marginTop: '2px' }}></i>
+                        <span style={{ fontSize: '14px', color: 'rgba(255,255,255,0.8)' }}>{item.why}</span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+
                 {/* Collapsible extra content (default) */}
                 {hasMore && (
                   <>
@@ -172,20 +219,36 @@ export default function ServiceDetail() {
                       className="expertise-expand__content"
                       style={{ height: isExpanded ? (expandRefs.current[idx]?.scrollHeight ?? 'auto') : 0 }}
                     >
-                      {s.paragraphs.slice(1).map((p, pi) => (
-                        <p className="text-white mb-3" style={{ lineHeight: 1.5, fontSize: '16px' }} key={pi}>
-                          {p}
-                        </p>
-                      ))}
-                      {s.checklist && (
-                        <div className="mt-3">
-                          {s.checklist.map((item) => (
+                      {s.sections ? (s.sectionsAllHidden ? s.sections : s.sections.slice(1)).map((sec, si) => (
+                        <div key={si} style={{ marginTop: '1rem' }}>
+                          {sec.paragraph && (
+                            <p className="text-white mb-2" style={{ lineHeight: 1.5, fontSize: '16px' }}>{sec.paragraph}</p>
+                          )}
+                          {sec.items && sec.items.map((item) => (
                             <div className="card-gradient__checklist-item" key={item}>
                               <i className="bi bi-check-circle"></i>
                               <span>{item}</span>
                             </div>
                           ))}
                         </div>
+                      )) : (
+                        <>
+                          {s.paragraphs.slice(1).map((p, pi) => (
+                            <p className="text-white mb-3" style={{ lineHeight: 1.5, fontSize: '16px' }} key={pi}>
+                              {p}
+                            </p>
+                          ))}
+                          {s.checklist && (
+                            <div className="mt-3">
+                              {s.checklist.map((item) => (
+                                <div className="card-gradient__checklist-item" key={item}>
+                                  <i className="bi bi-check-circle"></i>
+                                  <span>{item}</span>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </>
                       )}
                     </div>
                     <button className="expertise-card__toggle mt-3" onClick={() => toggleSplit(idx)}>
@@ -203,7 +266,7 @@ export default function ServiceDetail() {
           <div className={`col-lg-6${imageLeft ? ' order-lg-1 order-2' : ''}`} key="image">
             <AnimatedSection animation={imageLeft ? 'fade-in-left' : 'fade-in-right'}>
               <div className={`dark-split__image dark-split__image--${imageLeft ? 'left' : 'right'}`}>
-                <img src={s.image} alt={s.imageAlt} />
+                <img src={s.image} alt={s.imageAlt} style={s.imageStyle || undefined} />
               </div>
             </AnimatedSection>
           </div>
@@ -211,33 +274,108 @@ export default function ServiceDetail() {
 
         return (
           <Fragment key={idx}>
-            <section className="section section--dark dark-split">
-              <div className="container py-4">
-                <div className="row g-5 align-items-center">
-                  {imageLeft ? <>{imageCol}{textCol}</> : <>{textCol}{imageCol}</>}
-                </div>
+            <section className={`section section--dark dark-split${!s.image ? ' dark-split--flush pt-5' : ''}`}>
+              <div className="container pt-5">
+                {s.image ? (
+                  <div className="row g-5 align-items-center">
+                    {imageLeft ? <>{imageCol}{textCol}</> : <>{textCol}{imageCol}</>}
+                  </div>
+                ) : (
+                  <div className="row">
+                    <div className="col-lg-10">
+                      <AnimatedSection animation="animate-on-scroll">
+                        <div className="dark-split__text" style={{ maxWidth: '100%' }}>
+                          <p className="section-header__label">{s.label}</p>
+                          <h2 className="use-cases__title text-start text-white">
+                            {s.titleHighlight ? (
+                              <>
+                                {s.title.split(s.titleHighlight)[0]}
+                                <span className="text-accent-box">{s.titleHighlight}</span>
+                                {s.title.split(s.titleHighlight)[1] || ''}
+                              </>
+                            ) : s.title}
+                          </h2>
+                          <p className="text-white mb-3" style={{ lineHeight: 1.5, fontSize: '16px' }}>{s.paragraphs[0]}</p>
+                        </div>
+                      </AnimatedSection>
+                    </div>
+                  </div>
+                )}
               </div>
             </section>
 
-            {/* Optional 2-col checklist cards below the split */}
+            {/* Optional checklist/stat cards below the split */}
             {s.splitCards && s.splitCards.length > 0 && (
               <section className="section section--dark" style={{ paddingTop: 0, paddingBottom: '3rem' }}>
                 <div className="container">
-                  <AnimatedSection animation="stagger-children" className="row g-4">
-                    {s.splitCards.map((card, ci) => (
-                      <div className="col-lg-6" key={ci}>
-                        <GradientCard layout="centered" accent="bottom">
-                          <div>
-                            {card.items.map((item) => (
-                              <div className="card-gradient__checklist-item" key={item}>
-                                <i className="bi bi-check-circle" style={{ color: '#00ccff', fontSize: '1.1rem', flexShrink: 0 }}></i>
-                                <span style={{ fontSize: '15px', fontWeight: 600 }}>{item}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </GradientCard>
+                  {s.splitCardsHeader && (
+                    <AnimatedSection animation="animate-on-scroll">
+                      <div className="dark-split__text mb-5" style={{ maxWidth: '100%' }}>
+                        {s.splitCardsHeader.label && <p className="section-header__label">{s.splitCardsHeader.label}</p>}
+                        <h2 className="use-cases__title text-start">
+                          {s.splitCardsHeader.titleHighlight ? (
+                            <>
+                              {s.splitCardsHeader.title.split(s.splitCardsHeader.titleHighlight)[0]}
+                              <span className="text-accent-box">{s.splitCardsHeader.titleHighlight}</span>
+                              {s.splitCardsHeader.title.split(s.splitCardsHeader.titleHighlight)[1] || ''}
+                            </>
+                          ) : s.splitCardsHeader.title}
+                        </h2>
+                        {s.splitCardsHeader.description && (
+                          <p className="text-white mb-0" style={{ lineHeight: 1.5, fontSize: '16px', maxWidth: '80%' }}>
+                            {s.splitCardsHeader.description}
+                          </p>
+                        )}
                       </div>
-                    ))}
+                    </AnimatedSection>
+                  )}
+                  <AnimatedSection animation="stagger-children" className="row g-4">
+                    {s.splitCards.map((card, ci) => {
+                      const colClass = s.splitCards.length >= 3 ? 'col-lg-4' : 'col-lg-6';
+                      if (card.stat) {
+                        return (
+                          <div className={colClass} key={ci}>
+                            <GradientCard layout="centered" accent="bottom">
+                              <div className="text-center">
+                                <div style={{ fontSize: '3rem', fontWeight: 700, color: '#00ccff', lineHeight: 1.1, marginBottom: '0.75rem' }}>
+                                  {card.stat}
+                                </div>
+                                <p style={{ fontSize: '15px', color: '#fff', marginBottom: card.link ? '1rem' : 0 }}>
+                                  {card.statText}
+                                </p>
+                                {card.link && (
+                                  <a href={card.link.href} style={{ color: '#00ccff', fontWeight: 700, fontSize: '15px', textDecoration: 'none' }}>
+                                    {card.link.text} &gt;
+                                  </a>
+                                )}
+                              </div>
+                            </GradientCard>
+                          </div>
+                        );
+                      }
+                      return (
+                        <div className={colClass} key={ci}>
+                          <GradientCard layout="left" accent="bottom">
+                            <div className={card.icon ? 'd-flex gap-4 align-items-start' : ''}>
+                              {card.icon && (
+                                <img src={card.icon} alt="" style={{ width: 64, height: 64, objectFit: 'contain', flexShrink: 0, marginTop: '4px' }} />
+                              )}
+                              <div style={{ flex: 1 }}>
+                                {card.title && (
+                                  <p style={{ fontSize: '18px', fontWeight: 700, color: '#00ccff', marginBottom: '1rem' }}>{card.title}</p>
+                                )}
+                                {card.items.map((item) => (
+                                  <div className="card-gradient__checklist-item" key={item}>
+                                    <i className="bi bi-check-circle" style={{ color: '#00ccff', fontSize: '1.1rem', flexShrink: 0, marginTop: '2px' }}></i>
+                                    <span style={{ fontSize: '15px', fontWeight: 600 }}>{item}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          </GradientCard>
+                        </div>
+                      );
+                    })}
                   </AnimatedSection>
                 </div>
               </section>
@@ -269,6 +407,7 @@ export default function ServiceDetail() {
                 </div>
               </section>
             )}
+
           </Fragment>
         );
       })}
@@ -279,15 +418,63 @@ export default function ServiceDetail() {
       {/* 3c. Tier Compare (conditional) */}
       <TierCompare tierSection={service.tierSection} />
 
-      {/* 4. Certifications */}
-      <Certifications certGroups={service.certGroups} />
+      {/* Outcomes early (right after splits, before certs) */}
+      {service.outcomesEarly && (
+        <Outcomes
+          outcomesSection={service.outcomesSection}
+          outcomes={service.outcomes}
+          title={service.title}
+        />
+      )}
 
-      {/* 5. Outcomes */}
-      <Outcomes
-        outcomesSection={service.outcomesSection}
-        outcomes={service.outcomes}
-        title={service.title}
-      />
+      {/* 4. Certifications */}
+      <Certifications certGroups={service.certGroups} description={service.certsDescription} title={service.certsTitle} />
+
+      {/* 4b. Industry Section (conditional) */}
+      {service.industrySection && (
+        <section className="section section--dark ">
+          <div className="container pt-5">
+            <AnimatedSection animation="animate-on-scroll">
+              <div className="text-center mb-5">
+                <p className="section-header__label" style={{ color: '#fff' }}>{service.industrySection.label}</p>
+                <h2 className="use-cases__title text-white">{service.industrySection.title}</h2>
+                <p className="use-cases__subtitle mx-auto mt-3">{service.industrySection.subtitle}</p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection animation="stagger-children" className="row g-4">
+              {service.industrySection.industries.map((ind, ii) => {
+                const total = service.industrySection.industries.length;
+                const isLast = ii === total - 1;
+                const isOddTotal = total % 2 !== 0;
+                const colClass = isLast && isOddTotal ? 'col-12' : 'col-lg-6';
+                return (
+                  <div className={colClass} key={ind.title}>
+                    <GradientCard
+                      iconImage={ind.icon}
+                      iconWidth={56}
+                      iconHeight={56}
+                      title={ind.title}
+                      titleWhite
+                      description={ind.description}
+                      layout="centered"
+                      accent="top"
+                    />
+                  </div>
+                );
+              })}
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
+
+      {/* 5. Outcomes (default position, skip if already rendered early) */}
+      {!service.outcomesEarly && (
+        <Outcomes
+          outcomesSection={service.outcomesSection}
+          outcomes={service.outcomes}
+          title={service.title}
+        />
+      )}
 
       {/* 6. Trusted Advisor + Contact Form */}
       <TrustedAdvisor testimonial={service.testimonial} />

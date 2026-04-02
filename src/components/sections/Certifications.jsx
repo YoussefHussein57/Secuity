@@ -66,7 +66,7 @@ const trustStats = [
   { value: '40%', label: 'Relied on by 40% of the Fortune 500' },
 ];
 
-export default function Certifications({ variant = 'default', certs: certsProp, certGroups: certGroupsProp }) {
+export default function Certifications({ variant = 'default', certs: certsProp, certGroups: certGroupsProp, description, title }) {
   const [showAll, setShowAll] = useState(false);
   const isCentered = variant === 'centered';
   const isPage = variant === 'page';
@@ -90,7 +90,7 @@ export default function Certifications({ variant = 'default', certs: certsProp, 
               </div>
             ))}
           </div>
-          <p className="certs-grid__category">{group.category}</p>
+          {group.category && <p className="certs-grid__category">{group.category}</p>}
         </div>
       ))}
     </div>
@@ -218,22 +218,29 @@ export default function Certifications({ variant = 'default', certs: certsProp, 
           </AnimatedSection>
         ) : (
           <div className="row g-5 align-items-start">
-            <div className="col-lg-5">
+            <div className="col-lg-6">
               <AnimatedSection animation="fade-in-left">
                 <p className="section-header__label">Cybersecurity Certifications</p>
                 <h2 className="certs__title">
-                  Your <span className="text-accent-box">Elite</span>, Highly-trained Team
+                  {title || (<>Your <span className="text-accent-box">Elite</span>, Highly-trained Team</>)}
                 </h2>
-                <p style={{ lineHeight: '27px', fontSize: '18px', color: '#000' }}>
-                  More than 65% of our workforce consists of tenured cybersecurity engineers, architects and consultants.
-                  We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.
-                </p>
+                {description
+                  ? description.map((p, i) => (
+                      <p key={i} style={{ lineHeight: '27px', fontSize: '18px', color: '#000', marginBottom: '1rem' }}>{p}</p>
+                    ))
+                  : (
+                    <p style={{ lineHeight: '27px', fontSize: '18px', color: '#000' }}>
+                      More than 65% of our workforce consists of tenured cybersecurity engineers, architects and consultants.
+                      We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.
+                    </p>
+                  )
+                }
                 <Link to="/company/why-us" className="btn btn-accent btn-cta mt-2">
                   Why GuidePoint?
                 </Link>
               </AnimatedSection>
             </div>
-            <div className="col-lg-7">
+            <div className="col-lg-6">
               <AnimatedSection animation="fade-in-right">
                 {renderCertGrid()}
               </AnimatedSection>

@@ -7,7 +7,7 @@ const services = {
     heroLabel: 'Application Security Architecture Review',
     heroHighlight: 'Identify & Assess',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/application-security.png',
     description:
       'Conduct an architectural review of your web and cloud-based applications to identify security flaws, mitigate risk and strengthen your AppSec posture.',
     stats: [
@@ -88,10 +88,12 @@ const services = {
       {
         title: 'Mobile Application Security Assessment',
         description: 'Provide an accurate understanding of mobile risk',
+        path: '/services/mobile-application-security-assessment',
       },
       {
         title: 'Source Code Review',
         description: 'Evaluate applications for critical security issues',
+        path: '/services/source-code-review',
       },
     ],
     managed: [
@@ -105,6 +107,7 @@ const services = {
       {
         title: 'Application Threat Modeling Training',
         description: 'Learn how to create applications that are secure by design',
+        path: '/services/application-threat-modeling',
       },
       {
         title: 'Secure Development Training',
@@ -113,10 +116,12 @@ const services = {
       {
         title: 'AI Security With a Focus on Large Language Models Training',
         description: 'Learn AI and LLM application security fundamentals',
+        path: '/services/ai-security-large-language-models',
       },
       {
         title: 'Fundamentals of Reconnaissance and Attack Surface Analysis Training',
         description: 'Learn reconnaissance and attack surface analysis for effective web app testing',
+        path: '/services/fundamentals-of-reconnaissance-and-attack-surface-analysis',
       },
     ],
     outcomesSection: {
@@ -162,7 +167,7 @@ const services = {
     },
   },
 
-  'secure-sdlc-program-review': {
+  'secure-sdlc-program-review': {  // heroImage: local → /images/heroes/secure-sdlc-program-review.jpg
     parentService: 'application-security',
     title: 'Application Security Program Assessment',
     icon: 'bi-diamond',
@@ -170,7 +175,7 @@ const services = {
     heroLabel: 'APPLICATION SECURITY PROGRAM ASSESSMENT',
     heroHighlight: 'Holistic',
     heroCta: 'Secure Your Applications',
-    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Security_Program_Assessment.png',
+    heroImage: '/images/heroes/secure-sdlc-program-review.jpg',
     description:
       "Assess the state of your application security program and communicate a roadmap of key initiatives to improve your program\u2019s maturity from IT and compliance to development and security.",
     useCases: {
@@ -282,7 +287,7 @@ const services = {
     heroLabel: 'APPLICATION SECURITY AS A SERVICE',
     heroHighlight: 'Automate and Manage',
     heroCta: 'Secure Your Applications',
-    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Security_as_a_Service.png',
+    heroImage: '/images/heroes/application-security-as-a-service.jpg',
     description:
       'With our AppSec as a Service offering, you can maximize the value of your AppSec tooling, identify vulnerabilities and provide actionable remediation recommendations to ensure a successful Application Security Program.',
     useCases: {
@@ -471,8 +476,8 @@ const services = {
     tagline: 'Revolutionizing Application Security with Agentic Workflows',
     heroLabel: 'AI-AUGMENTED APPLICATION SECURITY SERVICES',
     heroHighlight: 'Revolutionizing',
-    heroCta: 'Learn More',
-    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/Website_Refresh_Services_SUB_Pages_AI-augmented_Application_Security_Services.png',
+    heroCta: 'Secure Your Applications',
+    heroImage: '/images/heroes/ai-augmented-application-security.jpg',
     description:
       'Artificial Intelligence (AI) meets human expertise to reveal vulnerabilities, validate results and ensure secure, scalable application development.',
     useCases: {
@@ -480,11 +485,22 @@ const services = {
       title: 'The Mounting Risks of Application Development at Scale',
       titleHighlight: 'Mounting Risks',
       subtitle:
-        "Today\u2019s organizations face unprecedented challenges in developing secure applications at enterprise scale. As development velocity increases, traditional security approaches struggle to keep pace, leaving critical vulnerabilities undetected.",
-      items: [
-        'AI-driven Threats',
-        'Regulatory Pressure',
-        'Third-party Risks',
+        "Today\u2019s organizations face unprecedented challenges in developing secure applications at enterprise scale. As development velocity increases and architectures grow more complex, traditional application security approaches struggle to keep pace and can even create security gaps and increase business risk.",
+      subtitle2:
+        "At GuidePoint Security, we offer AI-augmented application security services to help you overcome these challenges more efficiently and effectively. Our services address the most pressing risks in modern application development:",
+      cards: [
+        {
+          title: 'AI-driven Threats',
+          description: 'Attackers leveraging AI now create advanced malware and exploit vulnerabilities faster than traditional security teams can respond.',
+        },
+        {
+          title: 'Regulatory Pressure',
+          description: 'Changing compliance requirements (e.g., GDPR, PCI DSS, HIPAA) make it challenging to ensure solutions meet standards while maintaining development speed.',
+        },
+        {
+          title: 'Third-party Risks',
+          description: 'Increasing reliance on third-party integrations and APIs introduces additional vulnerabilities that traditional security testing may miss.',
+        },
       ],
     },
     splits: [
@@ -496,75 +512,132 @@ const services = {
           'Improve and accelerate application security assessments by combining AI-driven insights with expert analysis and oversight.',
           'AI-augmented application security enhances traditional application security assessments by combining artificial intelligence with expert oversight to improve both efficiency and effectiveness.',
         ],
+        showAll: true,
         image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_icon-Triangle_elementor-rt.png',
         imageAlt: 'AI AppSec',
+        splitCards: [
+          {
+            items: [
+              'Faster Reviews: Accelerate the review of large source code and documentation repositories by 40-60% through AI-powered analysis',
+              'In-depth Analysis: Identify application security vulnerabilities, flaws and weaknesses through GuidePoint\'s proprietary agentic workflows',
+            ],
+          },
+          {
+            items: [
+              'Expert Results: Maintain expert oversight and reduce false positives through human validation of AI-generated results',
+              'Actionable Guidance: Receive detailed reports with technical analysis and executive summaries to swiftly remediate issues while providing proof of application security program effectiveness',
+            ],
+          },
+          {
+            stat: '40-60%',
+            statText: 'faster detection of vulnerabilities, security flaws and weaknesses in source code with fewer false positives.',
+            link: { text: 'Learn More', href: '/services/ai-augmented-application-security' },
+          },
+        ],
       },
       {
         label: 'AI-AUGMENTED APPLICATION SECURITY USE CASES',
         title: 'Architectural Intelligence. Security By Design.',
         titleHighlight: 'Intelligence',
         paragraphs: [
-          'Analyze application architecture and design documents to identify potential security flaws and weaknesses in the application architecture using proprietary agentic AI workflows.',
+          'Analyze, identify and address potential security flaws across your application architecture, threat models and source code using proprietary agentic AI workflows combined with expert human oversight.',
         ],
         image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Security_Awareness_and_Education_Left.png',
-        imageAlt: 'AI Security Use Cases',
-        checklist: [
-          'Application Architecture Reviews at Scale',
-          'Deeper Application Threat Modeling',
-          'Automated Secure Code Reviews',
+        imageAlt: 'AI Use Cases',
+        inlineItems: [
+          {
+            title: 'Application Architecture Reviews at Scale',
+            description: 'Analyze application architecture and design documents to identify potential security flaws and weaknesses in the application architecture using proprietary agentic AI workflows.',
+            why: 'Why AI-augmented? Agentic workflows can systematically evaluate architectural components, data flows and security controls against established security principles and best practices, while application security consultants validate findings and provide contextual remediation guidance.',
+          },
+          {
+            title: 'Deeper Application Threat Modeling',
+            description: 'Use agentic AI workflows to analyze application architectures, identify potential attack vectors and systematically model threats against applications.',
+            why: 'Why AI-augmented? AI can automate and accelerate the threat modeling process, map threats to STRIDE categories, analyze attack paths and correlate vulnerabilities with threat scenarios under continuous consultant supervision.',
+          },
+          {
+            title: 'Automated Secure Code Reviews',
+            description: 'Conduct an AI-driven security assessment of application source code using advanced reasoning that evolves beyond traditional static ruleset-based approaches.',
+            why: 'Why AI-augmented? Agentic workflows can perform initial vulnerability detection using sophisticated analysis patterns, while human reviewers validate findings, investigate false positives and conduct targeted manual review of complex code sections requiring contextual analysis.',
+          },
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
         ],
       },
       {
-        label: 'THE FUTURE OF APPLICATION SECURITY',
-        title: 'Fight AI with AI',
-        titleHighlight: 'Fight',
-        paragraphs: [
-          "As threat actors weaponize artificial intelligence, organizations must adopt equally sophisticated defenses. AI-augmented application security services represent the next evolution of modern software defense. But nothing replaces human expertise. That\u2019s why we strategically apply human-validated AI to extend your team\u2019s capabilities, enabling them to secure increasingly complex applications against increasingly sophisticated threats.",
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
         ],
-        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_icon-Triangle_elementor-rt.png',
-        imageAlt: 'Fight AI with AI',
+      },
+      {
+        category: '',
+        certs: [
+          { name: 'GIAC GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/GIAC-GSE-SecurityExpert-Line-e1759849674861.png' },
+          { name: 'GIAC GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/GIAC-GWAPT-PenTester-Line-e1759849692152.png' },
+        ],
       },
     ],
+    outcomesEarly: true,
+    industrySection: {
+      label: 'WHO NEEDS AI-AUGMENTED APPLICATION SECURITY SERVICES?',
+      title: 'Who Needs AI-augmented Application Security Services?',
+      subtitle: 'Organizations scaling application development face security challenges that outpace human capabilities. When speed matters but security can\'t be compromised, AI-augmented application security becomes essential.',
+      industries: [
+        { title: 'Financial Services', description: 'Protect customer assets and transaction integrity while meeting evolving regulatory requirements with automated compliance verification.', icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/AI-Augmented_Icons-01.svg' },
+        { title: 'Healthcare', description: 'Safeguard sensitive patient data against sophisticated threats while maintaining HIPAA compliance and ensuring clinical application reliability.', icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/AI-Augmented_Icons-02.svg' },
+        { title: 'Retail & E-commerce', description: 'Defend payment systems and customer data across complex digital storefronts with continuous security that scales with seasonal demands.', icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/AI-Augmented_Icons-03.svg' },
+        { title: 'Government & Defense', description: 'Shield critical infrastructure and classified information with advanced threat detection that stays ahead of nation-state adversaries.', icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/AI-Augmented_Icons-04.svg' },
+        { title: 'Technology', description: 'Secure your intellectual property and maintain customer trust with development practices that make security an accelerator, not a bottleneck.', icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/AI-Augmented_Icons-05.svg' },
+        { title: 'Energy & Utilities', description: 'Protect operational technology from increasingly targeted attacks with security that bridges IT/OT boundaries without disrupting essential services.', icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/AI-Augmented_Icons-06.svg' },
+        { title: 'Education', description: 'Defend institutional and student data across diverse, distributed environments despite limited cybersecurity resources and expanding attack surfaces.', icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/AI-Augmented_Icons-07.svg' },
+      ],
+    },
     outcomesSection: {
       label: 'AI-AUGMENTED APPSEC OUTCOMES',
-      title: 'Transform Your Application Security Program',
-      titleHighlight: 'Transform',
+      title: 'Fight AI with AI',
+      titleHighlight: 'Fight',
       subtitle:
-        'Our AI-augmented approach delivers measurable improvements across your application security program.',
+        "As threat actors weaponize artificial intelligence, organizations must adopt equally sophisticated defenses. AI-augmented application security services represent the next evolution of modern software defense. But nothing replaces human expertise. That\u2019s why we strategically apply human-validated AI to extend your team\u2019s capabilities, enabling them to secure increasingly complex applications against increasingly sophisticated threats.",
     },
     outcomes: [
       {
-        iconImage: '/images/icons/scale-appsec.png',
         title: 'Seamless DevSecOps Integration',
         description:
           'Maintain secure code delivery at scale with seamlessly embedded AI-powered vulnerability detection and automated secure coding guidance.',
       },
       {
-        iconImage: '/images/icons/save-spending.png',
         title: 'Integrated Threat Intelligence',
         description:
           'Harness intelligent threat correlation that prioritizes vulnerabilities based on real-world exploit patterns and predicts emerging risks specific to your applications.',
       },
       {
-        iconImage: '/images/icons/expand-testing.png',
         title: 'Augmented Security Teams',
         description:
-          'Multiply your security team\u2019s effectiveness with AI-powered tools that automate routine analysis while surfacing critical findings that require expert judgment.',
+          "Multiply your security team\u2019s impact with AI-driven, human-validated analysis that automates triage, reduces false positives and provides actionable remediation guidance.",
       },
       {
-        iconImage: '/images/icons/improve-compliance.png',
         title: 'AI-powered Defenses',
         description:
-          'Deploy intelligent security controls that adapt in real-time to emerging threats, providing continuous protection against sophisticated attack techniques.',
+          'Counter AI-powered threats with advanced defenses that outpace adversarial techniques, automated exploits and sophisticated social engineering attacks targeting your developers.',
       },
     ],
     testimonial: {
       quote:
-        'Our team works side-by-side with you as your cybersecurity partner.',
-      author: 'GuidePoint Security',
-      company: 'Application Security Practice',
-      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png',
-      companyLogo: '/logos/guidepointsecurity.png',
+        "GuidePoint Security is basically family. They\u2019re always there when I need them. At the end of the day GuidePoint is always there to help and that\u2019s how they add value.",
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
     },
   },
 
@@ -576,7 +649,7 @@ const services = {
     heroLabel: 'APPLICATION SECURITY ASSESSMENTS',
     heroHighlight: 'Comprehensive',
     heroCta: 'Secure Your Applications',
-    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/11/Services_SUB_Pages_Application_Security_Assessments.png',
+    heroImage: '/images/heroes/application-security-assessment.jpg',
     description:
       'Identify and verify application security risks within modern applications, back-end web services or thick clients by leveraging manual and automated application security assessments.',
     useCases: {
@@ -709,6 +782,792 @@ const services = {
     },
   },
 
+  'mobile-application-security-assessment': {
+    parentService: 'application-security',
+    title: 'Mobile Application Security Assessment',
+    icon: 'bi-phone',
+    tagline: 'Testing Way Beyond Automation',
+    heroLabel: 'MOBILE APPLICATION SECURITY ASSESSMENT',
+    heroHighlight: 'Testing',
+    heroCta: 'Secure Your Applications',
+    heroImage: '/images/heroes/mobile-application-security-assessment.jpg',
+    description:
+      'Identify and verify application security risks within mobile applications using real-world scenarios and proven testing standards to ensure a secure and reliable mobile experience.',
+    useCases: {
+      label: 'MOBILE APPLICATION SECURITY ASSESSMENT OVERVIEW',
+      title: 'Simulate an Adversary\'s Approach for Attacking a Mobile Application',
+      titleHighlight: 'Simulate',
+      subtitle:
+        'While mobile apps drive the modern world, they should be done without introducing risk to end users. Our Mobile Application Security Assessments (MASAs) provide a thorough assessment of a mobile application, covering both the installed application as well as its backend components—with the goal of identifying and addressing vulnerabilities ranging in severity.',
+      cards: [
+        {
+          title: 'Real-World Scenarios and Proven Testing Standards',
+          description: 'We can simulate an adversary\'s approach for attacking a mobile application or accessing sensitive data on users\' mobile devices.',
+        },
+        {
+          title: 'Methodology and Process',
+          description: 'We leverage a four-phased approach to gather information, test, verify and notify—allowing us to provide an accurate understanding of actual risk.',
+        },
+      ],
+    },
+    splits: [
+      {
+        label: 'MOBILE APPLICATION SECURITY TESTING',
+        title: 'The Art of Testing Mobile Applications',
+        titleHighlight: 'Art',
+        paragraphs: [
+          'MASAs are run from and connected to a customized assessment environment, consisting of wireless access points, proxies and a variety of commercial and custom mobile application security testing tools.',
+          'Given the nature of modern iOS and Android mobile apps, we perform extensive manual mobile application security assessments. We validate any identified communication channels for proper confidentiality and integrity, monitoring the application execution on the device(s).',
+          'Our mobile application security risk assessments also examine the device from a high-level, forensic perspective in order to identify areas where the app may be storing or caching sensitive information in an insecure manner.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'Mobile App Testing',
+        splitCardsHeader: {
+          label: 'MOBILE APPLICATION SECURITY TESTING',
+          title: 'From Reverse Engineering to Deep Analysis & Penetration Testing',
+          titleHighlight: 'Deep Analysis',
+          description: 'After reverse-engineering the application binary to the furthest extent possible, we analyze it for information leakage or hard-coded secrets. Throughout our security testing of mobile apps, we map the back-end environment and test any in-scope components for vulnerabilities. Checks include vulnerabilities listed in the OWASP Top 10 Mobile Risks:',
+        },
+        splitCards: [
+          {
+            items: [
+              'M1: Improper Platform Usage',
+              'M2: Insecure Data Storage',
+              'M3: Insecure Communication',
+              'M4: Insecure Authentication',
+            ],
+          },
+          {
+            items: [
+              'M6: Insecure Authorization',
+              'M7: Client Code Quality',
+              'M8: Code Tampering',
+              'M9: Reverse Engineering',
+              'M10: Extraneous Functionality',
+            ],
+          },
+        ],
+      },
+      {
+        label: 'MOBILE APPLICATION SECURITY ASSESSMENT USE CASES',
+        title: 'Ensure Mobile Application Security Against Attacks',
+        titleHighlight: 'Against Attacks',
+        paragraphs: [
+          'Common attack scenarios to consider include:',
+          'It\'s also important to understand the severity and potential impact when explaining the vulnerability risk.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
+        imageAlt: 'Mobile Attack Scenarios',
+        checklist: [
+          'A lost or stolen device containing cached or stored user information',
+          'Interception or modification of network traffic on a shared wireless network',
+          'Attacks against backend web service endpoints',
+          'User of the application within the view of others',
+          'Attacks from another malicious application installed on the device',
+        ],
+      },
+    ],
+    certsDescription: [
+      'Every member of GuidePoint\'s Application Security Practice offers a wealth of expertise stemming from years of relevant, real-world experience within the application layer from technical and strategic perspectives.',
+      'We have a unique ability to understand the threats your applications face and can play a vital role in helping to mature or align your security posture.',
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: '',
+        certs: [
+          { name: 'GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-gpen-removebg-preview-1.png' },
+          { name: 'GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gwapt.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'MOBILE APPLICATION SECURITY ASSESSMENT OUTCOMES',
+      title: 'Ensure Your Mobile Application Can Stand Up to Potential Threats',
+      titleHighlight: 'Ensure',
+      subtitle:
+        'Our Mobile Application Security Assessment is designed to identify and address vulnerabilities of varying severity to safeguard against potential threats to both the users of the application and the application itself, ensuring a secure and reliable mobile experience.',
+    },
+    outcomes: [
+      {
+        title: 'Understand Your Security Posture',
+        description: 'Gain a detailed evaluation of every facet of your application.',
+      },
+      {
+        title: 'Prioritize Your Risk',
+        description: 'Vulnerabilities are identified and addressed by severity.',
+      },
+      {
+        title: 'Harden Your Application',
+        description: 'Whether it\'s an attack against application users or the app itself.',
+      },
+      {
+        title: 'Gain Stakeholder Trust',
+        description: 'Users will enjoy a more dependable and secure mobile app experience.',
+      },
+    ],
+    testimonial: {
+      quote:
+        "GuidePoint Security is basically family. They're always there when I need them. At the end of the day GuidePoint is always there to help and that's how they add value.",
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'application-threat-modeling': {
+    parentService: 'application-security',
+    title: 'Application Threat Modeling',
+    icon: 'bi-diagram-3',
+    tagline: 'A Proactive Approach to Application Security',
+    heroLabel: 'APPLICATION THREAT MODELING',
+    heroHighlight: 'Proactive Approach',
+    heroCta: 'Secure Your Applications',
+    heroImage: '/images/heroes/application-threat-modeling.jpg',
+    description: 'We use application threat modeling solutions to help identify potential flaws and threats within your applications to create apps that are secure by design.',
+    useCases: {
+      label: 'APPLICATION THREAT MODELING OVERVIEW',
+      title: 'Shift Left in the Software Development Lifecycle (SDLC)',
+      titleHighlight: 'Shift Left',
+      subtitle: 'Application threat modeling is a cost-effective way to "shift left" in the SDLC. We use application threat modeling solutions to help you identify design flaws and potential threats in your applications—before you spend time on the application or feature development—as well as developing effective compensating security controls to mitigate those threats. Our application threat modeling service supports and educates developers to better understand the application attack surface and where security controls are most needed.',
+      cards: [
+        { title: 'Reveal Application Security Risks' },
+        { title: 'Identify Application Vulnerabilities' },
+        { title: 'Understand Potential Attack Paths' },
+      ],
+    },
+    splits: [
+      {
+        label: 'THREAT MODELING COMPONENTS',
+        title: 'Analyze Application Design to Identify Vulnerabilities',
+        titleHighlight: 'Identify Vulnerabilities',
+        paragraphs: [
+          'Our Application Threat Modeling helps you think like a hacker: we adopt the same perspective as malicious hackers to gauge how much of an impact potential threat agents may cause.',
+          'With our Application Security Threat Modeling service, you gain a comprehensive assessment that includes:',
+        ],
+        checklist: [
+          'Review of application architecture diagrams and design documents to bring to light potential vulnerabilities that are present in your applications',
+          'Expert-led whiteboarding sessions with your key stakeholders to identify key data flows and application entry points',
+          'Review of the attack surface and sensitive data flows to identify possible attack paths and threats that real-world threat actors may potentially use to negatively impact your applications',
+          'Validate that your current security controls are appropriate enough to mitigate risk and where it is necessary to build in additional security controls',
+          'Custom data flow diagrams, attack trees, asset summaries, listing of threat actors, security control summaries and a prioritized list of possible threats',
+          'Create and regularly update your threat models to ensure your frameworks remain one step ahead of threat actors that can negatively impact your applications',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'Application Threat Modeling Components',
+        splitCardsHeader: {
+          label: 'APPLICATION THREAT MODELING ANALYSIS',
+          title: 'Build Security Into Your Applications',
+          titleHighlight: 'Build Security',
+          description: 'Our application threat models, which include mobile application threat modeling and web application threat modeling, enhance the security of any product as it relates to potential areas of security risk, whether or not application testing is possible. We evaluate applications against industry-leading practices from OWASP, NIST and SANS and align security threats to the six categories found in Microsoft\'s STRIDE methodology:',
+        },
+        splitCards: [
+          { items: ['Spoofing', 'Tampering', 'Repudiation'] },
+          { items: ['Information Disclosure', 'Denial of Service', 'Elevation of Privilege'] },
+        ],
+      },
+      {
+        label: 'APPLICATION THREAT MODELING BENEFITS',
+        title: 'Threat Modeling is a Key Enabler of DevSecOps',
+        titleHighlight: 'DevSecOps',
+        paragraphs: [
+          'Many traditional AppSec capabilities are not optimized for Agile release cycles:',
+          'While more effort has been placed on automation, this approach results in security bottlenecks in the build and deploy process. Organizations that have been successful in embracing DevSecOps tend to share one thing in common — they have a mature Threat Modeling capability and security is baked into their products.',
+        ],
+        checklist: [
+          'Application scanning technologies take time to run and produce false positives, which take manual effort to triage',
+          'Penetration testing occurs too late in the release cycle',
+          'Most attempts at shifting left result in additional developer burden',
+          'Current testing tools are not able to test for emerging threats',
+        ],
+        imageLeft: true,
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
+        imageAlt: 'DevSecOps Threat Modeling',
+      },
+    ],
+    certsDescription: [
+      'Every member of GuidePoint\'s Application Security Practice offers a wealth of expertise stemming from years of relevant, real-world experience within the application layer from technical and strategic perspectives.',
+      'We have a unique ability to understand the threats your applications face and can play a vital role in helping to mature or align your security posture.',
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: 'AI Certifications',
+        certs: [
+          { name: 'AI Cert', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-02.png' },
+          { name: 'AI Cert', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-01.png' },
+          { name: 'AI Cert', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-03.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'APPLICATION THREAT MODELING OUTCOMES',
+      title: 'Scale Your Application Security While Avoiding Costly Design Flaws',
+      titleHighlight: 'Scale',
+      subtitle: 'Our Application Security Threat Modeling services will help you partner with your development teams and provide education on the use of security leading practices. This allows you to scale your security efforts while avoiding costly design flaws that are difficult to fix once the application has already been deployed to production.',
+    },
+    outcomes: [
+      {
+        title: 'Understand Your Design',
+        description: 'Know what\'s included in the application by leveraging a structured process.',
+      },
+      {
+        title: 'Identify Potential Attack Paths',
+        description: 'Think like a hacker to uncover possible attack paths and vulnerabilities.',
+      },
+      {
+        title: 'Quantify Remediation',
+        description: 'Prioritize remediation efforts to focus on the most actionable items.',
+      },
+      {
+        title: 'Create Security Requirements',
+        description: 'Ensure specific controls are in place and if any others should be considered.',
+      },
+    ],
+    testimonial: {
+      quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'fundamentals-of-reconnaissance-and-attack-surface-analysis': {
+    parentService: 'application-security',
+    title: 'Fundamentals of Reconnaissance and Attack Surface Analysis',
+    icon: 'bi-binoculars',
+    tagline: 'Build a Stronger Foundation for Effective Web App Testing',
+    heroLabel: 'FUNDAMENTALS OF RECONNAISSANCE AND ATTACK SURFACE ANALYSIS',
+    heroHighlight: 'Build',
+    heroCta: 'Secure Your Applications',
+    heroImage: '/images/heroes/fundamentals-of-reconnaissance-and-attack-surface-analysis.jpg',
+    description: 'Learn to systematically map, analyze and track web application attack surfaces with hands-on skills that elevate your reconnaissance precision and coverage.',
+    useCases: {
+      label: 'FUNDAMENTALS OF RECONNAISSANCE AND ATTACK SURFACE ANALYSIS TRAINING OVERVIEW',
+      title: 'Learn to Think Like an Attacker',
+      titleHighlight: 'Learn',
+      subtitle: 'This course focuses on the fundamentals of web application reconnaissance and attack surface analysis, merging conceptual understanding with practical exercises. Upon completion, participants will be proficient in performing web application reconnaissance, attack surface mapping and analysis, maximizing application coverage and effectively tracking their testing progress.',
+      cards: [
+        {
+          title: 'Fundamentals of Reconnaissance',
+          description: 'Understand the fundamentals of reconnaissance, including application mapping and client-side code review.',
+        },
+        {
+          title: 'Web Application Attack Surface',
+          description: 'Learn how to identify and understand the attack surface of web applications, spot application entry points and understand HTTP requests and responses.',
+        },
+        {
+          title: 'Security Posture Assessment',
+          description: 'Gain the skills to map attack surfaces and assess the security posture of web applications, including vulnerability identification.',
+        },
+      ],
+    },
+    splits: [
+      {
+        label: 'TRAINING OBJECTIVES',
+        title: 'Why Choose This Training?',
+        titleHighlight: 'Why Choose',
+        paragraphs: [
+          'This course is designed for both entry-level and intermediate-level security professionals, quality assurance engineers and others who are seeking to establish a strong foundation in performing critical skills required for application security. Whether you are new to the field or have some experience, this course will provide you with the knowledge and skills necessary to effectively analyze the security posture of web applications.',
+        ],
+        showAll: true,
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'Training Objectives',
+        splitCards: [
+          {
+            title: 'What You\'ll Learn',
+            items: [
+              'Reconnaissance basics, including enumeration, application mapping and content discovery.',
+              'Attack surface analysis in web applications.',
+              'Practical application of reconnaissance and web app testing.',
+            ],
+          },
+          {
+            title: 'Who Should Attend?',
+            items: [
+              'Information security professionals',
+              'Entry- to mid-level application security professionals',
+              'Quality assurance team members',
+              'Security champions',
+            ],
+          },
+        ],
+      },
+      {
+        label: 'PREREQUISITES',
+        title: 'Your Path to Secure Code Development',
+        titleHighlight: 'Path',
+        paragraphs: [
+          'Attendees will be best positioned to excel in this course when they possess a foundational grasp of web application structures and concepts, such as server-client interactions and basic application layer protocols such as HTTP. Familiarity with general security or web application security concepts is advantageous. While prior knowledge of reconnaissance or attack surface analysis is helpful, it is not necessary.',
+        ],
+        sectionsAllHidden: true,
+        sections: [
+          {
+            paragraph: 'Participants will need:',
+            items: [
+              'A computer running Windows, macOS or Linux.',
+              'An internet connection.',
+              'VMWare or Virtual Box for running the virtual lab machine.',
+            ],
+          },
+          {
+            paragraph: 'All other lab environments and materials will be provided within the course.',
+          },
+          {
+            paragraph: 'Our Fundamentals of Reconnaissance and Attack Surface Analysis training is available as a live, instructor-led virtual course or on-site session to accommodate your team\'s needs. This course ensures participants gain critical skills for secure application design, whether remote or in person.',
+          },
+        ],
+        imageLeft: true,
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
+        imageAlt: 'Training Prerequisites',
+      },
+    ],
+    certsTitle: 'Our Elite Security Team is Now on Your Security Team',
+    certsDescription: [
+      'Every member of GuidePoint\'s Application Security Practice offers a wealth of expertise stemming from years of relevant, real-world experience within the application layer from technical and strategic perspectives.',
+      'We have a unique ability to understand the threats your applications face and can play a vital role in helping to mature or align your security posture.',
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: '',
+        certs: [
+          { name: 'GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-gpen-removebg-preview-1.png' },
+          { name: 'GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gwapt.png' },
+        ],
+      },
+    ],
+    testimonial: {
+      quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'ai-security-large-language-models': {
+    parentService: 'application-security',
+    title: 'AI Security with a Focus on Large Language Models',
+    icon: 'bi-robot',
+    tagline: 'Secure Your AI Future by Mastering LLM Threats and Defense',
+    heroLabel: 'AI SECURITY WITH A FOCUS ON LARGE LANGUAGE MODELS',
+    heroHighlight: 'AI Future',
+    heroCta: 'Secure Your Applications',
+    heroImage: '/images/heroes/ai-security-large-language-models.jpg',
+    description: 'Develop hands-on expertise in securing LLMs through threat modeling, risk analysis, vulnerability identification and mitigation techniques across real-world AI architectures.',
+    useCases: {
+      label: 'AI SECURITY WITH A FOCUS ON LARGE LANGUAGE MODELS TRAINING OVERVIEW',
+      title: 'From Fundamentals to Exploits: Build Real-World LLM Security Skills',
+      titleHighlight: 'Fundamentals',
+      subtitle: 'GuidePoint\'s Artificial Intelligence (AI) Security course with a focus on Large Language Models (LLMs) combines theoretical knowledge with practical applications. Participants will gain in-depth understanding of AI fundamentals, security implications and the unique challenges posed by LLMs.',
+      cards: [
+        {
+          title: 'AI & LLM Fundamentals',
+          description: 'Explore core AI concepts, LLM architecture, training methods and security implications across the AI lifecycle.',
+        },
+        {
+          title: 'Risk Identification and Mitigation',
+          description: 'Analyze real-world vulnerabilities, learn AI-specific threat vectors and see how to implement security controls tailored to LLM-based applications.',
+        },
+        {
+          title: 'Governance & Best Practices',
+          description: 'Navigate legal, ethical and governance challenges while applying industry-aligned risk management strategies and hands-on techniques.',
+        },
+      ],
+    },
+    splits: [
+      {
+        label: 'AI SECURITY TRAINING OBJECTIVES',
+        title: 'Why Choose This Training?',
+        titleHighlight: 'Why Choose',
+        paragraphs: [
+          'This AI Security training is an engaging class designed to introduce participants of all skill and knowledge levels to the security fundamentals of AI. Featuring a mix of live instruction, participant discussions and interactive exercises designed by our expert AI security professionals, attendees will examine real-world scenarios, learn industry best practices and gain hands-on experience with tools and techniques specific to AI and LLM security.',
+        ],
+        showAll: true,
+        splitCards: [
+          {
+            title: 'What You\'ll Learn',
+            icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Icon_3_Zscaler.svg',
+            items: [
+              'Apply industry best practices to real-world AI and LLM security scenarios through expert-led instruction and collaborative exercises.',
+              'Identify and communicate AI-specific risks while developing effective mitigation strategies for LLM-based applications.',
+              'Gain hands-on experience with tools and techniques used to assess and secure AI systems across the deployment lifecycle.',
+            ],
+          },
+          {
+            title: 'Who Should Attend',
+            icon: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Icon_1_Zscaler.svg',
+            items: [
+              'IT Managers and Decision Makers',
+              'AI/ML Engineers',
+              'Software Developers',
+              'Information Security Professionals',
+            ],
+          },
+        ],
+      },
+      {
+        label: 'AI LLM PREREQUISITES',
+        title: 'AI Security with a Focus on Large Language Models Prerequisites',
+        titleHighlight: 'Prerequisites',
+        paragraphs: [
+          'While no specific AI or security background is required, participants will benefit from a basic understanding of information security concepts.',
+          'The following list outlines the necessities for participants to successfully complete this training course:',
+        ],
+        checklist: [
+          'A computer, compatible with Windows, macOS or Linux',
+          'A reliable internet connection',
+        ],
+        imageLeft: false,
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'AI LLM Prerequisites',
+      },
+      {
+        label: 'FLEXIBLE TRAINING OPTIONS',
+        title: 'Flexible Training Options',
+        titleHighlight: 'Flexible',
+        paragraphs: [
+          'Our AI Security with a Focus on Large Language Models training is available as a live, instructor-led virtual course or on-site session to accommodate your team\'s needs. This course ensures participants gain critical skills for secure application design, whether remote or in person.',
+        ],
+        showAll: true,
+        imageLeft: true,
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Staff_Left.png',
+        imageAlt: 'Flexible Training Options',
+      },
+    ],
+    certsTitle: 'Our Elite Security Team is Now on Your Security Team',
+    certsDescription: [
+      'Every member of GuidePoint\'s Application Security Practice offers a wealth of expertise stemming from years of relevant, real-world experience within the application layer from technical and strategic perspectives.',
+      'We have a unique ability to understand the threats your applications face and can play a vital role in helping to mature or align your security posture.',
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: '',
+        certs: [
+          { name: 'GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-gpen-removebg-preview-1.png' },
+          { name: 'GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2021/01/gwapt.png' },
+        ],
+      },
+    ],
+    testimonial: {
+      quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'secure-development-training': {
+    parentService: 'application-security',
+    title: 'Secure Development Training',
+    icon: 'bi-mortarboard',
+    tagline: 'Application Security from the First Line of Code',
+    heroLabel: 'SECURE DEVELOPMENT TRAINING',
+    heroHighlight: 'Application Security',
+    heroCta: 'Secure Your Applications',
+    heroImage: '/images/heroes/secure-development-training.jpg',
+    description: 'Learn how to build with security in mind, embedding it naturally into every line of code, so that secure practices become a natural part of the development process.',
+    useCases: {
+      label: 'SECURE DEVELOPMENT TRAINING OVERVIEW',
+      title: 'Turn Application Development into Defense',
+      titleHighlight: 'Turn',
+      subtitle: 'GuidePoint Security\'s Secure Software Development Training is a hands-on, comprehensive course crafted to deepen developers\' understanding of application security. Participants will learn how to identify, mitigate and remediate the industry\'s most critical vulnerabilities, empowering them to build resilient software solutions.',
+      cards: [
+        {
+          title: 'Vulnerabilities and Application Development',
+          description: 'Explore the OWASP Top 10 vulnerabilities, including real-world impacts, prevention and remediation techniques.',
+        },
+        {
+          title: 'Remediation Techniques',
+          description: 'Participate in interactive labs featuring vulnerability exploitation and code remediation using tools like Burp Suite.',
+        },
+        {
+          title: 'Secure Code Review Best Practices',
+          description: 'Conduct secure code reviews and implement secure practices within the Secure Development Lifecycle to protect against common threats.',
+        },
+      ],
+    },
+    splits: [
+      {
+        label: 'SECURE DEVELOPMENT TRAINING OBJECTIVES',
+        title: 'Why Choose This Training?',
+        titleHighlight: 'Why',
+        paragraphs: [
+          'Led by seasoned security professionals, this course emphasizes real-world application, guiding participants through secure coding practices that directly address today\'s most prevalent software threats. Each session combines live instruction, interactive labs and expert-led discussions, fostering a deep, practical understanding of secure software development principles.',
+        ],
+        showAll: true,
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'Secure Development Training Objectives',
+        splitCards: [
+          {
+            title: 'What You\'ll Learn',
+            items: [
+              'Proficiency in secure coding practices to defend against common vulnerabilities.',
+              'Skills in identifying, exploiting and remediating vulnerabilities.',
+              'An understanding of the Secure Development Lifecycle and its role in maintaining software integrity.',
+            ],
+          },
+          {
+            title: 'Who Should Attend?',
+            items: [
+              'Software Developers',
+              'Quality Assurance Engineers',
+              'Entry-Level Security Engineers',
+            ],
+          },
+        ],
+      },
+      {
+        label: 'SECURE DEVELOPMENT TRAINING PREREQUISITES',
+        title: 'Your Path to Secure Code Development',
+        titleHighlight: 'Secure Code Development',
+        paragraphs: [
+          'For the best experience, participants should ideally have:',
+        ],
+        sections: [
+          {
+            items: [
+              'Basic experience in software development.',
+              'Familiarity with foundational security concepts, though prior knowledge of the OWASP Top 10 is not required.',
+            ],
+          },
+          {
+            paragraph: 'Participants will need:',
+            items: [
+              'A computer compatible with Windows, macOS or Linux.',
+              'A stable internet connection.',
+              'Burp Suite Community Edition installed (additional setup instructions provided).',
+            ],
+          },
+          {
+            paragraph: 'All other lab environments and materials will be provided within the course.',
+          },
+        ],
+        imageLeft: true,
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png',
+        imageAlt: 'Training Prerequisites',
+      },
+    ],
+    certsDescription: [
+      'Every member of GuidePoint\'s Application Security Practice offers a wealth of expertise stemming from years of relevant, real-world experience within the application layer from technical and strategic perspectives.',
+      'We have a unique ability to understand the threats your applications face and can play a vital role in helping to mature or align your security posture.',
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: '',
+        certs: [
+          { name: 'GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-gpen-removebg-preview-1.png' },
+          { name: 'GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gwapt.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'SECURE DEVELOPMENT TRAINING OUTCOMES',
+      title: 'Learn How to Securely Develop Applications',
+      titleHighlight: 'Securely Develop',
+      subtitle: 'Our Secure Development Training course ensures you gain practical insights into secure application development. Attendees will dive into real-world examples, tools and techniques specific to vulnerability exploitation and remediation.',
+    },
+    outcomes: [
+      {
+        title: 'Understand Core Principles of AppSec',
+        description: 'Gain knowledge on the importance of secure software development.',
+      },
+      {
+        title: 'Learn about Application Risks',
+        description: 'Understand OWASP Top 10, Broken Access Control, Cryptographic Failures, Injection Vulnerabilities and more.',
+      },
+      {
+        title: 'Know How to Prevent and Remediate Vulnerabilities',
+        description: 'Gain a solid foundation for secure development best practices.',
+      },
+    ],
+    testimonial: {
+      quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'source-code-review': {
+    parentService: 'application-security',
+    title: 'Source Code Review',
+    icon: 'bi-code-slash',
+    tagline: 'Strengthen Your Application\'s Security',
+    heroLabel: 'SECURE SOURCE CODE REVIEW',
+    heroHighlight: 'Strengthen',
+    heroCta: 'Secure Your Applications',
+    heroImage: '/images/heroes/source-code-review.jpg',
+    description: 'Gain an assessment of the full source code of your applications and their dependent components.',
+    useCases: {
+      label: 'SECURE CODE REVIEW OVERVIEW',
+      title: 'The Importance of Manual Inspection',
+      titleHighlight: 'Manual Inspection',
+      subtitle: 'There are a few vulnerability classes that are either extremely difficult to identify via dynamic testing or are extremely difficult to accurately identify via static analysis and result in a manual review of the source code for validation.',
+      subtitle2: 'With a Secure Source Code Review, our expert team conducts an in-depth examination of your application\'s source code, identifying vulnerabilities that often go unnoticed in dynamic testing of the running application. We use multiple techniques to identify vulnerabilities that expose the greatest amount of attack surface to uncover and report potential risks, aiming to significantly reduce your application\'s susceptibility to security threats such as:',
+      cards: [
+        { title: 'Attack Surface Minimization' },
+        { title: 'Component Usage' },
+        { title: 'Authorization Logic Validation' },
+        { title: 'Authentication' },
+        { title: 'Session Management' },
+        { title: 'Data Validation' },
+      ],
+    },
+    splits: [
+      {
+        label: 'SECURE CODE REVIEW PROCESS',
+        title: 'Context and Coverage Are Key',
+        titleHighlight: 'Context and Coverage',
+        paragraphs: [
+          'Source code reviews require expertise with not only common vulnerability patterns and exploitation techniques at an implementation level, but also many different languages, frameworks and coding paradigms.',
+          'Our team follows a highly-structured methodology to ensure a thorough review of the application source code. Our process, which includes information gathering, code review, validation and notification, ensures a detailed and effective security assessment.',
+          'A technical analysis of an application\'s source code and dependent components is intended to expose insecure pieces (and reuses) of code. It also uncovers potentially hidden functionality that an adversary could leverage to compromise an application and gain access to sensitive information.',
+          'With the increasing dynamic functionality found in modern applications, we typically perform a hybrid application security assessment in parallel to our source code review. This approach further enhances our ability to craft payloads for testing and allows us to verify whether issues identified from a code review actually carry the risk of exploitation in the live, running application.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'Source Code Review Process',
+      },
+    ],
+    certsDescription: [
+      'Every member of GuidePoint\'s Application Security Practice offers a wealth of expertise stemming from years of relevant, real-world experience within the application layer from technical and strategic perspectives.',
+      'We have a unique ability to understand the threats your applications face and can play a vital role in helping to mature or align your security posture.',
+    ],
+    certGroups: [
+      {
+        category: 'SANS & ISC2',
+        certs: [
+          { name: 'GPS Certified Cyber Guarding', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+      {
+        category: 'Offensive Security',
+        certs: [
+          { name: 'OSCP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png' },
+          { name: 'OSCE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png' },
+        ],
+      },
+      {
+        category: '',
+        certs: [
+          { name: 'GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'GPEN', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/gps-cert-gpen-removebg-preview-1.png' },
+          { name: 'GWAPT', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-gwapt.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'SECURE CODE REVIEW OUTCOMES',
+      title: 'Ensure Your Applications are Secure',
+      titleHighlight: 'Secure',
+      subtitle: 'Our Secure Source Code Review provides you with ample evidence and supporting reproduction steps to ultimately put you in the best possible position to make swift, informed decisions on the proper treatment of any critical issue identified within your application environment.',
+    },
+    outcomes: [
+      {
+        title: 'Identify Hidden Vulnerabilities',
+        description: 'Uncover vulnerabilities that are missed by regular testing.',
+      },
+      {
+        title: 'Prioritize Vulnerabilities by Risk',
+        description: 'Rank vulnerabilities from high to low severity based on the insights.',
+      },
+      {
+        title: 'Fortify Your Application\'s Resilience',
+        description: 'Improve the resilience and reliability of your application.',
+      },
+    ],
+    testimonial: {
+      quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
   'ai-security': {
     title: 'Artificial Intelligence (AI)',
     icon: 'bi-cpu',
@@ -781,6 +1640,7 @@ const services = {
       {
         title: 'AI Governance Services',
         description: 'Establish and maintain AI readiness',
+        path: '/services/ai-governance',
       },
     ],
     tactical: [],
@@ -788,8 +1648,9 @@ const services = {
     training: [],
     megaMenuLayout: 'ai',
     megaMenuResource: {
-      image: '/images/nav/ai-nav.jpg',
-      title: '[DATASHEET] Artificial Intelligence at Cyber Security',
+      image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_for_GP_Header.jpg',
+      title: '[DATASHEET] Artificial Intelligence at GuidePoint Security',
+      href: '/resources/artificial-intelligence-at-guidepoint-security',
     },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Map AI-specific risks across your organization.' },
@@ -802,6 +1663,136 @@ const services = {
         'Their understanding of AI-specific threats is unmatched. They helped us secure our ML pipeline and build a governance framework from scratch.',
       author: 'Chief Data Officer',
       company: 'Healthcare Technology Company',
+    },
+  },
+
+  'ai-governance': {
+    parentService: 'ai-security',
+    title: 'AI Governance',
+    icon: 'bi-diagram-3',
+    tagline: 'Enable secure, compliant AI adoption',
+    heroLabel: 'AI GOVERNANCE SERVICES',
+    heroHighlight: 'Enable',
+    heroCta: 'Manage Your Risk',
+    heroImage: '/images/heroes/ai-governance.jpg',
+    description: 'Manage AI initiatives with confidence and reduce risk, better protect data and align technology adoption with your business goals. GuidePoint Security\'s AI Governance Services can help ensure that, as you bring AI technologies into your organization, you maintain security and compliance. The result: smarter decisions, safer data and accelerated growth.',
+    useCases: {
+      label: 'AI GOVERNANCE RISK LANDSCAPE',
+      title: 'The Growing Risks of AI',
+      titleHighlight: 'Growing Risks',
+      subtitle: 'AI is being adopted at an unprecedented rate, unlocking immense organizational potential while also presenting significant challenges. Without proper governance, these risks can erode trust, disrupt operations and impact your bottom line.',
+      cards: [
+        {
+          title: 'Compliance',
+          description: 'Complex regulations, like the EU AI Act, require robust oversight.',
+        },
+        {
+          title: 'Data Exposure',
+          description: 'Sensitive data used in AI systems is vulnerable to breaches or misuse.',
+        },
+        {
+          title: 'Shadow AI',
+          description: 'Unregulated AI tools increase security and ethical challenges.',
+        },
+      ],
+    },
+    splits: [
+      {
+        label: 'SECURE AI ADOPTION STRATEGIES',
+        title: 'Security-enabled AI Innovation',
+        titleHighlight: 'AI Innovation',
+        paragraphs: [
+          'Harness the power of AI to drive speed, innovation and accuracy across your organization while responsibly managing risks. GuidePoint\'s AI Governance Services deliver decades of expertise to secure and govern your current solutions, as well as future AI adoption.',
+        ],
+        checklist: [
+          'AI Model Discovery & Inventory: Gain visibility into sanctioned and unsanctioned AI tools, increasing accountability.',
+          'AI Readiness Assessment: Identify gaps in your governance and receive tailored recommendations to meet your objectives.',
+          'AI Governance Roadmap: Develop a multi-year governance plan adapted to evolving regulations and business needs.',
+          'Data Protection Controls: Implement safeguards and oversight mechanisms to protect the security and privacy of sensitive data and ensure consistent governance.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        imageAlt: 'AI Governance Innovation',
+      },
+      {
+        label: 'ALIGN AI WITH STRATEGIC OUTCOMES',
+        title: 'Business-Driven AI Governance',
+        titleHighlight: 'AI Governance',
+        paragraphs: [
+          'GuidePoint\'s tailored approach to AI Governance helps ensure measurable outcomes and increased efficiency. We empower organizations to safely harness AI\'s potential and uncover new opportunities for innovation without compromising on governance. Seamlessly integrate governance processes to:',
+        ],
+        showAll: true,
+        checklist: [
+          'Drive sustainable growth while safeguarding your data',
+          'Enhance trust, build stakeholder and client confidence with defined, ethical and transparent AI practices',
+          'Quickly identify vulnerabilities and mitigate risks such as breaches and reputational damage',
+          'Simplify compliance with actionable steps and streamlined processes aligned with global standards',
+        ],
+        imageLeft: true,
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_icon-Triangle_elementor-left.png',
+        imageAlt: 'Business-Driven AI Governance',
+      },
+      {
+        label: 'STEP-BY-STEP AI GOVERNANCE FRAMEWORK',
+        title: 'A Streamlined Process for Success',
+        titleHighlight: 'Streamlined Process',
+        paragraphs: [
+          'Our three-step process ensures effective AI governance tailored to your organization\'s unique needs.',
+        ],
+        inlineItems: [
+          {
+            title: 'Discover',
+            description: 'Identify and catalog AI solutions within your ecosystem, including unauthorized tools, using specialized discovery tools. Gain enhanced visibility to establish accountability and oversight.',
+          },
+          {
+            title: 'Assess',
+            description: 'Evaluate governance maturity, pinpoint compliance gaps and address operational risks. Receive clear, actionable recommendations to fortify your AI security posture.',
+          },
+          {
+            title: 'Strategize',
+            description: 'Develop a customized AI governance framework aligned with regulatory requirements and your business goals. This flexible strategy evolves with your organization to support growth and innovation.',
+          },
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/06/AI_Governance_Graphic_3_sections.svg',
+        imageAlt: 'AI Governance Three-Step Process',
+        imageStyle: { maxWidth: '460px', margin: '0 auto', display: 'block' },
+      },
+    ],
+    outcomesSection: {
+      label: 'AI GOVERNANCE IN REGULATED ENVIRONMENTS',
+      title: 'AI Governance in Regulated Sectors',
+      titleHighlight: 'Regulated Sectors',
+      subtitle: 'In sectors such as healthcare, finance and government, AI adoption is expected to meet strict regulatory requirements. We work with organizations to go beyond securing their AI initiatives, helping to ensure compliance with legislation such as California AB 3030 and SB 1001, as well as the EU AI Act. We can also provide guidance on regulations while they are being discussed, allowing enterprises to stay ahead of the curve. Our custom services bridge the gap between innovation and regulation, empowering organizations to harness AI\'s full potential while staying compliant.',
+    },
+    outcomes: [],
+    certsTitle: 'Your Elite, Highly-trained Team',
+    certsDescription: [
+      'Your organization will be backed by our team of cybersecurity engineers, architects and consultants who are veteran practitioners from Fortune 100 companies, the Department of Defense and U.S. intelligence agencies.',
+    ],
+    certGroups: [
+      {
+        category: 'Compliance & Governance',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AIGP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/04/CertificationSeals_AIGP.png' },
+        ],
+      },
+      {
+        category: 'Risk & Security Management',
+        certs: [
+          { name: 'CISM', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2021/07/gps-cert-cism.png' },
+          { name: 'CISA', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2021/07/gps-cert-cisa.png' },
+          { name: 'CRISC', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/CRISC_cert-e1752767713961.png' },
+        ],
+      },
+    ],
+    testimonial: {
+      quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      role: 'Security Manager',
+      company: 'Nuance',
+      personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
     },
   },
 

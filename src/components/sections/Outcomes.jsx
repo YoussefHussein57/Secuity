@@ -2,7 +2,7 @@ import AnimatedSection from './AnimatedSection';
 import GradientCard from './GradientCard';
 
 export default function Outcomes({ outcomesSection, outcomes, title }) {
-  if (!outcomes || outcomes.length === 0) return null;
+  if (!outcomesSection && (!outcomes || outcomes.length === 0)) return null;
 
   return (
     <section className="section section--dark outcomes-section">
@@ -28,7 +28,7 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
             )}
           </div>
         </AnimatedSection>
-        <AnimatedSection animation="stagger-children" className="row g-4">
+        {outcomes && outcomes.length > 0 && <AnimatedSection animation="stagger-children" className="row g-4">
           {outcomes.map((o) => (
             <div className="col-lg-6" key={o.title}>
               <GradientCard
@@ -44,7 +44,7 @@ export default function Outcomes({ outcomesSection, outcomes, title }) {
               />
             </div>
           ))}
-        </AnimatedSection>
+        </AnimatedSection>}
       </div>
     </section>
   );

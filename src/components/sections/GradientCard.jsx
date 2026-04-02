@@ -12,6 +12,7 @@ export default function GradientCard({
   accent = 'bottom',
   layout = 'centered',
   titleLg = false,
+  titleWhite = false,
   link,
   linkText,
   children,
@@ -64,7 +65,7 @@ export default function GradientCard({
         <p className="card-gradient__text">{text}</p>
       ) : (
         <>
-          <h5 className={`card-gradient__title${titleLg ? ' card-gradient__title--lg' : ''}`}>{title}</h5>
+          <h5 className={`card-gradient__title${titleLg ? ' card-gradient__title--lg' : ''}`} style={titleWhite ? { color: '#fff' } : undefined}>{title}</h5>
           <p className="card-gradient__desc">{description}</p>
           {link && (
             <Link to={link} className="card-gradient__link">

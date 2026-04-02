@@ -119,7 +119,7 @@ export default function Contact() {
 
       {/* ===== REPORT INCIDENT — Accent ===== */}
       <section className="section section--dark position-relative text-center">
-        <div className="container position-relative" style={{ zIndex: 2 }}>
+        <div className="container position-relative pt-5" style={{ zIndex: 2 }}>
           <AnimatedSection animation="animate-on-scroll">
             <h2 className="section-header__title text-white mb-4">
               Have an issue that needs{' '}

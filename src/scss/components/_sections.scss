@@ -33,6 +33,10 @@
   padding-bottom: 120px !important;
   @include angled-top($primary);
 
+  &.dark-split--flush {
+    padding-bottom: 0 !important;
+  }
+
   &:last-child {
     padding-top: 120px;
     padding-bottom: 120px;

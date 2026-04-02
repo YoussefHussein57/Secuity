@@ -74,7 +74,7 @@
     height: 100%;
 
     img {
-      width: 100%;
+      width: 85%;
       height: 100%;
       object-fit: cover;
     }
@@ -422,6 +422,7 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0 1rem;
 
   &__heading {
@@ -726,6 +727,10 @@
 .section--indigo.service-use-cases {
   padding-top: 48px !important;
   padding-bottom: 120px !important;
+
+  .section-header__label {
+    color: $white;
+  }
 
   .use-cases__subtitle {
     font-size: 17px;

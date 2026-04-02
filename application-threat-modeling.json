@@ -1,0 +1,1491 @@
+{
+  "scrapedAt": "2026-04-02T10:19:53.391Z",
+  "url": "https://www.guidepointsecurity.com/application-threat-modeling/",
+  "meta": {
+    "title": "Application Threat Modeling Training | GuidePoint Security",
+    "description": "Application threat modeling services to help reveal security risks, vulnerabilities, and potential attack paths from the experts at GuidePoint Security.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+    "canonical": "https://www.guidepointsecurity.com/application-threat-modeling/",
+    "h1": "A Proactive Approach to Application Security"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-51e5a30c elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "A Proactive Approach to Application Security"
+        }
+      ],
+      "paragraphs": [
+        "We use application threat modeling solutions to help identify potential flaws and threats within your applications to create apps that are secure by design."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Threat_Modeling.png",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Secure Your Applications",
+          "href": "https://www.guidepointsecurity.com/secure-your-applications/"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h1",
+              "text": "A Proactive Approach to Application Security"
+            }
+          ],
+          "paragraphs": [
+            "We use application threat modeling solutions to help identify potential flaws and threats within your applications to create apps that are secure by design."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Threat_Modeling.png",
+              "alt": "section background",
+              "isBg": true
+            }
+          ],
+          "cards": [
+            {
+              "title": "APPLICATION THREAT MODELING TRAINING",
+              "description": "We use application threat modeling solutions to help identify potential flaws and threats within your applications to create apps that are secure by design.",
+              "image": null,
+              "cta": "Secure Your Applications",
+              "ctaHref": "https://www.guidepointsecurity.com/secure-your-applications/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Threat_Modeling.png"
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-5dd08713 services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Shift Left in the Software Development Lifecycle (SDLC)"
+        },
+        {
+          "tag": "h3",
+          "text": "Reveal Application Security Risks"
+        },
+        {
+          "tag": "h3",
+          "text": "Identify Application Vulnerabilities"
+        },
+        {
+          "tag": "h3",
+          "text": "Understand Potential Attack Paths"
+        }
+      ],
+      "paragraphs": [
+        "Application threat modeling is a cost-effective way to “shift left” in the SDLC. We use application threat modeling solutions to help you identify design flaws and potential threats in your applications—before you spend time on the application or feature development—as well as developing effective compensating security controls to mitigate those threats. Our application threat modeling service supports and educates developers to better understand the application attack surface and where security"
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Shift Left in the Software Development Lifecycle (SDLC)"
+            },
+            {
+              "tag": "h3",
+              "text": "Reveal Application Security Risks"
+            },
+            {
+              "tag": "h3",
+              "text": "Identify Application Vulnerabilities"
+            },
+            {
+              "tag": "h3",
+              "text": "Understand Potential Attack Paths"
+            }
+          ],
+          "paragraphs": [
+            "Application threat modeling is a cost-effective way to “shift left” in the SDLC. We use application threat modeling solutions to help you identify design flaws and potential threats in your applications—before you spend time on the application or feature development—as well as developing effective compensating security controls to mitigate those threats. Our application threat modeling service supports and educates developers to better understand the application attack surface and where security"
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "APPLICATION THREAT MODELING OVERVIEW",
+              "description": "Application threat modeling is a cost-effective way to “shift left” in the SDLC. We use application threat modeling solutions to help you identify design flaws and potential threats in your applications—before you spend time on the application or feature development—as well as developing effective c",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "APPLICATION THREAT MODELING OVERVIEW",
+              "description": "Application threat modeling is a cost-effective way to “shift left” in the SDLC. We use application threat modeling solutions to help you identify design flaws and potential threats in your applications—before you spend time on the application or feature development—as well as developing effective c",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Reveal Application Security Risks",
+              "description": "Reveal Application Security Risks Identify Application Vulnerabilities Understand Potential Attack Paths",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-d63ae59 services-lifecycle services-technologies services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Analyze Application Design to Identify Vulnerabilities"
+        },
+        {
+          "tag": "h2",
+          "text": "Build Security Into Your Applications"
+        }
+      ],
+      "paragraphs": [
+        "Our Application Threat Modeling helps you think like a hacker: we adopt the same perspective as malicious hackers to gauge how much of an impact potential threat agents may cause.",
+        "With our Application Security Threat Modeling service, you gain a comprehensive assessment that includes:",
+        "Our application threat models, which include mobile application threat modeling and web application threat modeling, enhance the security of any product as it relates to potential areas of security risk, whether or not application testing is possible. We evaluate applications against industry-leading practices from OWASP, NIST and SANS and align security threats to the six categories found in Microsoft’s STRIDE methodology:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Review of application architecture diagrams and design documents to bring to light potential vulnerabilities that are present in your applications",
+            "Expert-led whiteboarding sessions with your key stakeholders to identify key data flows and application entry points",
+            "Review of the attack surface and sensitive data flows to identify possible attack paths and threats that real-world threat actors may potentially use to negatively impact your applications",
+            "Validate that your current security controls are appropriate enough to mitigate risk and where it is necessary to build in additional security controls",
+            "Custom data flow diagrams, attack trees, asset summaries, listing of threat actors, security control summaries and a prioritized list of possible threats",
+            "Create and regularly update your threat models to ensure your frameworks remain one step ahead of threat actors that can negatively impact your applications"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Spoofing",
+            "Tampering",
+            "Repudiation"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Information Disclosure",
+            "Denial of Service",
+            "Elevation of Privilege"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Analyze Application Design to Identify Vulnerabilities"
+            },
+            {
+              "tag": "h2",
+              "text": "Build Security Into Your Applications"
+            }
+          ],
+          "paragraphs": [
+            "Our Application Threat Modeling helps you think like a hacker: we adopt the same perspective as malicious hackers to gauge how much of an impact potential threat agents may cause.",
+            "With our Application Security Threat Modeling service, you gain a comprehensive assessment that includes:",
+            "Our application threat models, which include mobile application threat modeling and web application threat modeling, enhance the security of any product as it relates to potential areas of security risk, whether or not application testing is possible. We evaluate applications against industry-leading practices from OWASP, NIST and SANS and align security threats to the six categories found in Microsoft’s STRIDE methodology:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Review of application architecture diagrams and design documents to bring to light potential vulnerabilities that are present in your applications",
+                "Expert-led whiteboarding sessions with your key stakeholders to identify key data flows and application entry points",
+                "Review of the attack surface and sensitive data flows to identify possible attack paths and threats that real-world threat actors may potentially use to negatively impact your applications",
+                "Validate that your current security controls are appropriate enough to mitigate risk and where it is necessary to build in additional security controls",
+                "Custom data flow diagrams, attack trees, asset summaries, listing of threat actors, security control summaries and a prioritized list of possible threats",
+                "Create and regularly update your threat models to ensure your frameworks remain one step ahead of threat actors that can negatively impact your applications"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Spoofing",
+                "Tampering",
+                "Repudiation"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Information Disclosure",
+                "Denial of Service",
+                "Elevation of Privilege"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "THREAT MODELING COMPONENTS",
+              "description": "Our Application Threat Modeling helps you think like a hacker: we adopt the same perspective as malicious hackers to gauge how much of an impact potential threat agents may cause.",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "APPLICATION THREAT MODELING ANALYSIS",
+              "description": "Our application threat models, which include mobile application threat modeling and web application threat modeling, enhance the security of any product as it relates to potential areas of security risk, whether or not application testing is possible. We evaluate applications against industry-leadin",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Spoofing Tampering Repudiation Information Disclosure Denial of Service Elevation of Privilege",
+              "description": "Spoofing Tampering Repudiation Information Disclosure Denial of Service Elevation of Privilege",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-f29d91a elementor-section-full_width services-technologies services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Threat Modeling is a Key Enabler of DevSecOps"
+        }
+      ],
+      "paragraphs": [
+        "Many traditional AppSec capabilities are not optimized for Agile release cycles:",
+        "While more effort has been placed on automation, this approach results in security bottlenecks in the build and deploy process. Organizations that have been successful in embracing DevSecOps tend to share one thing in common — they have a mature Threat Modeling capability and security is baked into their products."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Application scanning technologies take time to run and produce false positives, which take manual effort to triage",
+            "Penetration testing occurs too late in the release cycle",
+            "Most attempts at shifting left result in additional developer burden",
+            "Current testing tools are not able to test for emerging threats"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Threat Modeling is a Key Enabler of DevSecOps"
+            }
+          ],
+          "paragraphs": [
+            "Many traditional AppSec capabilities are not optimized for Agile release cycles:",
+            "While more effort has been placed on automation, this approach results in security bottlenecks in the build and deploy process. Organizations that have been successful in embracing DevSecOps tend to share one thing in common — they have a mature Threat Modeling capability and security is baked into their products."
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Application scanning technologies take time to run and produce false positives, which take manual effort to triage",
+                "Penetration testing occurs too late in the release cycle",
+                "Most attempts at shifting left result in additional developer burden",
+                "Current testing tools are not able to test for emerging threats"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "APPLICATION THREAT MODELING BENEFITS",
+              "description": "Many traditional AppSec capabilities are not optimized for Agile release cycles:",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-61d2a06 services-certifications elementor-section-boxed elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "Every member of GuidePoint’s Application Security Practice offers a wealth of expertise stemming from years of relevant, real-world experience within the application layer from technical and strategic perspectives.",
+        "We have a unique ability to understand the threats your applications face and can play a vital role in helping to mature or align your security posture.",
+        "SANS & ISC2",
+        "Offensive Security",
+        "Global Information Assurance"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+          "alt": "GPS Certified Cyber Guarding"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png",
+          "alt": "OSCP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png",
+          "alt": "OSCE"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-02.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-01.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-03.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Elite, Highly-trained Team"
+            }
+          ],
+          "paragraphs": [
+            "Every member of GuidePoint’s Application Security Practice offers a wealth of expertise stemming from years of relevant, real-world experience within the application layer from technical and strategic perspectives.",
+            "We have a unique ability to understand the threats your applications face and can play a vital role in helping to mature or align your security posture."
+          ],
+          "lists": [],
+          "images": []
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h4",
+              "text": "Highly Trained, Highly Certified"
+            },
+            {
+              "tag": "h4",
+              "text": "Examples Include:"
+            }
+          ],
+          "paragraphs": [
+            "SANS & ISC2",
+            "Offensive Security",
+            "Global Information Assurance"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+              "alt": "GPS Certified Cyber Guarding"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+              "alt": "CISSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png",
+              "alt": "OSCP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png",
+              "alt": "OSCE"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-02.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-01.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-03.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-926b51d services-outcomes elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Scale Your Application Security While Avoiding Costly Design Flaws"
+        },
+        {
+          "tag": "h3",
+          "text": "Understand Your Design"
+        },
+        {
+          "tag": "h3",
+          "text": "Identify Potential Attack Paths"
+        },
+        {
+          "tag": "h3",
+          "text": "Quantify Remediation"
+        },
+        {
+          "tag": "h3",
+          "text": "Create Security Requirements"
+        }
+      ],
+      "paragraphs": [
+        "Our Application Security Threat Modeling services will help you partner with your development teams and provide education on the use of security leading practices. This allows you to scale your security efforts while avoiding costly design flaws that are difficult to fix once the application has already been deployed to production.",
+        "Know what’s included in the application by leveraging a structured process.",
+        "Think like a hacker to uncover possible attack paths and vulnerabilities.",
+        "Prioritize remediation efforts to focus on the most actionable items.",
+        "Ensure specific controls are in place and if any others should be considered."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Scale Your Application Security While Avoiding Costly Design Flaws"
+            },
+            {
+              "tag": "h3",
+              "text": "Understand Your Design"
+            },
+            {
+              "tag": "h3",
+              "text": "Identify Potential Attack Paths"
+            },
+            {
+              "tag": "h3",
+              "text": "Quantify Remediation"
+            },
+            {
+              "tag": "h3",
+              "text": "Create Security Requirements"
+            }
+          ],
+          "paragraphs": [
+            "Our Application Security Threat Modeling services will help you partner with your development teams and provide education on the use of security leading practices. This allows you to scale your security efforts while avoiding costly design flaws that are difficult to fix once the application has already been deployed to production.",
+            "Know what’s included in the application by leveraging a structured process.",
+            "Think like a hacker to uncover possible attack paths and vulnerabilities.",
+            "Prioritize remediation efforts to focus on the most actionable items.",
+            "Ensure specific controls are in place and if any others should be considered."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "APPLICATION THREAT MODELING OUTCOMES",
+              "description": "Our Application Security Threat Modeling services will help you partner with your development teams and provide education on the use of security leading practices. This allows you to scale your security efforts while avoiding costly design flaws that are difficult to fix once the application has alr",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Understand Your Design",
+              "description": "Know what’s included in the application by leveraging a structured process.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Understand Your Design",
+              "description": "Know what’s included in the application by leveraging a structured process.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Identify Potential Attack Paths",
+              "description": "Think like a hacker to uncover possible attack paths and vulnerabilities.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Quantify Remediation",
+              "description": "Prioritize remediation efforts to focus on the most actionable items.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Create Security Requirements",
+              "description": "Ensure specific controls are in place and if any others should be considered.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-225e79a elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Mark Gilman"
+        },
+        {
+          "tag": "h3",
+          "text": "GET IN TOUCH"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Us"
+        }
+      ],
+      "paragraphs": [
+        "Our team works side-by-side with you as your cybersecurity partner.",
+        "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+        "Security Manager"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+          "alt": "Nuance"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Terms of Service",
+          "href": "https://www.guidepointsecurity.com/terms-of-service/"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.guidepointsecurity.com/privacy-policy/"
+        },
+        {
+          "text": "CONTACT US",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Trusted Advisor"
+            },
+            {
+              "tag": "h3",
+              "text": "Mark Gilman"
+            }
+          ],
+          "paragraphs": [
+            "Our team works side-by-side with you as your cybersecurity partner.",
+            "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+            "Security Manager"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+              "alt": "Nuance"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "GET IN TOUCH"
+            },
+            {
+              "tag": "h3",
+              "text": "Contact Us"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-8cf6641 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "DataSheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Threat Advisory"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "DataSheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Threat Advisory"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "DataSheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Threat Advisory"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Threat-Advisory.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Threat-Advisory.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Additional Resources"
+            },
+            {
+              "tag": "h3",
+              "text": "DataSheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Threat Advisory"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "DataSheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Threat Advisory"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "DataSheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Threat Advisory"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            }
+          ],
+          "paragraphs": [
+            "View All >"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Threat-Advisory.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Threat-Advisory.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Additional Resources",
+              "description": "View All >",
+              "image": null,
+              "cta": "View All >",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/",
+              "isStyledCard": false
+            },
+            {
+              "title": "DataSheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> DataSheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "DataSheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> DataSheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "DataSheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> DataSheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "DataSheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> DataSheet",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Threat Advisory",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Threat-Advisory.svg\" class=\"attachment-full size-full wp-image-29117\" alt=\"\" /> Threat Advisory <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Threat Advisory",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Threat-Advisory.svg\" class=\"attachment-full size-full wp-image-29117\" alt=\"\" /> Threat Advisory <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Threat Advisory",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Threat-Advisory.svg\" class=\"attachment-full size-full wp-image-29117\" alt=\"\" /> Threat Advisory",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> Video",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "DataSheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> DataSheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataTemplate": {
+    "slug": "application-threat-modeling",
+    "title": "A Proactive Approach to Application Security",
+    "tagline": "Shift Left in the Software Development Lifecycle (SDLC)",
+    "heroLabel": "A Proactive Approach to Application Security",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Secure Your Applications",
+    "heroImage": "/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */",
+    "heroImageFallback": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Services_SUB_Pages_Application_Threat_Modeling.png",
+    "description": "We use application threat modeling solutions to help identify potential flaws and threats within your applications to create apps that are secure by design.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "Threat Modeling is a Key Enabler of DevSecOps",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "Many traditional AppSec capabilities are not optimized for Agile release cycles:",
+        "While more effort has been placed on automation, this approach results in security bottlenecks in the build and deploy process. Organizations that have been successful in embracing DevSecOps tend to share one thing in common — they have a mature Threat Modeling capability and security is baked into their products."
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png",
+      "textLayoutHint": "checklist",
+      "inlineItems": []
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": [
+          "Application scanning technologies take time to run and produce false positives, which take manual effort to triage",
+          "Penetration testing occurs too late in the release cycle",
+          "Most attempts at shifting left result in additional developer burden",
+          "Current testing tools are not able to test for emerging threats"
+        ]
+      }
+    },
+    "outcomesSection": {
+      "label": "/* FILL IN */",
+      "title": "Scale Your Application Security While Avoiding Costly Design Flaws",
+      "titleHighlight": "/* FILL IN */",
+      "subtitle": "Our Application Security Threat Modeling services will help you partner with your development teams and provide education on the use of security leading practices. This allows you to scale your security efforts while avoiding costly design flaws that are difficult to fix once the application has already been deployed to production."
+    },
+    "outcomes": [
+      {
+        "title": "Understand Your Design",
+        "description": ""
+      },
+      {
+        "title": "Identify Potential Attack Paths",
+        "description": ""
+      },
+      {
+        "title": "Quantify Remediation",
+        "description": ""
+      },
+      {
+        "title": "Create Security Requirements",
+        "description": ""
+      }
+    ],
+    "certGroups": [
+      {
+        "category": "/* FILL IN */",
+        "certs": [
+          {
+            "name": "",
+            "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-02.png"
+          },
+          {
+            "name": "",
+            "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-01.png"
+          },
+          {
+            "name": "",
+            "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-03.png"
+          }
+        ]
+      }
+    ],
+    "testimonial": {
+      "quote": "Our application threat models, which include mobile application threat modeling and web application threat modeling, enhance the security of any product as it relates to potential areas of security risk, whether or not application testing is possible. We evaluate applications against industry-leading practices from OWASP, NIST and SANS and align security threats to the six categories found in Microsoft’s STRIDE methodology:",
+      "author": "/* FILL IN */",
+      "role": "THREAT MODELING COMPONENTS",
+      "company": "/* FILL IN */",
+      "personImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "companyLogo": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+      "alt": "GPS Certified Cyber Guarding",
+      "width": 100,
+      "height": 120
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 100,
+      "height": 120
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-oscp.png",
+      "alt": "OSCP",
+      "width": 100,
+      "height": 120
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ocse.png",
+      "alt": "OSCE",
+      "width": 100,
+      "height": 120
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-02.png",
+      "alt": "",
+      "width": 100,
+      "height": 120
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-01.png",
+      "alt": "",
+      "width": 100,
+      "height": 120
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/ai_cert-03.png",
+      "alt": "",
+      "width": 100,
+      "height": 120
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 63
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+      "alt": "",
+      "width": 154,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+      "alt": "",
+      "width": 219,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Threat-Advisory.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}
