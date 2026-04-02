@@ -1,0 +1,1339 @@
+{
+  "scrapedAt": "2026-04-02T22:08:40.970Z",
+  "url": "https://www.guidepointsecurity.com/cnapp-services/",
+  "meta": {
+    "title": "CNAPP Services | GuidePoint Security",
+    "description": "Cloud-native growth demands security first. Our CNAPP services safeguard every layer of your cloud apps, delivering visibility, control, and proactive threat protection to drive secure innovation and meet your goals with confidence.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+    "canonical": "https://www.guidepointsecurity.com/cnapp-services/",
+    "h1": "Security Across Your Organization"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-61e95105 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Security Across Your Organization"
+        }
+      ],
+      "paragraphs": [
+        "Cloud-native growth demands security first. Our CNAPP services safeguard every layer of your cloud apps, delivering visibility, control and proactive threat protection to drive secure innovation and meet your goals with confidence."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Website_Refresh_Services_SUB_Pages_Cloud_Security_CNAPP_Services.png",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Secure Your Cloud Applications",
+          "href": "https://www.guidepointsecurity.com/safeguard-your-cloud/"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h1",
+              "text": "Security Across Your Organization"
+            }
+          ],
+          "paragraphs": [
+            "Cloud-native growth demands security first. Our CNAPP services safeguard every layer of your cloud apps, delivering visibility, control and proactive threat protection to drive secure innovation and meet your goals with confidence."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Website_Refresh_Services_SUB_Pages_Cloud_Security_CNAPP_Services.png",
+              "alt": "section background",
+              "isBg": true
+            }
+          ],
+          "cards": [
+            {
+              "title": "Cloud Native Application Protection Platform (CNAPP) Services",
+              "description": "Cloud-native growth demands security first. Our CNAPP services safeguard every layer of your cloud apps, delivering visibility, control and proactive threat protection to drive secure innovation and meet your goals with confidence.",
+              "image": null,
+              "cta": "Secure Your Cloud Applications",
+              "ctaHref": "https://www.guidepointsecurity.com/safeguard-your-cloud/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Website_Refresh_Services_SUB_Pages_Cloud_Security_CNAPP_Services.png"
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-272417be services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "A Proactive Approach to CNAPP"
+        },
+        {
+          "tag": "h3",
+          "text": "43%"
+        },
+        {
+          "tag": "h3",
+          "text": "of organizations identified misconfigurations of permissions as their top concern in multi-cloud environments"
+        },
+        {
+          "tag": "h3",
+          "text": "CSA: Cloud Native Applications Protection Platform Report"
+        },
+        {
+          "tag": "h3",
+          "text": "85%"
+        },
+        {
+          "tag": "h3",
+          "text": "of enterprises struggle to prioritize cloud security events due to the overwhelming volume of alerts"
+        },
+        {
+          "tag": "h3",
+          "text": "Sysdig: 2025 Cloud-Native Security and Usage Report"
+        },
+        {
+          "tag": "h3",
+          "text": "45%"
+        },
+        {
+          "tag": "h3",
+          "text": "Faster mean time to detect (MTTD) by organizations leveraging CNAPPs"
+        }
+      ],
+      "paragraphs": [
+        "Our CNAPP expertise delivers seamless security integration, empowering you with streamlined protection and reduced risks. Gain confidence with proactive threat management, unified governance and the ability to stay ahead of threats while ensuring smooth application lifecycle management."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "A Proactive Approach to CNAPP"
+            },
+            {
+              "tag": "h3",
+              "text": "43%"
+            },
+            {
+              "tag": "h3",
+              "text": "of organizations identified misconfigurations of permissions as their top concern in multi-cloud environments"
+            },
+            {
+              "tag": "h3",
+              "text": "CSA: Cloud Native Applications Protection Platform Report"
+            },
+            {
+              "tag": "h3",
+              "text": "85%"
+            },
+            {
+              "tag": "h3",
+              "text": "of enterprises struggle to prioritize cloud security events due to the overwhelming volume of alerts"
+            },
+            {
+              "tag": "h3",
+              "text": "Sysdig: 2025 Cloud-Native Security and Usage Report"
+            },
+            {
+              "tag": "h3",
+              "text": "45%"
+            },
+            {
+              "tag": "h3",
+              "text": "Faster mean time to detect (MTTD) by organizations leveraging CNAPPs"
+            }
+          ],
+          "paragraphs": [
+            "Our CNAPP expertise delivers seamless security integration, empowering you with streamlined protection and reduced risks. Gain confidence with proactive threat management, unified governance and the ability to stay ahead of threats while ensuring smooth application lifecycle management."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "CNAPP Enablement Services",
+              "description": "Our CNAPP expertise delivers seamless security integration, empowering you with streamlined protection and reduced risks. Gain confidence with proactive threat management, unified governance and the ability to stay ahead of threats while ensuring smooth application lifecycle management.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "CNAPP Enablement Services",
+              "description": "Our CNAPP expertise delivers seamless security integration, empowering you with streamlined protection and reduced risks. Gain confidence with proactive threat management, unified governance and the ability to stay ahead of threats while ensuring smooth application lifecycle management.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "43%",
+              "description": "43% of organizations identified misconfigurations of permissions as their top concern in multi-cloud environments CSA: Cloud Native Applications Protection Platform Report 85% of enterprises struggle to prioritize cloud security events due to the overwhelming volume of alerts Sysdig: 2025 Cloud-Nati",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-432e8ced services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Comprehensive Cloud Security Support"
+        }
+      ],
+      "paragraphs": [
+        "Our CNAPP Enablement Services empower your organization to fully secure cloud-native applications at every development and deployment phase. With reduced risks and enhanced protection, you can confidently maximize the flexibility and scalability of the cloud to drive innovation and growth.",
+        "Put your trust in a team of cloud security experts to guide you through a structured CNAPP implementation, customized to your organization’s unique needs:",
+        "Our experts work closely with your security, development and operations teams to build a holistic CNAPP strategy, ensuring every layer of your cloud application is protected."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Threat Detection and Response: Continuous real-time monitoring to detect and respond to security events",
+            "Vulnerability Management: Automated tools and processes to identify, assess and remediate vulnerabilities across cloud environments",
+            "Identity and Access Management: Robust controls for identity verification, access permissions and user management to reduce unauthorized access risks",
+            "Compliance and Governance: Frameworks and policies to ensure adherence to regulatory requirements and internal security standards"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Comprehensive Cloud Security Support"
+            }
+          ],
+          "paragraphs": [
+            "Our CNAPP Enablement Services empower your organization to fully secure cloud-native applications at every development and deployment phase. With reduced risks and enhanced protection, you can confidently maximize the flexibility and scalability of the cloud to drive innovation and growth.",
+            "Put your trust in a team of cloud security experts to guide you through a structured CNAPP implementation, customized to your organization’s unique needs:",
+            "Our experts work closely with your security, development and operations teams to build a holistic CNAPP strategy, ensuring every layer of your cloud application is protected."
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Threat Detection and Response: Continuous real-time monitoring to detect and respond to security events",
+                "Vulnerability Management: Automated tools and processes to identify, assess and remediate vulnerabilities across cloud environments",
+                "Identity and Access Management: Robust controls for identity verification, access permissions and user management to reduce unauthorized access risks",
+                "Compliance and Governance: Frameworks and policies to ensure adherence to regulatory requirements and internal security standards"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Comprehensive Cloud Security Support",
+              "description": "Our CNAPP Enablement Services empower your organization to fully secure cloud-native applications at every development and deployment phase. With reduced risks and enhanced protection, you can confidently maximize the flexibility and scalability of the cloud to drive innovation and growth.",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-eff1d91 elementor-section-full_width services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Benefits of CNAPP Services"
+        }
+      ],
+      "paragraphs": [
+        "Our custom services bring comprehensive protection to your cloud-native application. Whether you need help identifying the right CNAPP solution, implementing and customizing it or optimizing and maintaining it, we provide comprehensive, adaptable support. With our expertise, you gain a partner committed to securing your operations, simplifying complexity and ensuring peace of mind in an evolving threat landscape. What you can expect:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Enhanced Threat Visibility: Gain full visibility into your cloud applications, identifying vulnerabilities and misconfigurations before they become threats",
+            "Streamlined Compliance: Simplify regulatory compliance with automated policy enforcement and continuous monitoring",
+            "Optimized Cloud Security Operations: Integrate and automate security workflows to enhance operational efficiency across your cloud environments",
+            "Proactive Mitigation: Shift to a proactive security approach, identifying and addressing risks earlier in the development lifecycle"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Left_Revised.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Benefits of CNAPP Services"
+            }
+          ],
+          "paragraphs": [
+            "Our custom services bring comprehensive protection to your cloud-native application. Whether you need help identifying the right CNAPP solution, implementing and customizing it or optimizing and maintaining it, we provide comprehensive, adaptable support. With our expertise, you gain a partner committed to securing your operations, simplifying complexity and ensuring peace of mind in an evolving threat landscape. What you can expect:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Enhanced Threat Visibility: Gain full visibility into your cloud applications, identifying vulnerabilities and misconfigurations before they become threats",
+                "Streamlined Compliance: Simplify regulatory compliance with automated policy enforcement and continuous monitoring",
+                "Optimized Cloud Security Operations: Integrate and automate security workflows to enhance operational efficiency across your cloud environments",
+                "Proactive Mitigation: Shift to a proactive security approach, identifying and addressing risks earlier in the development lifecycle"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Left_Revised.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Benefits of CNAPP Services",
+              "description": "Our custom services bring comprehensive protection to your cloud-native application. Whether you need help identifying the right CNAPP solution, implementing and customizing it or optimizing and maintaining it, we provide comprehensive, adaptable support. With our expertise, you gain a partner commi",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-40445b3c services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Why Choose GuidePoint?"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "The short answer: expertise tailored to your industry. Our team of cybersecurity engineers, architects and consultants brings unmatched expertise to address your industry’s specific challenges, from meeting regulatory compliance in finance to securing sensitive healthcare data and driving innovation in tech. We design tailored solutions that safeguard your cloud-native applications while optimizing your cloud environment.",
+        "CNAPP Certifications"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/GCSA-e1739297364848.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-azure-security-engineer.png",
+          "alt": "GPS Certified Azure Security Engineer Associate"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/image8965422010918071331-e1739297497214.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Tenable_Certifcation_Logos_TG-e1739297572272.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/1_48GeThQ3w_rWGAYSwbeBpw-e1739297629637.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gpen.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/image-e1739297731455.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Why Choose GuidePoint?"
+            }
+          ],
+          "paragraphs": [
+            "The short answer: expertise tailored to your industry. Our team of cybersecurity engineers, architects and consultants brings unmatched expertise to address your industry’s specific challenges, from meeting regulatory compliance in finance to securing sensitive healthcare data and driving innovation in tech. We design tailored solutions that safeguard your cloud-native applications while optimizing your cloud environment."
+          ],
+          "lists": [],
+          "images": []
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h4",
+              "text": "Highly Trained, Highly Certified"
+            },
+            {
+              "tag": "h4",
+              "text": "Examples Include:"
+            }
+          ],
+          "paragraphs": [
+            "CNAPP Certifications"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+              "alt": "CISSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/GCSA-e1739297364848.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-azure-security-engineer.png",
+              "alt": "GPS Certified Azure Security Engineer Associate"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/image8965422010918071331-e1739297497214.webp",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Tenable_Certifcation_Logos_TG-e1739297572272.webp",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/1_48GeThQ3w_rWGAYSwbeBpw-e1739297629637.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gpen.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/image-e1739297731455.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-6dd23d8 elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Mark Gilman"
+        },
+        {
+          "tag": "h3",
+          "text": "GET IN TOUCH"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Us"
+        }
+      ],
+      "paragraphs": [
+        "Our team works side-by-side with you as your cybersecurity partner.",
+        "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+        "Security Manager"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Terms of Service",
+          "href": "https://www.guidepointsecurity.com/terms-of-service/"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.guidepointsecurity.com/privacy-policy/"
+        },
+        {
+          "text": "CONTACT US",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Trusted Advisor"
+            },
+            {
+              "tag": "h3",
+              "text": "Mark Gilman"
+            }
+          ],
+          "paragraphs": [
+            "Our team works side-by-side with you as your cybersecurity partner.",
+            "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+            "Security Manager"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "GET IN TOUCH"
+            },
+            {
+              "tag": "h3",
+              "text": "Contact Us"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-5becde2 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/"
+        },
+        {
+          "text": "Cloud-Native Application Protection Platform (CNAPP) Enablement Service",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/"
+        },
+        {
+          "text": "Watch Now",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-security-practice/"
+        },
+        {
+          "text": "Cloud Security Practice",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-security-practice/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Additional Resources"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            }
+          ],
+          "paragraphs": [
+            "View All >"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Additional Resources",
+              "description": "View All >",
+              "image": null,
+              "cta": "View All >",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Datasheet",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecu",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-security-practice/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecu",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-security-practice/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/navigating-iam-in-a-cloud-based-world-strategies-technologies-for-success/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/navigating-iam-in-a-cloud-based-world-strategies-technologies-for-success/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Datasheet",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataTemplate": {
+    "slug": "cnapp-services",
+    "title": "Security Across Your Organization",
+    "tagline": "A Proactive Approach to CNAPP",
+    "heroLabel": "Security Across Your Organization",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Secure Your Cloud Applications",
+    "heroImage": "/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */",
+    "heroImageFallback": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Website_Refresh_Services_SUB_Pages_Cloud_Security_CNAPP_Services.png",
+    "description": "Cloud-native growth demands security first. Our CNAPP services safeguard every layer of your cloud apps, delivering visibility, control and proactive threat protection to drive secure innovation and meet your goals with confidence.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "Comprehensive Cloud Security Support",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "Our CNAPP Enablement Services empower your organization to fully secure cloud-native applications at every development and deployment phase. With reduced risks and enhanced protection, you can confidently maximize the flexibility and scalability of the cloud to drive innovation and growth.",
+        "Put your trust in a team of cloud security experts to guide you through a structured CNAPP implementation, customized to your organization’s unique needs:",
+        "Our experts work closely with your security, development and operations teams to build a holistic CNAPP strategy, ensuring every layer of your cloud application is protected."
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+      "textLayoutHint": "checklist",
+      "inlineItems": []
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": [
+          "Threat Detection and Response: Continuous real-time monitoring to detect and respond to security events",
+          "Vulnerability Management: Automated tools and processes to identify, assess and remediate vulnerabilities across cloud environments",
+          "Identity and Access Management: Robust controls for identity verification, access permissions and user management to reduce unauthorized access risks",
+          "Compliance and Governance: Frameworks and policies to ensure adherence to regulatory requirements and internal security standards"
+        ]
+      }
+    },
+    "outcomesSection": null,
+    "outcomes": [],
+    "certGroups": null,
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "role": "Comprehensive Cloud Security Support",
+      "company": "/* FILL IN */",
+      "personImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+      "companyLogo": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Left_Revised.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 100,
+      "height": 120
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/GCSA-e1739297364848.png",
+      "alt": "",
+      "width": 100,
+      "height": 99
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-azure-security-engineer.png",
+      "alt": "GPS Certified Azure Security Engineer Associate",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/image8965422010918071331-e1739297497214.webp",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Tenable_Certifcation_Logos_TG-e1739297572272.webp",
+      "alt": "",
+      "width": 133,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/1_48GeThQ3w_rWGAYSwbeBpw-e1739297629637.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_gpen.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/image-e1739297731455.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/AWS-Certified-Solutions-Architect-Professional_badge.69d82ff1b2861e1089539ebba906c70b011b928a-1-e1739297802797.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/images-e1739298022279.png",
+      "alt": "",
+      "width": 155,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/EC-Council-CND-certwizard-e1739298416221.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/TerraFormAssociateCert-e1739298498495.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/unnamed_122-e1749838170254.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/AWS-Certified-DevOps-Engineer-Professional_badge.7492bf660b5351e51f3f8015e4818924294a7e8c-e1739298625125.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+      "alt": "",
+      "width": 154,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+      "alt": "",
+      "width": 219,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

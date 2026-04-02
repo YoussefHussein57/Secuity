@@ -34,14 +34,14 @@ export const gritResources = [
     title: 'GRIT 2026 Ransomware & Cyber Threat Report',
     description: 'The GuidePoint Research & Intelligence Team (GRIT) is back with a new report highlighting trends and threats from the past year, with insights to protect your organization.',
     action: 'Download',
-    actionLink: '/resources',
+    actionLink: '/resources/grit-2026-ransomware-cyber-threat-report',
     image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/06/Carousel_GRIT_Ransomware_Report_2024_Q1.jpg',
   },
   {
     title: 'GRIT 2026 Ransomware & Cyber Threat Report Presentation',
     description: 'Watch the GRIT team present their latest findings on ransomware trends, emerging threat actors, and defensive strategies for the year ahead.',
     action: 'Watch',
-    actionLink: '/resources',
+    actionLink: '/resources/grit-2026-annual-ransomware-cyber-threat-report-webinar',
     image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/10/GRIT_HeaderImage-150x150.png',
   },
 ];

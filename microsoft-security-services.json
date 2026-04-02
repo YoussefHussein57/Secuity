@@ -1,0 +1,1976 @@
+{
+  "scrapedAt": "2026-04-02T22:37:10.873Z",
+  "url": "https://www.guidepointsecurity.com/microsoft-security-services/",
+  "meta": {
+    "title": "Microsoft Security Services | GuidePoint Security",
+    "description": "Maximize your Microsoft security investment with expert services from GuidePoint that transform underutilized tools into robust protection.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/V2_Microsoft_DS_Graphic.png",
+    "canonical": "https://www.guidepointsecurity.com/microsoft-security-services/",
+    "h1": "Maximize Your Microsoft Security Investment"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-57b30290 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Maximize Your Microsoft Security Investment"
+        }
+      ],
+      "paragraphs": [
+        "GuidePoint Security helps organizations unlock the full potential of Microsoft tools. With expert guidance, we help transform underutilized capabilities into measurable security outcomes."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/09/Website_Refresh_Services_SUB_Pages_IoT_Threat_Modeling-1.png",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_Security_Services_DS.pdf"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h1",
+              "text": "Maximize Your Microsoft Security Investment"
+            }
+          ],
+          "paragraphs": [
+            "GuidePoint Security helps organizations unlock the full potential of Microsoft tools. With expert guidance, we help transform underutilized capabilities into measurable security outcomes."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/09/Website_Refresh_Services_SUB_Pages_IoT_Threat_Modeling-1.png",
+              "alt": "section background",
+              "isBg": true
+            }
+          ],
+          "cards": [
+            {
+              "title": "MICROSOFT SECURITY SERVICES",
+              "description": "GuidePoint Security helps organizations unlock the full potential of Microsoft tools. With expert guidance, we help transform underutilized capabilities into measurable security outcomes.",
+              "image": null,
+              "cta": "Learn More",
+              "ctaHref": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_Security_Services_DS.pdf",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/09/Website_Refresh_Services_SUB_Pages_IoT_Threat_Modeling-1.png"
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-3ed3182a services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Secure More With Existing Tools"
+        },
+        {
+          "tag": "h3",
+          "text": "Uncover Gaps"
+        },
+        {
+          "tag": "h3",
+          "text": "Identify underutilized tools and redundant coverage"
+        },
+        {
+          "tag": "h3",
+          "text": "Design for Efficiency"
+        },
+        {
+          "tag": "h3",
+          "text": "Create tailored, scalable security architectures"
+        },
+        {
+          "tag": "h3",
+          "text": "Build for Outcomes"
+        },
+        {
+          "tag": "h3",
+          "text": "Deploy optimized solutions aligned with business priorities"
+        },
+        {
+          "tag": "h3",
+          "text": "Improve Posture Continuously"
+        },
+        {
+          "tag": "h3",
+          "text": "Measure progress and enhance ongoing protection"
+        }
+      ],
+      "paragraphs": [
+        "Despite comprehensive Microsoft security licenses, resource constraints and competing priorities often leave powerful features underutilized, creating security gaps. Meanwhile, security threats continue to evolve.",
+        "Our Microsoft Security Services are designed to:"
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Secure More With Existing Tools"
+            },
+            {
+              "tag": "h3",
+              "text": "Uncover Gaps"
+            },
+            {
+              "tag": "h3",
+              "text": "Identify underutilized tools and redundant coverage"
+            },
+            {
+              "tag": "h3",
+              "text": "Design for Efficiency"
+            },
+            {
+              "tag": "h3",
+              "text": "Create tailored, scalable security architectures"
+            },
+            {
+              "tag": "h3",
+              "text": "Build for Outcomes"
+            },
+            {
+              "tag": "h3",
+              "text": "Deploy optimized solutions aligned with business priorities"
+            },
+            {
+              "tag": "h3",
+              "text": "Improve Posture Continuously"
+            },
+            {
+              "tag": "h3",
+              "text": "Measure progress and enhance ongoing protection"
+            }
+          ],
+          "paragraphs": [
+            "Despite comprehensive Microsoft security licenses, resource constraints and competing priorities often leave powerful features underutilized, creating security gaps. Meanwhile, security threats continue to evolve.",
+            "Our Microsoft Security Services are designed to:"
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "THE MICROSOFT SECURITY CHALLENGE",
+              "description": "Despite comprehensive Microsoft security licenses, resource constraints and competing priorities often leave powerful features underutilized, creating security gaps. Meanwhile, security threats continue to evolve.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "THE MICROSOFT SECURITY CHALLENGE",
+              "description": "Despite comprehensive Microsoft security licenses, resource constraints and competing priorities often leave powerful features underutilized, creating security gaps. Meanwhile, security threats continue to evolve.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Uncover Gaps",
+              "description": "Uncover Gaps Identify underutilized tools and redundant coverage Design for Efficiency Create tailored, scalable security architectures Build for Outcomes Deploy optimized solutions aligned with business priorities Improve Posture Continuously Measure progress and enhance ongoing protection",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-166fc893 services-lifecycle services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Expert Guidance. Measurable Results."
+        }
+      ],
+      "paragraphs": [
+        "With rapid, diverse compute technology adoption comes increased pressure to secure complex environments at speed and scale. Our certified consultants bring deep Microsoft expertise and hands-on experience securing clouds, devices, applications, identities and artificial intelligence (AI) applications. As a certified Microsoft Solutions Partner for Security, we deliver proven guidance, seamless integration and measurable outcomes that strengthen an organization’s security posture."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/V2_Microsoft_DS_Graphic.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Expert Guidance. Measurable Results."
+            }
+          ],
+          "paragraphs": [
+            "With rapid, diverse compute technology adoption comes increased pressure to secure complex environments at speed and scale. Our certified consultants bring deep Microsoft expertise and hands-on experience securing clouds, devices, applications, identities and artificial intelligence (AI) applications. As a certified Microsoft Solutions Partner for Security, we deliver proven guidance, seamless integration and measurable outcomes that strengthen an organization’s security posture."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/V2_Microsoft_DS_Graphic.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "EXPERT-LED MICROSOFT SECURITY SERVICES",
+              "description": "With rapid, diverse compute technology adoption comes increased pressure to secure complex environments at speed and scale. Our certified consultants bring deep Microsoft expertise and hands-on experience securing clouds, devices, applications, identities and artificial intelligence (AI) application",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-fee6633 services-outcomes elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [],
+      "paragraphs": [],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/04/gps-service-banner-crop.jpeg",
+          "alt": "section background",
+          "isBg": true
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_Cloud_Security_Text.svg",
+          "alt": "Microsoft Cloud Security"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Endpoint_and_Device_Security_Text.svg",
+          "alt": "Endpoint and Device Security"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Application_Security_Text.svg",
+          "alt": "Application Security"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Identity_Security_Text.svg",
+          "alt": "Identity Security"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Data_Security_Text.svg",
+          "alt": "Data Security"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/SIEM_SOAR_Text.svg",
+          "alt": "SIEM / SOAR"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Artificial_Intelligence_Text.svg",
+          "alt": "Artificial Intelligence"
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/04/gps-service-banner-crop.jpeg",
+              "alt": "section background",
+              "isBg": true
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_Cloud_Security_Text.svg",
+              "alt": "Microsoft Cloud Security"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Endpoint_and_Device_Security_Text.svg",
+              "alt": "Endpoint and Device Security"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Application_Security_Text.svg",
+              "alt": "Application Security"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Identity_Security_Text.svg",
+              "alt": "Identity Security"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Data_Security_Text.svg",
+              "alt": "Data Security"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/SIEM_SOAR_Text.svg",
+              "alt": "SIEM / SOAR"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Artificial_Intelligence_Text.svg",
+              "alt": "Artificial Intelligence"
+            }
+          ],
+          "cards": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "tabs",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-078c54f services-outcomes elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Securely Harness the Potential of Microsoft Copilot"
+        }
+      ],
+      "paragraphs": [
+        "GuidePoint helps organizations ensure robust security, compliance and governance around Microsoft Copilot. With robust security, organizations can maximize AI productivity gains and innovation potential while minimizing risk."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Comprehensive Security Evaluation: Assess AI model security, data protection mechanisms and access controls to identify and mitigate risks before deployment.",
+            "Compliance Readiness: Validate the environment against regulatory requirements and establish governance frameworks tailored to AI-powered workloads.",
+            "Strategic Implementation Planning: Develop a roadmap for secure Copilot integration that aligns with business objectives and security posture.",
+            "Risk Mitigation: Identify potential vulnerabilities in Copilot architectures and establish controls to protect sensitive data and prevent unauthorized access.",
+            "Adoption Optimization: Maximize ROI by ensuring the organization is technically and operationally prepared to leverage Copilot’s full capabilities securely."
+          ]
+        }
+      ],
+      "images": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_Security_Services_DS.pdf"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Securely Harness the Potential of Microsoft Copilot"
+            }
+          ],
+          "paragraphs": [
+            "GuidePoint helps organizations ensure robust security, compliance and governance around Microsoft Copilot. With robust security, organizations can maximize AI productivity gains and innovation potential while minimizing risk."
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Comprehensive Security Evaluation: Assess AI model security, data protection mechanisms and access controls to identify and mitigate risks before deployment.",
+                "Compliance Readiness: Validate the environment against regulatory requirements and establish governance frameworks tailored to AI-powered workloads.",
+                "Strategic Implementation Planning: Develop a roadmap for secure Copilot integration that aligns with business objectives and security posture.",
+                "Risk Mitigation: Identify potential vulnerabilities in Copilot architectures and establish controls to protect sensitive data and prevent unauthorized access.",
+                "Adoption Optimization: Maximize ROI by ensuring the organization is technically and operationally prepared to leverage Copilot’s full capabilities securely."
+              ]
+            }
+          ],
+          "images": [],
+          "cards": [
+            {
+              "title": "MICROSOFT COPILOT SERVICES",
+              "description": "GuidePoint helps organizations ensure robust security, compliance and governance around Microsoft Copilot. With robust security, organizations can maximize AI productivity gains and innovation potential while minimizing risk.",
+              "image": null,
+              "cta": "Learn More",
+              "ctaHref": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_Security_Services_DS.pdf",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-85d9afc elementor-section-full_width services-technologies services-lifecycle services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Unlock Microsoft ECIF to Fund a Stronger Security Journey"
+        }
+      ],
+      "paragraphs": [
+        "We streamline the Microsoft End Customer Investment Funds (ECIF) process and help accelerate funding for GuidePoint engagements while organizations focus on their core priorities. Our experts identify high-impact opportunities, manage program applications, maximize license value and handle reporting, transforming ECIF into a catalyst for security transformation."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Get Funding Faster: We help manage the ECIF application process from start to finish.",
+            "Maximize Investment Impact: We align customer security goals with Microsoft’s strategic priorities.",
+            "Deliver Measurable Outcomes: GuidePoint experts implement solutions that demonstrate clear ROI.",
+            "Simplify Reporting Requirements: We handle documentation to maintain ECIF compliance."
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Security_Awareness_and_Education_Left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "https://www.guidepointsecurity.com/resources/microsoft-ecif-services/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Unlock Microsoft ECIF to Fund a Stronger Security Journey"
+            }
+          ],
+          "paragraphs": [
+            "We streamline the Microsoft End Customer Investment Funds (ECIF) process and help accelerate funding for GuidePoint engagements while organizations focus on their core priorities. Our experts identify high-impact opportunities, manage program applications, maximize license value and handle reporting, transforming ECIF into a catalyst for security transformation."
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Get Funding Faster: We help manage the ECIF application process from start to finish.",
+                "Maximize Investment Impact: We align customer security goals with Microsoft’s strategic priorities.",
+                "Deliver Measurable Outcomes: GuidePoint experts implement solutions that demonstrate clear ROI.",
+                "Simplify Reporting Requirements: We handle documentation to maintain ECIF compliance."
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Security_Awareness_and_Education_Left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "MICROSOFT ECIF SERVICES",
+              "description": "We streamline the Microsoft End Customer Investment Funds (ECIF) process and help accelerate funding for GuidePoint engagements while organizations focus on their core priorities. Our experts identify high-impact opportunities, manage program applications, maximize license value and handle reporting",
+              "image": null,
+              "cta": "Learn More",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/microsoft-ecif-services/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-f65ca0f services-lifecycle services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "A Proven Path to Microsoft Security Optimization"
+        }
+      ],
+      "paragraphs": [
+        "Our Microsoft Security Services follow a proven methodology that meets organizations where they are, addresses unique business challenges and delivers continuous improvement for a secure future.",
+        "From identifying hidden vulnerabilities and tool gaps to designing tailored architectures, implementing optimized configurations and continuously enhancing your protection, our end-to-end services ensure customers extract maximum value from their Microsoft investments."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_DS_Graphic.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "A Proven Path to Microsoft Security Optimization"
+            }
+          ],
+          "paragraphs": [
+            "Our Microsoft Security Services follow a proven methodology that meets organizations where they are, addresses unique business challenges and delivers continuous improvement for a secure future.",
+            "From identifying hidden vulnerabilities and tool gaps to designing tailored architectures, implementing optimized configurations and continuously enhancing your protection, our end-to-end services ensure customers extract maximum value from their Microsoft investments."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_DS_Graphic.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "MICROSOFT SECURITY SERVICES METHODOLOGY",
+              "description": "Our Microsoft Security Services follow a proven methodology that meets organizations where they are, addresses unique business challenges and delivers continuous improvement for a secure future.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-bd3d264 services-outcomes elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Discover"
+        },
+        {
+          "tag": "h3",
+          "text": "Design"
+        },
+        {
+          "tag": "h3",
+          "text": "Build"
+        },
+        {
+          "tag": "h3",
+          "text": "Improve"
+        }
+      ],
+      "paragraphs": [],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Architecture, workload and security reviews",
+            "Security health checks",
+            "Identity reviews",
+            "Posture evaluations",
+            "Cloud configuration reviews",
+            "Vulnerability identification",
+            "Data protection policy evaluations",
+            "Regulatory compliance reviews"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Unified, end-to-end security architecture design",
+            "Cloud-native SIEM and SOAR design",
+            "Security posture management for Azure resources",
+            "Security and compliance rules development",
+            "Secure storage and key management",
+            "Endpoint security and mobile device management"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Tool configurations aligned with best practices",
+            "Integration for unified visibility",
+            "Automation and orchestration",
+            "Policy enforcement at scale",
+            "Data protection in action"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Continuous tuning and optimization",
+            "Policy and access reviews",
+            "Compliance and risk monitoring",
+            "Automation feedback loops"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Discover.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Design.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Build.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Improve.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "Discover"
+            },
+            {
+              "tag": "h3",
+              "text": "Design"
+            },
+            {
+              "tag": "h3",
+              "text": "Build"
+            },
+            {
+              "tag": "h3",
+              "text": "Improve"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Architecture, workload and security reviews",
+                "Security health checks",
+                "Identity reviews",
+                "Posture evaluations",
+                "Cloud configuration reviews",
+                "Vulnerability identification",
+                "Data protection policy evaluations",
+                "Regulatory compliance reviews"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Unified, end-to-end security architecture design",
+                "Cloud-native SIEM and SOAR design",
+                "Security posture management for Azure resources",
+                "Security and compliance rules development",
+                "Secure storage and key management",
+                "Endpoint security and mobile device management"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Tool configurations aligned with best practices",
+                "Integration for unified visibility",
+                "Automation and orchestration",
+                "Policy enforcement at scale",
+                "Data protection in action"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Continuous tuning and optimization",
+                "Policy and access reviews",
+                "Compliance and risk monitoring",
+                "Automation feedback loops"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Discover.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Design.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Build.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Improve.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Discover",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"103\" height=\"103\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Discover.svg\" class=\"attachment-full size-full wp-image-75904\" alt=\"\" /> Discover Architecture, workload and security reviews Security health checks Identity reviews Po",
+              "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Discover.svg",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Discover",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"103\" height=\"103\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Discover.svg\" class=\"attachment-full size-full wp-image-75904\" alt=\"\" /> Discover Architecture, workload and security reviews Security health checks Identity reviews Po",
+              "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Discover.svg",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Design",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"103\" height=\"103\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Design.svg\" class=\"attachment-full size-full wp-image-75903\" alt=\"\" /> Design Unified, end-to-end security architecture design Cloud-native SIEM and SOAR design Securit",
+              "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Design.svg",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Build",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"103\" height=\"103\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Build.svg\" class=\"attachment-full size-full wp-image-75902\" alt=\"\" /> Build Tool configurations aligned with best practices Integration for unified visibility Automatio",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20103%20103'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Improve",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"103\" height=\"103\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Improve.svg\" class=\"attachment-full size-full wp-image-75901\" alt=\"\" /> Improve Continuous tuning and optimization Policy and access reviews Compliance and risk monitor",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20103%20103'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "split",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-19967ef3 services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite Highly Trained Microsoft Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Hi-Res-Security.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Hi-Res-Modern-Work.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_2.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_5.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_1.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_7.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_3-e1763048598341.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_4-e1763048624652.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Elite Highly Trained Microsoft Team"
+            }
+          ],
+          "paragraphs": [
+            "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+          ],
+          "lists": [],
+          "images": []
+        },
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h4",
+              "text": "Highly Trained, Highly Certified"
+            },
+            {
+              "tag": "h4",
+              "text": "Examples Include:"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Hi-Res-Security.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Hi-Res-Modern-Work.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_2.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_5.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_1.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_7.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_3-e1763048598341.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_4-e1763048624652.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-2ba4f127 services-outcomes elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "We Go Above and Beyond"
+        },
+        {
+          "tag": "h3",
+          "text": "Migrations"
+        },
+        {
+          "tag": "h3",
+          "text": "Licensing"
+        },
+        {
+          "tag": "h3",
+          "text": "Microsoft SME"
+        },
+        {
+          "tag": "h3",
+          "text": "GuidePoint Microsoft Support"
+        },
+        {
+          "tag": "h3",
+          "text": "Strategic Partnerships"
+        }
+      ],
+      "paragraphs": [
+        "Extend your Microsoft security capabilities with our specialized services, designed to address your complete technology lifecycle needs.",
+        "Get tailored migrations that optimize performance, along with comprehensive documentation for streamlined operations.",
+        "Let us help reduce costs, avoid overlap, ensure compliance and optimize investments.",
+        "Close the skills gap with GuidePoint’s Microsoft subject matter experts (SMEs) who integrate seamlessly into existing teams.",
+        "Get the most value out of support with rapid SME response and predefined SLAs.",
+        "Enhance and operationalize Microsoft environments through our strategic vendor partnerships that deliver innovation, improvement and growth."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "We Go Above and Beyond"
+            },
+            {
+              "tag": "h3",
+              "text": "Migrations"
+            },
+            {
+              "tag": "h3",
+              "text": "Licensing"
+            },
+            {
+              "tag": "h3",
+              "text": "Microsoft SME"
+            },
+            {
+              "tag": "h3",
+              "text": "GuidePoint Microsoft Support"
+            },
+            {
+              "tag": "h3",
+              "text": "Strategic Partnerships"
+            }
+          ],
+          "paragraphs": [
+            "Extend your Microsoft security capabilities with our specialized services, designed to address your complete technology lifecycle needs.",
+            "Get tailored migrations that optimize performance, along with comprehensive documentation for streamlined operations.",
+            "Let us help reduce costs, avoid overlap, ensure compliance and optimize investments.",
+            "Close the skills gap with GuidePoint’s Microsoft subject matter experts (SMEs) who integrate seamlessly into existing teams.",
+            "Get the most value out of support with rapid SME response and predefined SLAs.",
+            "Enhance and operationalize Microsoft environments through our strategic vendor partnerships that deliver innovation, improvement and growth."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "ADDITIONAL MICROSOFT SECURITY SERVICES",
+              "description": "Extend your Microsoft security capabilities with our specialized services, designed to address your complete technology lifecycle needs.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Migrations",
+              "description": "Get tailored migrations that optimize performance, along with comprehensive documentation for streamlined operations.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Migrations",
+              "description": "Get tailored migrations that optimize performance, along with comprehensive documentation for streamlined operations.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Licensing",
+              "description": "Let us help reduce costs, avoid overlap, ensure compliance and optimize investments.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Microsoft SME",
+              "description": "Close the skills gap with GuidePoint’s Microsoft subject matter experts (SMEs) who integrate seamlessly into existing teams.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "GuidePoint Microsoft Support",
+              "description": "Get the most value out of support with rapid SME response and predefined SLAs.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Strategic Partnerships",
+              "description": "Enhance and operationalize Microsoft environments through our strategic vendor partnerships that deliver innovation, improvement and growth.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-7686f102 elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Vinit Duggal"
+        },
+        {
+          "tag": "h3",
+          "text": "GET IN TOUCH"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Us"
+        }
+      ],
+      "paragraphs": [
+        "Our team works side-by-side with you as your cybersecurity partner.",
+        "“GuidePoint put a lot of effort into learning Intelsat – they got to know the people, they got to know our mission, they got to know our customers… They cultivated those relationships, they garnered that trust, not just with my senior leadership team, but also with the guys that are on the ground doing the work. Everyone looks at GuidePoint as a partner, not as a vendor.”",
+        "Chief Security & Trust Officer at Intelsat"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Intelsat-logo.png",
+          "alt": "Intelsat"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Vinit_Duggal_Headshot-150x150.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Terms of Service",
+          "href": "https://www.guidepointsecurity.com/terms-of-service/"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.guidepointsecurity.com/privacy-policy/"
+        },
+        {
+          "text": "CONTACT US",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Trusted Advisor"
+            },
+            {
+              "tag": "h3",
+              "text": "Vinit Duggal"
+            }
+          ],
+          "paragraphs": [
+            "Our team works side-by-side with you as your cybersecurity partner.",
+            "“GuidePoint put a lot of effort into learning Intelsat – they got to know the people, they got to know our mission, they got to know our customers… They cultivated those relationships, they garnered that trust, not just with my senior leadership team, but also with the guys that are on the ground doing the work. Everyone looks at GuidePoint as a partner, not as a vendor.”",
+            "Chief Security & Trust Officer at Intelsat"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Intelsat-logo.png",
+              "alt": "Intelsat"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Vinit_Duggal_Headshot-150x150.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "GET IN TOUCH"
+            },
+            {
+              "tag": "h3",
+              "text": "Contact Us"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-157e873 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Whitepaper"
+        },
+        {
+          "tag": "h3",
+          "text": "Datasheet"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/"
+        },
+        {
+          "text": "Cloud-Native Application Protection Platform (CNAPP) Enablement Service",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/"
+        },
+        {
+          "text": "Download",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-security-2026/"
+        },
+        {
+          "text": "Cloud Security 2026 Challenges, Predictions and How to Win",
+          "href": "https://www.guidepointsecurity.com/resources/cloud-security-2026/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Additional Resources"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Whitepaper"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Whitepaper"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Whitepaper"
+            },
+            {
+              "tag": "h3",
+              "text": "Datasheet"
+            }
+          ],
+          "paragraphs": [
+            "View All >"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Additional Resources",
+              "description": "View All >",
+              "image": null,
+              "cta": "View All >",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Datasheet",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Whitepaper",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Whitepaper <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-security-2026/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Whitepaper",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Whitepaper <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-security-2026/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Whitepaper",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Whitepaper",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/microsoft-ecif-services/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/microsoft-ecif-services/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Datasheet",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Datasheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> Datasheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https:/",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" ",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/cloud-native-application-protection-platform/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataTemplate": {
+    "slug": "microsoft-security-services",
+    "title": "Maximize Your Microsoft Security Investment",
+    "tagline": "Secure More With Existing Tools",
+    "heroLabel": "Maximize Your Microsoft Security Investment",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Learn More",
+    "heroImage": "/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */",
+    "heroImageFallback": "https://www.guidepointsecurity.com/wp-content/uploads/2025/09/Website_Refresh_Services_SUB_Pages_IoT_Threat_Modeling-1.png",
+    "description": "GuidePoint Security helps organizations unlock the full potential of Microsoft tools. With expert guidance, we help transform underutilized capabilities into measurable security outcomes.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "Unlock Microsoft ECIF to Fund a Stronger Security Journey",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "We streamline the Microsoft End Customer Investment Funds (ECIF) process and help accelerate funding for GuidePoint engagements while organizations focus on their core priorities. Our experts identify high-impact opportunities, manage program applications, maximize license value and handle reporting, transforming ECIF into a catalyst for security transformation."
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Security_Awareness_and_Education_Left.png",
+      "textLayoutHint": "checklist",
+      "inlineItems": []
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": [
+          "Get Funding Faster: We help manage the ECIF application process from start to finish.",
+          "Maximize Investment Impact: We align customer security goals with Microsoft’s strategic priorities.",
+          "Deliver Measurable Outcomes: GuidePoint experts implement solutions that demonstrate clear ROI.",
+          "Simplify Reporting Requirements: We handle documentation to maintain ECIF compliance."
+        ]
+      }
+    },
+    "outcomesSection": {
+      "label": "/* FILL IN */",
+      "title": "Microsoft Cloud Security",
+      "titleHighlight": "/* FILL IN */",
+      "subtitle": ""
+    },
+    "outcomes": [],
+    "certGroups": [
+      {
+        "category": "/* FILL IN */",
+        "certs": [
+          {
+            "name": "",
+            "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20217%20217'%3E%3C/svg%3E"
+          },
+          {
+            "name": "",
+            "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20217%20217'%3E%3C/svg%3E"
+          },
+          {
+            "name": "",
+            "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20217%20217'%3E%3C/svg%3E"
+          }
+        ]
+      }
+    ],
+    "testimonial": {
+      "quote": "We streamline the Microsoft End Customer Investment Funds (ECIF) process and help accelerate funding for GuidePoint engagements while organizations focus on their core priorities. Our experts identify high-impact opportunities, manage program applications, maximize license value and handle reporting, transforming ECIF into a catalyst for security transformation. Get Funding Faster: We help manage the ECIF application process from start to finish. Maximize Investment Impact: We align customer security goals with Microsoft’s strategic priorities. Deliver Measurable Outcomes: GuidePoint experts implement solutions that demonstrate clear ROI. Simplify Reporting Requirements: We handle documentation to maintain ECIF compliance.",
+      "author": "/* FILL IN */",
+      "role": "MICROSOFT ECIF SERVICES",
+      "company": "/* FILL IN */",
+      "personImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Security_Awareness_and_Education_Left.png",
+      "companyLogo": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/V2_Microsoft_DS_Graphic.png",
+      "alt": "",
+      "width": 1337,
+      "height": 1338
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_Cloud_Security_Text.svg",
+      "alt": "Microsoft Cloud Security",
+      "width": 160,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Endpoint_and_Device_Security_Text.svg",
+      "alt": "Endpoint and Device Security",
+      "width": 160,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Application_Security_Text.svg",
+      "alt": "Application Security",
+      "width": 160,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Identity_Security_Text.svg",
+      "alt": "Identity Security",
+      "width": 160,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Data_Security_Text.svg",
+      "alt": "Data Security",
+      "width": 160,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/SIEM_SOAR_Text.svg",
+      "alt": "SIEM / SOAR",
+      "width": 160,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Artificial_Intelligence_Text.svg",
+      "alt": "Artificial Intelligence",
+      "width": 160,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Security_Awareness_and_Education_Left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Microsoft_DS_Graphic.png",
+      "alt": "",
+      "width": 1439,
+      "height": 1416
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Discover.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Design.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Build.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Improve.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Hi-Res-Security.png",
+      "alt": "",
+      "width": 285,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/Hi-Res-Modern-Work.png",
+      "alt": "",
+      "width": 285,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_2.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_5.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_1.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_7.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_3-e1763048598341.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_4-e1763048624652.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/11/MS_Cert_6-e1763048638137.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Intelsat-logo.png",
+      "alt": "Intelsat",
+      "width": 300,
+      "height": 77
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Vinit_Duggal_Headshot-150x150.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+      "alt": "",
+      "width": 219,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

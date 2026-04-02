@@ -1,0 +1,1714 @@
+{
+  "scrapedAt": "2026-04-02T22:08:41.813Z",
+  "url": "https://www.guidepointsecurity.com/zero-trust-workshops/",
+  "meta": {
+    "title": "Zero Trust Workshops & Consulting Services | GuidePoint Security",
+    "description": "Our Zero Trust workshops are designed to facilitate your journey through iterative & manageable steps. Learn how to establish a roadmap with our consultants!",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+    "canonical": "https://www.guidepointsecurity.com/zero-trust-workshops/",
+    "h1": "Establish Your Roadmap for Zero Trust Adoption"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-12ba94e1 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Establish Your Roadmap for Zero Trust Adoption"
+        }
+      ],
+      "paragraphs": [
+        "Our Zero Trust Workshops are designed to help your organization incrementally adopt a “never trust, always verify” approach to security."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Services_SUB_Pages_Zero_Trust_Workshops.png",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Safeguard Your Cloud",
+          "href": "https://www.guidepointsecurity.com/safeguard-your-cloud/"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h1",
+              "text": "Establish Your Roadmap for Zero Trust Adoption"
+            }
+          ],
+          "paragraphs": [
+            "Our Zero Trust Workshops are designed to help your organization incrementally adopt a “never trust, always verify” approach to security."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Services_SUB_Pages_Zero_Trust_Workshops.png",
+              "alt": "section background",
+              "isBg": true
+            }
+          ],
+          "cards": [
+            {
+              "title": "ZERO TRUST WORKSHOPS AND CONSULTING SERVICES",
+              "description": "Our Zero Trust Workshops are designed to help your organization incrementally adopt a “never trust, always verify” approach to security.",
+              "image": null,
+              "cta": "Safeguard Your Cloud",
+              "ctaHref": "https://www.guidepointsecurity.com/safeguard-your-cloud/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Services_SUB_Pages_Zero_Trust_Workshops.png"
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-160b45b0 services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Incrementally Build the Right Zero Trust Strategy"
+        },
+        {
+          "tag": "h3",
+          "text": "Understand Your Maturity Level & Enhance Your Zero Trust Transformation"
+        },
+        {
+          "tag": "h3",
+          "text": "Drive the Adoption of Critical Capabilities in Interactive Steps"
+        },
+        {
+          "tag": "h3",
+          "text": "Optimize Existing Controls to Align With Your Risk Reduction Goals"
+        }
+      ],
+      "paragraphs": [
+        "A Zero Trust security model is an end-to-end strategy around least-privilege that involves integrating identity, infrastructure, monitoring, analytics and automation. While it is all-encompassing, it does not require an entire re-architecture to achieve zero trust security.",
+        "Our Zero Trust Workshops are designed to facilitate your journey through iterative, manageable steps to:"
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Incrementally Build the Right Zero Trust Strategy"
+            },
+            {
+              "tag": "h3",
+              "text": "Understand Your Maturity Level & Enhance Your Zero Trust Transformation"
+            },
+            {
+              "tag": "h3",
+              "text": "Drive the Adoption of Critical Capabilities in Interactive Steps"
+            },
+            {
+              "tag": "h3",
+              "text": "Optimize Existing Controls to Align With Your Risk Reduction Goals"
+            }
+          ],
+          "paragraphs": [
+            "A Zero Trust security model is an end-to-end strategy around least-privilege that involves integrating identity, infrastructure, monitoring, analytics and automation. While it is all-encompassing, it does not require an entire re-architecture to achieve zero trust security.",
+            "Our Zero Trust Workshops are designed to facilitate your journey through iterative, manageable steps to:"
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "ZERO TRUST WORKSHOPS OVERVIEW",
+              "description": "A Zero Trust security model is an end-to-end strategy around least-privilege that involves integrating identity, infrastructure, monitoring, analytics and automation. While it is all-encompassing, it does not require an entire re-architecture to achieve zero trust security.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "ZERO TRUST WORKSHOPS OVERVIEW",
+              "description": "ZERO TRUST WORKSHOPS OVERVIEW Incrementally Build the Right Zero Trust Strategy",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Understand Your Maturity Level & Enhance Your Zero Trust Transformation",
+              "description": "Understand Your Maturity Level & Enhance Your Zero Trust Transformation Drive the Adoption of Critical Capabilities in Interactive Steps Optimize Existing Controls to Align With Your Risk Reduction Goals",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-471c867 services-outcomes elementor-section-boxed elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Achieve Zero Trust with OurCustomized 5-Phase Approach"
+        }
+      ],
+      "paragraphs": [
+        "We will help accelerate your Zero Trust adoption by working with you to understand your inventory of business assets; configure your access management, IGA and PAM solutions; ensure you have the necessary visibility into your network and application traffic; and optimize, centralize and automate your policies – all without re-architecting your entire network.",
+        "Our workshops employ a proven 5-phased approach that is customized to meet your specific requirements and environmental challenges:",
+        "Identify key stakeholders in your organization, review your Zero Trust business drivers, capture the relevant use cases and requirements and review your existing security architecture.",
+        "Assess your environment including identifying high value assets and determine your classification policy, conduct a gap analysis between your Zero Trust use cases and your existing security architecture, determine success criteria and develop a Zero Trust roadmap.",
+        "Select best-fit technologies for your environment and requirements, remediate identified gaps from the Assess phase, conduct a detailed design document and secure proper sign off, review and update the roadmap and update the Zero Trust desired business outcomes.",
+        "Develop Zero Trust configuration policies, test and validate those policies in pilot groups, document the exception process and perform final policy tuning, roll out the Zero Trust policy and provide next day support.",
+        "Provide knowledge transfer and operational training, exception and change remediation training, configuration and device management procedures, quarterly health checks and best practice assessments and violation monitoring tuning."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-1.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-2.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-3.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-4.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-5.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Achieve Zero Trust with OurCustomized 5-Phase Approach"
+            }
+          ],
+          "paragraphs": [
+            "We will help accelerate your Zero Trust adoption by working with you to understand your inventory of business assets; configure your access management, IGA and PAM solutions; ensure you have the necessary visibility into your network and application traffic; and optimize, centralize and automate your policies – all without re-architecting your entire network.",
+            "Our workshops employ a proven 5-phased approach that is customized to meet your specific requirements and environmental challenges:",
+            "Identify key stakeholders in your organization, review your Zero Trust business drivers, capture the relevant use cases and requirements and review your existing security architecture.",
+            "Assess your environment including identifying high value assets and determine your classification policy, conduct a gap analysis between your Zero Trust use cases and your existing security architecture, determine success criteria and develop a Zero Trust roadmap.",
+            "Select best-fit technologies for your environment and requirements, remediate identified gaps from the Assess phase, conduct a detailed design document and secure proper sign off, review and update the roadmap and update the Zero Trust desired business outcomes.",
+            "Develop Zero Trust configuration policies, test and validate those policies in pilot groups, document the exception process and perform final policy tuning, roll out the Zero Trust policy and provide next day support.",
+            "Provide knowledge transfer and operational training, exception and change remediation training, configuration and device management procedures, quarterly health checks and best practice assessments and violation monitoring tuning."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-1.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-2.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-3.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-4.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-5.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "ZERO TRUST WORKSHOPS: METHODOLOGY",
+              "description": "We will help accelerate your Zero Trust adoption by working with you to understand your inventory of business assets; configure your access management, IGA and PAM solutions; ensure you have the necessary visibility into your network and application traffic; and optimize, centralize and automate you",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": ".cls-1, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8 { fill: none; } .cls-2, .cls-26 { fill: #d8e6f9; } .cls-2, .cls-3 { clip-",
+              "description": "Identify key stakeholders in your organization, review your Zero Trust business drivers, capture the relevant use cases and requirements and review your existing security architecture.",
+              "image": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-1.svg",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-1c2139a services-lifecycle services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Securing the Cloud for Your Mobile Workforce"
+        }
+      ],
+      "paragraphs": [
+        "In cloud-based scenarios, organizations should consider a ”least-privilege access model.” Our team of Zero Trust experts leverages a defined framework to establish business requirements for the mobile workforce’s secure access to organizational assets – regardless of where they are located.",
+        "We work with you to:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Ensure strong identity and enforcement capabilities are tightly integrated with existing security tools and processes",
+            "Develop various Zero Trust Network Access (ZTNA) use cases, determine what controls are already in place or need to be implemented to meet the business requirements for each case",
+            "Integrate and optimize services to design, implement and support ZTNA use cases"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Securing the Cloud for Your Mobile Workforce"
+            }
+          ],
+          "paragraphs": [
+            "In cloud-based scenarios, organizations should consider a ”least-privilege access model.” Our team of Zero Trust experts leverages a defined framework to establish business requirements for the mobile workforce’s secure access to organizational assets – regardless of where they are located.",
+            "We work with you to:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Ensure strong identity and enforcement capabilities are tightly integrated with existing security tools and processes",
+                "Develop various Zero Trust Network Access (ZTNA) use cases, determine what controls are already in place or need to be implemented to meet the business requirements for each case",
+                "Integrate and optimize services to design, implement and support ZTNA use cases"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "ZERO TRUST WORKSHOPS: NETWORK ACCESS",
+              "description": "In cloud-based scenarios, organizations should consider a ”least-privilege access model.” Our team of Zero Trust experts leverages a defined framework to establish business requirements for the mobile workforce’s secure access to organizational assets – regardless of where they are located.",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-9b25966 elementor-section-full_width services-technologies services-lifecycle services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Prioritize IAM as Network Perimeters Evolve"
+        }
+      ],
+      "paragraphs": [
+        "With the traditional network perimeter dissipating, Identity & Access Management has become a top priority for authentication and authorization.",
+        "We work with you to:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Conduct a rigorous review of your environment",
+            "Provide a roadmap for implementing and optimizing the three pillars of IAM: Identity Governance and Administration, Access Management and Privileged Account Management",
+            "Understand your unique use cases, roles and policies to select the best-fit solutions, zero trust technologies and perimeter-less security that meets your business requirements"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Network_Security_Left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Prioritize IAM as Network Perimeters Evolve"
+            }
+          ],
+          "paragraphs": [
+            "With the traditional network perimeter dissipating, Identity & Access Management has become a top priority for authentication and authorization.",
+            "We work with you to:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Conduct a rigorous review of your environment",
+                "Provide a roadmap for implementing and optimizing the three pillars of IAM: Identity Governance and Administration, Access Management and Privileged Account Management",
+                "Understand your unique use cases, roles and policies to select the best-fit solutions, zero trust technologies and perimeter-less security that meets your business requirements"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Network_Security_Left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "ZERO TRUST WORKSHOPS: IDENTITY & ACCESS MANAGEMENT",
+              "description": "With the traditional network perimeter dissipating, Identity & Access Management has become a top priority for authentication and authorization.",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-60ec399 services-lifecycle services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Prevent Unwanted Lateral Movement Through Workload Separation"
+        }
+      ],
+      "paragraphs": [
+        "Cloud environments are flat by default and require additional workload separation to limit lateral movement and reduce the impact of a breach. Many cloud security designs include macro-segmentation because it is difficult to achieve true micro-segmentation without full automation.",
+        "Our Zero Trust consultants work with you to:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Classify and segment cloud workloads based on business function",
+            "Reduce your attack surface by implementing workload segmentation, where only those ports/protocols that are required for operation are permitted",
+            "Automate security policies to ease the deployment of new workloads into a secured environment"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Network_Security_Right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Prevent Unwanted Lateral Movement Through Workload Separation"
+            }
+          ],
+          "paragraphs": [
+            "Cloud environments are flat by default and require additional workload separation to limit lateral movement and reduce the impact of a breach. Many cloud security designs include macro-segmentation because it is difficult to achieve true micro-segmentation without full automation.",
+            "Our Zero Trust consultants work with you to:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Classify and segment cloud workloads based on business function",
+                "Reduce your attack surface by implementing workload segmentation, where only those ports/protocols that are required for operation are permitted",
+                "Automate security policies to ease the deployment of new workloads into a secured environment"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Network_Security_Right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "ZERO TRUST WORKSHOPS: CLOUD MICRO-SEGMENTATION",
+              "description": "Cloud environments are flat by default and require additional workload separation to limit lateral movement and reduce the impact of a breach. Many cloud security designs include macro-segmentation because it is difficult to achieve true micro-segmentation without full automation.",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-4e3d077 elementor-section-full_width services-technologies services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Validate the Effectiveness of Your Zero Trust Policies and Tools"
+        }
+      ],
+      "paragraphs": [
+        "Simply implementing controls and walking away isn’t enough. Continued monitoring and visibility are necessary to ensure that the policies and tools you’ve created as part of your Zero Trust plan are working as expected.",
+        "We work with you to:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Develop content libraries for monitoring Zero Trust environments",
+            "Configure appropriate alarms and notifications in Zero Trust tools",
+            "Build automation and orchestration around Zero Trust use cases"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Network_Security_Left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Validate the Effectiveness of Your Zero Trust Policies and Tools"
+            }
+          ],
+          "paragraphs": [
+            "Simply implementing controls and walking away isn’t enough. Continued monitoring and visibility are necessary to ensure that the policies and tools you’ve created as part of your Zero Trust plan are working as expected.",
+            "We work with you to:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Develop content libraries for monitoring Zero Trust environments",
+                "Configure appropriate alarms and notifications in Zero Trust tools",
+                "Build automation and orchestration around Zero Trust use cases"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Network_Security_Left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "ZERO TRUST WORKSHOPS: MONITORING & VISIBILITY",
+              "description": "Simply implementing controls and walking away isn’t enough. Continued monitoring and visibility are necessary to ensure that the policies and tools you’ve created as part of your Zero Trust plan are working as expected.",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "split",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-cd37cec services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions.",
+        "Industry",
+        "Product Certifications"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/08/SANS-Cyber-Guardian.png",
+          "alt": "SANS Cyber Guardian"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+          "alt": "GSE"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/05/Copy-of-badge-authorized-partner-delivery-services.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/CCSE_Core_certification_600X600_202302221338322.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/CCSA_Core_certification_600X600_202302221337171.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/CCNP_security_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/CCNP_cert_100x120px.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Elite, Highly-trained Team"
+            }
+          ],
+          "paragraphs": [
+            "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+          ],
+          "lists": [],
+          "images": []
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h4",
+              "text": "Highly Trained, Highly Certified"
+            },
+            {
+              "tag": "h4",
+              "text": "Examples Include:"
+            }
+          ],
+          "paragraphs": [
+            "Industry",
+            "Product Certifications"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/08/SANS-Cyber-Guardian.png",
+              "alt": "SANS Cyber Guardian"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+              "alt": "CISSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+              "alt": "GSE"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/05/Copy-of-badge-authorized-partner-delivery-services.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/CCSE_Core_certification_600X600_202302221338322.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/CCSA_Core_certification_600X600_202302221337171.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/CCNP_security_100x120px.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/CCNP_cert_100x120px.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-744a432 services-outcomes elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Facilitate Zero Trust Adoption"
+        },
+        {
+          "tag": "h3",
+          "text": "Enforce Security Policy"
+        },
+        {
+          "tag": "h3",
+          "text": "Enhance Visibility"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure Workloads"
+        },
+        {
+          "tag": "h3",
+          "text": "Improve Business Agility"
+        }
+      ],
+      "paragraphs": [
+        "Our Zero Trust Workshops are designed to accelerate your organization’s adoption of a Zero Trust approach and digital transformation through an iterative process that develops and assigns use cases to your environment and maturity.",
+        "Centrally manage and automate security and access policy enforcement.",
+        "Understand application and traffic profiles, design and validate access policies and detect abnormal traffic or policy violations.",
+        "Ensure the security of workloads and assets in both cloud and on-premise environments.",
+        "Provide a superior end-user experience through seamless automation."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Facilitate Zero Trust Adoption"
+            },
+            {
+              "tag": "h3",
+              "text": "Enforce Security Policy"
+            },
+            {
+              "tag": "h3",
+              "text": "Enhance Visibility"
+            },
+            {
+              "tag": "h3",
+              "text": "Secure Workloads"
+            },
+            {
+              "tag": "h3",
+              "text": "Improve Business Agility"
+            }
+          ],
+          "paragraphs": [
+            "Our Zero Trust Workshops are designed to accelerate your organization’s adoption of a Zero Trust approach and digital transformation through an iterative process that develops and assigns use cases to your environment and maturity.",
+            "Centrally manage and automate security and access policy enforcement.",
+            "Understand application and traffic profiles, design and validate access policies and detect abnormal traffic or policy violations.",
+            "Ensure the security of workloads and assets in both cloud and on-premise environments.",
+            "Provide a superior end-user experience through seamless automation."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "ZERO TRUST WORKSHOPS OUTCOMES",
+              "description": "Our Zero Trust Workshops are designed to accelerate your organization’s adoption of a Zero Trust approach and digital transformation through an iterative process that develops and assigns use cases to your environment and maturity.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Enforce Security Policy",
+              "description": "Centrally manage and automate security and access policy enforcement.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Enforce Security Policy",
+              "description": "Centrally manage and automate security and access policy enforcement.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Enhance Visibility",
+              "description": "Understand application and traffic profiles, design and validate access policies and detect abnormal traffic or policy violations.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Secure Workloads",
+              "description": "Ensure the security of workloads and assets in both cloud and on-premise environments.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Improve Business Agility",
+              "description": "Provide a superior end-user experience through seamless automation.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-3db2220 elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "James Lowry"
+        },
+        {
+          "tag": "h3",
+          "text": "GET IN TOUCH"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Us"
+        }
+      ],
+      "paragraphs": [
+        "Our team works side-by-side with you as your cybersecurity partner.",
+        "“GuidePoint Security is a trusted partner. Cybersecurity is a program not a project, so it’s always evolving. And GuidePoint does a great job of staying in step with the times. It’s important that we keep those lines of communication open because something may come up that we don’t even think about and you guys may say, well, I know your initiative is this, but there’s some sub initiatives where we might be able to help you get to that end result. The GuidePoint Security team has an answer for e",
+        "Director of Information Security"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/James-Lowry.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Terms of Service",
+          "href": "https://www.guidepointsecurity.com/terms-of-service/"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.guidepointsecurity.com/privacy-policy/"
+        },
+        {
+          "text": "CONTACT US",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Trusted Advisor"
+            },
+            {
+              "tag": "h3",
+              "text": "James Lowry"
+            }
+          ],
+          "paragraphs": [
+            "Our team works side-by-side with you as your cybersecurity partner.",
+            "“GuidePoint Security is a trusted partner. Cybersecurity is a program not a project, so it’s always evolving. And GuidePoint does a great job of staying in step with the times. It’s important that we keep those lines of communication open because something may come up that we don’t even think about and you guys may say, well, I know your initiative is this, but there’s some sub initiatives where we might be able to help you get to that end result. The GuidePoint Security team has an answer for e",
+            "Director of Information Security"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/James-Lowry.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "GET IN TOUCH"
+            },
+            {
+              "tag": "h3",
+              "text": "Contact Us"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-965780a additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "eBook"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "eBook"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "eBook"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Additional Resources"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "eBook"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "eBook"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "eBook"
+            }
+          ],
+          "paragraphs": [
+            "View All >"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Additional Resources",
+              "description": "View All >",
+              "image": null,
+              "cta": "View All >",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-full size-full wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.gui",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-full size-full wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.gui",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-full size-full wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.gui",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-full size-full wp-image-28679\" alt=\"\" /> Video",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-full size-full wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.gui",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-full size-full wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.gui",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-full size-full wp-image-28679\" alt=\"\" /> Video",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "eBook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> eBook <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "eBook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> eBook <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "eBook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-full size-full wp-image-28680\" alt=\"\" /> eBook",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-full size-full wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.gui",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataTemplate": {
+    "slug": "zero-trust-workshops",
+    "title": "Establish Your Roadmap for Zero Trust Adoption",
+    "tagline": "Incrementally Build the Right Zero Trust Strategy",
+    "heroLabel": "Establish Your Roadmap for Zero Trust Adoption",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Safeguard Your Cloud",
+    "heroImage": "/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */",
+    "heroImageFallback": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/Services_SUB_Pages_Zero_Trust_Workshops.png",
+    "description": "Our Zero Trust Workshops are designed to help your organization incrementally adopt a “never trust, always verify” approach to security.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "Securing the Cloud for Your Mobile Workforce",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "In cloud-based scenarios, organizations should consider a ”least-privilege access model.” Our team of Zero Trust experts leverages a defined framework to establish business requirements for the mobile workforce’s secure access to organizational assets – regardless of where they are located.",
+        "We work with you to:"
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "textLayoutHint": "checklist",
+      "inlineItems": []
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": [
+          "Ensure strong identity and enforcement capabilities are tightly integrated with existing security tools and processes",
+          "Develop various Zero Trust Network Access (ZTNA) use cases, determine what controls are already in place or need to be implemented to meet the business requirements for each case",
+          "Integrate and optimize services to design, implement and support ZTNA use cases"
+        ]
+      }
+    },
+    "outcomesSection": {
+      "label": "/* FILL IN */",
+      "title": "Achieve Zero Trust with OurCustomized 5-Phase Approach",
+      "titleHighlight": "/* FILL IN */",
+      "subtitle": "We will help accelerate your Zero Trust adoption by working with you to understand your inventory of business assets; configure your access management, IGA and PAM solutions; ensure you have the necessary visibility into your network and application traffic; and optimize, centralize and automate your policies – all without re-architecting your entire network."
+    },
+    "outcomes": [],
+    "certGroups": null,
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "role": "ZERO TRUST WORKSHOPS: NETWORK ACCESS",
+      "company": "/* FILL IN */",
+      "personImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "companyLogo": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-3.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-4.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-zero-trust-wheel-5.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Network_Security_Left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Network_Security_Right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/08/SANS-Cyber-Guardian.png",
+      "alt": "SANS Cyber Guardian",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+      "alt": "GSE",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/05/Copy-of-badge-authorized-partner-delivery-services.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/CCSE_Core_certification_600X600_202302221338322.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/02/CCSA_Core_certification_600X600_202302221337171.png",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/CCNP_security_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/CCNP_cert_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/pan_pcnsa_paloalto_cert_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/PCNSE_paloalto_cert_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/pan_pccse_paloalto_cert_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_fortinet_fund.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/cert_fortinet_associate.png",
+      "alt": "",
+      "width": 180,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/James-Lowry.png",
+      "alt": "",
+      "width": 154,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+      "alt": "",
+      "width": 219,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

@@ -20,6 +20,9 @@ export default function ResourceDetail() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+    if (resource.pdfUrl) {
+      window.open(resource.pdfUrl, '_blank', 'noopener,noreferrer');
+    }
   };
 
   return (
@@ -60,6 +63,16 @@ export default function ResourceDetail() {
                   <div className="text-center py-4">
                     <i className="bi bi-check-circle-fill text-success" style={{ fontSize: '3rem' }}></i>
                     <p className="text-white mt-3 mb-0">Thank you! Your request has been submitted.</p>
+                    {resource.pdfUrl && (
+                      <a
+                        href={resource.pdfUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-accent mt-3"
+                      >
+                        Download Now
+                      </a>
+                    )}
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit}>

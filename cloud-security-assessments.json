@@ -1,0 +1,1607 @@
+{
+  "scrapedAt": "2026-04-02T22:08:28.783Z",
+  "url": "https://www.guidepointsecurity.com/cloud-security-assessments/",
+  "meta": {
+    "title": "Cloud Security Assessment Services | GuidePoint Security",
+    "description": "Your cloud environment may be vulnerable to attack. Our cloud security assessment services evaluate your security posture and provide reliable solutions.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+    "canonical": "https://www.guidepointsecurity.com/cloud-security-assessments/",
+    "h1": "Understand Where You are in Your Cloud Security Journey"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-7394fdd4 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Understand Where You are in Your Cloud Security Journey"
+        }
+      ],
+      "paragraphs": [
+        "Gain an analysis of your cloud readiness and maturity level through a holistic review across various domains that maps to your information security program."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Website_Refresh_Services_SUB_Pages_Cloud_Security_Assessments.png",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Safeguard Your Cloud",
+          "href": "https://www.guidepointsecurity.com/safeguard-your-cloud/"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h1",
+              "text": "Understand Where You are in Your Cloud Security Journey"
+            }
+          ],
+          "paragraphs": [
+            "Gain an analysis of your cloud readiness and maturity level through a holistic review across various domains that maps to your information security program."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Website_Refresh_Services_SUB_Pages_Cloud_Security_Assessments.png",
+              "alt": "section background",
+              "isBg": true
+            }
+          ],
+          "cards": [
+            {
+              "title": "CLOUD SECURITY ASSESSMENTS",
+              "description": "Gain an analysis of your cloud readiness and maturity level through a holistic review across various domains that maps to your information security program.",
+              "image": null,
+              "cta": "Safeguard Your Cloud",
+              "ctaHref": "https://www.guidepointsecurity.com/safeguard-your-cloud/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Website_Refresh_Services_SUB_Pages_Cloud_Security_Assessments.png"
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-34ba79e8 services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Evaluate Your Cloud Security Environment"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Readiness"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Maturity"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Health Check"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Infrastructure"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Security Audit"
+        }
+      ],
+      "paragraphs": [
+        "The cloud provides many business and operational advantages, but you must understand your cloud readiness and maturity in order to ensure a “security first” approach.",
+        "Our portfolio of cloud security assessment services ensure you understand the current state of your environment and help guide you on your cloud security journey. These cloud security assessment services include:"
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Evaluate Your Cloud Security Environment"
+            },
+            {
+              "tag": "h3",
+              "text": "Cloud Readiness"
+            },
+            {
+              "tag": "h3",
+              "text": "Cloud Maturity"
+            },
+            {
+              "tag": "h3",
+              "text": "Cloud Health Check"
+            },
+            {
+              "tag": "h3",
+              "text": "Cloud Infrastructure"
+            },
+            {
+              "tag": "h3",
+              "text": "Cloud Security Audit"
+            }
+          ],
+          "paragraphs": [
+            "The cloud provides many business and operational advantages, but you must understand your cloud readiness and maturity in order to ensure a “security first” approach.",
+            "Our portfolio of cloud security assessment services ensure you understand the current state of your environment and help guide you on your cloud security journey. These cloud security assessment services include:"
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "CLOUD SECURITY ASSESSMENT OVERVIEW",
+              "description": "The cloud provides many business and operational advantages, but you must understand your cloud readiness and maturity in order to ensure a “security first” approach.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "CLOUD SECURITY ASSESSMENT OVERVIEW",
+              "description": "The cloud provides many business and operational advantages, but you must understand your cloud readiness and maturity in order to ensure a “security first” approach.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Cloud Readiness",
+              "description": "Cloud Readiness Cloud Maturity Cloud Health Check",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Cloud Infrastructure",
+              "description": "Cloud Infrastructure Cloud Security Audit",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-3bb3563c services-lifecycle elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Ensure You’re Prepared in Your Cloud Migration"
+        }
+      ],
+      "paragraphs": [
+        "Our Cloud Readiness Assessment gives your organization actionable steps to follow in order to successfully adopt a cloud-based environment. Our Cloud Readiness Assessment gives your organization actionable steps to follow in order to successfully adopt a cloud-based environment. We’ll work with you to better understand the current hurdles that must be overcome to successfully migrate to the cloud, the items that your technology stack currently contains and the dependencies that need to be consid"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Ensure You’re Prepared in Your Cloud Migration"
+            }
+          ],
+          "paragraphs": [
+            "Our Cloud Readiness Assessment gives your organization actionable steps to follow in order to successfully adopt a cloud-based environment. Our Cloud Readiness Assessment gives your organization actionable steps to follow in order to successfully adopt a cloud-based environment. We’ll work with you to better understand the current hurdles that must be overcome to successfully migrate to the cloud, the items that your technology stack currently contains and the dependencies that need to be consid"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "CLOUD READINESS ASSESSMENT",
+              "description": "Our Cloud Readiness Assessment gives your organization actionable steps to follow in order to successfully adopt a cloud-based environment. Our Cloud Readiness Assessment gives your organization actionable steps to follow in order to successfully adopt a cloud-based environment. We’ll work with you ",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-265e4db services-lifecycle elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Gain a Quantified Snapshot of Your Current Cloud Estate"
+        }
+      ],
+      "paragraphs": [
+        "For organizations that already have a cloud footprint, our Cloud Maturity Assessment provides your organization with a clear understanding of how far along you are in your journey toward the cloud. Our maturity assessment is essential when you need to begin planning your progress and maturing your capabilities in the cloud – these assessments are ideal for organizations that are both relatively new to the cloud as well as those that have already matured their activities in the cloud."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Gain a Quantified Snapshot of Your Current Cloud Estate"
+            }
+          ],
+          "paragraphs": [
+            "For organizations that already have a cloud footprint, our Cloud Maturity Assessment provides your organization with a clear understanding of how far along you are in your journey toward the cloud. Our maturity assessment is essential when you need to begin planning your progress and maturing your capabilities in the cloud – these assessments are ideal for organizations that are both relatively new to the cloud as well as those that have already matured their activities in the cloud."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "CLOUD MATURITY ASSESSMENT",
+              "description": "For organizations that already have a cloud footprint, our Cloud Maturity Assessment provides your organization with a clear understanding of how far along you are in your journey toward the cloud. Our maturity assessment is essential when you need to begin planning your progress and maturing your c",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "split",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-b141b45 services-lifecycle services-review-process elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Analyze Your Cloud Environment"
+        }
+      ],
+      "paragraphs": [
+        "Our health check service provides a look at your cloud environment from a people, process and technology perspective. We provide a comprehensive report and roadmap to remediating any issues discovered with a comprehensive cloud vulnerability assessment."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Technology: We examine your cloud environment against our cloud security framework, which combines industry standards like NIST, CCM and CSP controls along with our own controls.",
+            "People: We interview individuals who manage your cloud security assessments program to understand the strengths and weaknesses of your program.",
+            "Process: We review processes utilized by your team to secure the cloud environment."
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Analyze Your Cloud Environment"
+            }
+          ],
+          "paragraphs": [
+            "Our health check service provides a look at your cloud environment from a people, process and technology perspective. We provide a comprehensive report and roadmap to remediating any issues discovered with a comprehensive cloud vulnerability assessment."
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Technology: We examine your cloud environment against our cloud security framework, which combines industry standards like NIST, CCM and CSP controls along with our own controls.",
+                "People: We interview individuals who manage your cloud security assessments program to understand the strengths and weaknesses of your program.",
+                "Process: We review processes utilized by your team to secure the cloud environment."
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "CLOUD HEALTH CHECK",
+              "description": "Our health check service provides a look at your cloud environment from a people, process and technology perspective. We provide a comprehensive report and roadmap to remediating any issues discovered with a comprehensive cloud vulnerability assessment.",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-2ce88de services-lifecycle elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Identify Gaps in Your Cloud Infrastructure"
+        },
+        {
+          "tag": "h3",
+          "text": "Develop a Gap Analysis"
+        },
+        {
+          "tag": "h3",
+          "text": "Maintain Compliance"
+        },
+        {
+          "tag": "h3",
+          "text": "Gain Trusted Recommendations"
+        }
+      ],
+      "paragraphs": [
+        "Our Cloud Infrastructure Security Assessment provides your organization with a clear understanding of your cloud security posture. This assessment helps you to:",
+        "Make it easy to understand the biggest challenges to overcome BEFORE your cloud migration.",
+        "Ensure compliance with relevant industry regulations as you begin working in a cloud environment.",
+        "Leverage reliable, custom-fit solutions to remediate vulnerabilities in your cloud environment."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Identify Gaps in Your Cloud Infrastructure"
+            },
+            {
+              "tag": "h3",
+              "text": "Develop a Gap Analysis"
+            },
+            {
+              "tag": "h3",
+              "text": "Maintain Compliance"
+            },
+            {
+              "tag": "h3",
+              "text": "Gain Trusted Recommendations"
+            }
+          ],
+          "paragraphs": [
+            "Our Cloud Infrastructure Security Assessment provides your organization with a clear understanding of your cloud security posture. This assessment helps you to:",
+            "Make it easy to understand the biggest challenges to overcome BEFORE your cloud migration.",
+            "Ensure compliance with relevant industry regulations as you begin working in a cloud environment.",
+            "Leverage reliable, custom-fit solutions to remediate vulnerabilities in your cloud environment."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "CLOUD INFRASTRUCTURE SECURITY ASSESSMENT",
+              "description": "Our Cloud Infrastructure Security Assessment provides your organization with a clear understanding of your cloud security posture. This assessment helps you to:",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Develop a Gap Analysis",
+              "description": "Make it easy to understand the biggest challenges to overcome BEFORE your cloud migration.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Develop a Gap Analysis",
+              "description": "Make it easy to understand the biggest challenges to overcome BEFORE your cloud migration.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-ec5873f services-lifecycle elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Ensure Industry Compliance"
+        }
+      ],
+      "paragraphs": [
+        "It is essential that your organization ensures industry compliance if it’s handling sensitive data — this is particularly relevant to organizations that are routinely handling healthcare and financial-related information. By conducting a cloud security audit, we can help you identify any existing gaps in your security compliance and provide recommendations to remediate those gaps.",
+        "We only conduct our security audits after gaining a clear understanding of the cloud security policies that have been put in place by your cloud service provider and we will help you prepare for any upcoming security compliances that your organization intends to acquire down the road."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Ensure Industry Compliance"
+            }
+          ],
+          "paragraphs": [
+            "It is essential that your organization ensures industry compliance if it’s handling sensitive data — this is particularly relevant to organizations that are routinely handling healthcare and financial-related information. By conducting a cloud security audit, we can help you identify any existing gaps in your security compliance and provide recommendations to remediate those gaps.",
+            "We only conduct our security audits after gaining a clear understanding of the cloud security policies that have been put in place by your cloud service provider and we will help you prepare for any upcoming security compliances that your organization intends to acquire down the road."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "CLOUD SECURITY AUDIT",
+              "description": "It is essential that your organization ensures industry compliance if it’s handling sensitive data — this is particularly relevant to organizations that are routinely handling healthcare and financial-related information. By conducting a cloud security audit, we can help you identify any existing ga",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "split",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-08adc96 services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        },
+        {
+          "tag": "h4",
+          "text": "Industry"
+        },
+        {
+          "tag": "h4",
+          "text": "Cloud Platforms"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+          "alt": "GPS Certified Cyber Guarding"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+          "alt": "GPS Certified CCSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+          "alt": "GSE"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+          "alt": "AWS Certified Security Specialty"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+          "alt": "Microsoft 365 Certified Azure Solutions Architect"
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Elite, Highly-trained Team"
+            }
+          ],
+          "paragraphs": [
+            "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+          ],
+          "lists": [],
+          "images": []
+        },
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h4",
+              "text": "Highly Trained, Highly Certified"
+            },
+            {
+              "tag": "h4",
+              "text": "Examples Include:"
+            },
+            {
+              "tag": "h4",
+              "text": "Industry"
+            },
+            {
+              "tag": "h4",
+              "text": "Cloud Platforms"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+              "alt": "GPS Certified Cyber Guarding"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+              "alt": "CISSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+              "alt": "GPS Certified CCSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+              "alt": "GSE"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+              "alt": "AWS Certified Security Specialty"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+              "alt": "Microsoft 365 Certified Azure Solutions Architect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-d8436f9 services-lifecycle elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Know Where You Are in Your Cloud Journey"
+        },
+        {
+          "tag": "h3",
+          "text": "Adopt a Secure Cloud Environment"
+        },
+        {
+          "tag": "h3",
+          "text": "Mature Your Cloud Security Capabilities"
+        },
+        {
+          "tag": "h3",
+          "text": "Remediate Cloud Vulnerabilities"
+        }
+      ],
+      "paragraphs": [
+        "Our Cloud Security Assessments are designed to help you understand your organization’s cloud readiness and/or the maturity level of your organizational cloud posture.",
+        "Better understand the obstacles to ensuring a secure migration to the cloud.",
+        "Gain a quantifiable assessment of your existing cloud estate with clear steps to improve and optimize.",
+        "Analyze your people, process and technology to identify and remediate cloud-related risks."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Know Where You Are in Your Cloud Journey"
+            },
+            {
+              "tag": "h3",
+              "text": "Adopt a Secure Cloud Environment"
+            },
+            {
+              "tag": "h3",
+              "text": "Mature Your Cloud Security Capabilities"
+            },
+            {
+              "tag": "h3",
+              "text": "Remediate Cloud Vulnerabilities"
+            }
+          ],
+          "paragraphs": [
+            "Our Cloud Security Assessments are designed to help you understand your organization’s cloud readiness and/or the maturity level of your organizational cloud posture.",
+            "Better understand the obstacles to ensuring a secure migration to the cloud.",
+            "Gain a quantifiable assessment of your existing cloud estate with clear steps to improve and optimize.",
+            "Analyze your people, process and technology to identify and remediate cloud-related risks."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "CLOUD SECURITY ASSESSMENT OUTCOMES",
+              "description": "Our Cloud Security Assessments are designed to help you understand your organization’s cloud readiness and/or the maturity level of your organizational cloud posture.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Adopt a Secure Cloud Environment",
+              "description": "Better understand the obstacles to ensuring a secure migration to the cloud.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Adopt a Secure Cloud Environment",
+              "description": "Better understand the obstacles to ensuring a secure migration to the cloud.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-88f515c elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Mark Gilman"
+        },
+        {
+          "tag": "h3",
+          "text": "GET IN TOUCH"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Us"
+        }
+      ],
+      "paragraphs": [
+        "Our team works side-by-side with you as your cybersecurity partner.",
+        "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+        "Security Manager"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+          "alt": "Nuance"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Terms of Service",
+          "href": "https://www.guidepointsecurity.com/terms-of-service/"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.guidepointsecurity.com/privacy-policy/"
+        },
+        {
+          "text": "CONTACT US",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Trusted Advisor"
+            },
+            {
+              "tag": "h3",
+              "text": "Mark Gilman"
+            }
+          ],
+          "paragraphs": [
+            "Our team works side-by-side with you as your cybersecurity partner.",
+            "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+            "Security Manager"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+              "alt": "Nuance"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "GET IN TOUCH"
+            },
+            {
+              "tag": "h3",
+              "text": "Contact Us"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-4e404da0 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Video"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Sheet"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Additional Resources"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Data Sheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Data Sheet"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Video"
+            },
+            {
+              "tag": "h3",
+              "text": "Data Sheet"
+            }
+          ],
+          "paragraphs": [
+            "View All >"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Additional Resources",
+              "description": "View All >",
+              "image": null,
+              "cta": "View All >",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-large size-large wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.g",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-large size-large wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.g",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-large size-large wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.g",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-large size-large wp-image-28679\" alt=\"\" /> Video",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-large size-large wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.g",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-large size-large wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.g",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-large size-large wp-image-28679\" alt=\"\" /> Video",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Data Sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data Sheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Data Sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data Sheet <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"http",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Data Sheet",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> Data Sheet",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Video",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg\" class=\"attachment-large size-large wp-image-28679\" alt=\"\" /> Video <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.g",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataTemplate": {
+    "slug": "cloud-security-assessments",
+    "title": "Understand Where You are in Your Cloud Security Journey",
+    "tagline": "Evaluate Your Cloud Security Environment",
+    "heroLabel": "Understand Where You are in Your Cloud Security Journey",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Safeguard Your Cloud",
+    "heroImage": "/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */",
+    "heroImageFallback": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Website_Refresh_Services_SUB_Pages_Cloud_Security_Assessments.png",
+    "description": "Gain an analysis of your cloud readiness and maturity level through a holistic review across various domains that maps to your information security program.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "Analyze Your Cloud Environment",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "Our health check service provides a look at your cloud environment from a people, process and technology perspective. We provide a comprehensive report and roadmap to remediating any issues discovered with a comprehensive cloud vulnerability assessment."
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+      "textLayoutHint": "checklist",
+      "inlineItems": []
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": [
+          "Technology: We examine your cloud environment against our cloud security framework, which combines industry standards like NIST, CCM and CSP controls along with our own controls.",
+          "People: We interview individuals who manage your cloud security assessments program to understand the strengths and weaknesses of your program.",
+          "Process: We review processes utilized by your team to secure the cloud environment."
+        ]
+      }
+    },
+    "outcomesSection": null,
+    "outcomes": [],
+    "certGroups": null,
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "role": "CLOUD HEALTH CHECK",
+      "company": "/* FILL IN */",
+      "personImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+      "companyLogo": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+      "alt": "GPS Certified Cyber Guarding",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+      "alt": "GPS Certified CCSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+      "alt": "GSE",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+      "alt": "AWS Certified Security Specialty",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+      "alt": "Microsoft 365 Certified Azure Solutions Architect",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-google-cloud-architect.png",
+      "alt": "GPS Certified Google Cloud Architect",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/AWS-CP-Security.png",
+      "alt": "AWS Consulting Partner Security",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 63
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+      "alt": "",
+      "width": 154,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+      "alt": "",
+      "width": 219,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Video_Customer_Success.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

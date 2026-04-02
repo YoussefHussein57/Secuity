@@ -167,7 +167,7 @@ const services = {
     },
   },
 
-  'secure-sdlc-program-review': {  // heroImage: local → /images/heroes/secure-sdlc-program-review.jpg
+  'secure-sdlc-program-review': {  // heroImage: local → /images/heroes/application-security.png
     parentService: 'application-security',
     title: 'Application Security Program Assessment',
     icon: 'bi-diamond',
@@ -175,7 +175,7 @@ const services = {
     heroLabel: 'APPLICATION SECURITY PROGRAM ASSESSMENT',
     heroHighlight: 'Holistic',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/secure-sdlc-program-review.jpg',
+    heroImage: '/images/heroes/application-security.png',
     description:
       "Assess the state of your application security program and communicate a roadmap of key initiatives to improve your program\u2019s maturity from IT and compliance to development and security.",
     useCases: {
@@ -477,7 +477,7 @@ const services = {
     heroLabel: 'AI-AUGMENTED APPLICATION SECURITY SERVICES',
     heroHighlight: 'Revolutionizing',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/ai-augmented-application-security.jpg',
+    heroImage: '/images/heroes/ai-augmented-application-security-ai.jpg',
     description:
       'Artificial Intelligence (AI) meets human expertise to reveal vulnerabilities, validate results and ensure secure, scalable application development.',
     useCases: {
@@ -649,7 +649,7 @@ const services = {
     heroLabel: 'APPLICATION SECURITY ASSESSMENTS',
     heroHighlight: 'Comprehensive',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/application-security-assessment.jpg',
+    heroImage: '/images/heroes/source-code-review.jpg',
     description:
       'Identify and verify application security risks within modern applications, back-end web services or thick clients by leveraging manual and automated application security assessments.',
     useCases: {
@@ -939,7 +939,7 @@ const services = {
     heroLabel: 'APPLICATION THREAT MODELING',
     heroHighlight: 'Proactive Approach',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/application-threat-modeling.jpg',
+    heroImage: '/images/heroes/application-security-as-a-service.jpg',
     description: 'We use application threat modeling solutions to help identify potential flaws and threats within your applications to create apps that are secure by design.',
     useCases: {
       label: 'APPLICATION THREAT MODELING OVERVIEW',
@@ -1071,7 +1071,7 @@ const services = {
     heroLabel: 'FUNDAMENTALS OF RECONNAISSANCE AND ATTACK SURFACE ANALYSIS',
     heroHighlight: 'Build',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/fundamentals-of-reconnaissance-and-attack-surface-analysis.jpg',
+    heroImage: '/images/heroes/mobile-application-security-assessment.jpg',
     description: 'Learn to systematically map, analyze and track web application attack surfaces with hands-on skills that elevate your reconnaissance precision and coverage.',
     useCases: {
       label: 'FUNDAMENTALS OF RECONNAISSANCE AND ATTACK SURFACE ANALYSIS TRAINING OVERVIEW',
@@ -1329,7 +1329,7 @@ const services = {
     heroLabel: 'SECURE DEVELOPMENT TRAINING',
     heroHighlight: 'Application Security',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/secure-development-training.jpg',
+    heroImage: '/images/heroes/ai-security-large-language-models.jpg',
     description: 'Learn how to build with security in mind, embedding it naturally into every line of code, so that secure practices become a natural part of the development process.',
     useCases: {
       label: 'SECURE DEVELOPMENT TRAINING OVERVIEW',
@@ -1571,11 +1571,11 @@ const services = {
   'ai-security': {
     title: 'Artificial Intelligence (AI)',
     icon: 'bi-cpu',
-    tagline: 'Confidently use AI to fuel organizational success.',
+    tagline: 'Protect Your Enterprise in the Age of AI',
     heroHighlight: 'Protect',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/cloud-security-strategy-architecture-services.jpg',
     description:
-      'Secure AI and use AI to secure everything else. Our technical and advisory services for AI help organizations securely and confidently incorporate AI technologies into their IT environment, use AI for threat hunting and response and better defend against AI-enhanced threats.',
+      'Secure AI adoption and use AI to strengthen your defenses. Our technical and advisory services help organizations confidently incorporate AI without introducing new risks.',
     stats: [
       { number: '78%', label: 'of organizations using AI lack security controls' },
       { number: '3x', label: 'increase in AI-targeted attacks in 2025' },
@@ -1674,7 +1674,7 @@ const services = {
     heroLabel: 'AI GOVERNANCE SERVICES',
     heroHighlight: 'Enable',
     heroCta: 'Manage Your Risk',
-    heroImage: '/images/heroes/ai-governance.jpg',
+    heroImage: '/images/heroes/ai-security-large-language-models-ai.png',
     description: 'Manage AI initiatives with confidence and reduce risk, better protect data and align technology adoption with your business goals. GuidePoint Security\'s AI Governance Services can help ensure that, as you bring AI technologies into your organization, you maintain security and compliance. The result: smarter decisions, safer data and accelerated growth.',
     useCases: {
       label: 'AI GOVERNANCE RISK LANDSCAPE',
@@ -1799,10 +1799,9 @@ const services = {
   'cloud-security': {
     title: 'Cloud Security',
     icon: 'bi-cloud',
-    tagline:
-      'Adapt cybersecurity to cloud transformation across your enterprise.',
+    tagline: 'Secure Your Cloud Transformation End to End',
     heroHighlight: 'Secure',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/ai-augmented-application-security-ai.jpg',
     description:
       'Our trusted technology experts can help drive a cloud strategy, ensure compliance and secure your cloud solution architecture aligned with business goals.',
     stats: [
@@ -1860,27 +1859,21 @@ const services = {
       },
     ],
     strategic: [
-      {
-        title: 'AWS Cloud Security Services',
-        description: 'Secure your Amazon Web Services cloud environment end-to-end',
-      },
-      { title: 'Google Cloud Security Services', description: 'Protect workloads and data across Google Cloud Platform' },
-      { title: 'SaaS Security Services', description: 'Safeguard your SaaS application ecosystem' },
-      { title: 'Microsoft Security Services', description: 'Maximize security across Microsoft 365 and Azure' },
-      { title: 'Multi-Cloud Security', description: 'Unify security controls across multiple cloud providers' },
+      { title: 'AWS Cloud Security Services', description: 'Secure your Amazon Web Services cloud environment end-to-end', path: '/services/aws-cloud-security-assessment-services' },
+      { title: 'Google Cloud Security Services', description: 'Protect workloads and data across Google Cloud Platform', path: '/services/google-cloud-security' },
+      { title: 'SaaS Security Services', description: 'Safeguard your SaaS application ecosystem', path: '/services/saas-security' },
+      { title: 'Microsoft Security Services', description: 'Maximize security across Microsoft 365 and Azure', path: '/services/microsoft-security-services' },
+      { title: 'Multi-Cloud Security', description: 'Unify security controls across multiple cloud providers', path: '/services/multi-cloud-security' },
     ],
     tactical: [
-      {
-        title: 'Cloud Security Assessments',
-        description: 'Evaluate cloud configurations and identify security gaps',
-      },
-      { title: 'Cloud Security Strategy Services', description: 'Develop a comprehensive cloud security roadmap' },
-      { title: 'Cloud Governance', description: 'Establish policies and controls for cloud resource management' },
-      { title: 'Cloud Security Engineering', description: 'Design and implement secure cloud architectures' },
-      { title: 'CNAPP Services', description: 'Cloud-native application protection platform services' },
-      { title: 'Container Security', description: 'Secure containerized workloads and orchestration platforms' },
-      { title: 'Digital Transformation', description: 'Enable secure digital transformation initiatives' },
-      { title: 'Zero Trust Workshops', description: 'Implement zero trust principles in your cloud environment' },
+      { title: 'Cloud Security Assessments', description: 'Evaluate cloud configurations and identify security gaps', path: '/services/cloud-security-assessments' },
+      { title: 'Cloud Security Strategy Services', description: 'Develop a comprehensive cloud security roadmap', path: '/services/cloud-security-strategy-architecture-services' },
+      { title: 'Cloud Governance', description: 'Establish policies and controls for cloud resource management', path: '/services/cloud-governance-solutions' },
+      { title: 'Cloud Security Engineering', description: 'Design and implement secure cloud architectures', path: '/services/cloud-security-engineering-services' },
+      { title: 'CNAPP Services', description: 'Cloud-native application protection platform services', path: '/services/cnapp-services' },
+      { title: 'Container Security', description: 'Secure containerized workloads and orchestration platforms', path: '/services/container-security' },
+      { title: 'Digital Transformation', description: 'Enable secure digital transformation initiatives', path: '/services/digital-transformation' },
+      { title: 'Zero Trust Workshops', description: 'Implement zero trust principles in your cloud environment', path: '/services/zero-trust-workshops' },
     ],
     managed: [],
     training: [],
@@ -1903,14 +1896,1215 @@ const services = {
     },
   },
 
+  'google-cloud-security': {
+    parentService: 'cloud-security',
+    title: 'Google Cloud Security Services',
+    icon: 'bi-cloud',
+    tagline: 'Ensure a strong security posture for your Google Cloud environment with expert-led consulting and implementation.',
+    heroLabel: 'GOOGLE CLOUD SECURITY',
+    heroHighlight: 'Security',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/google-cloud-security.jpg',
+    description:
+      'Our Google Cloud Security services provide the expertise and consulting to improve your security roadmap and strengthen your security posture.',
+    stats: [
+      { number: '100+', label: 'Google Cloud security engagements delivered' },
+      { number: '50%', label: 'of workforce are certified engineers and architects' },
+      { number: '3', label: 'core service pillars: health checks, engineering and workspace' },
+    ],
+    useCases: {
+      label: 'GOOGLE CLOUD SECURITY USE CASES',
+      title: 'When to Engage Google Cloud Security Services',
+      titleHighlight: 'Google Cloud',
+      subtitle:
+        'From migrating to GCP to hardening your Workspace environment, our certified experts help you implement a robust cloud security program.',
+      items: [
+        'Migrating workloads to Google Cloud Platform',
+        'Implementing GCP security controls from scratch',
+        'Assessing your current Google Cloud security posture',
+        'Securing your Google Workspace environment',
+        'Building infrastructure as code for GCP',
+      ],
+    },
+    splits: [
+      {
+        label: 'GOOGLE CLOUD SECURITY SERVICES: HEALTH CHECK',
+        title: 'Comprehensive Google Cloud Security Assessment',
+        titleHighlight: 'Comprehensive',
+        paragraphs: [
+          'With our CyberPoint Cloud Security Framework (CPCSF), we analyze the people, process and technology that support your Google Cloud security program and deliver a comprehensive report and roadmap.',
+          'Our security assessments provide detailed recommendations for improving your Google Cloud platform security roadmap.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+      },
+      {
+        label: 'GOOGLE CLOUD SECURITY SERVICES: ENGINEERING',
+        title: 'Hands-On Google Cloud Security Support',
+        titleHighlight: 'Hands-On',
+        paragraphs: [
+          'When you need a hands-on approach to build security programs inside of Google Cloud, our team of certified Google Cloud engineers and architects will help you deliver secure configurations, policies and infrastructure as code.',
+          'Our team can either help lead your cloud engineers or work alongside them. Our services are flexible and scalable to suit your unique needs.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+      },
+      {
+        label: 'GOOGLE CLOUD SECURITY SERVICES: GOOGLE WORKSPACE',
+        title: 'Assess Your Workspace Environment',
+        titleHighlight: 'Workspace',
+        paragraphs: [
+          'With our Google Workspace Security Health Check, we thoroughly assess your environment\'s people, processes and technology using our Cloud Security Framework and SaaS Security Framework.',
+          'Our team brings years of cloud experience, along with expertise in CIS, NIST and Google standards and guidelines.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AWS Solutions Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png' },
+          { name: 'AWS Security Specialty', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png' },
+          { name: 'Azure Cybersecurity Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'GOOGLE CLOUD SECURITY SERVICES OUTCOMES',
+      title: 'Strengthen Security with Google Cloud-Certified Expertise',
+      titleHighlight: 'Certified',
+      subtitle: 'Our Google Cloud Security services help you implement a robust GCP security program.',
+    },
+    outcomes: [
+      { icon: 'bi-search', title: 'Assess Your Environment', description: 'Evaluate your environment\'s people, process and technology and gain a comprehensive report to improve your security posture.' },
+      { icon: 'bi-tools', title: 'Benefit from Hands-on Expertise', description: 'Leverage our certified Google Cloud engineers to implement secure configurations and infrastructure as code.' },
+      { icon: 'bi-shield-check', title: 'Strengthen Your Program', description: 'Implement a strong GCP infrastructure and security program with expert guidance covering strategy and health checks.' },
+      { icon: 'bi-check2-circle', title: 'Maintain Compliance', description: 'Align your Google Cloud environment with CIS, NIST and Google standards and guidelines.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'aws-cloud-security-assessment-services': {
+    parentService: 'cloud-security',
+    title: 'AWS Cloud Security Assessment Services',
+    icon: 'bi-cloud',
+    tagline: 'Evolve the maturity of your AWS security program with expert-led assessment and engineering services.',
+    heroLabel: 'AWS CLOUD SECURITY ASSESSMENT SERVICES',
+    heroHighlight: 'AWS',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/aws-cloud-security-assessment-services.jpg',
+    description:
+      'Take advantage of our wide range of AWS cloud security assessment services to build a strong foundation for cloud computing.',
+    stats: [
+      { number: 'Advanced', label: 'AWS Consulting Partner tier status' },
+      { number: '4', label: 'program stages: Learn, Assess, Plan & Design and Build' },
+      { number: '100+', label: 'AWS security assessments delivered' },
+    ],
+    useCases: {
+      label: 'AWS SECURITY ASSESSMENT USE CASES',
+      title: 'When to Engage AWS Cloud Security Services',
+      titleHighlight: 'AWS',
+      subtitle:
+        'Many organizations have adopted AWS as their cloud provider. Our certified experts help you navigate this dynamic space and ensure a secure cloud environment.',
+      items: [
+        'Assessing your AWS security maturity and posture',
+        'Migrating infrastructure to Amazon Web Services',
+        'Implementing infrastructure-as-code security controls',
+        'Preparing for AWS compliance and certification audits',
+        'Building custom security policies and automation',
+      ],
+    },
+    splits: [
+      {
+        label: 'AWS CLOUD SECURITY ASSESSMENT SERVICES OVERVIEW',
+        title: 'Rely on Our AWS Expertise to Ensure a Secure Cloud Environment',
+        titleHighlight: 'Secure',
+        paragraphs: [
+          'Many organizations have adopted Amazon Web Services (AWS) as their cloud service provider and while AWS provides a wide range of cloud services, it can be overwhelming for security teams to keep up.',
+          'We are an Advanced AWS Consulting Partner and our team of AWS-certified experts can help you navigate this dynamic space and ensure that you have a secure cloud environment. From infrastructure-as-code to custom security controls and policies, we can help provide more maturity and security to solve some of the most complex AWS engineering problems.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+      },
+      {
+        label: 'AWS CLOUD SECURITY ASSESSMENT SERVICES APPROACH',
+        title: 'Build or Enhance Your AWS Cloud Security Program',
+        titleHighlight: 'Enhance',
+        paragraphs: [
+          'Our cloud security program is broken down into 4 stages: Learn, Assess, Plan & Design and Build. A critical part of securing a cloud environment is having a thorough understanding of the current state.',
+          'We offer multiple ways to assess your AWS environment including AWS Well-Architected Review, AWS Security Health Check, AWS Security Maturity Assessment and Cloud Penetration Testing.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+        checklist: [
+          'AWS Well-Architected Review',
+          'AWS Security Health Check',
+          'AWS Security Maturity Assessment',
+          'AWS Cloud Security Strategy',
+          'Secure Infrastructure CI/CD Pipeline',
+          'Infrastructure-as-Code',
+          'Policy-as-Code',
+          'Detective Controls',
+          'Preventative Controls',
+          'Auto-Remediation',
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AWS Solutions Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png' },
+          { name: 'AWS Security Specialty', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'AWS SECURITY OUTCOMES',
+      title: 'Achieve a Stronger AWS Security Posture',
+      titleHighlight: 'Stronger',
+      subtitle: 'Our AWS security services are designed to help organizations mature their cloud security program end-to-end.',
+    },
+    outcomes: [
+      { icon: 'bi-search', title: 'Assess', description: 'Gain a thorough understanding of your current AWS security state through comprehensive assessments.' },
+      { icon: 'bi-map', title: 'Plan & Design', description: 'Develop a full cloud cybersecurity strategy, prioritized roadmap and secure architectures for your environment.' },
+      { icon: 'bi-tools', title: 'Build', description: 'Have AWS and DevSecOps experts implement security controls directly into your AWS environment.' },
+      { icon: 'bi-book', title: 'Learn', description: 'Stay current with educational sessions including AWS Immersion Days and Security Gameday exercises.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'saas-security': {
+    parentService: 'cloud-security',
+    title: 'SaaS Security',
+    icon: 'bi-cloud',
+    tagline: 'Transform SaaS Security from Obstacle to Advantage',
+    heroLabel: 'SAAS SECURITY',
+    heroHighlight: 'Transform',
+    heroCta: 'Download Data Sheet',
+    heroImage: '/images/heroes/cloud-security-assessments.jpg',
+    description:
+      'Gain visibility, reduce risk and embed compliance-driven security into Software-as-a-Service (SaaS) operations for measurable, organization-wide protection.',
+    stats: [
+      { number: '100s', label: 'of SaaS applications in a typical enterprise environment' },
+      { number: '5', label: 'measurable outcomes: risk reduction, efficiency, compliance, innovation and resilience' },
+      { number: '3', label: 'frameworks: CIS, NIST and CSA CCM/SSCF aligned' },
+    ],
+    useCases: {
+      label: 'SAAS SECURITY SERVICES',
+      title: 'Proactive SaaS Risk Management at Scale',
+      titleHighlight: 'Proactive',
+      subtitle:
+        'Organizations rely on hundreds of SaaS applications, with each adding to inconsistent configuration controls, shadow IT proliferation and regulatory exposure that native security tools can\'t fully address. Our SaaS security services are designed to:',
+      items: [
+        'Take Control of SaaS Sprawl',
+        'Get Ahead of Third-Party Risk',
+        'Operationalize SaaS Security',
+        'Build a Scalable and Effective Program',
+      ],
+    },
+    splits: [
+      {
+        label: 'SAAS SECURITY OVERVIEW',
+        title: 'From Assessment to Action: Complete SaaS Security',
+        titleHighlight: 'Complete',
+        paragraphs: [
+          'Our SaaS security services help organizations gain visibility, reduce risk and maintain compliance across complex SaaS ecosystems. Enterprises often run hundreds of applications with inconsistent controls, shadow IT and regulatory exposure that native tools can\'t fully address.',
+          'By embedding security into operations, operationalizing SSPM insights and providing actionable guidance aligned to CIS, NIST and CSA CCM and SSCF frameworks, we empower organizations to confidently develop SaaS security programs, strengthen their security posture and achieve measurable, compliance-aligned outcomes. Our SaaS security services help organizations achieve measurable results, including:',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        checklist: [
+          'Reduced risk with comprehensive SaaS visibility and strategic improvements',
+          'Improved operational efficiency by centralizing SaaS security services',
+          'Compliance with a systematic and automated approach',
+          'Secure innovation through automated application onboarding and continuous monitoring',
+          'Cyber resilience by rapidly detecting SaaS security issues and responding quickly to security events',
+        ],
+      },
+      {
+        label: 'SAAS SECURITY HEALTH CHECK',
+        title: 'Gain Control Over Your SaaS Environment',
+        titleHighlight: 'Control',
+        paragraphs: [
+          'Securing SaaS ecosystems is not a one-size-fits-all proposition. Each organization has its own unique blend of cloud applications, compliance requirements and risk tolerance. That\'s why our SaaS security assessment process begins with a health check. We dive deep into each specific environment to fully understand business context, compliance needs and desired outcomes.',
+          'Our health check delivers a collaborative approach — working with stakeholders to understand the environment and define goals — plus deep discovery of overlooked vulnerabilities, and tailored recommendations aligned with industry frameworks and best practices.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+      },
+      {
+        label: 'INTEGRATION RISK ASSESSMENT',
+        title: 'Secure the Most Overlooked SaaS Attack Vector — The Integration Layer',
+        titleHighlight: 'Integration Layer',
+        paragraphs: [
+          'Third-party integrations represent one of the most significant and overlooked attack vectors in SaaS environments. Our integration risk assessment focuses specifically on evaluating the OAuth connections, API integrations and service accounts that have access to your critical SaaS platforms.',
+          'Trust our proven third-party risk reduction strategy to:',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Right.png',
+        checklist: [
+          'Discover third-party connections, access scopes, permissions and data exposures.',
+          'Identify potential security backdoors due to over-permissioned integrations, unmanaged connections and abandoned applications.',
+          'Strengthen the attack surface with actionable integration lifecycle management guidance and scalable permission revocation strategies.',
+        ],
+      },
+      {
+        label: 'SAAS SECURITY POSTURE MANAGEMENT',
+        title: 'Operationalize SaaS Security Posture Management',
+        titleHighlight: 'Operationalize',
+        paragraphs: [
+          'Visibility without action delivers no security value. Our risk monitoring advisory service goes beyond just identifying vulnerabilities.',
+          'We empower your team to operationalize your SaaS Security Posture Management (SSPM) tool and drive meaningful, ongoing risk reduction across your cloud application portfolio.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Continuous-Saas-Security-Operations.png',
+        checklist: [
+          'Structured Risk Reviews: Stay on top of security risks with regular risk reviews that provide insight into concerns and prioritized, actionable guidance to improve security posture.',
+          'Workflow Optimization: Streamline security operations with custom ticketing integrations, automated escalation processes and optimized workflows.',
+          'Executive Reporting: Demonstrate the value of SaaS security to stakeholders with metrics and dashboards that demonstrate the impact of security improvements across the organization.',
+        ],
+      },
+      {
+        label: 'SAAS SECURITY PROGRAM DEVELOPMENT',
+        title: 'Comprehensive Security for Complex SaaS Environments',
+        titleHighlight: 'Comprehensive',
+        paragraphs: [
+          'SaaS security program development is a set of comprehensive services that help organizations build a sustainable operating model for securing their SaaS application ecosystem.',
+          'With clarity, strategic guidance and execution, we take organizations from reactive to proactive security management across even the most complex SaaS environments. Services include: Baseline and Discovery (uncovering your full SaaS footprint and surfacing actionable risks), Strategic Design (policies, controls and governance aligned to regulatory demands), and Tailored Recommendations (repeatable procedures for onboarding, configuration monitoring and access governance).',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+      },
+    ],
+    certGroups: [],
+    outcomesSection: {
+      label: 'SAAS SECURITY OUTCOMES',
+      title: 'Proactive SaaS Risk Management at Scale',
+      titleHighlight: 'Proactive',
+      subtitle: 'Our SaaS security services are designed to help you take control, get ahead of risk and operationalize security.',
+    },
+    outcomes: [
+      { icon: 'bi-eye', title: 'Take Control of SaaS Sprawl', description: 'Gain comprehensive visibility across all SaaS applications and eliminate shadow IT exposure.' },
+      { icon: 'bi-shield', title: 'Get Ahead of Third-Party Risk', description: 'Proactively manage integration risk and vendor security across your SaaS ecosystem.' },
+      { icon: 'bi-gear', title: 'Operationalize SaaS Security', description: 'Embed security into SaaS operations with SSPM insights and continuous monitoring.' },
+      { icon: 'bi-graph-up', title: 'Build a Scalable Program', description: 'Develop a scalable, effective SaaS security program aligned with CIS, NIST and CSA frameworks.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'microsoft-security-services': {
+    parentService: 'cloud-security',
+    title: 'Microsoft Security Services',
+    icon: 'bi-cloud',
+    tagline: 'Maximize Your Microsoft Security Investment',
+    heroLabel: 'MICROSOFT SECURITY SERVICES',
+    heroHighlight: 'Maximize',
+    heroCta: 'Learn More',
+    heroImage: '/images/heroes/digital-transformation.jpg',
+    description:
+      'Our experts help organizations unlock the full potential of Microsoft tools. With expert guidance, we help transform underutilized capabilities into measurable security outcomes.',
+    stats: [
+      { number: '7', label: 'Microsoft security domains covered including cloud, endpoints and AI' },
+      { number: '100%', label: 'certified Microsoft Solutions Partner for Security' },
+      { number: '4', label: 'core service pillars: Uncover, Design, Build and Improve' },
+    ],
+    useCases: {
+      label: 'MICROSOFT SECURITY USE CASES',
+      title: 'When to Engage Microsoft Security Services',
+      titleHighlight: 'Microsoft',
+      subtitle:
+        'Despite comprehensive Microsoft security licenses, resource constraints and competing priorities often leave powerful features underutilized, creating security gaps.',
+      items: [
+        'Identifying underutilized Microsoft security tools and redundant coverage',
+        'Designing tailored, scalable security architectures with Microsoft 365',
+        'Deploying optimized Microsoft solutions aligned with business priorities',
+        'Measuring progress and enhancing ongoing Microsoft security protection',
+        'Securely harnessing the potential of Microsoft Copilot and AI tools',
+      ],
+    },
+    splits: [
+      {
+        label: 'EXPERT-LED MICROSOFT SECURITY SERVICES',
+        title: 'Expert Guidance. Measurable Results.',
+        titleHighlight: 'Expert',
+        paragraphs: [
+          'With rapid, diverse compute technology adoption comes increased pressure to secure complex environments at speed and scale. Our certified consultants bring deep Microsoft expertise and hands-on experience securing clouds, devices, applications, identities and AI applications.',
+          'As a certified Microsoft Solutions Partner for Security, we deliver proven guidance, seamless integration and measurable outcomes that strengthen your organization\'s security posture.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+      },
+      {
+        label: 'SECURELY HARNESS MICROSOFT COPILOT',
+        title: 'Securely Harness the Potential of Microsoft Copilot',
+        titleHighlight: 'Copilot',
+        paragraphs: [
+          'We help organizations ensure robust security, compliance and governance around Microsoft Copilot. With robust security, organizations can maximize AI productivity gains and innovation potential while minimizing risk.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+        checklist: [
+          'Comprehensive Security Evaluation: Assess AI model security, data protection mechanisms and access controls',
+          'Compliance Readiness: Validate the environment against regulatory requirements and governance frameworks',
+          'Strategic Implementation Planning: Develop a roadmap for secure Copilot integration',
+          'Risk Mitigation: Identify potential vulnerabilities in Copilot architectures',
+          'Adoption Optimization: Maximize ROI by ensuring technical and operational readiness',
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Microsoft Platforms',
+        certs: [
+          { name: 'Azure Cybersecurity Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png' },
+          { name: 'Microsoft 365 Azure Solutions', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png' },
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'MICROSOFT SECURITY OUTCOMES',
+      title: 'Secure More With Existing Tools',
+      titleHighlight: 'Secure',
+      subtitle: 'Our Microsoft Security Services uncover gaps, design for efficiency, build for outcomes and improve posture continuously.',
+    },
+    outcomes: [
+      { icon: 'bi-search', title: 'Uncover Gaps', description: 'Identify underutilized Microsoft tools and redundant security coverage across your environment.' },
+      { icon: 'bi-diagram-3', title: 'Design for Efficiency', description: 'Create tailored, scalable security architectures aligned with your Microsoft investment.' },
+      { icon: 'bi-tools', title: 'Build for Outcomes', description: 'Deploy optimized Microsoft security solutions aligned with your business priorities.' },
+      { icon: 'bi-graph-up', title: 'Improve Posture Continuously', description: 'Measure progress and enhance ongoing Microsoft security protection over time.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'multi-cloud-security': {
+    parentService: 'cloud-security',
+    title: 'Multi-Cloud Security Solutions',
+    icon: 'bi-cloud',
+    tagline: 'Build a Comprehensive Cloud Security Strategy',
+    heroLabel: 'MULTI-CLOUD SECURITY',
+    heroHighlight: 'Build',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/multi-cloud-security.jpg',
+    description:
+      'Our Multi-Cloud Security solutions will help you establish and maintain a strong security program to reduce risk, prevent threats and ensure the resiliency of your multi-cloud infrastructure.',
+    stats: [
+      { number: '93%', label: 'of organizations utilize more than one cloud service provider' },
+      { number: '3+', label: 'multi-cloud services: strategy, health check and maturity assessment' },
+      { number: '150+', label: 'risk and security controls reviewed in our cloud security framework' },
+    ],
+    useCases: {
+      label: 'MULTI-CLOUD SECURITY USE CASES',
+      title: 'When to Implement Multi-Cloud Security',
+      titleHighlight: 'Multi-Cloud',
+      subtitle:
+        'With 93% of organizations utilizing more than one cloud service provider, creating a comprehensive security strategy that spans all platforms is critical.',
+      items: [
+        'Operating across AWS, Azure and Google Cloud simultaneously',
+        'Establishing a unified security strategy across cloud providers',
+        'Validating cloud security posture against NIST and CSA standards',
+        'Building infrastructure as code for multi-cloud environments',
+        'Performing a multi-cloud security maturity assessment',
+      ],
+    },
+    splits: [
+      {
+        label: 'MULTI-CLOUD SECURITY SERVICES: STRATEGY & ARCHITECTURE',
+        title: 'Establish a Mature Cloud Security Program',
+        titleHighlight: 'Mature',
+        paragraphs: [
+          'A multi-cloud environment demands a more versatile security approach. Our team of expert cloud engineers and architects can help you establish a mature cloud security program.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+        checklist: [
+          'Infrastructure as Code',
+          'Policy as Code',
+          'CI/CD frameworks',
+          'Secure and resilient architectures for multi-cloud environments',
+          'Multi-cloud computing strategies, virtual computing, containerization, server-less architectures',
+        ],
+      },
+      {
+        label: 'MULTI-CLOUD SECURITY SERVICES: HEALTH CHECK',
+        title: 'Assess Your Cloud Security Posture',
+        titleHighlight: 'Assess',
+        paragraphs: [
+          'Our team of experts can help you validate your current cloud security posture and provide recommendations based on cloud and other security standards such as NIST, Cloud Security Alliance\'s CCM and GDPR, as well as our years of experience.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+      },
+      {
+        label: 'MULTI-CLOUD SECURITY SERVICES: MATURITY ASSESSMENT',
+        title: 'Assess Your Multi-Cloud Environment',
+        titleHighlight: 'Environment',
+        paragraphs: [
+          'Our team of cloud security experts can perform a multi-cloud maturity assessment of your environment, which provides you with a holistic view of your ecosystem, including your processes, people and technologies.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AWS Security Specialty', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png' },
+          { name: 'Azure Cybersecurity Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'MULTI-CLOUD SECURITY OUTCOMES',
+      title: 'Build a Comprehensive Cloud Security Strategy',
+      titleHighlight: 'Comprehensive',
+      subtitle: 'Our proprietary Cloud Security Framework is designed for multi-cloud architectures, creating technical harmony between distinct cloud services.',
+    },
+    outcomes: [
+      { icon: 'bi-shield-check', title: 'Unified Security Strategy', description: 'Create a comprehensive cloud security strategy that effectively spans all cloud platforms.' },
+      { icon: 'bi-search', title: 'Posture Validation', description: 'Validate your current cloud security posture against NIST, CCM, GDPR and industry standards.' },
+      { icon: 'bi-diagram-3', title: 'Multi-Cloud Harmony', description: 'Strike the right balance between CSP-native and multi-cloud tools and technologies.' },
+      { icon: 'bi-bar-chart', title: 'Maturity Assessment', description: 'Gain a holistic view of your multi-cloud ecosystem across processes, people and technologies.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'cloud-security-assessments': {
+    parentService: 'cloud-security',
+    title: 'Cloud Security Assessment Services',
+    icon: 'bi-cloud',
+    tagline: 'Understand Where You are in Your Cloud Security Journey',
+    heroLabel: 'CLOUD SECURITY ASSESSMENTS',
+    heroHighlight: 'Understand',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/cloud-security-assessments.jpg',
+    description:
+      'Gain an analysis of your cloud readiness and maturity level through a holistic review across various domains that maps to your information security program.',
+    stats: [
+      { number: '5', label: 'assessment types: readiness, maturity, health check, infrastructure and audit' },
+      { number: '3', label: 'review dimensions: technology, people and process' },
+      { number: '150+', label: 'risk and security controls evaluated per assessment' },
+    ],
+    useCases: {
+      label: 'CLOUD ASSESSMENT USE CASES',
+      title: 'When to Perform a Cloud Security Assessment',
+      titleHighlight: 'Cloud Security Assessment',
+      subtitle:
+        'The cloud provides many business and operational advantages, but you must understand your cloud readiness and maturity to ensure a security-first approach.',
+      items: [
+        'Planning your migration to a cloud-based environment',
+        'Measuring your cloud security maturity level',
+        'Evaluating cloud configurations and identifying security gaps',
+        'Preparing for cloud compliance and regulatory audits',
+        'Conducting a holistic review of your cloud security posture',
+      ],
+    },
+    splits: [
+      {
+        label: 'CLOUD READINESS ASSESSMENT',
+        title: 'Ensure You\'re Prepared in Your Cloud Migration',
+        titleHighlight: 'Prepared',
+        paragraphs: [
+          'Our Cloud Readiness Assessment gives your organization actionable steps to follow in order to successfully adopt a cloud-based environment. We\'ll work with you to better understand the current hurdles that must be overcome to successfully migrate to the cloud.',
+          'We evaluate the items your technology stack currently contains and the dependencies that need to be considered in your migration planning.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+      },
+      {
+        label: 'CLOUD MATURITY ASSESSMENT',
+        title: 'Gain a Quantified Snapshot of Your Current Cloud Estate',
+        titleHighlight: 'Quantified',
+        paragraphs: [
+          'For organizations that already have a cloud footprint, our Cloud Maturity Assessment provides a clear understanding of how far along you are in your journey toward the cloud.',
+          'Our maturity assessment is essential when you need to begin planning your progress and maturing your capabilities in the cloud — ideal for organizations both relatively new to the cloud and those that have already matured their activities.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+      },
+      {
+        label: 'CLOUD HEALTH CHECK',
+        title: 'Analyze Your Cloud Environment',
+        titleHighlight: 'Analyze',
+        paragraphs: [
+          'Our health check service provides a look at your cloud environment from a people, process and technology perspective. We provide a comprehensive report and roadmap to remediating any issues discovered.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+        checklist: [
+          'Technology: We examine your cloud environment against our cloud security framework, combining NIST, CCM and CSP controls',
+          'People: We interview individuals who manage your cloud security program to understand strengths and weaknesses',
+          'Process: We review processes utilized by your team to secure the cloud environment',
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AWS Security Specialty', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png' },
+          { name: 'Azure Cybersecurity Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'CLOUD ASSESSMENT OUTCOMES',
+      title: 'Evaluate Your Cloud Security Environment',
+      titleHighlight: 'Evaluate',
+      subtitle: 'Our portfolio of cloud security assessment services ensure you understand the current state of your environment and help guide you on your cloud security journey.',
+    },
+    outcomes: [
+      { icon: 'bi-check2-circle', title: 'Cloud Readiness', description: 'Gain actionable steps to successfully adopt a cloud-based environment for your organization.' },
+      { icon: 'bi-bar-chart', title: 'Cloud Maturity', description: 'Understand exactly how far along you are in your cloud journey with a quantified maturity snapshot.' },
+      { icon: 'bi-activity', title: 'Cloud Health Check', description: 'Receive a comprehensive report and roadmap for remediating issues across your cloud environment.' },
+      { icon: 'bi-shield-check', title: 'Cloud Security Audit', description: 'Validate your cloud configurations against industry standards and best practices.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'cloud-security-strategy-architecture-services': {
+    parentService: 'cloud-security',
+    title: 'Cloud Security Strategy & Architecture Services',
+    icon: 'bi-cloud',
+    tagline: 'Ensuring a "Security First" Cloud Environment',
+    heroLabel: 'CLOUD SECURITY STRATEGY & ARCHITECTURE SERVICES',
+    heroHighlight: '"Security First"',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/cloud-security-strategy-architecture-services.jpg',
+    description:
+      'Our team of experts can help you implement and maintain a "security first" architecture in your cloud environment and improve your cloud security maturity.',
+    stats: [
+      { number: '150+', label: 'risk and security controls in our cloud security framework' },
+      { number: '3', label: 'framework standards: CSA, CIS and operational best practices' },
+      { number: '100%', label: 'security-first approach to cloud environment design' },
+    ],
+    useCases: {
+      label: 'CLOUD STRATEGY USE CASES',
+      title: 'When to Develop a Cloud Security Strategy',
+      titleHighlight: 'Cloud Security Strategy',
+      subtitle:
+        'With the continuous evolution of cloud computing, keeping your security strategy controls and processes up to speed is increasingly challenging.',
+      items: [
+        'Aligning with emerging cloud compliance standards and programs',
+        'Minimizing the complexity of your cloud environment',
+        'Reducing security risks within your cloud infrastructure',
+        'Selecting the right cloud service providers for your organization',
+        'Establishing an automated, security-first cloud architecture',
+      ],
+    },
+    splits: [
+      {
+        label: 'CLOUD SECURITY STRATEGY APPROACH',
+        title: 'Having the Right Cloud Security Strategy Requires the Right Framework',
+        titleHighlight: 'Framework',
+        paragraphs: [
+          'We\'ve developed a unique cloud security controls framework that assists you in creating a secure cloud environment and outlines key objectives. Our framework reviews over 150 risk and security controls based on the Cloud Security Alliance (CSA), CIS and our own operational experiences.',
+          'With the guidance of our cloud security controls, your organization will be better able to track your services in the cloud and ensure they are all properly and securely configured.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+      },
+      {
+        label: 'CLOUD SECURITY STRATEGY CONSIDERATIONS',
+        title: 'Select the Cloud Service Providers that Best Fit Your Program',
+        titleHighlight: 'Cloud Service Providers',
+        paragraphs: [
+          'We help you decide on the infrastructure and services needed to determine which cloud service providers are the right fit for your organization and environment.',
+          'We help you consider areas including cloud providers\' certifications and standards, policies on data governance and security, reputations for reliability, key technologies used and partnerships and service dependencies.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AWS Solutions Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png' },
+          { name: 'Azure Cybersecurity Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'CLOUD STRATEGY OUTCOMES',
+      title: 'Ensure the Right Cloud Security Controls are in Place',
+      titleHighlight: 'Controls',
+      subtitle: 'Our security-first approach arms you with the right framework and best-fit tools to continuously monitor and manage risks and threats.',
+    },
+    outcomes: [
+      { icon: 'bi-shield-check', title: 'Comply with Standards', description: 'Align with emerging cloud security standards and compliance programs across your environment.' },
+      { icon: 'bi-diagram-3', title: 'Minimize Complexity', description: 'Streamline your cloud environment architecture to reduce overhead and operational burden.' },
+      { icon: 'bi-lock', title: 'Reduce Risk', description: 'Implement automated controls that continuously monitor and manage cloud security risks and threats.' },
+      { icon: 'bi-check2-circle', title: 'Select the Right Providers', description: 'Make informed cloud provider decisions based on certifications, governance policies and reliability.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'cloud-governance-solutions': {
+    parentService: 'cloud-security',
+    title: 'Cloud Governance Solutions',
+    icon: 'bi-cloud',
+    tagline: 'Align your cloud security goals and gain the knowledge to understand cloud computing risks through a modern governance approach.',
+    heroLabel: 'CLOUD GOVERNANCE SOLUTIONS',
+    heroHighlight: 'Governance',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/cloud-security-engineering-services.jpg',
+    description:
+      'Gain the necessary knowledge to understand cloud computing risks through a modern approach to risk assessment and security analysis.',
+    stats: [
+      { number: '5', label: 'phase methodology for cloud governance implementation' },
+      { number: '3', label: 'teams aligned: GRC, security and cloud operations' },
+      { number: '100%', label: 'focus on enabling safe, fast cloud adoption' },
+    ],
+    useCases: {
+      label: 'CLOUD GOVERNANCE USE CASES',
+      title: 'When to Implement Cloud Governance',
+      titleHighlight: 'Cloud Governance',
+      subtitle:
+        'Cloud environments are in constant flux. Organizations must evaluate new capabilities and features against security, budgetary and regulatory requirements.',
+      items: [
+        'Overseeing control and direction of cloud services organization-wide',
+        'Managing risk while enabling the benefits of cloud computing',
+        'Aligning cloud teams with security and GRC requirements',
+        'Implementing a five-phase cloud governance methodology',
+        'Building organizational policies and standards for cloud adoption',
+      ],
+    },
+    splits: [
+      {
+        label: 'CLOUD GOVERNANCE METHODOLOGY',
+        title: 'Ensure Cloud Governance With Our Five Phase Methodology',
+        titleHighlight: 'Five Phase Methodology',
+        paragraphs: [
+          'Since the inception of cloud computing, administrators, engineers and builders can extend the data center too easily. Our team of experts leverage our five-phase methodology to ensure your organization has a properly implemented Cloud Governance solution.',
+          'Our unique methodology ensures your organization meets the requirements that are critical for managing operations and security risk by bringing together your GRC, security and cloud teams.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+      },
+      {
+        label: 'CLOUD GOVERNANCE PROCESS',
+        title: 'The Right Approach to Cloud Governance Services',
+        titleHighlight: 'Right Approach',
+        paragraphs: [
+          'Our approach to cloud security will build an understanding of your business goals for cloud adoption, guide you in creating organizational policies and standards for those goals and ensure your cloud systems meet those requirements as well as security and compliance best practices.',
+          'Throughout the process, we act as your trusted advisor. Our Cloud Governance approach rests on the shoulders of our Governance and Risk Practice and helps you carry the heavy elements on the organizational side.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'GSE', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png' },
+          { name: 'AWS Security Specialty', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'CLOUD GOVERNANCE OUTCOMES',
+      title: 'Implement a Modern Approach to Cloud Security Governance',
+      titleHighlight: 'Modern',
+      subtitle: 'Our cloud governance solution gives you the ability to make informed decisions that will allow your organization to safely move at the speed of the cloud.',
+    },
+    outcomes: [
+      { icon: 'bi-sliders', title: 'Oversee Control', description: 'Establish direction and control of cloud services across your organization with clear governance policies.' },
+      { icon: 'bi-shield', title: 'Manage Risk', description: 'Manage cloud security risk while enabling the full benefits of cloud computing innovation.' },
+      { icon: 'bi-check2-circle', title: 'Enable Decisions', description: 'Become an organization of "know" instead of "no" with data-driven cloud governance.' },
+      { icon: 'bi-people', title: 'Align Teams', description: 'Bring together your GRC, security and cloud teams to meet critical operational and security requirements.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'cloud-security-engineering-services': {
+    parentService: 'cloud-security',
+    title: 'Cloud Security Engineering Services',
+    icon: 'bi-cloud',
+    tagline: 'Engineer your cloud journey to ensure security with certified specialists who scale to meet your unique needs.',
+    heroLabel: 'CLOUD SECURITY ENGINEERING SERVICES',
+    heroHighlight: 'Engineering',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/cloud-security-engineering-services.jpg',
+    description:
+      'Gain access to the expertise and resources you need to deliver on your cloud security roadmap.',
+    stats: [
+      { number: '3+', label: 'cloud platforms: AWS, Azure and Google Cloud certified specialists' },
+      { number: '100%', label: 'security-first approach to cloud architecture and implementation' },
+      { number: 'Scalable', label: 'resources from day-to-day guidance to full engineering team' },
+    ],
+    useCases: {
+      label: 'CLOUD ENGINEERING USE CASES',
+      title: 'When to Engage Cloud Security Engineering Services',
+      titleHighlight: 'Cloud Security Engineering',
+      subtitle:
+        'The increasing prevalence of cloud services makes it critical for organizations to invest in cloud engineering and security expertise.',
+      items: [
+        'Complying with emerging cloud security standards and compliance programs',
+        'Meeting internal and external policies and regulatory requirements',
+        'Interfacing with external auditors and key stakeholders',
+        'Accelerating your migration to a cloud computing environment',
+        'Adopting native cloud services and implementing modern DevSecOps practices',
+      ],
+    },
+    splits: [
+      {
+        label: 'CLOUD SECURITY ENGINEERING EXPERTISE',
+        title: 'Our Cloud Security Engineering Services Can Scale to Meet Your Unique Needs',
+        titleHighlight: 'Scale',
+        paragraphs: [
+          'Our highly-certified AWS, Azure and Google Cloud security specialists are available whether you are just looking for day-to-day guidance or a full cloud security engineering team. We work with you hand-in-hand to scale our cloud platform and infrastructure engineering resources to meet your cloud network security needs.',
+          'Our team of cloud-native specialists and cloud-certified architects rely on a deep understanding of cloud-native services as well as a security-first approach to accelerate your migration and help you adopt native cloud services and implement modern practices.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+      },
+      {
+        label: 'CLOUD SECURITY ENGINEERING SUPPORT',
+        title: 'Cloud Engineering Services to Improve Compliance',
+        titleHighlight: 'Compliance',
+        paragraphs: [
+          'The speed at which organizations are migrating to cloud computing environments has not gone unnoticed by regulatory agencies. Our cloud engineering services can help your organization improve its compliance with industry regulations and standards.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+        checklist: [
+          'Reducing your general business risk and risk of non-compliance',
+          'Avoiding interruptions to operations when cloud security audits are announced',
+          'Giving you a competitive edge against competitors who lack backups of cloud-based applications and data',
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AWS Solutions Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png' },
+          { name: 'Azure Cybersecurity Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'CLOUD ENGINEERING OUTCOMES',
+      title: 'Our Team of Cloud Security Engineers are Ready to Execute on Your Vision',
+      titleHighlight: 'Execute',
+      subtitle: 'We thoroughly analyze your cloud architecture to develop a robust cloud security roadmap and strategy while ensuring productivity remains uninterrupted.',
+    },
+    outcomes: [
+      { icon: 'bi-shield-check', title: 'Comply with Standards', description: 'Meet emerging cloud security standards and compliance programs across your cloud environment.' },
+      { icon: 'bi-file-check', title: 'Meet Requirements', description: 'Satisfy internal and external policies and regulatory requirements for your cloud infrastructure.' },
+      { icon: 'bi-people', title: 'Engage Stakeholders', description: 'Interface effectively with external auditors and key stakeholders throughout the process.' },
+      { icon: 'bi-rocket', title: 'Accelerate Migration', description: 'Accelerate your cloud migration while implementing modern, secure cloud-native practices.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'container-security': {
+    parentService: 'cloud-security',
+    title: 'Container Security Services',
+    icon: 'bi-cloud',
+    tagline: 'Ensure strong security controls for your cloud containers with expert guidance from planning to production.',
+    heroLabel: 'CONTAINER SECURITY SERVICES',
+    heroHighlight: 'Container',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/aws-cloud-security-assessment-services.jpg',
+    description:
+      'Our team of container security experts can ensure that security is built into your approach to leveraging container technology.',
+    stats: [
+      { number: '9+', label: 'container security project types we support' },
+      { number: '100%', label: 'security-first approach to containerized workloads' },
+      { number: 'Multi-cloud', label: 'container strategy support across all major platforms' },
+    ],
+    useCases: {
+      label: 'CONTAINER SECURITY USE CASES',
+      title: 'When to Engage Container Security Services',
+      titleHighlight: 'Container Security',
+      subtitle:
+        'Container technology provides resilient, scalable and flexible environments — but with that power comes a new series of security controls and strategies.',
+      items: [
+        'Building a secure CI/CD pipeline for containerized workloads',
+        'Automating and stabilizing your container ecosystem',
+        'Implementing container orchestration with security controls',
+        'Moving containers to production with strong security between environments',
+        'Implementing a secure multi-cloud container strategy',
+      ],
+    },
+    splits: [
+      {
+        label: 'CONTAINER SECURITY SERVICES OVERVIEW',
+        title: 'Leverage Container Security Best Practices',
+        titleHighlight: 'Best Practices',
+        paragraphs: [
+          'Container technology has been one of the leading innovations for providing IT operations with more resilient, scalable and flexible environments. With that power comes a new series of security controls and strategies.',
+          'Our team has deep expertise and knowledge of container technologies. We can help you secure and stabilize your container ecosystem and secure every aspect of your development and delivery pipeline.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+      },
+      {
+        label: 'CONTAINER SECURITY EXPERTISE',
+        title: 'We Can Help With Your Container Security Projects',
+        titleHighlight: 'Projects',
+        paragraphs: [
+          'From planning your cloud and container roadmap to helping implement a production environment, our team of certified cloud security practitioners can help you with container-related projects across CI/CD pipeline development, container environment automation, container portability, resource efficiency and multi-cloud strategy.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+        checklist: [
+          'CI/CD Pipeline Development',
+          'Container Environment Automation',
+          'Container Portability',
+          'Resource Efficiency and Density',
+          'Container Orchestration',
+          'Public Cloud, On-Prem Support',
+          'Multi-Cloud Strategy',
+          'Microservice Architecture',
+          'Traditional Application Migration to Microservices',
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AWS Security Specialty', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png' },
+          { name: 'Azure Cybersecurity Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'CONTAINER SECURITY OUTCOMES',
+      title: 'Ensure Strong Container Security Controls',
+      titleHighlight: 'Controls',
+      subtitle: 'Our container security services help you take advantage of modern application architectures in the cloud with security built in from the start.',
+    },
+    outcomes: [
+      { icon: 'bi-shield-check', title: 'Secure Your Pipeline', description: 'Build or enhance your secure DevOps model to ensure your container strategy is more resilient and compliant.' },
+      { icon: 'bi-gear', title: 'Automate Securely', description: 'Create a secure, automated environment that ensures stability and compliance in your container program.' },
+      { icon: 'bi-diagram-3', title: 'Orchestrate at Scale', description: 'Implement a comprehensive solution to manage containerized computing resources and ensure resilience.' },
+      { icon: 'bi-cloud', title: 'Multi-Cloud Support', description: 'Implement a secure multi-cloud container strategy across any cloud environment.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'digital-transformation': {
+    parentService: 'cloud-security',
+    title: 'Digital Transformation Services',
+    icon: 'bi-cloud',
+    tagline: 'Ensure security is included in your digital transformation journey with the right strategy, expertise and toolsets.',
+    heroLabel: 'DIGITAL TRANSFORMATION SERVICES',
+    heroHighlight: 'Digital',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/digital-transformation.jpg',
+    description:
+      'We can help you ensure that security is baked into your digital transformation program.',
+    stats: [
+      { number: '6', label: 'cloud platform solutions: AWS, Azure, Google, Multi-Cloud, Oracle, SaaS' },
+      { number: '150+', label: 'risk and security controls reviewed in our framework' },
+      { number: '3', label: 'core services: Cloud Assessments, Strategy and DevOps' },
+    ],
+    useCases: {
+      label: 'DIGITAL TRANSFORMATION USE CASES',
+      title: 'When to Engage Digital Transformation Security Services',
+      titleHighlight: 'Digital Transformation',
+      subtitle:
+        'Digital transformation provides organizations with robust architectures allowing agility and scalability at speeds never seen before — but security must be built in from the start.',
+      items: [
+        'Migrating and modernizing infrastructure to cloud environments',
+        'Embedding security into your DevOps and CI/CD programs',
+        'Evaluating cloud security maturity and readiness for transformation',
+        'Building secure cloud-native architectures for agile development',
+        'Selecting the right cloud providers and security tools for your program',
+      ],
+    },
+    splits: [
+      {
+        label: 'DIGITAL TRANSFORMATION OVERVIEW',
+        title: 'Empower Your Digital Transformation with the Right Strategy, Expertise and Tools',
+        titleHighlight: 'Strategy',
+        paragraphs: [
+          'Digital transformation has provided organizations with a robust architecture allowing agility and scalability at speeds never seen before. With this new approach to computing comes a new way to think about security.',
+          'We can provide you with the right strategy, expertise and toolsets to help you navigate your digital transformation program.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+      },
+      {
+        label: 'DIGITAL TRANSFORMATION SERVICES',
+        title: 'We Can Help With Your Digital Transformation',
+        titleHighlight: 'Digital Transformation',
+        paragraphs: [
+          'Our digital transformation services include Cloud Security Assessments that provide a scored report evaluating the maturity level of your organizational posture for the cloud, and Cloud Security Strategy and Architecture that leverages our unique controls framework to help determine the right infrastructure and services.',
+          'Our Cloud DevOps service provides you with strategy and implementation on the right tools, process and skills to implement a full DevOps environment in the cloud with a security-first mindset.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+      },
+    ],
+    certGroups: [
+      {
+        category: 'Cloud Platforms',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'CCSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png' },
+          { name: 'AWS Security Specialty', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png' },
+          { name: 'Azure Cybersecurity Architect', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'DIGITAL TRANSFORMATION OUTCOMES',
+      title: 'Solutions to Meet Your Cloud Environment',
+      titleHighlight: 'Solutions',
+      subtitle: 'We are an Advanced AWS Consulting Partner and our cloud security services are designed to help further mature your digital transformation.',
+    },
+    outcomes: [
+      { icon: 'bi-search', title: 'Cloud Security Assessments', description: 'Receive a scored report evaluating the maturity level of your organizational posture for the cloud.' },
+      { icon: 'bi-map', title: 'Cloud Security Strategy', description: 'Leverage our controls framework to determine the right infrastructure, services and cloud providers.' },
+      { icon: 'bi-gear', title: 'Cloud DevOps', description: 'Implement a full DevOps environment in the cloud with a security-first mindset baked into the process.' },
+      { icon: 'bi-cloud', title: 'Multi-Platform Support', description: 'Access security services across AWS, Azure, Google Cloud, Multi-Cloud and SaaS environments.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'zero-trust-workshops': {
+    parentService: 'cloud-security',
+    title: 'Zero Trust Workshops & Consulting Services',
+    icon: 'bi-cloud',
+    tagline: 'Establish your roadmap for Zero Trust adoption through iterative, manageable steps designed to meet your unique requirements.',
+    heroLabel: 'ZERO TRUST WORKSHOPS AND CONSULTING SERVICES',
+    heroHighlight: 'Zero Trust',
+    heroCta: 'Safeguard Your Cloud',
+    heroImage: '/images/heroes/google-cloud-security.jpg',
+    description:
+      'Our Zero Trust Workshops are designed to help your organization incrementally adopt a "never trust, always verify" approach to security.',
+    stats: [
+      { number: '5', label: 'phase approach: Identify, Assess, Plan, Implement and Operate' },
+      { number: '0', label: 'full re-architecture required to achieve Zero Trust security' },
+      { number: '100%', label: 'least-privilege access model for your mobile workforce' },
+    ],
+    useCases: {
+      label: 'ZERO TRUST USE CASES',
+      title: 'When to Implement a Zero Trust Strategy',
+      titleHighlight: 'Zero Trust',
+      subtitle:
+        'A Zero Trust security model is an end-to-end strategy around least-privilege that involves integrating identity, infrastructure, monitoring, analytics and automation.',
+      items: [
+        'Understanding your Zero Trust maturity level and readiness',
+        'Driving adoption of critical capabilities in interactive steps',
+        'Optimizing existing controls to align with risk reduction goals',
+        'Securing cloud access for your mobile and remote workforce',
+        'Implementing Zero Trust Network Access (ZTNA) use cases',
+      ],
+    },
+    splits: [
+      {
+        label: 'ZERO TRUST WORKSHOPS: METHODOLOGY',
+        title: 'Achieve Zero Trust with Our Customized 5-Phase Approach',
+        titleHighlight: '5-Phase',
+        paragraphs: [
+          'We will help accelerate your Zero Trust adoption by working with you to understand your inventory of business assets, configure your access management, IGA and PAM solutions, ensure you have the necessary visibility into your network and application traffic, and optimize, centralize and automate your policies.',
+          'Our workshops employ a proven 5-phased approach that is customized to meet your specific requirements and environmental challenges — all without re-architecting your entire network.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png',
+      },
+      {
+        label: 'ZERO TRUST WORKSHOPS: NETWORK ACCESS',
+        title: 'Securing the Cloud for Your Mobile Workforce',
+        titleHighlight: 'Mobile Workforce',
+        paragraphs: [
+          'In cloud-based scenarios, organizations should consider a least-privilege access model. Our team of Zero Trust experts leverages a defined framework to establish business requirements for the mobile workforce\'s secure access to organizational assets — regardless of where they are located.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png',
+        checklist: [
+          'Ensure strong identity and enforcement capabilities are tightly integrated with existing security tools and processes',
+          'Develop various Zero Trust Network Access (ZTNA) use cases and determine what controls are already in place or need to be implemented',
+          'Integrate and optimize services to design, implement and support ZTNA use cases',
+        ],
+      },
+    ],
+    certGroups: [],
+    outcomesSection: {
+      label: 'ZERO TRUST OUTCOMES',
+      title: 'Incrementally Build the Right Zero Trust Strategy',
+      titleHighlight: 'Incrementally',
+      subtitle: 'Our Zero Trust Workshops are designed to facilitate your journey through iterative, manageable steps toward a never trust, always verify security model.',
+    },
+    outcomes: [
+      { icon: 'bi-bar-chart', title: 'Understand Your Maturity', description: 'Assess your Zero Trust maturity level and develop a roadmap to enhance your transformation.' },
+      { icon: 'bi-arrow-right-circle', title: 'Drive Adoption', description: 'Adopt critical Zero Trust capabilities through interactive, iterative steps tailored to your environment.' },
+      { icon: 'bi-sliders', title: 'Optimize Controls', description: 'Optimize existing security controls to align with your specific risk reduction goals.' },
+      { icon: 'bi-lock', title: 'Secure Access', description: 'Implement least-privilege access for your mobile workforce regardless of their location.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
+  'cnapp-services': {
+    parentService: 'cloud-security',
+    title: 'CNAPP Services',
+    icon: 'bi-cloud',
+    tagline: 'Security across your organization — safeguarding every layer of your cloud-native applications with visibility, control and proactive threat protection.',
+    heroLabel: 'CLOUD NATIVE APPLICATION PROTECTION PLATFORM (CNAPP) SERVICES',
+    heroHighlight: 'CNAPP',
+    heroCta: 'Secure Your Cloud Applications',
+    heroImage: '/images/heroes/multi-cloud-security.jpg',
+    description:
+      'Cloud-native growth demands security first. Our CNAPP services safeguard every layer of your cloud apps, delivering visibility, control and proactive threat protection to drive secure innovation and meet your goals with confidence.',
+    stats: [
+      { number: '43%', label: 'of organizations identified misconfigurations of permissions as their top multi-cloud concern' },
+      { number: '85%', label: 'of enterprises struggle to prioritize cloud security events due to alert volume' },
+      { number: '45%', label: 'faster mean time to detect (MTTD) by organizations leveraging CNAPPs' },
+    ],
+    useCases: {
+      label: 'CNAPP USE CASES',
+      title: 'When to Implement CNAPP Services',
+      titleHighlight: 'CNAPP',
+      subtitle:
+        'Cloud-native growth demands a proactive approach to application security. Our CNAPP expertise delivers seamless security integration, empowering you with streamlined protection.',
+      items: [
+        'Implementing a proactive CNAPP strategy across cloud-native applications',
+        'Managing threat detection and response for cloud workloads',
+        'Automating vulnerability management across cloud environments',
+        'Enforcing identity and access management controls at scale',
+        'Achieving compliance and governance across cloud-native deployments',
+      ],
+    },
+    splits: [
+      {
+        label: 'CNAPP ENABLEMENT SERVICES',
+        title: 'Comprehensive Cloud Security Support',
+        titleHighlight: 'Comprehensive',
+        paragraphs: [
+          'Our CNAPP Enablement Services empower your organization to fully secure cloud-native applications at every development and deployment phase. With reduced risks and enhanced protection, you can confidently maximize the flexibility and scalability of the cloud to drive innovation and growth.',
+          'Our experts work closely with your security, development and operations teams to build a holistic CNAPP strategy, ensuring every layer of your cloud application is protected.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png',
+        checklist: [
+          'Threat Detection and Response: Continuous real-time monitoring to detect and respond to security events',
+          'Vulnerability Management: Automated tools and processes to identify, assess and remediate vulnerabilities across cloud environments',
+          'Identity and Access Management: Robust controls for identity verification, access permissions and user management',
+          'Compliance and Governance: Frameworks and policies to ensure adherence to regulatory requirements and internal security standards',
+        ],
+      },
+      {
+        label: 'BENEFITS OF CNAPP SERVICES',
+        title: 'Benefits of CNAPP Services',
+        titleHighlight: 'Benefits',
+        paragraphs: [
+          'Our custom services bring comprehensive protection to your cloud-native application. Whether you need help identifying the right CNAPP solution, implementing and customizing it or optimizing and maintaining it, we provide comprehensive, adaptable support.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_SOC_Left_Revised.png',
+        checklist: [
+          'Enhanced Threat Visibility: Gain full visibility into your cloud applications, identifying vulnerabilities and misconfigurations before they become threats',
+          'Streamlined Compliance: Simplify regulatory compliance with automated policy enforcement and continuous monitoring',
+          'Optimized Cloud Security Operations: Integrate and automate security workflows to enhance operational efficiency',
+          'Proactive Mitigation: Shift to a proactive security approach, identifying and addressing risks earlier in the development lifecycle',
+        ],
+      },
+    ],
+    certGroups: [
+      {
+        category: 'CNAPP Certifications',
+        certs: [
+          { name: 'CISSP', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png' },
+          { name: 'GCSA', image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/02/GCSA-e1739297364848.png' },
+        ],
+      },
+    ],
+    outcomesSection: {
+      label: 'CNAPP OUTCOMES',
+      title: 'A Proactive Approach to CNAPP',
+      titleHighlight: 'Proactive',
+      subtitle: 'Our CNAPP expertise delivers seamless security integration, empowering you with streamlined protection, unified governance and proactive threat management.',
+    },
+    outcomes: [
+      { icon: 'bi-eye', title: 'Enhanced Threat Visibility', description: 'Gain full visibility into your cloud applications, identifying vulnerabilities and misconfigurations before they become threats.' },
+      { icon: 'bi-check2-circle', title: 'Streamlined Compliance', description: 'Simplify regulatory compliance with automated policy enforcement and continuous monitoring.' },
+      { icon: 'bi-gear', title: 'Optimized Operations', description: 'Integrate and automate security workflows to enhance operational efficiency across cloud environments.' },
+      { icon: 'bi-shield-fill-check', title: 'Proactive Mitigation', description: 'Shift to a proactive security approach, identifying and addressing risks earlier in the development lifecycle.' },
+    ],
+    testimonial: {
+      quote: 'CyberPoint Security is basically family. They\'re always there when I need them. At the end of the day CyberPoint is always there to help and that\'s how they add value.',
+      author: 'Mark Gilman',
+      company: 'Security Manager',
+      personImage: '/images/testimonials/mark-gilman.png',
+      companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png',
+    },
+  },
+
   'data-security': {
     title: 'Data Security & Privacy',
     icon: 'bi-database',
-    tagline: 'Overcome data security challenges & improve data protection to fit your needs & environment.',
+    tagline: 'Protect Your Most Sensitive Data Everywhere',
     heroHighlight: 'Protect',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/source-code-review.jpg',
     description:
-      'Better protect your data with tailored Data Security, Data Privacy and AI Governance services. We enable organizations to identify, classify and secure sensitive information across complex environments, align with industry best practices and comply with global, Federal and U.S. state laws and regulations.',
+      'Identify, classify and secure sensitive data across complex environments. Our Data Security and Privacy services align with global regulations and help you build a resilient data protection program.',
     stats: [
       { number: '$4.45M', label: 'average cost of a data breach (IBM 2025)' },
       { number: '83%', label: 'of breaches involve data in the cloud' },
@@ -1999,9 +3193,9 @@ const services = {
   'email-security': {
     title: 'Email Security',
     icon: 'bi-envelope-check',
-    tagline: 'Ensure the protection of email content & accounts from unauthorized access.',
+    tagline: 'Defend Your Inbox Against Advanced Threats',
     heroHighlight: 'Defend',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/multi-cloud-security.jpg',
     description:
       'Email Security services help protect content, accounts and infrastructure from threats like phishing, malware and data loss.',
     stats: [
@@ -2087,12 +3281,11 @@ const services = {
   'endpoint-security': {
     title: 'Endpoint Security',
     icon: 'bi-pencil',
-    tagline:
-      'Identify & manage the right endpoint security technologies for your unique requirements.',
+    tagline: 'Protect Every Endpoint Across Your Enterprise',
     heroHighlight: 'Protect',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/application-security.png',
     description:
-      'Our comprehensive Endpoint Security Services help protect, detect and remediate threats like ransomware. Full lifecycle endpoint security services span selection, implementation, integration and optimization.',
+      'Detect, contain and remediate endpoint threats including ransomware across your entire device fleet. Full lifecycle services spanning selection, implementation and ongoing optimization.',
     stats: [
       { number: '70%', label: 'of breaches originate at the endpoint' },
       { number: '500K+', label: 'endpoints under our protection' },
@@ -2178,12 +3371,11 @@ const services = {
   'grc': {
     title: 'Governance, Risk & Compliance (GRC)',
     icon: 'bi-check2-square',
-    tagline:
-      'Align your security program with industry best practices while managing risk & addressing compliance mandates.',
+    tagline: 'Build a Risk-Aligned, Compliance-Ready Program',
     heroHighlight: 'Build',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/google-cloud-security.jpg',
     description:
-      'We help align information security with business goals, manage risk and ensure compliance with industry standards. Our comprehensive GRC portfolio includes security program assessments, policy development, risk management frameworks and executive advisory services.',
+      'Align security with business goals, manage risk and meet compliance mandates. Our GRC portfolio spans program assessments, policy development, risk frameworks and executive advisory.',
     stats: [
       { number: '800+', label: 'GRC program assessments completed' },
       { number: '100%', label: 'audit pass rate for managed compliance clients' },
@@ -2283,11 +3475,11 @@ const services = {
   'iam': {
     title: 'Identity & Access Management (IAM)',
     icon: 'bi-fingerprint',
-    tagline: 'Ensure the right people have the right access at the right time.',
+    tagline: 'Ensure the Right Access at the Right Time',
     heroHighlight: 'Ensure',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/digital-transformation.jpg',
     description:
-      'Better manage humans and non-human identity and access with our comprehensive IAM services. IAM advisory, implementation and managed services can reduce risk, improve compliance and streamline user access for on-premise and cloud environments.',
+      'Manage human and non-human identities with IAM advisory, implementation and managed services. Reduce risk, improve compliance and streamline access across cloud and on-premise environments.',
     stats: [
       { number: '80%', label: 'of breaches involve compromised credentials' },
       { number: '600+', label: 'IAM implementations completed' },
@@ -2380,12 +3572,11 @@ const services = {
   'incident-response': {
     title: 'Incident Response (IR) & Threat Intelligence (TI)',
     icon: 'bi-exclamation-triangle',
-    tagline:
-      'Prepare for, respond to, and recover from security incidents with expert support.',
+    tagline: 'Prepare, Respond and Recover from Cyber Threats',
     heroHighlight: 'Prepare',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/aws-cloud-security-assessment-services.jpg',
     description:
-      'We provide comprehensive, 24/7 incident response (IR) and tailored threat intelligence (TI) services to help organizations prepare, detect, contain and recover from cyber threats. The team helps organizations enhance their security posture and reduce risk.',
+      '24/7 incident response and threat intelligence to detect, contain and recover from attacks. Strengthen your security posture before, during and after a security event.',
     stats: [
       { number: '1hr', label: 'average response time for critical incidents' },
       { number: '2,000+', label: 'incident investigations completed' },
@@ -2485,7 +3676,7 @@ const services = {
     icon: 'bi-shield-lock',
     tagline: 'Extend your security team with our 24/7 managed security operations.',
     heroHighlight: 'Extend',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/ai-security-large-language-models-ai.png',
     description:
       'A strong security program relies on skilled resources to manage your environment. We can help reduce administrative burdens through our comprehensive "as-a-service" offerings, 24/7 monitoring and specialized expertise on demand.',
     stats: [
@@ -2587,7 +3778,7 @@ const services = {
     icon: 'bi-hdd-network',
     tagline: 'Protect your network infrastructure with defense-in-depth security controls.',
     heroHighlight: 'Protect',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/cloud-security-assessments.jpg',
     description:
       'Network infrastructure is critical to operations. We help architect, deploy, optimize secure network infrastructures for both enterprise and government IT environments.',
     stats: [
@@ -2682,7 +3873,7 @@ const services = {
     tagline:
       'Secure operational technology and industrial control systems without disrupting operations.',
     heroHighlight: 'Secure',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/application-security-as-a-service.jpg',
     description:
       'We help organizations bridge IT/OT convergence to reduce risk and ensure compliance. OT Security Services include assessments, program development and managed services to protect critical infrastructure while ensuring uptime and safety.',
     stats: [
@@ -2775,7 +3966,7 @@ const services = {
     icon: 'bi-mortarboard',
     tagline: 'Transform your workforce into your strongest line of defense.',
     heroHighlight: 'Transform',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/mobile-application-security-assessment.jpg',
     description:
       'Security Awareness and Education Services deliver comprehensive, customizable training to reduce human-centric risks, tailored for employees and executives.',
     stats: [
@@ -2862,7 +4053,7 @@ const services = {
     icon: 'bi-globe2',
     tagline: 'Build or enhance your security operations center with expert guidance.',
     heroHighlight: 'Build',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/cloud-security-engineering-services.jpg',
     description:
       'We design, optimize and operate modern Security Operations programs. Transforming complex security tools into scalable detection, automation and response capabilities that deliver measurable security performance.',
     stats: [
@@ -2951,11 +4142,11 @@ const services = {
   'staff-augmentation': {
     title: 'Staff Augmentation',
     icon: 'bi-person-plus',
-    tagline: 'Fill critical security talent gaps with vetted cybersecurity professionals.',
+    tagline: 'Fill Critical Security Talent Gaps Fast',
     heroHighlight: 'Fill',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/ai-security-large-language-models.jpg',
     description:
-      'Gain quick access to industry-leading consultants, engineers and analysts. Our flexible, cost-effective executive advisory and cybersecurity staff augmentation services can bridge skill gaps and provide on-demand access to certified expertise to support technology implementation, compliance and strategic security initiatives.',
+      'Access vetted consultants, engineers and analysts on demand. Flexible augmentation services bridge skill gaps and deliver certified expertise for implementation, compliance and strategic security programs.',
     stats: [
       { number: '3.5M', label: 'unfilled cybersecurity jobs globally' },
       { number: '500+', label: 'security professionals placed' },
@@ -3036,11 +4227,11 @@ const services = {
   'vulnerability-management': {
     title: 'Vulnerability Management & Penetration Testing',
     icon: 'bi-activity',
-    tagline: 'Find, prioritize, and fix vulnerabilities before attackers exploit them.',
+    tagline: 'Find and Fix Vulnerabilities Before Attackers Do',
     heroHighlight: 'Find',
-    heroImage: '/images/services/hero-placeholder.png',
+    heroImage: '/images/heroes/cloud-security-strategy-architecture-services.jpg',
     description:
-      'Vulnerability Management (VM) and Penetration Testing (Pen Testing) services help organizations identify, prioritize and remediate security gaps. Go beyond the checkbox exercises and achieve measurable results in risk reduction, no matter where you\'re starting out.',
+      'Identify, prioritize and remediate security gaps with VM and penetration testing services. Go beyond checkbox compliance and achieve measurable risk reduction across your attack surface.',
     stats: [
       { number: '25K+', label: 'new CVEs published annually' },
       { number: '5,000+', label: 'penetration tests conducted' },

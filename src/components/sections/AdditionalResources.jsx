@@ -2,11 +2,19 @@ import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedSection from './AnimatedSection';
 
+function SlideLink({ link, className, children }) {
+  if (!link) return <div className={className}>{children}</div>;
+  if (link.startsWith('http://') || link.startsWith('https://')) {
+    return <a href={link} className={className} target="_blank" rel="noopener noreferrer">{children}</a>;
+  }
+  return <Link to={link} className={className}>{children}</Link>;
+}
+
 const DEFAULT_RESOURCES = [
-  { type: 'Video', icon: 'bi-play-btn-fill', action: 'Watch Now', title: 'Customer Success Story: Wyndham Hotels & Resorts' },
-  { type: 'Customer Success', icon: 'bi-globe2', action: 'Download', title: 'Customer Success Story: Wyndham Hotels' },
-  { type: 'Ebook', icon: 'bi-file-earmark-text-fill', action: 'Download', title: 'Is Your Cloud Security Up to the Task? Secure Your Remote Workforce in the AWS Cloud.' },
-  { type: 'Datasheet', icon: 'bi-file-earmark-bar-graph-fill', action: 'Download', title: 'Cyber Security Overview' },
+  { type: 'Video', icon: 'bi-play-btn-fill', action: 'Watch Now', title: 'Customer Success Story: Wyndham Hotels & Resorts', link: '/resources/genuine-parts-company-cloud-security' },
+  { type: 'Customer Success', icon: 'bi-globe2', action: 'Download', title: 'Customer Success Story: Wyndham Hotels', link: '/resources/k-hovnanian-homes-security-program' },
+  { type: 'Ebook', icon: 'bi-file-earmark-text-fill', action: 'Download', title: 'Is Your Cloud Security Up to the Task? Secure Your Remote Workforce in the AWS Cloud.', link: '/resources/cloud-security-playbook-2026' },
+  { type: 'Datasheet', icon: 'bi-file-earmark-bar-graph-fill', action: 'Download', title: 'Cyber Security Overview', link: '/resources/managed-detection-response-service-brief' },
 ];
 
 export default function AdditionalResources({ resources = DEFAULT_RESOURCES }) {
@@ -50,7 +58,7 @@ export default function AdditionalResources({ resources = DEFAULT_RESOURCES }) {
           )}
           <div className="additional-resources__track" ref={scrollRef} onScroll={updateScrollState}>
             {resources.map((r, i) => (
-              <div className={`resource-slide${r.image ? ' resource-slide--has-image' : ''}`} key={i}>
+              <SlideLink link={r.link} className={`resource-slide${r.image ? ' resource-slide--has-image' : ''}`} key={i}>
                 <div className="resource-slide__badge">
                   <i className={`bi ${r.icon}`}></i>
                   {r.type}
@@ -69,7 +77,7 @@ export default function AdditionalResources({ resources = DEFAULT_RESOURCES }) {
                     <p className="resource-slide__title">{r.title}</p>
                   </div>
                 </div>
-              </div>
+              </SlideLink>
             ))}
           </div>
           {canScrollRight && (

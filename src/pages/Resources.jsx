@@ -1,5 +1,12 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
+
+function ResourceLink({ to, className, children }) {
+  if (to && (to.startsWith('http://') || to.startsWith('https://'))) {
+    return <a href={to} className={className} target="_blank" rel="noopener noreferrer">{children}</a>;
+  }
+  return <Link to={to || '#'} className={className}>{children}</Link>;
+}
 import Hero from '../components/sections/Hero';
 import BeInformed from '../components/sections/BeInformed';
 
@@ -7,20 +14,20 @@ const resourceTypes = ['All Resource Types', 'On-Demand Webinar', 'Video', 'Cust
 const categories = ['All Categories', 'AI Security', 'Application Security', 'Cloud Security', 'Data Security', 'Email Security', 'Endpoint Security', 'GRC', 'IAM', 'Incident Response', 'Managed Security', 'Network Security', 'OT Security', 'Security Awareness', 'SOC', 'Staff Augmentation', 'Vulnerability Management'];
 
 const allResources = [
-  { image: 'https://picsum.photos/seed/res1/600/400', type: 'Report', title: 'GRIT 2026 Ransomware & Cyber Threat Report', date: 'Jan 15, 2026', cta: 'Download', category: 'Incident Response' },
-  { image: 'https://picsum.photos/seed/res2/600/400', type: 'On-Demand Webinar', title: 'GRIT 2026 Ransomware Report Presentation', date: 'January 22, 2026', cta: 'Watch Now', category: 'Incident Response' },
-  { image: 'https://picsum.photos/seed/res3/600/400', type: 'Whitepaper', title: 'Zero Trust Architecture Best Practices', date: 'Dec 10, 2025', cta: 'Download', category: 'IAM' },
-  { image: 'https://picsum.photos/seed/res4/600/400', type: 'eBook', title: 'Cloud Security Playbook 2026', date: 'Feb 1, 2026', cta: 'Download', category: 'Cloud Security' },
-  { image: 'https://picsum.photos/seed/res5/600/400', type: 'Video', title: 'AI-Powered Threat Detection Demo', date: 'Jan 28, 2026', cta: 'Watch Now', category: 'AI Security' },
-  { image: 'https://picsum.photos/seed/res6/600/400', type: 'Datasheet', title: 'Application Security as a Service Overview', date: 'Nov 5, 2025', cta: 'Download', category: 'Application Security' },
-  { image: 'https://picsum.photos/seed/res7/600/400', type: 'Event', title: 'Premier Cybersecurity Conference 2026', date: 'March - November 2026', cta: 'Register', category: 'All Categories' },
-  { image: 'https://picsum.photos/seed/res8/600/400', type: 'Blog', title: 'Understanding the Latest Ransomware Trends', date: 'Feb 14, 2026', cta: 'Read More', category: 'Incident Response' },
-  { image: 'https://picsum.photos/seed/res9/600/400', type: 'Infographic', title: 'Cybersecurity by the Numbers 2026', date: 'Jan 5, 2026', cta: 'View', category: 'GRC' },
-  { image: 'https://picsum.photos/seed/res10/600/400', type: 'On-Demand Webinar', title: 'Securing Cloud-Native Applications', date: 'Feb 20, 2026', cta: 'Watch Now', category: 'Cloud Security' },
-  { image: 'https://picsum.photos/seed/res11/600/400', type: 'Datasheet', title: 'Managed Detection & Response Service Brief', date: 'Dec 1, 2025', cta: 'Download', category: 'Managed Security' },
-  { image: 'https://picsum.photos/seed/res12/600/400', type: 'Blog', title: 'Top 10 Cloud Misconfigurations to Avoid', date: 'Feb 8, 2026', cta: 'Read More', category: 'Cloud Security' },
-  { image: 'https://picsum.photos/seed/res13/600/400', type: 'Customer Success', title: 'How Genuine Parts Company Secured Their Cloud', date: 'Feb 5, 2026', cta: 'Read Story', category: 'Cloud Security' },
-  { image: 'https://picsum.photos/seed/res14/600/400', type: 'Customer Success', title: 'K. Hovnanian Homes: Building a Security Program', date: 'Jan 20, 2026', cta: 'Read Story', category: 'Managed Security' },
+  { image: 'https://picsum.photos/seed/res1/600/400', type: 'Report', title: 'GRIT 2026 Ransomware & Cyber Threat Report', date: 'Jan 15, 2026', cta: 'Download', category: 'Incident Response', link: '/resources/grit-2026-ransomware-cyber-threat-report' },
+  { image: 'https://picsum.photos/seed/res2/600/400', type: 'On-Demand Webinar', title: 'GRIT 2026 Ransomware Report Presentation', date: 'January 22, 2026', cta: 'Watch Now', category: 'Incident Response', link: '/resources/grit-2026-annual-ransomware-cyber-threat-report-webinar' },
+  { image: 'https://picsum.photos/seed/res3/600/400', type: 'Whitepaper', title: 'Zero Trust Architecture Best Practices', date: 'Dec 10, 2025', cta: 'Download', category: 'IAM', link: '/resources/zero-trust-architecture-best-practices' },
+  { image: 'https://picsum.photos/seed/res4/600/400', type: 'eBook', title: 'Cloud Security Playbook 2026', date: 'Feb 1, 2026', cta: 'Download', category: 'Cloud Security', link: '/resources/cloud-security-playbook-2026' },
+  { image: 'https://picsum.photos/seed/res5/600/400', type: 'Video', title: 'AI-Powered Threat Detection Demo', date: 'Jan 28, 2026', cta: 'Watch Now', category: 'AI Security', link: '/resources/ai-powered-threat-detection' },
+  { image: 'https://picsum.photos/seed/res6/600/400', type: 'Datasheet', title: 'Application Security as a Service Overview', date: 'Nov 5, 2025', cta: 'Download', category: 'Application Security', link: '/resources/application-security-as-a-service-overview' },
+  { image: 'https://picsum.photos/seed/res7/600/400', type: 'Event', title: 'Premier Cybersecurity Conference 2026', date: 'March - November 2026', cta: 'Register', category: 'All Categories', link: '/contact' },
+  { image: 'https://picsum.photos/seed/res8/600/400', type: 'Blog', title: 'Understanding the Latest Ransomware Trends', date: 'Feb 14, 2026', cta: 'Read More', category: 'Incident Response', link: '/resources/grit-2026-ransomware-cyber-threat-report' },
+  { image: 'https://picsum.photos/seed/res9/600/400', type: 'Infographic', title: 'Cybersecurity by the Numbers 2026', date: 'Jan 5, 2026', cta: 'View', category: 'GRC', link: '/resources/grit-2026-ransomware-cyber-threat-report' },
+  { image: 'https://picsum.photos/seed/res10/600/400', type: 'On-Demand Webinar', title: 'Securing Cloud-Native Applications', date: 'Feb 20, 2026', cta: 'Watch Now', category: 'Cloud Security', link: '/resources/securing-cloud-native-applications' },
+  { image: 'https://picsum.photos/seed/res11/600/400', type: 'Datasheet', title: 'Managed Detection & Response Service Brief', date: 'Dec 1, 2025', cta: 'Download', category: 'Managed Security', link: '/resources/managed-detection-response-service-brief' },
+  { image: 'https://picsum.photos/seed/res12/600/400', type: 'Blog', title: 'Top 10 Cloud Misconfigurations to Avoid', date: 'Feb 8, 2026', cta: 'Read More', category: 'Cloud Security', link: '/resources/securing-cloud-native-applications' },
+  { image: 'https://picsum.photos/seed/res13/600/400', type: 'Customer Success', title: 'How Genuine Parts Company Secured Their Cloud', date: 'Feb 5, 2026', cta: 'Read Story', category: 'Cloud Security', link: '/resources/genuine-parts-company-cloud-security' },
+  { image: 'https://picsum.photos/seed/res14/600/400', type: 'Customer Success', title: 'K. Hovnanian Homes: Building a Security Program', date: 'Jan 20, 2026', cta: 'Read Story', category: 'Managed Security', link: '/resources/k-hovnanian-homes-security-program' },
   { image: 'https://www.guidepointsecurity.com/wp-content/uploads/2021/12/iStock-611745966_2000x675.jpg', type: 'Event', title: 'View All the Upcoming Brick House Discussion Topics', date: 'April 14, 2026', cta: 'View Topics', category: 'SOC', link: '/thebrickhouse' },
 ];
 
@@ -157,7 +164,7 @@ export default function Resources() {
                       <div className="resources-featured__content">
                         <h3 className="resources-featured__title">{r.title}</h3>
                         <p className="resources-featured__date">{r.date}</p>
-                        <Link to={r.link || '#'} className="btn btn-accent">{r.cta}</Link>
+                        <ResourceLink to={r.link} className="btn btn-accent">{r.cta}</ResourceLink>
                       </div>
                     </div>
                   </div>
@@ -239,7 +246,7 @@ export default function Resources() {
             {paged.length > 0 ? (
               paged.map((r, i) => (
                 <div className="resources-grid__item" key={i}>
-                  <Link to={r.link || '#'} className="resources-grid__card">
+                  <ResourceLink to={r.link} className="resources-grid__card">
                     <div className="resources-grid__card-header">
                       <i className={`bi ${typeIcons[r.type] || 'bi-file-earmark'}`}></i>
                       <span>{r.type}</span>
@@ -252,7 +259,7 @@ export default function Resources() {
                       <p className="resources-grid__card-title">{r.title}</p>
                       <span className="btn btn-accent resources-grid__card-cta">{r.cta}</span>
                     </div>
-                  </Link>
+                  </ResourceLink>
                 </div>
               ))
             ) : (

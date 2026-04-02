@@ -1,0 +1,1738 @@
+{
+  "scrapedAt": "2026-04-02T22:34:50.443Z",
+  "url": "https://www.guidepointsecurity.com/saas-security/",
+  "meta": {
+    "title": "SaaS Security Solutions | GuidePoint Security",
+    "description": "Assess, operationalize, and mature your organization's SaaS security with solutions and services from GuidePoint Security.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+    "canonical": "https://www.guidepointsecurity.com/saas-security/",
+    "h1": "Transform SaaS Security from Obstacle to Advantage"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-12ba94e1 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Transform SaaS Security from Obstacle to Advantage"
+        }
+      ],
+      "paragraphs": [
+        "Gain visibility, reduce risk and embed compliance-driven security into Software-as-a-Service (SaaS) operations for measurable, organization-wide protection."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Website_Refresh_Services_SUB_Pages_SaaS_Security_Services_iStock-2174422974.jpg",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Download Data Sheet",
+          "href": "https://www.guidepointsecurity.com/resources/saas-security-services/"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h1",
+              "text": "Transform SaaS Security from Obstacle to Advantage"
+            }
+          ],
+          "paragraphs": [
+            "Gain visibility, reduce risk and embed compliance-driven security into Software-as-a-Service (SaaS) operations for measurable, organization-wide protection."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Website_Refresh_Services_SUB_Pages_SaaS_Security_Services_iStock-2174422974.jpg",
+              "alt": "section background",
+              "isBg": true
+            }
+          ],
+          "cards": [
+            {
+              "title": "SAAS SECURITY",
+              "description": "Gain visibility, reduce risk and embed compliance-driven security into Software-as-a-Service (SaaS) operations for measurable, organization-wide protection.",
+              "image": null,
+              "cta": "Download Data Sheet",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/saas-security-services/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Website_Refresh_Services_SUB_Pages_SaaS_Security_Services_iStock-2174422974.jpg"
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-160b45b0 services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Proactive SaaS Risk Management at Scale"
+        },
+        {
+          "tag": "h3",
+          "text": "Take Control of SaaS Sprawl"
+        },
+        {
+          "tag": "h3",
+          "text": "Get Ahead of Third-Party Risk"
+        },
+        {
+          "tag": "h3",
+          "text": "Operationalize SaaS Security"
+        },
+        {
+          "tag": "h3",
+          "text": "Build a Scalable and Effective Program"
+        }
+      ],
+      "paragraphs": [
+        "Organizations rely on hundreds of SaaS applications, with each adding to inconsistent configuration controls, shadow IT proliferation and regulatory exposure that native security tools can’t fully address.",
+        "Our SaaS security services are designed to:"
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Proactive SaaS Risk Management at Scale"
+            },
+            {
+              "tag": "h3",
+              "text": "Take Control of SaaS Sprawl"
+            },
+            {
+              "tag": "h3",
+              "text": "Get Ahead of Third-Party Risk"
+            },
+            {
+              "tag": "h3",
+              "text": "Operationalize SaaS Security"
+            },
+            {
+              "tag": "h3",
+              "text": "Build a Scalable and Effective Program"
+            }
+          ],
+          "paragraphs": [
+            "Organizations rely on hundreds of SaaS applications, with each adding to inconsistent configuration controls, shadow IT proliferation and regulatory exposure that native security tools can’t fully address.",
+            "Our SaaS security services are designed to:"
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "SAAS SECURITY SERVICES",
+              "description": "Organizations rely on hundreds of SaaS applications, with each adding to inconsistent configuration controls, shadow IT proliferation and regulatory exposure that native security tools can’t fully address.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "SAAS SECURITY SERVICES",
+              "description": "SAAS SECURITY SERVICES Proactive SaaS Risk Management at Scale",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Take Control of SaaS Sprawl",
+              "description": "Take Control of SaaS Sprawl Get Ahead of Third-Party Risk Operationalize SaaS Security Build a Scalable and Effective Program",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-a1f916f services-lifecycle elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "From Assessment to Action: Complete SaaS Security"
+        }
+      ],
+      "paragraphs": [
+        "GuidePoint’s SaaS security services help organizations gain visibility, reduce risk and maintain compliance across complex SaaS ecosystems. Enterprises often run hundreds of applications with inconsistent controls, shadow IT and regulatory exposure that native tools can’t fully address. GuidePoint delivers expert-led, vendor-neutral assessments, integration risk reviews and ongoing advisory and implementation services.",
+        "By embedding security into operations, operationalizing SSPM insights and providing actionable guidance aligned to CIS, NIST and CSA CCM and SSCF frameworks, we empower organizations to confidently develop SaaS security programs, strengthen their security posture and achieve measurable, compliance-aligned outcomes.",
+        "Our SaaS security services help organizations achieve measurable results, including:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Reduced risk with comprehensive SaaS visibility and strategic improvements",
+            "Improved operational efficiency by centralizing SaaS security services",
+            "Compliance with a systematic and automated approach",
+            "Secure innovation through automated application onboarding and continuous monitoring",
+            "Cyber resilience by rapidly detecting SaaS security issues and responding quickly to security events"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "From Assessment to Action: Complete SaaS Security"
+            }
+          ],
+          "paragraphs": [
+            "GuidePoint’s SaaS security services help organizations gain visibility, reduce risk and maintain compliance across complex SaaS ecosystems. Enterprises often run hundreds of applications with inconsistent controls, shadow IT and regulatory exposure that native tools can’t fully address. GuidePoint delivers expert-led, vendor-neutral assessments, integration risk reviews and ongoing advisory and implementation services.",
+            "By embedding security into operations, operationalizing SSPM insights and providing actionable guidance aligned to CIS, NIST and CSA CCM and SSCF frameworks, we empower organizations to confidently develop SaaS security programs, strengthen their security posture and achieve measurable, compliance-aligned outcomes.",
+            "Our SaaS security services help organizations achieve measurable results, including:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Reduced risk with comprehensive SaaS visibility and strategic improvements",
+                "Improved operational efficiency by centralizing SaaS security services",
+                "Compliance with a systematic and automated approach",
+                "Secure innovation through automated application onboarding and continuous monitoring",
+                "Cyber resilience by rapidly detecting SaaS security issues and responding quickly to security events"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "SAAS SECURITY OVERVIEW",
+              "description": "GuidePoint’s SaaS security services help organizations gain visibility, reduce risk and maintain compliance across complex SaaS ecosystems. Enterprises often run hundreds of applications with inconsistent controls, shadow IT and regulatory exposure that native tools can’t fully address. GuidePoint d",
+              "image": null,
+              "cta": "Read More",
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-bcc6573 services-lifecycle elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Gain Control Over Your SaaS Environment"
+        },
+        {
+          "tag": "h3",
+          "text": "A SaaS security health check with GuidePoint means:"
+        },
+        {
+          "tag": "h3",
+          "text": "A Collaborative Approach"
+        },
+        {
+          "tag": "h3",
+          "text": "Deep Discovery"
+        },
+        {
+          "tag": "h3",
+          "text": "Tailored Recommendations"
+        }
+      ],
+      "paragraphs": [
+        "Securing SaaS ecosystems is not a one-size-fits-all proposition. Each organization has its own unique blend of cloud applications, compliance requirements and risk tolerance. That’s why our SaaS security assessment process begins with a health check. We dive deep into each specific environment to fully understand business context, compliance needs and desired outcomes.",
+        "We work with stakeholders to understand the environment, define challenges and establish goals that will make an impact. ​",
+        "We discover overlooked vulnerabilities and analyze configurations to empower the organiation to strengthen their SaaS security posture. ​",
+        "Stakeholders receive strategic guidance and a clear roadmap, along with recommendations aligned with industry frameworks and best practices."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Gain Control Over Your SaaS Environment"
+            },
+            {
+              "tag": "h3",
+              "text": "A SaaS security health check with GuidePoint means:"
+            },
+            {
+              "tag": "h3",
+              "text": "A Collaborative Approach"
+            },
+            {
+              "tag": "h3",
+              "text": "Deep Discovery"
+            },
+            {
+              "tag": "h3",
+              "text": "Tailored Recommendations"
+            }
+          ],
+          "paragraphs": [
+            "Securing SaaS ecosystems is not a one-size-fits-all proposition. Each organization has its own unique blend of cloud applications, compliance requirements and risk tolerance. That’s why our SaaS security assessment process begins with a health check. We dive deep into each specific environment to fully understand business context, compliance needs and desired outcomes.",
+            "We work with stakeholders to understand the environment, define challenges and establish goals that will make an impact. ​",
+            "We discover overlooked vulnerabilities and analyze configurations to empower the organiation to strengthen their SaaS security posture. ​",
+            "Stakeholders receive strategic guidance and a clear roadmap, along with recommendations aligned with industry frameworks and best practices."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "SAAS SECURITY HEALTH CHECK",
+              "description": "Securing SaaS ecosystems is not a one-size-fits-all proposition. Each organization has its own unique blend of cloud applications, compliance requirements and risk tolerance. That’s why our SaaS security assessment process begins with a health check. We dive deep into each specific environment to fu",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "A SaaS security health check with GuidePoint means:",
+              "description": "We work with stakeholders to understand the environment, define challenges and establish goals that will make an impact. ​",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "A Collaborative Approach",
+              "description": "We work with stakeholders to understand the environment, define challenges and establish goals that will make an impact. ​",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "tabs",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-70b45f7 services-lifecycle elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Secure the Most Overlooked SaaS Attack Vector - The Integration Layer"
+        }
+      ],
+      "paragraphs": [
+        "Third-party integrations represent one of the most significant and overlooked attack vectors in SaaS environments. Our integration risk assessment focuses specifically on evaluating the OAuth connections, API integrations and service accounts that have access to your critical SaaS platforms.",
+        "Trust our proven third-party risk reduction strategy to:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Discover third-party connections, access scopes, permissions and data exposures.",
+            "Identify potential security backdoors sue to over-permissioned integrations, unmanaged connections and abandoned applications.",
+            "Strengthen the attack surface with actionable integration lifecycle management guidance and scalable permission revocation strategies."
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Secure the Most Overlooked SaaS Attack Vector - The Integration Layer"
+            }
+          ],
+          "paragraphs": [
+            "Third-party integrations represent one of the most significant and overlooked attack vectors in SaaS environments. Our integration risk assessment focuses specifically on evaluating the OAuth connections, API integrations and service accounts that have access to your critical SaaS platforms.",
+            "Trust our proven third-party risk reduction strategy to:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Discover third-party connections, access scopes, permissions and data exposures.",
+                "Identify potential security backdoors sue to over-permissioned integrations, unmanaged connections and abandoned applications.",
+                "Strengthen the attack surface with actionable integration lifecycle management guidance and scalable permission revocation strategies."
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "INTEGRATION RISK ASSESSMENT",
+              "description": "Third-party integrations represent one of the most significant and overlooked attack vectors in SaaS environments. Our integration risk assessment focuses specifically on evaluating the OAuth connections, API integrations and service accounts that have access to your critical SaaS platforms.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "tabs",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-bea36a1 elementor-section-full_width services-review-process elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Operationalize SaaS Security Posture Management"
+        }
+      ],
+      "paragraphs": [
+        "Visibility without action delivers no security value. Our risk monitoring advisory service goes beyond just identifying vulnerabilities.",
+        "We empower your team to operationalize your SaaS Security Posture Management (SSPM) tool and drive meaningful, ongoing risk reduction across your cloud application portfolio."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Structured Risk Reviews: Stay on top of security risks with regular risk reviews that give provide insight into concerns and priorized, actionable guidance to improve security posture.",
+            "Workflow Optimization: Streamline security operations with custom ticketing integrations, automated escalation processes and optimized workflows.",
+            "Executive Reporting: Demonstrate the value of SaaS security to stakeholders with metrics and dashboards that demonstrate the impact of security improvements across the organization."
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Continuous-Saas-Security-Operations.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Operationalize SaaS Security Posture Management"
+            }
+          ],
+          "paragraphs": [
+            "Visibility without action delivers no security value. Our risk monitoring advisory service goes beyond just identifying vulnerabilities.",
+            "We empower your team to operationalize your SaaS Security Posture Management (SSPM) tool and drive meaningful, ongoing risk reduction across your cloud application portfolio."
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Structured Risk Reviews: Stay on top of security risks with regular risk reviews that give provide insight into concerns and priorized, actionable guidance to improve security posture.",
+                "Workflow Optimization: Streamline security operations with custom ticketing integrations, automated escalation processes and optimized workflows.",
+                "Executive Reporting: Demonstrate the value of SaaS security to stakeholders with metrics and dashboards that demonstrate the impact of security improvements across the organization."
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Continuous-Saas-Security-Operations.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "SAAS SECURITY SERVICES: WORKDAY SECURITY",
+              "description": "Visibility without action delivers no security value. Our risk monitoring advisory service goes beyond just identifying vulnerabilities.",
+              "image": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Continuous-Saas-Security-Operations.png",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-24a1841 services-lifecycle elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Comprehensive Security for Complex SaaS Environments"
+        },
+        {
+          "tag": "h3",
+          "text": "SaaS security program development includes:"
+        },
+        {
+          "tag": "h3",
+          "text": "Baseline and Discovery"
+        },
+        {
+          "tag": "h3",
+          "text": "Strategic Design"
+        },
+        {
+          "tag": "h3",
+          "text": "Tailored Recommendations"
+        }
+      ],
+      "paragraphs": [
+        "SaaS security program development is a set of comprehensive services that help organizations build a comprehensive, sustainable operating model for securing their SaaS application ecosystem.",
+        "With clarity, strategic guidance, execution, GuidePoint takes organizations from reactive to proactive security management across even the most complex SaaS environments.",
+        "We start with data by uncovering the organization’s full SaaS footprint, understanding access and usage and surfacing real, actionable risks.",
+        "With full clarity, we tailor a strategy that defines policies, controls and governance models aligned with regulatory demands, best practices and business objectives.",
+        "Starting with repeatable procedures for onboarding applications and users, we enable configuration monitoring, posture management and access governance."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Comprehensive Security for Complex SaaS Environments"
+            },
+            {
+              "tag": "h3",
+              "text": "SaaS security program development includes:"
+            },
+            {
+              "tag": "h3",
+              "text": "Baseline and Discovery"
+            },
+            {
+              "tag": "h3",
+              "text": "Strategic Design"
+            },
+            {
+              "tag": "h3",
+              "text": "Tailored Recommendations"
+            }
+          ],
+          "paragraphs": [
+            "SaaS security program development is a set of comprehensive services that help organizations build a comprehensive, sustainable operating model for securing their SaaS application ecosystem.",
+            "With clarity, strategic guidance, execution, GuidePoint takes organizations from reactive to proactive security management across even the most complex SaaS environments.",
+            "We start with data by uncovering the organization’s full SaaS footprint, understanding access and usage and surfacing real, actionable risks.",
+            "With full clarity, we tailor a strategy that defines policies, controls and governance models aligned with regulatory demands, best practices and business objectives.",
+            "Starting with repeatable procedures for onboarding applications and users, we enable configuration monitoring, posture management and access governance."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "",
+              "description": "",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "SAAS SECURITY SERVICES: THIRD-PARTY SAAS VENDOR ASSESSMENTS",
+              "description": "SaaS security program development is a set of comprehensive services that help organizations build a comprehensive, sustainable operating model for securing their SaaS application ecosystem.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "SaaS security program development includes:",
+              "description": "SaaS security program development includes:",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Baseline and Discovery",
+              "description": "We start with data by uncovering the organization’s full SaaS footprint, understanding access and usage and surfacing real, actionable risks.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "split",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-37305ec services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        },
+        {
+          "tag": "h4",
+          "text": "Industry"
+        },
+        {
+          "tag": "h4",
+          "text": "Cloud Platforms"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+          "alt": "GPS Certified Cyber Guarding"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+          "alt": "GPS Certified CCSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+          "alt": "GSE"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+          "alt": "AWS Certified Security Specialty"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+          "alt": "Microsoft 365 Certified Azure Solutions Architect"
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Elite, Highly-trained Team"
+            }
+          ],
+          "paragraphs": [
+            "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+          ],
+          "lists": [],
+          "images": []
+        },
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h4",
+              "text": "Highly Trained, Highly Certified"
+            },
+            {
+              "tag": "h4",
+              "text": "Examples Include:"
+            },
+            {
+              "tag": "h4",
+              "text": "Industry"
+            },
+            {
+              "tag": "h4",
+              "text": "Cloud Platforms"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+              "alt": "GPS Certified Cyber Guarding"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+              "alt": "CISSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+              "alt": "GPS Certified CCSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+              "alt": "GSE"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+              "alt": "AWS Certified Security Specialty"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+              "alt": "Microsoft 365 Certified Azure Solutions Architect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "tabs",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-3b493df services-technologies elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Choose the Best Engagement Model for Your Organization"
+        },
+        {
+          "tag": "h3",
+          "text": "Point-in-time Assessments"
+        },
+        {
+          "tag": "h3",
+          "text": "Multi-application Engagements"
+        },
+        {
+          "tag": "h3",
+          "text": "Ongoing Advisory"
+        },
+        {
+          "tag": "h3",
+          "text": "Full Program Buildouts"
+        }
+      ],
+      "paragraphs": [
+        "GuidePoint tailors each engagement based on the organization’s needs, goals and scope. Choose the engagement model that works now and expand as needed to continually improve SaaS security.",
+        "Review a single application for compliance requirements and risk analysis.",
+        "Identify common risks across the organization’s entire SaaS portfolio and prioritize critical platforms for impactful improvements.",
+        "Gain continuous guidance with regular risk reviews and tap into retainer-based support to improve SaaS security posture over time.",
+        "Develop an end-to-end SaaS security solution with governance processes and integration into existing security functions."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Choose the Best Engagement Model for Your Organization"
+            },
+            {
+              "tag": "h3",
+              "text": "Point-in-time Assessments"
+            },
+            {
+              "tag": "h3",
+              "text": "Multi-application Engagements"
+            },
+            {
+              "tag": "h3",
+              "text": "Ongoing Advisory"
+            },
+            {
+              "tag": "h3",
+              "text": "Full Program Buildouts"
+            }
+          ],
+          "paragraphs": [
+            "GuidePoint tailors each engagement based on the organization’s needs, goals and scope. Choose the engagement model that works now and expand as needed to continually improve SaaS security.",
+            "Review a single application for compliance requirements and risk analysis.",
+            "Identify common risks across the organization’s entire SaaS portfolio and prioritize critical platforms for impactful improvements.",
+            "Gain continuous guidance with regular risk reviews and tap into retainer-based support to improve SaaS security posture over time.",
+            "Develop an end-to-end SaaS security solution with governance processes and integration into existing security functions."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "TAILORED SAAS SECURITY ENGAGEMENTS",
+              "description": "GuidePoint tailors each engagement based on the organization’s needs, goals and scope. Choose the engagement model that works now and expand as needed to continually improve SaaS security.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "TAILORED SAAS SECURITY ENGAGEMENTS",
+              "description": "TAILORED SAAS SECURITY ENGAGEMENTS Choose the Best Engagement Model for Your Organization",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Point-in-time Assessments",
+              "description": "Review a single application for compliance requirements and risk analysis.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Ongoing Advisory",
+              "description": "Gain continuous guidance with regular risk reviews and tap into retainer-based support to improve SaaS security posture over time.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-acb11ca elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Mark Gilman"
+        },
+        {
+          "tag": "h3",
+          "text": "GET IN TOUCH"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Us"
+        }
+      ],
+      "paragraphs": [
+        "Our team works side-by-side with you as your cybersecurity partner.",
+        "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+        "Security Manager"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Terms of Service",
+          "href": "https://www.guidepointsecurity.com/terms-of-service/"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.guidepointsecurity.com/privacy-policy/"
+        },
+        {
+          "text": "CONTACT US",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Trusted Advisor"
+            },
+            {
+              "tag": "h3",
+              "text": "Mark Gilman"
+            }
+          ],
+          "paragraphs": [
+            "Our team works side-by-side with you as your cybersecurity partner.",
+            "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+            "Security Manager"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "GET IN TOUCH"
+            },
+            {
+              "tag": "h3",
+              "text": "Contact Us"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-b2d8399 additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "ebook"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "ebook"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        },
+        {
+          "tag": "h3",
+          "text": "ebook"
+        },
+        {
+          "tag": "h3",
+          "text": "Webinar"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Additional Resources"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            },
+            {
+              "tag": "h3",
+              "text": "ebook"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            },
+            {
+              "tag": "h3",
+              "text": "ebook"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            },
+            {
+              "tag": "h3",
+              "text": "ebook"
+            },
+            {
+              "tag": "h3",
+              "text": "Webinar"
+            }
+          ],
+          "paragraphs": [
+            "View All >"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Additional Resources",
+              "description": "View All >",
+              "image": null,
+              "cta": "View All >",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/",
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecu",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecu",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecu",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "ebook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> ebook <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://w",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "ebook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> ebook <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://w",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "ebook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg\" class=\"attachment-large size-large wp-image-28680\" alt=\"\" /> ebook",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecu",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecu",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Webinar",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-large size-large wp-image-28677\" alt=\"\" /> Webinar <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecu",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataTemplate": {
+    "slug": "saas-security",
+    "title": "Transform SaaS Security from Obstacle to Advantage",
+    "tagline": "Proactive SaaS Risk Management at Scale",
+    "heroLabel": "Transform SaaS Security from Obstacle to Advantage",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Download Data Sheet",
+    "heroImage": "/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */",
+    "heroImageFallback": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Website_Refresh_Services_SUB_Pages_SaaS_Security_Services_iStock-2174422974.jpg",
+    "description": "Gain visibility, reduce risk and embed compliance-driven security into Software-as-a-Service (SaaS) operations for measurable, organization-wide protection.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "Your Elite, Highly-trained Team",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+      "textLayoutHint": "split",
+      "inlineItems": []
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": []
+      }
+    },
+    "outcomesSection": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "/* FILL IN */",
+      "subtitle": "We work with stakeholders to understand the environment, define challenges and establish goals that will make an impact. ​"
+    },
+    "outcomes": [
+      {
+        "title": "A Collaborative Approach",
+        "description": ""
+      },
+      {
+        "title": "Deep Discovery",
+        "description": ""
+      },
+      {
+        "title": "Tailored Recommendations",
+        "description": ""
+      }
+    ],
+    "certGroups": null,
+    "testimonial": {
+      "quote": "Visibility without action delivers no security value. Our risk monitoring advisory service goes beyond just identifying vulnerabilities. We empower your team to operationalize your SaaS Security Posture Management (SSPM) tool and drive meaningful, ongoing risk reduction across your cloud application portfolio. Structured Risk Reviews: Stay on top of security risks with regular risk reviews that give provide insight into concerns and priorized, actionable guidance to improve security posture. Workflow Optimization: Streamline security operations with custom ticketing integrations, automated escalation processes and optimized workflows. Executive Reporting: Demonstrate the value of SaaS security to stakeholders with metrics and dashboards that demonstrate the impact of security improvements across the organization.",
+      "author": "/* FILL IN */",
+      "role": "SAAS SECURITY SERVICES: WORKDAY SECURITY",
+      "company": "/* FILL IN */",
+      "personImage": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Continuous-Saas-Security-Operations.png",
+      "companyLogo": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_infiniti_right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_left.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Appsec_Right.png",
+      "alt": "",
+      "width": 678,
+      "height": 714
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Continuous-Saas-Security-Operations.png",
+      "alt": "",
+      "width": 800,
+      "height": 807
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/Large_triangle_icon_Cloud_right.png",
+      "alt": "",
+      "width": 142,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+      "alt": "GPS Certified Cyber Guarding",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+      "alt": "GPS Certified CCSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+      "alt": "GSE",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+      "alt": "AWS Certified Security Specialty",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+      "alt": "Microsoft 365 Certified Azure Solutions Architect",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-google-cloud-architect.png",
+      "alt": "GPS Certified Google Cloud Architect",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/AWS-CP-Security.png",
+      "alt": "AWS Consulting Partner Security",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+      "alt": "",
+      "width": 154,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+      "alt": "",
+      "width": 219,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}
