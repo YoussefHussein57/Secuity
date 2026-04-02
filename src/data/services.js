@@ -1650,7 +1650,7 @@ const services = {
     megaMenuResource: {
       image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_for_GP_Header.jpg',
       title: '[DATASHEET] Artificial Intelligence at GuidePoint Security',
-      href: '/resources/artificial-intelligence-at-guidepoint-security',
+      path: '/resources/artificial-intelligence-at-guidepoint-security',
     },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Map AI-specific risks across your organization.' },
