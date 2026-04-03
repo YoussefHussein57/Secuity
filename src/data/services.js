@@ -7,7 +7,7 @@ const services = {
     heroLabel: 'Application Security Architecture Review',
     heroHighlight: 'Identify & Assess',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/application-security.png',
+    heroImage: '/images/heroes/application-security-as-a-service.jpg',
     description:
       'Conduct an architectural review of your web and cloud-based applications to identify security flaws, mitigate risk and strengthen your AppSec posture.',
     stats: [
@@ -167,7 +167,7 @@ const services = {
     },
   },
 
-  'secure-sdlc-program-review': {  // heroImage: local → /images/heroes/application-security.png
+  'secure-sdlc-program-review': {  // heroImage: local → /images/heroes/application-security-as-a-service.jpg
     parentService: 'application-security',
     title: 'Application Security Program Assessment',
     icon: 'bi-diamond',
@@ -175,7 +175,7 @@ const services = {
     heroLabel: 'APPLICATION SECURITY PROGRAM ASSESSMENT',
     heroHighlight: 'Holistic',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/application-security.png',
+    heroImage: '/images/heroes/application-security-as-a-service.jpg',
     description:
       "Assess the state of your application security program and communicate a roadmap of key initiatives to improve your program\u2019s maturity from IT and compliance to development and security.",
     useCases: {
@@ -790,7 +790,7 @@ const services = {
     heroLabel: 'MOBILE APPLICATION SECURITY ASSESSMENT',
     heroHighlight: 'Testing',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/mobile-application-security-assessment.jpg',
+    heroImage: '/images/heroes/source-code-review.jpg',
     description:
       'Identify and verify application security risks within mobile applications using real-world scenarios and proven testing standards to ensure a secure and reliable mobile experience.',
     useCases: {
@@ -1071,7 +1071,7 @@ const services = {
     heroLabel: 'FUNDAMENTALS OF RECONNAISSANCE AND ATTACK SURFACE ANALYSIS',
     heroHighlight: 'Build',
     heroCta: 'Secure Your Applications',
-    heroImage: '/images/heroes/mobile-application-security-assessment.jpg',
+    heroImage: '/images/heroes/source-code-review.jpg',
     description: 'Learn to systematically map, analyze and track web application attack surfaces with hands-on skills that elevate your reconnaissance precision and coverage.',
     useCases: {
       label: 'FUNDAMENTALS OF RECONNAISSANCE AND ATTACK SURFACE ANALYSIS TRAINING OVERVIEW',
@@ -1674,7 +1674,7 @@ const services = {
     heroLabel: 'AI GOVERNANCE SERVICES',
     heroHighlight: 'Enable',
     heroCta: 'Manage Your Risk',
-    heroImage: '/images/heroes/ai-security-large-language-models-ai.png',
+    heroImage: '/images/heroes/ai-security-large-language-models.jpg',
     description: 'Manage AI initiatives with confidence and reduce risk, better protect data and align technology adoption with your business goals. GuidePoint Security\'s AI Governance Services can help ensure that, as you bring AI technologies into your organization, you maintain security and compliance. The result: smarter decisions, safer data and accelerated growth.',
     useCases: {
       label: 'AI GOVERNANCE RISK LANDSCAPE',
@@ -3283,7 +3283,7 @@ const services = {
     icon: 'bi-pencil',
     tagline: 'Protect Every Endpoint Across Your Enterprise',
     heroHighlight: 'Protect',
-    heroImage: '/images/heroes/application-security.png',
+    heroImage: '/images/heroes/application-security-as-a-service.jpg',
     description:
       'Detect, contain and remediate endpoint threats including ransomware across your entire device fleet. Full lifecycle services spanning selection, implementation and ongoing optimization.',
     stats: [
@@ -3676,7 +3676,7 @@ const services = {
     icon: 'bi-shield-lock',
     tagline: 'Extend your security team with our 24/7 managed security operations.',
     heroHighlight: 'Extend',
-    heroImage: '/images/heroes/ai-security-large-language-models-ai.png',
+    heroImage: '/images/heroes/ai-security-large-language-models.jpg',
     description:
       'A strong security program relies on skilled resources to manage your environment. We can help reduce administrative burdens through our comprehensive "as-a-service" offerings, 24/7 monitoring and specialized expertise on demand.',
     stats: [
@@ -3966,7 +3966,7 @@ const services = {
     icon: 'bi-mortarboard',
     tagline: 'Transform your workforce into your strongest line of defense.',
     heroHighlight: 'Transform',
-    heroImage: '/images/heroes/mobile-application-security-assessment.jpg',
+    heroImage: '/images/heroes/source-code-review.jpg',
     description:
       'Security Awareness and Education Services deliver comprehensive, customizable training to reduce human-centric risks, tailored for employees and executives.',
     stats: [
