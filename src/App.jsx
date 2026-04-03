@@ -35,7 +35,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default function App() {
   return (
-    <BrowserRouter basename="/App">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <Routes>
         <Route element={<MainLayout />}>
