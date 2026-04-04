@@ -1,74 +1,102 @@
 import Hero from '../components/sections/Hero';
-import SectionHeader from '../components/sections/SectionHeader';
-import ServiceCard from '../components/sections/ServiceCard';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import BeInformed from '../components/sections/BeInformed';
-
-const serviceCategories = [
-  {
-    category: 'Offensive Security',
-    services: [
-      { icon: 'bi-code-slash', title: 'Application Security', path: '/services/application-security' },
-      { icon: 'bi-bug', title: 'Vulnerability Management & Pen Testing', path: '/services/vulnerability-management' },
-      { icon: 'bi-exclamation-triangle', title: 'Incident Response & Threat Intelligence', path: '/services/incident-response' },
-    ],
-  },
-  {
-    category: 'Defensive Security',
-    services: [
-      { icon: 'bi-cloud', title: 'Cloud Security', path: '/services/cloud-security' },
-      { icon: 'bi-laptop', title: 'Endpoint Security', path: '/services/endpoint-security' },
-      { icon: 'bi-envelope-check', title: 'Email Security', path: '/services/email-security' },
-      { icon: 'bi-hdd-network', title: 'Network & Infrastructure Security', path: '/services/network-security' },
-      { icon: 'bi-database-lock', title: 'Data Security & Privacy', path: '/services/data-security' },
-    ],
-  },
-  {
-    category: 'Governance & Operations',
-    services: [
-      { icon: 'bi-clipboard-check', title: 'Governance, Risk & Compliance', path: '/services/grc' },
-      { icon: 'bi-person-badge', title: 'Identity & Access Management', path: '/services/iam' },
-      { icon: 'bi-display', title: 'SOC Services', path: '/services/soc' },
-      { icon: 'bi-shield-lock', title: 'Managed Security Services', path: '/services/managed-security' },
-    ],
-  },
-  {
-    category: 'Specialized',
-    services: [
-      { icon: 'bi-robot', title: 'AI Security', path: '/services/ai-security' },
-      { icon: 'bi-gear-wide-connected', title: 'OT / IoT Security', path: '/services/ot-security' },
-      { icon: 'bi-mortarboard', title: 'Security Awareness & Education', path: '/services/security-awareness' },
-      { icon: 'bi-people', title: 'Staff Augmentation', path: '/services/staff-augmentation' },
-    ],
-  },
-];
+import ServiceAccordion from '../components/sections/ServiceAccordion';
+import { servicesList } from '../data/services';
 
 export default function Services() {
   return (
     <>
+      {/* ── Hero ── */}
       <Hero
-        title="Our Services"
-        subtitle="Comprehensive cybersecurity services tailored to your organization's unique challenges."
+        title="Services & Technologies"
         variant="page"
+        ctaText=""
+        bgImage="https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/example-background.jpg"
+        className="hero--banner"
       />
 
-      {serviceCategories.map((cat, index) => (
-        <section
-          key={cat.category}
-          className={`section ${index % 2 === 0 ? 'section--dark' : 'section--indigo'}`}
-        >
-          <div className="container">
-            <AnimatedSection animation="animate-on-scroll">
-              <SectionHeader title={cat.category} />
-            </AnimatedSection>
-            <AnimatedSection animation="stagger-children" className="services-grid">
-              {cat.services.map((s) => (
-                <ServiceCard key={s.title} {...s} />
-              ))}
-            </AnimatedSection>
+      {/* ── Expertise split section ── */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-6">
+              <AnimatedSection animation="fade-in-left">
+                <h2 className="display-5 fw-bold mb-4" style={{ color: '#0f0f27', lineHeight: 1.2 }}>
+                  <span style={{ background: '#0f0f27', color: '#fff', padding: '0.05em 0.25em', display: 'inline' }}>Expertise</span> based on<br />
+                  reality — not theory
+                </h2>
+                <p style={{ fontSize: '18px', color: '#444', lineHeight: 1.7 }}>
+                  The reality is that every organization's cybersecurity ecosystem requires a
+                  custom approach to the threat landscape. That's why we analyze, compare
+                  and recommend best-fit security solutions on a tailored basis.
+                </p>
+              </AnimatedSection>
+            </div>
+            <div className="col-lg-6 text-center">
+              <AnimatedSection animation="fade-in-right">
+                <img
+                  src="/images/services-expertise.svg"
+                  alt="Expertise"
+                  style={{ maxWidth: '420px', width: '100%' }}
+                />
+              </AnimatedSection>
+            </div>
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
+
+      {/* ── Security Consulting Practices video ── */}
+      <section className="services-consulting">
+        <div className="container">
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mb-5">
+              <h2 className="services-consulting__title mb-4">
+                <span className="gradient-underline-text">Security Consulting Practices</span>
+              </h2>
+              <p className="services-consulting__subtitle">
+                Bryan Orme, Principal and Partner at GuidePoint Security, presents an overview of our Consulting Practices.
+              </p>
+            </div>
+
+            <div
+              className="services-consulting__video-wrap"
+              onClick={() => window.open('https://guidepointsecurity.wistia.com/medias/cc2fc40022', '_blank', 'noopener,noreferrer')}
+            >
+              <img
+                src="https://embed-ssl.wistia.com/deliveries/cc2fc40022fb491cac14d48780240d2f.webp?image_crop_resized=1920x1080"
+                alt="Security Consulting Practices"
+              />
+              <div className="services-consulting__play-overlay">
+                <div className="services-consulting__play-btn">
+                  <i className="bi bi-play-fill"></i>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ── We Cover All of Your Cybersecurity Needs — Accordion ── */}
+      <section className="section bg-white services-cover-section">
+        <div className="container">
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="text-center mb-4">
+              <h2 className="services-cover-section__title">
+                <span className="gradient-underline-text">We Cover All of Your Cybersecurity Needs</span>
+              </h2>
+            </div>
+          </AnimatedSection>
+          <AnimatedSection animation="animate-on-scroll">
+            <div className="service-accordion-wrap">
+              <p className="services-cover-section__subtitle fw-bold">
+                Explore our cybersecurity services and solutions across a wide range of vetted technologies:
+              </p>
+              <ServiceAccordion services={servicesList} />
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
 
       <BeInformed />
     </>

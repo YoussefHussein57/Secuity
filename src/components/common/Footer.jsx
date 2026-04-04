@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 // Logo removed temporarily
 
 const companyLinks = [
-  { label: 'Why Cyber', path: '/company', bold: true },
-  { label: 'University', path: '/university', bold: true },
+  { label: 'Why Cyber', path: '/company/why-us', bold: true },
+  { label: 'University', path: '/company/gpsu', bold: true },
   { label: 'Careers', path: '/company/careers', bold: true },
   { label: 'Contact Us', path: '/contact', bold: true },
 ];
 
 const servicesCol1 = [
-  { label: 'Artificial Intelligence (AI)', path: '/services/ai-security' },
+  { label: 'Artificial Intelligence (AI)', path: '/services/artificial-intelligence' },
   { label: 'Application Security', path: '/services/application-security' },
   { label: 'Cloud Security Services', path: '/services/cloud-security' },
   { label: 'Data Security & Privacy', path: '/services/data-security' },

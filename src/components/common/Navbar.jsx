@@ -543,13 +543,13 @@ export default function Navbar() {
                         </div>
                       </div>
                       <div className="mega-panel__header-right">
-                        <div className="mega-panel__header-inner">
+                        <Link to={currentService.path} className="mega-panel__header-inner text-decoration-none" onClick={closeMega}>
                           <i className={`bi ${currentService.icon} mega-panel__header-icon`}></i>
                           <div>
                             <h3 className="mega-panel__title">{currentService.title}</h3>
                             <p className="mega-panel__desc">{currentService.tagline}</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                     </div>
                     <div className="mega-panel__gradient-line"></div>
@@ -594,10 +594,10 @@ export default function Navbar() {
                           ))}
                         </div>
                         <div className="mega-services__detail">
-                          <div className="mega-services__detail-header">
+                          <Link to={currentService.path} className="mega-services__detail-header text-decoration-none" onClick={closeMega}>
                             <i className={`bi ${currentService.icon} mega-services__detail-icon`}></i>
                             <h4 className="mega-services__detail-title">{currentService.title}</h4>
-                          </div>
+                          </Link>
                           <p className="mega-services__detail-tagline">{currentService.tagline}</p>
                           <hr className="mega-services__divider" />
                           {renderMegaColumns(currentService, closeMega)}
