@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   plugins: [react()],
-  base: command === 'build' ? '/App/' : '/',
+  base: '/App/',
   css: {
     preprocessorOptions: {
       scss: {
@@ -17,4 +17,4 @@ export default defineConfig(({ command }) => ({
       },
     },
   },
-}))
+})
