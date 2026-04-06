@@ -60,18 +60,35 @@
     margin: 0 auto 2rem;
   }
 
+  &__ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   &__cta {
-    border: 2px solid $white;
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+    border: none;
     color: $white;
     font-weight: $fw-bold;
     padding: 0.65rem 2rem;
     border-radius: 0;
     letter-spacing: 0.03em;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: opacity 0.2s ease;
 
-    &:hover {
-      background: $white;
-      color: $primary;
+    &:hover { opacity: 0.85; color: $white; }
+
+    &--outline {
+      background: transparent;
+      border: 2px solid $white;
+      color: $white;
+
+      &:hover {
+        background: $white;
+        color: $primary;
+        opacity: 1;
+      }
     }
   }
 }
@@ -105,12 +122,13 @@
 
   .container { position: relative; z-index: 1; }
 
-  &__label {
+  &__title {
     font-family: $font-family-heading;
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
     font-weight: $fw-bold;
     color: $white;
     margin-bottom: 1rem;
+    line-height: 1.2;
   }
 
   &__intro {
@@ -196,7 +214,6 @@
   margin-bottom: 0.2rem;
 
   &:hover {
-    text-decoration: underline;
     color: lighten($gradient-end, 10%);
   }
 }
@@ -241,6 +258,39 @@
     color: $primary;
     line-height: 1.7;
     margin-bottom: 1rem;
+  }
+
+  &__video-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+  }
+
+  &__video-thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.2s ease;
+    &:hover { opacity: 0.9; }
+  }
+
+  &__video-play {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: $white;
+    opacity: 0.85;
+    pointer-events: none;
+  }
+
+  &__video-link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: $fw-semibold;
+    color: $gradient-end;
   }
 }
 
@@ -418,10 +468,30 @@
   }
 }
 
+// Per-tab description
+.cat-services__tab-desc {
+  font-size: 16px;
+  color: rgba($white, 0.8);
+  max-width: 700px;
+  margin: 1.25rem auto 0;
+  line-height: 1.65;
+}
+
 // Service tab cards — use card-gradient as base, these classes handle inner content
 .cat-svc-card {
   display: flex;
   flex-direction: column;
+  transition: background 0.25s ease, border-color 0.25s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, $gradient-start 0%, darken($gradient-start, 5%) 100%) !important;
+    border-color: $gradient-start !important;
+
+    .cat-svc-card__title { color: $white; }
+    .cat-svc-card__desc  { color: rgba($white, 0.9); }
+    .cat-svc-card__link  { color: $gradient-end; }
+    .card-gradient__icon i { color: $white; }
+  }
 
   &__title {
     font-family: $font-family-heading;
@@ -447,15 +517,46 @@
     text-decoration: none;
     transition: color 0.2s;
 
-    i {
-      font-size: 0.7rem;
-      margin-left: 2px;
-    }
+    &:hover { color: lighten($gradient-end, 10%); }
+  }
+}
 
-    &:hover {
-      color: lighten($gradient-end, 10%);
-      text-decoration: underline;
-    }
+// GPVUE special card — no bg, no hover
+.cat-gpvue-card {
+  justify-content: center;
+  background: transparent !important;
+  border: none !important;
+
+  &:hover {
+    background: transparent !important;
+  }
+
+  &__logo {
+    width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.25rem;
+  }
+
+  &__desc {
+    font-size: 15px;
+    color: rgba($white, 0.8);
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+    flex: 1;
+  }
+
+  &__btn {
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+    color: $white;
+    font-weight: $fw-bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    padding: 0.55rem 1.75rem;
+    transition: opacity 0.2s ease;
+
+    &:hover { opacity: 0.85; color: $white; }
   }
 }
 

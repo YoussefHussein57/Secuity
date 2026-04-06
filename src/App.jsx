@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import ScrollToTop from './components/common/ScrollToTop';
 import Home from './pages/Home';
@@ -35,12 +35,6 @@ import NotFound from './pages/NotFound';
 // Import Bootstrap JS for dropdowns/collapse
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function ServiceRouter() {
-  const { slug } = useParams();
-  const cat = serviceCategories[slug];
-  return cat ? <ServiceCategoryPage data={cat} /> : <ServiceDetail />;
-}
-
 export default function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
@@ -49,8 +43,12 @@ export default function App() {
         <Route element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="services" element={<Services />} />
-          <Route path="services/:slug" element={<ServiceRouter />} />
-          <Route path="services/:category/:slug" element={<ServiceDetail />} />
+          <Route path="services/:slug" element={<ServiceDetail />} />
+          {/* Service category pages at top level: /:categorySlug */}
+          {Object.entries(serviceCategories).flatMap(([slug, data]) => [
+            <Route key={slug} path={slug} element={<ServiceCategoryPage data={data} />} />,
+            <Route key={`${slug}-sub`} path={`${slug}/:slug`} element={<ServiceDetail />} />,
+          ])}
           <Route path="technologies" element={<Technologies />} />
           <Route path="technologies/:slug" element={<TechnologyDetail />} />
           <Route path="government" element={<Government />} />

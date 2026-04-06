@@ -1,0 +1,12 @@
+Options -MultiViews
+
+# Force correct MIME types (fixes WordPress hosting interference)
+AddType application/javascript .js .mjs
+AddType text/css .css
+AddType image/svg+xml .svg
+
+RewriteEngine On
+RewriteBase /App/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]

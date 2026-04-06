@@ -11,7 +11,8 @@
     "style:audit": "node tools/style-audit/runner.js",
     "style:audit:home": "node tools/style-audit/runner.js http://localhost:3000",
     "style:audit:hero": "node tools/style-audit/runner.js http://localhost:3000 .hero",
-    "scrape": "node scripts/scrape.js"
+    "scrape": "node scripts/scrape.js",
+    "scrape:category": "node scripts/scrape-category.js"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",

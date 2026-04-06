@@ -1,7 +1,8 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 // Logo removed temporarily
 import services from '../../data/services';
+import serviceCategories from '../../data/serviceCategories';
 
 // Build ordered service list from data
 const serviceEntries = Object.entries(services)
@@ -11,7 +12,7 @@ const serviceEntries = Object.entries(services)
   icon: s.icon,
   title: s.title,
   tagline: s.tagline,
-  path: `/services/${slug}`,
+  path: serviceCategories[slug] ? `/${slug}` : `/services/${slug}`,
   strategic: s.strategic,
   strategicExtra: s.strategicExtra,
   tactical: s.tactical,
@@ -447,14 +448,25 @@ export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(null);
   const [searchOpen, setSearchOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const searchInputRef = useRef(null);
   const navRef = useRef(null);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 992);
+    const handleResize = () => {
+      const mobile = window.innerWidth < 992;
+      setIsMobile(mobile);
+      if (!mobile) setMobileOpen(false);
+    };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  // Lock body scroll when mobile drawer is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileOpen]);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -476,11 +488,7 @@ export default function Navbar() {
   const closeMega = () => {
     setOpenMenu(null);
     setActiveService(0);
-    // Also close bootstrap collapse on mobile
-    const collapse = document.getElementById('mainNav');
-    if (collapse?.classList.contains('show')) {
-      collapse.classList.remove('show');
-    }
+    setMobileOpen(false);
   };
 
   const toggleMenu = (menu) => {
@@ -501,18 +509,26 @@ export default function Navbar() {
         </Link>
         
         <button
-          className="navbar-toggler border-0"
+          className="navbar-toggler border-0 d-lg-none"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={() => setMobileOpen(true)}
+          aria-label="Open navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="mainNav">
+        <div className={`navbar-collapse-main${(!isMobile || mobileOpen) ? ' show' : ''}`}>
+          {isMobile && (
+            <div className="mobile-drawer-header">
+              <button
+                className="mobile-drawer-close"
+                onClick={() => setMobileOpen(false)}
+                aria-label="Close menu"
+              >
+                <i className="bi bi-x-lg"></i>
+              </button>
+            </div>
+          )}
           <ul className="navbar-nav align-items-lg-center gap-1">
 
             {/* ===== SERVICES ===== */}
@@ -537,7 +553,7 @@ export default function Navbar() {
                         <div className="mega-panel__header-inner">
                           <i className="bi bi-shield-lock mega-panel__header-icon"></i>
                           <div>
-                            <h3 className="mega-panel__title">Services</h3>
+                            <Link to="/services" className="mega-panel__title-link" onClick={closeMega}>Services</Link>
                             <p className="mega-panel__desc">Tailored consulting, engineering and managed security services to meet your unique needs.</p>
                           </div>
                         </div>
@@ -564,7 +580,11 @@ export default function Navbar() {
                           <div key={s.slug} className="mega-services-mobile__item">
                             <button
                               className={`mega-services-mobile__header ${expandedMobileService === i ? 'mega-services-mobile__header--open' : ''}`}
-                              onClick={() => setExpandedMobileService(expandedMobileService === i ? null : i)}
+                              onClick={() => {
+                                const next = expandedMobileService === i ? null : i;
+                                setExpandedMobileService(next);
+                                if (next !== null) setActiveService(next);
+                              }}
                             >
                               <i className={`bi ${s.icon} mega-services-mobile__icon`}></i>
                               <span className="mega-services-mobile__title">{s.title}</span>
@@ -629,7 +649,7 @@ export default function Navbar() {
                       <div className="mega-panel__header-inner">
                         <i className="bi bi-gear mega-panel__header-icon"></i>
                         <div>
-                          <h3 className="mega-panel__title">Technologies</h3>
+                          <Link to="/technologies" className="mega-panel__title-link" onClick={closeMega}>Technologies</Link>
                           <p className="mega-panel__desc">Leverage our expertise and access to hundreds of cybersecurity solutions. We take a vendor-agnostic approach to reviewing, analyzing, comparing and vetting current and emerging technologies.</p>
                         </div>
                       </div>
@@ -682,7 +702,7 @@ export default function Navbar() {
                       <div className="mega-panel__header-inner">
                         <i className="bi bi-bank mega-panel__header-icon"></i>
                         <div>
-                          <h3 className="mega-panel__title">Government Solutions</h3>
+                          <Link to="/government" className="mega-panel__title-link" onClick={closeMega}>Government Solutions</Link>
                           <p className="mega-panel__desc">Plan, build and run effective federal government cybersecurity programs.</p>
                         </div>
                       </div>
@@ -773,7 +793,7 @@ export default function Navbar() {
                       <div className="mega-panel__header-inner">
                         <i className="bi bi-building mega-panel__header-icon"></i>
                         <div>
-                          <h3 className="mega-panel__title">Company</h3>
+                          <Link to="/company/why-us" className="mega-panel__title-link" onClick={closeMega}>Company</Link>
                           <p className="mega-panel__desc">We are your Trusted Advisor</p>
                         </div>
                       </div>
@@ -922,7 +942,7 @@ export default function Navbar() {
                       <div className="mega-panel__header-inner">
                         <i className="bi bi-journal-richtext mega-panel__header-icon"></i>
                         <div>
-                          <h3 className="mega-panel__title">Resources</h3>
+                          <Link to="/resources" className="mega-panel__title-link" onClick={closeMega}>Resources</Link>
                           <p className="mega-panel__desc">Review educational cybersecurity content</p>
                         </div>
                       </div>
@@ -1007,6 +1027,7 @@ export default function Navbar() {
 
           {/* ===== RIGHT SIDE: Search + CTAs ===== */}
           <div className="d-flex align-items-center gap-3 ms-auto nav-right">
+            {/* Desktop: search icon button */}
             <button
               className="btn-reset nav-search-btn"
               onClick={() => setSearchOpen(true)}
@@ -1014,24 +1035,60 @@ export default function Navbar() {
             >
               <i className="bi bi-search"></i>
             </button>
-            <Link
-              to="/report-incident"
-              className="btn btn-outline-light nav-cta-btn"
-              onClick={closeMega}
-            >
-              <i className="bi bi-shield-exclamation nav-cta-icon"></i>
-              Report an Incident
-            </Link>
-            <Link
-              to="/contact"
-              className="btn btn-accent nav-cta-btn"
-              onClick={closeMega}
-            >
-              Talk to an Expert
-            </Link>
+
+            {/* Mobile: inline search input */}
+            {isMobile && (
+              <div className="mobile-search-row">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="mobile-search-input"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && e.target.value.trim()) {
+                      setMobileOpen(false);
+                      window.location.href = `/search?q=${encodeURIComponent(e.target.value.trim())}`;
+                    }
+                  }}
+                />
+                <button
+                  className="mobile-search-btn"
+                  onClick={() => setSearchOpen(true)}
+                  aria-label="Search"
+                >
+                  <i className="bi bi-search"></i>
+                </button>
+              </div>
+            )}
+
+            <div className="mobile-cta-row">
+              <Link
+                to="/report-incident"
+                className="btn btn-outline-light nav-cta-btn"
+                onClick={closeMega}
+              >
+                <i className="bi bi-shield-exclamation nav-cta-icon"></i>
+                Report an Incident
+              </Link>
+              <Link
+                to="/contact"
+                className="btn btn-accent nav-cta-btn"
+                onClick={closeMega}
+              >
+                Talk to an Expert
+              </Link>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* Backdrop behind sidebar on medium screens (click outside to close) */}
+      {isMobile && mobileOpen && (
+        <div
+          className="mobile-nav-backdrop"
+          onClick={() => setMobileOpen(false)}
+          aria-hidden="true"
+        />
+      )}
 
       {/* ===== SEARCH MODAL ===== */}
       {searchOpen && (

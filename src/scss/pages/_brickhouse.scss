@@ -163,7 +163,7 @@
 
     a {
       color: $light;
-      text-decoration: underline;
+      text-decoration: none;
       &:hover { color: $white; }
     }
   }
@@ -255,7 +255,7 @@
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: $gradient-start;
   }
 }
@@ -293,7 +293,7 @@
     text-decoration: none;
     font-weight: 600;
 
-    &:hover { color: $white; text-decoration: underline; }
+    &:hover { color: $white; text-decoration: none; }
   }
 
   &__bio {
@@ -326,6 +326,6 @@
     font-weight: 600;
     text-decoration: none;
 
-    &:hover { text-decoration: underline; }
+    &:hover { text-decoration: none; }
   }
 }

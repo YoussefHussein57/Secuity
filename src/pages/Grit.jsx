@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import { gritResources, gritInsights, gritLeader, gritCertifications } from '../data/grit';
+import BeInformed from '../components/sections/BeInformed';
 
 export default function Grit() {
   const [activeTab, setActiveTab] = useState('Threat Research');
@@ -208,6 +209,9 @@ export default function Grit() {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* ===== BE INFORMED ===== */}
+      <BeInformed />
     </>
   );
 }

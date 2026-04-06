@@ -3671,6 +3671,112 @@ const services = {
     },
   },
 
+  'incident-response-threat-intelligence': {
+    title: 'Threat Intelligence Services',
+    icon: 'bi-eye',
+    tagline: 'Actionable Intelligence to Stay Ahead of Adversaries',
+    heroLabel: 'THREAT INTELLIGENCE',
+    heroHighlight: 'Intelligence',
+    heroImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Incident_Response_and_Threat_Intelligence.png',
+    description:
+      'GRIT delivers customizable, high-fidelity threat intelligence programs built around your industry, threat actors, and risk profile — so you can act before attackers do.',
+    parentService: 'incident-response',
+    statsBanner: [
+      { number: '500+', label: 'threat actors tracked' },
+      { number: '10,000+', label: 'indicators of compromise processed daily' },
+      { number: '95%', label: 'accuracy rate on threat actor attribution' },
+    ],
+    useCases: {
+      label: 'Threat Intelligence Use Cases',
+      title: 'When You Need Threat Intelligence',
+      titleHighlight: 'Threat Intelligence',
+      subtitle:
+        'Threat intelligence is most valuable when it is specific, timely, and actionable. GRIT programs are built to support a wide range of security functions.',
+      items: [
+        'Proactively defending against known threat actors',
+        'Reducing alert fatigue with contextual threat data',
+        'Supporting incident response investigations',
+        'Meeting regulatory and compliance requirements',
+        'Informing security strategy and board reporting',
+        'Identifying third-party and supply chain risks',
+      ],
+    },
+    splits: [
+      {
+        label: 'GRIT Threat Intelligence',
+        title: 'Intelligence Built by Practitioners, for Practitioners',
+        titleHighlight: 'Practitioners',
+        paragraphs: [
+          'GuidePoint Research and Intelligence Team (GRIT) is composed of elite threat researchers and incident response professionals who live at the intersection of active attack campaigns and defensive strategy.',
+          'Our threat intelligence is drawn from real investigations, dark web monitoring, proprietary collection infrastructure, and deep adversary tracking — not just commodity feeds. Every report and indicator is validated by our analysts before it reaches you.',
+        ],
+        image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Website_Refresh_Services_MAIN_Incident_Response_and_Threat_Intelligence.png',
+        imageAlt: 'GRIT Threat Intelligence',
+      },
+      {
+        label: 'Customizable TI Programs',
+        title: 'A Threat Intelligence Program Tailored to Your Risk',
+        titleHighlight: 'Tailored',
+        paragraphs: [
+          'No two organizations face the same threat landscape. GRIT threat intelligence programs are scoped to your industry verticals, geographic footprint, technology stack, and known adversary interest — ensuring every piece of intelligence is relevant and actionable.',
+        ],
+        checklist: [
+          'Strategic intelligence for executive and board-level reporting',
+          'Operational intelligence for SOC and IR teams',
+          'Tactical IOC feeds integrated into your existing tooling',
+          'Dark web and underground forum monitoring',
+          'Threat actor profiling and attribution',
+          'Ransomware group tracking and early warning',
+          'Third-party and supply chain threat monitoring',
+          'Custom intelligence requirements (RFIs) answered by GRIT analysts',
+        ],
+        imageLeft: true,
+      },
+      {
+        label: 'Threat Intelligence as a Service',
+        title: 'Fully Managed Intelligence — From Collection to Action',
+        titleHighlight: 'Fully Managed',
+        paragraphs: [
+          'For organizations that lack the internal resources to run a dedicated TI program, GRIT offers Threat Intelligence as a Service (TIaaS) — a fully managed offering where GRIT analysts act as an extension of your security team.',
+          'From collection and analysis to dissemination and integration with your SIEM, SOAR, and ticketing systems, GRIT handles the entire intelligence lifecycle so your team can focus on response.',
+        ],
+      },
+    ],
+    strategic: [
+      { title: 'Threat Intelligence Program Development', description: 'Build a customizable TI program aligned to your risk profile and business objectives' },
+      { title: 'Threat Actor Profiling', description: 'In-depth profiles of adversaries most likely to target your organization' },
+      { title: 'Intelligence Requirements Workshop', description: 'Define the intelligence your team needs to make better security decisions' },
+    ],
+    tactical: [
+      { title: 'Threat Intelligence as a Service', description: 'Fully managed threat intelligence program from collection to dissemination' },
+      { title: 'Dark Web Monitoring', description: 'Continuous monitoring of underground forums and marketplaces for your data and credentials' },
+      { title: 'IOC Feed Integration', description: 'High-fidelity indicators of compromise integrated directly into your security tooling' },
+    ],
+    managed: [
+      { title: 'Ransomware Early Warning', description: 'Track active ransomware groups and receive early warning when your sector is targeted' },
+      { title: 'Executive Threat Briefings', description: 'Regular briefings tailored for CISOs and board audiences on the evolving threat landscape' },
+    ],
+    training: [],
+    outcomesSection: {
+      label: 'Threat Intelligence Outcomes',
+      title: 'What GRIT Intelligence Delivers',
+      titleHighlight: 'GRIT Intelligence',
+      subtitle: 'Measurable improvements in detection, response, and strategic decision-making.',
+    },
+    outcomes: [
+      { icon: 'bi-radar', title: 'Earlier Detection', description: 'Identify adversary activity before it reaches production systems.' },
+      { icon: 'bi-lightning-charge', title: 'Faster Response', description: 'Contextual intelligence accelerates triage and reduces MTTR.' },
+      { icon: 'bi-graph-up-arrow', title: 'Stronger Posture', description: 'Strategic intelligence informs long-term security investments.' },
+      { icon: 'bi-shield-check', title: 'Reduced Risk', description: 'Proactive awareness of actor TTPs keeps you one step ahead.' },
+    ],
+    testimonial: {
+      quote:
+        'GRIT threat intelligence has transformed how our SOC operates. We went from reactive to proactive — and the quality of their reporting is unlike anything we\'ve seen from a vendor.',
+      author: 'Director of Threat Operations',
+      company: 'Fortune 500 Financial Services',
+    },
+  },
+
   'managed-security': {
     title: 'Managed Security Services',
     icon: 'bi-shield-lock',

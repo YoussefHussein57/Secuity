@@ -23,6 +23,10 @@ $success:       #34d399;
 $warning:       #fbbf24;
 $danger:        #f87171;
 
+// Links — no underline sitewide
+$link-decoration:       none;
+$link-hover-decoration: none;
+
 // Typography
 $font-family-base:    'IBM Plex Sans', sans-serif;
 $font-family-heading: 'IBM Plex Sans', sans-serif;
