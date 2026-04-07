@@ -1,6 +1,8 @@
 import { Fragment, useState, useRef } from 'react';
+import { assetUrl } from '../utils/assetUrl';
 import { useParams, Navigate } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
+import LifecycleWheel from '../components/sections/LifecycleWheel';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import GradientCard from '../components/sections/GradientCard';
 import StatsBanner from '../components/sections/StatsBanner';
@@ -78,12 +80,72 @@ export default function ServiceDetail() {
                     </div>
                   ))
                 : service.useCases.items.map((item) => (
-                    <div className="col-lg-4 col-md-6" key={item}>
+                    <div className={`col-md-6 col-lg-${service.useCases.items.length >= 4 ? '3' : '4'}`} key={item}>
                       <GradientCard text={item} layout="text-only" accent="top" />
                     </div>
                   ))
               }
             </AnimatedSection>
+          </div>
+        </section>
+      )}
+
+      {/* 2b. Hero Split — indigo section (replaces use cases when set) */}
+      {service.heroSplit && !service.useCases && (
+        <section className="section section--indigo service-use-cases">
+          <div className="container">
+            <AnimatedSection animation="animate-on-scroll">
+              <div className="text-center mb-5">
+                <p className="section-header__label">{service.heroSplit.label}</p>
+                <h2 className="use-cases__title text-white">
+                  {service.heroSplit.titleHighlight ? (
+                    <>
+                      {service.heroSplit.title.split(service.heroSplit.titleHighlight)[0]}
+                      <span className="text-accent-box">{service.heroSplit.titleHighlight}</span>
+                      {service.heroSplit.title.split(service.heroSplit.titleHighlight)[1] || ''}
+                    </>
+                  ) : service.heroSplit.title}
+                </h2>
+                {service.heroSplit.subtitle && (
+                  <p className="use-cases__subtitle mx-auto mt-3">{service.heroSplit.subtitle}</p>
+                )}
+              </div>
+            </AnimatedSection>
+
+            {/* Cards variant — no image */}
+            {service.heroSplit.cards ? (
+              <AnimatedSection animation="animate-on-scroll">
+                <div className={`row g-4 row-cols-1 row-cols-md-${service.heroSplit.cards.length <= 3 ? service.heroSplit.cards.length : 3}`}>
+                  {service.heroSplit.cards.map((card) => (
+                    <div key={card.title} className="col">
+                      <GradientCard layout="centered" accent="top" title={card.title} description={card.description || undefined} />
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
+            ) : (
+              /* Image + paragraphs variant */
+              <div className="row g-5 align-items-center">
+                <div className={`col-lg-5 d-flex justify-content-center ${service.heroSplit.imageLeft ? 'order-lg-1' : 'order-lg-2'}`}>
+                  <AnimatedSection animation={service.heroSplit.imageLeft ? 'fade-in-left' : 'fade-in-right'}>
+                    <img
+                      src={assetUrl(service.heroSplit.image)}
+                      alt={service.heroSplit.imageAlt || ''}
+                      style={service.heroSplit.imageStyle || undefined}
+                    />
+                  </AnimatedSection>
+                </div>
+                <div className={`col-lg-7 ${service.heroSplit.imageLeft ? 'order-lg-2' : 'order-lg-1'}`}>
+                  <AnimatedSection animation={service.heroSplit.imageLeft ? 'fade-in-right' : 'fade-in-left'}>
+                    <div style={{ maxWidth: '590px' }}>
+                      {service.heroSplit.paragraphs.map((p, i) => (
+                        <p key={i} className="text-white mb-3" style={{ lineHeight: 1.6, fontSize: '16px' }}>{p}</p>
+                      ))}
+                    </div>
+                  </AnimatedSection>
+                </div>
+              </div>
+            )}
           </div>
         </section>
       )}
@@ -265,9 +327,15 @@ export default function ServiceDetail() {
         const imageCol = (
           <div className={`col-lg-6${imageLeft ? ' order-lg-1 order-2' : ''}`} key="image">
             <AnimatedSection animation={imageLeft ? 'fade-in-left' : 'fade-in-right'}>
-              <div className={`dark-split__image dark-split__image--${imageLeft ? 'left' : 'right'}`}>
-                <img src={s.image} alt={s.imageAlt} style={s.imageStyle || undefined} />
-              </div>
+              {s.imageContain ? (
+                <div className="d-flex justify-content-center align-items-center h-100 py-4 py-lg-0">
+                  <img src={assetUrl(s.image)} alt={s.imageAlt || ''} style={s.imageStyle || undefined} />
+                </div>
+              ) : (
+                <div className={`dark-split__image dark-split__image--${imageLeft ? 'left' : 'right'}`}>
+                  <img src={assetUrl(s.image)} alt={s.imageAlt} style={s.imageStyle || undefined} />
+                </div>
+              )}
             </AnimatedSection>
           </div>
         );
@@ -332,6 +400,13 @@ export default function ServiceDetail() {
                   <AnimatedSection animation="stagger-children" className="row g-4">
                     {s.splitCards.map((card, ci) => {
                       const colClass = s.splitCards.length >= 3 ? 'col-lg-4' : 'col-lg-6';
+                      if (card.biIcon) {
+                        return (
+                          <div className={colClass} key={ci}>
+                            <GradientCard layout="centered" accent="bottom" icon={card.biIcon} iconCircle title={card.title} description={card.description} />
+                          </div>
+                        );
+                      }
                       if (card.stat) {
                         return (
                           <div className={colClass} key={ci}>
@@ -358,7 +433,7 @@ export default function ServiceDetail() {
                           <GradientCard layout="left" accent="bottom">
                             <div className={card.icon ? 'd-flex gap-4 align-items-start' : ''}>
                               {card.icon && (
-                                <img src={card.icon} alt="" style={{ width: 64, height: 64, objectFit: 'contain', flexShrink: 0, marginTop: '4px' }} />
+                                <img src={assetUrl(card.icon)} alt="" style={{ width: 64, height: 64, objectFit: 'contain', flexShrink: 0, marginTop: '4px' }} />
                               )}
                               <div style={{ flex: 1 }}>
                                 {card.title && (
@@ -412,18 +487,22 @@ export default function ServiceDetail() {
         );
       })}
 
-      {/* 3b. Service Tabs (conditional) */}
+      {/* 3b. Lifecycle Wheel (conditional — e.g. AWS) */}
+      {service.lifecycleStages && <LifecycleWheel data={service.lifecycleStages} />}
+
+      {/* 3c. Service Tabs (conditional) */}
       <ServiceTabs tabsSection={service.tabsSection} />
 
       {/* 3c. Tier Compare (conditional) */}
       <TierCompare tierSection={service.tierSection} />
 
       {/* Outcomes early (right after splits, before certs) */}
-      {service.outcomesEarly && (
+      {service.outcomesEarly && !service.hideOutcomes && (
         <Outcomes
           outcomesSection={service.outcomesSection}
           outcomes={service.outcomes}
           title={service.title}
+          variant={service.outcomesVariant}
         />
       )}
 
@@ -467,13 +546,46 @@ export default function ServiceDetail() {
         </section>
       )}
 
-      {/* 5. Outcomes (default position, skip if already rendered early) */}
-      {!service.outcomesEarly && (
+      {/* 5. Outcomes (default position, skip if already rendered early or hidden) */}
+      {!service.outcomesEarly && !service.hideOutcomes && (
         <Outcomes
           outcomesSection={service.outcomesSection}
           outcomes={service.outcomes}
           title={service.title}
+          variant={service.outcomesVariant}
         />
+      )}
+
+      {/* 5b. Engagement Section (optional — SaaS, etc.) */}
+      {service.engagementSection && (
+        <section className="section section--indigo-light">
+          <div className="container">
+            <AnimatedSection animation="animate-on-scroll">
+              <div className="text-center mb-5">
+                <p className="section-header__label" style={{ color: 'rgba(255,255,255,0.7)' }}>{service.engagementSection.label}</p>
+                <h2 className="use-cases__title text-white">
+                  {service.engagementSection.titleHighlight ? (
+                    <>
+                      {service.engagementSection.title.split(service.engagementSection.titleHighlight)[0]}
+                      <span className="text-accent-box">{service.engagementSection.titleHighlight}</span>
+                      {service.engagementSection.title.split(service.engagementSection.titleHighlight)[1] || ''}
+                    </>
+                  ) : service.engagementSection.title}
+                </h2>
+                {service.engagementSection.subtitle && (
+                  <p className="use-cases__subtitle mx-auto mt-3">{service.engagementSection.subtitle}</p>
+                )}
+              </div>
+            </AnimatedSection>
+            <AnimatedSection animation="stagger-children" className="row g-4">
+              {service.engagementSection.cards.map((card) => (
+                <div className="col-lg-6" key={card.title}>
+                  <GradientCard layout="centered" accent="top" title={card.title} description={card.description} />
+                </div>
+              ))}
+            </AnimatedSection>
+          </div>
+        </section>
       )}
 
       {/* 6. Trusted Advisor + Contact Form */}

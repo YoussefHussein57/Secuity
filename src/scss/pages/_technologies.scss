@@ -356,6 +356,7 @@
     top: 0;
     left: 0;
     right: 0;
+    height: 4px;
     background: linear-gradient(90deg, $gradient-start, $gradient-end);
   }
 
@@ -371,6 +372,9 @@
 
   // ---- Layout: Centered (expertise / lifecycle) ----
   &--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
@@ -419,12 +423,10 @@
     flex-shrink: 0;
     width: 72px;
     height: 72px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid $gradient-end;
-    background: rgba($gradient-end, 0.1);
+    margin-bottom: 1.5rem;
 
     i {
       font-size: 1.75rem;

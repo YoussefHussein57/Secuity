@@ -105,16 +105,21 @@ const featuredResources = [
 ];
 
 // Helper: render sub-service items for a column
-function SubItems({ items, icon, path, closeMega }) {
-  return items.map((item) => (
-    <Link key={item.title} to={item.path || path} className="mega-services__sub-item" onClick={closeMega}>
-      <i className={`bi ${icon} mega-services__sub-icon`}></i>
-      <div>
-        <span className="mega-services__sub-title">{item.title}</span>
-        <span className="mega-services__sub-desc">{item.description}</span>
-      </div>
-    </Link>
-  ));
+function SubItems({ items, icon, closeMega }) {
+  return items.map((item) => {
+    const inner = (
+      <>
+        <i className={`bi ${icon} mega-services__sub-icon`}></i>
+        <div>
+          <span className="mega-services__sub-title">{item.title}</span>
+          <span className="mega-services__sub-desc">{item.description}</span>
+        </div>
+      </>
+    );
+    return item.path
+      ? <Link key={item.title} to={item.path} className="mega-services__sub-item" onClick={closeMega}>{inner}</Link>
+      : <div key={item.title} className="mega-services__sub-item mega-services__sub-item--no-link">{inner}</div>;
+  });
 }
 
 // Helper: render resource card
@@ -132,15 +137,31 @@ function ResourceCard({ resource, closeMega }) {
 function renderMegaColumns(service, closeMega) {
   const layout = service.megaMenuLayout;
 
-  // Layout: Professional Services + Resources (AI, Data Security, Email, Endpoint, etc.)
+  // Layout: Professional Services + Tactical + Training + Resources (AI)
   if (layout === 'ai') {
     const resources = service.megaMenuResources || (service.megaMenuResource ? [service.megaMenuResource] : []);
     return (
       <div className="mega-services__columns">
         <div className="mega-services__col">
-          <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          {service.strategic?.length > 0 && (
+            <>
+              <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
+              <SubItems items={service.strategic} icon="bi-shield-check" closeMega={closeMega} />
+            </>
+          )}
+          {service.tactical?.length > 0 && (
+            <>
+              <h6 className="mega-services__col-heading" style={{ marginTop: '1rem' }}>TACTICAL ASSESSMENTS</h6>
+              <SubItems items={service.tactical} icon="bi-shield-check" closeMega={closeMega} />
+            </>
+          )}
         </div>
+        {service.training?.length > 0 && (
+          <div className="mega-services__col">
+            <h6 className="mega-services__col-heading">TRAINING</h6>
+            <SubItems items={service.training} icon="bi-mortarboard" closeMega={closeMega} />
+          </div>
+        )}
         {resources.length > 0 && (
           <div className="mega-services__col">
             <h6 className="mega-services__col-heading">RESOURCES</h6>
@@ -162,11 +183,11 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">SERVICES BY PLATFORM</h6>
-          <SubItems items={service.strategic || []} icon="bi-cloud" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-cloud" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         {resources.length > 0 && (
           <div className="mega-services__col">
@@ -188,19 +209,19 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">THREAT EMULATION</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">TACTICAL ASSESSMENT</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">VULNERABILITY MANAGEMENT</h6>
-          <SubItems items={service.managed || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} />
           {service.managedExtra?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
-              <SubItems items={service.managedExtra} icon="bi-gear" path={service.path} closeMega={closeMega} />
+              <SubItems items={service.managedExtra} icon="bi-gear" closeMega={closeMega} />
             </>
           )}
         </div>
@@ -214,11 +235,11 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">ROBUST STAFFING SOLUTIONS</h6>
-          <SubItems items={service.strategic || []} icon="bi-person-plus" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-person-plus" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-          <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} />
         </div>
       </div>
     );
@@ -230,15 +251,15 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PLATFORM-SPECIFIC SERVICES</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-          <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} />
         </div>
       </div>
     );
@@ -250,15 +271,15 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">STRATEGIC SOLUTIONS</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">TACTICAL ASSESSMENTS</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">THREAT EMULATION</h6>
-          <SubItems items={service.managed || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
       </div>
     );
@@ -270,15 +291,15 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">IMPLEMENTATION & ADMINISTRATION</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-          <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} />
         </div>
       </div>
     );
@@ -307,17 +328,17 @@ function renderMegaColumns(service, closeMega) {
           {service.strategic?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">THIRD-PARTY MANAGED SERVICES</h6>
-              <SubItems items={service.strategic} icon="bi-gear" path={service.path} closeMega={closeMega} />
+              <SubItems items={service.strategic} icon="bi-gear" closeMega={closeMega} />
             </>
           )}
         </div>
         <div className="mega-services__col mega-services__col--wide">
           <h6 className="mega-services__col-heading">"AS A SERVICE" OFFERINGS</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">&nbsp;</h6>
-          <SubItems items={service.managed || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
       </div>
     );
@@ -329,21 +350,21 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROACTIVE SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">REACTIVE SERVICES</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-exclamation" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-exclamation" closeMega={closeMega} />
           {service.tacticalExtra?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
-              <SubItems items={service.tacticalExtra} icon="bi-gear" path={service.path} closeMega={closeMega} />
+              <SubItems items={service.tacticalExtra} icon="bi-gear" closeMega={closeMega} />
             </>
           )}
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">ADVISORY SERVICES</h6>
-          <SubItems items={service.managed || []} icon="bi-clipboard-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-clipboard-check" closeMega={closeMega} />
         </div>
       </div>
     );
@@ -356,15 +377,15 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">IAM PILLARS</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-          <SubItems items={service.managed || []} icon="bi-gear" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} />
         </div>
         {iamResource && (
           <div className="mega-services__col">
@@ -384,27 +405,27 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">GOVERNANCE SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-clipboard-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-clipboard-check" closeMega={closeMega} />
           {service.strategicExtra?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">BUSINESS RESILIENCY</h6>
-              <SubItems items={service.strategicExtra} icon="bi-building-check" path={service.path} closeMega={closeMega} />
+              <SubItems items={service.strategicExtra} icon="bi-building-check" closeMega={closeMega} />
             </>
           )}
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">RISK SERVICES</h6>
-          <SubItems items={service.tactical || []} icon="bi-exclamation-triangle" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-exclamation-triangle" closeMega={closeMega} />
           {service.tacticalExtra?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
-              <SubItems items={service.tacticalExtra} icon="bi-gear" path={service.path} closeMega={closeMega} />
+              <SubItems items={service.tacticalExtra} icon="bi-gear" closeMega={closeMega} />
             </>
           )}
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">COMPLIANCE SERVICES</h6>
-          <SubItems items={service.managed || []} icon="bi-check2-square" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-check2-square" closeMega={closeMega} />
         </div>
       </div>
     );
@@ -416,11 +437,11 @@ function renderMegaColumns(service, closeMega) {
       {service.strategic?.length > 0 && (
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">STRATEGIC SOLUTIONS</h6>
-          <SubItems items={service.strategic} icon="bi-shield-check" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.strategic} icon="bi-shield-check" closeMega={closeMega} />
           {service.managed?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
-              <SubItems items={service.managed} icon="bi-gear" path={service.path} closeMega={closeMega} />
+              <SubItems items={service.managed} icon="bi-gear" closeMega={closeMega} />
             </>
           )}
         </div>
@@ -428,13 +449,13 @@ function renderMegaColumns(service, closeMega) {
       {service.tactical?.length > 0 && (
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">TACTICAL ASSESSMENT</h6>
-          <SubItems items={service.tactical} icon="bi-bullseye" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.tactical} icon="bi-bullseye" closeMega={closeMega} />
         </div>
       )}
       {service.training?.length > 0 && (
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">TRAINING</h6>
-          <SubItems items={service.training} icon="bi-mortarboard" path={service.path} closeMega={closeMega} />
+          <SubItems items={service.training} icon="bi-mortarboard" closeMega={closeMega} />
         </div>
       )}
     </div>

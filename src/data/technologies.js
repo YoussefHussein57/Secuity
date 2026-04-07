@@ -55,7 +55,7 @@ const technologies = {
         {
           name: 'Managed Security',
           cards: [
-            { title: 'Application Security as a Service', description: 'Reduce risk in your SDLC by remediating issues in your source code before deploying apps into production through your CI/CD tools.', link: '/services/application-security' },
+            { title: 'Application Security as a Service', description: 'Reduce risk in your SDLC by remediating issues in your source code before deploying apps into production through your CI/CD tools.', link: '/application-security' },
           ],
         },
       ],

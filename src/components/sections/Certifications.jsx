@@ -79,18 +79,16 @@ export default function Certifications({ variant = 'default', certs: certsProp, 
 
   const renderCertGrid = (centered = false) => (
     <div className={`certs-grid${centered ? ' mx-auto' : ''}`} style={centered ? { maxWidth: 700 } : undefined}>
-      <h5 className="certs-grid__heading">Highly Trained, Highly Certified</h5>
-      <p className="certs-grid__subheading">Examples Include:</p>
       {activeCertGroups.map((group) => (
         <div className={`certs-grid__group${group.certs.length <= 2 ? ' certs-grid__group--half' : ''}`} key={group.category}>
-          <div className="row g-2 justify-content-center mb-2">
+          {group.category && <p className="certs-grid__category">{group.category}</p>}
+          <div className="row g-2 justify-content-center mt-2 mb-3">
             {group.certs.map((cert) => (
               <div className="col-auto" key={cert.name}>
                 <img src={cert.image} alt={cert.name} className="cert-badge" />
               </div>
             ))}
           </div>
-          {group.category && <p className="certs-grid__category">{group.category}</p>}
         </div>
       ))}
     </div>

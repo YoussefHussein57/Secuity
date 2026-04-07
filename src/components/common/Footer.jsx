@@ -9,24 +9,24 @@ const companyLinks = [
 ];
 
 const servicesCol1 = [
-  { label: 'Artificial Intelligence (AI)', path: '/services/artificial-intelligence' },
-  { label: 'Application Security', path: '/services/application-security' },
-  { label: 'Cloud Security Services', path: '/services/cloud-security' },
-  { label: 'Data Security & Privacy', path: '/services/data-security' },
-  { label: 'Email Security', path: '/services/email-security' },
-  { label: 'Endpoint Security', path: '/services/endpoint-security' },
-  { label: 'Governance, Risk & Compliance', path: '/services/grc' },
-  { label: 'Identity & Access Management (IAM)', path: '/services/iam' },
+  { label: 'Artificial Intelligence (AI)', path: '/artificial-intelligence' },
+  { label: 'Application Security', path: '/application-security' },
+  { label: 'Cloud Security Services', path: '/cloud-security' },
+  { label: 'Data Security & Privacy', path: '/data-security' },
+  { label: 'Email Security', path: '/email-security' },
+  { label: 'Endpoint Security', path: '/endpoint-security' },
+  { label: 'Governance, Risk & Compliance', path: '/grc' },
+  { label: 'Identity & Access Management (IAM)', path: '/iam' },
 ];
 
 const servicesCol2 = [
-  { label: 'Incident Response & Threat Intelligence', path: '/services/incident-response' },
-  { label: 'Managed Security Services', path: '/services/managed-security' },
-  { label: 'Network & Infrastructure Security', path: '/services/network-security' },
-  { label: 'Security Awareness & Education', path: '/services/security-awareness' },
-  { label: 'Security Operations Center (SOC)', path: '/services/soc' },
-  { label: 'Staff Augmentation', path: '/services/staff-augmentation' },
-  { label: 'Vulnerability Management & Pen Testing', path: '/services/vulnerability-management' },
+  { label: 'Incident Response & Threat Intelligence', path: '/incident-response' },
+  { label: 'Managed Security Services', path: '/managed-security' },
+  { label: 'Network & Infrastructure Security', path: '/network-security' },
+  { label: 'Security Awareness & Education', path: '/security-awareness' },
+  { label: 'Security Operations Center (SOC)', path: '/soc' },
+  { label: 'Staff Augmentation', path: '/staff-augmentation' },
+  { label: 'Vulnerability Management & Pen Testing', path: '/vulnerability-management' },
 ];
 
 const resourceLinks = [

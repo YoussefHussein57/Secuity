@@ -1,0 +1,85 @@
+name: Build & Deploy to Server
+
+on:
+  push:
+    branches:
+      - main          # Change to 'master' if that's your default branch
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Build the React app
+      - name: Build
+        run: npm run build
+        env:
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
+          VITE_RECAPTCHA_SITE_KEY: ${{ secrets.VITE_RECAPTCHA_SITE_KEY }}
+          VITE_GA4_ID: ${{ secrets.VITE_GA4_ID }}
+
+      # ─────────────────────────────────────────────────────────────
+      # OPTION A — SSH + rsync  (recommended — VPS / managed hosts)
+      # Required GitHub Secrets:
+      #   SSH_HOST         → your server IP or domain (e.g. 123.45.67.89)
+      #   SSH_USERNAME     → SSH user (e.g. ubuntu, root, cpaneluser)
+      #   SSH_PRIVATE_KEY  → full contents of your private key (~/.ssh/id_rsa)
+      #   SSH_PORT         → usually 22 (add this secret or leave default)
+      #   DEPLOY_PATH      → absolute path on server (e.g. /var/www/html or /home/user/public_html)
+      # ─────────────────────────────────────────────────────────────
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.SSH_PORT || 22 }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy via rsync over SSH
+        run: |
+          rsync -avz --delete \
+            --exclude='.htaccess' \
+            --exclude='wp-config.php' \
+            --exclude='wp-content/' \
+            --exclude='wp-*.php' \
+            -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.SSH_PORT || 22 }} -o StrictHostKeyChecking=no" \
+            dist/ \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/
+
+      # ─────────────────────────────────────────────────────────────
+      # OPTION B — FTP/SFTP  (shared hosting fallback)
+      # Comment out OPTION A steps above and uncomment this block.
+      # Required GitHub Secrets:
+      #   FTP_SERVER      → FTP hostname (e.g. ftp.yoursite.com)
+      #   FTP_USERNAME    → FTP username
+      #   FTP_PASSWORD    → FTP password
+      #   FTP_SERVER_DIR  → remote path (e.g. /public_html/ or /)
+      # ─────────────────────────────────────────────────────────────
+      # - name: Deploy via FTP
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      #   with:
+      #     server: ${{ secrets.FTP_SERVER }}
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     local-dir: dist/
+      #     server-dir: ${{ secrets.FTP_SERVER_DIR }}
+      #     exclude: |
+      #       **/.git*
+      #       **/.git*/**
+      #       **/node_modules/**
+      #       wp-config.php

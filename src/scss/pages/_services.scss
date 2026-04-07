@@ -193,7 +193,7 @@
     }
 
     .use-cases__title {
-      font-size: 50px;
+      font-size: 28px;
       line-height: 60px;
       margin-bottom: 1.25rem;
       text-align: left;
@@ -332,8 +332,23 @@
   }
 }
 
+// ---- Centered Icon Cards (health check / splitCards with biIcon) ----
+.section--dark .card-gradient--centered {
+  .card-gradient__title {
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 12px;
+  }
+
+  .card-gradient__desc {
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
 // ---- Outcome Cards ----
-.section--dark .card-gradient--horizontal {
+.section--dark .card-gradient--horizontal,
+.section--indigo-light .card-gradient--horizontal {
   .card-gradient__title {
     font-size: 30px;
     color: #13BFEA;
@@ -602,10 +617,12 @@
   }
 
   &__category {
-    font-size: 18px;
-    font-weight: 400;
-    color: $black;
-    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: $accent;
+    margin: 0 0 0.25rem;
   }
 }
 

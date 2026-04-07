@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import NetworkBackground from './NetworkBackground';
+import { assetUrl } from '../../utils/assetUrl';
 
 export default function Hero({
   title,
@@ -47,7 +48,7 @@ export default function Hero({
   return (
     <section
       className={`hero text-white ${variantClass} ${extraClass}`}
-      style={{ backgroundImage: `url(${bgImage})` }}
+      style={{ backgroundImage: `url(${assetUrl(bgImage)})` }}
     >
       {showNetwork && <NetworkBackground />}
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
@@ -62,7 +63,7 @@ export default function Hero({
                   opacity: loaded ? 1 : 0,
                 }}
               >
-                <img src={iconImage} alt="" style={{ height: 80 }} />
+                <img src={assetUrl(iconImage)} alt="" style={{ height: 80 }} />
               </div>
             )}
             {label && !labelAfterTitle && (

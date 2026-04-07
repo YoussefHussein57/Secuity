@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { assetUrl } from '../utils/assetUrl';
 import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/sections/AnimatedSection';
 import Certifications from '../components/sections/Certifications';
@@ -15,13 +16,13 @@ export default function ServiceCategoryPage({ data }) {
       {/* ── Hero ── */}
       <section
         className="cat-hero"
-        style={data.heroBgImage ? { backgroundImage: `url(${data.heroBgImage})` } : undefined}
+        style={data.heroBgImage ? { backgroundImage: `url(${assetUrl(data.heroBgImage)})` } : undefined}
       >
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
             <div className="cat-hero__inner">
               {data.iconImage
-                ? <img src={data.iconImage} alt="" className="cat-hero__icon-img" />
+                ? <img src={assetUrl(data.iconImage)} alt="" className="cat-hero__icon-img" />
                 : <i className={`bi ${data.icon} cat-hero__icon`}></i>
               }
               <h1 className="cat-hero__title">{data.heroTitle}</h1>
@@ -55,7 +56,7 @@ export default function ServiceCategoryPage({ data }) {
                 <div key={i} className="col-md-4">
                   <div className="cat-stat-card">
                     <img
-                      src={stat.circleImage}
+                      src={assetUrl(stat.circleImage)}
                       alt={stat.value}
                       className="cat-stat-card__circle"
                     />
@@ -98,7 +99,7 @@ export default function ServiceCategoryPage({ data }) {
                     rel="noopener noreferrer"
                     className="cat-practice__video-wrap"
                   >
-                    <img src={data.practiceVideo.thumbnail} alt="Overview video" className="cat-practice__video-thumb" />
+                    <img src={assetUrl(data.practiceVideo.thumbnail)} alt="Overview video" className="cat-practice__video-thumb" />
                     <div className="cat-practice__video-play">
                       <i className="bi bi-play-circle"></i>
                     </div>

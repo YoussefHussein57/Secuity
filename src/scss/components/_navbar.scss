@@ -445,6 +445,15 @@
     &:hover {
       opacity: 0.7;
     }
+
+    &--no-link {
+      cursor: default;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 
   &__sub-icon {

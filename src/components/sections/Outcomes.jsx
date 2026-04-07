@@ -1,18 +1,18 @@
 import AnimatedSection from './AnimatedSection';
 import GradientCard from './GradientCard';
 
-export default function Outcomes({ outcomesSection, outcomes, title }) {
+export default function Outcomes({ outcomesSection, outcomes, title, variant = 'dark' }) {
   if (!outcomesSection && (!outcomes || outcomes.length === 0)) return null;
 
   return (
-    <section className="section section--dark outcomes-section">
+    <section className={`section section--${variant} outcomes-section`}>
       <div className="container">
         <AnimatedSection animation="animate-on-scroll">
-          <div className="outcomes-header d-flex flex-column gap-4">
+          <div className={`outcomes-header d-flex flex-column gap-4${variant !== 'dark' ? ' text-center align-items-center' : ''}`}>
             <p className="section-header__label" style={{ color: '#fff' }}>
               {outcomesSection?.label || `${title} Outcomes`}
             </p>
-            <h2 className="use-cases__title text-start mx-0">
+            <h2 className={`use-cases__title${variant === 'dark' ? ' text-start mx-0' : ''}`}>
               {outcomesSection?.titleHighlight ? (
                 <>
                   {outcomesSection.title.split(outcomesSection.titleHighlight)[0]}

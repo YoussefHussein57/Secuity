@@ -1,0 +1,1940 @@
+{
+  "scrapedAt": "2026-04-07T08:47:17.831Z",
+  "url": "https://www.guidepointsecurity.com/aws-cloud-security/",
+  "meta": {
+    "title": "AWS Cloud Security Assessment Services | GuidePoint Security",
+    "description": "GuidePoint Security's team of AWS-certified cloud security experts can help you navigate your cloud journey with secure AWS security assessment services.",
+    "ogImage": "https://www.guidepointsecurity.com/wp-content/uploads/2021/11/AWS_Advanced-Consulting_Partner_Cert-e1636417777351.png",
+    "canonical": "https://www.guidepointsecurity.com/aws-cloud-security/",
+    "h1": "Evolve the Maturity of Your AWS Security Program"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "type": "hero",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-35311b38 elementor-section-full_width services-subpage-header elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Evolve the Maturity of Your AWS Security Program"
+        }
+      ],
+      "paragraphs": [
+        "Take advantage of our wide range of AWS cloud security assessment services to build a strong foundation for cloud computing."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/11/Services_SUB_Pages_Managed_Detection_Response_MDR.jpg",
+          "alt": "section background",
+          "isBg": true
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Safeguard Your Cloud",
+          "href": "https://www.guidepointsecurity.com/safeguard-your-cloud/"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h1",
+              "text": "Evolve the Maturity of Your AWS Security Program"
+            }
+          ],
+          "paragraphs": [
+            "Take advantage of our wide range of AWS cloud security assessment services to build a strong foundation for cloud computing."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/11/Services_SUB_Pages_Managed_Detection_Response_MDR.jpg",
+              "alt": "section background",
+              "isBg": true
+            }
+          ],
+          "cards": [
+            {
+              "title": "AWS CLOUD SECURITY ASSESSMENT SERVICES",
+              "description": "Take advantage of our wide range of AWS cloud security assessment services to build a strong foundation for cloud computing.",
+              "image": null,
+              "cta": "Safeguard Your Cloud",
+              "ctaHref": "https://www.guidepointsecurity.com/safeguard-your-cloud/",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ],
+      "bgImage": "https://www.guidepointsecurity.com/wp-content/uploads/2024/11/Services_SUB_Pages_Managed_Detection_Response_MDR.jpg"
+    },
+    {
+      "index": 1,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-203a94ce services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Rely on Our AWS Expertise to Ensure a Secure Cloud Environment"
+        }
+      ],
+      "paragraphs": [
+        "Many organizations have adopted Amazon Web Services (AWS) as their cloud service provider and while AWS provides a wide range of cloud services, it can be overwhelming for security teams to keep up.",
+        "We are an Advanced AWS Consulting Partner and our team of AWS-certified experts can help you navigate this dynamic space and ensure that you have a secure cloud environment.",
+        "From infrastructure-as-code to custom security controls and policies, we can help provide more maturity and security to solve some of the most complex AWS engineering problems."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/11/AWS_Advanced-Consulting_Partner_Cert-e1636417777351.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Rely on Our AWS Expertise to Ensure a Secure Cloud Environment"
+            }
+          ],
+          "paragraphs": [
+            "Many organizations have adopted Amazon Web Services (AWS) as their cloud service provider and while AWS provides a wide range of cloud services, it can be overwhelming for security teams to keep up.",
+            "We are an Advanced AWS Consulting Partner and our team of AWS-certified experts can help you navigate this dynamic space and ensure that you have a secure cloud environment.",
+            "From infrastructure-as-code to custom security controls and policies, we can help provide more maturity and security to solve some of the most complex AWS engineering problems."
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/11/AWS_Advanced-Consulting_Partner_Cert-e1636417777351.png",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "AWS CLOUD SECURITY ASSESSMENT SERVICES OVERVIEW",
+              "description": "Many organizations have adopted Amazon Web Services (AWS) as their cloud service provider and while AWS provides a wide range of cloud services, it can be overwhelming for security teams to keep up.",
+              "image": "https://www.guidepointsecurity.com/wp-content/uploads/2021/11/AWS_Advanced-Consulting_Partner_Cert-e1636417777351.png",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS CLOUD SECURITY ASSESSMENT SERVICES OVERVIEW",
+              "description": "Many organizations have adopted Amazon Web Services (AWS) as their cloud service provider and while AWS provides a wide range of cloud services, it can be overwhelming for security teams to keep up.",
+              "image": "https://www.guidepointsecurity.com/wp-content/uploads/2021/11/AWS_Advanced-Consulting_Partner_Cert-e1636417777351.png",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "<img loading=\"lazy\" decoding=\"async\" width=\"200\" height=\"346\" src=\"https://www.guidepointsecurity.com/wp-content/uploads",
+              "description": "Many organizations have adopted Amazon Web Services (AWS) as their cloud service provider and while AWS provides a wide range of cloud services, it can be overwhelming for security teams to keep up.",
+              "image": "https://www.guidepointsecurity.com/wp-content/uploads/2021/11/AWS_Advanced-Consulting_Partner_Cert-e1636417777351.png",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "tabs",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-fcf5444 services-outcomes elementor-section-boxed elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "We Can Help Build or Enhance Your AWS Cloud Security Program"
+        }
+      ],
+      "paragraphs": [
+        "Our cloud security program is broken down into 4 stages: Learn, Assess, Plan & Design and Build.",
+        "A critical part of securing a cloud environment is having a thorough understanding of the current state. We offer multiple ways to assess your AWS environment:",
+        "Whether you are looking for a full cloud cybersecurity strategy, a prioritized roadmap or specific secure architectures for your organization, we can help you plan and design your ideal AWS environment.",
+        "Our team of AWS and DevSecOps experts can ensure that security controls are built into your AWS environment.",
+        "Keeping up to date with current and emerging technologies is critical for any security organization. As an Advanced Tier AWS Partner, we can provide educational sessions to help you understand the evolving cloud landscape and how best to secure it. These sessions include:"
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "AWS Well-Architected Review",
+            "AWS Security Health Check",
+            "AWS Security Maturity Assessment",
+            "AWS Architecture Review",
+            "Cloud-Native Application Architecture Review",
+            "Cloud Penetration Testing"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "AWS Cloud Security Strategy",
+            "AWS Cloud Security Roadmap",
+            "Secure AWS Network Architecture",
+            "Secure AWS Serverless Architecture"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Secure Infrastructure CI/CD Pipeline",
+            "Infrastructure-as-Code",
+            "Policy-as-Code",
+            "Detective Controls",
+            "Preventative Controls",
+            "Auto-Remediation"
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "AWS Immersion Days",
+            "AWS Security Gameday",
+            "3rd Party Solution Demos"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-1.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-2.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-3.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-4.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "AWS Well-Architected Review",
+          "href": "https://www.guidepointsecurity.com/aws-cloud-security/#WellArchitected"
+        },
+        {
+          "text": "AWS Security Health Check",
+          "href": "https://www.guidepointsecurity.com/aws-cloud-security/#HealthCheck"
+        },
+        {
+          "text": "AWS Security Maturity Assessment",
+          "href": "https://www.guidepointsecurity.com/aws-cloud-security/#MaturityAssessment"
+        },
+        {
+          "text": "AWS Architecture Review",
+          "href": "https://www.guidepointsecurity.com/aws-cloud-security/#ArchitectureReview"
+        },
+        {
+          "text": "Cloud-Native Application Architecture Review",
+          "href": "https://www.guidepointsecurity.com/aws-cloud-security/#CloudNative"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "We Can Help Build or Enhance Your AWS Cloud Security Program"
+            }
+          ],
+          "paragraphs": [
+            "Our cloud security program is broken down into 4 stages: Learn, Assess, Plan & Design and Build.",
+            "A critical part of securing a cloud environment is having a thorough understanding of the current state. We offer multiple ways to assess your AWS environment:",
+            "Whether you are looking for a full cloud cybersecurity strategy, a prioritized roadmap or specific secure architectures for your organization, we can help you plan and design your ideal AWS environment.",
+            "Our team of AWS and DevSecOps experts can ensure that security controls are built into your AWS environment.",
+            "Keeping up to date with current and emerging technologies is critical for any security organization. As an Advanced Tier AWS Partner, we can provide educational sessions to help you understand the evolving cloud landscape and how best to secure it. These sessions include:"
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "AWS Well-Architected Review",
+                "AWS Security Health Check",
+                "AWS Security Maturity Assessment",
+                "AWS Architecture Review",
+                "Cloud-Native Application Architecture Review",
+                "Cloud Penetration Testing"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "AWS Cloud Security Strategy",
+                "AWS Cloud Security Roadmap",
+                "Secure AWS Network Architecture",
+                "Secure AWS Serverless Architecture"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Secure Infrastructure CI/CD Pipeline",
+                "Infrastructure-as-Code",
+                "Policy-as-Code",
+                "Detective Controls",
+                "Preventative Controls",
+                "Auto-Remediation"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "AWS Immersion Days",
+                "AWS Security Gameday",
+                "3rd Party Solution Demos"
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-1.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-2.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-3.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-4.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "AWS CLOUD SECURITY ASSESSMENT SERVICES APPROACH",
+              "description": "Our cloud security program is broken down into 4 stages: Learn, Assess, Plan & Design and Build.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": ".cls-1, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 { fill: none; } .cls-2 { fill: #3330fd !important; } .cls-3 { clip-path: ",
+              "description": "A critical part of securing a cloud environment is having a thorough understanding of the current state. We offer multiple ways to assess your AWS environment:",
+              "image": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-1.svg",
+              "cta": "AWS Well-Architected Review",
+              "ctaHref": "https://www.guidepointsecurity.com/aws-cloud-security/#WellArchitected",
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "generic",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-626bf6d services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Get Up to Speed with AWS Cloud Security Solutions"
+        },
+        {
+          "tag": "h3",
+          "text": "AWS Immersion Days"
+        },
+        {
+          "tag": "h3",
+          "text": "AWS Security Gameday"
+        },
+        {
+          "tag": "h3",
+          "text": "3rd Party Solution Demos"
+        }
+      ],
+      "paragraphs": [
+        "Workshops and labs designed to help teams learn how to use AWS native solutions to secure and automate their environments.",
+        "A collaborative learning exercise that tests skills in implementing AWS solutions to solve real-world problems in a gamified, risk-free environment.",
+        "Understand the nuances, benefits and limitations of implementing CSPM, CWPP, CASB, CIEM and other tools."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "cards": [
+        {
+          "title": "AWS CLOUD SECURITY PROGRAM: LEARN",
+          "description": "Workshops and labs designed to help teams learn how to use AWS native solutions to secure and automate their environments.",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "AWS CLOUD SECURITY PROGRAM: LEARN",
+          "description": "AWS CLOUD SECURITY PROGRAM: LEARN Get Up to Speed with AWS Cloud Security Solutions",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "AWS Immersion Days",
+          "description": "Workshops and labs designed to help teams learn how to use AWS native solutions to secure and automate their environments.",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Get Up to Speed with AWS Cloud Security Solutions"
+            },
+            {
+              "tag": "h3",
+              "text": "AWS Immersion Days"
+            },
+            {
+              "tag": "h3",
+              "text": "AWS Security Gameday"
+            },
+            {
+              "tag": "h3",
+              "text": "3rd Party Solution Demos"
+            }
+          ],
+          "paragraphs": [
+            "Workshops and labs designed to help teams learn how to use AWS native solutions to secure and automate their environments.",
+            "A collaborative learning exercise that tests skills in implementing AWS solutions to solve real-world problems in a gamified, risk-free environment.",
+            "Understand the nuances, benefits and limitations of implementing CSPM, CWPP, CASB, CIEM and other tools."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "AWS CLOUD SECURITY PROGRAM: LEARN",
+              "description": "Workshops and labs designed to help teams learn how to use AWS native solutions to secure and automate their environments.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS CLOUD SECURITY PROGRAM: LEARN",
+              "description": "AWS CLOUD SECURITY PROGRAM: LEARN Get Up to Speed with AWS Cloud Security Solutions",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS Immersion Days",
+              "description": "Workshops and labs designed to help teams learn how to use AWS native solutions to secure and automate their environments.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "type": "generic",
+      "layoutHint": "checklist",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-d6fe676 services-technologies elementor-section-full_width elementor-section-height-default watching-viewport in-view",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Evaluate Your AWS Architecture, Maturity, Applications and More"
+        },
+        {
+          "tag": "h3",
+          "text": "AWS Well-Architected Review"
+        },
+        {
+          "tag": "h3",
+          "text": "AWS Cloud Security Health Check"
+        },
+        {
+          "tag": "h3",
+          "text": "AWS Security Maturity Assessment"
+        },
+        {
+          "tag": "h3",
+          "text": "AWS Architecture Review"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud-Native Architecture Review"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Penetration Testing"
+        }
+      ],
+      "paragraphs": [
+        "We will review the state of your workloads and implement AWS Well-Architected best practices to help with security optimization, risk mitigation, cost reductions and improved application performance.",
+        "Based on five pillars, an AWS Well-Architected Review will help identify risks and recommend best practices.",
+        "Building on top of the AWS Well-Architected Review, we will evaluate your environment against our cloud security framework, interview staff managing your environment to understand strengths and gaps and review processes used to secure the environment.",
+        "You gain a robust report and roadmap to remediate any identified issues.",
+        "Our cloud maturity assessment goes beyond the health check to provide a quantified snapshot of your current state and give you a clear roadmap for improvement and optimization including key strategic areas such as:",
+        "As development teams move very quickly, it helps to review application architectures via an AWS vulnerability assessment.",
+        "Our team of certified Cloud Security Solution Architects can help you implement and maintain a “security first” AWS architecture by examining existing and new architectures to identify any vulnerabilities.",
+        "Securing cloud-native applications using serverless or containers requires a thorough understanding of both the AWS environment and the application code."
+      ],
+      "lists": [
+        {
+          "type": "ul",
+          "items": [
+            "Identity & Access Management",
+            "Networking",
+            "Incident response",
+            "Disaster recovery"
+          ]
+        }
+      ],
+      "images": [],
+      "ctas": [],
+      "cards": [
+        {
+          "title": "AWS CLOUD SECURITY PROGRAM: ASSESS",
+          "description": "We will review the state of your workloads and implement AWS Well-Architected best practices to help with security optimization, risk mitigation, cost reductions and improved application performance.",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "AWS CLOUD SECURITY PROGRAM: ASSESS",
+          "description": "AWS CLOUD SECURITY PROGRAM: ASSESS Evaluate Your AWS Architecture, Maturity, Applications and More",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "AWS Well-Architected Review",
+          "description": "We will review the state of your workloads and implement AWS Well-Architected best practices to help with security optimization, risk mitigation, cost reductions and improved application performance.",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "AWS Architecture Review",
+          "description": "As development teams move very quickly, it helps to review application architectures via an AWS vulnerability assessment.",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "checklist",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Evaluate Your AWS Architecture, Maturity, Applications and More"
+            },
+            {
+              "tag": "h3",
+              "text": "AWS Well-Architected Review"
+            },
+            {
+              "tag": "h3",
+              "text": "AWS Cloud Security Health Check"
+            },
+            {
+              "tag": "h3",
+              "text": "AWS Security Maturity Assessment"
+            },
+            {
+              "tag": "h3",
+              "text": "AWS Architecture Review"
+            },
+            {
+              "tag": "h3",
+              "text": "Cloud-Native Architecture Review"
+            },
+            {
+              "tag": "h3",
+              "text": "Cloud Penetration Testing"
+            }
+          ],
+          "paragraphs": [
+            "We will review the state of your workloads and implement AWS Well-Architected best practices to help with security optimization, risk mitigation, cost reductions and improved application performance.",
+            "Based on five pillars, an AWS Well-Architected Review will help identify risks and recommend best practices.",
+            "Building on top of the AWS Well-Architected Review, we will evaluate your environment against our cloud security framework, interview staff managing your environment to understand strengths and gaps and review processes used to secure the environment.",
+            "You gain a robust report and roadmap to remediate any identified issues.",
+            "Our cloud maturity assessment goes beyond the health check to provide a quantified snapshot of your current state and give you a clear roadmap for improvement and optimization including key strategic areas such as:",
+            "As development teams move very quickly, it helps to review application architectures via an AWS vulnerability assessment.",
+            "Our team of certified Cloud Security Solution Architects can help you implement and maintain a “security first” AWS architecture by examining existing and new architectures to identify any vulnerabilities.",
+            "Securing cloud-native applications using serverless or containers requires a thorough understanding of both the AWS environment and the application code."
+          ],
+          "lists": [
+            {
+              "type": "ul",
+              "items": [
+                "Identity & Access Management",
+                "Networking",
+                "Incident response",
+                "Disaster recovery"
+              ]
+            }
+          ],
+          "images": [],
+          "cards": [
+            {
+              "title": "AWS CLOUD SECURITY PROGRAM: ASSESS",
+              "description": "We will review the state of your workloads and implement AWS Well-Architected best practices to help with security optimization, risk mitigation, cost reductions and improved application performance.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS CLOUD SECURITY PROGRAM: ASSESS",
+              "description": "AWS CLOUD SECURITY PROGRAM: ASSESS Evaluate Your AWS Architecture, Maturity, Applications and More",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS Well-Architected Review",
+              "description": "We will review the state of your workloads and implement AWS Well-Architected best practices to help with security optimization, risk mitigation, cost reductions and improved application performance.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS Architecture Review",
+              "description": "As development teams move very quickly, it helps to review application architectures via an AWS vulnerability assessment.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "type": "generic",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-930116b services-technologies elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Architect Your AWS Cloud Security Strategy"
+        },
+        {
+          "tag": "h3",
+          "text": "AWS Cloud Security Strategy"
+        },
+        {
+          "tag": "h3",
+          "text": "AWS Cloud Security Roadmap"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure AWS Network Architecture"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure AWS Serverless Architecture"
+        }
+      ],
+      "paragraphs": [
+        "We combine our deep AWS cloud security and application security expertise to help create a customized AWS cloud security strategy that addresses your organization’s specific needs. We will identify requirements and implementation strategies for cloud foundations, perimeter, data, visibility and individual cloud services and develop a comprehensive cloud strategy that is built with a security-first mindset.",
+        "Our roadmap service will provide you with a prioritized list of key AWS cloud service initiatives – based on your existing environment – that will incrementally strengthen your organization’s cloud security posture.",
+        "Our team of Cloud Security Architects can help design a network architecture that accounts for the impact on your people, processes and technologies to ensure its effectiveness for your organization. Ranging from fully-centralized to completely distributed, our experts are able to architect cloud-native, hybrid and multi-cloud networking implementations.",
+        "Serverless architectures are redefining how security is being incorporated into organizations’ applications. Our team of experts can help you define serverless architecture patterns so that your organization can take advantage of the flexibility and scalability of serverless without compromising security."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "cards": [
+        {
+          "title": "AWS CLOUD SECURITY PROGRAM: PLAN & DESIGN",
+          "description": "We combine our deep AWS cloud security and application security expertise to help create a customized AWS cloud security strategy that addresses your organization’s specific needs. We will identify requirements and implementation strategies for cloud foundations, perimeter, data, visibility and indi",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "AWS CLOUD SECURITY PROGRAM: PLAN & DESIGN",
+          "description": "AWS CLOUD SECURITY PROGRAM: PLAN & DESIGN Architect Your AWS Cloud Security Strategy",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "AWS Cloud Security Strategy",
+          "description": "We combine our deep AWS cloud security and application security expertise to help create a customized AWS cloud security strategy that addresses your organization’s specific needs. We will identify requirements and implementation strategies for cloud foundations, perimeter, data, visibility and indi",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "Secure AWS Network Architecture",
+          "description": "Our team of Cloud Security Architects can help design a network architecture that accounts for the impact on your people, processes and technologies to ensure its effectiveness for your organization. Ranging from fully-centralized to completely distributed, our experts are able to architect cloud-na",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Architect Your AWS Cloud Security Strategy"
+            },
+            {
+              "tag": "h3",
+              "text": "AWS Cloud Security Strategy"
+            },
+            {
+              "tag": "h3",
+              "text": "AWS Cloud Security Roadmap"
+            },
+            {
+              "tag": "h3",
+              "text": "Secure AWS Network Architecture"
+            },
+            {
+              "tag": "h3",
+              "text": "Secure AWS Serverless Architecture"
+            }
+          ],
+          "paragraphs": [
+            "We combine our deep AWS cloud security and application security expertise to help create a customized AWS cloud security strategy that addresses your organization’s specific needs. We will identify requirements and implementation strategies for cloud foundations, perimeter, data, visibility and individual cloud services and develop a comprehensive cloud strategy that is built with a security-first mindset.",
+            "Our roadmap service will provide you with a prioritized list of key AWS cloud service initiatives – based on your existing environment – that will incrementally strengthen your organization’s cloud security posture.",
+            "Our team of Cloud Security Architects can help design a network architecture that accounts for the impact on your people, processes and technologies to ensure its effectiveness for your organization. Ranging from fully-centralized to completely distributed, our experts are able to architect cloud-native, hybrid and multi-cloud networking implementations.",
+            "Serverless architectures are redefining how security is being incorporated into organizations’ applications. Our team of experts can help you define serverless architecture patterns so that your organization can take advantage of the flexibility and scalability of serverless without compromising security."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "AWS CLOUD SECURITY PROGRAM: PLAN & DESIGN",
+              "description": "We combine our deep AWS cloud security and application security expertise to help create a customized AWS cloud security strategy that addresses your organization’s specific needs. We will identify requirements and implementation strategies for cloud foundations, perimeter, data, visibility and indi",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS CLOUD SECURITY PROGRAM: PLAN & DESIGN",
+              "description": "AWS CLOUD SECURITY PROGRAM: PLAN & DESIGN Architect Your AWS Cloud Security Strategy",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS Cloud Security Strategy",
+              "description": "We combine our deep AWS cloud security and application security expertise to help create a customized AWS cloud security strategy that addresses your organization’s specific needs. We will identify requirements and implementation strategies for cloud foundations, perimeter, data, visibility and indi",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Secure AWS Network Architecture",
+              "description": "Our team of Cloud Security Architects can help design a network architecture that accounts for the impact on your people, processes and technologies to ensure its effectiveness for your organization. Ranging from fully-centralized to completely distributed, our experts are able to architect cloud-na",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "generic",
+      "layoutHint": "text",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-412080c services-technologies elementor-section-full_width elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Build and Secure Your AWS Infrastructure"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure Infrastructure CI/CD Pipeline"
+        },
+        {
+          "tag": "h3",
+          "text": "Infrastructure as Code"
+        },
+        {
+          "tag": "h3",
+          "text": "Policy-as-Code"
+        },
+        {
+          "tag": "h3",
+          "text": "Detective Controls"
+        },
+        {
+          "tag": "h3",
+          "text": "Preventative Controls"
+        },
+        {
+          "tag": "h3",
+          "text": "Auto-Remediation"
+        }
+      ],
+      "paragraphs": [
+        "Our team of skilled DevSecOps engineers and architects can help build infrastructure CI/CD pipelines with a security-first mindset.",
+        "We can help build out your infrastructure using Terraform or CloudFormation and provide guidance and training on best practices.",
+        "We can work with your security team to codify existing policies so that they can be integrated into your organization’s software development life cycle.",
+        "Our team can create custom AWS Config rules to detect the latest AWS security service or fine-tuning CSPM solutions to detect misconfigurations that impact your organization.",
+        "We’ve developed a library of AWS service control policies and infrastructure-as-code checks that can help you implement appropriate guardrails for your organization.",
+        "We can help you address sensitive resource misconfigurations by implementing event-driven, auto-remediation solutions that will automate your security team’s response."
+      ],
+      "lists": [],
+      "images": [],
+      "ctas": [],
+      "cards": [
+        {
+          "title": "AWS CLOUD SECURITY PROGRAM: BUILD",
+          "description": "Our team of skilled DevSecOps engineers and architects can help build infrastructure CI/CD pipelines with a security-first mindset.",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "AWS CLOUD SECURITY PROGRAM: BUILD",
+          "description": "AWS CLOUD SECURITY PROGRAM: BUILD Build and Secure Your AWS Infrastructure",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "Secure Infrastructure CI/CD Pipeline",
+          "description": "Our team of skilled DevSecOps engineers and architects can help build infrastructure CI/CD pipelines with a security-first mindset.",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        },
+        {
+          "title": "Detective Controls",
+          "description": "Our team can create custom AWS Config rules to detect the latest AWS security service or fine-tuning CSPM solutions to detect misconfigurations that impact your organization.",
+          "image": null,
+          "cta": null,
+          "ctaHref": null,
+          "isStyledCard": false
+        }
+      ],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Build and Secure Your AWS Infrastructure"
+            },
+            {
+              "tag": "h3",
+              "text": "Secure Infrastructure CI/CD Pipeline"
+            },
+            {
+              "tag": "h3",
+              "text": "Infrastructure as Code"
+            },
+            {
+              "tag": "h3",
+              "text": "Policy-as-Code"
+            },
+            {
+              "tag": "h3",
+              "text": "Detective Controls"
+            },
+            {
+              "tag": "h3",
+              "text": "Preventative Controls"
+            },
+            {
+              "tag": "h3",
+              "text": "Auto-Remediation"
+            }
+          ],
+          "paragraphs": [
+            "Our team of skilled DevSecOps engineers and architects can help build infrastructure CI/CD pipelines with a security-first mindset.",
+            "We can help build out your infrastructure using Terraform or CloudFormation and provide guidance and training on best practices.",
+            "We can work with your security team to codify existing policies so that they can be integrated into your organization’s software development life cycle.",
+            "Our team can create custom AWS Config rules to detect the latest AWS security service or fine-tuning CSPM solutions to detect misconfigurations that impact your organization.",
+            "We’ve developed a library of AWS service control policies and infrastructure-as-code checks that can help you implement appropriate guardrails for your organization.",
+            "We can help you address sensitive resource misconfigurations by implementing event-driven, auto-remediation solutions that will automate your security team’s response."
+          ],
+          "lists": [],
+          "images": [],
+          "cards": [
+            {
+              "title": "AWS CLOUD SECURITY PROGRAM: BUILD",
+              "description": "Our team of skilled DevSecOps engineers and architects can help build infrastructure CI/CD pipelines with a security-first mindset.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "AWS CLOUD SECURITY PROGRAM: BUILD",
+              "description": "AWS CLOUD SECURITY PROGRAM: BUILD Build and Secure Your AWS Infrastructure",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Secure Infrastructure CI/CD Pipeline",
+              "description": "Our team of skilled DevSecOps engineers and architects can help build infrastructure CI/CD pipelines with a security-first mindset.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "Detective Controls",
+              "description": "Our team can create custom AWS Config rules to detect the latest AWS security service or fine-tuning CSPM solutions to detect misconfigurations that impact your organization.",
+              "image": null,
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "split",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-6436318f services-certifications elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Elite, Highly-trained Team"
+        },
+        {
+          "tag": "h4",
+          "text": "Highly Trained, Highly Certified"
+        },
+        {
+          "tag": "h4",
+          "text": "Examples Include:"
+        },
+        {
+          "tag": "h4",
+          "text": "Industry"
+        },
+        {
+          "tag": "h4",
+          "text": "Cloud Platforms"
+        }
+      ],
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+          "alt": "GPS Certified Cyber Guarding"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+          "alt": "CISSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+          "alt": "GPS Certified CCSP"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+          "alt": "GSE"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+          "alt": "AWS Certified Security Specialty"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+          "alt": "Microsoft 365 Certified Azure Solutions Architect"
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Why GuidePoint?",
+          "href": "https://www.guidepointsecurity.com/why-guidepoint/"
+        }
+      ],
+      "splits": [],
+      "contentBlocks": [
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Elite, Highly-trained Team"
+            }
+          ],
+          "paragraphs": [
+            "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+          ],
+          "lists": [],
+          "images": []
+        },
+        {
+          "layoutHint": "text",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h4",
+              "text": "Highly Trained, Highly Certified"
+            },
+            {
+              "tag": "h4",
+              "text": "Examples Include:"
+            },
+            {
+              "tag": "h4",
+              "text": "Industry"
+            },
+            {
+              "tag": "h4",
+              "text": "Cloud Platforms"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+              "alt": "GPS Certified Cyber Guarding"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+              "alt": "CISSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+              "alt": "GPS Certified CCSP"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+              "alt": "GSE"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+              "alt": "AWS Certified Security Specialty"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+              "alt": "Microsoft 365 Certified Azure Solutions Architect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-5e7a440 elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Trusted Advisor"
+        },
+        {
+          "tag": "h3",
+          "text": "Mark Gilman"
+        },
+        {
+          "tag": "h3",
+          "text": "GET IN TOUCH"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Us"
+        }
+      ],
+      "paragraphs": [
+        "Our team works side-by-side with you as your cybersecurity partner.",
+        "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+        "Security Manager"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+          "alt": "Nuance"
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "Terms of Service",
+          "href": "https://www.guidepointsecurity.com/terms-of-service/"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.guidepointsecurity.com/privacy-policy/"
+        },
+        {
+          "text": "CONTACT US",
+          "href": null
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Your Trusted Advisor"
+            },
+            {
+              "tag": "h3",
+              "text": "Mark Gilman"
+            }
+          ],
+          "paragraphs": [
+            "Our team works side-by-side with you as your cybersecurity partner.",
+            "“GuidePoint Security is basically family. They’re always there when I need them. At the end of the day GuidePoint is always there to help and that’s how they add value.”",
+            "Security Manager"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+              "alt": "Nuance"
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "layoutHint": "split",
+          "domClasses": "elementor-widget-wrap elementor-element-populated",
+          "headings": [
+            {
+              "tag": "h3",
+              "text": "GET IN TOUCH"
+            },
+            {
+              "tag": "h3",
+              "text": "Contact Us"
+            }
+          ],
+          "paragraphs": [],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "type": "tabs",
+      "layoutHint": "split",
+      "domClasses": "elementor-section elementor-top-section elementor-element elementor-element-1db1822b additional-resources-carousel-section elementor-section-boxed elementor-section-height-default elementor-section-height-default watching-viewport",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Additional Resources"
+        },
+        {
+          "tag": "h3",
+          "text": "WEBINAR"
+        },
+        {
+          "tag": "h3",
+          "text": "WEBINAR"
+        },
+        {
+          "tag": "h3",
+          "text": "eBook"
+        },
+        {
+          "tag": "h3",
+          "text": "WEBINAR"
+        },
+        {
+          "tag": "h3",
+          "text": "WEBINAR"
+        },
+        {
+          "tag": "h3",
+          "text": "eBook"
+        },
+        {
+          "tag": "h3",
+          "text": "WEBINAR"
+        },
+        {
+          "tag": "h3",
+          "text": "WEBINAR"
+        },
+        {
+          "tag": "h3",
+          "text": "eBook"
+        }
+      ],
+      "paragraphs": [
+        "View All >"
+      ],
+      "lists": [],
+      "images": [
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/datasheet-resources-icon.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+          "alt": ""
+        }
+      ],
+      "ctas": [
+        {
+          "text": "View All >",
+          "href": "https://www.guidepointsecurity.com/resources/"
+        },
+        {
+          "text": "WEBINAR",
+          "href": "https://www.guidepointsecurity.com/resources/a-proven-approach-to-securing-aws-workloads/"
+        },
+        {
+          "text": "WEBINAR",
+          "href": "https://www.guidepointsecurity.com/resources/a-proven-approach-to-securing-aws-workloads/"
+        },
+        {
+          "text": "WEBINAR",
+          "href": "https://www.guidepointsecurity.com/resources/a-proven-approach-to-securing-aws-workloads/"
+        }
+      ],
+      "tabs": {
+        "tabLabels": [],
+        "tabPanels": []
+      },
+      "contentBlocks": [
+        {
+          "layoutHint": "split",
+          "headings": [
+            {
+              "tag": "h2",
+              "text": "Additional Resources"
+            },
+            {
+              "tag": "h3",
+              "text": "WEBINAR"
+            },
+            {
+              "tag": "h3",
+              "text": "WEBINAR"
+            },
+            {
+              "tag": "h3",
+              "text": "eBook"
+            },
+            {
+              "tag": "h3",
+              "text": "WEBINAR"
+            },
+            {
+              "tag": "h3",
+              "text": "WEBINAR"
+            },
+            {
+              "tag": "h3",
+              "text": "eBook"
+            },
+            {
+              "tag": "h3",
+              "text": "WEBINAR"
+            },
+            {
+              "tag": "h3",
+              "text": "WEBINAR"
+            },
+            {
+              "tag": "h3",
+              "text": "eBook"
+            }
+          ],
+          "paragraphs": [
+            "View All >"
+          ],
+          "lists": [],
+          "images": [
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/datasheet-resources-icon.png",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            },
+            {
+              "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+              "alt": ""
+            }
+          ],
+          "cards": [
+            {
+              "title": "Additional Resources",
+              "description": "View All >",
+              "image": null,
+              "cta": "View All >",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/",
+              "isStyledCard": false
+            },
+            {
+              "title": "WEBINAR",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> WEBINAR <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecuri",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "WEBINAR",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/a-proven-approach-to-securing-aws-workloads/",
+              "isStyledCard": false
+            },
+            {
+              "title": "WEBINAR",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> WEBINAR <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecuri",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "WEBINAR",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> WEBINAR <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecuri",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "WEBINAR",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> WEBINAR",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "WEBINAR",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> WEBINAR <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecuri",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "WEBINAR",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/a-proven-approach-to-securing-aws-workloads/",
+              "isStyledCard": false
+            },
+            {
+              "title": "WEBINAR",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> WEBINAR <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecuri",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "WEBINAR",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/a-proven-approach-to-securing-aws-workloads/",
+              "isStyledCard": false
+            },
+            {
+              "title": "WEBINAR",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> WEBINAR",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": "WEBINAR",
+              "ctaHref": "https://www.guidepointsecurity.com/resources/a-proven-approach-to-securing-aws-workloads/",
+              "isStyledCard": false
+            },
+            {
+              "title": "eBook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"20\" height=\"27\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/05/datasheet-resources-icon.png\" class=\"attachment-full size-full wp-image-30625\" alt=\"\" /> eBook <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.g",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2027'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "eBook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"20\" height=\"27\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/05/datasheet-resources-icon.png\" class=\"attachment-full size-full wp-image-30625\" alt=\"\" /> eBook <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.g",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2027'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "eBook",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"20\" height=\"27\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/05/datasheet-resources-icon.png\" class=\"attachment-full size-full wp-image-30625\" alt=\"\" /> eBook",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2027'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            },
+            {
+              "title": "WEBINAR",
+              "description": "<img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg\" class=\"attachment-full size-full wp-image-28677\" alt=\"\" /> WEBINAR <img loading=\"lazy\" decoding=\"async\" width=\"25\" height=\"25\" src=\"https://www.guidepointsecuri",
+              "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2025%2025'%3E%3C/svg%3E",
+              "cta": null,
+              "ctaHref": null,
+              "isStyledCard": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataTemplate": {
+    "slug": "aws-cloud-security",
+    "title": "Evolve the Maturity of Your AWS Security Program",
+    "tagline": "Rely on Our AWS Expertise to Ensure a Secure Cloud Environment",
+    "heroLabel": "Evolve the Maturity of Your AWS Security Program",
+    "heroHighlight": "/* FILL IN: word(s) to highlight in the tagline */",
+    "heroCta": "Safeguard Your Cloud",
+    "heroImage": "/* CHECK LOCAL FIRST: /images/heroes/<slug>.<ext> — fallback → heroImageFallback */",
+    "heroImageFallback": "https://www.guidepointsecurity.com/wp-content/uploads/2024/11/Services_SUB_Pages_Managed_Detection_Response_MDR.jpg",
+    "description": "Take advantage of our wide range of AWS cloud security assessment services to build a strong foundation for cloud computing.",
+    "stats": [],
+    "split": {
+      "label": "/* FILL IN */",
+      "title": "Your Elite, Highly-trained Team",
+      "titleHighlight": "/* FILL IN */",
+      "paragraphs": [
+        "More than 50% of our workforce consists of tenured cybersecurity engineers, architects and consultants. We are also highly certified across industry standards as well as hundreds of cybersecurity solutions."
+      ],
+      "image": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+      "textLayoutHint": "split",
+      "inlineItems": []
+    },
+    "expertise": {
+      "label": "/* FILL IN */",
+      "title": "/* FILL IN */",
+      "titleHighlight": "Vendor-Agnostic",
+      "subtitle": "/* FILL IN */",
+      "tabs": [],
+      "cards": null,
+      "commitment": {
+        "label": "/* FILL IN */",
+        "title": "/* FILL IN */",
+        "items": []
+      }
+    },
+    "outcomesSection": {
+      "label": "/* FILL IN */",
+      "title": "We Can Help Build or Enhance Your AWS Cloud Security Program",
+      "titleHighlight": "/* FILL IN */",
+      "subtitle": "Our cloud security program is broken down into 4 stages: Learn, Assess, Plan & Design and Build."
+    },
+    "outcomes": [],
+    "certGroups": null,
+    "testimonial": {
+      "quote": "/* FILL IN */",
+      "author": "/* FILL IN */",
+      "company": "/* FILL IN */"
+    }
+  },
+  "allImages": [
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Horizontal_White_Text_Reg_Mark_RGB.svg",
+      "alt": "",
+      "width": 300,
+      "height": 65
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Services_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Application_Security-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_Image_Nav.jpg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Cloud_Governance_Image_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Governance_DS_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Data_Security_Strategies_WP_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Endpoint_Security_400x200.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Spear_Phishing_400x200-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Email_Security-1.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Technologies_Gear_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions_icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Government_Solutions.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GSA_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/DOD_ESI_Contract.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/01/Seaport-724x452_rad-3x2-1.webp",
+      "alt": "",
+      "width": 1439,
+      "height": 959
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/12/image.png",
+      "alt": "",
+      "width": 345,
+      "height": 213
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Company_Icon.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Premise_Health.png",
+      "alt": "Premise Health",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Nuance.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/KHovnanian_Homes.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Follett.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Intelsat.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Sisence.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPS_Financial_Logo.svg",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPSU.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GRIT_Company_Header.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Wayfinding_Map_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Mobile_60x60-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Resources_Icon.svg",
+      "alt": "",
+      "width": 163,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/07/GPSEC_Image_400x200_revised_2025.png",
+      "alt": "",
+      "width": 401,
+      "height": 201
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Blog2_Menu-AdobeStock_270370862_470x432-300x276-1.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/iStock-1467937769_Blog-image-menu.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Ransomware_Report_menu_thumbnail_Updated-e1741029893179.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2026/02/Whitepaper_Block-1.jpg",
+      "alt": "",
+      "width": 833,
+      "height": 417
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/05/REPORT_image_NAV.jpg",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/The-Brick-House-image_Menu.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2025/03/GRIT_Webinar_Menu_Thumbnail_Updated.png",
+      "alt": "",
+      "width": 400,
+      "height": 200
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2021/11/AWS_Advanced-Consulting_Partner_Cert-e1636417777351.png",
+      "alt": "",
+      "width": 200,
+      "height": 346
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-1.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-2.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-3.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/src/images/icon-aws-lifecycle-4.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cyber-guarding.png",
+      "alt": "GPS Certified Cyber Guarding",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-cissp.png",
+      "alt": "CISSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-ccsp.png",
+      "alt": "GPS Certified CCSP",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/gps-cert-gse-gold.png",
+      "alt": "GSE",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/AWS-SolArchitect-Professional-2022_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-aws-security-speciality.png",
+      "alt": "AWS Certified Security Specialty",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2023/04/Azure-Cybersecurity-Architect-Expert_100x120px.png",
+      "alt": "",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2022/06/Microsoft-365-cert-Azure-solutions-1.png",
+      "alt": "Microsoft 365 Certified Azure Solutions Architect",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/09/gps-cert-google-cloud-architect.png",
+      "alt": "GPS Certified Google Cloud Architect",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/AWS-CP-Security.png",
+      "alt": "AWS Consulting Partner Security",
+      "width": 125,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/nuance-logo.png",
+      "alt": "Nuance",
+      "width": 300,
+      "height": 63
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/mark-gilman.png",
+      "alt": "",
+      "width": 154,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/04/contact-icon.png",
+      "alt": "",
+      "width": 219,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/Webinar.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/05/datasheet-resources-icon.png",
+      "alt": "",
+      "width": 111,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/uploads/2024/03/eBook_Whitepaper_Datasheet.svg",
+      "alt": "",
+      "width": 150,
+      "height": 150
+    },
+    {
+      "src": "https://www.guidepointsecurity.com/wp-content/themes/guidepointsecurity/assets/dist/images/rss.svg",
+      "alt": "RSS icon",
+      "width": 300,
+      "height": 150
+    },
+    {
+      "src": "https://a.omappapi.com/users/9d7e390b056e/images/aabe801a77c21774534149-OptinMonster_Brick-House_54_04142026.png?width=640",
+      "alt": "The Brick House April 2026 Webinar Registration Page Graphic",
+      "width": 320,
+      "height": 205
+    }
+  ]
+}

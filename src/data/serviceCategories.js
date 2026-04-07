@@ -11,80 +11,163 @@ const serviceCategories = {
   // ─────────────────────────────────────────────
   // Artificial Intelligence
   // ─────────────────────────────────────────────
-  'artificial-intelligence': {
-    slug: 'artificial-intelligence',
-    icon: 'bi-cpu',
-    iconImage: 'https://www.guidepointsecurity.com/wp-content/uploads/elementor/thumbs/AI_Icon_Light_Blue-rar5ayxj5afgiytc1a5ulf2xedcuhzzp30srdmf5qo.png',
-    heroBgImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/Website_Refresh_Services_MAIN_Page_AI.png',
-    heroTitle: 'Safely Adopt and Defend Against AI',
-    heroSubtitle: 'Our AI Security Services help users confidently and securely use AI to fuel organizational success, speed threat detection and response and defend against AI-based attacks.',
-    heroCta: 'Download Datasheet',
-    heroCtaLink: '/resources/artificial-intelligence-at-guidepoint-security',
-    statsLabel: 'Can You Keep Pace?',
-    statsIntro: 'AI can accelerate business innovation, quickly find and stop threats and defend against AI-based attacks. Learn to safely use AI to accelerate organizational success.',
-    stats: [
-      { value: '82.6%', label: 'of phishing emails use AI technology', circleImage: C1, sourceName: 'TechAdvisors', sourceContext: 'AI Cyber Attack Statistics 2025', sourceLink: 'https://tech-adv.com/blog/ai-cyber-attack-statistics/' },
-      { value: '78%', label: 'believe the benefits of generative AI outweigh the risks', circleImage: C2, sourceName: 'National University', sourceContext: 'AI Cyber Statistics & Trends 2025', sourceLink: 'https://www.nu.edu/blog/ai-statistics-trends/' },
-      { value: '60%', label: 'faster threat detection using AI-driven security platforms', circleImage: C3, sourceName: 'Takepoint Research', sourceContext: 'AI in industrial cybersecurity', sourceLink: 'https://industrialcyber.co/ai/takepoint-research-80-of-cybersecurity-professionals-favor-ai-benefits-over-evolving-risks/' },
-    ],
-    practiceLabel: 'ARTIFICIAL INTELLIGENCE SECURITY PRACTICE',
-    practiceTitle: 'Smarter Use, Defense, Adoption and Governance of Artificial Intelligence (AI)',
-    practiceTitleHighlight: 'Smarter',
-    practiceDescription: [
-      "GuidePoint Security helps organizations securely use AI to accelerate business, secure what matters and prepare for what's next.",
-      "Our experts guide and help organizations to more effectively use AI and improve their overall security posture, quickly detect AI-based security threats, better protect data and identities and ensure regulatory compliance during AI adoption.",
-      "GuidePoint's comprehensive cybersecurity technical and advisory services help organizations harness the full potential of AI to drive business innovation, stop advanced threats, improve efficiency and productivity and make more informed decisions.",
-    ],
-    commitmentTitle: 'Our Artificial Intelligence (AI) Security Commitment to You',
-    commitmentSubtitle: 'We Ensure AI Remains A Strategic Enabler—Not A Roadblock by:',
-    commitmentItems: [
-      { text: 'Evaluating, deploying and optimizing AI-based tools and solutions to accelerate business and/or speed threat hunting, detection, response and remediation.', children: [] },
-      { text: 'Developing AI Governance programs, solutions and initiatives', children: [
-        { bold: null, text: 'Track and inventory the AI tools being used, by whom and with what data' },
-        { bold: null, text: 'Integrate policy and guardrail enforcement seamlessly as users use AI to augment their capabilities' },
-      ]},
-      { text: 'Leveraging AI to strengthen security posture and better secure data, users and IT:', children: [
+ // extracted & fixed from your file :contentReference[oaicite:0]{index=0}
+
+'artificial-intelligence': {
+  slug: 'artificial-intelligence',
+
+  iconImage: 'https://www.guidepointsecurity.com/wp-content/uploads/elementor/thumbs/AI_Icon_Light_Blue-rar5ayxj5afgiytc1a5ulf2xedcuhzzp30srdmf5qo.png',
+
+  heroBgImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/Website_Refresh_Services_MAIN_Page_AI.png',
+
+  heroTitle: 'Safely Adopt and Defend Against AI',
+
+  // ✅ FIXED TEXT
+  heroSubtitle: 'GuidePoint AI Security Services help users confidently and securely use AI to fuel organizational success, speed threat detection and response and defend against AI-based attacks.',
+
+  heroCta: 'Download Datasheet',
+
+  // ✅ FIXED LINK
+  heroCtaLink: 'https://www.guidepointsecurity.com/wp-content/uploads/2021/07/AI_at_GPS_DS.pdf',
+
+  statsLabel: 'Can You Keep Pace?',
+
+  statsIntro: 'AI can accelerate business innovation, quickly find and stop threats and defend against AI-based attacks. Learn to safely use AI to accelerate organizational success.',
+
+  stats: [
+    {
+      value: '82.6%',
+      label: 'of phishing emails use AI technology',
+      sourceName: 'TechAdvisors',
+      sourceContext: 'AI Cyber Attack Statistics 2025',
+      sourceLink: 'https://tech-adv.com/blog/ai-cyber-attack-statistics/'
+    },
+    {
+      value: '78%',
+      label: 'believe the benefits of generative AI outweigh the risks',
+      sourceName: 'National University',
+      sourceContext: 'AI Cyber Statistics & Trends 2025',
+      sourceLink: 'https://www.nu.edu/blog/ai-statistics-trends/'
+    },
+    {
+      value: '60%',
+      label: 'faster threat detection using AI-driven security platforms',
+      sourceName: 'Takepoint Research',
+      sourceContext: 'AI in industrial cybersecurity',
+      sourceLink: 'https://industrialcyber.co/ai/takepoint-research-80-of-cybersecurity-professionals-favor-ai-benefits-over-evolving-risks/'
+    }
+  ],
+
+  practiceLabel: 'ARTIFICIAL INTELLIGENCE SECURITY PRACTICE',
+
+  practiceTitle: 'Smarter Use, Defense, Adoption and Governance of Artificial Intelligence (AI)',
+
+  practiceTitleHighlight: 'Smarter',
+
+  practiceDescription: [
+    'GuidePoint Security helps organizations securely use AI to accelerate business, secure what matters and prepare for what’s next.',
+    'Our experts guide and help organizations to more effectively use AI and improve their overall security posture, quickly detect AI-based security threats, better protect data and identities and ensure regulatory compliance during AI adoption.',
+    'GuidePoint’s comprehensive cybersecurity technical and advisory services help organizations harness the full potential of AI to drive business innovation, stop advanced threats, improve efficiency and productivity and make more informed decisions.'
+  ],
+
+  commitmentTitle: 'Our Artificial Intelligence (AI) Security Commitment to You',
+
+  commitmentSubtitle: 'We Ensure AI Remains A Strategic Enabler—Not A Roadblock by:',
+
+  commitmentItems: [
+    {
+      text: 'Evaluating, deploying and optimizing AI-based tools and solutions to accelerate business and/or speed threat hunting, detection, response and remediation.',
+      children: []
+    },
+    {
+      text: 'Developing AI Governance programs, solutions and initiatives',
+      children: [
+        { text: 'Track and inventory the AI tools being used, by whom and with what data' },
+        { text: 'Integrate policy and guardrail enforcement seamlessly as users use AI to augment their capabilities' }
+      ]
+    },
+    {
+      text: 'Leveraging AI to strengthen security posture and better secure data, users and IT:',
+      children: [
         { bold: 'Endpoints:', text: 'prevent malware on laptops, desktop, mobile' },
         { bold: 'Network:', text: 'monitor traffic for anomalies, intrusions and DDoS attacks' },
         { bold: 'Cloud:', text: 'analyze data across CSP platforms for a faster threat hunting, detection and response via a unified view' },
         { bold: 'Email:', text: 'More effectively filter spam and detect phishing attempts and malicious attachments' },
         { bold: 'User and Device Identities:', text: 'analyze user behavior patterns to ID suspicious behavior and prevent unauthorized access to data' },
-        { bold: 'Application Security:', text: 'enhance traditional application security assessments with AI agentic workflows that identify vulnerabilities, flaws and weaknesses faster' },
-      ]},
-    ],
-    outcomesLabel: 'ARTIFICIAL INTELLIGENCE SECURITY OUTCOMES',
-    outcomesTitle: 'Reduce Risk, Accelerate Innovation with AI',
-    outcomesTitleHighlight: 'Reduce',
-    outcomesSubtitle: 'Safely harness the power and potential of AI. GuidePoint Security helps organizations build secure AI strategies and safely adopt and optimize AI solutions to protect what matters.',
-    outcomes: [
-      { icon: 'bi-rocket-takeoff', title: 'Accelerate Innovation', description: 'Speed innovation and time to market by securely and confidently adopting AI-based solutions.' },
-      { icon: 'bi-graph-up-arrow', title: 'Increase Productivity and Efficiency', description: 'Increase efficiency, minimize human error and automate tasks with AI for greater productivity.' },
-      { icon: 'bi-lightbulb', title: 'Improve Decision Making', description: 'Make faster, more accurate decisions by using AI to better understand data, insights and communications and find and stop threats in real time.' },
-      { icon: 'bi-shield-fill-check', title: "Build for What's Next", description: 'Improve security operations today and build for tomorrow with proven AI-enabled solutions that speed detection and response to evolving AI-based threats.' },
-    ],
-    servicesLabel: 'ARTIFICIAL INTELLIGENCE SECURITY SERVICES',
-    servicesTitle: 'Results-oriented Artificial Intelligence Security',
-    servicesTitleHighlight: 'Results-oriented',
-    servicesSubtitle: 'Explore our AI Security Services:',
-    strategicServices: [
-      { icon: 'bi-shield-check', title: 'AI Governance', description: 'Proactively identify risks, ensure compliance with evolving regulations and establish governance frameworks for responsible and scalable AI adoption.', slug: 'ai-governance' },
-      { icon: 'bi-search', title: 'Incident Response Investigation', description: 'Support for all types of incident response, which may include AI solution use or access or identified attacker AI use.', slug: 'incident-response-investigation' },
-      { icon: 'bi-diagram-3', title: 'AI Threat Modeling', description: 'Identify, analyze and mitigate potential threats to systems and applications up to 60% faster.', slug: 'ai-threat-modeling' },
-      { icon: 'bi-clipboard-check', title: 'AI Readiness Assessment', description: 'Evaluate preparedness for adopting AI against the NIST AI RMF framework and get actionable remediation strategies.', slug: 'ai-readiness-assessment' },
-    ],
-    tacticalServices: [
-      { icon: 'bi-code-square', title: 'AI Application Architecture Review', description: 'A comprehensive AI-enabled application assessment to provide security assurance for intelligent applications within an operational environment.', slug: 'ai-application-architecture-review' },
-      { icon: 'bi-file-code', title: 'Secure Code Review', description: 'Examine AI-enabled application source code, looking for AI and traditional code vulnerabilities and implementation flaws to ensure code-level security assurance pre-deployment.', slug: 'secure-code-review' },
-      { icon: 'bi-layers', title: 'Application Architecture Review', description: 'Examine the structural foundation of AI-enabled applications, evaluating design, infrastructure configurations, data flows and trust boundaries to uncover architectural weaknesses.', slug: 'application-architecture-review' },
-    ],
-    testimonial: {
-      quote: "GuidePoint Security has been a great partner. They've taken the time to understand our organization and that's helped drive value through our security program. They've become part of the family.",
-      author: 'Vinit Duggal',
-      role: 'Chief Security & Trust Officer',
-      company: 'Intelsat',
-      companyLogo: '/logos/intelsat.png',
+        { bold: 'Application Security:', text: 'enhance traditional application security assessments with AI agentic workflows that identify vulnerabilities, flaws and weaknesses faster' }
+      ]
+    }
+  ],
+
+  outcomesLabel: 'ARTIFICIAL INTELLIGENCE SECURITY OUTCOMES',
+
+  outcomesTitle: 'Reduce Risk, Accelerate Innovation with AI',
+
+  outcomesTitleHighlight: 'Reduce',
+
+  outcomesSubtitle: 'Safely harness the power and potential of AI. GuidePoint Security helps organizations build secure AI strategies and safely adopt and optimize AI solutions to protect what matters.',
+
+  outcomes: [
+    {
+      title: 'Accelerate Innovation',
+      description: 'Speed innovation and time to market by securely and confidently adopting AI-based solutions.'
     },
-  },
+    {
+      title: 'Increase Productivity and Efficiency',
+      description: 'Increase efficiency, minimize human error and automate tasks with AI for greater productivity.'
+    },
+    {
+      title: 'Improve Decision Making',
+      description: 'Make faster, more accurate decisions by using AI to better understand data, insights and communications and find and stop threats in real time.'
+    },
+    {
+      title: "Build for What's Next",
+      description: 'Improve security operations today and build for tomorrow with proven AI-enabled solutions that speed detection and response to evolving AI-based threats.'
+    }
+  ],
+
+  servicesLabel: 'ARTIFICIAL INTELLIGENCE SECURITY SERVICES',
+
+  servicesTitle: 'Results-oriented Artificial Intelligence Security',
+
+  servicesTitleHighlight: 'Results-oriented',
+
+  servicesSubtitle: 'Explore Our AI Security Services:',
+
+  strategicServices: [
+    {
+      title: 'AI Governance',
+      description: 'Proactively identify risks, ensure compliance with evolving regulations and establish governance frameworks for responsible and scalable AI adoption.'
+    },
+    {
+      title: 'Incident Response Investigation',
+      description: 'Support for all types of incident response, which may include AI solution use or access or identified attacker AI use.'
+    },
+    {
+      title: 'AI Threat Modeling',
+      description: 'Identify, analyze and mitigate potential threats to systems and applications up to 60% faster.'
+    },
+    {
+      title: 'AI Readiness Assessment',
+      description: 'Evaluate preparedness for adopting AI against the NIST AI RMF framework and get actionable remediation strategies.'
+    }
+  ],
+
+  tacticalServices: [
+    {
+      title: 'AI Application Architecture Review',
+      description: 'A comprehensive AI-enabled application assessment to provide security assurance for intelligent applications within an operational environment.'
+    },
+    {
+      title: 'Secure Code Review',
+      description: 'Examine AI-enabled application source code, looking for AI and traditional code vulnerabilities and implementation flaws to ensure code-level security assurance pre-deployment.'
+    },
+    {
+      title: 'Application Architecture Review',
+      description: 'Examine the structural foundation of AI-enabled applications, evaluating design, infrastructure configurations, data flows and trust boundaries to uncover architectural weaknesses.'
+    }
+  ]
+},
 
   // ─────────────────────────────────────────────
   // Application Security
@@ -154,7 +237,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/services/managed-security',
+      link: '/managed-security',
     },
     tacticalServices: [
       { icon: 'bi-shield-check', title: 'Application Security Assessments', description: 'Understand your attack surface through comprehensive penetration testing and vulnerability assessment.', slug: 'application-security-assessment' },

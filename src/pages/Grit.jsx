@@ -44,7 +44,7 @@ export default function Grit() {
         title="GuidePoint Research and Intelligence Team (GRIT)"
         subtitle="GRIT brings together GuidePoint Security's expert threat researchers and incident response professionals to build a coalition with one goal: to shield our customers from cyber-attacks by arming them with the information and strategies they need."
         ctaText="Threat Intelligence Services"
-        ctaLink="/services/incident-response-threat-intelligence"
+        ctaLink="/incident-response/incident-response-threat-intelligence"
         secondaryCta="Talk to a GRIT Expert"
         secondaryCtaLink="/contact"
         variant="page"
