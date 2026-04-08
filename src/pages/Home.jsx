@@ -9,7 +9,9 @@ import NetworkBackground from '../components/sections/NetworkBackground';
 import ServiceAccordion from '../components/sections/ServiceAccordion';
 import BeInformed from '../components/sections/BeInformed';
 import { servicesList } from '../data/services';
-import heroImage from '../assets/images/hero.jpeg';
+import { assetUrl } from '../utils/assetUrl';
+
+const heroImage = '/images/hero.jpeg';
 
 const features = [
   {
@@ -170,7 +172,7 @@ export default function Home() {
           <AnimatedSection animation="fade-in-up">
             <div className="testimonial-video">
               <img
-                src={heroImage}
+                src={assetUrl(heroImage)}
                 alt="Joey Johnson testimonial"
                 className="testimonial-video__image"
               />

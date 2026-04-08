@@ -4,6 +4,11 @@ import { useEffect, useState, useRef } from 'react';
 import services from '../../data/services';
 import serviceCategories from '../../data/serviceCategories';
 
+// Slug → category path overrides where service slug ≠ category slug
+const CATEGORY_PATH_OVERRIDES = {
+  'ai-security': '/artificial-intelligence',
+};
+
 // Build ordered service list from data
 const serviceEntries = Object.entries(services)
   .filter(([, s]) => !s.parentService)
@@ -12,7 +17,7 @@ const serviceEntries = Object.entries(services)
   icon: s.icon,
   title: s.title,
   tagline: s.tagline,
-  path: serviceCategories[slug] ? `/${slug}` : `/services/${slug}`,
+  path: CATEGORY_PATH_OVERRIDES[slug] || (serviceCategories[slug] ? `/${slug}` : `/services/${slug}`),
   strategic: s.strategic,
   strategicExtra: s.strategicExtra,
   tactical: s.tactical,

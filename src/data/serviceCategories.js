@@ -40,21 +40,24 @@ const serviceCategories = {
       label: 'of phishing emails use AI technology',
       sourceName: 'TechAdvisors',
       sourceContext: 'AI Cyber Attack Statistics 2025',
-      sourceLink: 'https://tech-adv.com/blog/ai-cyber-attack-statistics/'
+      sourceLink: 'https://tech-adv.com/blog/ai-cyber-attack-statistics/',
+      circleImage: C1,
     },
     {
       value: '78%',
       label: 'believe the benefits of generative AI outweigh the risks',
       sourceName: 'National University',
       sourceContext: 'AI Cyber Statistics & Trends 2025',
-      sourceLink: 'https://www.nu.edu/blog/ai-statistics-trends/'
+      sourceLink: 'https://www.nu.edu/blog/ai-statistics-trends/',
+      circleImage: C2,
     },
     {
       value: '60%',
       label: 'faster threat detection using AI-driven security platforms',
       sourceName: 'Takepoint Research',
       sourceContext: 'AI in industrial cybersecurity',
-      sourceLink: 'https://industrialcyber.co/ai/takepoint-research-80-of-cybersecurity-professionals-favor-ai-benefits-over-evolving-risks/'
+      sourceLink: 'https://industrialcyber.co/ai/takepoint-research-80-of-cybersecurity-professionals-favor-ai-benefits-over-evolving-risks/',
+      circleImage: C3,
     }
   ],
 
@@ -166,7 +169,16 @@ const serviceCategories = {
       title: 'Application Architecture Review',
       description: 'Examine the structural foundation of AI-enabled applications, evaluating design, infrastructure configurations, data flows and trust boundaries to uncover architectural weaknesses.'
     }
-  ]
+  ],
+
+  testimonial: {
+    quote: 'GuidePoint Security has been a great partner. They\'ve taken the time to understand Intelsat and our customers and that\'s helped drive value through the security program. They\'ve become part of the Intelsat family.',
+    author: 'Vinit Duggal',
+    role: 'Chief Security & Trust Officer',
+    company: 'Intelsat',
+    companyLogo: 'https://www.guidepointsecurity.com/wp-content/uploads/2021/07/intelsat-logo.png',
+    personImage: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/03/Vinit_Duggal_Headshot-150x150.png',
+  },
 },
 
   // ─────────────────────────────────────────────
