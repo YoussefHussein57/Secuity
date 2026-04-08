@@ -53,7 +53,7 @@ export default function Hero({
       {showNetwork && <NetworkBackground />}
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div className={`row ${isPage ? 'justify-content-center' : 'align-items-center'}`}>
-          <div className={isPage ? 'col-lg-10' : 'col-lg-7'}>
+          <div className={isPage ? 'col-lg-10 pt-5' : 'col-lg-7'}>
             {iconImage && (
               <div
                 className={isPage ? 'text-center mb-4' : 'mb-4'}
