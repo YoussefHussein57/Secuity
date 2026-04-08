@@ -2,34 +2,49 @@ import { useState, useCallback } from 'react';
 import { assetUrl } from '../../utils/assetUrl';
 import GradientCard from './GradientCard';
 
-const gridAreas = ['1 / 1', '1 / 2', '2 / 2', '2 / 1'];
+// ── SVG Pie Wheel — supports any number of stages ─────────────────────────────
+const CX = 210, CY = 210, R_OUT = 192, R_IN = 52;
+
+function toXY(r, angleDeg) {
+  const rad = (angleDeg - 90) * Math.PI / 180;
+  return [+(CX + r * Math.cos(rad)).toFixed(2), +(CY + r * Math.sin(rad)).toFixed(2)];
+}
+
+function slicePath(startDeg, endDeg, gap = 0) {
+  const s = startDeg + gap, e = endDeg - gap;
+  const [ox1, oy1] = toXY(R_OUT, s), [ox2, oy2] = toXY(R_OUT, e);
+  const [ix1, iy1] = toXY(R_IN, s),  [ix2, iy2] = toXY(R_IN, e);
+  const la = (e - s) > 180 ? 1 : 0;
+  return `M${ix1} ${iy1} L${ox1} ${oy1} A${R_OUT} ${R_OUT} 0 ${la} 1 ${ox2} ${oy2} L${ix2} ${iy2} A${R_IN} ${R_IN} 0 ${la} 0 ${ix1} ${iy1}Z`;
+}
 
 export default function LifecycleWheel({ data }) {
-  const [activeIdx, setActiveIdx]       = useState(1); // controls wheel highlight — updates immediately
-  const [contentIdx, setContentIdx]     = useState(1); // controls right-side content — updates after fade
-  const [spinKey, setSpinKey]           = useState(0);
-  const [contentVisible, setContentVisible] = useState(true);
+  const n       = data.stages.length;
+  const segDeg  = 360 / n;
+  // Center first segment at the top (12 o'clock)
+  const offset  = -(segDeg / 2);
+
+  const [activeIdx, setActiveIdx]     = useState(0);
+  const [contentIdx, setContentIdx]   = useState(0);
+  const [contentVisible, setVisible]  = useState(true);
+  const [spinKey, setSpinKey]         = useState(0);
 
   const active = data.stages[contentIdx];
 
-  const handleHover = useCallback((i) => {
+  const handleActivate = useCallback((i) => {
     if (i === activeIdx) return;
-    // Highlight new quadrant immediately — smooth instant swap
     setActiveIdx(i);
     setSpinKey((k) => k + 1);
-    // Fade content out, swap text, fade back in
-    setContentVisible(false);
-    setTimeout(() => {
-      setContentIdx(i);
-      setContentVisible(true);
-    }, 200);
+    setVisible(false);
+    setTimeout(() => { setContentIdx(i); setVisible(true); }, 200);
   }, [activeIdx]);
 
   return (
     <>
-      {/* Wheel section — dark background */}
+      {/* Wheel section */}
       <section className="section section--dark lifecycle-section">
         <div className="container pt-5">
+
           {/* Header */}
           <div className="text-center mb-5">
             <p className="section-header__label text-white">{data.label}</p>
@@ -42,70 +57,128 @@ export default function LifecycleWheel({ data }) {
                 </>
               ) : data.title}
             </h2>
-            <p className="use-cases__subtitle mx-auto mt-3">{data.subtitle}</p>
+            {(data.paragraphs ?? (data.subtitle ? [data.subtitle] : [])).map((p, i) => (
+              <p key={i} className="use-cases__subtitle mx-auto mt-2" style={{ textAlign: 'left', maxWidth: 820 }}>{p}</p>
+            ))}
           </div>
 
           {/* Wheel + Content */}
-          <div className="row align-items-center g-5">
-            {/* Wheel */}
-            <div className="col-lg-6 d-flex justify-content-center">
-              <div className="lifecycle-wheel-wrap">
-                <div className="lifecycle-wheel">
-                  {data.stages.map((stage, i) => (
-                    <div
-                      key={stage.id}
-                      className={`lifecycle-wheel__quadrant${activeIdx === i ? ' lifecycle-wheel__quadrant--active' : ''}`}
-                      style={{ gridArea: gridAreas[i] }}
-                      onMouseEnter={() => handleHover(i)}
-                    >
-                      <img
-                        src={assetUrl(stage.iconImage)}
-                        alt={stage.name}
-                        className="lifecycle-wheel__icon"
-                      />
-                      <span className="lifecycle-wheel__label">{stage.name}</span>
-                    </div>
-                  ))}
-                </div>
+          <div className="row align-items-center g-5 justify-content-center">
 
-                {/* Centre circle — key change restarts the spin animation */}
-                <div className="lifecycle-wheel__center" key={spinKey}>
-                  <img
-                    src={assetUrl('/aws-lifecycle-center.svg')}
-                    alt=""
-                    className="lifecycle-wheel__center-svg"
+            {/* SVG Wheel */}
+            <div className="col-lg-5 d-flex justify-content-center">
+              <div className="lifecycle-wheel-wrap" style={{ aspectRatio: '1 / 1' }}>
+
+                {/* SVG segments */}
+                <svg viewBox="0 0 420 420" style={{ width: '100%', height: '100%', display: 'block' }}>
+                  {/* dark ring background */}
+                  <circle cx={CX} cy={CY} r={R_OUT + 4} fill="#0f0f27" />
+
+                  {data.stages.map((stage, i) => {
+                    const s = offset + i * segDeg;
+                    const e = offset + (i + 1) * segDeg;
+                    return (
+                      <path
+                        key={stage.id}
+                        d={slicePath(s, e)}
+                        fill={activeIdx === i ? '#3730ff' : '#dde1f5'}
+                        style={{ cursor: 'pointer', transition: 'fill 0.2s ease' }}
+                        onMouseEnter={() => handleActivate(i)}
+                        onClick={() => handleActivate(i)}
+                      />
+                    );
+                  })}
+
+                  {/* Center hole */}
+                  <circle cx={CX} cy={CY} r={R_IN - 2} fill="#0f0f27" />
+
+                  {/* Center spinning image — exactly at SVG center */}
+                  <image
+                    key={spinKey}
+                    href={assetUrl('/aws-lifecycle-center.svg')}
+                    x={CX - 38}
+                    y={CY - 38}
+                    width={76}
+                    height={76}
+                    className="lifecycle-wheel__center-spin"
                   />
-                </div>
+                </svg>
+
+                {/* Icon + label HTML overlays (pointerEvents:none so SVG hover works) */}
+                {data.stages.map((stage, i) => {
+                  const midDeg  = offset + i * segDeg + segDeg / 2;
+                  const [x, y]  = toXY(128, midDeg);
+                  const isActive = activeIdx === i;
+                  return (
+                    <div
+                      key={`ov-${stage.id}`}
+                      style={{
+                        position: 'absolute',
+                        left: `${(x / 420 * 100).toFixed(2)}%`,
+                        top:  `${(y / 420 * 100).toFixed(2)}%`,
+                        transform: 'translate(-50%, -50%)',
+                        textAlign: 'center',
+                        pointerEvents: 'none',
+                        lineHeight: 1.2,
+                      }}
+                    >
+                      {stage.biIcon ? (
+                        <i
+                          className={`bi ${stage.biIcon}`}
+                          style={{ fontSize: '1.3rem', color: isActive ? '#fff' : '#19186e', display: 'block', transition: 'color 0.2s' }}
+                        />
+                      ) : stage.iconImage ? (
+                        <img
+                          src={assetUrl(stage.iconImage)}
+                          alt=""
+                          style={{ width: 32, height: 32, objectFit: 'contain', display: 'block', margin: '0 auto', filter: isActive ? 'brightness(0) invert(1)' : 'none', transition: 'filter 0.2s' }}
+                        />
+                      ) : null}
+                      <span style={{ fontSize: '11px', fontWeight: 700, color: isActive ? '#fff' : '#19186e', display: 'block', marginTop: 3, whiteSpace: 'nowrap', transition: 'color 0.2s' }}>
+                        {stage.name}
+                      </span>
+                    </div>
+                  );
+                })}
+
+
               </div>
             </div>
 
             {/* Content panel */}
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div className={`lifecycle-content${contentVisible ? ' lifecycle-content--visible' : ''}`}>
                 <div className="lifecycle-content__heading">
                   <div className="lifecycle-content__icon-wrap">
-                    <img src={assetUrl(active.iconImage)} alt={active.name} />
+                    {active.biIcon ? (
+                      <i className={`bi ${active.biIcon}`} style={{ fontSize: '1.3rem', color: '#fff' }} />
+                    ) : active.iconImage ? (
+                      <img src={assetUrl(active.iconImage)} alt={active.name} />
+                    ) : null}
                   </div>
                   <h3 className="lifecycle-content__title">{active.name.toUpperCase()}</h3>
                 </div>
                 {active.description && (
                   <p className="lifecycle-content__desc">{active.description}</p>
                 )}
-                <ul className="lifecycle-content__list">
-                  {active.items.map((item) => (
-                    <li key={item.title} className="lifecycle-content__item">
-                      <i className="bi bi-check-circle lifecycle-content__check" />
-                      <span>{item.title}</span>
-                    </li>
-                  ))}
-                </ul>
+                {active.items && active.items.length > 0 && (
+                  <ul className="lifecycle-content__list">
+                    {active.items.map((item) => (
+                      <li key={item.title} className="lifecycle-content__item">
+                        <i className="bi bi-check-circle lifecycle-content__check" />
+                        <span>{item.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* Stage card sections — separate indigo sections for correct bg + dividers */}
+      {/* Per-stage card sections (used by AWS lifecycle) */}
       {data.stages.map((stage) =>
         stage.cards && stage.cards.length > 0 ? (
           <section key={stage.id} className="section section--indigo">

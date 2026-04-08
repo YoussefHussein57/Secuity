@@ -114,15 +114,53 @@ export default function ServiceDetail() {
 
             {/* Cards variant — no image */}
             {service.heroSplit.cards ? (
-              <AnimatedSection animation="animate-on-scroll">
-                <div className={`row g-4 row-cols-1 row-cols-md-${service.heroSplit.cards.length <= 3 ? service.heroSplit.cards.length : 3}`}>
-                  {service.heroSplit.cards.map((card) => (
-                    <div key={card.title} className="col">
-                      <GradientCard layout="centered" accent="top" title={card.title} description={card.description || undefined} />
+              <>
+                {service.heroSplit.paragraphs && (
+                  <AnimatedSection animation="animate-on-scroll">
+                    <div className="mb-4">
+                      {service.heroSplit.paragraphs.map((p, i) => (
+                        <p key={i} className="text-white mb-3" style={{ lineHeight: 1.6, fontSize: '16px' }}>{p}</p>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              </AnimatedSection>
+                  </AnimatedSection>
+                )}
+                {service.heroSplit.subLabel && (
+                  <AnimatedSection animation="animate-on-scroll">
+                    <div className="mt-5 mb-4">
+                      <p className="section-header__label">{service.heroSplit.subLabel}</p>
+                      <h2 className="use-cases__title text-white" style={{ maxWidth: '100%' }}>
+                        {service.heroSplit.subTitleHighlight ? (
+                          <>
+                            {service.heroSplit.subTitle.split(service.heroSplit.subTitleHighlight)[0]}
+                            <span className="text-accent-box">{service.heroSplit.subTitleHighlight}</span>
+                            {service.heroSplit.subTitle.split(service.heroSplit.subTitleHighlight)[1] || ''}
+                          </>
+                        ) : service.heroSplit.subTitle}
+                      </h2>
+                      {service.heroSplit.subSubtitle && (
+                        <p className="use-cases__subtitle mx-auto mt-3 text-center">{service.heroSplit.subSubtitle}</p>
+                      )}
+                    </div>
+                  </AnimatedSection>
+                )}
+                <AnimatedSection animation="animate-on-scroll">
+                  <div className={`row g-4 row-cols-1 row-cols-md-${service.heroSplit.cards.length <= 3 ? service.heroSplit.cards.length : 3}`}>
+                    {service.heroSplit.cards.map((card) => (
+                      <div key={card.stat || card.title} className="col">
+                        {card.stat ? (
+                          <div className="card-gradient card-gradient--centered card-gradient--accent-bottom">
+                            <div style={{ fontSize: '3rem', fontWeight: 700, color: '#13BFEA', lineHeight: 1.1, marginBottom: '1rem' }}>{card.stat}</div>
+                            <p style={{ color: '#fff', fontSize: '15px', lineHeight: 1.6, marginBottom: card.source ? '0.75rem' : 0 }}>{card.description}</p>
+                            {card.source && <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '12px', marginBottom: 0 }}>{card.source}</p>}
+                          </div>
+                        ) : (
+                          <GradientCard layout="centered" accent="top" title={card.title} description={card.description || undefined} />
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </AnimatedSection>
+              </>
             ) : (
               /* Image + paragraphs variant */
               <div className="row g-5 align-items-center">
@@ -150,6 +188,9 @@ export default function ServiceDetail() {
         </section>
       )}
 
+      {/* 3b. Lifecycle Wheel — renders BEFORE splits (e.g. Zero Trust methodology) */}
+      {service.lifecycleStages && <LifecycleWheel data={service.lifecycleStages} />}
+
       {/* 3. Dark Split Sections — fully data-driven from service.splits */}
       {service.splits && service.splits.map((s, idx) => {
 
@@ -157,10 +198,10 @@ export default function ServiceDetail() {
         if (s.cards && s.cards.length > 0) {
           return (
             <Fragment key={idx}>
-              <section className="section section--dark dark-split">
+              <section className={`section section--${s.bgClass || 'dark'} dark-split`}>
                 <div className="container py-5 py-lg-3">
                   <AnimatedSection animation="animate-on-scroll">
-                    <div className="dark-split__text mb-5">
+                    <div className="dark-split__text mb-5" style={{ maxWidth: '100%' }}>
                       <p className="section-header__label">{s.label}</p>
                       <h2 className="use-cases__title text-start">
                         {s.titleHighlight ? (
@@ -428,26 +469,36 @@ export default function ServiceDetail() {
                           </div>
                         );
                       }
+                      if (card.items) {
+                        return (
+                          <div className={colClass} key={ci}>
+                            <GradientCard layout="left" accent="bottom">
+                              <div className={card.icon ? 'd-flex gap-4 align-items-start' : ''}>
+                                {card.icon && (
+                                  <img src={assetUrl(card.icon)} alt="" style={{ width: 64, height: 64, objectFit: 'contain', flexShrink: 0, marginTop: '4px' }} />
+                                )}
+                                <div style={{ flex: 1 }}>
+                                  {card.title && (
+                                    <p style={{ fontSize: '18px', fontWeight: 700, color: '#00ccff', marginBottom: '1rem' }}>{card.title}</p>
+                                  )}
+                                  {card.items.map((item) => (
+                                    <div className="card-gradient__checklist-item" key={item}>
+                                      <i className="bi bi-check-circle" style={{ color: '#00ccff', fontSize: '1.1rem', flexShrink: 0, marginTop: '2px' }}></i>
+                                      <span style={{ fontSize: '15px', fontWeight: 600 }}>{item}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </GradientCard>
+                          </div>
+                        );
+                      }
                       return (
                         <div className={colClass} key={ci}>
-                          <GradientCard layout="left" accent="bottom">
-                            <div className={card.icon ? 'd-flex gap-4 align-items-start' : ''}>
-                              {card.icon && (
-                                <img src={assetUrl(card.icon)} alt="" style={{ width: 64, height: 64, objectFit: 'contain', flexShrink: 0, marginTop: '4px' }} />
-                              )}
-                              <div style={{ flex: 1 }}>
-                                {card.title && (
-                                  <p style={{ fontSize: '18px', fontWeight: 700, color: '#00ccff', marginBottom: '1rem' }}>{card.title}</p>
-                                )}
-                                {card.items.map((item) => (
-                                  <div className="card-gradient__checklist-item" key={item}>
-                                    <i className="bi bi-check-circle" style={{ color: '#00ccff', fontSize: '1.1rem', flexShrink: 0, marginTop: '2px' }}></i>
-                                    <span style={{ fontSize: '15px', fontWeight: 600 }}>{item}</span>
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-                          </GradientCard>
+                          <div className="card-gradient card-gradient--accent-bottom" style={{ height: '100%', padding: '2rem 1.5rem 2.5rem' }}>
+                            <h5 className="card-gradient__title" style={{ fontSize: '18px', paddingBottom: '16px' }}>{card.title}</h5>
+                            {card.description && <p className="card-gradient__desc" style={{ fontSize: '15px' }}>{card.description}</p>}
+                          </div>
                         </div>
                       );
                     })}
@@ -487,8 +538,7 @@ export default function ServiceDetail() {
         );
       })}
 
-      {/* 3b. Lifecycle Wheel (conditional — e.g. AWS) */}
-      {service.lifecycleStages && <LifecycleWheel data={service.lifecycleStages} />}
+      {/* lifecycle wheel already rendered before splits above */}
 
       {/* 3c. Service Tabs (conditional) */}
       <ServiceTabs tabsSection={service.tabsSection} />
@@ -563,7 +613,7 @@ export default function ServiceDetail() {
             <AnimatedSection animation="animate-on-scroll">
               <div className="text-center mb-5">
                 <p className="section-header__label" style={{ color: 'rgba(255,255,255,0.7)' }}>{service.engagementSection.label}</p>
-                <h2 className="use-cases__title text-white">
+                <h2 className="use-cases__title text-white text-center">
                   {service.engagementSection.titleHighlight ? (
                     <>
                       {service.engagementSection.title.split(service.engagementSection.titleHighlight)[0]}
@@ -577,9 +627,9 @@ export default function ServiceDetail() {
                 )}
               </div>
             </AnimatedSection>
-            <AnimatedSection animation="stagger-children" className="row g-4">
+            <AnimatedSection animation="stagger-children" className="row g-4 justify-content-center">
               {service.engagementSection.cards.map((card) => (
-                <div className="col-lg-6" key={card.title}>
+                <div className={`col-lg-${service.engagementSection.cards.length === 3 ? '4' : '6'}`} key={card.title}>
                   <GradientCard layout="centered" accent="top" title={card.title} description={card.description} />
                 </div>
               ))}

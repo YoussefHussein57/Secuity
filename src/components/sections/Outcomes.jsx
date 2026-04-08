@@ -30,7 +30,7 @@ export default function Outcomes({ outcomesSection, outcomes, title, variant = '
         </AnimatedSection>
         {outcomes && outcomes.length > 0 && <AnimatedSection animation="stagger-children" className="row g-4">
           {outcomes.map((o) => (
-            <div className="col-lg-6" key={o.title}>
+            <div className={`col-lg-${outcomes.length <= 3 ? Math.floor(12 / outcomes.length) : 6}`} key={o.title}>
               <GradientCard
                 icon={o.icon}
                 iconImage={o.iconImage}

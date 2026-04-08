@@ -1,8 +1,18 @@
-// Lifecycle Wheel — AWS 4-stage interactive circle
+// Lifecycle Wheel — interactive SVG pie wheel
 
 @keyframes spin-once {
   from { transform: translate(-50%, -50%) rotate(0deg); }
   to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes spin-continuous {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.lifecycle-wheel__center-spin {
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 // .lifecycle-section inherits padding from .section (5rem top/bottom via section-padding mixin)
@@ -11,6 +21,7 @@
   position: relative;
   width: 420px;
   max-width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .lifecycle-wheel {

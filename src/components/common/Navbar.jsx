@@ -105,7 +105,7 @@ const featuredResources = [
 ];
 
 // Helper: render sub-service items for a column
-function SubItems({ items, icon, closeMega }) {
+function SubItems({ items, icon, closeMega, fallbackPath }) {
   return items.map((item) => {
     const inner = (
       <>
@@ -116,8 +116,9 @@ function SubItems({ items, icon, closeMega }) {
         </div>
       </>
     );
-    return item.path
-      ? <Link key={item.title} to={item.path} className="mega-services__sub-item" onClick={closeMega}>{inner}</Link>
+    const dest = item.path || fallbackPath;
+    return dest
+      ? <Link key={item.title} to={dest} className="mega-services__sub-item" onClick={closeMega}>{inner}</Link>
       : <div key={item.title} className="mega-services__sub-item mega-services__sub-item--no-link">{inner}</div>;
   });
 }
@@ -146,20 +147,20 @@ function renderMegaColumns(service, closeMega) {
           {service.strategic?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-              <SubItems items={service.strategic} icon="bi-shield-check" closeMega={closeMega} />
+              <SubItems items={service.strategic} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
             </>
           )}
           {service.tactical?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading" style={{ marginTop: '1rem' }}>TACTICAL ASSESSMENTS</h6>
-              <SubItems items={service.tactical} icon="bi-shield-check" closeMega={closeMega} />
+              <SubItems items={service.tactical} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
             </>
           )}
         </div>
         {service.training?.length > 0 && (
           <div className="mega-services__col">
             <h6 className="mega-services__col-heading">TRAINING</h6>
-            <SubItems items={service.training} icon="bi-mortarboard" closeMega={closeMega} />
+            <SubItems items={service.training} icon="bi-mortarboard" closeMega={closeMega} fallbackPath={service.path} />
           </div>
         )}
         {resources.length > 0 && (
@@ -183,11 +184,11 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">SERVICES BY PLATFORM</h6>
-          <SubItems items={service.strategic || []} icon="bi-cloud" closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-cloud" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         {resources.length > 0 && (
           <div className="mega-services__col">
@@ -209,19 +210,19 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">THREAT EMULATION</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">TACTICAL ASSESSMENT</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">VULNERABILITY MANAGEMENT</h6>
-          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
           {service.managedExtra?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
-              <SubItems items={service.managedExtra} icon="bi-gear" closeMega={closeMega} />
+              <SubItems items={service.managedExtra} icon="bi-gear" closeMega={closeMega} fallbackPath={service.path} />
             </>
           )}
         </div>
@@ -235,11 +236,11 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">ROBUST STAFFING SOLUTIONS</h6>
-          <SubItems items={service.strategic || []} icon="bi-person-plus" closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-person-plus" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       </div>
     );
@@ -251,15 +252,15 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PLATFORM-SPECIFIC SERVICES</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       </div>
     );
@@ -271,15 +272,15 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">STRATEGIC SOLUTIONS</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">TACTICAL ASSESSMENTS</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">THREAT EMULATION</h6>
-          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       </div>
     );
@@ -291,15 +292,15 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">IMPLEMENTATION & ADMINISTRATION</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       </div>
     );
@@ -334,11 +335,11 @@ function renderMegaColumns(service, closeMega) {
         </div>
         <div className="mega-services__col mega-services__col--wide">
           <h6 className="mega-services__col-heading">"AS A SERVICE" OFFERINGS</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">&nbsp;</h6>
-          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       </div>
     );
@@ -350,21 +351,21 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROACTIVE SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">REACTIVE SERVICES</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-exclamation" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-exclamation" closeMega={closeMega} fallbackPath={service.path} />
           {service.tacticalExtra?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
-              <SubItems items={service.tacticalExtra} icon="bi-gear" closeMega={closeMega} />
+              <SubItems items={service.tacticalExtra} icon="bi-gear" closeMega={closeMega} fallbackPath={service.path} />
             </>
           )}
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">ADVISORY SERVICES</h6>
-          <SubItems items={service.managed || []} icon="bi-clipboard-check" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-clipboard-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       </div>
     );
@@ -377,15 +378,15 @@ function renderMegaColumns(service, closeMega) {
       <div className="mega-services__columns">
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">PROFESSIONAL SERVICES</h6>
-          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.strategic || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">IAM PILLARS</h6>
-          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">MANAGED SECURITY</h6>
-          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-gear" closeMega={closeMega} fallbackPath={service.path} />
         </div>
         {iamResource && (
           <div className="mega-services__col">
@@ -409,23 +410,23 @@ function renderMegaColumns(service, closeMega) {
           {service.strategicExtra?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">BUSINESS RESILIENCY</h6>
-              <SubItems items={service.strategicExtra} icon="bi-building-check" closeMega={closeMega} />
+              <SubItems items={service.strategicExtra} icon="bi-building-check" closeMega={closeMega} fallbackPath={service.path} />
             </>
           )}
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">RISK SERVICES</h6>
-          <SubItems items={service.tactical || []} icon="bi-exclamation-triangle" closeMega={closeMega} />
+          <SubItems items={service.tactical || []} icon="bi-exclamation-triangle" closeMega={closeMega} fallbackPath={service.path} />
           {service.tacticalExtra?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
-              <SubItems items={service.tacticalExtra} icon="bi-gear" closeMega={closeMega} />
+              <SubItems items={service.tacticalExtra} icon="bi-gear" closeMega={closeMega} fallbackPath={service.path} />
             </>
           )}
         </div>
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">COMPLIANCE SERVICES</h6>
-          <SubItems items={service.managed || []} icon="bi-check2-square" closeMega={closeMega} />
+          <SubItems items={service.managed || []} icon="bi-check2-square" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       </div>
     );
@@ -437,11 +438,11 @@ function renderMegaColumns(service, closeMega) {
       {service.strategic?.length > 0 && (
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">STRATEGIC SOLUTIONS</h6>
-          <SubItems items={service.strategic} icon="bi-shield-check" closeMega={closeMega} />
+          <SubItems items={service.strategic} icon="bi-shield-check" closeMega={closeMega} fallbackPath={service.path} />
           {service.managed?.length > 0 && (
             <>
               <h6 className="mega-services__col-heading mt-4">MANAGED SECURITY</h6>
-              <SubItems items={service.managed} icon="bi-gear" closeMega={closeMega} />
+              <SubItems items={service.managed} icon="bi-gear" closeMega={closeMega} fallbackPath={service.path} />
             </>
           )}
         </div>
@@ -449,13 +450,13 @@ function renderMegaColumns(service, closeMega) {
       {service.tactical?.length > 0 && (
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">TACTICAL ASSESSMENT</h6>
-          <SubItems items={service.tactical} icon="bi-bullseye" closeMega={closeMega} />
+          <SubItems items={service.tactical} icon="bi-bullseye" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       )}
       {service.training?.length > 0 && (
         <div className="mega-services__col">
           <h6 className="mega-services__col-heading">TRAINING</h6>
-          <SubItems items={service.training} icon="bi-mortarboard" closeMega={closeMega} />
+          <SubItems items={service.training} icon="bi-mortarboard" closeMega={closeMega} fallbackPath={service.path} />
         </div>
       )}
     </div>
