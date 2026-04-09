@@ -68,26 +68,21 @@
   }
 
   &__cta {
-    background: linear-gradient(90deg, $gradient-start, $gradient-end);
-    border: none;
-    color: $white;
-    font-weight: $fw-bold;
+    @include gradient-btn;
     padding: 0.65rem 2rem;
-    border-radius: 0;
     letter-spacing: 0.03em;
-    transition: opacity 0.2s ease;
-
-    &:hover { opacity: 0.85; color: $white; }
 
     &--outline {
       background: transparent;
       border: 2px solid $white;
       color: $white;
 
+      // reset the gradient-btn pseudo-element on the outline variant
+      &::before { display: none; }
+
       &:hover {
         background: $white;
         color: $primary;
-        opacity: 1;
       }
     }
   }
@@ -296,6 +291,21 @@
 
 // Commitment checklist
 .cat-commitment {
+  // collapsed state — hidden with smooth transition
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.4s ease 0.05s,
+              transform 0.4s ease 0.05s;
+
+  &--visible {
+    max-height: 2000px; // large enough for any content
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   &__title {
     font-size: 20px;
     font-weight: $fw-semibold;
@@ -361,6 +371,33 @@
   }
 }
 
+// Commitment on dark background (hidePractice categories)
+.cat-commitment--on-dark {
+  .cat-commitment__title--dark {
+    color: $white;
+  }
+
+  .cat-commitment__item-body--dark {
+    color: rgba($white, 0.85);
+  }
+}
+
+.cat-commitment__label-dark {
+  font-size: 15px;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  letter-spacing: 1.93px;
+  color: $white;
+}
+
+.expertise-card__toggle--dark {
+  color: $gradient-end;
+
+  &:hover {
+    color: lighten($gradient-end, 15%);
+  }
+}
+
 // ── Outcomes ──
 .cat-outcomes {
   &__title {
@@ -402,7 +439,32 @@
   font-size: 15px;
   color: rgba($white, 0.85);
   line-height: 1.6;
+  margin: 0 0 0.75rem;
+}
+
+.cat-outcome-card__items-intro {
+  font-size: 14px;
+  color: rgba($white, 0.75);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.cat-outcome-card__list {
+  list-style: none;
+  padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cat-outcome-card__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 14px;
+  color: rgba($white, 0.85);
+  line-height: 1.5;
 }
 
 // ── Services Tabs ──
@@ -412,7 +474,7 @@
     font-weight: $fw-bold;
     text-transform: uppercase;
     letter-spacing: 1.93px;
-    color: rgba($white, 0.6);
+    color: $white;
     margin-bottom: 0.75rem;
   }
 
@@ -558,6 +620,12 @@
 
     &:hover { opacity: 0.85; color: $white; }
   }
+}
+
+// ── Section labels always white on category pages ──
+.cat-stats .section-header__label,
+.cat-outcomes .section-header__label {
+  color: $white;
 }
 
 // ── Responsive ──

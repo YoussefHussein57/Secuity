@@ -63,18 +63,48 @@ export default function ServiceCategoryPage({ data }) {
                     <div className="card-gradient card-gradient--centered card-gradient--accent-bottom cat-stat-card__inner">
                       <div className="cat-stat__value">{stat.value}</div>
                       <p className="cat-stat__label">{stat.label}</p>
-                      <p className="cat-stat__source-name">{stat.sourceName}</p>
-                      <p className="cat-stat__source-context">({stat.sourceContext})</p>
+                      {stat.sourceName && <p className="cat-stat__source-name">{stat.sourceName}</p>}
+                      {stat.sourceContext && <p className="cat-stat__source-context">({stat.sourceContext})</p>}
                     </div>
                   </div>
                 </div>
               ))}
             </div>
+
+            {/* When hidePractice: commitment + toggle live here in the dark stats section */}
+            {data.hidePractice && (
+              <div className="mt-5">
+                <div className={`cat-commitment cat-commitment--on-dark${expanded ? ' cat-commitment--visible' : ''}`}>
+                  {data.commitmentLabel && (
+                    <p className="cat-commitment__label-dark mb-2">{data.commitmentLabel}</p>
+                  )}
+                  <h3 className="cat-commitment__title cat-commitment__title--dark">{data.commitmentSubtitle}</h3>
+                  <ul className="cat-commitment__list">
+                    {data.commitmentItems.map((item, i) => (
+                      <li key={i} className="cat-commitment__item">
+                        <i className="bi bi-check-circle cat-commitment__check"></i>
+                        <div className="cat-commitment__item-body cat-commitment__item-body--dark">
+                          <span>{item.text}</span>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <button
+                  className="expertise-card__toggle expertise-card__toggle--dark mt-4"
+                  onClick={() => setExpanded(!expanded)}
+                >
+                  {expanded ? 'Read Less' : 'Read More'}
+                  <i className={`bi bi-${expanded ? 'dash' : 'plus'} ms-2`}></i>
+                </button>
+              </div>
+            )}
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ── Practice Overview ── */}
+      {/* ── Practice Overview — hidden when hidePractice: true ── */}
+      {!data.hidePractice && (
       <section className="section cat-practice">
         <div className="container">
           <AnimatedSection animation="animate-on-scroll">
@@ -90,7 +120,6 @@ export default function ServiceCategoryPage({ data }) {
                 ))}
               </div>
 
-              {/* Video thumbnail — only shown when practiceVideo is provided */}
               {data.practiceVideo && (
                 <div className="col-lg-6">
                   <a
@@ -116,49 +145,51 @@ export default function ServiceCategoryPage({ data }) {
               )}
             </div>
 
-            {/* Expandable commitment — full width below the two columns */}
-            {expanded && (
-              <div className="cat-commitment mt-5">
-                {data.commitmentLabel && (
-                  <p className="cat-practice__label mb-2">{data.commitmentLabel}</p>
-                )}
-                <h3 className="cat-commitment__title">{data.commitmentSubtitle}</h3>
-                <ul className="cat-commitment__list">
-                  {data.commitmentItems.map((item, i) => (
-                    <li key={i} className="cat-commitment__item">
-                      <i className="bi bi-check-circle cat-commitment__check"></i>
-                      <div className="cat-commitment__item-body">
-                        <span>{item.text}</span>
-                        {item.children && item.children.length > 0 && (
-                          <ul className="cat-commitment__sublist">
-                            {item.children.map((child, j) => (
-                              <li key={j} className="cat-commitment__subitem">
-                                <i className="bi bi-check-circle cat-commitment__check cat-commitment__check--sm"></i>
-                                <span>
-                                  {child.bold && <em>{child.bold} </em>}
-                                  {child.text}
-                                </span>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            {data.commitmentItems && data.commitmentItems.length > 0 && (
+              <>
+                <div className={`cat-commitment mt-5${expanded ? ' cat-commitment--visible' : ''}`}>
+                  {data.commitmentLabel && (
+                    <p className="cat-practice__label mb-2">{data.commitmentLabel}</p>
+                  )}
+                  <h3 className="cat-commitment__title">{data.commitmentSubtitle}</h3>
+                  <ul className="cat-commitment__list">
+                    {data.commitmentItems.map((item, i) => (
+                      <li key={i} className="cat-commitment__item">
+                        <i className="bi bi-check-circle cat-commitment__check"></i>
+                        <div className="cat-commitment__item-body">
+                          <span>{item.text}</span>
+                          {item.children && item.children.length > 0 && (
+                            <ul className="cat-commitment__sublist">
+                              {item.children.map((child, j) => (
+                                <li key={j} className="cat-commitment__subitem">
+                                  <i className="bi bi-check-circle cat-commitment__check cat-commitment__check--sm"></i>
+                                  <span>
+                                    {child.bold && <em>{child.bold} </em>}
+                                    {child.text}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-            <button
-              className="expertise-card__toggle mt-4"
-              onClick={() => setExpanded(!expanded)}
-            >
-              {expanded ? 'Read Less' : 'Read More'}
-              <i className={`bi bi-${expanded ? 'dash' : 'plus'}`}></i>
-            </button>
+                <button
+                  className="expertise-card__toggle mt-4"
+                  onClick={() => setExpanded(!expanded)}
+                >
+                  {expanded ? 'Read Less' : 'Read More'}
+                  <i className={`bi bi-${expanded ? 'dash' : 'plus'} ms-2`}></i>
+                </button>
+              </>
+            )}
           </AnimatedSection>
         </div>
       </section>
+      )}
 
       {/* ── Services Tabs ── */}
       <section className="section section--dark cat-services">
@@ -174,29 +205,52 @@ export default function ServiceCategoryPage({ data }) {
             </div>
           </AnimatedSection>
 
-          {/* Tab buttons */}
+          {/* Tab buttons — only render when more than one tab exists */}
+          {((data.tacticalServices && data.tacticalServices.length > 0) ||
+            (data.complianceServices && data.complianceServices.length > 0) ||
+            (data.resilienceServices && data.resilienceServices.length > 0) ||
+            data.managedServices) && (
           <div className="cat-services__tabs justify-content-center">
             <button
               className={`cat-services__tab-btn${activeTab === 'strategic' ? ' active' : ''}`}
               onClick={() => setActiveTab('strategic')}
             >
-              STRATEGIC SERVICES
+              {data.strategicTabLabel || 'STRATEGIC SERVICES'}
             </button>
-            <button
-              className={`cat-services__tab-btn${activeTab === 'tactical' ? ' active' : ''}`}
-              onClick={() => setActiveTab('tactical')}
-            >
-              TACTICAL SERVICES
-            </button>
+            {data.tacticalServices && data.tacticalServices.length > 0 && (
+              <button
+                className={`cat-services__tab-btn${activeTab === 'tactical' ? ' active' : ''}`}
+                onClick={() => setActiveTab('tactical')}
+              >
+                {data.tacticalTabLabel || 'TACTICAL SERVICES'}
+              </button>
+            )}
+            {data.complianceServices && data.complianceServices.length > 0 && (
+              <button
+                className={`cat-services__tab-btn${activeTab === 'compliance' ? ' active' : ''}`}
+                onClick={() => setActiveTab('compliance')}
+              >
+                {data.complianceTabLabel || 'COMPLIANCE'}
+              </button>
+            )}
+            {data.resilienceServices && data.resilienceServices.length > 0 && (
+              <button
+                className={`cat-services__tab-btn${activeTab === 'resilience' ? ' active' : ''}`}
+                onClick={() => setActiveTab('resilience')}
+              >
+                {data.resilienceTabLabel || 'BUSINESS RESILIENCE'}
+              </button>
+            )}
             {data.managedServices && (
               <button
                 className={`cat-services__tab-btn${activeTab === 'managed' ? ' active' : ''}`}
                 onClick={() => setActiveTab('managed')}
               >
-                MANAGED SECURITY
+                {data.managedTabLabel || 'MANAGED SECURITY'}
               </button>
             )}
           </div>
+          )}
 
           {/* Per-tab description */}
           {(activeTab === 'strategic' && data.strategicTabDesc) && (
@@ -205,17 +259,27 @@ export default function ServiceCategoryPage({ data }) {
           {(activeTab === 'tactical' && data.tacticalTabDesc) && (
             <p className="cat-services__tab-desc text-center">{data.tacticalTabDesc}</p>
           )}
+          {(activeTab === 'compliance' && data.complianceTabDesc) && (
+            <p className="cat-services__tab-desc text-center">{data.complianceTabDesc}</p>
+          )}
+          {(activeTab === 'resilience' && data.resilienceTabDesc) && (
+            <p className="cat-services__tab-desc text-center">{data.resilienceTabDesc}</p>
+          )}
           {(activeTab === 'managed' && data.managedTabDesc) && (
             <p className="cat-services__tab-desc text-center">{data.managedTabDesc}</p>
           )}
 
           {/* Renders a tab's service cards + optional GPVUE card */}
-          {['strategic', 'tactical', 'managed'].map((tab) => {
+          {['strategic', 'tactical', 'compliance', 'resilience', 'managed'].map((tab) => {
             if (activeTab !== tab) return null;
-            const services = tab === 'strategic' ? data.strategicServices
-                           : tab === 'tactical'  ? data.tacticalServices
+            const services = tab === 'strategic'  ? data.strategicServices
+                           : tab === 'tactical'   ? data.tacticalServices
+                           : tab === 'compliance' ? data.complianceServices
+                           : tab === 'resilience' ? data.resilienceServices
                            : data.managedServices || [];
-            const showGpvue = tab === 'strategic' && data.gpvueCard;
+            const showGpvue = data.gpvueCard && (
+              data.gpvueTabs ? data.gpvueTabs.includes(tab) : tab === 'strategic'
+            );
             return (
               <div key={tab} className="row g-4 mt-1 align-items-stretch">
                 {services.map((svc, i) => (
@@ -227,8 +291,8 @@ export default function ServiceCategoryPage({ data }) {
                         </div>
                         <h3 className="cat-svc-card__title">{svc.title}</h3>
                         <p className="cat-svc-card__desc">{svc.description}</p>
-                        {svc.slug && (
-                          <Link to={`/${data.slug}/${svc.slug}`} className="cat-svc-card__link">
+                        {(svc.path || svc.slug) && (
+                          <Link to={svc.path || `/${data.slug}/${svc.slug}`} className="cat-svc-card__link">
                             Learn More &gt;
                           </Link>
                         )}
@@ -285,6 +349,17 @@ export default function ServiceCategoryPage({ data }) {
                     <div className="card-gradient card-gradient--accent-bottom h-100">
                       <h3 className="cat-outcome-card__title">{outcome.title}</h3>
                       <p className="cat-outcome-card__desc">{outcome.description}</p>
+                      {outcome.itemsIntro && <p className="cat-outcome-card__items-intro">{outcome.itemsIntro}</p>}
+                      {outcome.items && outcome.items.length > 0 && (
+                        <ul className="cat-outcome-card__list">
+                          {outcome.items.map((item, j) => (
+                            <li key={j} className="cat-outcome-card__list-item">
+                              <i className="bi bi-check-circle cat-commitment__check cat-commitment__check--sm"></i>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </AnimatedSection>
                 </div>
