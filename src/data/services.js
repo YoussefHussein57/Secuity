@@ -1664,7 +1664,7 @@ const services = {
     megaMenuResource: {
       image: 'https://www.guidepointsecurity.com/wp-content/uploads/2025/08/AI_for_GP_Header.jpg',
       title: '[DATASHEET] Artificial Intelligence at GuidePoint Security',
-      path: '/resources/artificial-intelligence-at-guidepoint-security',
+      path: '/company/ai-at-guidepoint',
     },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Map AI-specific risks across your organization.' },
@@ -1895,6 +1895,7 @@ const services = {
     megaMenuResource: {
       image: '/images/nav/cloud-nav.jpg',
       title: '[DATASHEET] Cloud Governance',
+      path: '/services/cloud-governance',
     },
     outcomes: [
       { icon: 'bi-search', title: 'Identify', description: 'Discover cloud misconfigurations and vulnerabilities.' },
@@ -3529,7 +3530,7 @@ const services = {
     training: [],
     megaMenuLayout: 'ai',
     megaMenuResources: [
-      { image: '/images/nav/data-security-nav.jpg', title: '[DATASHEET] Data Security' },
+      { image: '/images/nav/data-security-nav.jpg', title: '[DATASHEET] Data Security', path: '/resources/data-security-governance' },
       { image: '/images/nav/data-security-wp-nav.jpg', title: '[WHITEPAPER] Data Security Strategies for an Evolving Threat Landscape' },
     ],
     outcomes: [
@@ -4199,7 +4200,7 @@ const services = {
     gpvue: {
       image: 'https://www.guidepointsecurity.com/wp-content/uploads/2024/03/GPVUE.png',
       description: 'Integrated program designed to improve your security posture over the course of a year. Included Annual Program Review and Quarterly Business Reviews.',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     strategic: [
       { title: 'Managed Detection & Response (MDR)', description: 'Our experts help you identify the right MDR provider for your needs' },

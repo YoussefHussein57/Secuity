@@ -42,7 +42,10 @@ export default function LifecycleWheel({ data }) {
   return (
     <>
       {/* Wheel section */}
-      <section className="section section--dark lifecycle-section">
+      <section
+        className={`section section--dark lifecycle-section${data.bgImage ? ' lifecycle-section--has-bg' : ''}${data.className ? ' ' + data.className : ''}`}
+        style={data.bgImage ? { backgroundImage: `url(${data.bgImage})` } : undefined}
+      >
         <div className="container pt-5">
 
           {/* Header */}
@@ -92,17 +95,30 @@ export default function LifecycleWheel({ data }) {
                   {/* Center hole */}
                   <circle cx={CX} cy={CY} r={R_IN - 2} fill="#0f0f27" />
 
-                  {/* Center spinning image — exactly at SVG center */}
-                  <image
-                    key={spinKey}
-                    href={assetUrl('/aws-lifecycle-center.svg')}
-                    x={CX - 38}
-                    y={CY - 38}
-                    width={76}
-                    height={76}
-                    className="lifecycle-wheel__center-spin"
-                  />
+                  {/* Center image (non-GPVUE variant) */}
+                  {!data.gpvueCenter && (
+                    <image
+                      key={spinKey}
+                      href={assetUrl(data.centerImage || '/aws-lifecycle-center.svg')}
+                      x={CX - 38}
+                      y={CY - 38}
+                      width={76}
+                      height={76}
+                      className="lifecycle-wheel__center-spin"
+                    />
+                  )}
                 </svg>
+
+                {/* GPVUE center overlay — HTML so CSS hover/animation works */}
+                {data.gpvueCenter && (
+                  <div className="gpvue-center-overlay" aria-hidden="true">
+                    <i className="bi bi-arrow-repeat gpvue-center-arrows"></i>
+                    <span className="gpvue-center-text">
+                      <span className="gpvue-center-gp">GP</span>
+                      <em className="gpvue-center-vue">VUE</em>
+                    </span>
+                  </div>
+                )}
 
                 {/* Icon + label HTML overlays (pointerEvents:none so SVG hover works) */}
                 {data.stages.map((stage, i) => {
@@ -112,6 +128,7 @@ export default function LifecycleWheel({ data }) {
                   return (
                     <div
                       key={`ov-${stage.id}`}
+                      className="lifecycle-wheel__label-overlay"
                       style={{
                         position: 'absolute',
                         left: `${(x / 420 * 100).toFixed(2)}%`,
@@ -120,12 +137,13 @@ export default function LifecycleWheel({ data }) {
                         textAlign: 'center',
                         pointerEvents: 'none',
                         lineHeight: 1.2,
+                        width: '22%',
                       }}
                     >
                       {stage.biIcon ? (
                         <i
                           className={`bi ${stage.biIcon}`}
-                          style={{ fontSize: '1.3rem', color: isActive ? '#fff' : '#19186e', display: 'block', transition: 'color 0.2s' }}
+                          style={{ fontSize: '1.1rem', color: isActive ? '#fff' : '#19186e', display: 'block', transition: 'color 0.2s' }}
                         />
                       ) : stage.iconImage ? (
                         <img
@@ -134,7 +152,7 @@ export default function LifecycleWheel({ data }) {
                           style={{ width: 32, height: 32, objectFit: 'contain', display: 'block', margin: '0 auto', filter: isActive ? 'brightness(0) invert(1)' : 'none', transition: 'filter 0.2s' }}
                         />
                       ) : null}
-                      <span style={{ fontSize: '11px', fontWeight: 700, color: isActive ? '#fff' : '#19186e', display: 'block', marginTop: 3, whiteSpace: 'nowrap', transition: 'color 0.2s' }}>
+                      <span style={{ fontSize: '10px', fontWeight: 700, color: isActive ? '#fff' : '#19186e', display: 'block', marginTop: 3, whiteSpace: 'normal', transition: 'color 0.2s', lineHeight: 1.3 }}>
                         {stage.name}
                       </span>
                     </div>

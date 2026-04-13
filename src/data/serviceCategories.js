@@ -249,7 +249,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     tacticalServices: [
       { icon: 'bi-shield-check', title: 'Application Security Assessments', description: 'Understand your attack surface through comprehensive penetration testing and vulnerability assessment.', slug: 'application-security-assessment' },
@@ -338,7 +338,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     tacticalServices: [
       { icon: 'bi-cloud-arrow-up', title: 'AWS Security', description: 'Advanced AWS Consulting Partner with cloud security services to help mature your security transformation.', slug: 'aws-cloud-security-assessment-services' },
@@ -433,7 +433,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     testimonial: {
       quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
@@ -490,7 +490,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     testimonial: {
       quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
@@ -560,7 +560,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     testimonial: {
       quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
@@ -661,7 +661,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     testimonial: {
       quote: 'GuidePoint Security helps us identify our problems and bring solutions to the problems that are in the best interest for GPC. They differ substantially because most vendors only care about selling something. GuidePoint is taking that long-term personal relationship and partnership approach which we value greatly.',
@@ -749,7 +749,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     testimonial: {
       quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
@@ -847,7 +847,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     testimonial: {
       quote: 'GuidePoint Security is basically family. They\'re always there when I need them. At the end of the day GuidePoint is always there to help and that\'s how they add value.',
@@ -913,7 +913,7 @@ const serviceCategories = {
     gpvueTabs: ['strategic'],
     gpvueCard: {
       description: 'Integrated program designed to improve your security posture over the course of a year. Includes Annual Program Review & Quarterly Business Reviews.',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     strategicServices: [],
     tacticalServices: [
@@ -990,7 +990,7 @@ const serviceCategories = {
     gpvueTabs: ['strategic'],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     strategicServices: [
       { icon: 'bi-search', title: 'Security Architecture Review', description: 'Evaluate your organization\'s security capabilities to ensure deployed technologies are aligned with relevant compliance requirements.', slug: 'network-security' },
@@ -1060,7 +1060,7 @@ const serviceCategories = {
     gpvueTabs: ['strategic'],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     strategicServices: [
       { icon: 'bi-arrow-repeat', title: 'Security Awareness Services', description: 'Ensure your employees have the security awareness & education to minimize the risk of being socially engineered.', slug: 'security-awareness' },
@@ -1145,7 +1145,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security/gpvue',
+      link: '/gpvue',
     },
     gpvueTabs: ['strategic'],
     tacticalServices: [
@@ -1329,7 +1329,7 @@ const serviceCategories = {
     ],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security/gpvue',
+      link: '/gpvue',
     },
     gpvueTabs: ['strategic', 'tactical', 'managed'],
     tacticalServices: [
@@ -1419,7 +1419,7 @@ const serviceCategories = {
     gpvueTabs: ['strategic'],
     gpvueCard: {
       description: 'Also available through our integrated Managed Security Services Program',
-      link: '/managed-security',
+      link: '/gpvue',
     },
     strategicServices: [
       { icon: 'bi-clipboard-check', title: 'OT Security Program Review', description: 'Evaluate and measure your OT cybersecurity program and its maturity level and create a plan to build or enhance your existing program to scale to your organization\'s unique requirements.', slug: 'ot-security' },

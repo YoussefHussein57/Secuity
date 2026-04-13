@@ -1313,6 +1313,7 @@
     z-index: 1070;
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
 
     &.show {

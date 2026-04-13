@@ -23,9 +23,12 @@ import Customers from './pages/Customers';
 import VendorPartners from './pages/VendorPartners';
 import ReportIncident from './pages/ReportIncident';
 import Grit from './pages/Grit';
+import Gpvue from './pages/Gpvue';
 import Gpsu from './pages/Gpsu';
 import GpsFinancial from './pages/GpsFinancial';
 import Gpsec from './pages/Gpsec';
+import DatasheetPage from './pages/DatasheetPage';
+import { aiAtGuidepoint, cloudGovernance, dataSecurityGovernance } from './data/datasheets';
 import CustomerSuccessDetail from './pages/CustomerSuccessDetail';
 import BlogDetail from './pages/BlogDetail';
 import ResourceDetail from './pages/ResourceDetail';
@@ -60,9 +63,12 @@ export default function App() {
           <Route path="company/customers" element={<Customers />} />
           <Route path="company/vendor-partners" element={<VendorPartners />} />
           <Route path="company/grit" element={<Grit />} />
+          <Route path="gpvue" element={<Gpvue />} />
           <Route path="company/gpsu" element={<Gpsu />} />
           <Route path="company/gps-financial" element={<GpsFinancial />} />
           <Route path="company/gpsec" element={<Gpsec />} />
+          <Route path="company/ai-at-guidepoint" element={<DatasheetPage data={aiAtGuidepoint} />} />
+          <Route path="services/cloud-governance" element={<DatasheetPage data={cloudGovernance} />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resources" element={<Resources />} />
           <Route path="resources/on-demand-webinars" element={<Navigate to="/resources?type=On-Demand+Webinar" replace />} />
@@ -76,6 +82,7 @@ export default function App() {
           <Route path="resources/whitepapers" element={<Navigate to="/resources?type=Whitepaper" replace />} />
           <Route path="resources/blog" element={<Navigate to="/resources?type=Blog" replace />} />
           <Route path="resources/events" element={<Navigate to="/resources?type=Event" replace />} />
+          <Route path="resources/data-security-governance" element={<DatasheetPage data={dataSecurityGovernance} />} />
           <Route path="resources/:slug" element={<ResourceDetail />} />
           <Route path="blog/:slug" element={<BlogDetail />} />
           <Route path="customer-success/:slug" element={<CustomerSuccessDetail />} />

@@ -41,6 +41,7 @@
 @import 'pages/vendor-partners';
 @import 'pages/resources';
 @import 'pages/customer-success';
+@import 'pages/gpvue';
 @import 'pages/grit';
 @import 'pages/gpsu';
 @import 'pages/gps-financial';
@@ -51,6 +52,8 @@
 @import 'pages/service-category';
 
 // 7. Global
+html,
 body {
   overflow-x: hidden;
+  max-width: 100%;
 }

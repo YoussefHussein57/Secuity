@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76">
+  <defs>
+    <linearGradient id="gpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4b4fff"/>
+      <stop offset="100%" stop-color="#00ccff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rotating circular arrows -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 38 38" to="360 38 38" dur="8s" repeatCount="indefinite"/>
+    <!-- Arc top-right -->
+    <path d="M38 4 A34 34 0 0 1 70 50" fill="none" stroke="url(#gpGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Arrowhead top-right -->
+    <path d="M65 44 L72 52 L62 53" fill="none" stroke="url(#gpGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arc bottom-left -->
+    <path d="M38 72 A34 34 0 0 1 6 26" fill="none" stroke="url(#gpGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Arrowhead bottom-left -->
+    <path d="M11 32 L4 24 L14 23" fill="none" stroke="url(#gpGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- GPVUE text – static, centered -->
+  <text y="44" font-family="'IBM Plex Sans', 'Inter', sans-serif" font-weight="700" font-size="15">
+    <tspan x="38" text-anchor="end" fill="url(#gpGrad)">GP</tspan><tspan text-anchor="start" font-style="italic" fill="white">VUE</tspan>
+  </text>
+</svg>

@@ -28,6 +28,11 @@
   }
 }
 
+// Compact hero variant used by datasheet pages
+.gpsf-hero--compact {
+  min-height: 380px;
+}
+
 // ---- Main Content ----
 .gpsf-content {
   background: $white;
